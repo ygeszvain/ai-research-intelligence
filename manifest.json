@@ -1,0 +1,436 @@
+{
+  "site": {
+    "title": "AI Research Intelligence",
+    "url": "https://ygeszvain.github.io/ai-research-intelligence",
+    "generated_at_utc": "2026-09-03T23:08:28.074423+00:00",
+    "report_count": 25,
+    "latest_report": "2026-09-03"
+  },
+  "reports": [
+    {
+      "date": "2026-09-03",
+      "date_display": "September 3, 2026",
+      "title": "AI Research Intelligence Brief — September 3, 2026",
+      "excerpt": "Three new papers converge on a practical control-plane design for enterprise agents: reversible data state, measurable causal coverage, and domain-calibrated failure detection.",
+      "topics": [
+        "Agentic AI",
+        "Evaluation",
+        "Safety & Security",
+        "Memory & Context",
+        "RAG & Knowledge"
+      ],
+      "path": "reports/2026-09-03.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-03.html",
+      "size_bytes": 42554,
+      "sha256": "281e9a04c34ff125eed20e026a3fe7668702c381fc4583ba069330a32ef201cd"
+    },
+    {
+      "date": "2026-09-02",
+      "date_display": "September 2, 2026",
+      "title": "AI Research Intelligence Brief — September 2, 2026",
+      "excerpt": "September 2, 2026 · Three deep papers, two Watchlist papers · Central signal: an AI control loop cannot validate itself through the same judge it is optimizing against. Reliable long-horizon systems need independent truth lanes, typed trace state, and dependency-aware failure diagnosis.",
+      "topics": [
+        "Agentic AI",
+        "Evaluation",
+        "Safety & Security",
+        "Memory & Context",
+        "RAG & Knowledge"
+      ],
+      "path": "reports/2026-09-02.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-02.html",
+      "size_bytes": 43927,
+      "sha256": "04fd1bd7ce63815dc138ff0a5a46cf245bcb4a82e9f3d7e0a4b8078b04ce0c6d"
+    },
+    {
+      "date": "2026-09-01",
+      "date_display": "September 1, 2026",
+      "title": "AI Research Intelligence Brief — September 1, 2026",
+      "excerpt": "Strongest signal: fresh evidence reinforces a deployment lesson: high retrospective discrimination does not establish operational value. Enterprise release gates should measure prevalence-sensitive precision, heterogeneity, external transfer, downstream outcomes, and human reliance—not benchmark score alone.",
+      "topics": [
+        "Agentic AI",
+        "Evaluation",
+        "Safety & Security",
+        "Memory & Context",
+        "RAG & Knowledge"
+      ],
+      "path": "reports/2026-09-01.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-01.html",
+      "size_bytes": 13708,
+      "sha256": "bd4c5be7d911d1c18f88122a1cdffa4f4970d0b2e1e3898ab47b9729d9ca90a4"
+    },
+    {
+      "date": "2026-08-29",
+      "date_display": "August 29, 2026",
+      "title": "AI Research Intelligence Brief — August 29, 2026",
+      "excerpt": "Today’s strongest signal is that reliable enterprise AI should bind generation to a stronger decision process: probabilistic uncertainty for choosing experiments, claim-level provenance for synthesizing evidence, and human-centered translation gates before high-stakes adoption. Capability alone is not the control plane.",
+      "topics": [
+        "Agentic AI",
+        "Evaluation",
+        "Safety & Security",
+        "Memory & Context",
+        "RAG & Knowledge"
+      ],
+      "path": "reports/2026-08-29.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-08-29.html",
+      "size_bytes": 52561,
+      "sha256": "99786a62babcce048cbdf86a1135b4854164c889aa059ba0011c321c78ed4b40"
+    },
+    {
+      "date": "2026-08-28",
+      "date_display": "August 28, 2026",
+      "title": "AI Research Intelligence Brief — August 28, 2026",
+      "excerpt": "Today’s strongest signal is about authority: models can mistake authoritative presentation or tool-provided instructions for permission, while enterprise knowledge systems lose temporal and relational fidelity as scale grows. The architectural response is to separate evidence from authority, execution intent from authorization, and retrieval convenience from verified temporal state.",
+      "topics": [
+        "Agentic AI",
+        "Evaluation",
+        "Safety & Security",
+        "Memory & Context",
+        "RAG & Knowledge"
+      ],
+      "path": "reports/2026-08-28.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-08-28.html",
+      "size_bytes": 60336,
+      "sha256": "c270e88964880e14776d1c0a33c472c182747fd4dca12a3bdd9e814710b92e89"
+    },
+    {
+      "date": "2026-08-27",
+      "date_display": "August 27, 2026",
+      "title": "AI Research Intelligence Brief — August 27, 2026",
+      "excerpt": "The strongest new signal is architectural: enterprise agents need three separate control planes—semantic fidelity, resource-feasible execution, and set-level outcome coverage. A successful run, a valid plan, or a diverse-looking answer set is not sufficient evidence of reliable business value.",
+      "topics": [
+        "Agentic AI",
+        "Evaluation",
+        "Safety & Security",
+        "Memory & Context",
+        "RAG & Knowledge"
+      ],
+      "path": "reports/2026-08-27.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-08-27.html",
+      "size_bytes": 53489,
+      "sha256": "f6d59b59372785cb645e88303ca60a41584159b0a8b18c29610365d7d5baa87c"
+    },
+    {
+      "date": "2026-08-26",
+      "date_display": "August 26, 2026",
+      "title": "AI Research Intelligence Brief — August 26, 2026",
+      "excerpt": "Primary signal: reliable enterprise AI will depend less on “more context” or “more autonomy” than on whether systems can integrate the right evidence, preserve obligations across long workflows, and invoke the right policy at the right moment.",
+      "topics": [
+        "Agentic AI",
+        "Evaluation",
+        "Safety & Security",
+        "Memory & Context",
+        "RAG & Knowledge"
+      ],
+      "path": "reports/2026-08-26.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-08-26.html",
+      "size_bytes": 58543,
+      "sha256": "c29ce1bbc47a129cefca841986a2ebf5d6a121774104ffbfb77e70abc0354068"
+    },
+    {
+      "date": "2026-08-25",
+      "date_display": "August 25, 2026",
+      "title": "AI Research Intelligence Brief — August 25, 2026",
+      "excerpt": "August 25, 2026 · Newly published research on silent model failure, synthetic-data semantics, forecasting discipline, and AI-agent software quality. Results are author-reported unless explicitly labeled otherwise.",
+      "topics": [
+        "Agentic AI",
+        "Evaluation",
+        "Safety & Security",
+        "Memory & Context",
+        "RAG & Knowledge"
+      ],
+      "path": "reports/2026-08-25.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-08-25.html",
+      "size_bytes": 59431,
+      "sha256": "cc1540d04e8fe3d9b7181c45191e1182e7901fd73e460fbacdcb26d86ea7bd18"
+    },
+    {
+      "date": "2026-08-24",
+      "date_display": "August 24, 2026",
+      "title": "AI Research Intelligence Brief — August 24, 2026",
+      "excerpt": "August 24, 2026 · A deliberately narrow review of new peer-reviewed AI/ML research with enterprise architecture relevance. Research claims are separated from author interpretation and enterprise inference.",
+      "topics": [
+        "Agentic AI",
+        "Evaluation",
+        "Safety & Security",
+        "Memory & Context",
+        "RAG & Knowledge"
+      ],
+      "path": "reports/2026-08-24.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-08-24.html",
+      "size_bytes": 54248,
+      "sha256": "97bba5ca1cfb046153992a1c2e3cc2e55720281b4931446bb6e09441b65e7c67"
+    },
+    {
+      "date": "2026-08-21",
+      "date_display": "August 21, 2026",
+      "title": "AI Research Intelligence Brief — August 21, 2026",
+      "excerpt": "Run three off-path controls: a state-drift regression gate, a governed data-skill registry prototype, and a telemetry-aware RAG compression sweep. Do not treat any as a production recommendation.",
+      "topics": [
+        "Agentic AI",
+        "Evaluation",
+        "Safety & Security",
+        "Memory & Context",
+        "RAG & Knowledge"
+      ],
+      "path": "reports/2026-08-21.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-08-21.html",
+      "size_bytes": 66510,
+      "sha256": "9bd007396bbdc7c8de612e96d6c426787ad9c2aec47e58de080fa6f43ca7595d"
+    },
+    {
+      "date": "2026-08-20",
+      "date_display": "August 20, 2026",
+      "title": "AI Research Intelligence Brief — August 20, 2026",
+      "excerpt": "The strongest signal is architectural: reliable agents need structured substrates, semantics-preserving robustness tests, and deterministic verification boundaries. Model capability alone is not the control plane.",
+      "topics": [
+        "Agentic AI",
+        "Evaluation",
+        "Safety & Security",
+        "Memory & Context",
+        "RAG & Knowledge"
+      ],
+      "path": "reports/2026-08-20.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-08-20.html",
+      "size_bytes": 61391,
+      "sha256": "a046a421232dd8de1ddf43f364d673b256473b1d0c6a61d825cf723b9fd4ed5f"
+    },
+    {
+      "date": "2026-08-19",
+      "date_display": "August 19, 2026",
+      "title": "AI Research Intelligence Brief — August 19, 2026",
+      "excerpt": "Today’s strongest research signal is that AI value depends on the interface between machine evidence and human or operational judgment. Machine-discovered strategies can persist through people, but automated selection and safety evaluation fail when their validity assumptions are hidden.",
+      "topics": [
+        "Agentic AI",
+        "Evaluation",
+        "Safety & Security",
+        "Memory & Context",
+        "RAG & Knowledge"
+      ],
+      "path": "reports/2026-08-19.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-08-19.html",
+      "size_bytes": 64909,
+      "sha256": "b759657d6e9d2cebec6adabbde7072d63be8b95e72a084dcecb1cc454f56fdd8"
+    },
+    {
+      "date": "2026-08-18",
+      "date_display": "August 18, 2026",
+      "title": "AI Research Intelligence Brief — August 18, 2026",
+      "excerpt": "Today’s research signal is not “better models.” It is the need to make evidence itself governable: contrastive cases must expose response bias, annotator provenance must remain visible, and agent-written facts must carry time, authority, policy, and replayable verdicts.",
+      "topics": [
+        "Agentic AI",
+        "Evaluation",
+        "Safety & Security",
+        "Memory & Context",
+        "RAG & Knowledge"
+      ],
+      "path": "reports/2026-08-18.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-08-18.html",
+      "size_bytes": 56949,
+      "sha256": "eb784c4a449f73353a0083657dc3965a4c65e7808a83ac1281fefd4f2e2f2dca"
+    },
+    {
+      "date": "2026-08-17",
+      "date_display": "August 17, 2026",
+      "title": "AI Research Intelligence Brief — August 17, 2026",
+      "excerpt": "Today’s strongest signal: AI reliability must be measured at the granularity where failure occurs—individual requests, evolving environments, and persistent system state—not only through aggregate benchmark scores.",
+      "topics": [
+        "Agentic AI",
+        "Evaluation",
+        "Safety & Security",
+        "Memory & Context",
+        "RAG & Knowledge"
+      ],
+      "path": "reports/2026-08-17.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-08-17.html",
+      "size_bytes": 80891,
+      "sha256": "85714790088dafe1fbf289325ee6ed1bbf5085fa255d43a1d5ae57948dc64fb2"
+    },
+    {
+      "date": "2026-08-16",
+      "date_display": "August 16, 2026",
+      "title": "AI Research Intelligence Brief — August 16, 2026",
+      "excerpt": "Today’s strongest signal: consequential AI systems need two different kinds of operational discipline—calibrated decision support at the application layer and workload-aware runtime selection beneath it.",
+      "topics": [
+        "Agentic AI",
+        "Evaluation",
+        "Safety & Security",
+        "Memory & Context",
+        "RAG & Knowledge"
+      ],
+      "path": "reports/2026-08-16.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-08-16.html",
+      "size_bytes": 61155,
+      "sha256": "6980c52146e8bd233bfed12e076e1e5fd815c7cfbb3909255472d01e3b1bd754"
+    },
+    {
+      "date": "2026-08-15",
+      "date_display": "August 15, 2026",
+      "title": "AI Research Intelligence Brief — August 15, 2026",
+      "excerpt": "Today’s strongest signal: enterprise AI reliability depends as much on the execution path, trajectory controls, and inference scheduler as on the model—making those layers measurable is now a practical architectural priority.",
+      "topics": [
+        "Agentic AI",
+        "Evaluation",
+        "Safety & Security",
+        "Memory & Context",
+        "RAG & Knowledge"
+      ],
+      "path": "reports/2026-08-15.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-08-15.html",
+      "size_bytes": 68039,
+      "sha256": "cc83771c768bed781b38d7708d866ded2b57999e40250a2559fd464efb32f5ef"
+    },
+    {
+      "date": "2026-08-14",
+      "date_display": "August 14, 2026",
+      "title": "AI Research Intelligence Brief — August 14, 2026",
+      "excerpt": "Today’s strongest signal: reliable enterprise AI is shifting from model-centric optimization toward governed composition—semantic resource contracts, domain tools, process-level verification, and human enactment workflows.",
+      "topics": [
+        "Agentic AI",
+        "Evaluation",
+        "Safety & Security",
+        "Memory & Context",
+        "RAG & Knowledge"
+      ],
+      "path": "reports/2026-08-14.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-08-14.html",
+      "size_bytes": 65296,
+      "sha256": "4d603e0dd073ed1d4f37d7cacacbb998ba37b18b1ee2b19e2662cea922ab4267"
+    },
+    {
+      "date": "2026-08-13",
+      "date_display": "August 13, 2026",
+      "title": "AI Research Intelligence Brief — August 13, 2026",
+      "excerpt": "Today’s strongest signal: agent reliability failures increasingly originate in the control plane around the model—skills, retrieved evidence, tool policies, and evaluation design—not merely in model intelligence.",
+      "topics": [
+        "Agentic AI",
+        "Evaluation",
+        "Safety & Security",
+        "Memory & Context",
+        "RAG & Knowledge"
+      ],
+      "path": "reports/2026-08-13.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-08-13.html",
+      "size_bytes": 50788,
+      "sha256": "ab19f31212bdbdc552d7380f2f808b31807a5c4ba17d5a55d7ddf78df579642c"
+    },
+    {
+      "date": "2026-08-12",
+      "date_display": "August 12, 2026",
+      "title": "AI Research Intelligence Brief — August 12, 2026",
+      "excerpt": "August 12, 2026 — adaptive research systems are moving from “one model, one context” toward explicit orchestration of research state, reusable skills, and controlled experimental worlds.",
+      "topics": [
+        "Agentic AI",
+        "Evaluation",
+        "Safety & Security",
+        "Memory & Context",
+        "RAG & Knowledge"
+      ],
+      "path": "reports/2026-08-12.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-08-12.html",
+      "size_bytes": 70299,
+      "sha256": "893c07a63a7f5ac5491e9ea52a9d714eb8e92d53552789876917e9955160d1b2"
+    },
+    {
+      "date": "2026-08-11",
+      "date_display": "August 11, 2026",
+      "title": "AI Research Intelligence Brief — August 11, 2026",
+      "excerpt": "The control plane around an agent is becoming a learnable, testable and partially verifiable software artifact.",
+      "topics": [
+        "Agentic AI",
+        "Evaluation",
+        "Safety & Security",
+        "Memory & Context",
+        "RAG & Knowledge"
+      ],
+      "path": "reports/2026-08-11.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-08-11.html",
+      "size_bytes": 88475,
+      "sha256": "c871eaa8f9db66f52f8b8b667befed26394bfbdb715efe36d2bb485ceac93c2c"
+    },
+    {
+      "date": "2026-08-10",
+      "date_display": "August 10, 2026",
+      "title": "AI Research Intelligence Brief — August 10, 2026",
+      "excerpt": "AI systems improve most credibly when the learning target is an executable or auditable outcome—not a fluent explanation.",
+      "topics": [
+        "Agentic AI",
+        "Evaluation",
+        "Safety & Security",
+        "Memory & Context",
+        "RAG & Knowledge"
+      ],
+      "path": "reports/2026-08-10.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-08-10.html",
+      "size_bytes": 84295,
+      "sha256": "7f05eafbdb7aea1d40daeff6531e53b4e14ece5007dbf0668eaabe517d36bfa0"
+    },
+    {
+      "date": "2026-08-09",
+      "date_display": "August 9, 2026",
+      "title": "AI Research Intelligence Brief — August 9, 2026",
+      "excerpt": "August 9, 2026 · Today’s signal: enterprise AI advantage is moving into the control plane—routing routine work deterministically, adapting serving topology at runtime, and carrying verifiable provenance through the AI supply chain.",
+      "topics": [
+        "Agentic AI",
+        "Evaluation",
+        "Safety & Security",
+        "Memory & Context",
+        "RAG & Knowledge"
+      ],
+      "path": "reports/2026-08-09.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-08-09.html",
+      "size_bytes": 76997,
+      "sha256": "4f1254cc6194f9415f3ab2b589d8d5a7e92a2c4103ffb37dac9e9262d638c6a1"
+    },
+    {
+      "date": "2026-08-08",
+      "date_display": "August 8, 2026",
+      "title": "AI Research Intelligence Brief — August 8, 2026",
+      "excerpt": "August 8, 2026 · Today’s research signal: agent quality increasingly depends on the reliability of the surrounding system—history, harnesses, evaluation boundaries, and traceable evidence—not model weights alone.",
+      "topics": [
+        "Agentic AI",
+        "Evaluation",
+        "Safety & Security",
+        "Memory & Context",
+        "RAG & Knowledge"
+      ],
+      "path": "reports/2026-08-08.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-08-08.html",
+      "size_bytes": 77599,
+      "sha256": "8870dbbabf2229997333d6a37f98c07b691f32e5b81e697cac4f9dfdc71dde47"
+    },
+    {
+      "date": "2026-08-06",
+      "date_display": "August 6, 2026",
+      "title": "AI Research Intelligence Brief — August 6, 2026",
+      "excerpt": "Independent Analysis The strongest cross-paper signal is architectural: reliable agents are becoming systems problems. Runtime resource topology, longitudinal memory, and evaluation measurement must be designed as first-class control surfaces—not added after the model is chosen.",
+      "topics": [
+        "Agentic AI",
+        "Evaluation",
+        "Safety & Security",
+        "Memory & Context",
+        "RAG & Knowledge"
+      ],
+      "path": "reports/2026-08-06.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-08-06.html",
+      "size_bytes": 113576,
+      "sha256": "ae54dfff41c1ee58e89f6c03eb00b48d474541b5529b81050fed9d613a26f69d"
+    },
+    {
+      "date": "2026-08-05",
+      "date_display": "August 5, 2026",
+      "title": "AI Research Intelligence Brief — August 5, 2026",
+      "excerpt": "The research signal is shifting from “more capable agents” toward managed agent change : attributable learning, controlled reuse of failures, and formal assurance over tools and operational data.",
+      "topics": [
+        "Agentic AI",
+        "Evaluation",
+        "Safety & Security",
+        "Memory & Context",
+        "RAG & Knowledge"
+      ],
+      "path": "reports/2026-08-05.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-08-05.html",
+      "size_bytes": 95055,
+      "sha256": "87c2edf72aef95cc17a9ebae676aab17b1a85fd0c4e09ef3a0c2a6f0deaae30e"
+    }
+  ]
+}

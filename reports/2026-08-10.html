@@ -1,0 +1,1035 @@
+<!doctype html>
+<html lang="en" data-visualize-standalone>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>AI Research Intelligence Brief — August 10, 2026</title>
+<style>:root {
+  color-scheme: light dark;
+  background-color: transparent !important;
+
+  /* Agent-facing contract; keep in sync with SKILL.md. */
+  --background: var(
+    --main-surface-primary,
+    light-dark(rgb(255 255 255), rgb(24 24 24))
+  );
+  --foreground: light-dark(rgb(26 28 31), rgb(255 255 255));
+  --card: color-mix(in oklab, var(--foreground) 5%, transparent);
+  --card-foreground: var(--foreground);
+  --popover: light-dark(rgb(255 255 255), rgb(45 45 45));
+  --popover-foreground: var(--foreground);
+  --primary: light-dark(rgb(51 156 255), rgb(131 195 255));
+  --primary-foreground: light-dark(rgb(255 255 255), rgb(13 13 13));
+  --secondary: light-dark(rgb(255 255 255 / 96%), rgb(54 54 54 / 96%));
+  --secondary-foreground: var(--foreground);
+  --muted: color-mix(in srgb, var(--foreground) 10%, transparent);
+  --muted-foreground: light-dark(
+    rgb(26 28 31 / 49.4%),
+    rgb(255 255 255 / 49.8%)
+  );
+  --accent: light-dark(rgb(229 242 255), rgb(13 39 63));
+  --accent-foreground: var(--primary);
+  --destructive: light-dark(rgb(226 85 7), rgb(255 133 73));
+  --border: light-dark(rgb(26 28 31 / 8%), rgb(255 255 255 / 8.2%));
+  --input: light-dark(
+    rgb(26 28 31 / 11.8%),
+    color-mix(in oklab, rgb(0 0 0) 10%, transparent)
+  );
+  --ring: light-dark(rgb(51 156 255), rgb(131 195 255 / 76%));
+  --font-size-base: 14px;
+  --red: light-dark(rgb(186 38 35), rgb(250 66 62));
+  --green: light-dark(rgb(0 162 64), rgb(64 201 119));
+
+  /* Internal implementation variables; not part of the agent contract. */
+  --font-sans: -apple-system, system-ui, "Segoe UI", sans-serif;
+  --font-mono:
+    ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono",
+    monospace;
+  --font-size-normal: max(11px, var(--font-size-base));
+  --font-size-tooltip: calc(var(--font-size-base) - 1px);
+  --font-size-small: max(11px, calc(var(--font-size-base) - 2px));
+  --font-size-h1: calc(var(--font-size-normal) * 1.7142857143);
+  --font-size-h2: calc(var(--font-size-normal) * 1.4285714286);
+  --font-size-h3: calc(var(--font-size-normal) * 1.2857142857);
+  --font-weight-normal: 430;
+  --font-weight-medium: 500;
+  --line-height-normal: calc(var(--font-size-normal) * 1.5);
+  --line-height-tooltip: calc(var(--font-size-tooltip) * 1.4285714286);
+  --line-height-small: calc(var(--font-size-small) + 4px);
+  --radius: 10px;
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-2xl: calc(var(--radius) * 1.6);
+  --radius-full: 9999px;
+  --shadow-sm: 0 1px 2px -1px rgb(0 0 0 / 8%);
+  --checkmark-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 17 17'%3E%3Cpath d='M12.8961 3.64101C13.1297 3.41418 13.4984 3.37523 13.7779 3.56581C14.0571 3.75635 14.1554 4.11331 14.0299 4.41347L13.9615 4.53847L7.71151 13.7045C7.59411 13.8767 7.4063 13.9877 7.19881 14.0072C6.99136 14.0267 6.78564 13.9533 6.63826 13.806L2.88826 10.056L2.79842 9.9457C2.6192 9.67407 2.64927 9.30496 2.88826 9.06581C3.12738 8.82669 3.49647 8.79676 3.76815 8.97597L3.8785 9.06581L7.03084 12.2182L12.8053 3.74941L12.8961 3.64101Z'/%3E%3C/svg%3E");
+
+  /* Legacy aliases; not part of the current agent contract. */
+  --viz-bg: transparent;
+  --viz-panel: var(--card);
+  --viz-border: var(--border);
+  --viz-text: var(--foreground);
+  --viz-muted: var(--muted-foreground);
+  --viz-accent: var(--primary);
+  --viz-accent-text: var(--primary-foreground);
+  --viz-accent-bg: var(--accent);
+  --viz-font-size: var(--font-size-base);
+  --viz-warning: var(--destructive);
+  --color-background-primary: var(--background);
+  --color-text-primary: var(--foreground);
+  --color-border-secondary: var(--border);
+}
+
+:root[data-visualize-standalone] {
+  background-color: var(--background) !important;
+}
+
+/* Generic mobile code-block hosts provide light/dark mode but no series palette.
+   AppBlock hosts set all six variables themselves. */
+:root:not([data-app-block-surface]) {
+  --viz-series-1: var(--primary);
+  --viz-series-2: light-dark(#f3883b, #f59a56);
+  --viz-series-3: light-dark(#5dc977, #74d58b);
+  --viz-series-4: light-dark(#eb77b1, #f08fc0);
+  --viz-series-5: light-dark(#9b79ec, #aa91ef);
+  --viz-series-6: light-dark(#3ab9b1, #5acbc2);
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html > body {
+  margin: 0;
+  padding: 5px;
+  color: var(--foreground);
+  background: transparent !important;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-normal);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-normal);
+}
+
+:root:not([data-app-block-surface]) > body {
+  padding: 12px;
+}
+
+a {
+  color: color-mix(in srgb, var(--viz-accent) 80%, var(--viz-text) 20%);
+  cursor: pointer;
+  font-weight: var(--font-weight-medium);
+  text-decoration: none;
+  text-underline-offset: 2px;
+}
+
+a:is(:hover, :focus-visible) {
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+  text-decoration-thickness: 0.5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-block: 0;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.3;
+}
+
+b,
+strong,
+th {
+  font-weight: var(--font-weight-medium);
+}
+
+code:not(pre code) {
+  display: inline;
+  padding: 1px 6px;
+  border-radius: var(--radius-sm);
+  background: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  overflow-wrap: anywhere;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  word-break: break-word;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--foreground);
+  font: inherit;
+  text-align: start;
+}
+
+.table :is(th, td) {
+  padding-block: 10px;
+  padding-inline: 0 24px;
+  overflow-wrap: anywhere;
+  border-bottom: 1px solid var(--border);
+  text-align: start;
+  vertical-align: top;
+}
+
+.table-responsive > .table :is(th, td) {
+  overflow-wrap: break-word;
+}
+
+.table :is(th, td):last-child {
+  padding-inline-end: 0;
+}
+
+.table :is(caption, thead th) {
+  font-weight: 600;
+}
+
+.table thead th {
+  padding-block: 8px;
+  border-bottom-color: color-mix(in srgb, var(--foreground) 16%, transparent);
+}
+
+.table tbody tr:last-child :is(th, td) {
+  border-bottom: 0;
+}
+
+.table.table-sm :is(th, td) {
+  padding-block: 6px;
+}
+
+.table.table-sm :is(th, td):not(:last-child) {
+  padding-inline-end: 16px;
+}
+
+.table :is(.text-end, [align="right"]) {
+  text-align: end;
+  font-variant-numeric: tabular-nums;
+}
+
+.table :is(.text-center, [align="center"]) {
+  text-align: center;
+}
+
+.table .text-nowrap {
+  white-space: nowrap;
+}
+
+#widget {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  padding: 0;
+  background: transparent !important;
+}
+
+.card {
+  min-width: 0;
+  padding: 12px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  border-radius: var(--radius-2xl);
+  color: var(--card-foreground);
+  background: var(--card);
+}
+
+#widget > :not(.card) {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.tooltip {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  width: max-content;
+  max-width: min(
+    20rem,
+    var(--tooltip-available-width, calc(100vw - 10px)),
+    calc(100vw - 10px)
+  );
+  max-height: min(
+    var(--tooltip-available-height, calc(100vh - 10px)),
+    calc(100vh - 10px)
+  );
+  padding: 4px 8px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  color: var(--popover-foreground);
+  background: var(--popover);
+  box-shadow: none;
+  font-size: var(--font-size-tooltip);
+  line-height: var(--line-height-tooltip);
+  overflow-wrap: break-word;
+  white-space: normal;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* The bundled tooltip runtime owns [data-tooltip]. AppBlock's CSS-only
+   pseudo-tooltip can widen dense grids even while hidden. */
+main [data-tooltip]::after {
+  content: none;
+}
+
+.viz-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(max(180px, 24%), 1fr));
+  gap: 10px;
+}
+
+.viz-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.viz-stat-value {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+.viz-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.viz-badge {
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  color: var(--accent-foreground);
+  background: var(--accent);
+  font-weight: var(--font-weight-medium);
+}
+
+small,
+.text-small,
+.viz-badge {
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+}
+
+.text-muted {
+  color: var(--muted-foreground);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.viz-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.viz-controls > .form-label {
+  display: grid;
+  min-width: min(100%, 260px);
+  flex: 1 1 280px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 2px 12px;
+  margin-bottom: 0;
+}
+
+.viz-controls > .form-label > :is(.form-control, .form-range, .form-select) {
+  grid-column: 1 / -1;
+}
+
+.btn,
+.form-check-input,
+.form-control,
+.form-range,
+.form-select {
+  font: inherit;
+}
+
+.btn {
+  appearance: button;
+  display: inline-flex;
+  inline-size: fit-content;
+  max-inline-size: 100%;
+  min-height: 28px;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin: 0;
+  padding: 0 8px;
+  -webkit-app-region: no-drag;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  color: var(--secondary-foreground);
+  background: var(--secondary);
+  cursor: var(--cursor-interaction, pointer);
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+.btn:is(.btn-block, .viz-tile) {
+  inline-size: 100%;
+}
+
+.btn.viz-tile {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+a.btn {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:not(:disabled):hover {
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.btn-primary {
+  border-color: transparent;
+  color: var(--interactive-label-primary-default, var(--primary-foreground));
+  background: var(--interactive-bg-primary-default, var(--foreground));
+  background-clip: padding-box;
+}
+
+.btn-primary .text-muted {
+  color: color-mix(
+    in srgb,
+    var(--interactive-label-primary-default, var(--primary-foreground)) 50%,
+    transparent
+  );
+}
+
+.btn-primary:not(:disabled):hover {
+  background: color-mix(in srgb, var(--foreground) 80%, transparent);
+  background-clip: padding-box;
+}
+
+.btn-ghost {
+  border-color: transparent;
+  color: var(--muted-foreground);
+  background: transparent;
+}
+
+.btn-ghost:not(:disabled):hover {
+  color: var(--foreground);
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+[data-lucide] {
+  stroke-width: 1.6;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--foreground);
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  min-height: 28px;
+  padding: 0 8px;
+  outline: none;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  color: var(--foreground);
+  background: var(--secondary);
+}
+
+.form-control::placeholder {
+  color: var(--muted-foreground);
+}
+
+.form-control[type="file"] {
+  padding: 0;
+  overflow: hidden;
+  cursor: var(--cursor-interaction, pointer);
+}
+
+.form-control[type="file"]::file-selector-button {
+  min-height: 26px;
+  margin-right: 8px;
+  padding: 0 8px;
+  border: 0;
+  border-right: 1px solid var(--input);
+  color: var(--secondary-foreground);
+  background: var(--secondary);
+  cursor: inherit;
+  font: inherit;
+}
+
+.form-control[type="file"]:not(:disabled):hover::file-selector-button {
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.form-control-color[type="color"] {
+  width: 40px;
+  height: 28px;
+  padding: 3px;
+  cursor: var(--cursor-interaction, pointer);
+}
+
+.form-control-color[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.form-control-color[type="color"]::-webkit-color-swatch {
+  border: 0;
+  border-radius: calc(var(--radius-lg) - 4px);
+}
+
+textarea.form-control {
+  height: auto;
+  min-height: 72px;
+  padding: 8px 10px;
+  resize: vertical;
+}
+
+.form-control:focus-visible {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-control:disabled,
+.form-select:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.form-select {
+  appearance: none;
+  display: block;
+  width: 100%;
+  min-height: 28px;
+  margin: 0;
+  padding: 0 32px 0 8px;
+  outline: none;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  color: var(--foreground);
+  background-color: var(--secondary);
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--muted-foreground) 50%),
+    linear-gradient(135deg, var(--muted-foreground) 50%, transparent 50%);
+  background-position:
+    calc(100% - 14px) 50%,
+    calc(100% - 10px) 50%;
+  background-repeat: no-repeat;
+  background-size: 4px 4px;
+  cursor: var(--cursor-interaction, default);
+}
+
+.form-select:not(:disabled):hover {
+  background-color: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.form-select:focus-visible {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-check {
+  display: flex;
+  min-height: 20px;
+  align-items: center;
+  gap: 6px;
+}
+
+.form-check-input {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  flex: 0 0 auto;
+  margin: 0;
+  border: 1px solid var(--input);
+  color: var(--primary-foreground);
+  background-color: transparent;
+  cursor: var(--cursor-interaction, default);
+  transition:
+    background-color 150ms,
+    border-color 150ms,
+    box-shadow 150ms;
+}
+
+.form-check:not(.form-switch) .form-check-input[type="checkbox"] {
+  border-color: var(--input);
+  border-radius: var(--radius-sm);
+  background-color: var(--secondary);
+  box-shadow: var(--shadow-sm);
+}
+
+.form-check:not(.form-switch)
+  .form-check-input:not(:disabled):not(:checked):hover {
+  background-color: var(--card);
+}
+
+.form-check:not(.form-switch) .form-check-input[type="checkbox"]:checked {
+  border-color: var(--primary);
+  background-color: var(--primary);
+}
+
+.form-check:not(.form-switch)
+  .form-check-input[type="checkbox"]:checked::before {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-foreground);
+  content: "";
+  mask: var(--checkmark-image) center / 12px 12px no-repeat;
+}
+
+.form-check-input[type="radio"] {
+  width: 14px;
+  height: 14px;
+  border-radius: var(--radius-full);
+}
+
+.form-check-input[type="radio"]:checked {
+  border: 2px solid var(--primary);
+  background:
+    radial-gradient(circle, var(--primary-foreground) 0 2.5px, transparent 3px),
+    var(--primary);
+}
+
+.form-check:not(.form-switch) .form-check-input:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+.form-check:not(.form-switch) .form-check-input:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.form-check:not(.form-switch) .form-check-input:disabled + .form-check-label {
+  cursor: not-allowed;
+}
+
+.form-switch .form-check-input:disabled,
+.form-switch .form-check-input:disabled + .form-check-label {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.form-check-label {
+  color: var(--foreground);
+  cursor: var(--cursor-interaction, default);
+}
+
+.form-switch .form-check-input {
+  position: relative;
+  width: 32px;
+  height: 20px;
+  border: 0;
+  border-radius: var(--radius-full);
+  background: var(--muted);
+  box-shadow: none;
+  transition: background-color 200ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.form-switch .form-check-input::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  border: 1px solid light-dark(var(--primary-foreground), var(--foreground));
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+  box-shadow: var(--shadow-sm);
+  content: "";
+  transform: translate(2px, -50%);
+  transition: transform 200ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.form-switch .form-check-input:checked {
+  background: var(--primary);
+}
+
+.form-switch .form-check-input:checked::before {
+  transform: translate(14px, -50%);
+}
+
+.form-switch .form-check-input:focus-visible {
+  box-shadow: 0 0 0 2px var(--ring);
+}
+
+.form-range {
+  appearance: none;
+  display: block;
+  width: 100%;
+  height: 28px;
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: 0;
+  accent-color: var(--primary);
+  background: linear-gradient(
+      color-mix(in srgb, var(--foreground) 7%, transparent),
+      color-mix(in srgb, var(--foreground) 7%, transparent)
+    )
+    center / 100% 2px no-repeat;
+}
+
+.form-range::-webkit-slider-runnable-track {
+  height: 28px;
+  background: transparent;
+}
+
+.form-range::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  margin-top: 4px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+}
+
+.form-range:focus-visible::-webkit-slider-thumb {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-range::-moz-range-track {
+  height: 28px;
+  background: transparent;
+}
+
+.form-range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+}
+
+.form-range:focus-visible::-moz-range-thumb {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-range:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.btn:not(.btn-primary, .viz-tile):is(
+    [aria-pressed="true"],
+    [aria-selected="true"],
+    .is-selected
+  ) {
+  border-color: var(--primary);
+  color: var(--primary-foreground);
+  background: var(--primary);
+}
+
+.btn.viz-tile:is([aria-pressed="true"], [aria-selected="true"], .is-selected) {
+  border-color: var(--primary);
+  box-shadow: inset 0 0 0 1px var(--primary);
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#widget > svg {
+  width: 100%;
+}
+
+.text-warning,
+.text-destructive {
+  color: var(--destructive);
+}
+</style>
+</head>
+<body>
+<div id="airi-2026-08-10" class="airi">
+<style>
+#airi-2026-08-10{--ink:var(--foreground,#162033);--sub:var(--muted-foreground,#596579);--surface:var(--card,#fff);--soft:var(--muted,#eef2f7);--line:var(--border,#d9e1ea);--accent:var(--viz-series-1,#2457d6);--teal:var(--viz-series-2,#087f72);--amber:var(--viz-series-3,#b36b00);--rose:var(--viz-series-4,#ad3f5b);--violet:var(--viz-series-5,#7057c7);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;max-width:1440px;margin:0 auto;padding:18px;line-height:1.55;overflow-wrap:anywhere}
+#airi-2026-08-10 *{box-sizing:border-box} #airi-2026-08-10 a{color:var(--accent);text-underline-offset:2px} #airi-2026-08-10 h1,#airi-2026-08-10 h2,#airi-2026-08-10 h3{line-height:1.18;margin:0 0 10px;font-weight:650} #airi-2026-08-10 h1{font-size:clamp(27px,4vw,48px);letter-spacing:-.035em} #airi-2026-08-10 h2{font-size:clamp(22px,2.7vw,32px);letter-spacing:-.02em;margin-top:34px} #airi-2026-08-10 h3{font-size:19px;margin-top:20px} #airi-2026-08-10 p{margin:8px 0 12px} #airi-2026-08-10 ul,#airi-2026-08-10 ol{padding-left:21px} #airi-2026-08-10 li{margin:5px 0}
+#airi-2026-08-10 .hero{padding:26px 28px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 11%,var(--surface)),var(--surface) 54%,color-mix(in srgb,var(--teal) 7%,var(--surface)));position:relative;overflow:hidden} #airi-2026-08-10 .eyebrow{text-transform:uppercase;letter-spacing:.13em;font-size:12px;font-weight:700;color:var(--accent)} #airi-2026-08-10 .hero p{max-width:920px;color:var(--sub);font-size:16px} #airi-2026-08-10 .stamp{font-variant-numeric:tabular-nums;font-size:13px;color:var(--sub)}
+#airi-2026-08-10 .grid{display:grid;gap:14px} #airi-2026-08-10 .kpis{grid-template-columns:repeat(5,minmax(0,1fr));margin:16px 0} #airi-2026-08-10 .two{grid-template-columns:repeat(2,minmax(0,1fr))} #airi-2026-08-10 .three{grid-template-columns:repeat(3,minmax(0,1fr))} #airi-2026-08-10 .card{border:1px solid var(--line);border-radius:15px;background:var(--surface);padding:16px;box-shadow:0 1px 0 color-mix(in srgb,var(--line) 70%,transparent)} #airi-2026-08-10 .kpi b{display:block;font-size:24px;line-height:1.15;margin-top:5px} #airi-2026-08-10 .label{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--sub);font-weight:700} #airi-2026-08-10 .small{font-size:13px;color:var(--sub)}
+#airi-2026-08-10 .badge{display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:4px 9px;font-size:11px;font-weight:700;letter-spacing:.02em;background:var(--soft);color:var(--ink);margin:2px 4px 2px 0} #airi-2026-08-10 .fact{background:color-mix(in srgb,var(--accent) 14%,var(--surface));color:var(--accent)} #airi-2026-08-10 .analysis{background:color-mix(in srgb,var(--violet) 14%,var(--surface));color:var(--violet)} #airi-2026-08-10 .enterprise{background:color-mix(in srgb,var(--teal) 14%,var(--surface));color:var(--teal)} #airi-2026-08-10 .uncertain{background:color-mix(in srgb,var(--amber) 15%,var(--surface));color:var(--amber)} #airi-2026-08-10 .risk{background:color-mix(in srgb,var(--rose) 13%,var(--surface));color:var(--rose)}
+#airi-2026-08-10 .signal{border-left:4px solid var(--accent)} #airi-2026-08-10 .signal.teal{border-left-color:var(--teal)} #airi-2026-08-10 .signal.amber{border-left-color:var(--amber)} #airi-2026-08-10 .paper{margin-top:28px;border-top:3px solid var(--accent);padding-top:20px} #airi-2026-08-10 .paper.p2{border-color:var(--teal)} #airi-2026-08-10 .paper.p3{border-color:var(--amber)} #airi-2026-08-10 .meta{display:grid;grid-template-columns:2fr repeat(3,1fr);gap:10px;margin:12px 0} #airi-2026-08-10 .meta>div{padding:10px 12px;background:var(--soft);border-radius:10px;font-size:13px} #airi-2026-08-10 .meta b{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--sub);margin-bottom:3px}
+#airi-2026-08-10 .thesis{font-size:18px;padding:14px 16px;border-left:4px solid var(--accent);background:color-mix(in srgb,var(--accent) 8%,var(--surface));border-radius:0 12px 12px 0} #airi-2026-08-10 .p2 .thesis{border-color:var(--teal);background:color-mix(in srgb,var(--teal) 8%,var(--surface))} #airi-2026-08-10 .p3 .thesis{border-color:var(--amber);background:color-mix(in srgb,var(--amber) 8%,var(--surface))}
+#airi-2026-08-10 details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background:var(--surface)} #airi-2026-08-10 summary{cursor:pointer;padding:13px 15px;font-weight:700} #airi-2026-08-10 details>div{padding:0 15px 15px} #airi-2026-08-10 .table-wrap{overflow-x:auto;max-width:100%} #airi-2026-08-10 table{width:100%;border-collapse:collapse;font-size:13px;min-width:620px} #airi-2026-08-10 th,#airi-2026-08-10 td{padding:10px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top} #airi-2026-08-10 th{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--sub);background:var(--soft)} #airi-2026-08-10 .num{text-align:right;font-variant-numeric:tabular-nums}
+#airi-2026-08-10 .viz{border:1px solid var(--line);border-radius:14px;padding:12px;background:var(--surface);min-height:210px} #airi-2026-08-10 svg{width:100%;height:auto;display:block} #airi-2026-08-10 svg text{font-family:inherit;fill:var(--ink);font-size:12px} #airi-2026-08-10 svg .muted{fill:var(--sub);font-size:10px} #airi-2026-08-10 svg .node{fill:var(--surface);stroke:var(--line);stroke-width:1.3} #airi-2026-08-10 svg .accent{fill:color-mix(in srgb,var(--accent) 14%,var(--surface));stroke:var(--accent)} #airi-2026-08-10 svg .teal{fill:color-mix(in srgb,var(--teal) 14%,var(--surface));stroke:var(--teal)} #airi-2026-08-10 svg .amber{fill:color-mix(in srgb,var(--amber) 14%,var(--surface));stroke:var(--amber)} #airi-2026-08-10 svg .riskfill{fill:color-mix(in srgb,var(--rose) 13%,var(--surface));stroke:var(--rose)} #airi-2026-08-10 svg .edge{stroke:var(--sub);stroke-width:1.4;fill:none;marker-end:url(#arrow)} #airi-2026-08-10 .bar{height:11px;border-radius:999px;background:var(--soft);overflow:hidden;margin:5px 0 9px} #airi-2026-08-10 .bar span{display:block;height:100%;background:var(--accent)} #airi-2026-08-10 .p2 .bar span{background:var(--teal)} #airi-2026-08-10 .p3 .bar span{background:var(--amber)}
+#airi-2026-08-10 .score-row{display:grid;grid-template-columns:135px 1fr 34px;align-items:center;gap:8px;font-size:12px} #airi-2026-08-10 .risk-panel{border-left:4px solid var(--rose);background:color-mix(in srgb,var(--rose) 7%,var(--surface))} #airi-2026-08-10 .mve{border-left:4px solid var(--teal);background:color-mix(in srgb,var(--teal) 7%,var(--surface))} #airi-2026-08-10 .quote{font-size:20px;line-height:1.4;font-weight:650;letter-spacing:-.015em} #airi-2026-08-10 .priority{display:grid;grid-template-columns:130px 1fr;gap:12px;align-items:start;border-bottom:1px solid var(--line);padding:12px 0} #airi-2026-08-10 .priority:last-child{border:0} #airi-2026-08-10 .heat{display:inline-block;min-width:58px;text-align:center;border-radius:6px;padding:4px 7px;font-weight:700} #airi-2026-08-10 .h1{background:color-mix(in srgb,var(--teal) 12%,var(--surface));color:var(--teal)} #airi-2026-08-10 .h2{background:color-mix(in srgb,var(--amber) 15%,var(--surface));color:var(--amber)} #airi-2026-08-10 .h3{background:color-mix(in srgb,var(--rose) 15%,var(--surface));color:var(--rose)}
+@media(max-width:980px){#airi-2026-08-10 .kpis{grid-template-columns:repeat(3,1fr)}#airi-2026-08-10 .three{grid-template-columns:1fr 1fr}#airi-2026-08-10 .meta{grid-template-columns:1fr 1fr}}
+@media(max-width:680px){#airi-2026-08-10{padding:8px}#airi-2026-08-10 .hero{padding:20px}#airi-2026-08-10 .kpis,#airi-2026-08-10 .two,#airi-2026-08-10 .three{grid-template-columns:1fr}#airi-2026-08-10 .meta{grid-template-columns:1fr}#airi-2026-08-10 .priority{grid-template-columns:1fr}#airi-2026-08-10 .score-row{grid-template-columns:110px 1fr 30px}#airi-2026-08-10 svg text{font-size:11px}}
+@media print{#airi-2026-08-10{max-width:none;padding:0;color:#111}#airi-2026-08-10 .card,#airi-2026-08-10 details,#airi-2026-08-10 .hero,#airi-2026-08-10 .viz{break-inside:avoid;box-shadow:none}#airi-2026-08-10 details>div{display:block!important}#airi-2026-08-10 a{color:#111;text-decoration:underline}}
+</style>
+
+<header class="hero">
+  <div class="eyebrow">Executive research dashboard · Evidence first</div>
+  <h1>AI Research Intelligence Brief — August 10, 2026</h1>
+  <p>Today’s strongest signal is not another leap in general model capability. It is a shift toward training and evaluating agents against <strong>verifiable intermediate evidence</strong>: executed statistical tests, clinician-rated longitudinal behavior, and provenance-correct financial retrieval.</p>
+  <div class="stamp">Executed 4:00 AM CDT / 09:00 UTC · Monday 72-hour window · Preprints are not peer reviewed</div>
+</header>
+
+<section class="grid kpis" aria-label="Executive dashboard">
+  <div class="card kpi"><span class="label">Raw feed records</span><b>563</b><span class="small">Five highest-yield arXiv feeds; cross-lists included before de-duplication</span></div>
+  <div class="card kpi"><span class="label">Priority candidates</span><b>43</b><span class="small">Titles/abstracts surviving topical and date filters</span></div>
+  <div class="card kpi"><span class="label">Full papers examined</span><b>8</b><span class="small">Methods, experiments, appendices, artifacts</span></div>
+  <div class="card kpi"><span class="label">Deep analysis</span><b>3</b><span class="small">All new preprints; 2-paper Watchlist</span></div>
+  <div class="card kpi"><span class="label">Overall maturity</span><b>Prototype</b><span class="small">Evaluation and controlled experiments—not production autonomy</span></div>
+</section>
+
+<section class="grid two">
+  <article class="card signal">
+    <span class="label">Strongest research signal</span>
+    <p class="quote">AI systems improve most credibly when the learning target is an executable or auditable outcome—not a fluent explanation.</p>
+  </article>
+  <article class="card signal teal">
+    <span class="label">Recommended executive action</span>
+    <p><strong>Make evidence validity a separate control plane.</strong> Add method checks, provenance constraints, compute-budget enforcement, and human adjudication before expanding agent autonomy.</p>
+  </article>
+</section>
+
+<h2>Executive Summary</h2>
+<div class="card">
+  <p><span class="badge analysis">Independent Analysis</span> Three papers expose the same architectural truth from different domains. Fisher-R1 shows that an agent can execute code and reach the right binary conclusion while still reporting the wrong inferential quantity. ResidencyRL shows that simulation-based reinforcement learning can improve multi-turn clinical behavior, but the reward model itself becomes a source of bias. FinRank shows that answer plausibility is inadequate when the retrieved passage belongs to the wrong company, period, or disclosure.</p>
+  <p>The work ranges from methodologically meaningful to early-stage. Fisher-R1’s executable benchmark and FinRank’s released data/harness are ready for controlled evaluation. ResidencyRL provides unusually broad clinical-simulation evidence and expert side-by-side ratings, yet no code is released and no patient outcome is measured. Across all three, the enterprise implication is concrete: split model capability from evidence governance. A production architecture needs typed data provenance, isolated execution, reference-validity checks, audit traces, and human review—not simply a larger model behind a tool API.</p>
+  <p><span class="badge uncertain">Uncertainty</span> All three deep selections are new arXiv v1 preprints submitted August 7, 2026. No exact-dated peer-reviewed or final-proceedings item found across the broader source sweep displaced them on rigor and decision value. Their results are author-reported and not independently replicated.</p>
+</div>
+
+<section class="grid three" aria-label="Top signals">
+  <article class="card signal"><span class="label">Signal 01 · Statistical agents</span><h3>Correct code ≠ valid inference</h3><p>On P-Bench Hard, GPT-5.4’s conclusion score was 58.3%, but strict p-value-grounded success was 30.5%.</p></article>
+  <article class="card signal teal"><span class="label">Signal 02 · Clinical agents</span><h3>Simulation can teach procedure</h3><p>Clinicians preferred ResidencyRL in 87.6% of 97 blinded paired cases, while real-world clinical utility remains untested.</p></article>
+  <article class="card signal amber"><span class="label">Signal 03 · Enterprise RAG</span><h3>Provenance is the task</h3><p>FinRank’s strongest tested retriever found only 44.8% of gold evidence in its top 10 over a deliberately confusable pool.</p></article>
+</section>
+
+<h2>Research Window & Search Audit</h2>
+<div class="grid two">
+  <div class="card">
+    <h3>Exact window</h3>
+    <p><strong>Original Monday window:</strong> August 7, 2026, 4:00 AM–August 10, 2026, 4:00 AM America/Chicago (August 7, 09:00–August 10, 09:00 UTC).</p>
+    <p><strong>Expansion:</strong> None. All selected papers were submitted August 7 between 15:00 and 17:40 UTC.</p>
+    <p><strong>Classification:</strong> 5 new preprints; 0 material revisions; 0 older papers with renewed-attention triggers.</p>
+  </div>
+  <div class="card">
+    <h3>Coverage and exclusions</h3>
+    <p>Discovery covered publisher/proceedings indexes, OpenReview/PMLR/ACL Anthology, leading journals and lab/university pages, plus arXiv cs.AI, cs.LG, cs.CL, cs.CV and cs.RO (563 batch records before cross-list de-duplication). Targeted searches also covered cs.MA, cs.IR, cs.CR, cs.SE, cs.DC and stat.ML.</p>
+    <p><strong>40 of 43 priority candidates excluded:</strong> 22 weaker or incremental contributions; 8 incomplete or unverifiable artifacts/results; 6 narrow fit; 4 outside the exact window or duplicative of the August 9 brief. Five full-text papers were retained: three deep analyses and two Watchlist items.</p>
+  </div>
+</div>
+
+<h2>Evidence vs. Enterprise Readiness</h2>
+<div class="table-wrap card">
+<table aria-label="Evidence and enterprise readiness matrix">
+  <thead><tr><th>Paper</th><th>Evidence strength</th><th>Reproducibility</th><th>Enterprise readiness</th><th>Recommended disposition</th></tr></thead>
+  <tbody>
+    <tr><td>Fisher-R1</td><td><span class="heat h1">Strong–moderate</span><br><span class="small">425 expert-audited tasks; 3 rollouts/task</span></td><td>Medium: repository is README-only today</td><td>72/100 · controlled analytics QA</td><td>Prototype now</td></tr>
+    <tr><td>ResidencyRL</td><td><span class="heat h1">Strong simulation</span><br><span class="small">Automated CIs + n=97 clinician SxS</span></td><td>Low: internal Google stack; no code</td><td>35/100 · research-stage clinical use</td><td>Read deeply / monitor</td></tr>
+    <tr><td>FinRank</td><td><span class="heat h1">Strong benchmark</span><br><span class="small">1,185 records; deterministic harness</span></td><td>High: data, repair log, splits, results</td><td>82/100 · evaluation now</td><td>Prototype now</td></tr>
+  </tbody>
+</table>
+</div>
+
+<section class="paper p1" id="fisher-r1">
+  <span class="badge fact">Paper Fact</span><span class="badge uncertain">New preprint · v1</span>
+  <h2>1 · Fisher-R1: Training LLM Agents for Reliable Hypothesis Testing</h2>
+  <div class="meta">
+    <div><b>Authors</b>Jiacheng Miao, Jin Mu, Guanhua Chen, James Zou</div>
+    <div><b>Identifier</b>arXiv:2608.07437 · cs.AI</div>
+    <div><b>Submitted</b>Aug 7, 2026 · 17:22 UTC</div>
+    <div><b>Status</b>Unreviewed preprint · CC BY 4.0</div>
+  </div>
+  <p><a href="https://arxiv.org/abs/2608.07437">Abstract</a> · <a href="https://arxiv.org/pdf/2608.07437">PDF</a> · <a href="https://arxiv.org/html/2608.07437">Full HTML</a> · <a href="https://github.com/jmu27/FisherR1">Official repository</a></p>
+  <p class="small"><strong>Artifact audit:</strong> repository attribution is verified through the paper, but the public repository currently contains only a README—benchmark files, weights, training code, and license are not yet publicly visible.</p>
+  <div class="thesis"><strong>Thesis:</strong> Outcome-verifiable post-training can teach a compact coding agent to choose and execute more defensible hypothesis tests, but benchmark success still measures agreement with canonical analyses rather than full statistical validity.</div>
+
+  <div class="grid two" style="margin-top:14px">
+    <div class="viz">
+      <span class="label">Architecture · Paper Fact</span>
+      <svg viewBox="0 0 620 235" role="img" aria-labelledby="farch-title farch-desc"><title id="farch-title">Fisher-R1 training and evaluation architecture</title><desc id="farch-desc">Synthetic executable tasks train a Qwen coding agent through supervised fine-tuning and DAPO reinforcement learning. P-Bench then evaluates method choice, p-value, and conclusion in an R sandbox.</desc><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L7,3 z" fill="var(--sub)"/></marker></defs>
+        <rect class="node" x="16" y="55" width="128" height="58" rx="10"/><text x="80" y="78" text-anchor="middle">8,642 synthetic</text><text class="muted" x="80" y="98" text-anchor="middle">verified tasks</text>
+        <path class="edge" d="M145 84H188"/><rect class="accent" x="190" y="44" width="126" height="82" rx="10"/><text x="253" y="68" text-anchor="middle">Qwen2.5-Coder</text><text class="muted" x="253" y="88" text-anchor="middle">SFT → DAPO RL</text><text class="muted" x="253" y="106" text-anchor="middle">R tool loop</text>
+        <path class="edge" d="M317 84H362"/><rect class="node" x="364" y="55" width="112" height="58" rx="10"/><text x="420" y="78" text-anchor="middle">Fisher-R1</text><text class="muted" x="420" y="98" text-anchor="middle">7B / 14B policy</text>
+        <path class="edge" d="M477 84H520"/><rect class="teal" x="522" y="44" width="82" height="82" rx="10"/><text x="563" y="70" text-anchor="middle">P-Bench</text><text class="muted" x="563" y="91" text-anchor="middle">425 tasks</text><text class="muted" x="563" y="108" text-anchor="middle">real data</text>
+        <rect class="node" x="178" y="160" width="260" height="48" rx="10"/><text x="308" y="180" text-anchor="middle">Reward = 0.9 p-value closeness + 0.1 conclusion</text><text class="muted" x="308" y="198" text-anchor="middle">Hard gate: reasoning + executable code + parsed answer</text>
+      </svg>
+    </div>
+    <div class="viz">
+      <span class="label">Verified benchmark · Strict pass@1 (%) · higher is better</span>
+      <svg viewBox="0 0 620 235" role="img" aria-labelledby="fbench-title fbench-desc"><title id="fbench-title">Fisher-R1 strict pass at one benchmark results</title><desc id="fbench-desc">On P-Bench Easy, GPT-5.4 scored 64.7 and Fisher-R1-14B scored 64.2. On P-Bench Hard, GPT-5.4 scored 30.5 and Fisher-R1-14B scored 33.0.</desc>
+        <text class="muted" x="20" y="28">P-Easy</text><rect x="100" y="15" width="388" height="20" rx="5" fill="var(--soft)"/><rect x="100" y="15" width="251" height="20" rx="5" fill="var(--accent)"/><text x="360" y="30">GPT-5.4 64.7</text><rect x="100" y="43" width="385" height="20" rx="5" fill="var(--soft)"/><rect x="100" y="43" width="249" height="20" rx="5" fill="var(--teal)"/><text x="358" y="58">Fisher-14B 64.2</text>
+        <text class="muted" x="20" y="108">P-Hard</text><rect x="100" y="95" width="198" height="20" rx="5" fill="var(--soft)"/><rect x="100" y="95" width="118" height="20" rx="5" fill="var(--accent)"/><text x="228" y="110">GPT-5.4 30.5</text><rect x="100" y="123" width="198" height="20" rx="5" fill="var(--soft)"/><rect x="100" y="123" width="128" height="20" rx="5" fill="var(--teal)"/><text x="238" y="138">Fisher-14B 33.0</text>
+        <line x1="100" y1="170" x2="500" y2="170" stroke="var(--line)"/><text class="muted" x="100" y="188">0</text><text class="muted" x="290" y="188">50</text><text class="muted" x="480" y="188">100%</text><text class="muted" x="20" y="218">Author-reported; 3 independent rollouts/task, mean ± SD in paper.</text>
+      </svg>
+    </div>
+  </div>
+
+  <details open><summary>Problem, contributions and technical approach</summary><div>
+    <p><span class="badge fact">Paper Fact</span> P-Bench contains 425 open-ended tasks—203 Easy and 222 Hard—spanning 17 statistical-method families in economics, biology and medicine. An agent receives a scientific question, a CSV and a data description, then selects a method, writes and executes R code, reports a p-value and decides whether to reject the null. Answer keys come from executed canonical analyses and expert audits.</p>
+    <p><strong>New contributions:</strong> an executable benchmark that separates conclusion correctness from p-value fidelity; an 8,642-task synthetic generator across 27 methods; and Fisher-R1, trained by supervised fine-tuning on 3,851 retained Claude Sonnet 4.6 trajectories followed by DAPO reinforcement learning. The reward maps p-values to two-sided z-space and combines 90% p-value closeness with 10% conclusion correctness.</p>
+    <p><span class="badge analysis">Independent Analysis</span> The important novelty is evaluative as much as algorithmic: the Strict metric exposes “correct-looking” analyses whose numerical evidence does not match the reference method. The method is an extension of outcome-verifiable RL into statistical workflows, not a new foundation-model architecture.</p>
+  </div></details>
+
+  <details open><summary>Results, ablations and evidence strength</summary><div>
+    <div class="table-wrap"><table><thead><tr><th>Model</th><th class="num">Easy Strict p@1</th><th class="num">Easy p@3</th><th class="num">Hard Strict p@1</th><th class="num">Hard p@3</th></tr></thead><tbody>
+      <tr><td>GPT-5.4</td><td class="num">64.7 ± 3.3</td><td class="num">73.4</td><td class="num">30.5 ± 1.6</td><td class="num">39.2</td></tr>
+      <tr><td>DeepSeek V4 Pro</td><td class="num">54.2 ± 0.5</td><td class="num">71.9</td><td class="num">26.3 ± 3.0</td><td class="num">42.5</td></tr>
+      <tr><td>Qwen2.5-Coder-14B</td><td class="num">41.4 ± 2.5</td><td class="num">49.8</td><td class="num">23.7 ± 1.6</td><td class="num">33.3</td></tr>
+      <tr><td><strong>Fisher-R1-14B</strong></td><td class="num"><strong>64.2 ± 0.6</strong></td><td class="num"><strong>75.9</strong></td><td class="num"><strong>33.0 ± 1.7</strong></td><td class="num"><strong>45.5</strong></td></tr>
+    </tbody></table></div>
+    <p><span class="badge fact">Paper Fact</span> In the 7B ablation, P-Hard Strict pass@1 rose from 13.2 for the backbone to 25.2 with DAPO, 14.3 with SFT alone, and 30.6 with SFT+DAPO. GPT-5.4’s P-Hard Raw score was 58.3 versus 30.5 Strict, a practically large gap between binary conclusion and grounded p-value.</p>
+    <p><span class="badge uncertain">Uncertainty</span> The paper reports three rollout means and standard deviations but no task-level inferential comparison among models. A top-5 embedding analysis finds evaluation prompts below the synthetic train-to-train similarity band; this reduces near-duplicate concern but does not rule out conceptual leakage.</p>
+  </div></details>
+
+  <div class="grid two">
+    <div class="card risk-panel"><span class="label">Risks & limitations</span><ul><li><strong>Author-stated:</strong> one test per task; no multiple-comparison pipelines; agents may lend false legitimacy; human statistical review remains necessary.</li><li><strong>Independent:</strong> canonical p-value agreement may penalize defensible alternatives or reward a flawed reference analysis.</li><li>Strict p-value matching does not directly verify causal estimands, assumption validity, multiplicity, or selective reporting.</li><li>Public implementation is not yet available beyond a README; proprietary baseline configuration and cost comparability are incomplete.</li></ul></div>
+    <div class="card mve"><span class="label">Minimum viable experiment · Enterprise Inference</span><p><strong>Hypothesis:</strong> a statistical-agent QA layer improves valid-method selection over the current analytics copilot.</p><p><strong>Scope:</strong> 60 de-identified historical analyses; isolated R container; three arms—current model, Fisher-style prompts, and human statistician.</p><p><strong>Success:</strong> ≥10 percentage-point gain in blinded method-validity, no increase in false discoveries, reproducible code, measured latency/cost. <strong>Stop:</strong> any unsupervised decision use or privacy-control failure. <strong>Effort:</strong> Medium.</p></div>
+  </div>
+
+  <details><summary>Enterprise placement, academic opportunity and scorecard</summary><div>
+    <div class="viz"><span class="label">Enterprise architecture placement · Enterprise Inference</span><svg viewBox="0 0 760 150" role="img" aria-label="Fisher-R1 enterprise placement"><defs><marker id="arrow2" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L7,3 z" fill="var(--sub)"/></marker></defs><rect class="node" x="10" y="42" width="120" height="58" rx="9"/><text x="70" y="66" text-anchor="middle">Research data</text><text class="muted" x="70" y="84" text-anchor="middle">governed sandbox</text><path class="edge" style="marker-end:url(#arrow2)" d="M132 71H173"/><rect class="accent" x="175" y="32" width="145" height="78" rx="9"/><text x="247" y="58" text-anchor="middle">Statistical agent</text><text class="muted" x="247" y="78" text-anchor="middle">R execution + checks</text><text class="muted" x="247" y="95" text-anchor="middle">method justification</text><path class="edge" style="marker-end:url(#arrow2)" d="M322 71H363"/><rect class="teal" x="365" y="32" width="145" height="78" rx="9"/><text x="437" y="58" text-anchor="middle">Evidence gate</text><text class="muted" x="437" y="78" text-anchor="middle">assumptions · p-value</text><text class="muted" x="437" y="95" text-anchor="middle">lineage · reproducibility</text><path class="edge" style="marker-end:url(#arrow2)" d="M512 71H553"/><rect class="node" x="555" y="42" width="180" height="58" rx="9"/><text x="645" y="66" text-anchor="middle">Statistician review</text><text class="muted" x="645" y="84" text-anchor="middle">approve / revise / reject</text></svg></div>
+    <p><strong>Academic opportunity:</strong> replicate with randomized reference-method sets, equivalence classes of valid analyses, repeated seeds, and held-out scientific sources. <strong>Follow-on question:</strong> Can an agent estimate uncertainty over method choice and abstain when several defensible analyses imply materially different conclusions?</p>
+    <div class="grid two"><div class="card"><h3>Selection score · 89/100</h3><div class="score-row"><span>Novelty 93</span><div class="bar"><span style="width:93%"></span></div><b>23.3</b></div><div class="score-row"><span>Rigor 90</span><div class="bar"><span style="width:90%"></span></div><b>22.5</b></div><div class="score-row"><span>Academic 92</span><div class="bar"><span style="width:92%"></span></div><b>18.4</b></div><div class="score-row"><span>Enterprise 90</span><div class="bar"><span style="width:90%"></span></div><b>18.0</b></div><div class="score-row"><span>Repro 68</span><div class="bar"><span style="width:68%"></span></div><b>6.8</b></div></div><div class="card"><h3>Readiness · 72/100</h3><p><strong>Disposition:</strong> Ready for controlled enterprise experimentation.</p><p><strong>Evidence confidence:</strong> Moderate–High. Strong benchmark construction and ablations; confidence limited by three rollouts, reference-method dependence, and unavailable implementation.</p></div></div>
+  </div></details>
+</section>
+
+<section class="paper p2" id="residencyrl">
+  <span class="badge fact">Paper Fact</span><span class="badge uncertain">New preprint · v1</span>
+  <h2>2 · ResidencyRL: Reinforcement Learning in Simulated Clinical Environments</h2>
+  <div class="meta"><div><b>Authors</b>Valentin Liévin et al. (Google DeepMind, Google Research and clinical collaborators)</div><div><b>Identifier</b>arXiv:2608.07418 · cs.AI, cs.CL</div><div><b>Submitted</b>Aug 7, 2026 · 17:04 UTC</div><div><b>Status</b>Unreviewed preprint · CC BY 4.0</div></div>
+  <p><a href="https://arxiv.org/abs/2608.07418">Abstract</a> · <a href="https://arxiv.org/pdf/2608.07418">PDF</a> · <a href="https://arxiv.org/html/2608.07418">Full HTML</a></p>
+  <p class="small"><strong>Artifact audit:</strong> DDxPlus, AMIE Mx, AgentClinic and CRAFT-MD are identified as open datasets. The authors explicitly do not release the ResidencyRL code because it depends on internal Google infrastructure and medical-safety considerations. No model card or deployable model was verified.</p>
+  <div class="thesis"><strong>Thesis:</strong> Long-horizon reinforcement learning against simulated patients can improve an LLM’s information gathering and management behavior, but the gains remain simulation-bound and partly measured by the same class of automated judges used to train the policy.</div>
+  <div class="grid two" style="margin-top:14px">
+    <div class="viz"><span class="label">Training workflow · Paper Fact</span><svg viewBox="0 0 620 235" role="img" aria-label="ResidencyRL training workflow"><defs><marker id="arrow3" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L7,3 z" fill="var(--sub)"/></marker></defs><rect class="node" x="15" y="35" width="120" height="65" rx="10"/><text x="75" y="60" text-anchor="middle">57K scenarios</text><text class="muted" x="75" y="79" text-anchor="middle">routine · targeted</text><text class="muted" x="75" y="94" text-anchor="middle">adversarial</text><path class="edge" style="marker-end:url(#arrow3)" d="M137 68H176"/><rect class="teal" x="178" y="26" width="135" height="83" rx="10"/><text x="245" y="53" text-anchor="middle">Patient simulator</text><text class="muted" x="245" y="74" text-anchor="middle">multi-turn dialogue</text><text class="muted" x="245" y="91" text-anchor="middle">up to 60 turns</text><path class="edge" style="marker-end:url(#arrow3)" d="M315 68H354"/><rect class="accent" x="356" y="26" width="135" height="83" rx="10"/><text x="423" y="53" text-anchor="middle">Gemini 3.5 Flash</text><text class="muted" x="423" y="74" text-anchor="middle">online GRPO</text><text class="muted" x="423" y="91" text-anchor="middle">clinical tools</text><path class="edge" style="marker-end:url(#arrow3)" d="M493 68H532"/><rect class="node" x="534" y="35" width="72" height="65" rx="10"/><text x="570" y="61" text-anchor="middle">Policy</text><text class="muted" x="570" y="82" text-anchor="middle">agent</text><rect class="riskfill" x="165" y="150" width="305" height="52" rx="10"/><text x="317" y="171" text-anchor="middle">Structured reward: diagnosis · management · communication</text><text class="muted" x="317" y="190" text-anchor="middle">documentation · style · safety penalties (LLM autorater)</text></svg></div>
+    <div class="viz"><span class="label">Adversarial safety failures (%) · lower is better</span><svg viewBox="0 0 620 235" role="img" aria-label="ResidencyRL adversarial safety failure rates"><text class="muted" x="15" y="30">Missed critical question</text><rect x="180" y="16" width="310" height="20" rx="5" fill="var(--soft)"/><rect x="180" y="16" width="203" height="20" rx="5" fill="var(--rose)"/><text x="392" y="31">Base 65.5</text><rect x="180" y="44" width="310" height="20" rx="5" fill="var(--soft)"/><rect x="180" y="44" width="135" height="20" rx="5" fill="var(--teal)"/><text x="324" y="59">RL 43.5</text><text class="muted" x="15" y="112">Missed red flag</text><rect x="180" y="98" width="310" height="20" rx="5" fill="var(--soft)"/><rect x="180" y="98" width="141" height="20" rx="5" fill="var(--rose)"/><text x="330" y="113">Base 45.5</text><rect x="180" y="126" width="310" height="20" rx="5" fill="var(--soft)"/><rect x="180" y="126" width="98" height="20" rx="5" fill="var(--teal)"/><text x="287" y="141">RL 31.5</text><line x1="180" y1="175" x2="490" y2="175" stroke="var(--line)"/><text class="muted" x="180" y="192">0</text><text class="muted" x="475" y="192">100%</text><text class="muted" x="15" y="222">N=200 held-out adversarial scenarios; author-reported 95% bootstrap CIs.</text></svg></div>
+  </div>
+  <details open><summary>Problem, contributions and technical approach</summary><div><p><span class="badge fact">Paper Fact</span> The work targets sequential clinical competence rather than static medical QA. A Gemini 3.5 Flash policy interacts with LLM patient simulators across routine telehealth, targeted hidden-history, and adversarial-safety curricula. Online GRPO optimizes a structured reward over diagnosis, management, screening/intake, communication, documentation and style, with penalties for hallucination, contraindicated action and other safety violations.</p><p>The authors generate 57,000 scenarios covering 81 conditions, five complexity levels and nine adversarial categories. Scenarios are grounded in DDxPlus, filtered by an independent LLM judge, and de-duplicated using trigram TF-IDF cosine similarity. Evaluation includes 200 standard telehealth cases, 200 adversarial cases, 120 AMIE multi-visit scenarios (360 encounters), external AgentClinic/CRAFT-MD tasks, clinician-authored oncology cases, and 97 blinded clinician side-by-side comparisons.</p><p><span class="badge analysis">Independent Analysis</span> The core contribution is a training environment and evaluation stack for procedural clinical behavior. It extends simulation-based RL; it does not establish real-world diagnosis or treatment effectiveness.</p></div></details>
+  <details open><summary>Results, ablations and evidence strength</summary><div><div class="table-wrap"><table><thead><tr><th>Evaluation</th><th>Baseline</th><th>ResidencyRL</th><th>Evidence note</th></tr></thead><tbody><tr><td>Adversarial diagnosis rubric ≥4/5</td><td>81.0%</td><td>88.0%</td><td>N=200 simulation</td></tr><tr><td>Missed critical question</td><td>65.5% [59.0,72.0]</td><td>43.5% [37.0,50.0]</td><td>−22.0 pp; bootstrap CI</td></tr><tr><td>Missed red flag</td><td>45.5% [39.0,52.5]</td><td>31.5% [25.5,38.0]</td><td>−14.0 pp</td></tr><tr><td>AMIE Mx management reasoning</td><td>80.07%</td><td>88.41%</td><td>+8.34 pp; adjusted p=5.88×10⁻18</td></tr><tr><td>AMIE Mx patient communication</td><td>83.69%</td><td>92.19%</td><td>+8.50 pp; adjusted p=1.56×10⁻17</td></tr><tr><td>Clinician overall preference</td><td>10.3% (2.1% ties)</td><td>87.6%</td><td>N=97; mean +1.21, 95% CI [1.01,1.39]</td></tr></tbody></table></div><p><span class="badge fact">Paper Fact</span> A 200-case ablation found five demonstrations from top RL rollouts improved in-context learning but did not match ResidencyRL on any of four rubric categories, despite longer encounters. Several adverse-event residuals remain material: contraindicated actions 16.5%, missed red flags 31.5%, and under-triage 4.5%.</p><p><span class="badge uncertain">Uncertainty</span> The autorater is systematically positive toward the trained model; even clinician-nonpreferred cases had a mean autorater delta of +0.63. The authors explicitly frame this as Goodhart’s law. Human evaluation strengthens the evidence but remains 97 simulated cases, not outcomes in clinical care.</p></div></details>
+  <div class="grid two"><div class="card risk-panel"><span class="label">Risks & limitations</span><ul><li><strong>Author-stated:</strong> English, US, text-only, single-visit telehealth; no physical exam, real test results, team coordination or longitudinal outcomes.</li><li>Reward/evaluation coupling creates positive bias and saturation; shared model-family judges may amplify it.</li><li>No code or model release; internal Gemini infrastructure and cost/compute details limit replication.</li><li>Residual safety failures are too high for autonomous clinical use; regulatory, liability, privacy and workflow validation are unresolved.</li></ul></div><div class="card mve"><span class="label">Minimum viable experiment · Enterprise Inference</span><p><strong>Hypothesis:</strong> simulation training improves history completeness without delaying escalation.</p><p><strong>Scope:</strong> 50 clinician-authored synthetic triage cases, read-only sandbox, no patient data or actions; compare base model, ICL, and simulation-trained candidate.</p><p><strong>Success:</strong> ≥15 pp fewer missed critical questions, non-inferior under-triage, blinded clinician preference, no contraindicated-action increase. <strong>Stop:</strong> any real-care routing or PHI exposure. <strong>Effort:</strong> Large.</p></div></div>
+  <details><summary>Enterprise placement, academic opportunity and scorecard</summary><div><div class="viz"><span class="label">Enterprise placement · Enterprise Inference</span><svg viewBox="0 0 760 150" role="img" aria-label="ResidencyRL enterprise placement"><rect class="node" x="15" y="42" width="150" height="58" rx="9"/><text x="90" y="65" text-anchor="middle">Synthetic cases</text><text class="muted" x="90" y="84" text-anchor="middle">clinician-authored only</text><path class="edge" d="M167 71H210"/><rect class="teal" x="212" y="32" width="150" height="78" rx="9"/><text x="287" y="58" text-anchor="middle">Simulation lab</text><text class="muted" x="287" y="79" text-anchor="middle">patient agents + rubrics</text><text class="muted" x="287" y="96" text-anchor="middle">offline RL</text><path class="edge" d="M364 71H407"/><rect class="riskfill" x="409" y="32" width="150" height="78" rx="9"/><text x="484" y="58" text-anchor="middle">Safety gate</text><text class="muted" x="484" y="79" text-anchor="middle">red flags · contraindications</text><text class="muted" x="484" y="96" text-anchor="middle">abstention · audit</text><path class="edge" d="M561 71H604"/><rect class="node" x="606" y="42" width="135" height="58" rx="9"/><text x="673" y="66" text-anchor="middle">Clinical review</text><text class="muted" x="673" y="84" text-anchor="middle">research only</text></svg></div><p><strong>Academic opportunity:</strong> prospective, multi-site studies with real workflow endpoints; independent reward models; multimodal encounters; long-term outcomes; subgroup calibration; and explicit abstention. <strong>Follow-on question:</strong> How can simulation curricula be optimized against patient-relevant outcomes without teaching policies to exploit a proxy judge?</p><div class="grid two"><div class="card"><h3>Selection score · 84/100</h3><div class="score-row"><span>Novelty 92</span><div class="bar"><span style="width:92%"></span></div><b>23.0</b></div><div class="score-row"><span>Rigor 91</span><div class="bar"><span style="width:91%"></span></div><b>22.8</b></div><div class="score-row"><span>Academic 94</span><div class="bar"><span style="width:94%"></span></div><b>18.8</b></div><div class="score-row"><span>Enterprise 78</span><div class="bar"><span style="width:78%"></span></div><b>15.6</b></div><div class="score-row"><span>Repro 35</span><div class="bar"><span style="width:35%"></span></div><b>3.5</b></div></div><div class="card"><h3>Readiness · 35/100</h3><p><strong>Disposition:</strong> Research-stage only for clinical deployment; read deeply for simulation infrastructure.</p><p><strong>Evidence confidence:</strong> Moderate–High for simulation outcomes, Low for real-world clinical value. Clinician ratings and statistical tests help; proprietary implementation and no patient outcomes limit confidence.</p></div></div></div></details>
+</section>
+
+<section class="paper p3" id="finrank">
+  <span class="badge fact">Paper Fact</span><span class="badge uncertain">New preprint · v1</span>
+  <h2>3 · FinRank: An Evidence-Grounded Benchmark for Financial QA and Retrieval over SEC Filings</h2>
+  <div class="meta"><div><b>Authors</b>Sasan Mansouri, Daniel Saad, Mark Wahrenburg, Manu Weissel, Fabian Woebbeking</div><div><b>Identifier</b>arXiv:2608.07400 · cs.AI, cs.DB, econ.GN, q-fin.GN</div><div><b>Submitted</b>Aug 7, 2026 · 16:45 UTC</div><div><b>Status</b>Unreviewed preprint · CC BY-NC-SA 4.0 paper</div></div>
+  <p><a href="https://arxiv.org/abs/2608.07400">Abstract</a> · <a href="https://arxiv.org/pdf/2608.07400">PDF</a> · <a href="https://arxiv.org/html/2608.07400">Full HTML</a> · <a href="https://github.com/datanxt/FinRank">Verified official dataset and harness</a></p>
+  <p class="small"><strong>Artifact audit:</strong> repository includes FinRank.jsonl, baselines, repair log, hard-negative taxonomy, split assignments and license. Dataset is CC BY-NC 4.0 for non-commercial research; commercial licensing is available from authors. No model card is applicable.</p>
+  <div class="thesis"><strong>Thesis:</strong> Financial RAG must be evaluated on whether it retrieves the disclosure for the correct entity, period and context—because a numerically plausible answer grounded in a confusable filing is operationally wrong.</div>
+  <div class="grid two" style="margin-top:14px"><div class="viz"><span class="label">Benchmark architecture · Paper Fact</span><svg viewBox="0 0 620 235" role="img" aria-label="FinRank benchmark architecture"><defs><marker id="arrow4" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L7,3 z" fill="var(--sub)"/></marker></defs><rect class="node" x="15" y="35" width="115" height="68" rx="10"/><text x="72" y="59" text-anchor="middle">SEC filings</text><text class="muted" x="72" y="79" text-anchor="middle">22 firms</text><text class="muted" x="72" y="95" text-anchor="middle">10-K / 10-Q</text><path class="edge" style="marker-end:url(#arrow4)" d="M132 69H171"/><rect class="amber" x="173" y="25" width="135" height="88" rx="10"/><text x="240" y="50" text-anchor="middle">1,185 records</text><text class="muted" x="240" y="70" text-anchor="middle">gold passages</text><text class="muted" x="240" y="87" text-anchor="middle">6,021 hard negatives</text><text class="muted" x="240" y="104" text-anchor="middle">metadata + rewrites</text><path class="edge" style="marker-end:url(#arrow4)" d="M310 69H349"/><rect class="accent" x="351" y="25" width="122" height="88" rx="10"/><text x="412" y="49" text-anchor="middle">Retriever</text><text class="muted" x="412" y="69" text-anchor="middle">global pool</text><text class="muted" x="412" y="86" text-anchor="middle">5,230 passages</text><text class="muted" x="412" y="103" text-anchor="middle">+ reranker</text><path class="edge" style="marker-end:url(#arrow4)" d="M475 69H514"/><rect class="teal" x="516" y="35" width="90" height="68" rx="10"/><text x="561" y="59" text-anchor="middle">Metrics</text><text class="muted" x="561" y="79" text-anchor="middle">R@k · MRR</text><text class="muted" x="561" y="95" text-anchor="middle">pairwise</text><rect class="riskfill" x="145" y="155" width="325" height="46" rx="10"/><text x="307" y="176" text-anchor="middle">Confusable evidence: competitor · prior period · same filing</text><text class="muted" x="307" y="193" text-anchor="middle">provenance is scored before answer generation</text></svg></div><div class="viz"><span class="label">Global-pool Recall@10 (%) · higher is better</span><svg viewBox="0 0 620 235" role="img" aria-label="FinRank Recall at 10 results"><text x="15" y="32">Finance-adapted BGE</text><rect x="180" y="18" width="300" height="19" rx="5" fill="var(--soft)"/><rect x="180" y="18" width="67" height="19" rx="5" fill="var(--rose)"/><text x="255" y="32">22.4</text><text x="15" y="69">BM25</text><rect x="180" y="55" width="300" height="19" rx="5" fill="var(--soft)"/><rect x="180" y="55" width="96" height="19" rx="5" fill="var(--amber)"/><text x="284" y="69">32.1</text><text x="15" y="106">BGE-large</text><rect x="180" y="92" width="300" height="19" rx="5" fill="var(--soft)"/><rect x="180" y="92" width="107" height="19" rx="5" fill="var(--accent)"/><text x="295" y="106">35.6</text><text x="15" y="143">E5-Mistral-7B</text><rect x="180" y="129" width="300" height="19" rx="5" fill="var(--soft)"/><rect x="180" y="129" width="134" height="19" rx="5" fill="var(--teal)"/><text x="322" y="143">44.8</text><text x="15" y="180">Metadata BM25</text><rect x="180" y="166" width="300" height="19" rx="5" fill="var(--soft)"/><rect x="180" y="166" width="165" height="19" rx="5" fill="var(--violet)"/><text x="353" y="180">55.0</text><text class="muted" x="15" y="218">1,185 queries over a curated 5,230-passage stress-test pool; not full filings.</text></svg></div></div>
+  <details open><summary>Problem, contributions and technical approach</summary><div><p><span class="badge fact">Paper Fact</span> FinRank contains 1,185 manually authored QA records over 2024–2025 filings from 22 US companies in pharmaceuticals, oil and gas, and automotive. Each record has a reference answer, 1.96 gold passages on average, 5.08 hand-selected hard negatives on average, provenance metadata and—on 69% of records—an annotator-authored query decomposition.</p><p>Five business students authored records directly from filings; the authors sampled reviews and applied a deterministic normalization/repair pipeline. Evaluation separates global-pool retrieval, in-record reranking and positive-versus-hard-negative pairwise discrimination. Baselines cover TF-IDF, BM25, MPNet, a cross-encoder, BGE-large, a consumer-finance-adapted embedder, and E5-Mistral-7B under a common 512-token limit.</p><p><span class="badge analysis">Independent Analysis</span> The novelty is benchmark- and systems-oriented: per-question curated distractors make provenance failure measurable. The benchmark does not yet evaluate end-to-end answer correctness or citation faithfulness.</p></div></details>
+  <details open><summary>Results, ablations and evidence strength</summary><div><div class="table-wrap"><table><thead><tr><th>Retriever</th><th class="num">R@1</th><th class="num">R@5</th><th class="num">R@10</th><th class="num">MRR</th><th class="num">nDCG@10</th></tr></thead><tbody><tr><td>TF-IDF</td><td class="num">7.7</td><td class="num">23.7</td><td class="num">32.8</td><td class="num">23.9</td><td class="num">21.9</td></tr><tr><td>BM25</td><td class="num">8.3</td><td class="num">24.5</td><td class="num">32.1</td><td class="num">23.8</td><td class="num">21.8</td></tr><tr><td>BGE-large</td><td class="num">8.8</td><td class="num">25.9</td><td class="num">35.6</td><td class="num">25.9</td><td class="num">23.8</td></tr><tr><td><strong>E5-Mistral-7B</strong></td><td class="num"><strong>10.1</strong></td><td class="num"><strong>33.1</strong></td><td class="num"><strong>44.8</strong></td><td class="num"><strong>31.0</strong></td><td class="num"><strong>29.7</strong></td></tr></tbody></table></div><p><span class="badge fact">Paper Fact</span> Curated hard negatives reduced pairwise accuracy by 13.0–20.5 percentage points versus random negatives. Metadata-filtered BM25 removed 92.9% of each record’s hard negatives and lifted Recall@10 from 32.1 to 55.0, although first-occurrence metadata excluded at least one gold passage for 33 records and all gold evidence for 2.</p><p>On the 819 records with query rewrites, concatenating gold-authored subquestions raised Recall@10 from 29.9 to 38.7 for BM25 and 30.7 to 34.1 for MPNet. This is an oracle decomposition upper bound because annotators wrote rewrites while viewing the evidence.</p><p><span class="badge uncertain">Uncertainty</span> The global pool contains only positives and curated distractors, not every chunk from complete filings; the 44.8% result is a high-density discrimination stress test and cannot be compared to full-document RAG.</p></div></details>
+  <div class="grid two"><div class="card risk-panel"><span class="label">Risks & limitations</span><ul><li><strong>Author-stated:</strong> 22 companies, three sectors, 75% 2025, 88% 10-K, roughly 2:1 qualitative skew.</li><li>Single-annotator records with sampled review; no formal agreement or exhaustive expert adjudication.</li><li>442 hard negatives (7.3%) duplicate a gold passage for another record; filter flags are released.</li><li>Tables/figures are flattened to text; full-document ingestion, generation, citation faithfulness and production costs remain untested.</li><li>Non-commercial dataset license affects enterprise build-vs-buy decisions.</li></ul></div><div class="card mve"><span class="label">Minimum viable experiment · Enterprise Inference</span><p><strong>Hypothesis:</strong> metadata constraints plus hard-negative reranking reduce wrong-company/period evidence.</p><p><strong>Scope:</strong> run current financial RAG over FinRank’s held-out-ticker split; compare vector-only, metadata-filtered, and hybrid+rereanker pipelines.</p><p><strong>Success:</strong> ≥10 pp R@10 gain, ≥90% entity/period precision, citation trace completeness, latency/cost within 20% of baseline. <strong>Stop:</strong> any use for trading or automated disclosure decisions. <strong>Effort:</strong> Small–Medium.</p></div></div>
+  <details><summary>Enterprise placement, academic opportunity and scorecard</summary><div><div class="viz"><span class="label">Enterprise placement · Enterprise Inference</span><svg viewBox="0 0 760 150" role="img" aria-label="FinRank enterprise architecture placement"><rect class="node" x="10" y="42" width="135" height="58" rx="9"/><text x="77" y="65" text-anchor="middle">Filing lake</text><text class="muted" x="77" y="84" text-anchor="middle">entity · period · form</text><path class="edge" d="M147 71H185"/><rect class="amber" x="187" y="32" width="145" height="78" rx="9"/><text x="259" y="58" text-anchor="middle">Metadata filter</text><text class="muted" x="259" y="79" text-anchor="middle">provenance constraints</text><text class="muted" x="259" y="96" text-anchor="middle">access policy</text><path class="edge" d="M334 71H372"/><rect class="accent" x="374" y="32" width="145" height="78" rx="9"/><text x="446" y="58" text-anchor="middle">Retriever + reranker</text><text class="muted" x="446" y="79" text-anchor="middle">hard-negative tests</text><text class="muted" x="446" y="96" text-anchor="middle">evidence bundle</text><path class="edge" d="M521 71H559"/><rect class="teal" x="561" y="32" width="185" height="78" rx="9"/><text x="653" y="57" text-anchor="middle">Answer + citations</text><text class="muted" x="653" y="78" text-anchor="middle">provenance validator</text><text class="muted" x="653" y="95" text-anchor="middle">human analyst approval</text></svg></div><p><strong>Academic opportunity:</strong> double-adjudicate a stratified subset, add complete filing chunks and multimodal tables, evaluate constrained retrievers on held-out entities/jurisdictions, and measure end-to-end faithfulness. <strong>Follow-on question:</strong> Can structured entity-period constraints improve provenance without suppressing legitimately cross-filing questions?</p><div class="grid two"><div class="card"><h3>Selection score · 89/100</h3><div class="score-row"><span>Novelty 88</span><div class="bar"><span style="width:88%"></span></div><b>22.0</b></div><div class="score-row"><span>Rigor 88</span><div class="bar"><span style="width:88%"></span></div><b>22.0</b></div><div class="score-row"><span>Academic 86</span><div class="bar"><span style="width:86%"></span></div><b>17.2</b></div><div class="score-row"><span>Enterprise 96</span><div class="bar"><span style="width:96%"></span></div><b>19.2</b></div><div class="score-row"><span>Repro 92</span><div class="bar"><span style="width:92%"></span></div><b>9.2</b></div></div><div class="card"><h3>Readiness · 82/100</h3><p><strong>Disposition:</strong> Ready for controlled enterprise evaluation now.</p><p><strong>Evidence confidence:</strong> High for benchmark behavior, Moderate for production relevance. Artifacts are unusually complete; single-annotation, corpus construction and licensing limit confidence.</p></div></div></div></details>
+</section>
+
+<h2>Research Watchlist</h2>
+<div class="grid two">
+  <article class="card"><span class="badge uncertain">New preprint</span><h3><a href="https://arxiv.org/abs/2608.07449">SkillProx: Self-Evolving Agent Skills via Proximal Textual Gradient Descent</a></h3><p><strong>Why monitor:</strong> closed-loop diagnosis re-executes proposed skill edits and rolls back regressions; a frozen leave-one-out utility audit then consolidates or removes skill units. Across spreadsheet tasks and three Qwen backbones, the authors report +3.0 points over the strongest gradient baseline; removing closed-loop diagnosis or Prox reduced held-out accuracy by 1.5 and 2.5 points. OOD WikiTQ/HiTab results are directionally promising.</p><p><strong>Weakness:</strong> narrow spreadsheet domain, as few as three seeds for main backbone comparisons, expensive leave-one-out auditing, and code is promised but not verified as publicly available. <strong>Trigger:</strong> public code plus independent transfer tests against an ICL-only control and repository-growth/cost accounting.</p></article>
+  <article class="card"><span class="badge uncertain">New preprint</span><h3><a href="https://arxiv.org/abs/2608.07303">Winning by Peeking: Unenforced Budgets and Test-Set Selection Inflate Short-Budget AutoML Comparisons</a></h3><p><strong>Why monitor:</strong> a self-audit shows a 59.4% win rate collapsing to 34.3% after moving selection off the test set, externally enforcing deadlines and equalizing compute; no pairwise difference remained significant. The median “60-second” run consumed 120 seconds. This is directly relevant to MLOps benchmark governance.</p><p><strong>Weakness:</strong> one system, one platform, one split per dataset, 513 not-fully-independent OpenML tasks, and a corrected-run subset. <strong>Artifact:</strong> paper states code, traces and regeneration scripts are released; repository attribution should be rechecked before adoption. <strong>Trigger:</strong> replication across mainstream AutoML/agent-evaluation harnesses.</p></article>
+</div>
+
+<h2>Cross-Paper Analysis</h2>
+<div class="grid two">
+  <div class="card"><h3>Research ecosystem map</h3><svg viewBox="0 0 720 330" role="img" aria-label="Research ecosystem map"><circle cx="360" cy="165" r="62" fill="color-mix(in srgb,var(--accent) 13%,var(--surface))" stroke="var(--accent)"/><text x="360" y="153" text-anchor="middle">Evidence-valid</text><text x="360" y="174" text-anchor="middle">agent control</text><text class="muted" x="360" y="194" text-anchor="middle">shared core</text><line x1="305" y1="130" x2="190" y2="72" stroke="var(--line)" stroke-width="2"/><circle cx="150" cy="55" r="65" fill="color-mix(in srgb,var(--accent) 9%,var(--surface))" stroke="var(--accent)"/><text x="150" y="45" text-anchor="middle">Fisher-R1</text><text class="muted" x="150" y="65" text-anchor="middle">executed inference</text><line x1="415" y1="130" x2="530" y2="72" stroke="var(--line)" stroke-width="2"/><circle cx="570" cy="55" r="65" fill="color-mix(in srgb,var(--teal) 9%,var(--surface))" stroke="var(--teal)"/><text x="570" y="45" text-anchor="middle">ResidencyRL</text><text class="muted" x="570" y="65" text-anchor="middle">procedural simulation</text><line x1="360" y1="227" x2="360" y2="275" stroke="var(--line)" stroke-width="2"/><circle cx="360" cy="292" r="65" fill="color-mix(in srgb,var(--amber) 9%,var(--surface))" stroke="var(--amber)"/><text x="360" y="282" text-anchor="middle">FinRank</text><text class="muted" x="360" y="302" text-anchor="middle">evidence provenance</text><text class="muted" x="35" y="315">Independent Analysis: three control surfaces around model behavior, not one unified system.</text></svg></div>
+  <div class="card"><h3>Shared-risk heatmap</h3><div class="table-wrap"><table aria-label="Shared risk heatmap"><thead><tr><th>Risk</th><th>Fisher-R1</th><th>ResidencyRL</th><th>FinRank</th></tr></thead><tbody><tr><td>Proxy / reward mismatch</td><td><span class="heat h2">Medium</span></td><td><span class="heat h3">High</span></td><td><span class="heat h2">Medium</span></td></tr><tr><td>Dataset generalization</td><td><span class="heat h2">Medium</span></td><td><span class="heat h3">High</span></td><td><span class="heat h3">High</span></td></tr><tr><td>Reproducibility gap</td><td><span class="heat h2">Medium</span></td><td><span class="heat h3">High</span></td><td><span class="heat h1">Low</span></td></tr><tr><td>High-stakes misuse</td><td><span class="heat h3">High</span></td><td><span class="heat h3">High</span></td><td><span class="heat h2">Medium</span></td></tr><tr><td>Operational cost unknown</td><td><span class="heat h2">Medium</span></td><td><span class="heat h3">High</span></td><td><span class="heat h2">Medium</span></td></tr></tbody></table></div></div>
+</div>
+
+<div class="table-wrap card" style="margin-top:14px"><table aria-label="Cross-paper comparison matrix"><thead><tr><th>Dimension</th><th>Fisher-R1</th><th>ResidencyRL</th><th>FinRank</th></tr></thead><tbody><tr><td>Primary object</td><td>Statistical method + p-value</td><td>Longitudinal clinical behavior</td><td>Evidence passage provenance</td></tr><tr><td>Verification signal</td><td>Executed canonical analysis</td><td>LLM rubrics + clinician preference</td><td>Gold passages + curated distractors</td></tr><tr><td>Strongest evidence</td><td>P-Bench strict metrics + ablation</td><td>n=97 blinded clinician SxS</td><td>Released deterministic harness</td></tr><tr><td>Main contradiction</td><td>Reference agreement may be too rigid</td><td>Soft judges are flexible but biased</td><td>Provenance constraints improve retrieval but may narrow scope</td></tr><tr><td>Unresolved gap</td><td>Equivalence among valid methods</td><td>Real patient outcomes</td><td>Full-document + generation evaluation</td></tr></tbody></table></div>
+
+<div class="card" style="margin-top:14px"><span class="badge analysis">Independent Analysis</span><h3>Synthesized enterprise architecture</h3><svg viewBox="0 0 1050 260" role="img" aria-label="Synthesized enterprise architecture"><defs><marker id="arrow5" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L7,3 z" fill="var(--sub)"/></marker></defs><rect class="node" x="20" y="72" width="150" height="72" rx="10"/><text x="95" y="98" text-anchor="middle">Governed sources</text><text class="muted" x="95" y="118" text-anchor="middle">data · documents</text><text class="muted" x="95" y="135" text-anchor="middle">synthetic scenarios</text><path class="edge" style="marker-end:url(#arrow5)" d="M172 108H220"/><rect class="amber" x="222" y="60" width="165" height="96" rx="10"/><text x="304" y="87" text-anchor="middle">Context plane</text><text class="muted" x="304" y="108" text-anchor="middle">metadata constraints</text><text class="muted" x="304" y="126" text-anchor="middle">retrieval + provenance</text><text class="muted" x="304" y="144" text-anchor="middle">tenant / period / entity</text><path class="edge" style="marker-end:url(#arrow5)" d="M389 108H437"/><rect class="accent" x="439" y="60" width="165" height="96" rx="10"/><text x="521" y="87" text-anchor="middle">Agent execution</text><text class="muted" x="521" y="108" text-anchor="middle">isolated tools</text><text class="muted" x="521" y="126" text-anchor="middle">typed actions</text><text class="muted" x="521" y="144" text-anchor="middle">budget enforcement</text><path class="edge" style="marker-end:url(#arrow5)" d="M606 108H654"/><rect class="teal" x="656" y="60" width="165" height="96" rx="10"/><text x="738" y="87" text-anchor="middle">Evidence gate</text><text class="muted" x="738" y="108" text-anchor="middle">method validity</text><text class="muted" x="738" y="126" text-anchor="middle">safety invariants</text><text class="muted" x="738" y="144" text-anchor="middle">citation trace</text><path class="edge" style="marker-end:url(#arrow5)" d="M823 108H871"/><rect class="riskfill" x="873" y="60" width="155" height="96" rx="10"/><text x="950" y="87" text-anchor="middle">Human decision</text><text class="muted" x="950" y="108" text-anchor="middle">review · abstain</text><text class="muted" x="950" y="126" text-anchor="middle">approve · reject</text><text class="muted" x="950" y="144" text-anchor="middle">outcome feedback</text><path d="M950 158V218H304V158" fill="none" stroke="var(--sub)" stroke-width="1.5" stroke-dasharray="5 4"/><text class="muted" x="626" y="238" text-anchor="middle">Evaluation loop: counterexamples, hard negatives, clinician/statistician review, drift and cost telemetry</text></svg></div>
+
+<h2>Implementation Priorities</h2>
+<div class="card">
+  <div class="priority"><span class="badge enterprise">Prototype now</span><div><strong>FinRank provenance test + Fisher-style statistical QA.</strong> Dependencies: sandboxed evaluation, task-level ground truth, audit logs. Risk: benchmark-to-workflow mismatch. Confidence: High. Next: run 60–100 de-identified cases against existing systems.</div></div>
+  <div class="priority"><span class="badge analysis">Read deeply</span><div><strong>ResidencyRL training/evaluation design.</strong> Dependency: clinical safety and research governance. Risk: proxy-judge optimization and no production evidence. Confidence: Moderate–High for simulation. Next: architecture review only; no patient-facing pilot.</div></div>
+  <div class="priority"><span class="badge uncertain">Monitor</span><div><strong>SkillProx and Winning by Peeking.</strong> Trigger: public artifacts and independent replication. Risk: narrow domains / one-platform case study. Confidence: Moderate. Next: adopt the benchmark-protocol checklist immediately; defer skill-evolution infrastructure.</div></div>
+  <div class="priority"><span class="badge risk">Deprioritize</span><div><strong>Autonomous high-stakes decisions and unmeasured “self-improvement.”</strong> No selected paper supports unsupervised clinical, scientific, financial or customer-facing action. Next: require evidence gates and rollback before any broader autonomy.</div></div>
+</div>
+
+<h2>Knowledge Reinforcement</h2>
+<div class="grid two">
+  <div class="card"><h3>Key Concepts</h3><ul><li><strong>Outcome-verifiable reward:</strong> training feedback computed from an executable result rather than a stylistic judge alone.</li><li><strong>Canonical-analysis agreement:</strong> matching a reference statistical procedure’s numerical evidence; useful but not identical to universally valid inference.</li><li><strong>Hard negative:</strong> a plausible but wrong item selected to reveal whether retrieval understands the intended entity, period or context.</li><li><strong>Goodhart’s law:</strong> once a proxy becomes the optimization target, it can cease to reflect the underlying objective.</li><li><strong>Protocol validity:</strong> whether selection rules, compute budgets and test isolation make a comparison estimate what it claims.</li></ul></div>
+  <div class="card"><h3>Recall Questions</h3><ol><li>Why can a model’s reject/fail-to-reject accuracy be high while its statistical analysis remains unreliable?</li><li>Which parts of ResidencyRL’s evidence reduce—but do not eliminate—the risk of reward-model bias?</li><li>Why is FinRank’s metadata-filtered BM25 result both operationally promising and methodologically qualified?</li><li>How do SkillProx and Winning by Peeking reinforce the need for feedback and protocol controls?</li><li>What common enterprise control plane can govern statistical agents, clinical simulators and financial RAG?</li></ol></div>
+</div>
+<div class="card" style="margin-top:14px"><h3>90-second Teach-Back</h3><p>Explain to an executive why “the answer looks right” is no longer a sufficient AI acceptance criterion. Use one exact result from Fisher-R1, one from ResidencyRL, and one from FinRank, then describe the evidence-validation layer you would add to an enterprise agent platform.</p><h3>Research Connections</h3><p>These papers connect agent engineering to classical scientific methodology and systems design. Fisher-R1 resembles executable specification and causal experimental control: a result must follow from a defensible method, not merely match a label. ResidencyRL resembles simulator-based policy optimization and illustrates Goodhart’s law when the evaluator is also the reward. FinRank applies information retrieval’s hard-negative principle to provenance-sensitive enterprise data. Winning by Peeking reconnects MLOps to holdout discipline and resource-isolated systems benchmarking.</p><p class="quote"><span class="label">One idea to remember</span><br>An AI system is trustworthy only to the extent that its evidence path—not merely its final answer—is valid, observable and reversible.</p></div>
+
+<footer class="small" style="margin-top:28px;padding-top:14px;border-top:1px solid var(--line)">Primary evidence: original arXiv papers and verified author-linked repositories. All benchmark results are author-reported; no selected preprint has been independently replicated or peer reviewed. Enterprise experiments described here are isolated evaluation proposals, not production-deployment recommendations.</footer>
+</div>
+
+</body>
+</html>

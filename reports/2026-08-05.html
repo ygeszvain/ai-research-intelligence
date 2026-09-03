@@ -1,0 +1,665 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI Research Intelligence Brief for August 5, 2026 — visual executive dashboard based on newly submitted arXiv papers.">
+<title>AI Research Intelligence Brief — August 5, 2026</title>
+<style>
+:root{
+  --navy:#0b1f33; --navy2:#153a55; --ink:#142331; --muted:#5c6b78;
+  --paper:#ffffff; --page:#eef3f6; --line:#d8e2e8; --soft:#f7fafb;
+  --teal:#087f8c; --teal2:#dff4f2; --blue:#2b6cb0; --blue2:#e8f1fb;
+  --amber:#b7791f; --amber2:#fff5dc; --red:#b42318; --red2:#fdebea;
+  --green:#227a50; --green2:#e8f6ef; --purple:#6b46c1; --purple2:#f0eafd;
+  --shadow:0 10px 28px rgba(20,35,49,.08); --radius:18px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--page);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.58}
+a{color:var(--blue);text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:var(--teal)}
+.container{width:min(1240px,calc(100% - 32px));margin:auto}
+.hero{background:linear-gradient(135deg,#081827 0%,#0d3148 58%,#0c5b66 100%);color:white;padding:54px 0 42px;position:relative;overflow:hidden}
+.hero:before,.hero:after{content:"";position:absolute;border-radius:999px;background:rgba(255,255,255,.05)}
+.hero:before{width:430px;height:430px;right:-120px;top:-220px}.hero:after{width:260px;height:260px;left:-100px;bottom:-160px}
+.eyebrow{font-size:.78rem;letter-spacing:.15em;text-transform:uppercase;font-weight:800;color:#9edbdc}
+h1{font-size:clamp(2.1rem,4.7vw,4.3rem);line-height:1.02;margin:.45rem 0 1rem;max-width:980px;letter-spacing:-.035em}
+.subtitle{font-size:clamp(1.02rem,2vw,1.3rem);max-width:880px;color:#d8e9ef;margin:0 0 1.6rem}
+.hero-grid{display:grid;grid-template-columns:1.6fr 1fr;gap:24px;align-items:end}
+.window-box{background:rgba(255,255,255,.085);border:1px solid rgba(255,255,255,.18);border-radius:16px;padding:18px 20px;backdrop-filter:blur(8px)}
+.window-box strong{display:block;font-size:1.04rem;margin-bottom:5px}.window-box small{color:#cbe0e7}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}.chip{display:inline-flex;align-items:center;gap:6px;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.08);border-radius:999px;padding:6px 10px;font-size:.78rem;font-weight:700;color:#eef9fa}
+nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(12px);overflow:auto}
+nav .container{display:flex;gap:18px;white-space:nowrap;padding:12px 0}nav a{font-size:.82rem;text-decoration:none;font-weight:750;color:var(--navy2)}
+main{padding:34px 0 70px}
+section{scroll-margin-top:70px;margin-bottom:34px}
+.section-head{display:flex;justify-content:space-between;gap:20px;align-items:end;margin:0 0 15px}
+.section-head h2{font-size:clamp(1.55rem,2.6vw,2.25rem);line-height:1.1;letter-spacing:-.025em;margin:0;color:var(--navy)}
+.section-head p{margin:0;max-width:590px;color:var(--muted);font-size:.94rem}
+.grid{display:grid;gap:16px}.grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}.grid-4{grid-template-columns:repeat(4,minmax(0,1fr))}.grid-6{grid-template-columns:repeat(6,minmax(0,1fr))}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px}
+.card h3,.card h4{color:var(--navy);margin-top:0}.card p:last-child{margin-bottom:0}
+.signal{min-height:145px}.signal .kicker{font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;font-weight:850;color:var(--muted)}.signal .big{font-size:1.15rem;font-weight:820;line-height:1.25;margin:.55rem 0;color:var(--navy)}.signal p{font-size:.86rem;color:var(--muted)}
+.accent-teal{border-top:5px solid var(--teal)}.accent-blue{border-top:5px solid var(--blue)}.accent-amber{border-top:5px solid var(--amber)}.accent-red{border-top:5px solid var(--red)}.accent-purple{border-top:5px solid var(--purple)}.accent-green{border-top:5px solid var(--green)}
+.callout{border-radius:15px;padding:16px 18px;border-left:5px solid var(--teal);background:var(--teal2)}.callout.amber{border-left-color:var(--amber);background:var(--amber2)}.callout.red{border-left-color:var(--red);background:var(--red2)}.callout.blue{border-left-color:var(--blue);background:var(--blue2)}
+.label{display:inline-flex;align-items:center;border-radius:999px;padding:4px 8px;font-size:.67rem;letter-spacing:.06em;text-transform:uppercase;font-weight:850;margin-right:6px;vertical-align:middle}.fact{color:#0a5d66;background:var(--teal2)}.author{color:#7a4e0d;background:var(--amber2)}.analysis{color:#244f83;background:var(--blue2)}.inference{color:#5b399d;background:var(--purple2)}.uncertain{color:#9e2117;background:var(--red2)}
+.dashboard-summary{font-size:1.02rem}.dashboard-summary strong{color:var(--navy)}
+.metric{display:flex;justify-content:space-between;gap:14px;border-bottom:1px solid var(--line);padding:10px 0}.metric:last-child{border-bottom:0}.metric span{color:var(--muted);font-size:.88rem}.metric b{text-align:right;color:var(--navy)}
+.score{font-size:2.35rem;line-height:1;font-weight:900;letter-spacing:-.04em;color:var(--teal)}.score small{font-size:.8rem;color:var(--muted);letter-spacing:0}
+.paper{padding:0;overflow:hidden}.paper-head{padding:27px 28px;color:white;background:linear-gradient(135deg,var(--navy),var(--navy2))}.paper-head .rank{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:#9edbdc;font-weight:850}.paper-head h2{font-size:clamp(1.55rem,3vw,2.45rem);line-height:1.1;margin:.55rem 0 .65rem}.paper-head p{margin:0;color:#d7e7ed}.paper-body{padding:26px 28px}.meta{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-bottom:18px}.meta-item{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:12px}.meta-item small{display:block;color:var(--muted);font-size:.69rem;text-transform:uppercase;letter-spacing:.08em;font-weight:800}.meta-item b{display:block;font-size:.88rem;margin-top:3px;color:var(--navy);overflow-wrap:anywhere}
+.thesis{font-size:1.22rem;line-height:1.4;font-weight:760;color:var(--navy);padding:19px 21px;background:linear-gradient(90deg,var(--teal2),#f7fcfc);border:1px solid #bfdfdc;border-radius:15px;margin:18px 0}
+.subhead{font-size:1.15rem;margin:26px 0 10px;color:var(--navy)}
+ul.compact{margin:.5rem 0;padding-left:1.1rem}ul.compact li{margin:.32rem 0}
+.flow-3{display:grid;grid-template-columns:1fr 42px 1fr 42px 1fr;align-items:stretch;gap:8px}.flow-node{border:1px solid var(--line);border-radius:13px;padding:15px;background:var(--soft)}.flow-node b{display:block;color:var(--navy);margin-bottom:5px}.arrow{display:grid;place-items:center;color:var(--teal);font-size:1.7rem;font-weight:900}
+.visual{border:1px solid var(--line);background:#fbfdfe;border-radius:15px;padding:15px;margin:14px 0}.visual-title{font-size:.8rem;font-weight:850;color:var(--navy);text-transform:uppercase;letter-spacing:.07em;margin-bottom:9px}.caption{font-size:.78rem;color:var(--muted);margin-top:8px}
+svg{display:block;width:100%;height:auto}svg text{font-family:Inter,ui-sans-serif,system-ui,sans-serif}
+.evidence-table,.compare{width:100%;border-collapse:separate;border-spacing:0;font-size:.84rem;overflow:hidden;border:1px solid var(--line);border-radius:13px}.evidence-table th,.compare th{background:#edf4f7;color:var(--navy);text-align:left;padding:10px;border-bottom:1px solid var(--line)}.evidence-table td,.compare td{padding:10px;border-bottom:1px solid var(--line);vertical-align:top}.evidence-table tr:last-child td,.compare tr:last-child td{border-bottom:0}.evidence-table td+td,.evidence-table th+th,.compare td+td,.compare th+th{border-left:1px solid var(--line)}
+.risk-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.risk{border:1px solid var(--line);border-radius:12px;padding:12px;background:var(--soft)}.risk b{display:flex;justify-content:space-between;gap:10px;color:var(--navy)}.sev-high{color:var(--red)}.sev-med{color:var(--amber)}
+.stack{display:grid;gap:6px}.layer{display:grid;grid-template-columns:170px 1fr;gap:12px;border-radius:10px;padding:10px 12px;background:#f6f9fa;border:1px solid var(--line)}.layer.active{background:var(--teal2);border-color:#b7ded9}.layer span{font-weight:800;color:var(--navy)}
+.experiment{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.exp-step{border:1px solid var(--line);border-radius:12px;padding:13px;background:var(--soft)}.exp-step small{display:block;color:var(--teal);text-transform:uppercase;font-weight:850;letter-spacing:.08em}.exp-step b{display:block;color:var(--navy);margin:.28rem 0}
+.scorecard{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}.score-pill{background:var(--soft);border:1px solid var(--line);border-radius:11px;padding:10px}.score-pill small{display:block;color:var(--muted);font-size:.69rem;text-transform:uppercase;font-weight:800}.score-pill b{color:var(--navy)}
+.readiness{display:inline-flex;border-radius:999px;padding:5px 10px;font-size:.75rem;font-weight:850;background:var(--green2);color:var(--green)}
+.matrix-wrap{overflow:auto}.matrix{min-width:760px;display:grid;grid-template-columns:135px repeat(4,1fr);grid-template-rows:42px repeat(3,104px);gap:6px}.matrix>div{border-radius:10px;border:1px solid var(--line);background:#f9fbfc;padding:8px}.matrix .axis{background:transparent;border:0;color:var(--muted);font-size:.73rem;font-weight:800;text-transform:uppercase;display:flex;align-items:center;justify-content:center}.matrix .cell{position:relative}.dot{display:inline-flex;padding:5px 8px;border-radius:999px;font-size:.72rem;font-weight:850;margin:3px}.d-formal{background:var(--purple2);color:var(--purple)}.d-gdp{background:var(--teal2);color:var(--teal)}.d-reflect{background:var(--blue2);color:var(--blue)}.d-past{background:var(--green2);color:var(--green)}.d-hetero{background:var(--amber2);color:var(--amber)}
+.selection-table td:nth-child(n+2),.selection-table th:nth-child(n+2){text-align:center}.total{font-weight:900;color:var(--teal)}
+.watch{position:relative}.watch .trigger{position:absolute;top:17px;right:17px;font-size:.68rem;font-weight:850;padding:5px 8px;border-radius:999px;background:var(--amber2);color:var(--amber)}
+.board{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.lane{border-radius:15px;border:1px solid var(--line);background:#f7fafb;padding:12px}.lane h3{font-size:.92rem;margin:0 0 10px;color:var(--navy)}.ticket{background:white;border:1px solid var(--line);border-radius:11px;padding:11px;margin:8px 0;box-shadow:0 3px 10px rgba(20,35,49,.04)}.ticket b{display:block;color:var(--navy);font-size:.86rem}.ticket p{font-size:.77rem;color:var(--muted);margin:4px 0}.ticket small{color:var(--teal);font-weight:780}
+.concept{border-left:4px solid var(--teal)}.concept h4{margin-bottom:5px}.concept p{font-size:.86rem;color:var(--muted)}
+.question{counter-increment:q;border-bottom:1px solid var(--line);padding:12px 0}.question:before{content:counter(q);display:inline-grid;place-items:center;width:25px;height:25px;border-radius:50%;background:var(--navy);color:white;font-size:.72rem;font-weight:850;margin-right:9px}.questions{counter-reset:q}
+.source-list{font-size:.84rem}.source-list li{margin:.42rem 0}.fine{font-size:.76rem;color:var(--muted)}
+details{border:1px solid var(--line);border-radius:13px;background:#fff;margin:10px 0}summary{cursor:pointer;padding:12px 14px;color:var(--navy);font-weight:820}details>div{padding:0 14px 14px}
+.footer-note{background:var(--navy);color:#e4eff2;border-radius:18px;padding:22px}.footer-note strong{color:white}
+@media(max-width:980px){.hero-grid,.grid-3,.grid-4,.grid-6,.board{grid-template-columns:repeat(2,minmax(0,1fr))}.meta{grid-template-columns:repeat(2,minmax(0,1fr))}.experiment,.scorecard{grid-template-columns:repeat(2,minmax(0,1fr))}.flow-3{grid-template-columns:1fr}.arrow{transform:rotate(90deg)}.layer{grid-template-columns:1fr}.grid-2{grid-template-columns:1fr}}
+@media(max-width:640px){.container{width:min(100% - 20px,1240px)}.hero{padding:38px 0 31px}.hero-grid,.grid-3,.grid-4,.grid-6,.board,.meta,.experiment,.scorecard,.risk-grid{grid-template-columns:1fr}.paper-head,.paper-body{padding:21px 17px}.section-head{display:block}.section-head p{margin-top:7px}.signal{min-height:auto}.window-box{margin-top:8px}.flow-node{padding:12px}.matrix{min-width:650px}.evidence-table,.compare{font-size:.76rem}.card{padding:17px}}
+@media print{body{background:white}.hero{background:white!important;color:black;padding:20px 0;border-bottom:2px solid #000}.hero .subtitle,.window-box small,.eyebrow{color:#333}.window-box,.chip{border-color:#999;background:white;color:#111}nav{display:none}.card,.paper{box-shadow:none;break-inside:avoid}.paper-head{background:white;color:black;border-bottom:2px solid #000}.paper-head p,.paper-head .rank{color:#333}details{break-inside:avoid}details>div{display:block!important}a{color:black;text-decoration:none}.container{width:100%}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">Daily research intelligence · visual executive edition</div>
+      <h1>AI Research Intelligence Brief — August 5, 2026</h1>
+      <p class="subtitle">The research signal is shifting from “more capable agents” toward <strong>managed agent change</strong>: attributable learning, controlled reuse of failures, and formal assurance over tools and operational data.</p>
+      <div class="chips" aria-label="Brief attributes">
+        <span class="chip">3 deep dives</span><span class="chip">2 watchlist papers</span><span class="chip">All new v1 submissions</span><span class="chip">Primary-source review</span><span class="chip">Preprints, not assumed peer reviewed</span>
+      </div>
+    </div>
+    <div class="window-box">
+      <strong>Research window: 36 hours</strong>
+      <div>August 3, 2026, 5:48 p.m. CDT → August 5, 2026, 5:48 a.m. CDT</div>
+      <small>UTC: August 3, 22:48 → August 5, 10:48. Window not expanded.</small>
+      <div class="chips"><span class="chip">New: 5</span><span class="chip">Revised: 0</span><span class="chip">Renewed attention: 0</span></div>
+    </div>
+  </div>
+</header>
+<nav aria-label="Page navigation"><div class="container">
+  <a href="#dashboard">Executive Dashboard</a><a href="#landscape">Research Landscape</a><a href="#formal">Paper 1</a><a href="#gdpevo">Paper 2</a><a href="#reflectrl">Paper 3</a><a href="#watchlist">Watchlist</a><a href="#synthesis">Cross-Paper Synthesis</a><a href="#priorities">Priorities</a><a href="#learning">Knowledge Absorption</a><a href="#sources">Sources</a>
+</div></nav>
+
+<main class="container">
+<section id="dashboard">
+  <div class="section-head"><div><div class="eyebrow" style="color:var(--teal)">Executive scan</div><h2>Executive Dashboard</h2></div><p>Start here for the strategic signal, evidence quality, implementation horizon, and recommended actions.</p></div>
+  <div class="grid grid-2">
+    <article class="card dashboard-summary accent-teal">
+      <h3>Executive synthesis</h3>
+      <p><span class="label fact">Paper Fact</span> Today’s strongest papers do not introduce a larger general-purpose model. They address the harder operational question: <strong>what happens after an agent is allowed to learn, remember, and act on persistent business state?</strong></p>
+      <p>Formal Verification of Agentic Systems over Operational Data supplies an exact, finite verification route for a restricted class of tool-using agents. GDPevo builds a benchmark intended to attribute held-out gains to learned enterprise rules. ReflectRL converts high-quality expert failures into post-training signal, then removes the failed trace from the inference interface.</p>
+      <p><span class="label analysis">Independent Analysis</span> Together, these are a meaningful methodological advance in the <em>control plane around agents</em>, not evidence of a general-intelligence discontinuity. The central enterprise implication is that persistent agents should be governed like changing production software: every memory, skill, prompt, model, or policy update needs provenance, offline evaluation, invariant checks, versioning, shadow release, and rollback.</p>
+      <p><span class="label inference">Enterprise Inference</span> The best near-term move is to build an internal agent-change evaluation harness before enabling automatic self-improvement in production.</p>
+    </article>
+    <article class="card accent-blue">
+      <h3>Research window and selection</h3>
+      <div class="metric"><span>Window</span><b>36 hours · no expansion</b></div>
+      <div class="metric"><span>Categories scanned</span><b>cs.AI, cs.LG, cs.CL, cs.CV, cs.RO, cs.MA, cs.SE, cs.DC, stat.ML + adjacent applied AI</b></div>
+      <div class="metric"><span>Top-paper mix</span><b>Theory · benchmark · post-training</b></div>
+      <div class="metric"><span>Primary-source depth</span><b>Methods, experiments, results, appendices, limitations, artifacts</b></div>
+      <div class="metric"><span>Peer-review status</span><b>Not independently verified; treated as arXiv preprints</b></div>
+      <div class="callout amber" style="margin-top:14px"><strong>Evidence caution:</strong> “Real business tasks” in GDPevo are synthetic, agent-generated enterprise workflows; ReflectRL is predominantly mathematical reasoning; the formal-verification example is intentionally small.</div>
+    </article>
+  </div>
+
+  <div class="grid grid-6" style="margin-top:16px">
+    <div class="card signal accent-purple"><div class="kicker">Strongest overall</div><div class="big">Formal Verification of Agentic Systems</div><p>Highest theoretical rigor and a reproducibility package; narrow deployment assumptions.</p></div>
+    <div class="card signal accent-teal"><div class="kicker">Most enterprise-ready</div><div class="big">GDPevo evaluation pattern</div><p>Immediately adaptable as an internal benchmark for memory, skills, and agent updates.</p></div>
+    <div class="card signal accent-blue"><div class="kicker">Best algorithmic prototype</div><div class="big">ReflectRL</div><p>Turns verified expert failures into training signal without changing inference inputs.</p></div>
+    <div class="card signal accent-amber"><div class="kicker">Highest uncertainty</div><div class="big">HeteroPanacea</div><p>Infrastructure result is simulation-based and code is promised only after acceptance.</p></div>
+    <div class="card signal accent-green"><div class="kicker">Best benchmark follow-on</div><div class="big">PAST-Bench</div><p>Separates headline gain from evidence that the intended save–retrieve–update pathway caused it.</p></div>
+    <div class="card signal accent-red"><div class="kicker">Critical control gap</div><div class="big">Continuous recertification</div><p>Formal guarantees for a fixed agent can become stale immediately after self-evolution.</p></div>
+  </div>
+</section>
+
+<section id="landscape">
+  <div class="section-head"><div><div class="eyebrow" style="color:var(--teal)">Portfolio view</div><h2>Research Landscape</h2></div><p>Evidence quality and enterprise readiness are related, but not interchangeable.</p></div>
+  <div class="grid grid-2">
+    <article class="card">
+      <h3>Evidence vs. enterprise readiness</h3>
+      <div class="matrix-wrap" aria-label="Qualitative matrix of evidence and readiness">
+        <div class="matrix">
+          <div class="axis"></div><div class="axis">Research only</div><div class="axis">Monitor 6–18m</div><div class="axis">Prototype 3–6m</div><div class="axis">Controlled experiment now</div>
+          <div class="axis">Strong</div><div class="cell"><span class="dot d-formal">Formal theory</span></div><div class="cell"><span class="dot d-formal">Formal workflow pilot</span></div><div class="cell"></div><div class="cell"></div>
+          <div class="axis">Moderate</div><div class="cell"></div><div class="cell"><span class="dot d-hetero">HeteroPanacea</span></div><div class="cell"><span class="dot d-reflect">ReflectRL</span><span class="dot d-past">PAST-Bench</span></div><div class="cell"><span class="dot d-gdp">GDPevo method</span></div>
+          <div class="axis">Preliminary</div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+        </div>
+      </div>
+      <p class="caption"><span class="label analysis">Independent Analysis</span> Placement is qualitative. “Strong” for the formal paper refers primarily to theorem-level evidence under stated assumptions, not broad production validation.</p>
+    </article>
+    <article class="card">
+      <h3>Research ecosystem map</h3>
+      <div class="visual">
+        <svg viewBox="0 0 720 390" role="img" aria-label="Research ecosystem connecting experience capture, learning, persistent state, verification, evaluation, and infrastructure">
+          <defs><marker id="arrA" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#087f8c"/></marker></defs>
+          <rect x="265" y="145" width="190" height="82" rx="18" fill="#0b1f33"/><text x="360" y="177" text-anchor="middle" fill="#fff" font-size="18" font-weight="800">Managed Agent Change</text><text x="360" y="201" text-anchor="middle" fill="#cfe5ea" font-size="12">version · evidence · rollback</text>
+          <rect x="20" y="30" width="190" height="72" rx="14" fill="#e8f1fb" stroke="#2b6cb0"/><text x="115" y="59" text-anchor="middle" fill="#153a55" font-weight="800">Experience & Failures</text><text x="115" y="80" text-anchor="middle" fill="#5c6b78" font-size="12">ReflectRL · PAST-Bench</text>
+          <rect x="510" y="30" width="190" height="72" rx="14" fill="#dff4f2" stroke="#087f8c"/><text x="605" y="59" text-anchor="middle" fill="#153a55" font-weight="800">Attribution & Evaluation</text><text x="605" y="80" text-anchor="middle" fill="#5c6b78" font-size="12">GDPevo · PAST-Bench</text>
+          <rect x="20" y="286" width="190" height="72" rx="14" fill="#f0eafd" stroke="#6b46c1"/><text x="115" y="315" text-anchor="middle" fill="#153a55" font-weight="800">Formal Assurance</text><text x="115" y="336" text-anchor="middle" fill="#5c6b78" font-size="12">STEAD · FO-CTL · wrapper</text>
+          <rect x="510" y="286" width="190" height="72" rx="14" fill="#fff5dc" stroke="#b7791f"/><text x="605" y="315" text-anchor="middle" fill="#153a55" font-weight="800">Serving Infrastructure</text><text x="605" y="336" text-anchor="middle" fill="#5c6b78" font-size="12">HeteroPanacea</text>
+          <line x1="205" y1="91" x2="286" y2="151" stroke="#087f8c" stroke-width="3" marker-end="url(#arrA)"/><line x1="515" y1="91" x2="434" y2="151" stroke="#087f8c" stroke-width="3" marker-end="url(#arrA)"/>
+          <line x1="205" y1="304" x2="286" y2="220" stroke="#087f8c" stroke-width="3" marker-end="url(#arrA)"/><line x1="515" y1="304" x2="434" y2="220" stroke="#087f8c" stroke-width="3" marker-end="url(#arrA)"/>
+          <path d="M115 102 C115 180 170 190 264 190" fill="none" stroke="#2b6cb0" stroke-dasharray="5 5"/><path d="M605 102 C605 180 550 190 456 190" fill="none" stroke="#087f8c" stroke-dasharray="5 5"/>
+        </svg>
+      </div>
+      <p class="caption"><span class="label inference">Enterprise Inference</span> The common architecture is a change-control plane spanning data collection, learning, state persistence, evaluation, assurance, and serving.</p>
+    </article>
+  </div>
+
+  <article class="card" style="margin-top:16px">
+    <h3>Analyst selection score</h3>
+    <p class="fine">Weighted judgment: novelty 25%, rigor 25%, academic significance 20%, enterprise relevance 20%, reproducibility 10%. Scores are analyst assessments, not paper-reported metrics.</p>
+    <div style="overflow:auto"><table class="compare selection-table">
+      <thead><tr><th>Paper</th><th>Novelty /25</th><th>Rigor /25</th><th>Academic /20</th><th>Enterprise /20</th><th>Repro /10</th><th>Total /100</th><th>Placement</th></tr></thead>
+      <tbody>
+        <tr><td>Formal Verification of Agentic Systems</td><td>24</td><td>24</td><td>19</td><td>15</td><td>8</td><td class="total">90</td><td>Deep dive</td></tr>
+        <tr><td>GDPevo</td><td>21</td><td>20</td><td>17</td><td>20</td><td>9</td><td class="total">87</td><td>Deep dive</td></tr>
+        <tr><td>ReflectRL</td><td>23</td><td>21</td><td>18</td><td>16</td><td>6</td><td class="total">84</td><td>Deep dive</td></tr>
+        <tr><td>PAST-Bench</td><td>20</td><td>19</td><td>17</td><td>18</td><td>8</td><td class="total">82</td><td>Watchlist</td></tr>
+        <tr><td>HeteroPanacea</td><td>21</td><td>18</td><td>17</td><td>18</td><td>3</td><td class="total">77</td><td>Watchlist</td></tr>
+      </tbody>
+    </table></div>
+  </article>
+</section>
+
+<section id="formal" class="card paper">
+  <header class="paper-head"><div class="rank">Paper 1 · highest overall score · theoretical / systems</div><h2>Formal Verification of Agentic Systems over Operational Data</h2><p>Alejandro J. Mercado · Alessio Lomuscio</p></header>
+  <div class="paper-body">
+    <div class="meta">
+      <div class="meta-item"><small>arXiv</small><b>2608.03609 · cs.AI</b></div><div class="meta-item"><small>Submitted</small><b>Aug 4, 2026 · 8:01:30 a.m. CDT</b></div><div class="meta-item"><small>Status</small><b>New v1 · no later revision</b></div><div class="meta-item"><small>Readiness</small><b>Monitor for 6–18 months</b></div>
+    </div>
+    <p><strong>Links:</strong> <a href="https://arxiv.org/abs/2608.03609">arXiv abstract</a> · <a href="https://arxiv.org/pdf/2608.03609">PDF</a> · <a href="https://github.com/alejandro-mercado/stead-reproducibility">official reproducibility package</a>. Peer-review status was not independently verified.</p>
+    <div class="thesis"><span class="label analysis">One-sentence thesis</span> Exact verification of a fixed LLM tool agent over unbounded relational data becomes possible under bounded-state and identifier-renaming symmetry assumptions, with a canonical wrapper enforcing the symmetry needed for finite model checking.</div>
+
+    <h3 class="subhead">Why this paper matters</h3>
+    <div class="flow-3">
+      <div class="flow-node"><b>Current state</b>Guardrails usually constrain prompts, tool schemas, or single calls.</div><div class="arrow">→</div><div class="flow-node"><b>Unresolved limitation</b>They do not prove behavior of the combined agent, tools, database, and branching workflow.</div><div class="arrow">→</div><div class="flow-node"><b>Proposed change</b>Model the complete deployment as a state transition system and verify temporal business requirements.</div>
+    </div>
+
+    <div class="grid grid-2" style="margin-top:16px">
+      <div>
+        <h3 class="subhead">Problem and contributions</h3>
+        <p><span class="label fact">Paper Fact</span> The authors formalize a single-LLM, tool-orchestrated deployment over relational operational data as a <strong>Stateful Tool-Enabled Agentic Deployment (STEAD)</strong>. Business rules are expressed in First-Order Computation Tree Logic (FO-CTL), which can represent safety and progress over changing objects and branching outcomes.</p>
+        <ul class="compact">
+          <li><strong>Theoretical:</strong> general STEAD verification is undecidable.</li>
+          <li><strong>Algorithmic:</strong> under boundedness and symmetry conditions, exact verification transfers to a finite domain.</li>
+          <li><strong>Complexity:</strong> the finite restriction is PSPACE-complete in combined complexity.</li>
+          <li><strong>Architectural:</strong> a canonical wrapper makes arbitrary base agents invariant to consistent renaming of opaque identifiers.</li>
+          <li><strong>Empirical illustration:</strong> a refund workflow is checked for authorization safety and eventual progress.</li>
+        </ul>
+      </div>
+      <div class="visual">
+        <div class="visual-title">Technical mechanism</div>
+        <svg viewBox="0 0 720 420" role="img" aria-label="Formal verification mechanism from operational state through canonical wrapper, LLM tool agent, finite restriction and FO-CTL verifier">
+          <defs><marker id="arrF" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#087f8c"/></marker></defs>
+          <rect x="30" y="35" width="180" height="74" rx="14" fill="#e8f1fb" stroke="#2b6cb0"/><text x="120" y="64" text-anchor="middle" font-weight="800" fill="#153a55">Operational state</text><text x="120" y="86" text-anchor="middle" font-size="12" fill="#5c6b78">relational data + offered tools</text>
+          <rect x="270" y="35" width="180" height="74" rx="14" fill="#f0eafd" stroke="#6b46c1"/><text x="360" y="64" text-anchor="middle" font-weight="800" fill="#153a55">Canonical wrapper</text><text x="360" y="86" text-anchor="middle" font-size="12" fill="#5c6b78">normalize opaque identifiers</text>
+          <rect x="510" y="35" width="180" height="74" rx="14" fill="#dff4f2" stroke="#087f8c"/><text x="600" y="64" text-anchor="middle" font-weight="800" fill="#153a55">LLM policy</text><text x="600" y="86" text-anchor="middle" font-size="12" fill="#5c6b78">choose structured tool call</text>
+          <line x1="210" y1="72" x2="265" y2="72" stroke="#087f8c" stroke-width="3" marker-end="url(#arrF)"/><line x1="450" y1="72" x2="505" y2="72" stroke="#087f8c" stroke-width="3" marker-end="url(#arrF)"/>
+          <path d="M600 109 C600 150 470 152 420 152" fill="none" stroke="#087f8c" stroke-width="3" marker-end="url(#arrF)"/><text x="525" y="141" text-anchor="middle" font-size="11" fill="#5c6b78">map action back</text>
+          <rect x="180" y="165" width="360" height="78" rx="14" fill="#fff5dc" stroke="#b7791f"/><text x="360" y="194" text-anchor="middle" font-weight="800" fill="#153a55">Tool semantics update the database</text><text x="360" y="217" text-anchor="middle" font-size="12" fill="#5c6b78">branching transition system over persistent state</text>
+          <line x1="360" y1="243" x2="360" y2="283" stroke="#087f8c" stroke-width="3" marker-end="url(#arrF)"/>
+          <rect x="45" y="293" width="270" height="84" rx="14" fill="#f7fafb" stroke="#5c6b78"/><text x="180" y="323" text-anchor="middle" font-weight="800" fill="#153a55">Finite-domain restriction</text><text x="180" y="346" text-anchor="middle" font-size="12" fill="#5c6b78">exact only if bounds + equivariance hold</text>
+          <rect x="405" y="293" width="270" height="84" rx="14" fill="#e8f6ef" stroke="#227a50"/><text x="540" y="323" text-anchor="middle" font-weight="800" fill="#153a55">FO-CTL model checker</text><text x="540" y="346" text-anchor="middle" font-size="12" fill="#5c6b78">certify property or return counterexample</text>
+          <line x1="315" y1="335" x2="400" y2="335" stroke="#087f8c" stroke-width="3" marker-end="url(#arrF)"/>
+        </svg>
+        <div class="caption">Original explanatory diagram based on the paper’s formal architecture; not an official paper figure. Source: <a href="https://arxiv.org/abs/2608.03609">arXiv:2608.03609</a>.</div>
+      </div>
+    </div>
+
+    <h3 class="subhead">Technical approach</h3>
+    <p>The crucial condition is <strong>equivariance</strong>: if opaque identifiers in a state are consistently renamed, the selected structured tool call must change only by the corresponding renaming. This is stronger than ordinary prompt robustness because it quantifies over all isomorphic states and requires exact action correspondence. The paper shows a Qwen3-1.7B example in which changing only a username changes which records the agent attempts to cancel, demonstrating that an LLM cannot simply be assumed equivariant.</p>
+    <p>The canonical wrapper converts isomorphic states into the same normalized representation, asks the base agent to act on that form, and maps the result back to original identifiers. Under boundedness, tool/interface symmetry, and tool-uniform semantics, the infinite deployment can be checked through a finite restriction. The cost is nontrivial: canonical representation is graph-isomorphism-hard, and the wrapper may be set-valued unless action-rigidity makes the selected action unique.</p>
+
+    <h3 class="subhead">Results and evidence</h3>
+    <div class="grid grid-2">
+      <div class="visual">
+        <div class="visual-title">Evidence ladder</div>
+        <svg viewBox="0 0 720 330" role="img" aria-label="Evidence ladder from undecidability theorem to finite verification and case study">
+          <rect x="40" y="240" width="190" height="58" rx="12" fill="#fdebea" stroke="#b42318"/><text x="135" y="265" text-anchor="middle" font-weight="800" fill="#8f1d15">General problem</text><text x="135" y="283" text-anchor="middle" font-size="12" fill="#5c6b78">undecidable</text>
+          <rect x="265" y="160" width="190" height="80" rx="12" fill="#f0eafd" stroke="#6b46c1"/><text x="360" y="189" text-anchor="middle" font-weight="800" fill="#4d3290">Restricted system</text><text x="360" y="210" text-anchor="middle" font-size="12" fill="#5c6b78">exact finite transfer</text><text x="360" y="226" text-anchor="middle" font-size="12" fill="#5c6b78">PSPACE-complete</text>
+          <rect x="490" y="55" width="190" height="105" rx="12" fill="#e8f6ef" stroke="#227a50"/><text x="585" y="83" text-anchor="middle" font-weight="800" fill="#17643f">Worked refund case</text><text x="585" y="105" text-anchor="middle" font-size="12" fill="#5c6b78">55 states · 72 transitions</text><text x="585" y="123" text-anchor="middle" font-size="12" fill="#5c6b78">4 canonical LLM queries</text><text x="585" y="143" text-anchor="middle" font-size="12" fill="#5c6b78">safety refuted · progress certified</text>
+          <path d="M230 268 L265 220" stroke="#087f8c" stroke-width="4"/><path d="M455 183 L490 135" stroke="#087f8c" stroke-width="4"/>
+        </svg>
+        <div class="caption">The example is evidence of correctness for a small modeled workflow—not a scalability benchmark.</div>
+      </div>
+      <div>
+        <table class="evidence-table"><thead><tr><th>Evidence</th><th>Verified finding</th><th>Interpretation</th></tr></thead><tbody>
+          <tr><td>Theorem</td><td>General FO-CTL verification is undecidable; the finite restricted problem is PSPACE-complete.</td><td>Strong under explicit assumptions.</td></tr>
+          <tr><td>Counterexample</td><td>Qwen3-1.7B violates identifier-renaming symmetry in a constrained airline decision.</td><td>Shows the assumption cannot be taken for granted.</td></tr>
+          <tr><td>Refund workflow</td><td>55 states, 72 transitions, four canonical queries; authorization refuted, progress certified.</td><td>Useful proof-of-concept, very small empirical scope.</td></tr>
+          <tr><td>Approval-aware control</td><td>73 states, 90 edges, five canonical queries; both properties certified.</td><td>Demonstrates a policy correction can eliminate the counterexample in the model.</td></tr>
+          <tr><td>Artifact</td><td>MIT-licensed package replays preserved outputs and recomputes deterministic verification.</td><td>Good claim-level reproducibility; not a deployable model checker.</td></tr>
+        </tbody></table>
+      </div>
+    </div>
+
+    <h3 class="subhead">Limitations and critical assessment</h3>
+    <div class="grid grid-2">
+      <div class="callout amber"><strong>Authors’ boundary:</strong> the framework studies one LLM, one orchestrator, relational operational data, and fixed tool semantics. The canonical construction has graph-isomorphism-hard complexity.</div>
+      <div class="callout red"><strong>Independent assessment:</strong> a verified model can still misrepresent the real workflow. Incorrect specifications, incomplete tool semantics, external side effects, changing policies, or unmodeled services can create false assurance.</div>
+    </div>
+    <div class="risk-grid" style="margin-top:12px">
+      <div class="risk"><b>State explosion <span class="sev-high">High</span></b><p>Large schemas, bounds, branches, and multiple actors can make explicit exploration impractical.</p></div>
+      <div class="risk"><b>Fixed-policy assumption <span class="sev-high">High</span></b><p>Self-evolution changes the policy or persistent context and can invalidate an earlier certificate.</p></div>
+      <div class="risk"><b>Specification error <span class="sev-high">High</span></b><p>The checker proves the written property over the model, not the organization’s unstated intent.</p></div>
+      <div class="risk"><b>Identifier canonicalization <span class="sev-med">Medium</span></b><p>Canonicalization may be computationally expensive or alter non-equivariant behavior.</p></div>
+    </div>
+
+    <h3 class="subhead">Enterprise implementation lens</h3>
+    <p><span class="label inference">Enterprise Inference</span> The most realistic target is not arbitrary autonomous work. It is a bounded, high-value workflow such as refunds, approvals, claims, entitlement changes, or controlled case management in which the agent sees a task-local relational view and acts through enumerated tools.</p>
+    <div class="stack">
+      <div class="layer"><span>Experience layer</span><div>Human or application request; no direct relevance to the theorem.</div></div>
+      <div class="layer active"><span>Agent / orchestration</span><div>Fixed policy, constrained structured actions, canonical identifier wrapper.</div></div>
+      <div class="layer active"><span>Data / knowledge</span><div>Bounded relational case view with explicit object identities and tool semantics.</div></div>
+      <div class="layer active"><span>Evaluation / assurance</span><div>FO-CTL specifications, finite restriction, model checker, counterexample trace.</div></div>
+      <div class="layer"><span>Security / governance</span><div>Specification approval, separation of duties, certificate versioning, recertification after change.</div></div>
+      <div class="layer"><span>Infrastructure</span><div>Shadow environment first; no production side effects during state exploration.</div></div>
+    </div>
+    <p><strong>Readiness: Monitor for 6–18 months.</strong> The theory and reproduction package are credible, but production-scale tooling, compositional abstraction, stochastic policies, multi-agent behavior, and evolving memory remain unresolved. A narrow shadow pilot is reasonable now.</p>
+
+    <h3 class="subhead">Minimum viable experiment</h3>
+    <div class="experiment">
+      <div class="exp-step"><small>Build</small><b>One bounded workflow</b><p>Model a refund or approval case with enumerated tools and a task-local database view.</p></div>
+      <div class="exp-step"><small>Measure</small><b>Two safety + one liveness property</b><p>Authorization, amount/policy compliance, and eventual completion.</p></div>
+      <div class="exp-step"><small>Compare</small><b>Base vs canonical wrapper</b><p>Track violations, unique states, canonical queries, runtime, and behavioral changes.</p></div>
+      <div class="exp-step"><small>Stop / proceed</small><b>Explicit limits</b><p>Stop on state explosion, incomplete semantics, or wrapper-induced ambiguity; proceed only in shadow mode.</p></div>
+    </div>
+    <p><strong>Effort:</strong> Medium. <strong>Failure criterion:</strong> the workflow cannot be faithfully bounded or modeled without omitting material side effects.</p>
+
+    <h3 class="subhead">Academic research lens</h3>
+    <p>The paper connects data-aware process verification, finite abstraction, model checking, and LLM tool use. Its major contribution is not a new neural model but a formal bridge from an infinite operational domain to an exact finite check under symmetry. A valuable replication would test multiple models and workflow families while measuring state growth and canonicalization cost.</p>
+    <p><strong>Defensible follow-on question:</strong> Can compositional abstraction verify evolving, probabilistic, multi-agent systems while preserving useful guarantees after memory or policy updates?</p>
+
+    <div class="scorecard">
+      <div class="score-pill"><small>Novelty</small><b>High</b></div><div class="score-pill"><small>Evidence</small><b>Strong under assumptions</b></div><div class="score-pill"><small>Reproducibility</small><b>High for claims</b></div><div class="score-pill"><small>Enterprise relevance</small><b>Medium–High</b></div><div class="score-pill"><small>Academic significance</small><b>High</b></div><div class="score-pill"><small>Horizon</small><b>6–18 months</b></div><div class="score-pill"><small>Confidence</small><b>High on theory; medium on scale</b></div><div class="score-pill"><small>Analyst score</small><b>90 / 100</b></div>
+    </div>
+    <p class="caption"><strong>Overall:</strong> the most rigorous paper in today’s set, but its exact guarantees depend on assumptions that many unconstrained enterprise agents do not satisfy.</p>
+  </div>
+</section>
+
+<section id="gdpevo" class="card paper">
+  <header class="paper-head" style="background:linear-gradient(135deg,#073b42,#087f8c)"><div class="rank">Paper 2 · most enterprise-ready · benchmark / agent evaluation</div><h2>GDPevo: Evaluating Agent Self-Evolution on Real Business Tasks</h2><p>Leijun Zhou, Zhihao Liu, Xiang Qu, Chenxu Liu, Yifei Liu, Yanke Yu, Jingzhe Xu, Xuejun Wu, Buyue Qian, Xi Chen, Yaowei Zheng, Junhao Hu</p></header>
+  <div class="paper-body">
+    <div class="meta">
+      <div class="meta-item"><small>arXiv</small><b>2608.03764 · cs.AI</b></div><div class="meta-item"><small>Submitted</small><b>Aug 4, 2026 · 9:51:56 a.m. CDT</b></div><div class="meta-item"><small>Status</small><b>New v1 · no later revision</b></div><div class="meta-item"><small>Readiness</small><b>Controlled experiment now</b></div>
+    </div>
+    <p><strong>Links:</strong> <a href="https://arxiv.org/abs/2608.03764">arXiv abstract</a> · <a href="https://arxiv.org/pdf/2608.03764">PDF</a> · <a href="https://github.com/Prism-Shadow/GDPevo">official benchmark repository</a> · <a href="https://prism-shadow.github.io/GDPevo/">project page</a>. Peer-review status was not independently verified.</p>
+    <div class="thesis"><span class="label analysis">One-sentence thesis</span> Agent self-evolution can be evaluated more attributably by decomposing hidden enterprise rules across training tasks and recombining them in held-out tasks that require compositional reuse of the learned rules.</div>
+
+    <h3 class="subhead">Why this paper matters</h3>
+    <div class="flow-3"><div class="flow-node"><b>Current state</b>Agent benchmarks often compare unrelated train and test tasks or repeated tasks.</div><div class="arrow">→</div><div class="flow-node"><b>Unresolved limitation</b>A post-training gain may reflect memorization, unrelated variation, or benchmark contamination.</div><div class="arrow">→</div><div class="flow-node"><b>Proposed change</b>Design hidden-rule transfer into the benchmark from the beginning and grade deterministically.</div></div>
+
+    <div class="grid grid-2" style="margin-top:16px">
+      <div>
+        <h3 class="subhead">Problem and contributions</h3>
+        <p><span class="label fact">Paper Fact</span> GDPevo contains 240 tasks in 24 groups across CRM, ERP, finance, healthcare, legal, and data-centric work. Each group shares one environment and has five training plus five held-out test tasks.</p>
+        <ul class="compact">
+          <li><strong>Benchmark:</strong> enterprise-style, persistent-state tasks with deterministic graders.</li>
+          <li><strong>Method:</strong> “rule hybridization” distributes atomic hidden rules across train tasks and recombines them at test.</li>
+          <li><strong>Systems:</strong> an automated pipeline discovers scenarios, generates task groups, calibrates difficulty, and conducts multi-agent review.</li>
+          <li><strong>Empirical:</strong> four model–harness agents are evaluated under base, few-shot, self, and three-round reflection supervision.</li>
+          <li><strong>Operational:</strong> tokens, turns, cost, per-rule failures, and transfer patterns are preserved alongside accuracy.</li>
+        </ul>
+      </div>
+      <div class="visual">
+        <div class="visual-title">Rule-hybridization mechanism</div>
+        <svg viewBox="0 0 760 420" role="img" aria-label="GDPevo rule hybridization across training and test tasks">
+          <defs><marker id="arrG" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#087f8c"/></marker></defs>
+          <rect x="25" y="30" width="180" height="74" rx="14" fill="#e8f1fb" stroke="#2b6cb0"/><text x="115" y="58" text-anchor="middle" font-weight="800" fill="#153a55">Enterprise scenario</text><text x="115" y="80" text-anchor="middle" font-size="12" fill="#5c6b78">workflow + hidden policy</text>
+          <line x1="205" y1="67" x2="255" y2="67" stroke="#087f8c" stroke-width="3" marker-end="url(#arrG)"/>
+          <rect x="260" y="20" width="235" height="95" rx="14" fill="#fff5dc" stroke="#b7791f"/><text x="377" y="48" text-anchor="middle" font-weight="800" fill="#153a55">Decompose into atomic rules</text><text x="377" y="70" text-anchor="middle" font-size="12" fill="#5c6b78">eligibility · priority · exception</text><text x="377" y="89" text-anchor="middle" font-size="12" fill="#5c6b78">calculation · escalation</text>
+          <line x1="495" y1="67" x2="545" y2="67" stroke="#087f8c" stroke-width="3" marker-end="url(#arrG)"/>
+          <rect x="550" y="30" width="180" height="74" rx="14" fill="#dff4f2" stroke="#087f8c"/><text x="640" y="58" text-anchor="middle" font-weight="800" fill="#153a55">Task–rule matrix</text><text x="640" y="80" text-anchor="middle" font-size="12" fill="#5c6b78">fixes exposure and recombination</text>
+          <text x="190" y="160" font-weight="800" fill="#153a55">5 training tasks</text><text x="535" y="160" font-weight="800" fill="#153a55">5 held-out test tasks</text>
+          <g fill="#e8f1fb" stroke="#2b6cb0"><rect x="45" y="180" width="110" height="60" rx="10"/><rect x="165" y="180" width="110" height="60" rx="10"/><rect x="285" y="180" width="110" height="60" rx="10"/></g>
+          <text x="100" y="205" text-anchor="middle" font-weight="700">T1: A+B</text><text x="220" y="205" text-anchor="middle" font-weight="700">T2: C+D</text><text x="340" y="205" text-anchor="middle" font-weight="700">T3: A+E</text><text x="220" y="228" text-anchor="middle" font-size="11" fill="#5c6b78">+ two more tasks</text>
+          <g fill="#dff4f2" stroke="#087f8c"><rect x="430" y="180" width="110" height="60" rx="10"/><rect x="550" y="180" width="110" height="60" rx="10"/><rect x="670" y="180" width="65" height="60" rx="10"/></g>
+          <text x="485" y="205" text-anchor="middle" font-weight="700">X1: A+D</text><text x="605" y="205" text-anchor="middle" font-weight="700">X2: B+E</text><text x="702" y="205" text-anchor="middle" font-weight="700">…</text><text x="605" y="228" text-anchor="middle" font-size="11" fill="#5c6b78">new compositions</text>
+          <path d="M220 245 C220 295 320 295 365 305" fill="none" stroke="#087f8c" stroke-width="3" marker-end="url(#arrG)"/>
+          <rect x="265" y="305" width="230" height="78" rx="14" fill="#f0eafd" stroke="#6b46c1"/><text x="380" y="333" text-anchor="middle" font-weight="800" fill="#153a55">Persistent agent update</text><text x="380" y="355" text-anchor="middle" font-size="12" fill="#5c6b78">skill · memory · prompt · weights</text>
+          <path d="M495 344 C600 344 620 280 620 245" fill="none" stroke="#087f8c" stroke-width="3" marker-end="url(#arrG)"/>
+        </svg>
+        <div class="caption">Original explanatory diagram based on GDPevo’s method; not an official paper figure. Source: <a href="https://arxiv.org/abs/2608.03764">arXiv:2608.03764</a>.</div>
+      </div>
+    </div>
+
+    <h3 class="subhead">Technical approach</h3>
+    <p>The automated pipeline starts from public work benchmarks, proposes enterprise scenarios, generates one shared environment and ten related tasks, then calibrates each group. Acceptance requires base performance around 40–60%, a few-shot lift around 0.1–0.3, and evolved performance below 0.8. Six reviewer agents inspect each candidate, with at least five accept votes required. Experiments run in isolated Docker containers with allowlisted files and separate attempt directories.</p>
+    <p>Each deterministic rubric point is translated by an LLM into a code-based test. Every held-out task is run three times, and the paper reports mean accuracy, standard deviation across task groups, tokens, turns, and cost. Four supervision modes update a textual skill library: no evolution, few-shot gold demonstrations, unsupervised self-exploration, and three rounds of grade-based reflection.</p>
+
+    <h3 class="subhead">Results and evidence</h3>
+    <div class="grid grid-2">
+      <div class="visual">
+        <div class="visual-title">Held-out accuracy: base vs few-shot (%)</div>
+        <svg viewBox="0 0 760 360" role="img" aria-label="GDPevo base and fewshot accuracy for four agents on a zero to one hundred percent scale">
+          <g stroke="#d8e2e8"><line x1="170" y1="40" x2="170" y2="320"/><line x1="290" y1="40" x2="290" y2="320"/><line x1="410" y1="40" x2="410" y2="320"/><line x1="530" y1="40" x2="530" y2="320"/><line x1="650" y1="40" x2="650" y2="320"/></g>
+          <g fill="#5c6b78" font-size="11"><text x="170" y="338" text-anchor="middle">0</text><text x="290" y="338" text-anchor="middle">25</text><text x="410" y="338" text-anchor="middle">50</text><text x="530" y="338" text-anchor="middle">75</text><text x="650" y="338" text-anchor="middle">100</text></g>
+          <g fill="#153a55" font-size="12" font-weight="700"><text x="10" y="84">GPT-5.5 / Codex</text><text x="10" y="149">Opus-4.8 / Claude</text><text x="10" y="214">GLM-5.2 / Claude</text><text x="10" y="279">DS-V4 / Claude</text></g>
+          <g fill="#9fb0bd"><rect x="170" y="60" width="237" height="18" rx="5"/><rect x="170" y="125" width="243" height="18" rx="5"/><rect x="170" y="190" width="221" height="18" rx="5"/><rect x="170" y="255" width="209" height="18" rx="5"/></g>
+          <g fill="#087f8c"><rect x="170" y="82" width="310" height="18" rx="5"/><rect x="170" y="147" width="322" height="18" rx="5"/><rect x="170" y="212" width="288" height="18" rx="5"/><rect x="170" y="277" width="234" height="18" rx="5"/></g>
+          <g fill="#142331" font-size="11"><text x="413" y="73">49.37</text><text x="486" y="95">64.51</text><text x="419" y="138">50.63</text><text x="498" y="160">67.07</text><text x="397" y="203">46.12</text><text x="464" y="225">60.09</text><text x="385" y="268">43.58</text><text x="410" y="290">48.79</text></g>
+          <rect x="550" y="10" width="12" height="12" fill="#9fb0bd"/><text x="568" y="21" font-size="11">Base</text><rect x="615" y="10" width="12" height="12" fill="#087f8c"/><text x="633" y="21" font-size="11">Few-shot</text>
+        </svg>
+        <div class="caption">Zero-based scale. Exact values from paper v1 Table 3. The live repository now displays later experiment values; this chart intentionally uses the archived paper snapshot.</div>
+      </div>
+      <div>
+        <table class="evidence-table"><thead><tr><th>Finding</th><th>Exact paper result</th><th>Assessment</th></tr></thead><tbody>
+          <tr><td>Maximum lift</td><td>Opus-4.8: 50.63% → 67.07%, +16.44 percentage points.</td><td>Practically meaningful within benchmark.</td></tr>
+          <tr><td>Efficiency</td><td>GPT-5.5 few-shot: +15.14 points and 20.88% lower test-time cost; amortized $1.296 vs $1.294 base.</td><td>Test-time gain does not eliminate skill-creation cost.</td></tr>
+          <tr><td>Transfer</td><td>Few-shot can overfit source groups; reflect transfers more robustly.</td><td>Supports retaining transfer diagnostics, not only aggregate accuracy.</td></tr>
+          <tr><td>Ceiling</td><td>Fully informed human–Codex condition: 91.6% across 360 attempts.</td><td>Not a literal oracle or independent human-expert ceiling.</td></tr>
+          <tr><td>Uncertainty</td><td>Three attempts per task; error bars are one standard deviation across groups.</td><td>No formal statistical significance tests reported.</td></tr>
+        </tbody></table>
+      </div>
+    </div>
+
+    <h3 class="subhead">Limitations and critical assessment</h3>
+    <div class="grid grid-2">
+      <div class="callout amber"><strong>Authors’ interpretation:</strong> rule hybridization makes transfer more attributable, automated regeneration offers a practical response to contamination, and reflection transfers more robustly than gold-example supervision.</div>
+      <div class="callout red"><strong>Independent assessment:</strong> the calibration process explicitly selects groups where few-shot improves performance by 0.1–0.3. That creates a risk that the benchmark construction partially bakes in the expected direction of the main result.</div>
+    </div>
+    <div class="risk-grid" style="margin-top:12px">
+      <div class="risk"><b>Synthetic realism <span class="sev-high">High</span></b><p>Tasks simulate enterprise workflows; they do not establish performance on live, messy, regulated business processes.</p></div>
+      <div class="risk"><b>Correlated agent bias <span class="sev-high">High</span></b><p>Generation, calibration, and review use separate instances of the same Codex/GPT-5.5 configuration.</p></div>
+      <div class="risk"><b>Selection effect <span class="sev-high">High</span></b><p>Acceptance requires a pre-specified evolution gain, favoring tasks that demonstrate learnability.</p></div>
+      <div class="risk"><b>Moving artifact <span class="sev-med">Medium</span></b><p>The repository’s current leaderboard differs from paper v1; version pinning is essential.</p></div>
+    </div>
+
+    <h3 class="subhead">Enterprise implementation lens</h3>
+    <p><span class="label inference">Enterprise Inference</span> The immediate value is the <strong>evaluation design</strong>, not autonomous production self-modification. A company can create hidden business-rule families from policy documents, seed a small number of training cases, recombine rules into held-out scenarios, and compare memory, skill, reflection, and fine-tuning strategies under deterministic tests.</p>
+    <div class="stack">
+      <div class="layer"><span>Experience layer</span><div>Versioned training episodes and supervisory evidence.</div></div>
+      <div class="layer active"><span>Agent state</span><div>Skill library, memory, prompt, harness code, or model checkpoint under test.</div></div>
+      <div class="layer active"><span>Evaluation</span><div>Rule-hybridized held-out tasks, deterministic graders, cost and transfer diagnostics.</div></div>
+      <div class="layer"><span>Governance</span><div>Dataset provenance, benchmark version pinning, segregation of answers, approval of agent updates.</div></div>
+      <div class="layer"><span>Release</span><div>Shadow evaluation → human review → canary → rollback; no automatic production promotion.</div></div>
+    </div>
+    <p><strong>Readiness: Ready for controlled enterprise experimentation.</strong> The benchmark repository is public and the design is transferable. Production readiness of the evolved agents themselves is not established.</p>
+
+    <h3 class="subhead">Minimum viable experiment</h3>
+    <div class="experiment">
+      <div class="exp-step"><small>Build</small><b>6–10 workflow families</b><p>Create five training and five recombined held-out cases per family from internal policy rules.</p></div>
+      <div class="exp-step"><small>Measure</small><b>Accuracy + transfer + cost</b><p>Deterministic rule compliance, negative transfer, latency, tokens, cost, and update size.</p></div>
+      <div class="exp-step"><small>Compare</small><b>Four state strategies</b><p>No memory, retrieval memory, generated skills, and structured reflection.</p></div>
+      <div class="exp-step"><small>Stop / proceed</small><b>Shadow-only gate</b><p>Stop on leakage, unstable graders, negative transfer, or failure to reproduce across three seeds.</p></div>
+    </div>
+    <p><strong>Effort:</strong> Medium. <strong>Success:</strong> statistically and operationally stable held-out improvement without cross-domain regression or material cost increase.</p>
+
+    <h3 class="subhead">Academic research lens</h3>
+    <p>GDPevo extends experiential-learning and evolution-native benchmarks by constructing transfer around hidden atomic rules rather than discovering related tasks after the fact. The strongest replication would use independently authored, human-validated enterprise workflows and a benchmark-generation model different from the evaluated agents.</p>
+    <p><strong>Defensible follow-on question:</strong> How can an automatically generated evolution benchmark preserve attributable transfer without selecting tasks based on the expected gain of a particular supervision method?</p>
+
+    <div class="scorecard">
+      <div class="score-pill"><small>Novelty</small><b>High</b></div><div class="score-pill"><small>Evidence</small><b>Moderate</b></div><div class="score-pill"><small>Reproducibility</small><b>High</b></div><div class="score-pill"><small>Enterprise relevance</small><b>High</b></div><div class="score-pill"><small>Academic significance</small><b>High</b></div><div class="score-pill"><small>Horizon</small><b>Now for evaluation</b></div><div class="score-pill"><small>Confidence</small><b>Medium</b></div><div class="score-pill"><small>Analyst score</small><b>87 / 100</b></div>
+    </div>
+    <p class="caption"><strong>Overall:</strong> an unusually relevant benchmark design for enterprise-agent change, with strong artifacts but material construct-validity and selection-bias concerns.</p>
+  </div>
+</section>
+
+<section id="reflectrl" class="card paper">
+  <header class="paper-head" style="background:linear-gradient(135deg,#163a69,#2b6cb0)"><div class="rank">Paper 3 · best algorithmic prototype · post-training</div><h2>ReflectRL: Learning from Golden Negative Trajectories via Reflective-to-Direct Reasoning</h2><p>Jinhe Bi, Chennan Zhou, Zengjie Jin, Aniri, Shuo Lu, Wenke Huang, Hu Cao, Xun Xiao, Zhihong Zhu, Volker Tresp, Fei Shen, Yunpu Ma, Tat-Seng Chua</p></header>
+  <div class="paper-body">
+    <div class="meta">
+      <div class="meta-item"><small>arXiv</small><b>2608.03972 · cs.AI</b></div><div class="meta-item"><small>Submitted</small><b>Aug 4, 2026 · 12:40:08 p.m. CDT</b></div><div class="meta-item"><small>Status</small><b>New v1 · no later revision</b></div><div class="meta-item"><small>Readiness</small><b>Prototype within 3–6 months</b></div>
+    </div>
+    <p><strong>Links:</strong> <a href="https://arxiv.org/abs/2608.03972">arXiv abstract</a> · <a href="https://arxiv.org/pdf/2608.03972">PDF</a> · <a href="https://huggingface.co/datasets/Jinhe/OpenR1-GNT-69k">verified dataset</a> · <a href="https://huggingface.co/Jinhe/ReflectRL-Qwen2.5-Math-7B-GRPO-ReflectRL">verified model weights</a>. The paper-listed GitHub URL returned 404 during review; the model repository had no model card.</p>
+    <div class="thesis"><span class="label analysis">One-sentence thesis</span> High-quality expert failures can serve as structured counterexamples for on-policy learning when the model first diagnoses and repairs them, then gradually transitions back to direct reasoning without failed-trace context.</div>
+
+    <h3 class="subhead">Why this paper matters</h3>
+    <div class="flow-3"><div class="flow-node"><b>Current state</b>Expert trajectories are valuable only when the expert reaches the correct answer.</div><div class="arrow">→</div><div class="flow-node"><b>Unresolved limitation</b>Hard problems produce expensive, information-rich failures that are normally discarded.</div><div class="arrow">→</div><div class="flow-node"><b>Proposed change</b>Treat a strong expert’s failure as an error-localization and repair problem, not as a demonstration.</div></div>
+
+    <div class="grid grid-2" style="margin-top:16px">
+      <div>
+        <h3 class="subhead">Problem and contributions</h3>
+        <p><span class="label fact">Paper Fact</span> A “Golden Negative Trajectory” is an incorrect trajectory generated by a stronger expert model that often retains a valid reasoning prefix before a localized error. The released OpenR1-GNT-69k dataset contains 69,322 math-reasoning examples derived from DeepSeek-R1 failures.</p>
+        <ul class="compact">
+          <li><strong>Conceptual:</strong> defines a Reflection Advantage—repair can be easier than solving from scratch.</li>
+          <li><strong>Algorithmic:</strong> mixes direct and reflective on-policy rollouts while preserving the original GRPO, DAPO, or OPD objective.</li>
+          <li><strong>Training schedule:</strong> gradually decays the fraction of reflective prompts so the final policy operates without expert-failure context.</li>
+          <li><strong>Empirical:</strong> evaluates nine benchmarks, four backbones, and four on-policy methods.</li>
+          <li><strong>Artifact:</strong> releases a 69k dataset and one 8B model checkpoint; code availability was not verified.</li>
+        </ul>
+      </div>
+      <div class="visual">
+        <div class="visual-title">Reflective-to-direct policy transition</div>
+        <svg viewBox="0 0 760 430" role="img" aria-label="ReflectRL training mechanism using failed expert trajectories, reflective reasoning, verifier reward and transition to direct reasoning">
+          <defs><marker id="arrR" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#2b6cb0"/></marker></defs>
+          <rect x="25" y="30" width="180" height="72" rx="14" fill="#fdebea" stroke="#b42318"/><text x="115" y="57" text-anchor="middle" font-weight="800" fill="#8f1d15">Expert failure</text><text x="115" y="80" text-anchor="middle" font-size="12" fill="#5c6b78">valid prefix + localized error</text>
+          <rect x="285" y="30" width="190" height="72" rx="14" fill="#e8f1fb" stroke="#2b6cb0"/><text x="380" y="57" text-anchor="middle" font-weight="800" fill="#153a55">Reflective prompt</text><text x="380" y="80" text-anchor="middle" font-size="12" fill="#5c6b78">diagnose · repair · continue</text>
+          <rect x="555" y="30" width="180" height="72" rx="14" fill="#e8f6ef" stroke="#227a50"/><text x="645" y="57" text-anchor="middle" font-weight="800" fill="#17643f">Verifier reward</text><text x="645" y="80" text-anchor="middle" font-size="12" fill="#5c6b78">same task outcome check</text>
+          <line x1="205" y1="66" x2="280" y2="66" stroke="#2b6cb0" stroke-width="3" marker-end="url(#arrR)"/><line x1="475" y1="66" x2="550" y2="66" stroke="#2b6cb0" stroke-width="3" marker-end="url(#arrR)"/>
+          <rect x="155" y="165" width="450" height="78" rx="16" fill="#f0eafd" stroke="#6b46c1"/><text x="380" y="194" text-anchor="middle" font-weight="800" fill="#4d3290">On-policy update: original GRPO / DAPO / OPD objective</text><text x="380" y="218" text-anchor="middle" font-size="12" fill="#5c6b78">no auxiliary loss · same rollout/verifier budget</text>
+          <path d="M645 102 C645 145 560 168 545 172" fill="none" stroke="#2b6cb0" stroke-width="3" marker-end="url(#arrR)"/>
+          <rect x="55" y="305" width="255" height="80" rx="14" fill="#e8f1fb" stroke="#2b6cb0"/><text x="183" y="334" text-anchor="middle" font-weight="800" fill="#153a55">Early training</text><text x="183" y="357" text-anchor="middle" font-size="12" fill="#5c6b78">high reflective rollout fraction</text>
+          <rect x="450" y="305" width="255" height="80" rx="14" fill="#dff4f2" stroke="#087f8c"/><text x="578" y="334" text-anchor="middle" font-weight="800" fill="#153a55">Late training / inference</text><text x="578" y="357" text-anchor="middle" font-size="12" fill="#5c6b78">direct query only · no GNT context</text>
+          <line x1="310" y1="345" x2="445" y2="345" stroke="#2b6cb0" stroke-width="5" marker-end="url(#arrR)"/><text x="377" y="329" text-anchor="middle" font-size="12" fill="#5c6b78">decay g(t)</text>
+          <line x1="380" y1="243" x2="380" y2="286" stroke="#2b6cb0" stroke-width="3" marker-end="url(#arrR)"/>
+        </svg>
+        <div class="caption">Original explanatory diagram based on the method; not an official paper figure. Source: <a href="https://arxiv.org/abs/2608.03972">arXiv:2608.03972</a>.</div>
+      </div>
+    </div>
+
+    <h3 class="subhead">Technical approach</h3>
+    <p>ReflectRL uses two interfaces. The direct interface provides only the problem; the reflective interface provides the problem plus an incorrect expert trace and asks the model to locate and repair the error. A schedule controls the proportion of reflective rollouts and gradually moves the policy toward direct reasoning. Offline expert failures avoid online teacher calls, and the method keeps the original reward and policy objective.</p>
+    <p>The training data is derived from OpenR1-Math-220k: prompts come from NuminaMath 1.5, DeepSeek-R1 generates trajectories, and Math-Verify retains those marked incorrect. Evaluation covers six in-domain mathematics sets and three out-of-domain multiple-choice reasoning sets—ARC-Challenge, GPQA-Diamond, and MMLU-Pro. AIME and AMC use average@32; other benchmarks use pass@1, so individual metrics should not be conflated.</p>
+
+    <h3 class="subhead">Results and evidence</h3>
+    <div class="grid grid-2">
+      <div class="visual">
+        <div class="visual-title">Average accuracy before and after ReflectRL</div>
+        <svg viewBox="0 0 760 390" role="img" aria-label="ReflectRL in-domain and out-of-domain average accuracy improvements for GRPO, DAPO and OPD on zero-based scale">
+          <g stroke="#d8e2e8"><line x1="180" y1="45" x2="180" y2="340"/><line x1="276" y1="45" x2="276" y2="340"/><line x1="372" y1="45" x2="372" y2="340"/><line x1="468" y1="45" x2="468" y2="340"/><line x1="564" y1="45" x2="564" y2="340"/><line x1="660" y1="45" x2="660" y2="340"/></g>
+          <g fill="#5c6b78" font-size="11"><text x="180" y="360" text-anchor="middle">0</text><text x="276" y="360" text-anchor="middle">10</text><text x="372" y="360" text-anchor="middle">20</text><text x="468" y="360" text-anchor="middle">30</text><text x="564" y="360" text-anchor="middle">40</text><text x="660" y="360" text-anchor="middle">50</text></g>
+          <g fill="#153a55" font-size="12" font-weight="700"><text x="20" y="88">GRPO · ID</text><text x="20" y="138">GRPO · OOD</text><text x="20" y="198">DAPO · ID</text><text x="20" y="248">DAPO · OOD</text><text x="20" y="308">OPD · OOD</text></g>
+          <g fill="#9fb0bd"><rect x="180" y="67" width="355" height="16" rx="5"/><rect x="180" y="117" width="201" height="16" rx="5"/><rect x="180" y="177" width="369" height="16" rx="5"/><rect x="180" y="227" width="243" height="16" rx="5"/><rect x="180" y="287" width="207" height="16" rx="5"/></g>
+          <g fill="#2b6cb0"><rect x="180" y="87" width="407" height="16" rx="5"/><rect x="180" y="137" width="384" height="16" rx="5"/><rect x="180" y="197" width="418" height="16" rx="5"/><rect x="180" y="247" width="355" height="16" rx="5"/><rect x="180" y="307" width="375" height="16" rx="5"/></g>
+          <g fill="#142331" font-size="11"><text x="541" y="80">37.0</text><text x="593" y="100">42.4</text><text x="387" y="130">20.9</text><text x="570" y="150">40.0</text><text x="555" y="190">38.4</text><text x="604" y="210">43.5</text><text x="429" y="240">25.3</text><text x="541" y="260">37.0</text><text x="393" y="300">21.6</text><text x="561" y="320">39.1</text></g>
+          <rect x="560" y="10" width="12" height="12" fill="#9fb0bd"/><text x="578" y="21" font-size="11">Baseline</text><rect x="630" y="10" width="12" height="12" fill="#2b6cb0"/><text x="648" y="21" font-size="11">+ReflectRL</text>
+        </svg>
+        <div class="caption">Zero-based scale. OOD averages use only ARC-Challenge, GPQA-Diamond, and MMLU-Pro; ARC-Challenge contributes a large share of some reported gains.</div>
+      </div>
+      <div>
+        <table class="evidence-table"><thead><tr><th>Setting</th><th>Reported result</th><th>Assessment</th></tr></thead><tbody>
+          <tr><td>GRPO</td><td>ID 37.0 → 42.4 (+5.4); OOD 20.9 → 40.0 (+19.1).</td><td>Large OOD lift, but concentrated in a small set of benchmarks.</td></tr>
+          <tr><td>DAPO</td><td>ID 38.4 → 43.5 (+5.1); OOD 25.3 → 37.0 (+11.7).</td><td>Consistent directional gain.</td></tr>
+          <tr><td>OPD, 3B student</td><td>ID 26.7 → 29.0 (+2.3); OOD 21.6 → 39.1 (+17.5).</td><td>Transfer result is promising but needs independent replication.</td></tr>
+          <tr><td>Compute</td><td>Update time stabilizes near 13 seconds versus ~20 seconds for GRPO.</td><td>Shorter decoding offsets added GNT prefill in reported setup.</td></tr>
+          <tr><td>Ablation</td><td>Valid prefix and localized error both matter; shuffled and answer-only versions fall below direct baseline.</td><td>Supports a mechanism beyond extra context length.</td></tr>
+        </tbody></table>
+      </div>
+    </div>
+
+    <h3 class="subhead">Limitations and critical assessment</h3>
+    <div class="grid grid-2"><div class="callout amber"><strong>Authors’ evidence:</strong> expert failures have longer valid prefixes and localized errors; trajectory-component interventions support both as sources of reflection gain.</div><div class="callout red"><strong>Independent assessment:</strong> the main training domain is competition mathematics, and the “OOD” conclusion is based on three reasoning benchmarks rather than enterprise workflows or open-ended agent behavior.</div></div>
+    <div class="risk-grid" style="margin-top:12px">
+      <div class="risk"><b>Failure-quality filtering <span class="sev-high">High</span></b><p>An incorrect outcome does not guarantee a useful prefix or localized error. Low-quality failures could train confusion.</p></div>
+      <div class="risk"><b>Teacher dependence <span class="sev-high">High</span></b><p>The method relies on expensive, capable expert trajectories and inherits their biases and contamination risks.</p></div>
+      <div class="risk"><b>Artifact gap <span class="sev-med">Medium</span></b><p>The paper’s GitHub link was inaccessible; the released model had no model card at review time.</p></div>
+      <div class="risk"><b>Statistical reporting <span class="sev-med">Medium</span></b><p>No confidence intervals or formal significance tests were identified for headline averages.</p></div>
+    </div>
+
+    <h3 class="subhead">Enterprise implementation lens</h3>
+    <p><span class="label inference">Enterprise Inference</span> The transferable pattern is <strong>counterexample-guided post-training</strong>. Candidate domains include code repair, data analysis, planning, pricing calculations, policy reasoning, and structured support workflows where outcomes are verifiable and expert traces can be retained safely.</p>
+    <div class="stack">
+      <div class="layer active"><span>Data pipeline</span><div>Provenance-tagged failed expert traces, outcome verification, valid-prefix/error-locality scoring, PII removal.</div></div>
+      <div class="layer active"><span>Training</span><div>Mixed reflective/direct on-policy rollouts with a controlled transition schedule.</div></div>
+      <div class="layer"><span>Evaluation</span><div>In-domain, out-of-domain, safety, regression, calibration, and cost tests.</div></div>
+      <div class="layer"><span>Governance</span><div>Teacher/model licenses, failure-data retention, red-team review, checkpoint rollback.</div></div>
+      <div class="layer"><span>Inference</span><div>Unchanged direct interface; no expert failure trace required after transition.</div></div>
+    </div>
+    <p><strong>Readiness: Prototype within 3–6 months.</strong> A team with an existing RLVR or distillation pipeline can test the method; organizations without verifiable rewards or post-training infrastructure should monitor rather than build.</p>
+
+    <h3 class="subhead">Minimum viable experiment</h3>
+    <div class="experiment">
+      <div class="exp-step"><small>Build</small><b>2,000–5,000 verified failures</b><p>Use one bounded domain such as code tests or spreadsheet analytics with deterministic outcomes.</p></div>
+      <div class="exp-step"><small>Measure</small><b>Learning and harm</b><p>Task accuracy, OOD transfer, failure imitation, unsafe behavior, update time, and total compute.</p></div>
+      <div class="exp-step"><small>Compare</small><b>Same-budget baselines</b><p>Direct GRPO/OPD, correct demonstrations, random failures, and ReflectRL-style GNTs.</p></div>
+      <div class="exp-step"><small>Stop / proceed</small><b>Regression gates</b><p>Stop if target gains are accompanied by safety regressions, error-pattern copying, or unstable policy drift.</p></div>
+    </div>
+    <p><strong>Effort:</strong> Large for a new post-training stack; Medium for an established RLVR team.</p>
+
+    <h3 class="subhead">Academic research lens</h3>
+    <p>ReflectRL connects learning from counterexamples, error-driven learning, privileged information, curriculum schedules, and on-policy reasoning optimization. A valuable replication would stratify failures by valid-prefix length, error locality, teacher competence, and semantic similarity while controlling token length and benchmark contamination.</p>
+    <p><strong>Defensible follow-on question:</strong> Which measurable properties of a failed expert trajectory causally predict positive transfer, and can a learned selector identify useful failures before post-training?</p>
+
+    <div class="scorecard">
+      <div class="score-pill"><small>Novelty</small><b>High</b></div><div class="score-pill"><small>Evidence</small><b>Moderate–Strong</b></div><div class="score-pill"><small>Reproducibility</small><b>Medium–Low</b></div><div class="score-pill"><small>Enterprise relevance</small><b>Medium–High</b></div><div class="score-pill"><small>Academic significance</small><b>High</b></div><div class="score-pill"><small>Horizon</small><b>3–6 months</b></div><div class="score-pill"><small>Confidence</small><b>Medium</b></div><div class="score-pill"><small>Analyst score</small><b>84 / 100</b></div>
+    </div>
+    <p class="caption"><strong>Overall:</strong> a compelling post-training idea with useful ablations and artifacts, but enterprise transfer, safety, and complete reproducibility remain unproven.</p>
+  </div>
+</section>
+
+<section id="watchlist">
+  <div class="section-head"><div><div class="eyebrow" style="color:var(--teal)">Research Watchlist</div><h2>Promising, but not yet deep-dive priority</h2></div><p>Each paper has strategic relevance but a material evidence or maturity gap.</p></div>
+  <div class="grid grid-2">
+    <article class="card watch accent-green"><span class="trigger">Awaiting real-user replication</span><h3>PAST-Bench: Benchmarking the Foundations of Recursive Self-Improvement in Personal Agents</h3><p><strong>Authors:</strong> Shuhan Xue, Zixin Ding, Yichen Shen, Yinjie Wang, Zhenfei Yin, Yingcheng Wu, Yuxin Chen, Mengdi Wang, Ling Yang.</p><p><strong>New v1:</strong> August 4, 2026, 12:58:05 p.m. CDT · arXiv:2608.04003 · cs.CL. <a href="https://arxiv.org/abs/2608.04003">Abstract</a> · <a href="https://arxiv.org/pdf/2608.04003">PDF</a> · <a href="https://github.com/Gen-Verse/PAST-Bench">official repository</a>.</p><p>PAST-Bench runs persistent agents through ordered fresh-session sequences with matched persistence-on/off conditions. It spans 26 scenarios and 204 episodes across memory, procedural reuse, information gathering, and update, and asks both whether performance improved and whether the intended save–retrieve–update pathway produced the gain.</p><p><strong>Why monitor:</strong> mechanism-level attribution is a necessary control for recursive self-improvement. <strong>Primary weakness:</strong> the scenarios are controlled and synthetic, so ecological validity remains uncertain. <strong>Trigger:</strong> independent replication on longitudinal, privacy-preserving real workflows with calibrated pathway evidence.</p></article>
+    <article class="card watch accent-amber"><span class="trigger">Awaiting public simulator</span><h3>When Does Disaggregation Pay? Simulating Prefill–Decode–Attention–FFN Specialization for Agentic LLM Inference</h3><p><strong>Authors:</strong> Przemyslaw Forys, Haoran Wu, Can Xiao, Jiayi Nie, Tony Liu, Rika Antonova, Timothy Jones, Robert Mullins, Wayne Luk, Aaron Zhao, George A. Constantinides.</p><p><strong>New v1:</strong> August 4, 2026, 9:35:25 a.m. CDT · arXiv:2608.03741 · cs.DC. <a href="https://arxiv.org/abs/2608.03741">Abstract</a> · <a href="https://arxiv.org/pdf/2608.03741">PDF</a>.</p><p>HeteroPanacea simulates disaggregated quantization, parallelism, and stage-specialized hardware for agentic inference. The paper reports up to 2.06× throughput over traditional serving on prefill-heavy workloads, while emphasizing that disaggregation can fall below parity in other regimes.</p><p><strong>Why monitor:</strong> it offers a workload-sensitive framework for self-hosted agent infrastructure. <strong>Primary weakness:</strong> the headline result is simulation-based; the authors promise code after acceptance rather than releasing it now. <strong>Trigger:</strong> public simulator plus end-to-end validation on a real disaggregated serving cluster using current hardware and pricing.</p></article>
+  </div>
+</section>
+
+<section id="synthesis">
+  <div class="section-head"><div><div class="eyebrow" style="color:var(--teal)">Cross-paper synthesis</div><h2>The emerging agent change-control plane</h2></div><p>The papers converge on a system pattern even though they solve different technical problems.</p></div>
+  <article class="card">
+    <div class="visual">
+      <div class="visual-title">Shared architecture implied by the selected research</div>
+      <svg viewBox="0 0 1160 430" role="img" aria-label="Cross-paper architecture from trace capture through filtering, state update, evaluation, formal verification and controlled release">
+        <defs><marker id="arrS" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#087f8c"/></marker></defs>
+        <g font-size="13" fill="#153a55" font-weight="800">
+          <rect x="20" y="95" width="165" height="80" rx="14" fill="#e8f1fb" stroke="#2b6cb0"/><text x="103" y="126" text-anchor="middle">Trace & outcome capture</text><text x="103" y="149" text-anchor="middle" font-size="11" font-weight="500" fill="#5c6b78">PAST · ReflectRL</text>
+          <rect x="215" y="95" width="165" height="80" rx="14" fill="#fff5dc" stroke="#b7791f"/><text x="298" y="126" text-anchor="middle">Quality & provenance</text><text x="298" y="149" text-anchor="middle" font-size="11" font-weight="500" fill="#5c6b78">valid prefix · hidden rule</text>
+          <rect x="410" y="95" width="165" height="80" rx="14" fill="#f0eafd" stroke="#6b46c1"/><text x="493" y="126" text-anchor="middle">Persistent update</text><text x="493" y="149" text-anchor="middle" font-size="11" font-weight="500" fill="#5c6b78">memory · skill · weights</text>
+          <rect x="605" y="95" width="165" height="80" rx="14" fill="#dff4f2" stroke="#087f8c"/><text x="688" y="126" text-anchor="middle">Held-out evaluation</text><text x="688" y="149" text-anchor="middle" font-size="11" font-weight="500" fill="#5c6b78">GDPevo · PAST</text>
+          <rect x="800" y="95" width="165" height="80" rx="14" fill="#fdebea" stroke="#b42318"/><text x="883" y="126" text-anchor="middle">Invariant verification</text><text x="883" y="149" text-anchor="middle" font-size="11" font-weight="500" fill="#5c6b78">STEAD · counterexample</text>
+          <rect x="995" y="95" width="145" height="80" rx="14" fill="#e8f6ef" stroke="#227a50"/><text x="1068" y="126" text-anchor="middle">Controlled release</text><text x="1068" y="149" text-anchor="middle" font-size="11" font-weight="500" fill="#5c6b78">shadow · canary · rollback</text>
+        </g>
+        <g stroke="#087f8c" stroke-width="3" marker-end="url(#arrS)"><line x1="185" y1="135" x2="210" y2="135"/><line x1="380" y1="135" x2="405" y2="135"/><line x1="575" y1="135" x2="600" y2="135"/><line x1="770" y1="135" x2="795" y2="135"/><line x1="965" y1="135" x2="990" y2="135"/></g>
+        <path d="M1068 175 C1068 305 493 330 493 180" fill="none" stroke="#b42318" stroke-width="3" stroke-dasharray="7 6" marker-end="url(#arrS)"/><text x="780" y="316" text-anchor="middle" font-size="13" fill="#8f1d15" font-weight="700">Any update invalidates prior evidence → recertify</text>
+        <rect x="215" y="255" width="165" height="70" rx="14" fill="#f7fafb" stroke="#5c6b78"/><text x="298" y="284" text-anchor="middle" font-weight="800" fill="#153a55">Observability</text><text x="298" y="305" text-anchor="middle" font-size="11" fill="#5c6b78">cost · drift · lineage</text>
+        <rect x="20" y="255" width="165" height="70" rx="14" fill="#f7fafb" stroke="#5c6b78"/><text x="103" y="284" text-anchor="middle" font-weight="800" fill="#153a55">Governance</text><text x="103" y="305" text-anchor="middle" font-size="11" fill="#5c6b78">approval · retention</text>
+        <line x1="185" y1="290" x2="210" y2="290" stroke="#5c6b78" stroke-width="2"/>
+      </svg>
+      <div class="caption"><span class="label inference">Enterprise Inference</span> This is a synthesized architecture, not one proposed by any single paper.</div>
+    </div>
+  </article>
+
+  <div class="grid grid-3" style="margin-top:16px">
+    <div class="card accent-teal"><h3>1. Emerging pattern</h3><p>Persistent state is becoming a first-class research object. The field is moving from single-episode capability toward learning, memory, update attribution, and post-update assurance.</p></div>
+    <div class="card accent-blue"><h3>2. Architectural implication</h3><p>Enterprise platforms need a separate control plane for experience provenance, state versioning, offline evaluation, policy invariants, observability, and rollback.</p></div>
+    <div class="card accent-red"><h3>3. Core tension</h3><p>ReflectRL and GDPevo improve an agent by changing it; the formal-verification result assumes a fixed policy. Every successful evolution event can invalidate the previous certificate.</p></div>
+    <div class="card accent-amber"><h3>4. Research gap</h3><p>No paper solves continuous verification of stochastic, multi-agent, self-updating systems over real operational data while preserving privacy and tractable compute.</p></div>
+    <div class="card accent-purple"><h3>5. Technology maturity</h3><p>Evaluation methods are ready for controlled use; post-training is prototype-stage; exact formal assurance is narrow; specialized inference hardware remains simulation-led.</p></div>
+    <div class="card accent-green"><h3>6. Strategic signal</h3><p>Invest in the agent change-control layer now. Model procurement alone will not govern systems that retain experience or modify their behavior.</p></div>
+  </div>
+
+  <article class="card" style="margin-top:16px">
+    <h3>Cross-paper comparison</h3>
+    <div style="overflow:auto"><table class="compare"><thead><tr><th>Paper</th><th>Core problem</th><th>Main method</th><th>Strongest evidence</th><th>Primary limitation</th><th>Enterprise use</th><th>Readiness</th></tr></thead><tbody>
+      <tr><td>Formal Verification</td><td>System-level guarantees over persistent data</td><td>Finite abstraction + canonical identifier wrapper</td><td>Undecidability/complexity theorems; reproducible case</td><td>Narrow assumptions and small workflow</td><td>High-risk bounded workflows</td><td>Monitor 6–18m</td></tr>
+      <tr><td>GDPevo</td><td>Attributing gains from agent experience</td><td>Hidden-rule hybridization and deterministic grading</td><td>240 tasks; up to +16.44 points</td><td>Synthetic tasks and selection bias</td><td>Internal agent-change benchmark</td><td>Experiment now</td></tr>
+      <tr><td>ReflectRL</td><td>Using expert failures in post-training</td><td>Reflective-to-direct on-policy transition</td><td>9 benchmarks; mechanism ablations</td><td>Math-centric; code link unavailable</td><td>Verifiable domain post-training</td><td>Prototype 3–6m</td></tr>
+      <tr><td>PAST-Bench</td><td>Mechanism-level persistent-agent attribution</td><td>Persistence on/off and pathway evidence</td><td>26 scenarios; 204 episodes</td><td>Controlled synthetic setting</td><td>Memory and skill evaluation</td><td>Prototype 3–6m</td></tr>
+      <tr><td>HeteroPanacea</td><td>Hardware specialization for agentic inference</td><td>Cross-stack event-driven simulation</td><td>Conditional gains up to 2.06×</td><td>Simulation and unavailable code</td><td>Capacity planning for self-hosting</td><td>Monitor</td></tr>
+    </tbody></table></div>
+  </article>
+</section>
+
+<section id="priorities">
+  <div class="section-head"><div><div class="eyebrow" style="color:var(--teal)">Execution queue</div><h2>Implementation Priorities</h2></div><p>Recommended placement reflects evidence, reversibility, enterprise leverage, and implementation burden.</p></div>
+  <div class="board">
+    <div class="lane" style="border-top:5px solid var(--green)"><h3>Prototype now</h3>
+      <div class="ticket"><b>GDPevo-style internal benchmark</b><p>Build hidden-rule train/test families and deterministic graders.</p><small>Owner: Agent platform + evaluation</small></div>
+      <div class="ticket"><b>Agent update registry</b><p>Version memory, skills, prompts, harness code, and checkpoints.</p><small>Owner: MLOps / platform governance</small></div>
+    </div>
+    <div class="lane" style="border-top:5px solid var(--blue)"><h3>Read deeply</h3>
+      <div class="ticket"><b>Formal STEAD framework</b><p>Select one bounded regulated workflow for a shadow proof-of-concept.</p><small>Owner: Formal methods + enterprise architecture</small></div>
+      <div class="ticket"><b>ReflectRL</b><p>Assess whether existing failure traces have verifiable outcomes and useful structure.</p><small>Owner: Post-training research</small></div>
+    </div>
+    <div class="lane" style="border-top:5px solid var(--amber)"><h3>Monitor</h3>
+      <div class="ticket"><b>PAST-Bench</b><p>Track independent replication and real-user longitudinal evaluations.</p><small>Reassess: real workflow evidence</small></div>
+      <div class="ticket"><b>HeteroPanacea</b><p>Wait for code and end-to-end cluster validation.</p><small>Reassess: public simulator + hardware run</small></div>
+    </div>
+    <div class="lane" style="border-top:5px solid var(--red)"><h3>Deprioritize</h3>
+      <div class="ticket"><b>Autonomous production self-evolution</b><p>No automatic promotion without offline evidence, invariants, approval, and rollback.</p><small>Risk: unbounded behavioral drift</small></div>
+      <div class="ticket"><b>Training on unfiltered failures</b><p>Incorrect traces are not automatically informative or safe.</p><small>Risk: error-pattern internalization</small></div>
+      <div class="ticket"><b>Hardware purchase from simulation alone</b><p>Do not commit capital before workload-specific real-system validation.</p><small>Risk: false throughput economics</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="learning">
+  <div class="section-head"><div><div class="eyebrow" style="color:var(--teal)">Knowledge absorption</div><h2>Retain, test, and teach back</h2></div><p>The goal is durable understanding, not headline recall.</p></div>
+  <div class="grid grid-3">
+    <article class="card concept"><h4>Rule hybridization</h4><p><strong>Plain language:</strong> split hidden business rules across learning examples, then recombine them in new tests. <strong>Technical purpose:</strong> make transfer attributable rather than accidental.</p></article>
+    <article class="card concept"><h4>Golden Negative Trajectory</h4><p><strong>Plain language:</strong> a strong model’s wrong solution that still contains useful reasoning. <strong>Technical purpose:</strong> provide a high-quality prefix and localized repair target.</p></article>
+    <article class="card concept"><h4>Reflective-to-direct transition</h4><p><strong>Plain language:</strong> learn with an error trace, then learn to perform without it. <strong>Technical purpose:</strong> internalize repair behavior without adding inference-time context.</p></article>
+    <article class="card concept"><h4>Agent equivariance</h4><p><strong>Plain language:</strong> renaming meaningless IDs should only rename the matching action arguments. <strong>Technical purpose:</strong> support exact symmetry-based finite verification.</p></article>
+    <article class="card concept"><h4>Mechanism-level attribution</h4><p><strong>Plain language:</strong> prove that improvement came through the intended memory or learning path. <strong>Technical purpose:</strong> distinguish real retained learning from incidental gains.</p></article>
+    <article class="card concept"><h4>Continuous recertification</h4><p><strong>Plain language:</strong> re-evaluate and re-verify after every agent update. <strong>Technical purpose:</strong> prevent stale safety evidence from governing a changed policy.</p></article>
+  </div>
+
+  <div class="grid grid-2" style="margin-top:16px">
+    <article class="card"><h3>Recall questions</h3><div class="questions">
+      <div class="question">Why does GDPevo’s train/test construction make a gain more attributable, and how might its calibration criteria bias the measured effect?</div>
+      <div class="question">What properties make a failed expert trajectory useful in ReflectRL, and why would a random or shuffled failure not provide the same signal?</div>
+      <div class="question">What is identifier-renaming equivariance, and why is it necessary for the formal paper’s finite-domain verification result?</div>
+      <div class="question">Why can an agent’s successful self-evolution invalidate a previously established formal guarantee?</div>
+      <div class="question">Which components belong in an enterprise agent change-control plane, and what evidence should gate promotion?</div>
+    </div></article>
+    <article class="card"><h3>Teach-back exercise</h3><div class="callout blue"><strong>Prompt:</strong> Explain today’s research to a board-level technology committee in four minutes. Use one concrete enterprise workflow to show how an agent can learn from experience, how you would prove the gain is attributable, how you would test safety invariants, and why automatic production promotion would still be premature.</div>
+      <h3 style="margin-top:20px">Research connection</h3><p>Today’s papers connect <strong>experimental design</strong> (controlled train/test relationships), <strong>counterexample-guided learning</strong> (reasoning from high-quality failures), <strong>formal methods</strong> (finite abstraction and temporal logic), <strong>software configuration management</strong> (versioned behavioral state), and <strong>organizational governance</strong> (approval and rollback after consequential change).</p>
+    </article>
+  </div>
+  <div class="footer-note" style="margin-top:16px"><strong>One idea to remember:</strong> An agent that learns from experience is a changing production system—every update needs attributable evidence, verified constraints, and a reversible release path.</div>
+</section>
+
+<section id="sources">
+  <div class="section-head"><div><div class="eyebrow" style="color:var(--teal)">Evidence trail</div><h2>Sources and Method Notes</h2></div><p>Original papers and verified author artifacts were used as the evidentiary base.</p></div>
+  <div class="grid grid-2">
+    <article class="card"><h3>Primary papers</h3><ol class="source-list">
+      <li><a href="https://arxiv.org/abs/2608.03609">Mercado & Lomuscio — Formal Verification of Agentic Systems over Operational Data</a> · <a href="https://arxiv.org/pdf/2608.03609">PDF</a>.</li>
+      <li><a href="https://arxiv.org/abs/2608.03764">Zhou et al. — GDPevo: Evaluating Agent Self-Evolution on Real Business Tasks</a> · <a href="https://arxiv.org/pdf/2608.03764">PDF</a>.</li>
+      <li><a href="https://arxiv.org/abs/2608.03972">Bi et al. — ReflectRL: Learning from Golden Negative Trajectories via Reflective-to-Direct Reasoning</a> · <a href="https://arxiv.org/pdf/2608.03972">PDF</a>.</li>
+      <li><a href="https://arxiv.org/abs/2608.04003">Xue et al. — PAST-Bench</a> · <a href="https://arxiv.org/pdf/2608.04003">PDF</a>.</li>
+      <li><a href="https://arxiv.org/abs/2608.03741">Forys et al. — When Does Disaggregation Pay?</a> · <a href="https://arxiv.org/pdf/2608.03741">PDF</a>.</li>
+    </ol></article>
+    <article class="card"><h3>Verified official artifacts</h3><ul class="source-list">
+      <li><a href="https://github.com/alejandro-mercado/stead-reproducibility">STEAD reproducibility package</a> — public, MIT-licensed; explicitly not a general-purpose checker.</li>
+      <li><a href="https://github.com/Prism-Shadow/GDPevo">GDPevo repository</a> and <a href="https://prism-shadow.github.io/GDPevo/">project page</a> — benchmark, pipeline, and results. The live leaderboard has moved beyond paper v1.</li>
+      <li><a href="https://huggingface.co/datasets/Jinhe/OpenR1-GNT-69k">OpenR1-GNT-69k dataset</a> — 69,322 rows, Apache-2.0.</li>
+      <li><a href="https://huggingface.co/Jinhe/ReflectRL-Qwen2.5-Math-7B-GRPO-ReflectRL">ReflectRL 8B checkpoint</a> — weights present; no model card observed during review.</li>
+      <li><a href="https://github.com/Gen-Verse/PAST-Bench">PAST-Bench repository</a> — benchmark runner and agent integrations.</li>
+    </ul></article>
+  </div>
+  <article class="card" style="margin-top:16px"><h3>Method and uncertainty notes</h3>
+    <ul class="compact">
+      <li>The search covered the requested major arXiv categories and adjacent enterprise-relevant areas within the exact 36-hour window. The window was not expanded.</li>
+      <li>All selected papers were new v1 submissions dated August 4, 2026. No revised or older-attention paper was selected.</li>
+      <li>Paper selection used the stated 25/25/20/20/10 weighting. Analyst scores are transparent judgments, not scientific measurements.</li>
+      <li>Charts use exact reported values and zero-based scales. Incompatible metrics were not combined.</li>
+      <li>Original diagrams summarize verified mechanisms and enterprise implications; they are not copied paper figures.</li>
+      <li>ArXiv postings were treated as preprints. Peer-review status was not assumed.</li>
+      <li>No production deployment is recommended. Proposed experiments are isolated, measurable, reversible, and subject to stop conditions.</li>
+    </ul>
+  </article>
+</section>
+</main>
+</body>
+</html>

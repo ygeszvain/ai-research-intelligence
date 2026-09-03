@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ygeszvain.github.io/ai-research-intelligence/sitemap.xml
