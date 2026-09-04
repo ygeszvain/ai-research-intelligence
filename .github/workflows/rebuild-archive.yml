@@ -1,0 +1,51 @@
+name: Rebuild AI Research Archive
+
+on:
+  push:
+    branches:
+      - gh-pages
+    paths:
+      - 'reports/*.html'
+      - 'scripts/build_archive.py'
+      - 'index.html'
+      - '.github/workflows/rebuild-archive.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ai-research-archive-rebuild
+  cancel-in-progress: false
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out published archive
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Rebuild archive metadata
+        run: python scripts/build_archive.py
+
+      - name: Commit generated navigation files
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add manifest.json latest.html feed.xml sitemap.xml robots.txt archive-status.json
+          if git diff --cached --quiet; then
+            echo "Archive metadata is already current."
+            exit 0
+          fi
+          git commit -m "Rebuild AI Research archive metadata"
+          git push origin HEAD:gh-pages
