@@ -1,0 +1,1392 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Evidence-grounded AI Research Intelligence Brief for September 6, 2026: subgroup-aware evaluation, accountable AI governance, and type-aware heterogeneous graph learning.">
+<meta name="report-date" content="2026-09-06">
+<meta name="research-window" content="2026-09-04T16:00:00-05:00/2026-09-06T04:00:00-05:00 America/Chicago">
+<meta name="deep-paper-count" content="3">
+<meta name="watchlist-count" content="2">
+<meta name="theme-color" content="#08131f">
+<title>AI Research Intelligence Brief — September 6, 2026</title>
+<style>
+:root{--bg:#07111d;--panel:#0d1b2a;--panel2:#10263a;--text:#e8f1f7;--muted:#9fb5c5;--line:#29445b;--cyan:#45d7c4;--gold:#f5c96a;--rose:#ff8d9a;--blue:#68a9ff;--max:1180px;color-scheme:dark}
+@media(prefers-color-scheme:light){:root{--bg:#f4f7f8;--panel:#fff;--panel2:#edf4f7;--text:#102131;--muted:#526979;--line:#cddbe2;--cyan:#087f73;--gold:#9b6300;--rose:#b92b45;--blue:#1661ad;color-scheme:light}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 90% 0,rgba(69,215,196,.12),transparent 30rem),var(--bg);color:var(--text);font:16px/1.67 ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}a{color:var(--cyan);text-underline-offset:3px}a:hover{text-decoration-thickness:2px}header{border-bottom:1px solid var(--line);background:linear-gradient(135deg,rgba(69,215,196,.09),rgba(104,169,255,.05));padding:54px 22px 34px}.hero{max-width:var(--max);margin:auto}.eyebrow{color:var(--cyan);text-transform:uppercase;letter-spacing:.15em;font-size:.76rem;font-weight:800}h1{font-size:clamp(2.2rem,6vw,4.7rem);line-height:.98;max-width:900px;margin:.35rem 0 1rem;letter-spacing:-.055em}header p{max-width:790px;color:var(--muted);font-size:1.09rem}.chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}.chip{border:1px solid var(--line);border-radius:999px;padding:6px 11px;background:var(--panel);font-size:.8rem}.topbets{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}.bet{border:1px solid var(--line);background:var(--panel);border-radius:14px;padding:15px}.bet b{display:block;color:var(--gold);font-size:1.15rem}.layout{max-width:var(--max);margin:auto;display:grid;grid-template-columns:250px minmax(0,1fr);gap:34px;padding:30px 22px 80px}nav{position:sticky;top:16px;align-self:start;max-height:calc(100vh - 32px);overflow:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:14px}nav strong{display:block;margin:2px 8px 10px;color:var(--gold)}nav ul{list-style:none;margin:0;padding:0}nav li{margin:0}nav a{display:block;color:var(--muted);text-decoration:none;padding:5px 8px;border-radius:7px;font-size:.83rem;line-height:1.25}nav a:hover{background:var(--panel2);color:var(--text)}main{min-width:0}main>h2{font-size:1.75rem;margin:2.6rem 0 1rem;padding-top:.7rem;border-top:1px solid var(--line)}main>h2:first-child{margin-top:0}h3{font-size:1.3rem;margin-top:2rem;color:var(--cyan)}h4{font-size:1.08rem;color:var(--gold);margin-bottom:.45rem}p,li{max-width:88ch}blockquote{margin:1rem 0;padding:1rem 1.2rem;border-left:4px solid var(--gold);background:var(--panel);color:var(--muted)}pre{white-space:pre-wrap;overflow:auto;background:#07101a;border:1px solid var(--line);border-radius:14px;padding:18px;color:#dcecf2;font-size:.86rem;line-height:1.45}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}table{width:100%;border-collapse:collapse;margin:1.25rem 0;background:var(--panel);font-size:.86rem}th,td{padding:10px 12px;border:1px solid var(--line);text-align:left;vertical-align:top}th{color:var(--gold);background:var(--panel2)}hr{border:0;border-top:1px solid var(--line)}main h4+ul,main h3+ul{border:1px solid var(--line);background:linear-gradient(135deg,var(--panel),var(--panel2));border-radius:14px;padding:15px 22px 15px 34px}main h4+ul li,main h3+ul li{margin:.5rem 0}.progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--cyan),var(--gold));width:0;z-index:9}.toolbar{position:fixed;right:18px;bottom:18px;display:flex;gap:8px}.toolbar button{border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:999px;padding:9px 12px;cursor:pointer;box-shadow:0 8px 30px rgba(0,0,0,.2)}.label{font-size:.75rem;color:var(--muted)}footer{border-top:1px solid var(--line);padding:24px;text-align:center;color:var(--muted)}
+@media(max-width:850px){.topbets{grid-template-columns:1fr}.layout{grid-template-columns:1fr}nav{position:relative;top:0;max-height:none}nav ul{columns:2}h1{font-size:2.65rem}}
+@media(max-width:520px){header{padding-top:34px}.layout{padding:20px 14px 60px}nav ul{columns:1}table{display:block;overflow-x:auto}h1{font-size:2.25rem}}
+@media print{body{background:white;color:#111;font-size:11pt}header{padding:18px 0}.layout{display:block;padding:0}nav,.toolbar,.progress{display:none}a{color:#145c70}main>h2{break-before:page}main>h2:first-child{break-before:auto}table,pre{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<header><div class="hero">
+<div class="eyebrow">AI Research Intelligence · Evidence before enthusiasm</div>
+<h1>Measure the strata, not just the average.</h1>
+<p>September 6, 2026 briefing. Three peer-reviewed papers converge on a practical rule: enterprise AI needs typed evidence—by subgroup, institutional process, and graph relation—before aggregate performance can support a decision.</p>
+<div class="chips"><span class="chip">3 deep papers</span><span class="chip">2 Watchlist</span><span class="chip">36-hour window</span><span class="chip">9 enterprise options</span><span class="chip">Peer-reviewed primary sources</span></div>
+<div class="topbets"><div class="bet"><span class="label">TOP BET 1 · PROTOTYPE SOON</span><b>89 · Stratified evaluation gate</b><span>Require subgroup, topic, and prevalence-aware evidence.</span></div><div class="bet"><span class="label">TOP BET 2 · PROTOTYPE SOON</span><b>87 · Accountability + appeal contract</b><span>Make responsibility, challenge, and redress executable.</span></div><div class="bet"><span class="label">TOP BET 3 · PROTOTYPE SOON</span><b>84 · Typed-graph benchmark harness</b><span>Test minority-node coverage before changing embeddings.</span></div></div>
+</div></header>
+<div class="layout"><nav><strong>Navigate</strong><ul>
+<li><a href="#ai-research-intelligence-brief--september-6-2026"
+id="toc-ai-research-intelligence-brief--september-6-2026">AI Research
+Intelligence Brief — September 6, 2026</a>
+<ul>
+<li><a href="#scope-window-and-evidence-policy"
+id="toc-scope-window-and-evidence-policy">Scope, window, and evidence
+policy</a></li>
+<li><a href="#executive-signal" id="toc-executive-signal">Executive
+signal</a></li>
+<li><a href="#top-3-future-bets" id="toc-top-3-future-bets">Top 3 Future
+Bets</a></li>
+<li><a
+href="#deep-paper-1--heterogeneous-clinical-language-can-hide-subgroup-failure"
+id="toc-deep-paper-1--heterogeneous-clinical-language-can-hide-subgroup-failure">Deep
+paper 1 — Heterogeneous clinical language can hide subgroup failure</a>
+<ul>
+<li><a href="#contribution-and-quantitative-trace"
+id="toc-contribution-and-quantitative-trace">Contribution and
+quantitative trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison"
+id="toc-methodological-critique-and-prior-work-comparison">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#enterprise-readiness"
+id="toc-enterprise-readiness">Enterprise readiness</a></li>
+</ul></li>
+<li><a
+href="#deep-paper-2--fair-process-and-accountable-redress-shape-legitimacy"
+id="toc-deep-paper-2--fair-process-and-accountable-redress-shape-legitimacy">Deep
+paper 2 — Fair process and accountable redress shape legitimacy</a>
+<ul>
+<li><a href="#contribution-and-quantitative-trace-1"
+id="toc-contribution-and-quantitative-trace-1">Contribution and
+quantitative trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison-1"
+id="toc-methodological-critique-and-prior-work-comparison-1">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#enterprise-readiness-1"
+id="toc-enterprise-readiness-1">Enterprise readiness</a></li>
+</ul></li>
+<li><a
+href="#deep-paper-3--type-aware-graph-sampling-improves-some-minority-relation-tasks"
+id="toc-deep-paper-3--type-aware-graph-sampling-improves-some-minority-relation-tasks">Deep
+paper 3 — Type-aware graph sampling improves some minority-relation
+tasks</a>
+<ul>
+<li><a href="#contribution-and-quantitative-trace-2"
+id="toc-contribution-and-quantitative-trace-2">Contribution and
+quantitative trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison-2"
+id="toc-methodological-critique-and-prior-work-comparison-2">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#enterprise-readiness-2"
+id="toc-enterprise-readiness-2">Enterprise readiness</a></li>
+</ul></li>
+<li><a href="#watchlist" id="toc-watchlist">Watchlist</a>
+<ul>
+<li><a
+href="#ai-pharmaceutical-regulation-trust-model--quantitative-but-causal-direction-is-unresolved"
+id="toc-ai-pharmaceutical-regulation-trust-model--quantitative-but-causal-direction-is-unresolved">AI
+pharmaceutical-regulation trust model — quantitative, but causal
+direction is unresolved</a></li>
+<li><a
+href="#odmmt-placental-pathology--interesting-structure-insufficient-accessible-evidence"
+id="toc-odmmt-placental-pathology--interesting-structure-insufficient-accessible-evidence">ODMMT
+placental pathology — interesting structure, insufficient accessible
+evidence</a></li>
+</ul></li>
+<li><a href="#cross-paper-synthesis"
+id="toc-cross-paper-synthesis">Cross-paper synthesis</a></li>
+<li><a href="#visual-1--typed-evidence-control-loop"
+id="toc-visual-1--typed-evidence-control-loop">Visual 1 — typed-evidence
+control loop</a></li>
+<li><a href="#visual-2--quantitative-anchors-and-their-boundaries"
+id="toc-visual-2--quantitative-anchors-and-their-boundaries">Visual 2 —
+quantitative anchors and their boundaries</a></li>
+<li><a href="#enterprise-ai-enhancement-backlog"
+id="toc-enterprise-ai-enhancement-backlog">Enterprise AI Enhancement
+Backlog</a>
+<ul>
+<li><a href="#scorecard" id="toc-scorecard">Scorecard</a></li>
+<li><a href="#prototype-soon" id="toc-prototype-soon">Prototype
+Soon</a></li>
+<li><a href="#prepare-foundations" id="toc-prepare-foundations">Prepare
+Foundations</a></li>
+<li><a href="#monitor-for-maturity"
+id="toc-monitor-for-maturity">Monitor for Maturity</a></li>
+<li><a href="#deprioritize-for-now"
+id="toc-deprioritize-for-now">Deprioritize for Now</a></li>
+</ul></li>
+<li><a href="#enterprise-ai-architecture-implications"
+id="toc-enterprise-ai-architecture-implications">Enterprise AI
+Architecture Implications</a></li>
+<li><a href="#implementation-priorities"
+id="toc-implementation-priorities">Implementation priorities</a>
+<ul>
+<li><a href="#now--evidence-plumbing-no-production-behavior-change"
+id="toc-now--evidence-plumbing-no-production-behavior-change">Now —
+evidence plumbing, no production behavior change</a></li>
+<li><a href="#3090-days--validate-controls"
+id="toc-3090-days--validate-controls">30–90 days — validate
+controls</a></li>
+<li><a href="#hold" id="toc-hold">Hold</a></li>
+</ul></li>
+<li><a href="#knowledge-reinforcement"
+id="toc-knowledge-reinforcement">Knowledge reinforcement</a></li>
+<li><a href="#evidence-and-claim-ledger"
+id="toc-evidence-and-claim-ledger">Evidence and claim ledger</a></li>
+<li><a href="#reproducibility-and-evidence-boundary"
+id="toc-reproducibility-and-evidence-boundary">Reproducibility and
+evidence boundary</a></li>
+</ul></li>
+</ul></nav><main><h1
+id="ai-research-intelligence-brief--september-6-2026">AI Research
+Intelligence Brief — September 6, 2026</h1>
+<h2 id="scope-window-and-evidence-policy">Scope, window, and evidence
+policy</h2>
+<ul>
+<li><strong>Research window:</strong> September 4, 4:00 PM–September 6,
+4:00 AM America/Chicago. The original 36-hour window produced three
+non-duplicate, peer-reviewed primary papers published September 5; no
+expansion was required.</li>
+<li><strong>Discovery:</strong> Nature Portfolio and Springer Nature
+early-access records were screened alongside current arXiv, ACM, and
+journal feeds. Prestige was an input, not a substitute for full-text
+access, quantitative traceability, or methodological relevance.</li>
+<li><strong>Anti-duplication:</strong> candidates were checked against
+the archive through September 5, including the September 4
+measurement-supply-chain papers and September 5 governed-learning
+papers. No deep or Watchlist selection repeats a prior briefing.</li>
+<li><strong>Selection:</strong> three papers cleared deep review; two
+are retained on the Watchlist. Early-access journal articles are
+described as peer reviewed and accepted because the publisher says so;
+they are not treated as final edited Versions of Record.</li>
+<li><strong>Research Utility Score (RUS):</strong> rigor 25%,
+quantitative traceability 25%, reproducibility/artifacts 20%, enterprise
+relevance 15%, and prior-work advance 15%. Scores are ordinal analyst
+judgments, not measured facts.</li>
+<li><strong>Evidence labels:</strong> <strong>Paper Fact</strong> =
+directly reported in a paper or verified artifact; <strong>Independent
+Analysis</strong> = synthesis or critique; <strong>Enterprise
+Inference</strong> = bounded future option; <strong>Uncertainty</strong>
+= evidence is missing, conditional, inconsistent, or not portable.</li>
+<li><strong>Safety boundary:</strong> clinical and public-sector
+findings do not support autonomous high-stakes decisions. Every proposed
+experiment is isolated, reversible, measurable, and
+non-destructive.</li>
+</ul>
+<h2 id="executive-signal">Executive signal</h2>
+<p><strong>Independent Analysis — aggregate performance is an incomplete
+control surface.</strong> The three deep papers examine different
+strata: clinical language subgroups, institutional legitimacy
+mechanisms, and node/edge types in heterogeneous graphs. Each finds that
+treating the population, process, or graph as homogeneous can hide the
+mechanism that determines failure.</p>
+<p>The decision-useful pattern is <strong>type → measure → compare →
+constrain → review</strong>:</p>
+<ol type="1">
+<li>Type the relevant context: subgroup, task topic, authority path,
+node type, or edge type.</li>
+<li>Measure both the aggregate and the typed slice with metrics
+appropriate to prevalence and consequence.</li>
+<li>Compare against a neutral baseline and across strata, preserving
+uncertainty.</li>
+<li>Constrain use when a slice is underpowered, unvalidated, or
+materially worse.</li>
+<li>Review outcomes, appeals, and drift before promotion.</li>
+</ol>
+<p>This is not a recommendation to deploy suicide-risk classifiers,
+automated legal authority, or learned graph infrastructure. It supports
+building evaluation and governance controls that expose where averages
+conceal risk.</p>
+<h2 id="top-3-future-bets">Top 3 Future Bets</h2>
+<ol type="1">
+<li><strong>Subgroup-, topic-, and prevalence-aware evaluation gate —
+89.4/100, Prototype Soon.</strong> Why it matters: the topic-general
+clinical classifier showed an AUC gap of 0.11 and 2.39× higher odds of a
+false negative for the alexithymia subgroup, while topic factorization
+reduced the gap to 0.01 or 0.05. Evidence that would change the
+recommendation: representative external replay shows typed tests add no
+failure detection beyond existing controls, or subgroup estimates remain
+too sparse to act on responsibly. <strong>Next reversible
+action:</strong> add shadow-only sliced evaluation to one existing text
+classifier; block no traffic and change no user outcome.</li>
+<li><strong>Accountability, explanation, and appeal contract — 86.8/100,
+Prototype Soon.</strong> Why it matters: in a mixed-method survey,
+fairness and institutional trust reached acceptance mainly through
+perceived legitimacy, while accountability retained both indirect and
+direct associations. Evidence that would change the recommendation:
+domain-specific experiments find appeal and responsibility controls do
+not improve comprehension, error recovery, or warranted trust.
+<strong>Next reversible action:</strong> annotate one low-risk workflow
+with accountable owner, reason code, contest path, and human override;
+test comprehension with internal reviewers.</li>
+<li><strong>Typed-graph sampling benchmark harness — 84.3/100, Prototype
+Soon.</strong> Why it matters: Het-node2vec changes random-walk
+transition probabilities by node/edge type and reports a 3.7%
+balanced-accuracy gain over node2vec on a biomedical edge task, but
+benefits depend on prevalence, density, and homophily. Evidence that
+would change the recommendation: representative enterprise graphs show
+no minority-type coverage or downstream gain after matched tuning and
+cost controls. <strong>Next reversible action:</strong> replay one
+de-identified graph offline across neutral node2vec and type-aware
+sampling, with frozen splits and no production index change.</li>
+</ol>
+<h2
+id="deep-paper-1--heterogeneous-clinical-language-can-hide-subgroup-failure">Deep
+paper 1 — Heterogeneous clinical language can hide subgroup failure</h2>
+<p><strong>Citation:</strong> Rong Huang, Longdi Xian, Christopher Chi
+Wai Cheng et al. <em>Exploring generalizability and explainability of
+LLMs in classifying clinically rated suicidal ideation using
+heterogeneous data.</em> <strong>npj Digital Medicine</strong>,
+published September 5, 2026. DOI: <a
+href="https://doi.org/10.1038/s41746-026-03198-w">10.1038/s41746-026-03198-w</a>.
+<a href="https://www.nature.com/articles/s41746-026-03198-w">Publisher
+record</a> · <a
+href="https://github.com/LongdiXian/Suicide_LLM_Generalizability">Code</a>.
+Article CC BY 4.0; no repository license was visible.</p>
+<p><strong>RUS: 84/100</strong> — rigor 21/25; quantitative traceability
+23/25; reproducibility/artifacts 14/20; enterprise relevance 14/15;
+prior-work advance 12/15.</p>
+<h3 id="contribution-and-quantitative-trace">Contribution and
+quantitative trace</h3>
+<p>The study tests whether a Cantonese BERT classifier trained on
+clinician interview transcripts performs differently for people with and
+without alexithymia, then factorizes the transcript by topic. Although
+the title says “LLMs,” the implemented model is
+<code>bert-base-cantonese</code>, a transformer encoder rather than a
+contemporary generative large language model.</p>
+<ul>
+<li><strong>Paper Fact:</strong> the cross-sectional convenience sample
+contains 299 Cantonese-speaking adults: 194 major-depressive-disorder
+cases and 105 controls, recruited at one Hong Kong site from October
+2020 to May 2022. Clinician-rated suicidal ideation was present in
+68/299 (22.7%).</li>
+<li><strong>Paper Fact:</strong> 85 participants lacked Toronto
+Alexithymia Scale data. Complete-case subgroup analysis included 108
+non-alexithymia participants, with 5 suicidal cases (4.6%), and 106
+alexithymia participants, with 39 suicidal cases (36.8%). This large
+prevalence difference is central to interpreting PPV/NPV and
+instability.</li>
+<li><strong>Paper Fact:</strong> for the topic-general classifier, AUC
+was 0.88 in the non-alexithymia subgroup and 0.77 in the alexithymia
+subgroup, a gap of 0.11. Sensitivity was 0.40 versus 0.31; the odds of a
+false negative were reported as 2.39× higher for alexithymia
+participants (p = 0.002).</li>
+<li><strong>Paper Fact:</strong> the mood-related classifier, which
+excluded the suicide-question text, produced subgroup AUCs of 0.98 and
+0.93 (gap 0.05). The suicide-specific classifier produced 0.94 and 0.95
+(absolute gap 0.01). Topic factorization therefore reduced the reported
+disparity without requiring the full mixed-topic transcript.</li>
+<li><strong>Paper Fact:</strong> participant-level prediction used
+stratified 10-fold cross-validation, document chunks up to 512 tokens
+with 128-token overlap, majority voting, early stopping after five
+non-improving epochs, Adam at 1e-5, batch size 8, and a fixed 0.5
+threshold. The authors report a fixed random seed of 6 and list Python
+3.13.5, TensorFlow 2.20.0, Transformers 4.57.3, and CUDA 12.9.</li>
+<li><strong>Paper Fact:</strong> multiple-imputation sensitivity
+analysis preserved the qualitative pattern: topic-general gap 0.16 and
+topic-specific gaps 0.01 and 0.04.</li>
+<li><strong>Paper Fact:</strong> the public repository contains
+processing and training scripts plus a requirements file. Source
+transcripts are not public because of sensitivity and are available only
+by author request. The repository page did not expose a license, which
+limits reuse certainty.</li>
+</ul>
+<h3
+id="methodological-critique-and-prior-work-comparison">Methodological
+critique and prior-work comparison</h3>
+<p>Strengths include clinician labels, patient-level split handling,
+sensitivity analysis for missing alexithymia data,
+prevalence-independent AUC alongside operating metrics, explicit
+hyperparameters, mediation exploration, and public code. Separating
+mood-related from suicide-specific language is also more interpretable
+than adding model scale.</p>
+<p>The limits are substantial. The five suicidal cases in the
+non-alexithymia subgroup make its sensitivity and PPV highly unstable;
+confidence intervals for the headline subgroup operating metrics are not
+prominent. Group prevalence differs nearly eightfold. Cross-validation
+reuses one small, single-site sample and is not external validation.
+Missing subgroup data affect 28% of participants. Convenience
+recruitment, a cross-sectional design, one language and clinical
+instrument, lexicon-level mediation, and no prospective workflow or
+outcomes study sharply limit portability. False-negative odds do not
+establish clinical harm reduction.</p>
+<p>Earlier suicide-risk NLP work generally optimized aggregate
+discrimination from full text or predefined suicide language and often
+assumed linguistic homogeneity. The incremental contribution is a
+subgroup audit plus topic factorization. It does <strong>not</strong>
+show that factorization resolves all bias, generalizes outside Cantonese
+interviews, or is safe for screening.</p>
+<h3 id="enterprise-readiness">Enterprise readiness</h3>
+<p><strong>Enterprise Inference — high readiness for a sliced-evaluation
+experiment; very low readiness for clinical deployment.</strong> The
+transferable idea is to define natural context strata, report operating
+metrics by stratum, and test whether decomposing mixed inputs reduces
+disparity. Any implementation decision would require internal
+protected-attribute policy, legal basis, minimum subgroup sizes, label
+quality, escalation costs, and a domain expert able to interpret
+false-positive and false-negative consequences.</p>
+<h2
+id="deep-paper-2--fair-process-and-accountable-redress-shape-legitimacy">Deep
+paper 2 — Fair process and accountable redress shape legitimacy</h2>
+<p><strong>Citation:</strong> Guifeng Fan and Weihua Lyu. <em>Procedural
+fairness, accountability, and legitimacy in the AI-enabled state:
+evidence from China.</em> <strong>Humanities and Social Sciences
+Communications</strong>, published September 5, 2026. DOI: <a
+href="https://doi.org/10.1057/s41599-026-08914-1">10.1057/s41599-026-08914-1</a>.
+<a href="https://www.nature.com/articles/s41599-026-08914-1">Publisher
+record and datasets</a>. Article CC BY-NC-ND 4.0.</p>
+<p><strong>RUS: 80/100</strong> — rigor 19/25; quantitative traceability
+22/25; reproducibility/artifacts 15/20; enterprise relevance 14/15;
+prior-work advance 10/15.</p>
+<h3 id="contribution-and-quantitative-trace-1">Contribution and
+quantitative trace</h3>
+<p>The paper combines a multi-stakeholder survey with follow-up
+interviews to test whether perceived procedural fairness, AI
+accountability, and trust in state institutions influence acceptance of
+AI-embedded legal duties through perceived legitimacy.</p>
+<ul>
+<li><strong>Paper Fact:</strong> data were collected from February
+through October 2025. Of 758 completed questionnaires, 116 were removed
+after quality screening, leaving N = 642 (84.7% retention): 327
+citizens, 132 legal professionals, 104 public officials, and 79 AI
+practitioners across Eastern/coastal, Central, and Western strata. The
+authors originally targeted at least 800 usable responses.</li>
+<li><strong>Paper Fact:</strong> sampling was geographically stratified
+but city and participant recruitment were purposive and criteria-based
+through institutions, community groups, and online panels. The paper
+explicitly says the sample is not nationally representative.</li>
+<li><strong>Paper Fact:</strong> 41 consented follow-up interviewees
+were purposively selected for variation in role, region, AI literacy,
+trust, and acceptance. Interviews were recorded, transcribed,
+anonymized, and analyzed in Chinese.</li>
+<li><strong>Paper Fact:</strong> PLS-SEM used 5,000 bootstrap samples.
+The model reports R² = 0.57 for perceived legitimacy and R² = 0.62 for
+acceptance; reported effect-size anchors were 0.274 and 0.361.
+Reliability and convergent-validity checks were generally acceptable:
+composite reliability 0.89–0.93, AVE 0.62–0.86, loadings above 0.708,
+and inner VIFs below 5.</li>
+<li><strong>Paper Fact:</strong> procedural fairness → legitimacy was β
+= 0.40 (p = 0.0005), while its direct path to acceptance was β = 0.07 (p
+= 0.194). The bootstrapped indirect path through legitimacy was β = 0.20
+(p = 0.0001).</li>
+<li><strong>Paper Fact:</strong> accountability → legitimacy was β =
+0.28 (p = 0.0008), accountability → acceptance β = 0.11 (p = 0.041), and
+the indirect path β = 0.14 (p = 0.002). Trust in institutions →
+legitimacy was β = 0.22 (p = 0.004), its direct acceptance path was not
+significant, and the indirect path was β = 0.11 (p = 0.004).</li>
+<li><strong>Paper Fact:</strong> legitimacy → acceptance was β = 0.49 (p
+= 0.0003). Prior AI-service exposure was positively associated with
+acceptance (β = 0.15, p &lt; 0.001); prior negative experience was
+negatively associated (β = -0.13, p &lt; 0.001).</li>
+<li><strong>Paper Fact:</strong> AI-literacy moderation was small or
+absent: fairness × literacy β = 0.07 (p = 0.049), accountability ×
+literacy β = 0.09 (p = 0.031), trust × literacy β = 0.02 (p =
+0.541).</li>
+<li><strong>Paper Fact:</strong> the publisher exposes quantitative and
+qualitative XLSX datasets plus supplementary material. No analysis code
+or preregistration was verified.</li>
+</ul>
+<h3
+id="methodological-critique-and-prior-work-comparison-1">Methodological
+critique and prior-work comparison</h3>
+<p>The mixed stakeholder design, explicit controls, qualitative
+follow-up, artifact availability, bootstrapping, and measurement checks
+improve auditability. The finding that prior negative experience matters
+aligns process design with lived outcomes rather than abstract
+transparency alone.</p>
+<p>However, cross-sectional associations cannot establish that fairness
+or accountability causes legitimacy or acceptance; reverse or reciprocal
+pathways remain plausible. Every principal construct is self-reported in
+a politically sensitive context. Harman’s first factor was 37.63%, but
+that test cannot eliminate common-method bias; the paper acknowledges
+this. Self-rated AI literacy overlaps experience (r = 0.41) and is not
+an objective competency test. Recruitment is not probabilistic, 642 fell
+below the planned 800, and generalized “AI-enabled state” items can mean
+different systems to different respondents. The manuscript at times
+calls the survey phase generalizable despite explicitly non-national
+sampling; that inference should not be carried into enterprise
+design.</p>
+<p>Procedural-justice research already links voice, consistency,
+neutrality, explanation, and review to legitimacy.
+Algorithmic-governance research separately studies accountability,
+trust, and acceptance. This paper’s advance is to model them together
+across four stakeholder groups and support the model with interviews. It
+does not test an actual deployed system, a specific appeal design,
+behavioral compliance, or cross-national portability.</p>
+<h3 id="enterprise-readiness-1">Enterprise readiness</h3>
+<p><strong>Enterprise Inference — moderate for low-risk process
+experiments; low for causal or culture-portable claims.</strong>
+Translate the constructs into testable controls: responsible owner,
+visible reason, contest route, correction SLA, and human override. Do
+not use “trust” or “acceptance” as a target independent of accuracy and
+rights. Internal context required: affected users, authority boundaries,
+jurisdictions, risk class, existing appeal process, and whether
+acceptance is an appropriate outcome at all.</p>
+<h2
+id="deep-paper-3--type-aware-graph-sampling-improves-some-minority-relation-tasks">Deep
+paper 3 — Type-aware graph sampling improves some minority-relation
+tasks</h2>
+<p><strong>Citation:</strong> Mauricio Soto-Gomez, Carlos Cano, Justin
+Reese et al. <em>Het-node2vec: second-order random walk sampling for
+heterogeneous graph embedding.</em> <strong>Scientific Reports</strong>,
+published September 5, 2026. DOI: <a
+href="https://doi.org/10.1038/s41598-026-66012-3">10.1038/s41598-026-66012-3</a>.
+<a href="https://www.nature.com/articles/s41598-026-66012-3">Publisher
+record</a> · <a
+href="https://github.com/AnacletoLAB/hetnode2vec_ensmallen">Implementation</a>
+· <a href="https://github.com/yangji9181/HNE">HNE benchmark</a>. Article
+CC BY 4.0; implementation Apache-2.0.</p>
+<p><strong>RUS: 87/100</strong> — rigor 22/25; quantitative traceability
+21/25; reproducibility/artifacts 19/20; enterprise relevance 12/15;
+prior-work advance 13/15.</p>
+<h3 id="contribution-and-quantitative-trace-2">Contribution and
+quantitative trace</h3>
+<p>Het-node2vec extends node2vec’s second-order random walks with a
+parameter that promotes or suppresses transitions across node types,
+plus a “special” strategy that targets a selected node or edge type. It
+aims to preserve node2vec’s scalability while avoiding manually
+enumerated meta-paths.</p>
+<ul>
+<li><strong>Paper Fact:</strong> benchmarking uses four HNE graphs:
+Freebase (12,164,758 nodes; 62,982,566 edges), DBLP (1,989,077;
+258,850,593), Yelp (82,465; 30,542,675), and PubMed (63,109; 244,986),
+spanning 4–8 node types and 4–36 edge types.</li>
+<li><strong>Paper Fact:</strong> authors use the HNE train/test splits
+and pipeline, unsupervised 50-dimensional embeddings, 20% edge removal
+for testing, five-fold training cross-validation, walk length 100, 10–50
+walks per node, and Skip-gram. They tune node2vec p and q on the two
+smallest benchmarks, then hold p = 4 and q = 0.25 fixed while sweeping
+the new switch parameter.</li>
+<li><strong>Paper Fact:</strong> the comparison covers five random-walk
+heterogeneous embeddings, four GNN methods, and four relation-learning
+models. Het-node2vec is described as best or competitive for node-label
+prediction, while link prediction ranks among the top five rather than
+first. Exact table values should be preferred over that ordinal summary
+when selecting a system.</li>
+<li><strong>Paper Fact:</strong> the RNA-KG case study contains 673,825
+nodes, nearly 17 million edges, and 74 node types. Gene and miRNA nodes
+are 3.086% and 0.688% of nodes. The target miRNA–gene relation comprises
+841,583 edges.</li>
+<li><strong>Paper Fact:</strong> RNA-KG uses a connectivity-preserving
+70:30 split, 128 walks of length 16 per training node, 25-dimensional
+embeddings, balanced positive/negative pairs, and a random-forest
+classifier. Promoting the target edge type at 1/s = 10 produced a
+reported 3.7% balanced-accuracy gain over node2vec (Wilcoxon
+signed-rank, alpha = 0.001).</li>
+<li><strong>Paper Fact:</strong> a related preliminary experiment cited
+by the authors reports 66% balanced accuracy versus 58% for first-order
+LINE embeddings; it is not the main matched node2vec comparison.</li>
+<li><strong>Paper Fact:</strong> code is integrated with the Rust-backed
+GRAPE ecosystem, the public implementation has an Apache-2.0 license,
+and the HNE benchmark publishes four datasets, 13 baselines, transforms,
+and evaluation code.</li>
+</ul>
+<h3
+id="methodological-critique-and-prior-work-comparison-2">Methodological
+critique and prior-work comparison</h3>
+<p>The strongest features are broad graph scale, reused benchmark
+splits, many baseline families, a real biomedical case, parameter
+sensitivity studies, open code, and an explicit description of when the
+simple method is less expressive than heterogeneous GNNs. It is
+unusually candid that target-type prevalence alone does not determine
+the best setting.</p>
+<p>The new switch parameter is tuned on the target task, so gains can
+reflect workload-specific selection and should be nested inside honest
+validation. The paper does not fully disentangle prevalence, local
+density, degree distribution, edge-type distribution, and
+homophily/heterophily. The biomedical negatives are sampled non-edges,
+not necessarily verified non-interactions. The downstream random forest,
+balanced evaluation set, and test graph construction can differ from
+production conditions. End-to-end latency, memory, energy, update cost,
+drift, confidence intervals across deployments, and online retrieval
+quality are not established.</p>
+<p>Metapath2vec and related methods encode heterogeneous semantics
+through predefined paths; heterogeneous GNNs learn
+type/relation-specific transformations; knowledge-graph embeddings
+optimize triples. Het-node2vec’s contribution is a local stochastic
+control that avoids complete meta-path schemas and preserves a
+lightweight random-walk pipeline. It is complementary—not a universal
+replacement—for richer attributed or relation-semantic models.</p>
+<h3 id="enterprise-readiness-2">Enterprise readiness</h3>
+<p><strong>Enterprise Inference — moderate for an offline graph
+benchmark; low for direct production replacement.</strong> The
+implementation and benchmark are sufficient to test on a de-identified
+knowledge graph with frozen splits, cost telemetry, minority-type
+coverage, and deterministic fallback. Internal context required: graph
+schema, edge semantics, update frequency, gold labels, negative-sampling
+policy, latency/recall requirements, and whether node attributes or
+relation semantics are mission-critical.</p>
+<h2 id="watchlist">Watchlist</h2>
+<h3
+id="ai-pharmaceutical-regulation-trust-model--quantitative-but-causal-direction-is-unresolved">AI
+pharmaceutical-regulation trust model — quantitative, but causal
+direction is unresolved</h3>
+<p><strong>Citation:</strong> <em>The intrinsic mechanism of public
+technology acceptance, risk perception, and pharmaceutical safety trust
+in the context of AI-driven pharmaceutical regulation.</em>
+<strong>Scientific Reports</strong>, published September 5, 2026. DOI:
+<a
+href="https://doi.org/10.1038/s41598-026-67840-z">10.1038/s41598-026-67840-z</a>.
+<a href="https://www.nature.com/articles/s41598-026-67840-z">Publisher
+record</a>. Article CC BY 4.0; data only by reasonable request.</p>
+<p><strong>Paper Fact:</strong> 537 Chinese online questionnaires
+yielded 412 valid responses after attention, speed, straight-line, and
+pattern filters. CFA fit was χ²/df 2.31, CFI 0.94, TLI 0.93, RMSEA
+0.056, SRMR 0.048; structural fit was χ²/df 2.42, CFI 0.93, TLI 0.92,
+RMSEA 0.059, SRMR 0.051. Technology acceptance was negatively associated
+with privacy, error, and accountability risk (β = -0.39, -0.35, -0.43);
+those risks were negatively associated with pharmaceutical-safety trust
+(β = -0.28, -0.24, -0.33). Accountability had the largest numeric
+coefficients, but most pairwise differences were not significant.</p>
+<p><strong>Uncertainty:</strong> the assumed “acceptance → lower
+perceived risk” direction is not identified in a cross-sectional design
+and may reflect reverse causality, affect, omitted institutional trust,
+or common response tendency. Recruitment mixed quotas with convenience
+and forwarding, over-represented tertiary education, and was not
+nationally representative. This remains Watchlist because the governance
+paper offers a broader, mixed-method signal and because the causal
+mechanism requires experiment or longitudinal evidence.</p>
+<h3
+id="odmmt-placental-pathology--interesting-structure-insufficient-accessible-evidence">ODMMT
+placental pathology — interesting structure, insufficient accessible
+evidence</h3>
+<p><strong>Citation:</strong> Mangalam Sahai, Liron Pantanowitz, Philip
+LeDuc et al. <em>Unsupervised machine learning for placental disease
+using cell spatial organization.</em> <strong>npj Digital
+Medicine</strong>, published September 5, 2026. DOI: <a
+href="https://doi.org/10.1038/s41746-026-03177-1">10.1038/s41746-026-03177-1</a>.
+<a href="https://www.nature.com/articles/s41746-026-03177-1">Publisher
+record</a>. Article CC BY-NC-ND 4.0.</p>
+<p><strong>Paper Fact:</strong> the abstract describes optical-density
+masking of extravillous trophoblast and red-blood-cell organization,
+normalizing-flow z-scores, and a morphology-separation score that
+produces two clusters for healthy versus diseased vessels in the
+experimental dataset. The authors frame this as biologically
+interpretable unsupervised classification and automated correction of
+misclassification.</p>
+<p><strong>Uncertainty:</strong> the accessible early-access record and
+supplement did not expose enough full methods, sample counts, operating
+metrics, external validation, calibration, or artifact statements to
+trace the deployment claim. “Two distinct clusters” is not a clinically
+meaningful performance estimate by itself. The paper stays on the
+Watchlist until the accepted manuscript or final Version of Record
+supports full quantitative and reproducibility review.</p>
+<h2 id="cross-paper-synthesis">Cross-paper synthesis</h2>
+<ol type="1">
+<li><strong>Independent Analysis — heterogeneity is a design
+variable.</strong> Clinical topic, stakeholder authority, and graph type
+are not nuisance metadata; they can determine which failure is visible
+and which intervention works.</li>
+<li><strong>Independent Analysis — decomposition can improve
+auditability.</strong> Topic-specific classifiers isolate language
+mechanisms; procedural constructs separate fairness, accountability,
+trust, legitimacy, and acceptance; type-aware walks make sampling bias
+tunable. Decomposition does not prove causality or safety.</li>
+<li><strong>Independent Analysis — rare strata need uncertainty, not
+just separate scores.</strong> Five positive cases cannot support
+confident subgroup operating policy. Rare graph types may benefit from
+targeted sampling, but tuning can overfit. Small governance interactions
+should not drive product claims.</li>
+<li><strong>Independent Analysis — legitimacy is not accuracy.</strong>
+A technically better model can still lack a responsible owner, contest
+route, or lawful authority. Conversely, acceptance can rise without
+better accuracy. Measure both system quality and institutional
+process.</li>
+<li><strong>Independent Analysis — open artifacts change
+readiness.</strong> Het-node2vec has licensed code and benchmark data;
+the clinical classifier has scripts but restricted data and no visible
+repository license; the governance study exposes datasets but no
+analysis code. Reproducibility is therefore uneven even though all three
+are peer reviewed.</li>
+</ol>
+<h2 id="visual-1--typed-evidence-control-loop">Visual 1 — typed-evidence
+control loop</h2>
+<pre class="text"><code>INPUT / CASE / GRAPH
+        │
+        ▼
+TYPE CONTEXT ───── subgroup · topic · authority · node/edge type
+        │
+        ▼
+MEASURE ───────── aggregate + slice metrics + uncertainty + cost
+        │
+        ▼
+COMPARE ───────── neutral baseline · external site · counterfactual · appeal
+        │
+        ├──── insufficient power / drift / harm ───► HOLD + HUMAN REVIEW
+        │
+        ▼
+CONSTRAIN + OBSERVE ── shadow first · reversible rollout · outcome telemetry</code></pre>
+<h2 id="visual-2--quantitative-anchors-and-their-boundaries">Visual 2 —
+quantitative anchors and their boundaries</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Signal</th>
+<th style="text-align: right;">Reported result</th>
+<th>What it supports</th>
+<th>What it does not support</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Clinical topic-general subgroup AUC gap</td>
+<td style="text-align: right;">0.11</td>
+<td>sliced evaluation</td>
+<td>external clinical use</td>
+</tr>
+<tr class="even">
+<td>False-negative odds by subgroup</td>
+<td style="text-align: right;">2.39×, p = 0.002</td>
+<td>failure investigation</td>
+<td>stable risk ratio from five positives</td>
+</tr>
+<tr class="odd">
+<td>Topic-specific subgroup AUC gap</td>
+<td style="text-align: right;">0.01 / 0.05</td>
+<td>factorized replay</td>
+<td>elimination of bias</td>
+</tr>
+<tr class="even">
+<td>Legitimacy → acceptance</td>
+<td style="text-align: right;">β = 0.49, p = 0.0003</td>
+<td>process/control hypothesis</td>
+<td>causality or cross-cultural portability</td>
+</tr>
+<tr class="odd">
+<td>Fairness direct → acceptance</td>
+<td style="text-align: right;">β = 0.07, p = 0.194</td>
+<td>mediation caution</td>
+<td>“fairness does not matter”</td>
+</tr>
+<tr class="even">
+<td>RNA-KG target-edge promotion</td>
+<td style="text-align: right;">+3.7% balanced accuracy</td>
+<td>offline typed sampling test</td>
+<td>production retrieval superiority</td>
+</tr>
+<tr class="odd">
+<td>RNA-KG scale</td>
+<td style="text-align: right;">673,825 nodes / ~17M edges</td>
+<td>large-graph feasibility signal</td>
+<td>complete TCO or drift resilience</td>
+</tr>
+</tbody>
+</table>
+<h2 id="enterprise-ai-enhancement-backlog">Enterprise AI Enhancement
+Backlog</h2>
+<p><strong>Scoring note — Independent Analysis.</strong> Future
+Enterprise AI Priority = strategic/business value 25% + technical
+leverage 20% + evidence strength 20% + enterprise readiness 15% +
+feasibility 10% + risk-adjusted differentiation 10%. Components are
+bounded judgment anchors, weighted to one decimal. Differences of a few
+points are not meaningful. Unknown internal architecture, regulations,
+workflows, incidents, economics, and risk appetite can materially
+reorder the list.</p>
+<h3 id="scorecard">Scorecard</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Band</th>
+<th>Enhancement</th>
+<th style="text-align: right;">Strategic</th>
+<th style="text-align: right;">Leverage</th>
+<th style="text-align: right;">Evidence</th>
+<th style="text-align: right;">Readiness</th>
+<th style="text-align: right;">Feasibility</th>
+<th style="text-align: right;">Differentiation</th>
+<th style="text-align: right;">Weighted</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Prototype Soon</td>
+<td>Stratified evaluation gate</td>
+<td style="text-align: right;">96</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;"><strong>89.4</strong></td>
+</tr>
+<tr class="even">
+<td>Prototype Soon</td>
+<td>Accountability + appeal contract</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;"><strong>86.8</strong></td>
+</tr>
+<tr class="odd">
+<td>Prototype Soon</td>
+<td>Typed-graph benchmark harness</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;"><strong>84.3</strong></td>
+</tr>
+<tr class="even">
+<td>Prepare Foundations</td>
+<td>Typed context and provenance schema</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">68</td>
+<td style="text-align: right;">76</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;"><strong>80.9</strong></td>
+</tr>
+<tr class="odd">
+<td>Prepare Foundations</td>
+<td>Legitimacy and redress evaluation instrument</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">72</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">74</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">76</td>
+<td style="text-align: right;"><strong>80.4</strong></td>
+</tr>
+<tr class="even">
+<td>Prepare Foundations</td>
+<td>Sensitive-data reproducibility enclave</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">66</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;"><strong>77.7</strong></td>
+</tr>
+<tr class="odd">
+<td>Monitor for Maturity</td>
+<td>Clinical-language external transfer suite</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">42</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;"><strong>72.5</strong></td>
+</tr>
+<tr class="even">
+<td>Monitor for Maturity</td>
+<td>Longitudinal warranted-trust experiment</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">66</td>
+<td style="text-align: right;">74</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">62</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;"><strong>67.9</strong></td>
+</tr>
+<tr class="odd">
+<td>Deprioritize for Now</td>
+<td>Autonomous high-stakes decisions from internal CV</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">76</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;"><strong>40.4</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="prototype-soon">Prototype Soon</h3>
+<h4
+id="1-subgroup--topic--and-prevalence-aware-evaluation-gate--894100">1.
+Subgroup-, topic-, and prevalence-aware evaluation gate — 89.4/100</h4>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability</li>
+<li><strong>Research signal and support:</strong> <strong>Paper Fact +
+Enterprise Inference.</strong> Huang et al. report a topic-general AUC
+gap of 0.11, 2.39× false-negative odds, and smaller topic-specific gaps.
+Pharma-trust and legitimacy papers reinforce that population composition
+changes interpretation.</li>
+<li><strong>Problem/opportunity:</strong> aggregate quality can conceal
+concentrated failure, while low-prevalence slices yield unstable
+estimates.</li>
+<li><strong>Future capability:</strong> an evaluation gate declares
+relevant strata, minimum sample/power, operating thresholds,
+calibration, PPV/NPV, confidence intervals, and cost-of-error budgets.
+It records “insufficient evidence” rather than forcing pass/fail.</li>
+<li><strong>Placement:</strong> evaluation, observability, model
+gateway, human-review layer.</li>
+<li><strong>Business value:</strong> quality, reliability, risk
+reduction, customer experience. <strong>Technical value:</strong>
+reusable slice definitions, threshold governance, and drift
+baselines.</li>
+<li><strong>Maturity/readiness:</strong> strong evaluation signal;
+enterprise-ready only as shadow instrumentation.
+<strong>Confidence:</strong> High. <strong>Horizon:</strong> Now.
+<strong>Effort:</strong> M.</li>
+<li><strong>Dependencies:</strong> lawful subgroup use, label/data
+provenance, minimum-count policy, expert review, representative replay
+sets.</li>
+<li><strong>Risks:</strong> privacy and proxy inference, unstable small
+cells, metric gaming, intersectional sparsity, unfair withholding,
+reviewer overload.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build the policy and
+schema; buy commodity monitoring; partner with domain and legal
+experts.</strong> Strategic logic lives in internal risk
+definitions.</li>
+<li><strong>Minimum reversible experiment:</strong> add sliced reporting
+to one historical classifier replay; no production traffic or decisions
+change.</li>
+<li><strong>Success metrics / stop conditions:</strong> catch at least
+one actionable aggregate-hidden failure with acceptable reviewer time;
+stop if slices are legally impermissible, underpowered, or produce noisy
+escalation without reproducible signal.</li>
+<li><strong>Roadmap trigger:</strong> two representative replays show
+stable disparities or improvements, owners approve thresholds, and
+privacy review confirms lawful use.</li>
+</ul>
+<h4 id="2-accountability-explanation-and-appeal-contract--868100">2.
+Accountability, explanation, and appeal contract — 86.8/100</h4>
+<ul>
+<li><strong>Category:</strong> Safety &amp; Governance</li>
+<li><strong>Research signal and support:</strong> <strong>Paper Fact +
+Enterprise Inference.</strong> Fan &amp; Lyu find accountability
+associated with legitimacy and acceptance through both indirect and
+direct paths; interviews emphasize opacity, data misuse, and reduced
+human oversight.</li>
+<li><strong>Problem/opportunity:</strong> users and operators cannot
+identify who owns an AI-assisted decision, how to challenge it, or how
+correction propagates.</li>
+<li><strong>Future capability:</strong> every consequential AI workflow
+declares accountable owner, authority source, reason code, evidence
+version, human override, contest channel, correction SLA, and immutable
+appeal outcome.</li>
+<li><strong>Placement:</strong> applications, orchestration,
+security/governance, human-review layer.</li>
+<li><strong>Business value:</strong> risk reduction, reliability,
+customer experience, quality. <strong>Technical value:</strong>
+machine-readable responsibility and replayable decisions.</li>
+<li><strong>Maturity/readiness:</strong> established governance
+patterns, associational paper support; specific control efficacy still
+needs domain testing. <strong>Confidence:</strong> Moderate–High.
+<strong>Horizon:</strong> Now. <strong>Effort:</strong> M.</li>
+<li><strong>Dependencies:</strong> process owner,
+identity/authorization, trace retention, case-management integration,
+jurisdictional review.</li>
+<li><strong>Risks:</strong> cosmetic explanations, inaccessible appeal,
+privacy leakage, authority confusion, SLA burden, automation bias.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build the contract
+and integration; buy case-management components where appropriate;
+partner with compliance and affected-user representatives.</strong></li>
+<li><strong>Minimum reversible experiment:</strong> annotate one
+low-risk approval workflow and run table-top appeals on synthetic
+cases.</li>
+<li><strong>Success metrics / stop conditions:</strong> ≥90% reviewers
+correctly identify owner and contest route; 100% cases replayable; stop
+if the explanation reveals sensitive data or appeals cannot change an
+outcome.</li>
+<li><strong>Roadmap trigger:</strong> domain users demonstrate faster,
+more accurate correction with no rights regression and an accountable
+executive accepts ownership.</li>
+</ul>
+<h4 id="3-typed-graph-sampling-benchmark-harness--843100">3. Typed-graph
+sampling benchmark harness — 84.3/100</h4>
+<ul>
+<li><strong>Category:</strong> Data &amp; Knowledge Infrastructure</li>
+<li><strong>Research signal and support:</strong> <strong>Paper Fact +
+Enterprise Inference.</strong> Het-node2vec reports competitive
+node-label performance and a 3.7% balanced-accuracy gain on an RNA-KG
+target relation using type-biased walks, with licensed code and public
+benchmarks.</li>
+<li><strong>Problem/opportunity:</strong> homogeneous graph sampling can
+underrepresent rare but business-critical entity and relation
+types.</li>
+<li><strong>Future capability:</strong> an offline harness compares
+neutral, generic-switch, and target-type sampling on frozen graph
+snapshots; tracks minority-type visitation, downstream quality, latency,
+memory, stability, and failure by schema type.</li>
+<li><strong>Placement:</strong> retrieval/knowledge, data platform,
+evaluation, infrastructure.</li>
+<li><strong>Business value:</strong> quality, reliability, cost,
+strategic differentiation. <strong>Technical value:</strong>
+evidence-based sampling choice without replacing the production graph
+stack.</li>
+<li><strong>Maturity/readiness:</strong> reproducible research
+prototype; no production TCO or drift validation.
+<strong>Confidence:</strong> Moderate–High. <strong>Horizon:</strong>
+Now. <strong>Effort:</strong> M.</li>
+<li><strong>Dependencies:</strong> de-identified graph snapshot,
+schema/type inventory, trusted labels, honest negatives, deterministic
+baseline, compute budget.</li>
+<li><strong>Risks:</strong> task-specific overfitting, false negatives,
+schema drift, representation bias, leakage across splits, tuning
+cost.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build the benchmark
+around the Apache-2.0 reference; partner with graph-platform vendor only
+for integration.</strong> Avoid buying a new platform before
+evidence.</li>
+<li><strong>Minimum reversible experiment:</strong> single offline
+snapshot, one minority relation, nested parameter selection, frozen
+blind test.</li>
+<li><strong>Success metrics / stop conditions:</strong> ≥3% stable
+quality gain or equivalent cost reduction across three seeds without
+majority-type regression; stop on leakage, unstable rankings, or &gt;20%
+cost growth without commensurate benefit.</li>
+<li><strong>Roadmap trigger:</strong> two temporally separated snapshots
+reproduce gain and deterministic fallback meets current SLA.</li>
+</ul>
+<h3 id="prepare-foundations">Prepare Foundations</h3>
+<h4 id="4-typed-context-and-provenance-schema--809100">4. Typed context
+and provenance schema — 80.9/100</h4>
+<ul>
+<li><strong>Category:</strong> Data &amp; Knowledge Infrastructure</li>
+<li><strong>Research signal and support:</strong> <strong>Independent
+Analysis</strong> across all three deep papers: topic, stakeholder role,
+and node/edge type change interpretation.</li>
+<li><strong>Problem/opportunity:</strong> enterprise traces often store
+text and outputs without typed context needed for slicing,
+authorization, or reproduction.</li>
+<li><strong>Future capability:</strong> versioned schema for input
+topic, user/context group where lawful, authority level, model/data
+version, graph entity/relation type, outcome, reviewer, and
+provenance.</li>
+<li><strong>Placement:</strong> data platform, retrieval/knowledge,
+observability, security/governance.</li>
+<li><strong>Business value:</strong> reliability, quality, speed, risk
+reduction. <strong>Technical value:</strong> shared join keys for
+evaluation, replay, policy, and cost telemetry.</li>
+<li><strong>Maturity/readiness:</strong> conceptually strong; depends on
+internal ontology and privacy rules. <strong>Confidence:</strong>
+Moderate. <strong>Horizon:</strong> 3–6 months. <strong>Effort:</strong>
+L.</li>
+<li><strong>Dependencies:</strong> data classification, ontology
+ownership, identity boundaries, retention/deletion policy, lineage
+tooling.</li>
+<li><strong>Risks:</strong> sensitive attribute collection, ontology
+churn, false precision, inconsistent tagging, surveillance
+concerns.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build the semantic
+contract; buy storage/catalog infrastructure.</strong> Meaning and
+lawful use are enterprise-specific.</li>
+<li><strong>Minimum reversible experiment:</strong> annotate 200
+historical traces in a segregated dataset; compare inter-rater agreement
+and query utility.</li>
+<li><strong>Success metrics / stop conditions:</strong> κ ≥0.75 on
+critical fields and ≥80% of required replay queries answerable; stop if
+lawful minimization cannot be met.</li>
+<li><strong>Roadmap trigger:</strong> two downstream teams reuse the
+schema and privacy/governance approve production collection fields.</li>
+</ul>
+<h4 id="5-legitimacy-and-redress-evaluation-instrument--804100">5.
+Legitimacy and redress evaluation instrument — 80.4/100</h4>
+<ul>
+<li><strong>Category:</strong> Human-AI Workflow</li>
+<li><strong>Research signal and support:</strong> <strong>Paper Fact +
+Enterprise Inference.</strong> Fan &amp; Lyu separate fairness,
+accountability, institutional trust, legitimacy, and acceptance; the
+pharma study separately finds accountability-risk associations with
+trust.</li>
+<li><strong>Problem/opportunity:</strong> satisfaction or adoption alone
+cannot distinguish warranted trust from resignation, convenience, or
+institutional deference.</li>
+<li><strong>Future capability:</strong> domain-specific instrument
+measures comprehension, voice, neutrality, owner clarity,
+contestability, correction quality, and actual outcomes—never
+“acceptance” alone.</li>
+<li><strong>Placement:</strong> applications, evaluation, human-review
+layer, security/governance.</li>
+<li><strong>Business value:</strong> customer experience, quality, risk
+reduction, adoption. <strong>Technical value:</strong> paired
+sociotechnical measures alongside model metrics.</li>
+<li><strong>Maturity/readiness:</strong> validated constructs but no
+enterprise-domain instrument. <strong>Confidence:</strong> Moderate.
+<strong>Horizon:</strong> 3–6 months. <strong>Effort:</strong> M.</li>
+<li><strong>Dependencies:</strong> affected-user research,
+accessibility, independent ethics/legal review, behavioral outcome
+data.</li>
+<li><strong>Risks:</strong> leading questions, social desirability,
+cultural non-portability, trust manipulation, metric capture.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Partner with social
+scientists and affected users; build domain items; buy survey mechanics
+only.</strong></li>
+<li><strong>Minimum reversible experiment:</strong> cognitive interviews
+and a blinded vignette study comparing control explanations/appeal
+designs.</li>
+<li><strong>Success metrics / stop conditions:</strong> measurement
+invariance or clearly bounded subgroup use; behavioral comprehension
+correlates with survey scores; stop if the measure rewards unjustified
+acceptance.</li>
+<li><strong>Roadmap trigger:</strong> prospective evidence links the
+instrument to faster correction, lower harm, or better comprehension
+across relevant groups.</li>
+</ul>
+<h4 id="6-sensitive-data-reproducibility-enclave--777100">6.
+Sensitive-data reproducibility enclave — 77.7/100</h4>
+<ul>
+<li><strong>Category:</strong> MLOps &amp; Platform</li>
+<li><strong>Research signal and support:</strong> <strong>Enterprise
+Inference</strong> from Huang et al.: code is public but source clinical
+transcripts are restricted, leaving independent reproduction
+incomplete.</li>
+<li><strong>Problem/opportunity:</strong> privacy-preserving research
+often becomes unauditable, while unrestricted sharing is
+unacceptable.</li>
+<li><strong>Future capability:</strong> controlled compute enclave runs
+approved containers against immutable restricted datasets; exports
+aggregate metrics, environment manifests, hashes, and
+disclosure-reviewed logs—not raw records.</li>
+<li><strong>Placement:</strong> data platform, evaluation,
+infrastructure, security/governance.</li>
+<li><strong>Business value:</strong> quality, speed, reliability, risk
+reduction. <strong>Technical value:</strong> reproducible evaluation
+without broad data distribution.</li>
+<li><strong>Maturity/readiness:</strong> established secure-compute
+pattern; operational and legal setup is context-specific.
+<strong>Confidence:</strong> Moderate. <strong>Horizon:</strong> 6–12
+months. <strong>Effort:</strong> XL.</li>
+<li><strong>Dependencies:</strong> data agreements, privacy engineering,
+access control, secrets, container attestations, disclosure review,
+audit logging.</li>
+<li><strong>Risks:</strong> re-identification, model leakage, enclave
+escape, costly operations, false assurance, cross-border
+restrictions.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Buy a hardened
+confidential-compute/data-clean-room substrate; build policy and
+evaluation wrappers; partner with data custodians.</strong></li>
+<li><strong>Minimum reversible experiment:</strong> synthetic surrogate
+dataset and one approved container; red-team export controls before any
+sensitive data.</li>
+<li><strong>Success metrics / stop conditions:</strong> deterministic
+rerun within tolerance, zero raw export paths, complete access audit;
+stop on any unapproved egress or irreproducible environment.</li>
+<li><strong>Roadmap trigger:</strong> a real audit cannot otherwise be
+completed and legal/security approve the narrow data purpose.</li>
+</ul>
+<h3 id="monitor-for-maturity">Monitor for Maturity</h3>
+<h4 id="7-clinical-language-external-transfer-suite--725100">7.
+Clinical-language external transfer suite — 72.5/100</h4>
+<ul>
+<li><strong>Category:</strong> Model &amp; Inference</li>
+<li><strong>Research signal and support:</strong> <strong>Paper Fact +
+Uncertainty.</strong> Huang et al. show internal subgroup differences
+and topic-factorized gains, but no external site, language, or
+prospective validation.</li>
+<li><strong>Problem/opportunity:</strong> language classifiers can
+encode site-, interview-, dialect-, and prevalence-specific
+shortcuts.</li>
+<li><strong>Future capability:</strong> locked, multi-site transfer
+protocol across language, prevalence, interviewer, instrument, and
+calendar periods, with calibration and harm-oriented review.</li>
+<li><strong>Placement:</strong> evaluation, model gateway, human-review
+layer.</li>
+<li><strong>Business value:</strong> quality, reliability, risk
+reduction. <strong>Technical value:</strong> detects transport failure
+before integration.</li>
+<li><strong>Maturity/readiness:</strong> research signal only;
+high-stakes evidence inadequate. <strong>Confidence:</strong>
+Low–Moderate. <strong>Horizon:</strong> 12+ months.
+<strong>Effort:</strong> XL.</li>
+<li><strong>Dependencies:</strong> prospective clinical partners,
+consent, external labels, statistical analysis plan, safety monitoring,
+ethics approvals.</li>
+<li><strong>Risks:</strong> patient harm, stigmatization, privacy,
+dialect bias, label disagreement, alert burden.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Partner with
+independent clinical institutions; do not buy or self-deploy from this
+paper.</strong></li>
+<li><strong>Minimum reversible experiment:</strong> retrospective,
+de-identified, clinician-blinded validation; no alerts or care
+changes.</li>
+<li><strong>Success metrics / stop conditions:</strong> prespecified
+calibration and sensitivity by site/subgroup with narrow uncertainty;
+stop on any clinically unacceptable false-negative or workload
+burden.</li>
+<li><strong>Roadmap trigger:</strong> independent prospective evidence
+plus demonstrated workflow benefit and accountable clinical
+ownership.</li>
+</ul>
+<h4 id="8-longitudinal-warranted-trust-experiment--679100">8.
+Longitudinal warranted-trust experiment — 67.9/100</h4>
+<ul>
+<li><strong>Category:</strong> Human-AI Workflow</li>
+<li><strong>Research signal and support:</strong> <strong>Uncertainty +
+Enterprise Inference.</strong> Both governance papers are
+cross-sectional and explicitly cannot determine causal direction.</li>
+<li><strong>Problem/opportunity:</strong> enterprises may optimize
+adoption or satisfaction without knowing whether controls improve
+justified reliance.</li>
+<li><strong>Future capability:</strong> preregistered longitudinal or
+randomized vignette study varies explanation, appeal, accountability,
+and error recovery while measuring comprehension, appropriate reliance,
+correction, and outcomes.</li>
+<li><strong>Placement:</strong> evaluation, applications, human-review
+layer.</li>
+<li><strong>Business value:</strong> customer experience, adoption, risk
+reduction, quality. <strong>Technical value:</strong> causal evidence
+for workflow controls.</li>
+<li><strong>Maturity/readiness:</strong> methods are mature; domain
+evidence absent. <strong>Confidence:</strong> Moderate.
+<strong>Horizon:</strong> 6–12 months. <strong>Effort:</strong> L.</li>
+<li><strong>Dependencies:</strong> research ethics, sampling frame,
+pre-analysis plan, accessibility, representative cases, outcome
+instrumentation.</li>
+<li><strong>Risks:</strong> manipulation, nonrepresentative panels,
+experimenter demand, cultural transfer, weak behavioral endpoints.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Partner with
+independent researchers; build the product variants; buy panel
+operations if appropriate.</strong></li>
+<li><strong>Minimum reversible experiment:</strong> randomized synthetic
+cases with no real decisions or incentives.</li>
+<li><strong>Success metrics / stop conditions:</strong> improved
+appropriate reliance and appeal comprehension without increased
+over-trust; stop if only stated acceptance moves.</li>
+<li><strong>Roadmap trigger:</strong> replicated behavioral effect in
+the actual domain and affected groups.</li>
+</ul>
+<h3 id="deprioritize-for-now">Deprioritize for Now</h3>
+<h4
+id="9-autonomous-high-stakes-decisions-justified-by-internal-cross-validation--404100">9.
+Autonomous high-stakes decisions justified by internal cross-validation
+— 40.4/100</h4>
+<ul>
+<li><strong>Category:</strong> Safety &amp; Governance</li>
+<li><strong>Research signal and support:</strong> <strong>Independent
+Analysis.</strong> The clinical paper is internally cross-validated,
+small in critical cells, single-site, and has no deployment outcome
+evidence; governance papers are associational.</li>
+<li><strong>Problem/opportunity:</strong> pressure to convert promising
+internal metrics into autonomous action.</li>
+<li><strong>Future capability:</strong> <strong>none recommended
+now.</strong> Keep humans accountable and limit models to
+research/shadow assistance until external, prospective, workflow, and
+harm evidence exists.</li>
+<li><strong>Placement:</strong> security/governance and human-review
+layer as a prohibition/promotion rule.</li>
+<li><strong>Business value:</strong> risk reduction. <strong>Technical
+value:</strong> prevents invalid evidence transfer.</li>
+<li><strong>Maturity/readiness:</strong> not enterprise-ready.
+<strong>Confidence:</strong> High that evidence is insufficient.
+<strong>Horizon:</strong> 12+ months. <strong>Effort:</strong> XL if
+ever pursued.</li>
+<li><strong>Dependencies:</strong> multi-site prospective validation,
+lawful authority, independent safety board, calibrated escalation,
+monitoring, rollback, incident response.</li>
+<li><strong>Risks:</strong> clinical or legal harm, discrimination,
+automation bias, rights violations, irreversibility, liability.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Do not build or buy
+for autonomous use.</strong> Partner only for independent validation and
+domain safety.</li>
+<li><strong>Minimum reversible experiment:</strong> shadow-only
+retrospective comparison with blinded experts.</li>
+<li><strong>Success metrics / stop conditions:</strong> no roadmap move
+unless prespecified harm and benefit endpoints are met; any unmitigated
+subgroup harm is a stop.</li>
+<li><strong>Roadmap trigger:</strong> independent prospective trials
+demonstrate net benefit, subgroup safety, operational feasibility, and
+accountable human authority.</li>
+</ul>
+<h2 id="enterprise-ai-architecture-implications">Enterprise AI
+Architecture Implications</h2>
+<p><strong>Independent Analysis — 12–24 month direction.</strong> These
+papers favor a typed control plane around models and knowledge systems,
+not a new monolithic “AI platform.” Shared foundations can unlock
+several options:</p>
+<pre class="text"><code>APPLICATIONS / HUMAN WORKFLOWS
+  ├─ reason + owner + appeal + override
+  └─ outcome and correction capture
+                 │
+AGENT / ORCHESTRATION CONTROL PLANE
+  ├─ identity + authority + policy enforcement
+  ├─ model gateway + shadow routing + deterministic fallback
+  └─ typed context contract: subgroup · topic · task · graph type
+                 │
+EVIDENCE AND KNOWLEDGE PLANE
+  ├─ provenance + versioned graph/schema + restricted-data enclave
+  └─ retrieval/embedding registry + sampling configuration
+                 │
+EVALUATION AND OBSERVABILITY PLANE
+  ├─ aggregate + slice metrics + uncertainty + calibration
+  ├─ replay sets + external transfer + appeal outcomes
+  └─ latency + cost + drift + human workload telemetry</code></pre>
+<p>The shared enabling foundations are: model gateway, typed context and
+provenance, identity/authorization, policy enforcement, evaluation
+registry, replay infrastructure, observability, data/knowledge lineage,
+human-review and appeal controls, cost telemetry, experiment isolation,
+and rollback. An organization may already have some or none; the report
+assumes no current stack. Before implementation, internal owners must
+map existing capabilities, regulated data, high-stakes workflows, graph
+assets, incident history, risk appetite, and measurable business
+outcomes.</p>
+<h2 id="implementation-priorities">Implementation priorities</h2>
+<h3 id="now--evidence-plumbing-no-production-behavior-change">Now —
+evidence plumbing, no production behavior change</h3>
+<ol type="1">
+<li>Inventory one model workflow and one graph workflow; name owners,
+outcomes, strata, and missing provenance.</li>
+<li>Add shadow-only sliced evaluation with confidence intervals and
+minimum-cell warnings.</li>
+<li>Define a machine-readable accountability/appeal contract and test it
+on synthetic cases.</li>
+<li>Freeze an offline graph snapshot and neutral baseline for type-aware
+sampling evaluation.</li>
+</ol>
+<h3 id="3090-days--validate-controls">30–90 days — validate
+controls</h3>
+<ol type="1">
+<li>Run at least two temporally separated replays; compare aggregate and
+typed failures.</li>
+<li>Measure reviewer burden, escalation precision, appeal comprehension,
+and rollback completeness.</li>
+<li>Decide whether restricted data requires a reproducibility enclave or
+a smaller evidence claim.</li>
+<li>Publish an internal evidence card recording data, code, license,
+environment, uncertainty, and prohibited uses.</li>
+</ol>
+<h3 id="hold">Hold</h3>
+<ul>
+<li>Autonomous clinical or legal decisions.</li>
+<li>Any fairness claim based on AUC alone or tiny subgroup cells.</li>
+<li>Any trust intervention optimized only for acceptance.</li>
+<li>Production graph replacement without frozen baselines, honest
+negatives, drift tests, and fallback.</li>
+</ul>
+<h2 id="knowledge-reinforcement">Knowledge reinforcement</h2>
+<ul>
+<li><strong>Keep from September 4:</strong> evaluation remains a
+measurement supply chain. Today adds that the supply chain must preserve
+typed strata and operating context.</li>
+<li><strong>Keep from September 5:</strong> learned state needs
+admission and provenance. Today adds that the provenance schema must
+carry topic, authority, and node/edge type when relevant.</li>
+<li><strong>Revise:</strong> “more context” is not automatically safer.
+Topic factorization can outperform mixed context, but only under task-
+and subgroup-specific validation.</li>
+<li><strong>Reject:</strong> a strong aggregate benchmark or
+peer-reviewed venue is sufficient for enterprise readiness.</li>
+<li><strong>New durable heuristic:</strong> whenever an average
+improves, ask which subgroup, process stage, or schema type paid for
+it—and whether the evidence is powered to answer.</li>
+</ul>
+<h2 id="evidence-and-claim-ledger">Evidence and claim ledger</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th>Label</th>
+<th>Primary locator</th>
+<th>Verification boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Topic-general AUC gap 0.11; topic-specific gaps 0.01/0.05</td>
+<td>Paper Fact</td>
+<td><a href="https://www.nature.com/articles/s41746-026-03198-w">Huang
+et al., abstract and results</a></td>
+<td>single-site internal CV</td>
+</tr>
+<tr class="even">
+<td>False-negative odds 2.39×, p = 0.002</td>
+<td>Paper Fact</td>
+<td><a href="https://doi.org/10.1038/s41746-026-03198-w">Huang et al.,
+abstract/results</a></td>
+<td>sparse subgroup positives</td>
+</tr>
+<tr class="odd">
+<td>Clinical code scripts and requirements public</td>
+<td>Paper Fact</td>
+<td><a
+href="https://github.com/LongdiXian/Suicide_LLM_Generalizability">Author
+repository</a></td>
+<td>data restricted; license not visible</td>
+</tr>
+<tr class="even">
+<td>Governance survey N = 642; interviews n = 41</td>
+<td>Paper Fact</td>
+<td><a href="https://www.nature.com/articles/s41599-026-08914-1">Fan
+&amp; Lyu, methods</a></td>
+<td>non-national purposive recruitment</td>
+</tr>
+<tr class="odd">
+<td>Legitimacy → acceptance β = 0.49</td>
+<td>Paper Fact</td>
+<td><a href="https://doi.org/10.1057/s41599-026-08914-1">Fan &amp; Lyu,
+results</a></td>
+<td>cross-sectional association</td>
+</tr>
+<tr class="even">
+<td>Quantitative and qualitative XLSX artifacts</td>
+<td>Paper Fact</td>
+<td><a
+href="https://www.nature.com/articles/s41599-026-08914-1">Publisher
+datasets</a></td>
+<td>no analysis code verified</td>
+</tr>
+<tr class="odd">
+<td>RNA-KG 673,825 nodes and nearly 17M edges</td>
+<td>Paper Fact</td>
+<td><a
+href="https://www.nature.com/articles/s41598-026-66012-3">Soto-Gomez et
+al., case study</a></td>
+<td>biomedical graph only</td>
+</tr>
+<tr class="even">
+<td>3.7% balanced-accuracy gain vs node2vec</td>
+<td>Paper Fact</td>
+<td><a href="https://doi.org/10.1038/s41598-026-66012-3">Soto-Gomez et
+al., results</a></td>
+<td>tuned target relation and sampled negatives</td>
+</tr>
+<tr class="odd">
+<td>Het-node2vec code Apache-2.0</td>
+<td>Paper Fact</td>
+<td><a
+href="https://github.com/AnacletoLAB/hetnode2vec_ensmallen">Implementation
+repository</a></td>
+<td>young repository; three visible commits at review</td>
+</tr>
+<tr class="even">
+<td>Accountability is the largest pharma-risk coefficient</td>
+<td>Paper Fact with caution</td>
+<td><a href="https://www.nature.com/articles/s41598-026-67840-z">Pharma
+trust paper</a></td>
+<td>most coefficient differences not significant</td>
+</tr>
+<tr class="odd">
+<td>ODMMT produces two healthy/diseased clusters</td>
+<td>Paper Fact</td>
+<td><a
+href="https://www.nature.com/articles/s41746-026-03177-1">Placental
+paper abstract</a></td>
+<td>full operating metrics inaccessible</td>
+</tr>
+</tbody>
+</table>
+<h2 id="reproducibility-and-evidence-boundary">Reproducibility and
+evidence boundary</h2>
+<p>No quantitative value, identifier, license, artifact, venue, or date
+in this brief was inferred from a title alone. Full accepted manuscripts
+were reviewed for all deep papers and the pharmaceutical Watchlist
+paper. Publisher HTML, DOI records, artifact pages, and licenses were
+checked separately. The placental paper was intentionally not promoted
+because the accessible early-release material did not support full claim
+tracing.</p>
+<p>Priority and readiness scores are bounded judgment, not mathematical
+truth. They should be recalculated with internal strategic goals,
+architecture, costs, data rights, model inventory, security posture,
+workflow authority, affected populations, and risk tolerance. A
+prototype recommendation authorizes only the reversible experiment
+described; it is not production approval.</p></main></div>
+<footer>AI Research Intelligence Brief · September 6, 2026 · Research options, not deployment approval.</footer>
+<div class="toolbar"><button onclick="window.print()" aria-label="Print report">Print</button><button id="top" aria-label="Back to top">↑ Top</button></div>
+<script>
+const p=document.getElementById('progress');addEventListener('scroll',()=>{const h=document.documentElement;p.style.width=((h.scrollTop/(h.scrollHeight-h.clientHeight))*100)+'%'});document.getElementById('top').onclick=()=>scrollTo({top:0,behavior:'smooth'});
+document.querySelectorAll('main h4').forEach(h=>{if(/^\d+\./.test(h.textContent))h.setAttribute('data-backlog','true')});
+</script>
+</body></html>

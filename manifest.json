@@ -3,12 +3,29 @@
     "title": "AI Research Intelligence",
     "url": "https://ygeszvain.github.io/ai-research-intelligence",
     "description": "Evidence-grounded daily AI and machine-learning research intelligence.",
-    "generated_at_utc": "2026-09-05T09:15:34.755Z",
-    "report_count": 27,
-    "latest_report": "2026-09-05",
-    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-05.html"
+    "generated_at_utc": "2026-09-06T09:20:41Z",
+    "report_count": 28,
+    "latest_report": "2026-09-06",
+    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-06.html"
   },
   "reports": [
+    {
+      "date": "2026-09-06",
+      "date_display": "September 6, 2026",
+      "title": "AI Research Intelligence Brief — September 6, 2026",
+      "excerpt": "Three peer-reviewed papers show why aggregate AI performance is incomplete: subgroup and topic slices, accountable appeal paths, and typed graph sampling expose failures hidden by averages.",
+      "topics": [
+        "Evaluation",
+        "Safety & Governance",
+        "Data & Knowledge Infrastructure",
+        "Model & Inference",
+        "Human-AI Workflow"
+      ],
+      "path": "reports/2026-09-06.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-06.html",
+      "size_bytes": 76400,
+      "sha256": "9ce1281ac13d928634f687dd0dac131dab7d854dfb4857fc6446dd5b1e6277ba"
+    },
     {
       "date": "2026-09-05",
       "date_display": "September 5, 2026",
