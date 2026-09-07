@@ -3,12 +3,29 @@
     "title": "AI Research Intelligence",
     "url": "https://ygeszvain.github.io/ai-research-intelligence",
     "description": "Evidence-grounded daily AI and machine-learning research intelligence.",
-    "generated_at_utc": "2026-09-06T09:20:41Z",
-    "report_count": 28,
-    "latest_report": "2026-09-06",
-    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-06.html"
+    "generated_at_utc": "2026-09-07T09:29:34Z",
+    "report_count": 29,
+    "latest_report": "2026-09-07",
+    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-07.html"
   },
   "reports": [
+    {
+      "date": "2026-09-07",
+      "date_display": "September 7, 2026",
+      "title": "AI Research Intelligence Brief — September 7, 2026",
+      "excerpt": "Three papers show that reliable AI systems need protected objectives and identity-preserving evidence contracts: visible scores can diverge from true capability, selected evidence can disappear before reading, and fixed retrieval plans under-expand as evidence demands grow.",
+      "topics": [
+        "Evaluation & Observability",
+        "Safety & Governance",
+        "RAG & Knowledge",
+        "Agentic AI",
+        "Data & Knowledge Infrastructure"
+      ],
+      "path": "reports/2026-09-07.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-07.html",
+      "size_bytes": 84535,
+      "sha256": "3200bd943fdac4167d3b28f550e4d38240efd780817dd1c48dae6b3601f68e95"
+    },
     {
       "date": "2026-09-06",
       "date_display": "September 6, 2026",
