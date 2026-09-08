@@ -3,12 +3,29 @@
     "title": "AI Research Intelligence",
     "url": "https://ygeszvain.github.io/ai-research-intelligence",
     "description": "Evidence-grounded daily AI and machine-learning research intelligence.",
-    "generated_at_utc": "2026-09-07T09:29:34Z",
-    "report_count": 29,
-    "latest_report": "2026-09-07",
-    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-07.html"
+    "generated_at_utc": "2026-09-08T09:29:10Z",
+    "report_count": 30,
+    "latest_report": "2026-09-08",
+    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-08.html"
   },
   "reports": [
+    {
+      "date": "2026-09-08",
+      "date_display": "September 8, 2026",
+      "title": "AI Research Intelligence Brief — September 8, 2026",
+      "excerpt": "Three papers show that durable enterprise AI requires behavioral contracts around what persists, what explains, and what acts: rehearse memory migrations, test explanations with interventions, and verify hybrid action over shared state.",
+      "topics": [
+        "Memory & Context",
+        "Evaluation & Observability",
+        "Agentic AI",
+        "RAG & Knowledge",
+        "AI Security"
+      ],
+      "path": "reports/2026-09-08.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-08.html",
+      "size_bytes": 91604,
+      "sha256": "8febd6eb00b62e2c7fec91bf9dba5def566cfa7d74a2df9d1008a3ed0007be61"
+    },
     {
       "date": "2026-09-07",
       "date_display": "September 7, 2026",
