@@ -1,0 +1,1568 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Evidence-grounded AI Research Intelligence Brief for September 8, 2026: upgrade-safe memory, behaviorally verified explanations, and hybrid action orchestration.">
+<meta name="report-date" content="2026-09-08">
+<meta name="research-window" content="2026-09-07T04:00:00-05:00/2026-09-08T04:00:00-05:00 America/Chicago">
+<meta name="deep-paper-count" content="3">
+<meta name="watchlist-count" content="2">
+<meta name="theme-color" content="#08131f">
+<title>AI Research Intelligence Brief — September 8, 2026</title>
+<style>
+:root{--bg:#07111d;--panel:#0d1b2a;--panel2:#10263a;--text:#e8f1f7;--muted:#9fb5c5;--line:#29445b;--cyan:#45d7c4;--gold:#f5c96a;--rose:#ff8d9a;--blue:#68a9ff;--max:1180px;color-scheme:dark}
+@media(prefers-color-scheme:light){:root{--bg:#f4f7f8;--panel:#fff;--panel2:#edf4f7;--text:#102131;--muted:#526979;--line:#cddbe2;--cyan:#087f73;--gold:#9b6300;--rose:#b92b45;--blue:#1661ad;color-scheme:light}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 90% 0,rgba(69,215,196,.12),transparent 30rem),var(--bg);color:var(--text);font:16px/1.67 ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}a{color:var(--cyan);text-underline-offset:3px}a:hover{text-decoration-thickness:2px}header{border-bottom:1px solid var(--line);background:linear-gradient(135deg,rgba(69,215,196,.09),rgba(104,169,255,.05));padding:54px 22px 34px}.hero{max-width:var(--max);margin:auto}.eyebrow{color:var(--cyan);text-transform:uppercase;letter-spacing:.15em;font-size:.76rem;font-weight:800}h1{font-size:clamp(2.2rem,6vw,4.7rem);line-height:.98;max-width:900px;margin:.35rem 0 1rem;letter-spacing:-.055em}header p{max-width:790px;color:var(--muted);font-size:1.09rem}.chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}.chip{border:1px solid var(--line);border-radius:999px;padding:6px 11px;background:var(--panel);font-size:.8rem}.topbets{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}.bet{border:1px solid var(--line);background:var(--panel);border-radius:14px;padding:15px}.bet b{display:block;color:var(--gold);font-size:1.15rem}.layout{max-width:var(--max);margin:auto;display:grid;grid-template-columns:250px minmax(0,1fr);gap:34px;padding:30px 22px 80px}nav{position:sticky;top:16px;align-self:start;max-height:calc(100vh - 32px);overflow:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:14px}nav strong{display:block;margin:2px 8px 10px;color:var(--gold)}nav ul{list-style:none;margin:0;padding:0}nav li{margin:0}nav a{display:block;color:var(--muted);text-decoration:none;padding:5px 8px;border-radius:7px;font-size:.83rem;line-height:1.25}nav a:hover{background:var(--panel2);color:var(--text)}main{min-width:0}main>h2{font-size:1.75rem;margin:2.6rem 0 1rem;padding-top:.7rem;border-top:1px solid var(--line)}main>h2:first-child{margin-top:0}h3{font-size:1.3rem;margin-top:2rem;color:var(--cyan)}h4{font-size:1.08rem;color:var(--gold);margin-bottom:.45rem}p,li{max-width:88ch}blockquote{margin:1rem 0;padding:1rem 1.2rem;border-left:4px solid var(--gold);background:var(--panel);color:var(--muted)}pre{white-space:pre-wrap;overflow:auto;background:#07101a;border:1px solid var(--line);border-radius:14px;padding:18px;color:#dcecf2;font-size:.86rem;line-height:1.45}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}table{width:100%;border-collapse:collapse;margin:1.25rem 0;background:var(--panel);font-size:.86rem}th,td{padding:10px 12px;border:1px solid var(--line);text-align:left;vertical-align:top}th{color:var(--gold);background:var(--panel2)}hr{border:0;border-top:1px solid var(--line)}main h4+ul,main h3+ul{border:1px solid var(--line);background:linear-gradient(135deg,var(--panel),var(--panel2));border-radius:14px;padding:15px 22px 15px 34px}main h4+ul li,main h3+ul li{margin:.5rem 0}.progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--cyan),var(--gold));width:0;z-index:9}.toolbar{position:fixed;right:18px;bottom:18px;display:flex;gap:8px}.toolbar button{border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:999px;padding:9px 12px;cursor:pointer;box-shadow:0 8px 30px rgba(0,0,0,.2)}.label{font-size:.75rem;color:var(--muted)}footer{border-top:1px solid var(--line);padding:24px;text-align:center;color:var(--muted)}
+@media(max-width:850px){.topbets{grid-template-columns:1fr}.layout{grid-template-columns:1fr}nav{position:relative;top:0;max-height:none}nav ul{columns:2}h1{font-size:2.65rem}}
+@media(max-width:520px){header{padding-top:34px}.layout{padding:20px 14px 60px}nav ul{columns:1}table{display:block;overflow-x:auto}h1{font-size:2.25rem}}
+@media print{body{background:white;color:#111;font-size:11pt}header{padding:18px 0}.layout{display:block;padding:0}nav,.toolbar,.progress{display:none}a{color:#145c70}main>h2{break-before:page}main>h2:first-child{break-before:auto}table,pre{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<header><div class="hero">
+<div class="eyebrow">AI Research Intelligence · Evidence before enthusiasm</div>
+<h1>Version the state. Test the reason. Verify the action.</h1>
+<p>September 8, 2026 briefing. Three papers converge on a practical rule: typed artifacts, versioned migration contracts, counterfactual tests, and shared-state verification are stronger enterprise controls than model self-report, interface availability, or benchmark averages alone.</p>
+<div class="chips"><span class="chip">3 deep papers</span><span class="chip">2 Watchlist</span><span class="chip">24-hour research window</span><span class="chip">9 enterprise options</span><span class="chip">Primary sources + full-paper review</span></div>
+<div class="topbets"><div class="bet"><span class="label">TOP BET 1 · PROTOTYPE SOON</span><b>91.3 · Memory upgrade rehearsal gate</b><span>Treat every model or embedding change as a data migration.</span></div><div class="bet"><span class="label">TOP BET 2 · PROTOTYPE SOON</span><b>88.1 · Version-isolated embedding lifecycle</b><span>Never silently mix incompatible vector spaces.</span></div><div class="bet"><span class="label">TOP BET 3 · PROTOTYPE SOON</span><b>86.5 · Counterfactual explanation audit</b><span>Test cited reasons against observable decision behavior.</span></div></div>
+</div></header>
+<div class="layout"><nav><strong>Navigate</strong><ul>
+<li><a href="#scope-window-and-evidence-policy"
+id="toc-scope-window-and-evidence-policy">Scope, window, and evidence
+policy</a></li>
+<li><a href="#executive-signal" id="toc-executive-signal">Executive
+signal</a></li>
+<li><a href="#top-3-future-bets" id="toc-top-3-future-bets">Top 3 Future
+Bets</a></li>
+<li><a href="#deep-paper-1--memory-portability-is-a-migration-problem"
+id="toc-deep-paper-1--memory-portability-is-a-migration-problem">Deep
+paper 1 — Memory portability is a migration problem</a>
+<ul>
+<li><a href="#contribution-and-quantitative-trace"
+id="toc-contribution-and-quantitative-trace">Contribution and
+quantitative trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison"
+id="toc-methodological-critique-and-prior-work-comparison">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#enterprise-readiness"
+id="toc-enterprise-readiness">Enterprise readiness</a></li>
+</ul></li>
+<li><a
+href="#deep-paper-2--explanations-are-testable-claims-not-authority"
+id="toc-deep-paper-2--explanations-are-testable-claims-not-authority">Deep
+paper 2 — Explanations are testable claims, not authority</a>
+<ul>
+<li><a href="#contribution-and-quantitative-trace-1"
+id="toc-contribution-and-quantitative-trace-1">Contribution and
+quantitative trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison-1"
+id="toc-methodological-critique-and-prior-work-comparison-1">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#enterprise-readiness-1"
+id="toc-enterprise-readiness-1">Enterprise readiness</a></li>
+</ul></li>
+<li><a
+href="#deep-paper-3--hybrid-action-needs-learned-orchestration-and-shared-state-verification"
+id="toc-deep-paper-3--hybrid-action-needs-learned-orchestration-and-shared-state-verification">Deep
+paper 3 — Hybrid action needs learned orchestration and shared-state
+verification</a>
+<ul>
+<li><a href="#contribution-and-quantitative-trace-2"
+id="toc-contribution-and-quantitative-trace-2">Contribution and
+quantitative trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison-2"
+id="toc-methodological-critique-and-prior-work-comparison-2">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#enterprise-readiness-2"
+id="toc-enterprise-readiness-2">Enterprise readiness</a></li>
+</ul></li>
+<li><a href="#watchlist" id="toc-watchlist">Watchlist</a>
+<ul>
+<li><a
+href="#behavioral-evaluator-assumption-profiles--useful-diagnostic-but-close-to-a-recent-archive-theme"
+id="toc-behavioral-evaluator-assumption-profiles--useful-diagnostic-but-close-to-a-recent-archive-theme">Behavioral
+evaluator assumption profiles — useful diagnostic, but close to a recent
+archive theme</a></li>
+<li><a
+href="#continuity-security-context-contracts--strong-conformance-artifact-real-integrations-still-untested"
+id="toc-continuity-security-context-contracts--strong-conformance-artifact-real-integrations-still-untested">CONTINUITY
+security-context contracts — strong conformance artifact, real
+integrations still untested</a></li>
+</ul></li>
+<li><a href="#cross-paper-synthesis"
+id="toc-cross-paper-synthesis">Cross-paper synthesis</a></li>
+<li><a
+href="#visual-1--behavioral-contracts-across-state-reason-and-action"
+id="toc-visual-1--behavioral-contracts-across-state-reason-and-action">Visual
+1 — behavioral contracts across state, reason, and action</a></li>
+<li><a href="#visual-2--what-the-reported-numbers-actually-establish"
+id="toc-visual-2--what-the-reported-numbers-actually-establish">Visual 2
+— what the reported numbers actually establish</a></li>
+<li><a href="#enterprise-ai-enhancement-backlog"
+id="toc-enterprise-ai-enhancement-backlog">Enterprise AI Enhancement
+Backlog</a>
+<ul>
+<li><a href="#priority-method-and-uncertainty"
+id="toc-priority-method-and-uncertainty">Priority method and
+uncertainty</a></li>
+<li><a href="#prototype-soon" id="toc-prototype-soon">Prototype
+Soon</a></li>
+<li><a href="#prepare-foundations" id="toc-prepare-foundations">Prepare
+Foundations</a></li>
+<li><a href="#monitor-for-maturity"
+id="toc-monitor-for-maturity">Monitor for Maturity</a></li>
+<li><a href="#deprioritize-for-now"
+id="toc-deprioritize-for-now">Deprioritize for Now</a></li>
+</ul></li>
+<li><a href="#enterprise-ai-architecture-implications"
+id="toc-enterprise-ai-architecture-implications">Enterprise AI
+Architecture Implications</a></li>
+<li><a href="#implementation-priorities"
+id="toc-implementation-priorities">Implementation priorities</a>
+<ul>
+<li><a href="#now--instrument-before-changing-behavior"
+id="toc-now--instrument-before-changing-behavior">Now — instrument
+before changing behavior</a></li>
+<li><a href="#next--build-reusable-foundations"
+id="toc-next--build-reusable-foundations">Next — build reusable
+foundations</a></li>
+<li><a href="#later--expand-only-after-triggers"
+id="toc-later--expand-only-after-triggers">Later — expand only after
+triggers</a></li>
+</ul></li>
+<li><a href="#knowledge-reinforcement"
+id="toc-knowledge-reinforcement">Knowledge reinforcement</a></li>
+<li><a href="#evidence-register-and-decision-boundaries"
+id="toc-evidence-register-and-decision-boundaries">Evidence register and
+decision boundaries</a></li>
+</ul></nav><main><h2 id="scope-window-and-evidence-policy">Scope,
+window, and evidence policy</h2>
+<ul>
+<li><strong>Research window:</strong> September 7, 4:00 AM–September 8,
+4:00 AM America/Chicago (September 7, 09:00–September 8, 09:00 UTC).
+This is the established Tuesday 24-hour window. The September 7 arXiv
+release includes manuscripts submitted September 4; selection is based
+on public discoverability inside the window, not the authors' upload
+timestamp. No seven-day expansion was required.</li>
+<li><strong>Discovery:</strong> current arXiv AI, machine learning,
+language, information-retrieval, security, and multi-agent listings were
+screened alongside Nature Portfolio, Springer Nature, ACM, and
+conference-linked records. Prestige was used for discovery and venue
+verification, never as a substitute for accessible methods, traceable
+results, limitations, or artifacts.</li>
+<li><strong>Anti-duplication:</strong> titles, identifiers, and central
+claims were checked against the archive through September 7. None of the
+three deep selections has appeared before. Two otherwise strong papers
+were held on the Watchlist because their evaluator-calibration or
+context-integrity signals overlap recent briefs and require additional
+cross-domain evidence to justify a new roadmap recommendation.</li>
+<li><strong>Selection:</strong> three papers cleared full-paper review.
+Two remain on the Watchlist. The deep set spans memory migration,
+black-box explanation verification, and hybrid GUI+CLI agent training;
+this is deliberate breadth, not an attempt to force a single benchmark
+narrative.</li>
+<li><strong>Research Utility Score (RUS):</strong> rigor 25%,
+quantitative traceability 25%, reproducibility/artifacts 20%, enterprise
+relevance 15%, and prior-work advance 15%. Scores are ordinal analyst
+judgments, not measurements.</li>
+<li><strong>Evidence labels:</strong> <strong>Paper Fact</strong> =
+directly reported by a paper or verified artifact; <strong>Independent
+Analysis</strong> = synthesis or critique; <strong>Enterprise
+Inference</strong> = a bounded future option;
+<strong>Uncertainty</strong> = evidence is missing, conditional,
+inaccessible, or not portable.</li>
+<li><strong>Safety boundary:</strong> none of these studies authorizes
+autonomous production learning, unrestricted desktop control,
+explanation-driven approval, silent memory conversion, or deployment of
+a benchmark winner. Every future option below is an isolated,
+reversible, non-destructive experiment. Enterprise architecture, data
+sensitivity, authorization, cost, workflow, and risk appetite must be
+verified internally before any roadmap decision.</li>
+</ul>
+<h2 id="executive-signal">Executive signal</h2>
+<p><strong>Independent Analysis — durable enterprise AI requires
+behavioral contracts around what persists, what explains, and what
+acts.</strong> The memory-portability study shows that retaining a store
+is not equivalent to retaining usable memory: model-written notes can be
+directionally coupled to their writer, mixed embedding spaces can
+forfeit most of a migration gain, and repair can fail when raw evidence
+is gone. The explanation study shows that a model's named reasons are
+not a verified account of its observable decision behavior. CUA-Universe
+shows that simply exposing a command line does little for several strong
+models; effective hybrid orchestration emerged from task-specific
+training, shared-state interfaces, and trajectory verification.</p>
+<p>The common operating sequence is <strong>type → version → intervene →
+replay → promote</strong>:</p>
+<ol type="1">
+<li>Type memory objects, feature identities, tool surfaces, state
+transitions, and evaluation outcomes.</li>
+<li>Version the model, prompt, embedding space, schema, source evidence,
+interface, verifier, and policy that produced each artifact.</li>
+<li>Intervene on claimed decision factors and action modalities instead
+of accepting self-report or interface availability as evidence.</li>
+<li>Replay migrations and workflows in both directions, on held-out
+tasks, with exact output and state checks.</li>
+<li>Promote only after risk-bounded evidence, human review, rollback,
+and internal operating context are in place.</li>
+</ol>
+<p>This is not a claim that knowledge graphs always outperform RAG, that
+a counterfactual perturbation recovers internal reasoning, or that
+hybrid desktop agents are ready for unrestricted work. It is evidence
+that typed and testable contracts expose failures hidden by nominal
+continuity, plausible explanations, and aggregate task scores.</p>
+<h2 id="top-3-future-bets">Top 3 Future Bets</h2>
+<ol type="1">
+<li><strong>Memory upgrade rehearsal gate — 91.3/100, Prototype
+Soon.</strong> Why it matters: the same nominal store can transfer
+almost perfectly or fail asymmetrically depending on representation,
+writer, reader, and migration direction. Evidence that would change the
+recommendation: representative internal histories show negligible
+direction-specific loss across model and embedding upgrades, or
+rehearsal overhead exceeds the value of prevented regressions.
+<strong>Next reversible action:</strong> replay 100 de-identified
+historical tasks through old→new and new→old writer/reader combinations,
+without changing production memory, and require predefined recovery,
+privacy, latency, and cost thresholds.</li>
+<li><strong>Version-isolated embedding lifecycle — 88.1/100, Prototype
+Soon.</strong> Why it matters: in the reviewed study, a 50/50 mixed
+index recovered only 4.96 accuracy points versus 11.90 from full
+re-embedding. Evidence that would change the recommendation: the
+production retriever uses a cross-version compatibility layer with
+independently demonstrated parity, or internal paired replay shows mixed
+indices do not create meaningful recall or answer loss. <strong>Next
+reversible action:</strong> clone one non-sensitive index, compare old,
+mixed, and fully re-embedded variants on frozen queries, and block any
+live switch until the space boundary and rollback path are proven.</li>
+<li><strong>Counterfactual explanation audit — 86.5/100, Prototype
+Soon.</strong> Why it matters: across two synthetic use cases and eight
+models, explanation rankings only partially tracked necessity and
+sufficiency; influential uncited factors were common. Evidence that
+would change the recommendation: domain-specific human and outcome
+studies show that current explanations remain faithful, useful, and
+stable under representative interventions—or that interventions
+themselves are invalid for the decision contract. <strong>Next
+reversible action:</strong> evaluate 100 shadow decisions with a fixed
+feature vocabulary and three perturbations per cited and eligible
+uncited factor; do not expose the experimental scores to end users.</li>
+</ol>
+<h2 id="deep-paper-1--memory-portability-is-a-migration-problem">Deep
+paper 1 — Memory portability is a migration problem</h2>
+<p><strong>Citation:</strong> Ankit Goyal and Jaideep Ray. <em>Does Your
+Agent's Memory Survive a Model Upgrade? A Controlled Study of Memory
+Portability.</em> arXiv:2609.05339v1, publicly listed September 7, 2026;
+manuscript submitted September 4; under review. <a
+href="https://arxiv.org/abs/2609.05339">Abstract</a> · <a
+href="https://arxiv.org/html/2609.05339">Full HTML</a> · <a
+href="https://arxiv.org/pdf/2609.05339">PDF</a>. CC BY 4.0.</p>
+<p><strong>RUS: 88/100</strong> — rigor 23/25; quantitative traceability
+24/25; reproducibility/artifacts 14/20; enterprise relevance 14/15;
+prior-work advance 13/15.</p>
+<h3 id="contribution-and-quantitative-trace">Contribution and
+quantitative trace</h3>
+<p>The study treats an upgrade as a writer–reader migration, not merely
+a reader replacement. It preserves the same histories four ways:
+verbatim long context (LC-RAW), chunked retrieval (RAG),
+model-compressed natural-language notes (NOTES), and a deterministic
+fixed-schema knowledge graph (KG-fixed).</p>
+<ul>
+<li><strong>Paper Fact:</strong> the controlled corpus contains 48
+synthetic histories, each with 160 questions and randomized answer
+codes; 12 separate histories are used for calibration. Exact-match
+scoring prevents judge drift. Llama-3.1-8B-Instruct and
+Qwen2.5-7B-Instruct-1M are tested as writers/readers; bge-large-en v1.0
+and v1.5 are the embedding versions.</li>
+<li><strong>Paper Fact:</strong> four migration hypotheses and a
+greater-than-five-percentage-point practical threshold were locked in a
+signed Git tag. Holm correction is applied. Bootstrap checks were added
+after the planned t-tests and did not change the decisions.</li>
+<li><strong>Paper Fact:</strong> KG-fixed is nearly invariant under
+writer swap: pooled accuracy changes by +0.0004 ± 0.0020. Llama reads
+its own graph at 0.8456 and the inherited graph at 0.8445; Qwen is
+0.9878 versus 0.9880.</li>
+<li><strong>Paper Fact:</strong> NOTES effects are large but
+directional. Llama improves from 0.3762 on its own notes to 0.4753 on
+Qwen's notes (+9.91 points), while Qwen falls from 0.4719 on its own
+notes to 0.3391 on Llama's notes (-13.28 points). The symmetric pooled
+test is -1.47 points and not supported after correction; averaging
+conceals the operational direction.</li>
+<li><strong>Paper Fact:</strong> with an embedding upgrade, the old
+index yields 0.4257 accuracy, full re-embedding 0.5447 (+11.90 points),
+and a 50/50 mixed index 0.4753 (+4.96). Retrieval recall rises from
+0.4846 to 0.5998 under full re-embedding but only to 0.5208 when
+mixed.</li>
+<li><strong>Paper Fact:</strong> a diagnostic decomposition attributes
+0.467 ± 0.014, or 80%, of the NOTES deficit to information lost during
+construction. For RAG, retrieval contributes 0.364 ± 0.012, or 81%, of
+the deficit. These are decomposition results in the tested pipeline, not
+universal shares.</li>
+<li><strong>Paper Fact:</strong> store-only NOTES repair reaches neither
+90%, 95%, nor 99% recovery in any of 48 cases in either direction. With
+raw source history, Qwen rebuild reaches 90% in 34/48 cases, 95% in
+28/48, and 99% in 22/48; median tested cost is about $0.75. Llama
+rebuild reaches none because its output limit truncates the
+reconstruction.</li>
+<li><strong>Paper Fact:</strong> full RAG re-embedding reaches the
+recovery thresholds in all 96 evaluated cases at roughly $0.013 per
+history. KG rebuild is near-zero cost and succeeds in 91–96 of 96 cases
+depending on the threshold.</li>
+<li><strong>Artifact check:</strong> full HTML, PDF, and TeX source are
+public. The paper reports signed plans and stored run artifacts, but
+data and run records are available only on request; no independent
+repository, container, or immutable release was verified.</li>
+</ul>
+<h3
+id="methodological-critique-and-prior-work-comparison">Methodological
+critique and prior-work comparison</h3>
+<p>The design is unusually strong for a systems migration question:
+randomized codes discourage prior-knowledge shortcuts; exact scoring
+removes judge ambiguity; writer and reader are crossed; migration
+direction is preserved; raw-history repair is explicitly compared with
+store-only repair; embedding versions are isolated; costs are disclosed;
+and hypotheses include a practical threshold rather than significance
+alone.</p>
+<p>The limitations prevent broad claims. Histories are synthetic and
+scripted; only two sub-10B open models and one embedding-family upgrade
+are studied; every history fits the nominal context window; the fixed
+graph schema is well matched to the task; and the RAG retriever is a
+deliberately simple dense top-k=8 system that surfaces relevant evidence
+only about 60% of the time. The protected raw source that enables repair
+also creates privacy, retention, deletion, access-control, and
+incident-blast-radius obligations. “Available on request” artifacts
+reduce independent reproducibility. The causal decompositions diagnose
+this experimental pipeline, not every memory system.</p>
+<p>Prior agent-memory work emphasizes capacity, retrieval accuracy,
+summarization, long-horizon task performance, or procedural-skill
+transfer. This paper advances the field by holding histories fixed and
+treating model/embedding replacement as a direction-specific migration
+with recovery targets. It does not establish a universal representation
+ranking: KG-fixed wins here partly because the schema captures the
+synthetic facts cleanly, while richer enterprise memories may resist
+such normalization.</p>
+<h3 id="enterprise-readiness">Enterprise readiness</h3>
+<p><strong>Enterprise Inference — high for a shadow migration rehearsal;
+moderate for a raw-lineage and versioned-index platform; low for
+selecting one memory representation globally.</strong> Before
+implementation, internal context is required on memory types,
+sensitivity, retention/deletion rules, tenancy, canonical identifiers,
+model and embedding providers, current index strategy, rollback SLO,
+reconstruction cost, representative task suite, and the acceptable
+difference between old and new behavior.</p>
+<h2
+id="deep-paper-2--explanations-are-testable-claims-not-authority">Deep
+paper 2 — Explanations are testable claims, not authority</h2>
+<p><strong>Citation:</strong> Urja Pawar, Rajitha Ramanayake, Nabeel
+Kemal et al. <em>Necessary or Sufficient? Evaluating LLM Explanations
+With Behavioural Evidence.</em> arXiv:2609.05385v1, publicly listed
+September 7, 2026; manuscript submitted September 4. <a
+href="https://arxiv.org/abs/2609.05385">Abstract</a> · <a
+href="https://arxiv.org/html/2609.05385">Full HTML</a> · <a
+href="https://arxiv.org/pdf/2609.05385">PDF</a>. CC BY 4.0.</p>
+<p><strong>RUS: 83/100</strong> — rigor 21/25; quantitative traceability
+23/25; reproducibility/artifacts 10/20; enterprise relevance 15/15;
+prior-work advance 14/15.</p>
+<h3 id="contribution-and-quantitative-trace-1">Contribution and
+quantitative trace</h3>
+<p>The paper evaluates two observable interpretations of a model-named
+factor. Necessity asks whether changing the factor changes the output;
+sufficiency asks whether retaining it while masking other changeable
+information preserves the output. The intervention scores are compared
+with each model's ranked top-three explanation.</p>
+<ul>
+<li><strong>Paper Fact:</strong> two synthetic but deployment-motivated
+tasks are studied: advisor recommendation with 18 client features and 13
+candidate advisors, and prompt-risk monitoring with eight risk
+categories, three or four active per prompt. Eight model settings span
+Claude Opus 4.6, Sonnet 5, Haiku 4.5, GPT-5.4 with four reasoning
+settings, and Gemini 3.5 Flash.</li>
+<li><strong>Paper Fact:</strong> fixed feature names are used to make
+factor identity reproducible. Across 13 prompt formats, fixed names
+reduce positional instability from 0.929 to 0.235 in advisor
+recommendation and from 0.858 to 0.240 in prompt monitoring. This
+improves repeatability, not faithfulness.</li>
+<li><strong>Paper Fact:</strong> each necessity or sufficiency score
+uses three valid API trials. Necessity changes or removes one factor;
+sufficiency retains it while masking the other changeable factors. The
+paper tests alternative intervention strengths and reports that
+magnitude changes, while the main descending pattern remains.</li>
+<li><strong>Paper Fact:</strong> average Spearman correlation between
+cited rank and necessity/sufficiency is 0.349/0.354 for advisor
+recommendation and 0.431/0.580 for prompt monitoring. Model-level means
+range from 0.014 to 0.755; no model is uniformly strongest across use
+cases and criteria.</li>
+<li><strong>Paper Fact:</strong> an eligible uncited feature out-scores
+the weakest cited factor in 57.6% of advisor responses under necessity
+and 58.1% under sufficiency. The corresponding prompt-monitoring rates
+are 25.8% and 8.9%.</li>
+<li><strong>Paper Fact:</strong> in advisor recommendation, the best
+uncited factor has mean necessity 0.698, close to cited rank one at
+0.731 and above ranks two and three at 0.583 and 0.482. Its sufficiency
+of 0.492 exceeds all three cited positions.</li>
+<li><strong>Paper Fact:</strong> citation frequency correlates with
+measured necessity/sufficiency at 0.903/0.808 for advisor features but
+only 0.690/0.500 for prompt-risk features. “jailbreak_attempt” is cited
+most often although “harmful_request” and “requests_illegal_advice” have
+higher measured influence under both criteria.</li>
+<li><strong>Paper Fact:</strong> greater GPT-5.4 reasoning effort is
+associated with fewer sufficiency omissions: advisor 76% without
+reasoning to 60%, 48%, and 40% at Low/Medium/High; prompt monitoring 25%
+to 12%, 9%, and 3%. Ranking correlations do not improve monotonically,
+so factor selection and ordering remain separate properties.</li>
+<li><strong>Artifact check:</strong> the paper publishes schemas,
+prompts, representative value types, risk categories, and perturbation
+procedures. Exact synthetic records are withheld because they rely on
+proprietary schemas and contain potentially sensitive or harmful
+material. No public code or result repository was verified.</li>
+</ul>
+<h3
+id="methodological-critique-and-prior-work-comparison-1">Methodological
+critique and prior-work comparison</h3>
+<p>The work separates two frequently conflated claims: a factor can be
+able to change a decision without being able to sustain it alone. It
+also verifies feature identity, compares cited and uncited factors,
+tests intervention variants, reports model-specific rather than only
+pooled behavior, and avoids claiming access to hidden
+chain-of-thought.</p>
+<p>The same strengths define its boundaries. An intervention measures
+behavior under an analyst-selected perturbation; it does not recover
+internal computation, causal structure in the real world, factor
+importance magnitude, correctness, fairness, or suitability. One-point
+changes in a five-level risk score count the same as larger changes.
+Three trials yield coarse scores. Synthetic profiles and prompt segments
+may not preserve realistic feature correlations. The primary result
+covers only top three factors, temperature-zero behavior, and two tasks.
+There is no evidence that end users understand the explanation or make
+better decisions because of it. Proprietary/withheld records limit
+replication.</p>
+<p>Prior work evaluates explanation overlap, human persuasiveness,
+chain-of-thought faithfulness, counterfactual recommendation, or
+necessity/sufficiency for classifiers. This study's advance is a
+black-box test of the factors named by the LLM itself at an
+action-relevant decision boundary, including uncited-feature search. It
+does not validate natural-language rationales generally or prove that a
+counterfactual audit is sufficient for agent safety.</p>
+<h3 id="enterprise-readiness-1">Enterprise readiness</h3>
+<p><strong>Enterprise Inference — high for a narrow offline explanation
+audit when inputs have a stable feature schema; low for free-form
+decisions or automatic blocking.</strong> Internal context required: the
+decision contract, permissible interventions, feature dependencies,
+protected-attribute handling, output materiality, model version,
+acceptable omission/rank error, human-review purpose, and whether an
+explanation is informational, diagnostic, or legally consequential.</p>
+<h2
+id="deep-paper-3--hybrid-action-needs-learned-orchestration-and-shared-state-verification">Deep
+paper 3 — Hybrid action needs learned orchestration and shared-state
+verification</h2>
+<p><strong>Citation:</strong> Haoting Shi, Wenhao Wang, Weicheng Fang et
+al. <em>CUA-Universe: A Scalable and Dynamic Environment for Hybrid
+GUI+CLI Agents.</em> arXiv:2609.05374v1, publicly listed September 7,
+2026; manuscript submitted September 4. <a
+href="https://arxiv.org/abs/2609.05374">Abstract</a> · <a
+href="https://arxiv.org/html/2609.05374">Full HTML</a> · <a
+href="https://arxiv.org/pdf/2609.05374">PDF</a>. CC BY 4.0.</p>
+<p><strong>RUS: 84/100</strong> — rigor 22/25; quantitative traceability
+23/25; reproducibility/artifacts 11/20; enterprise relevance 14/15;
+prior-work advance 14/15.</p>
+<h3 id="contribution-and-quantitative-trace-2">Contribution and
+quantitative trace</h3>
+<p>CUA-Universe builds shared-state desktop environments rather than
+treating GUI clicks and commands as separate worlds. App-Forge creates
+application VMs and tool surfaces, Task-Weave composes executable tasks
+from discovered operations, and Path-Steer guides data-generation agents
+toward modality-appropriate trajectories.</p>
+<ul>
+<li><strong>Paper Fact:</strong> the environment spans 16 Linux desktop
+applications. Eight extend OSWorld with shared-state CLI surfaces and
+eight are new. CLI capabilities come from native commands, scripting
+APIs, or generated agent-native wrappers; adapters refresh GUI state
+after command-line changes.</li>
+<li><strong>Paper Fact:</strong> high-scoring rollouts produce 4,923
+episodes and about 235,000 step records. A Qwen3.5-9B model is
+LoRA-fine-tuned for three epochs on eight A100 GPUs for roughly two
+days.</li>
+<li><strong>Paper Fact:</strong> CUA-Verse contains 160 held-out tasks
+across eight in-domain applications. The fine-tuned model scores 0.582
+versus 0.189 for the same base model, with 35.2 versus 56.2 steps and
+255K versus 643K tokens per episode. It exceeds EvoCUA-8B's 0.330
+average but remains below GPT-5.5's 0.768.</li>
+<li><strong>Paper Fact:</strong> on a controlled 244-task OSWorld scope,
+the trained model improves from 23.4% GUI-only success to 40.2% with
+GUI+CLI, converting 41 previously failed tasks. Stronger closed models
+gain only two to eight tasks from interface exposure, supporting the
+authors' claim that access alone is not orchestration competence.</li>
+<li><strong>Paper Fact:</strong> on held-out OSWorld-MCP, strict success
+rises from 20.90% for the base model to 28.69%; tool-use decision
+accuracy rises from 10.66% to 23.36%. Average completion steps fall 27%
+and tokens 30%. The model was not trained on the MCP action space.</li>
+<li><strong>Paper Fact:</strong> on 320 data-generation tasks,
+Path-Steer raises Kimi K2.5 acceptance from 0.44 to 0.51, mean score
+from 0.63 to 0.71, and reduces average cost from $0.31 to $0.26. Seed2.1
+Pro shows the same directional pattern, with acceptance 0.45 to
+0.54.</li>
+<li><strong>Paper Fact:</strong> judge validation uses three blind
+annotators on 30 accepted and 30 rejected trajectories per application,
+960 total. Acceptance precision is 99.0% (475/480), rejection-set
+false-negative rate 5.2%, reweighted agreement 97.0%, and Cohen's kappa
+0.94. No accepted case is a human-labeled total failure, but some
+partial successes pass.</li>
+<li><strong>Paper Fact:</strong> the authors estimate about 10,000
+rollouts, roughly five minutes each, can run in 1.3–1.5 days on one
+128-core CPU host using 32 concurrent 4-vCPU VMs; model API expense is
+separate from that host estimate.</li>
+<li><strong>Artifact check:</strong> the paper says code and data will
+be released. No official public project repository, immutable
+environment bundle, data license, model checkpoint, or trace archive was
+verified on September 8. The full paper lists tool inventories, prompts,
+VM resources, training balance, and evaluation procedures.</li>
+</ul>
+<h3
+id="methodological-critique-and-prior-work-comparison-2">Methodological
+critique and prior-work comparison</h3>
+<p>The evidence is stronger than a single endpoint score. The same base
+model is compared before/after training, GUI-only and GUI+CLI modes
+share tasks and verifier, task-specific gains are counted, a second
+unseen action interface tests transfer, Path-Steer is isolated with
+equal tool access, efficiency is reported, and the VLM judge is audited
+against blinded humans.</p>
+<p>Production validity is still low. CUA-Verse tasks are held out but
+applications are in-domain. All synthesized tasks are
+single-application; cross-application state transfer is untested. Linux
+and open/scriptable software dominate. The same GPT-5.4 judge family
+scores training selection and a principal benchmark, creating
+common-instrument risk even with the human audit. Human checking
+validates an acceptance threshold, not every reported score difference.
+The training data inherits the teacher's reachable behavior and the
+authors release no artifact yet. OSWorld excludes os and multi-app
+splits. Security permissions, credential boundaries, irreversible side
+effects, accessibility, concurrent users, enterprise UI variability, and
+recovery after partial execution are not evaluated.</p>
+<p>GUI benchmarks emphasize visual grounding; terminal environments
+emphasize precise executable work; prior hybrid agents combine a GUI
+operator with code tools or train against fixed tools/tasks.
+CUA-Universe's advance is an environment-to-data pipeline with
+per-application shared state, generated/wrapped CLI surfaces,
+compositional tasks, and modality steering. It does not show that a 9B
+agent is broadly ready for desktop autonomy, or that CLI availability
+should be expanded without least privilege and transactional
+rollback.</p>
+<h3 id="enterprise-readiness-2">Enterprise readiness</h3>
+<p><strong>Enterprise Inference — moderate for isolated workflow
+simulation and paired-interface measurement; low for unconstrained
+desktop action.</strong> Internal context required: supported
+applications and operating systems, action permissions, credential
+model, irreversible effects, data classification, rollback/compensation
+semantics, verifier truth source, accessibility needs, human approval
+points, latency/cost SLOs, and the fraction of workflows that genuinely
+benefit from a command surface.</p>
+<h2 id="watchlist">Watchlist</h2>
+<h3
+id="behavioral-evaluator-assumption-profiles--useful-diagnostic-but-close-to-a-recent-archive-theme">Behavioral
+evaluator assumption profiles — useful diagnostic, but close to a recent
+archive theme</h3>
+<p><strong>Citation:</strong> Maria Mahbub, Ashley Rice, Michael R.
+Munroe et al. <em>Beyond Aggregate Scores: Behavioral Correctness
+Assumptions for Assessing Reference-Based Automatic Evaluation
+Methods.</em> arXiv:2609.05289v1, publicly listed September 7, 2026. <a
+href="https://arxiv.org/abs/2609.05289">Abstract</a> · <a
+href="https://arxiv.org/html/2609.05289">Full HTML</a>. CC BY-NC-ND
+4.0.</p>
+<p><strong>Paper Fact:</strong> 203 question–reference pairs from nine
+U.S. Coast Guard documents are transformed into 2,842 controlled
+responses, yielding 3,045 total instances. Evaluators span lexical,
+character, semantic, hybrid, and LLM-based families.
+Correctness-preserving transformations should leave scores stable;
+correctness-altering transformations should move them in the expected
+direction.</p>
+<p><strong>Paper Fact:</strong> aggregate behavior hides large
+assumption failures. BERTScore drops about 0.15 under structural changes
+that preserve correctness; SemanticF1 drops 0.14 when correct additional
+information is added. Truthfulness and Factual Correctness fall only
+0.41 and 0.44 under introduced logical inconsistency. Jaro similarity is
+highly stable but insensitive (0.937/0.028), while Factual Correctness
+has lower stability and higher sensitivity (0.889/0.238).</p>
+<p><strong>Paper Fact:</strong> five repeated runs produce
+assumption-profile standard deviations below 0.0025 for the tested LLM
+evaluators; changing decoding configuration matters less than changing
+the model backbone. A second test suite generated by Qwen3-8B preserves
+all evaluator profiles within mean absolute error 0.075, but consistent
+weakness can also produce a low error.</p>
+<p><strong>Uncertainty:</strong> only 10 samples per transformation
+received human quality review before correction; transformations and
+baseline answers are LLM-generated; the task is single-reference
+document QA; reasoning quality, calibration, safety, multi-reference
+validity, code, and dialogue are outside scope; no public artifact
+repository was verified. The diagnostic is strong, but September 4's
+brief already established evaluator-instrument calibration. It should
+advance only after a distinct internal transformation suite demonstrates
+decision value.</p>
+<h3
+id="continuity-security-context-contracts--strong-conformance-artifact-real-integrations-still-untested">CONTINUITY
+security-context contracts — strong conformance artifact, real
+integrations still untested</h3>
+<p><strong>Citation:</strong> Chris Zheng and Geng Yang. <em>CONTINUITY:
+Security-Context Contracts for Composable LLM Agent Controls.</em>
+arXiv:2609.05269v1, publicly listed September 7, 2026. <a
+href="https://arxiv.org/abs/2609.05269">Abstract</a> · <a
+href="https://arxiv.org/html/2609.05269">Full HTML</a> · <a
+href="https://github.com/zast-ai/continuity">Official artifact</a>.
+Manuscript CC BY-SA 4.0; artifact MIT.</p>
+<p><strong>Paper Fact:</strong> the framework represents each component
+with an assume–guarantee contract and carries signed root grants,
+field-level provenance, typed releases, role-bound receipts,
+transformation witnesses, and single-use effect-bound permits to
+finality.</p>
+<p><strong>Paper Fact:</strong> the 1.5-KLOC prototype evaluates 32
+fault classes across four synthetic domains: 2,560 parameterized
+attacks, 700 benign tasks, and 200 ambiguous cases. The full
+configuration commits no harmful external effect, completes all benign
+tasks, and escalates every ambiguous case. The strongest incomplete
+baseline commits harmful effects in 65.6% of attack instances. Median
+proof verification is 4.21 ms and full transition-to-finality 7.17 ms on
+the recorded host.</p>
+<p><strong>Artifact check:</strong> the two-commit repository contains a
+Python implementation, 30 tests, raw and aggregated results, scripts,
+ablations, figures, dependency metadata, and MIT license. It needs no
+model API because the planner is instantiated as adversarial
+actions.</p>
+<p><strong>Uncertainty:</strong> these are deterministic conformance
+cases, not independent estimates of real attack prevalence. The trusted
+computing base assumes configured root and validator keys, complete
+mediation of every protected sink, correct canonicalization, accurate
+manifests, and valid semantic validators. The system does not prevent
+harmful text, prove validator correctness, or demonstrate a real MCP,
+browser, email, cloud, or enterprise application integration. Recent
+briefs already covered runtime authorization and identity-preserving
+handoffs; production relevance now depends on integration evidence,
+bypass analysis, key lifecycle, and administrative usability.</p>
+<h2 id="cross-paper-synthesis">Cross-paper synthesis</h2>
+<ol type="1">
+<li><strong>Independent Analysis — nominal continuity is weaker than
+behavioral continuity.</strong> Keeping a memory store, keeping an
+explanation string, or keeping a tool available says little about
+preserved capability. The necessary evidence is behavior under upgrade,
+intervention, and paired execution.</li>
+<li><strong>Independent Analysis — stable identities are prerequisites,
+not proof.</strong> Fixed schemas make KG memory portable and
+explanation factors reproducible; typed CLI registries make commands
+addressable. But a stable name does not guarantee semantic completeness,
+faithfulness, safety, or authorization.</li>
+<li><strong>Independent Analysis — direction matters.</strong> Averaging
+old→new and new→old can hide a 9.91-point gain in one direction and a
+13.28-point loss in the other. Enterprise migrations and provider swaps
+need directional cells, not one blended score.</li>
+<li><strong>Independent Analysis — failures occur at different
+layers.</strong> Memory may lose information during construction or
+retrieval; explanations may omit or mis-rank drivers; agents may have
+tools but fail to orchestrate them. Observability must attribute failure
+to the representation, retriever, reader, explanation, router, action,
+verifier, or state transition.</li>
+<li><strong>Independent Analysis — evidence retention and least
+privilege pull in opposite directions.</strong> Raw history enables
+reconstruction, but it increases privacy and breach exposure. CLI
+surfaces improve efficiency, but they expand effect authority.
+Architecture must couple provenance with retention minimization, scoped
+credentials, finality controls, and reversible execution.</li>
+<li><strong>Independent Analysis — verification cannot share every
+dependency with generation.</strong> CUA-Universe validates its judge
+against humans; the explanation paper uses black-box perturbations; the
+memory study uses exact answers. Enterprise evaluation should preserve
+an independent truth lane rather than asking the generating model to
+certify itself.</li>
+<li><strong>Independent Analysis — benchmark maturity does not equal
+operating maturity.</strong> All three deep papers use synthetic or
+in-domain tasks, and two lack public experiment artifacts. The correct
+response is measured shadow experimentation, not production
+deployment.</li>
+</ol>
+<h2
+id="visual-1--behavioral-contracts-across-state-reason-and-action">Visual
+1 — behavioral contracts across state, reason, and action</h2>
+<pre class="text"><code>                 VERSIONED EVIDENCE &amp; POLICY PLANE
+       raw source · schema · model · embedding · prompt · verifier
+                              │
+                              ▼
+┌────────────────┐    ┌───────────────────┐    ┌──────────────────┐
+│ STATE CONTRACT │    │ REASON CONTRACT   │    │ ACTION CONTRACT  │
+│ memory object  │    │ fixed factor ID   │    │ typed tool/GUI   │
+│ writer/reader  │    │ cited ranking     │    │ shared state     │
+│ vector space   │    │ intervention set  │    │ pre/post state   │
+└───────┬────────┘    └─────────┬─────────┘    └────────┬─────────┘
+        │                       │                       │
+        ▼                       ▼                       ▼
+ directional replay      necessity/sufficiency   paired execution
+ recovery threshold      omitted-factor search   artifact verifier
+        │                       │                       │
+        └───────────────┬───────┴──────────────┬────────┘
+                        ▼                      ▼
+                HUMAN PROMOTION GATE     ROLLBACK / ESCALATION</code></pre>
+<p><strong>Independent Analysis:</strong> the common platform asset is
+not one model or memory store. It is a versioned experiment and control
+plane that can freeze evidence, inject interventions, replay
+transitions, identify the failed layer, and prevent an unverified result
+from crossing into an external effect.</p>
+<h2 id="visual-2--what-the-reported-numbers-actually-establish">Visual 2
+— what the reported numbers actually establish</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Research signal</th>
+<th style="text-align: right;">Strong observed result</th>
+<th>What it does <strong>not</strong> establish</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Fixed-schema memory portability</td>
+<td style="text-align: right;">pooled writer-swap change +0.0004 ±
+0.0020</td>
+<td>arbitrary enterprise knowledge fits a fixed schema</td>
+</tr>
+<tr class="even">
+<td>Mixed vs full embedding migration</td>
+<td style="text-align: right;">+4.96 vs +11.90 accuracy points</td>
+<td>all embedding upgrades exhibit the same loss</td>
+</tr>
+<tr class="odd">
+<td>Explanation ranking agreement</td>
+<td style="text-align: right;">mean rho 0.349–0.580 by
+task/criterion</td>
+<td>cited reasons recover internal reasoning or correctness</td>
+</tr>
+<tr class="even">
+<td>Influential uncited factors</td>
+<td style="text-align: right;">57.6%/58.1% in advisor
+necessity/sufficiency</td>
+<td>every uncited factor is practically or legally material</td>
+</tr>
+<tr class="odd">
+<td>Hybrid model on OSWorld</td>
+<td style="text-align: right;">23.4%→40.2% success with GUI+CLI</td>
+<td>unrestricted desktop autonomy is safe or reliable</td>
+</tr>
+<tr class="even">
+<td>CUA judge audit</td>
+<td style="text-align: right;">99.0% acceptance precision; kappa
+0.94</td>
+<td>every score difference is unbiased or independently verified</td>
+</tr>
+<tr class="odd">
+<td>CONTINUITY conformance</td>
+<td style="text-align: right;">0 harmful effects in 2,560 generated
+attacks</td>
+<td>real-world attack probability is zero</td>
+</tr>
+</tbody>
+</table>
+<h2 id="enterprise-ai-enhancement-backlog">Enterprise AI Enhancement
+Backlog</h2>
+<h3 id="priority-method-and-uncertainty">Priority method and
+uncertainty</h3>
+<p>The <strong>Future Enterprise AI Priority Score</strong> weights
+strategic/business value 25%, technical leverage 20%, evidence strength
+20%, enterprise readiness 15%, feasibility 10%, and risk-adjusted
+differentiation 10%. Components are analyst ratings from 0–100, not
+measurements. Totals are arithmetic summaries for ordering reversible
+experiments; they do not encode a specific enterprise's revenue model,
+architecture, regulatory obligations, staff, vendor contracts, or risk
+tolerance. A five-point change in an uncertain component should not be
+treated as decision-grade precision.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: right;">#</th>
+<th>Enhancement</th>
+<th>Decision band</th>
+<th style="text-align: right;">Strategic</th>
+<th style="text-align: right;">Leverage</th>
+<th style="text-align: right;">Evidence</th>
+<th style="text-align: right;">Readiness</th>
+<th style="text-align: right;">Feasibility</th>
+<th style="text-align: right;">Differentiation</th>
+<th style="text-align: right;">Weighted total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td>Memory upgrade rehearsal gate</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;">87</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;"><strong>91.3</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td>Version-isolated embedding lifecycle</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">76</td>
+<td style="text-align: right;"><strong>88.1</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td>Counterfactual explanation audit</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;"><strong>86.5</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td>Raw-memory lineage and rebuild vault</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">89</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">79</td>
+<td style="text-align: right;">72</td>
+<td style="text-align: right;">83</td>
+<td style="text-align: right;"><strong>86.2</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td>Typed hybrid-action surface and state ledger</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">89</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">62</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;"><strong>79.5</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td>Behavioral evaluator profile registry</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">83</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">71</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">76</td>
+<td style="text-align: right;"><strong>79.6</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td>Hybrid GUI+CLI shadow benchmark</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">68</td>
+<td style="text-align: right;">63</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;"><strong>79.8</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td>End-to-end security-context envelope</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">58</td>
+<td style="text-align: right;">52</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;"><strong>81.9</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9</td>
+<td>Unconstrained learned desktop autonomy</td>
+<td>Deprioritize for Now</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">77</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">38</td>
+<td style="text-align: right;">42</td>
+<td style="text-align: right;"><strong>58.4</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="prototype-soon">Prototype Soon</h3>
+<h4 id="1-memory-upgrade-rehearsal-gate--913100">1. Memory upgrade
+rehearsal gate — 91.3/100</h4>
+<ul>
+<li><strong>Category:</strong> Memory &amp; Context.</li>
+<li><strong>Research signal and supporting paper(s):</strong>
+<strong>Paper Fact</strong> — the portability study finds near-invariant
+KG-fixed transfer, directionally unstable NOTES, incomplete
+mixed-embedding migration, and recovery dependence on raw evidence.
+Supporting paper: Goyal and Ray, arXiv:2609.05339.</li>
+<li><strong>Enterprise problem/opportunity:</strong> model, prompt,
+embedding, and memory-service upgrades can silently change what an agent
+remembers even when the stored bytes remain available.</li>
+<li><strong>Future capability:</strong> a pre-change harness snapshots a
+representative, de-identified task population; crosses old/new writer,
+reader, embedding, and schema versions; computes direction-specific
+accuracy, retrieval, latency, cost, privacy, and reconstruction results;
+and creates a signed go/hold/rollback record.</li>
+<li><strong>Architectural placement:</strong> evaluation, orchestration,
+context/memory service, model gateway, and human-review layer.</li>
+<li><strong>Expected business value:</strong> reliability, quality, risk
+reduction, speed, and cost avoidance from prevented regressions.</li>
+<li><strong>Technical value:</strong> separates construction, retrieval,
+and reader failures; produces deterministic rollback evidence; makes
+upgrade risk comparable over time.</li>
+<li><strong>Evidence maturity/readiness:</strong> controlled full-paper
+evidence with exact scoring and planned tests; synthetic histories and
+two models limit portability. <strong>Confidence: High for shadow
+testing; Moderate for thresholds.</strong></li>
+<li><strong>Horizon / effort:</strong> Now / M.</li>
+<li><strong>Dependencies:</strong> versioned memory API, frozen task
+set, canonical answer or outcome checks, cost telemetry,
+privacy-approved data sampling, rollbackable deployment, model/embedding
+registry.</li>
+<li><strong>Risks:</strong> non-representative test histories; raw
+sensitive data leakage; benchmark overfitting; false confidence from
+average scores; provider non-determinism; upgrade delay and ownership
+ambiguity.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build the policy and
+harness; buy model/index tooling selectively.</strong> Migration
+thresholds and business-critical memory contracts are
+enterprise-specific, while evaluation runners and registries can use
+existing platforms.</li>
+<li><strong>Minimum reversible experiment:</strong> clone 100
+non-sensitive histories; run old→new and new→old writer/reader cells
+plus old/mixed/new embeddings; change no production state.</li>
+<li><strong>Success metrics / stop conditions:</strong> predefined
+task-recovery rate, retrieval recall, direction gap, p95 latency, cost,
+deletion compliance, and zero cross-tenant exposure. Stop if gold truth
+is weak, raw data cannot be safely isolated, or the harness cannot
+distinguish layer failures.</li>
+<li><strong>Roadmap trigger:</strong> two representative upgrades pass
+the same thresholds, rollback is rehearsed, residual failures are
+understood, and security/privacy owners approve the data path. Internal
+workflow criticality and error tolerance are still required.</li>
+</ul>
+<h4 id="2-version-isolated-embedding-lifecycle--881100">2.
+Version-isolated embedding lifecycle — 88.1/100</h4>
+<ul>
+<li><strong>Category:</strong> RAG &amp; Knowledge.</li>
+<li><strong>Research signal and supporting paper(s):</strong>
+<strong>Paper Fact</strong> — full re-embedding yields +11.90 accuracy
+points in the tested migration, while a 50/50 mixed index yields +4.96;
+retrieval recall similarly under-recovers. Supporting paper:
+arXiv:2609.05339.</li>
+<li><strong>Enterprise problem/opportunity:</strong> online partial
+migrations can mix incompatible vector spaces and degrade recall without
+a visible storage failure.</li>
+<li><strong>Future capability:</strong> write embeddings into immutable
+versioned namespaces; dual-read old/new indices during validation;
+require complete backfill, document-count reconciliation, canary replay,
+and an atomic alias switch; preserve the old index until rollback
+expires.</li>
+<li><strong>Architectural placement:</strong> retrieval/knowledge, data
+platform, infrastructure, observability.</li>
+<li><strong>Expected business value:</strong> reliability, quality, risk
+reduction, and faster safe upgrades.</li>
+<li><strong>Technical value:</strong> prevents silent cross-space
+comparison, makes corpus coverage auditable, and enables exact
+rollback.</li>
+<li><strong>Evidence maturity/readiness:</strong> strong within one
+embedder-family experiment; the mechanism is broadly plausible but
+effect size is not portable. <strong>Confidence: High.</strong></li>
+<li><strong>Horizon / effort:</strong> Now / M.</li>
+<li><strong>Dependencies:</strong> index namespace support, version
+metadata, backfill capacity, frozen query/gold-evidence set, atomic
+routing, drift and coverage telemetry.</li>
+<li><strong>Risks:</strong> double-storage cost; stale-document races;
+authorization metadata loss during rebuild; delete propagation failure;
+cutover inconsistency; vendor-specific semantics.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Buy managed index
+primitives where available; build lifecycle policy, reconciliation, and
+acceptance tests.</strong> The control contract must remain portable
+across vendors.</li>
+<li><strong>Minimum reversible experiment:</strong> duplicate a small
+non-sensitive corpus and compare old, 50/50 mixed, and fully new indices
+on identical queries with no user-facing routing.</li>
+<li><strong>Success metrics / stop conditions:</strong> corpus and ACL
+parity, recall@k, answer accuracy, cross-version distance anomalies,
+re-index duration/cost, delete propagation, and rollback time. Stop if
+ACL equivalence or atomic rollback cannot be demonstrated.</li>
+<li><strong>Roadmap trigger:</strong> paired replay shows material
+quality protection, the full backfill completes inside the operational
+window, and deletion/authorization semantics remain exact. Internal
+corpus scale and vendor constraints are needed.</li>
+</ul>
+<h4 id="3-counterfactual-explanation-audit--865100">3. Counterfactual
+explanation audit — 86.5/100</h4>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability.</li>
+<li><strong>Research signal and supporting paper(s):</strong>
+<strong>Paper Fact</strong> — cited rankings correlate only partially
+with intervention scores, influential uncited factors are common, and
+more reasoning does not monotonically repair ranking. Supporting paper:
+Pawar et al., arXiv:2609.05385.</li>
+<li><strong>Enterprise problem/opportunity:</strong> operators may treat
+plausible model explanations as evidence for debugging, escalation,
+approval, or regulatory communication even when the cited factors do not
+match observable behavior.</li>
+<li><strong>Future capability:</strong> for schema-bound decisions,
+require factor IDs; generate policy-approved necessity and sufficiency
+perturbations; score cited and eligible uncited factors; track omission,
+rank agreement, stability, and output magnitude by model/prompt
+version.</li>
+<li><strong>Architectural placement:</strong> evaluation, observability,
+applications, human-review layer.</li>
+<li><strong>Expected business value:</strong> quality, reliability, risk
+reduction, customer trust, and better reviewer productivity.</li>
+<li><strong>Technical value:</strong> creates a repeatable black-box
+check independent of hidden reasoning; distinguishes factor selection
+from ordering.</li>
+<li><strong>Evidence maturity/readiness:</strong> multi-model but only
+two synthetic tasks, three trials per perturbation, withheld records,
+and no outcome study. <strong>Confidence: Moderate.</strong></li>
+<li><strong>Horizon / effort:</strong> Now / M.</li>
+<li><strong>Dependencies:</strong> typed feature schema, valid
+perturbation generator, causal/domain review, model-version control,
+representative decisions, privacy-safe logging, human explanation
+contract.</li>
+<li><strong>Risks:</strong> invalid or unrealistic interventions;
+correlated features; protected-attribute leakage; combinatorial cost;
+unstable model APIs; users misreading behavioral dependence as causal
+truth; legal discoverability.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build a
+domain-specific audit layer; partner with risk/legal/domain
+experts.</strong> Generic explainability products cannot define valid
+interventions or materiality for the enterprise.</li>
+<li><strong>Minimum reversible experiment:</strong> 100 historical,
+non-actioning decisions; three trials for each cited and eligible
+uncited factor; compare omission and ranking without changing responses
+shown to users.</li>
+<li><strong>Success metrics / stop conditions:</strong> explanation
+stability, necessity/sufficiency rank correlation, material
+uncited-factor rate, perturbation validity, audit cost, and reviewer
+usefulness. Stop if domain experts reject the interventions or results
+cannot be reproduced across runs.</li>
+<li><strong>Roadmap trigger:</strong> the audit repeatedly identifies
+material discrepancies that change review behavior, valid interventions
+cover the important feature space, and governance defines how scores may
+and may not be used. Internal legal purpose is required.</li>
+</ul>
+<h3 id="prepare-foundations">Prepare Foundations</h3>
+<h4 id="4-raw-memory-lineage-and-rebuild-vault--862100">4. Raw-memory
+lineage and rebuild vault — 86.2/100</h4>
+<ul>
+<li><strong>Category:</strong> Data &amp; Knowledge Infrastructure.</li>
+<li><strong>Research signal and supporting paper(s):</strong>
+<strong>Paper Fact</strong> — store-only NOTES repair fails all 48
+tested histories at a 90% target, while raw history enables 34/48
+recovery cases in one tested direction. Supporting paper:
+arXiv:2609.05339.</li>
+<li><strong>Enterprise problem/opportunity:</strong> summaries, notes,
+embeddings, and graphs are lossy derivatives; without source lineage,
+errors and migrations may be irreparable.</li>
+<li><strong>Future capability:</strong> retain the minimum
+reconstructable source evidence in an encrypted, access-scoped,
+retention-limited vault; link each derivative to source hashes,
+writer/model, prompt, schema, and deletion state; rebuild only through
+an approved job with complete audit records.</li>
+<li><strong>Architectural placement:</strong> data platform,
+context/memory, security/governance, observability.</li>
+<li><strong>Expected business value:</strong> reliability, quality, risk
+reduction, and lower recovery cost.</li>
+<li><strong>Technical value:</strong> enables deterministic
+regeneration, provenance audits, selective invalidation, and root-cause
+attribution.</li>
+<li><strong>Evidence maturity/readiness:</strong> direct recovery
+evidence, but synthetic and asymmetric; feasibility depends more on
+governance than algorithms. <strong>Confidence: High on lineage value;
+Moderate on raw retention.</strong></li>
+<li><strong>Horizon / effort:</strong> 3–6 months / L.</li>
+<li><strong>Dependencies:</strong> classification, consent/retention
+policy, encryption and keys, tenant isolation, immutable source IDs,
+deletion propagation, legal hold, rebuild orchestration, access
+review.</li>
+<li><strong>Risks:</strong> breach blast radius, purpose creep, deletion
+conflict, re-identification, storage cost, stale or poisoned source,
+compromised rebuild credentials.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Buy secure
+storage/key infrastructure; build the lineage, minimization, deletion,
+and rebuild contract.</strong> Partner with privacy/security for
+data-category decisions.</li>
+<li><strong>Minimum reversible experiment:</strong> use synthetic or
+public histories to prove source→derivative lineage, selective deletion,
+rebuild reproducibility, access logging, and key revocation.</li>
+<li><strong>Success metrics / stop conditions:</strong> lineage
+completeness, rebuild fidelity, deletion SLA, unauthorized-access count,
+storage growth, and incident recovery. Stop if minimum source retention
+conflicts with policy or deletion cannot cascade to derivatives.</li>
+<li><strong>Roadmap trigger:</strong> data governance approves each
+source category, a tabletop incident passes, and at least one migration
+demonstrates value over store-only recovery. Internal retention
+obligations are mandatory.</li>
+</ul>
+<h4 id="5-typed-hybrid-action-surface-and-state-ledger--795100">5. Typed
+hybrid-action surface and state ledger — 79.5/100</h4>
+<ul>
+<li><strong>Category:</strong> Agentic AI.</li>
+<li><strong>Research signal and supporting paper(s):</strong>
+<strong>Paper Fact</strong> — CUA-Universe's trained model benefits
+strongly from GUI+CLI coordination over shared state; interface exposure
+alone gives several models only small gains. CONTINUITY Watchlist
+evidence independently argues for typed, effect-bound transitions.</li>
+<li><strong>Enterprise problem/opportunity:</strong> agents can waste
+time clicking through interfaces, while direct command execution is
+efficient but higher authority and harder to recover.</li>
+<li><strong>Future capability:</strong> expose only allowlisted,
+schema-validated actions; bind each GUI/CLI/API operation to the same
+canonical object/state ID; record proposal, authorization, execution,
+pre/post state, verifier, and compensation status; require human
+confirmation for irreversible actions.</li>
+<li><strong>Architectural placement:</strong> agent layer,
+orchestration, security/governance, observability, infrastructure.</li>
+<li><strong>Expected business value:</strong> productivity, speed,
+quality, cost, and risk reduction.</li>
+<li><strong>Technical value:</strong> makes modality switching
+measurable, gives commands least-privilege semantics, and supports
+replay/rollback.</li>
+<li><strong>Evidence maturity/readiness:</strong> task and transfer
+evidence is promising; no released CUA artifact or enterprise security
+trial exists. <strong>Confidence: Moderate for the ledger; Low for
+learned routing.</strong></li>
+<li><strong>Horizon / effort:</strong> 6–12 months / XL.</li>
+<li><strong>Dependencies:</strong> canonical object model, action
+schemas, per-tool identity/authorization, sandbox VMs, pre/post
+snapshots, compensating actions, deterministic checks, human approval
+UI.</li>
+<li><strong>Risks:</strong> privilege escalation, shell injection,
+GUI/CLI state races, hidden side effects, credential leakage, partial
+completion, inaccessible applications, adoption burden.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build the enterprise
+action contract and ledger; buy sandbox/computer-use infrastructure;
+partner for application adapters.</strong> Authority and compensation
+rules cannot be outsourced wholesale.</li>
+<li><strong>Minimum reversible experiment:</strong> one synthetic
+workflow in an isolated VM with read-only credentials; compare GUI-only
+and typed hybrid paths while recording every state transition and
+forcing rollback.</li>
+<li><strong>Success metrics / stop conditions:</strong> success rate,
+verified-state agreement, steps, tokens, p95 latency, cost, policy
+violations, rollback success, and human interventions. Stop on any
+unmediated effect path or unverifiable state mutation.</li>
+<li><strong>Roadmap trigger:</strong> three bounded workflows show
+repeatable efficiency with zero authorization bypasses and reliable
+compensation under fault injection. Internal application owners and
+security boundaries are required.</li>
+</ul>
+<h3 id="monitor-for-maturity">Monitor for Maturity</h3>
+<h4 id="6-behavioral-evaluator-profile-registry--796100">6. Behavioral
+evaluator profile registry — 79.6/100</h4>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability.</li>
+<li><strong>Research signal and supporting paper(s):</strong>
+<strong>Paper Fact</strong> — the Watchlist evaluator study finds no
+universal metric; stability and sensitivity vary by transformation and
+backbone even when aggregates look similar. Supporting paper: Mahbub et
+al., arXiv:2609.05289.</li>
+<li><strong>Enterprise problem/opportunity:</strong> a single evaluator
+average can conceal sensitivity to formatting and blindness to factual,
+logical, or completeness defects.</li>
+<li><strong>Future capability:</strong> pair each evaluator version with
+a transformation-assumption profile, task scope, reference policy,
+repeat-run variance, known failure modes, and approved uses; route
+evaluation dimensions to complementary deterministic, human, and
+model-based checks.</li>
+<li><strong>Architectural placement:</strong> evaluation, developer
+platform, model gateway, observability.</li>
+<li><strong>Expected business value:</strong> quality, reliability, risk
+reduction, and faster evaluator selection.</li>
+<li><strong>Technical value:</strong> turns evaluator choice into a
+versioned instrument qualification process.</li>
+<li><strong>Evidence maturity/readiness:</strong> controlled diagnostics
+and repeat checks, but one document-QA setting, light human review, and
+no artifact repository. <strong>Confidence: Moderate.</strong></li>
+<li><strong>Horizon / effort:</strong> 3–6 months / M.</li>
+<li><strong>Dependencies:</strong> evaluator registry, transformation
+library, gold examples, run/version logging, human-review budget, policy
+for reference ambiguity.</li>
+<li><strong>Risks:</strong> synthetic transformations; stale profiles;
+benchmark gaming; false equivalence between stable and correct;
+excessive evaluation cost.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build the registry
+and domain assumption suites; buy evaluator services only behind the
+qualification layer.</strong></li>
+<li><strong>Minimum reversible experiment:</strong> apply 10
+domain-reviewed preserving and 10 altering transformations to 100 frozen
+outputs across current evaluators.</li>
+<li><strong>Success metrics / stop conditions:</strong> stability,
+sensitivity, false-pass/false-fail rate, repeat variance, cost, and
+disagreement resolution. Stop if transformations cannot be validated or
+no independent truth is available.</li>
+<li><strong>Roadmap trigger:</strong> profiles predict real review
+failures and materially change evaluator routing or promotion decisions.
+Internal task types and risk tiers are required.</li>
+</ul>
+<h4 id="7-hybrid-guicli-shadow-benchmark--798100">7. Hybrid GUI+CLI
+shadow benchmark — 79.8/100</h4>
+<ul>
+<li><strong>Category:</strong> AI Software Engineering.</li>
+<li><strong>Research signal and supporting paper(s):</strong>
+<strong>Paper Fact</strong> — CUA-Universe reports large same-base
+gains, transferable tool-use decisions, and lower steps/tokens after
+task-specific training. Supporting paper: arXiv:2609.05374.</li>
+<li><strong>Enterprise problem/opportunity:</strong> current
+computer-use pilots may compare models on success alone and ignore
+whether a task is better suited to GUI, command, API, or a safe
+hybrid.</li>
+<li><strong>Future capability:</strong> build an isolated paired
+benchmark of identical enterprise-like tasks under GUI-only,
+API/CLI-only, and hybrid modes; preserve application state, permissions,
+and exact output checks; separately score routing, execution,
+efficiency, recoverability, and human burden.</li>
+<li><strong>Architectural placement:</strong> evaluation, agent layer,
+developer platform, infrastructure.</li>
+<li><strong>Expected business value:</strong> productivity, cost, speed,
+quality, and strategic differentiation.</li>
+<li><strong>Technical value:</strong> identifies where an action surface
+adds value and whether training, not access, is the missing
+capability.</li>
+<li><strong>Evidence maturity/readiness:</strong> good benchmark design
+and judge audit, but in-domain single-app Linux tasks and unavailable
+code/data. <strong>Confidence: Moderate.</strong></li>
+<li><strong>Horizon / effort:</strong> 6–12 months / L.</li>
+<li><strong>Dependencies:</strong> sandbox applications, task seeds,
+canonical outputs, allowlisted commands, state snapshots, cost/token
+telemetry, human labels, representative workflows.</li>
+<li><strong>Risks:</strong> brittle adapters, contamination,
+synthetic-task bias, hidden model API changes, tool permission
+expansion, evaluation cost, common judge dependency.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Partner or wait for
+the authors' release; build only a small internal harness now.</strong>
+Avoid reconstructing the full 16-application pipeline from a paper.</li>
+<li><strong>Minimum reversible experiment:</strong> 30 read-only or
+disposable tasks across two applications; paired modes, identical
+initial state, deterministic output verification.</li>
+<li><strong>Success metrics / stop conditions:</strong> verified
+success, routing accuracy, steps, tokens, wall time, cost, recovery, and
+policy violations. Stop if hybrid access increases unsafe attempts or
+gains disappear under exact verification.</li>
+<li><strong>Roadmap trigger:</strong> public artifacts reproduce,
+internal paired gains remain after permission/cost controls, and at
+least two workflows have safe compensation. Application-level context is
+required.</li>
+</ul>
+<h4 id="8-end-to-end-security-context-envelope--819100">8. End-to-end
+security-context envelope — 81.9/100</h4>
+<ul>
+<li><strong>Category:</strong> AI Security.</li>
+<li><strong>Research signal and supporting paper(s):</strong>
+<strong>Paper Fact</strong> — CONTINUITY contains all generated
+cross-layer faults only when provenance, authority, transformation,
+freshness, replay, and finality constraints compose end to end.
+Supporting Watchlist paper: arXiv:2609.05269 and official MIT
+artifact.</li>
+<li><strong>Enterprise problem/opportunity:</strong> locally valid
+controls can lose or widen security context at adapters and tool
+boundaries.</li>
+<li><strong>Future capability:</strong> carry signed
+principal/task/provenance/policy/transform/action envelopes across
+components; require role-bound receipts and single-use effect permits at
+final sinks; fail closed or escalate on missing fields.</li>
+<li><strong>Architectural placement:</strong> security/governance,
+orchestration, agent layer, model gateway, observability.</li>
+<li><strong>Expected business value:</strong> risk reduction,
+reliability, auditability, and regulatory defensibility.</li>
+<li><strong>Technical value:</strong> makes cross-component invariants
+executable and distinguishes proposal, admission, and effect.</li>
+<li><strong>Evidence maturity/readiness:</strong> excellent
+deterministic artifact for conformance, but synthetic domains and no
+real protocol/application integration. <strong>Confidence: Moderate for
+the pattern; Low for deployment readiness.</strong></li>
+<li><strong>Horizon / effort:</strong> 12+ months / XL.</li>
+<li><strong>Dependencies:</strong> enterprise identity, key lifecycle,
+canonical action schemas, trusted policy state, complete sink inventory,
+revocation/replay store, semantic validators, incident operations.</li>
+<li><strong>Risks:</strong> trusted-root compromise, incomplete
+mediation, canonicalization mismatch, administrative complexity,
+unavailable external sinks, key rotation failure, denial of service,
+false security from a narrow fault suite.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Partner and
+prototype from the open artifact; do not standardize yet.</strong>
+Enterprise integration and trusted-root ownership dominate the
+work.</li>
+<li><strong>Minimum reversible experiment:</strong> reproduce the
+artifact offline, then adapt one no-op internal tool path and inject
+truncation, amplification, rebinding, staleness, and replay faults.</li>
+<li><strong>Success metrics / stop conditions:</strong> fault
+containment, benign completion, ambiguous escalation, verification
+latency, bypass paths, key-rotation recovery, and operator usability.
+Stop if any equivalent sink avoids mediation.</li>
+<li><strong>Roadmap trigger:</strong> two real adapters pass independent
+red-team fault injection, key operations are viable, and control owners
+accept the TCB. Internal identity and sink topology are
+prerequisites.</li>
+</ul>
+<h3 id="deprioritize-for-now">Deprioritize for Now</h3>
+<h4 id="9-unconstrained-learned-desktop-autonomy--584100">9.
+Unconstrained learned desktop autonomy — 58.4/100</h4>
+<ul>
+<li><strong>Category:</strong> Agentic AI.</li>
+<li><strong>Research signal and supporting paper(s):</strong>
+<strong>Uncertainty / Enterprise Inference</strong> — CUA-Universe
+demonstrates improved benchmark orchestration, not safe autonomy. Its
+own best open model still succeeds on 40.2% of the cited OSWorld scope
+and 28.69% strict success on OSWorld-MCP.</li>
+<li><strong>Enterprise problem/opportunity:</strong> broad desktop
+automation is strategically attractive but crosses many privilege,
+recovery, privacy, and application-consistency boundaries.</li>
+<li><strong>Future capability:</strong> eventually, a policy-constrained
+agent could choose visual or typed interfaces across applications, but
+only after the foundations above exist.</li>
+<li><strong>Architectural placement:</strong> applications, agent layer,
+orchestration, security/governance, infrastructure, human-review
+layer.</li>
+<li><strong>Expected business value:</strong> potentially high
+productivity and speed; presently dominated by reliability and security
+risk.</li>
+<li><strong>Technical value:</strong> broad orchestration could reduce
+brittle single-interface automation, but the evidence does not support
+unrestricted operation.</li>
+<li><strong>Evidence maturity/readiness:</strong> early preprint,
+in-domain single-application synthesis, unavailable artifact, material
+absolute failure rates. <strong>Confidence: High that production rollout
+is premature.</strong></li>
+<li><strong>Horizon / effort:</strong> 12+ months / XL.</li>
+<li><strong>Dependencies:</strong> every foundation in items 1, 4, 5, 7,
+and 8; complete authorization; transactional or compensating actions;
+human takeover; application support; independent verification.</li>
+<li><strong>Risks:</strong> irreversible external effects, credential
+and data exposure, cross-application state corruption, prompt injection,
+partial execution, inaccessible recovery, user over-trust, vendor
+drift.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Defer.</strong>
+Monitor public artifacts and bounded vendor sandboxes; do not build a
+general production layer now.</li>
+<li><strong>Minimum reversible experiment:</strong> no production
+experiment. If monitored, use a disposable offline VM with synthetic
+accounts, no secrets, no network side effects, and forced rollback.</li>
+<li><strong>Success metrics / stop conditions:</strong> exact task
+success, zero unmediated effects, complete trace, reliable rollback, and
+bounded cost. Any real credential use, irreversible action, or missing
+trace is a stop condition.</li>
+<li><strong>Roadmap trigger:</strong> independently reproduced
+multi-application results exceed enterprise thresholds,
+permission/finality controls survive red teaming, artifacts mature, and
+bounded internal workflows have safe compensation. Internal strategic
+relevance must also be demonstrated.</li>
+</ul>
+<h2 id="enterprise-ai-architecture-implications">Enterprise AI
+Architecture Implications</h2>
+<p><strong>Independent Analysis — over the next 12–24 months, the
+architecture implication is a separation between generative components
+and a behavioral contract plane.</strong> The contract plane does not
+trust a persisted object, explanation, or tool result merely because it
+exists. It records how the object was produced, tests whether the stated
+semantics survive intervention or upgrade, and mediates promotion or
+external effect.</p>
+<p>Shared foundations that unlock multiple enhancements:</p>
+<ol type="1">
+<li><strong>Model and artifact registry:</strong> model, prompt,
+embedding, schema, memory writer/reader, tool registry, evaluator, and
+policy versions must be independently addressable.</li>
+<li><strong>Context and memory service:</strong> typed objects, source
+lineage, reconstructability class, retention/deletion state, tenancy,
+and migration history should travel with each memory artifact.</li>
+<li><strong>Retrieval/knowledge lifecycle:</strong> immutable embedding
+namespaces, atomic aliases, ACL reconciliation, complete backfills, and
+old/new paired reads prevent silent mixed-space degradation.</li>
+<li><strong>Experiment and replay infrastructure:</strong> freeze
+representative inputs, run directional cells and interventions, preserve
+planned failures, measure cost/latency, and compare exact state before
+promotion.</li>
+<li><strong>Evaluation plane:</strong> combine exact checks, gold
+evidence, behavioral transformations, counterfactual perturbations,
+verifier qualification, and human adjudication; do not collapse them
+into one judge score.</li>
+<li><strong>Observability:</strong> separately record construction loss,
+retrieval misses, reader errors, explanation omission/rank errors,
+routing choices, action results, verifier disagreement, and compensation
+outcomes.</li>
+<li><strong>Agent orchestration and action ledger:</strong> canonical
+state identities across GUI/API/CLI, typed actions, scoped credentials,
+pre/post state snapshots, and transaction/compensation boundaries.</li>
+<li><strong>Policy enforcement and identity/authorization:</strong> bind
+principal, task, provenance, permissible transformation, policy version,
+and final effect; ensure equivalent sinks cannot bypass mediation.</li>
+<li><strong>Human-review controls:</strong> upgrades, explanation use,
+irreversible actions, exception releases, and roadmap promotion need
+named accountable owners and explicit appeal/rollback paths.</li>
+<li><strong>Cost and data-risk telemetry:</strong> raw source retention,
+double indexing, counterfactual calls, VM rollouts, and verifier
+ensembles all add cost and risk; measure them by workflow and
+sensitivity tier.</li>
+</ol>
+<pre class="text"><code>Applications / human workflow
+          │
+          ▼
+Agent orchestration ───────────────► typed action ledger ──► mediated effect
+          │                                  ▲                     │
+          ▼                                  │                     ▼
+Context &amp; memory service ──► Retrieval / knowledge lifecycle   outcome receipt
+          │                                  │                     │
+          └──────────────┬───────────────────┴──────────────┬──────┘
+                         ▼                                  ▼
+              Evaluation &amp; replay plane          Security / policy plane
+        exact truth · interventions · cost   identity · provenance · finality
+                         │                                  │
+                         └──────────────┬───────────────────┘
+                                        ▼
+                              Human promotion / rollback</code></pre>
+<p>No specific current enterprise stack is assumed. Before architecture
+decisions, internal discovery must establish critical workflows, memory
+categories, data classification, model/vendor topology, existing
+identity and observability controls, application ownership, latency/cost
+budgets, and regulatory or contractual obligations.</p>
+<h2 id="implementation-priorities">Implementation priorities</h2>
+<h3 id="now--instrument-before-changing-behavior">Now — instrument
+before changing behavior</h3>
+<ol type="1">
+<li>Inventory every model, embedding, prompt, schema, memory
+representation, evaluator, and action surface that can change
+independently.</li>
+<li>Select one non-sensitive memory workflow and build the directional
+migration matrix.</li>
+<li>Clone one retrieval index into version-isolated old/mixed/new
+variants and prove atomic rollback.</li>
+<li>Choose one schema-bound recommendation or classification workflow
+and design domain-valid explanation interventions.</li>
+<li>Record selected, authorized, and executed GUI/API/CLI actions with
+canonical object and pre/post state IDs; do not add new authority
+yet.</li>
+</ol>
+<h3 id="next--build-reusable-foundations">Next — build reusable
+foundations</h3>
+<ol type="1">
+<li>Establish source-lineage, minimization, retention, deletion, and
+rebuild policy for memory derivatives.</li>
+<li>Add a registry for evaluator assumption profiles, explanation audit
+scope, and known failure modes.</li>
+<li>Build a disposable shared-state application sandbox with
+deterministic output checks and compensation tests.</li>
+<li>Define security-context fields and finality boundaries for one no-op
+or read-only tool path.</li>
+<li>Put human owners on upgrade approval, explanation use, exception
+handling, and rollback.</li>
+</ol>
+<h3 id="later--expand-only-after-triggers">Later — expand only after
+triggers</h3>
+<ol type="1">
+<li>Extend memory replay to additional model and embedding families only
+after the first harness predicts real migration failures.</li>
+<li>Evaluate hybrid action training only after the authors release
+artifacts or an internal paired benchmark justifies the cost.</li>
+<li>Advance context envelopes only after real adapter integrations
+survive independent fault injection.</li>
+<li>Keep cross-application desktop autonomy out of production until
+end-to-end authority, recovery, and verification exist.</li>
+</ol>
+<h2 id="knowledge-reinforcement">Knowledge reinforcement</h2>
+<ol type="1">
+<li><strong>Why can a symmetric migration average be dangerous?</strong>
+Because opposite directional effects can cancel; +9.91 and -13.28 points
+describe two different operational risks that a pooled result
+obscures.</li>
+<li><strong>What is the difference between necessity and sufficiency
+here?</strong> Necessity asks whether changing a factor changes the
+decision; sufficiency asks whether keeping it while masking other
+changeable information preserves the decision.</li>
+<li><strong>Does a fixed feature vocabulary make an explanation
+faithful?</strong> No. It stabilizes identity and repeatability, which
+makes faithfulness testable; the intervention results still show
+omissions and rank mismatches.</li>
+<li><strong>Why isolate embedding versions?</strong> Vectors from
+different model versions may not be comparable. A mixed index can look
+operational while under-recovering the quality available after a
+complete re-embedding.</li>
+<li><strong>Why does raw evidence help and hurt?</strong> It enables
+reconstruction of lossy derivatives, but expands privacy, retention,
+deletion, access, and breach obligations.</li>
+<li><strong>What did CUA-Universe show about tool access?</strong>
+Access alone gave small gains to several models; task-specific training
+and modality guidance drove the largest improvements for the tested 9B
+model.</li>
+<li><strong>Why is a human-validated VLM judge still not ground truth
+for every claim?</strong> The audit validates an acceptance threshold on
+a stratified sample; it does not prove every continuous score difference
+or every new application is unbiased.</li>
+<li><strong>What is the safest first enterprise action?</strong> Build
+passive, offline migration, explanation, and action traces with exact
+rollback. Do not grant new production authority.</li>
+</ol>
+<h2 id="evidence-register-and-decision-boundaries">Evidence register and
+decision boundaries</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Status</th>
+<th>Decision-use limit</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Memory portability</td>
+<td>full paper reviewed; exact metrics; artifacts on request</td>
+<td>synthetic histories, two small models, one embedding family</td>
+</tr>
+<tr class="even">
+<td>Behavioral explanations</td>
+<td>full paper reviewed; multi-model interventions</td>
+<td>synthetic tasks, three-trial scores, withheld records, no
+user-outcome evidence</td>
+</tr>
+<tr class="odd">
+<td>CUA-Universe</td>
+<td>full paper reviewed; human judge audit</td>
+<td>in-domain/single-app Linux tasks; code and data not yet
+released</td>
+</tr>
+<tr class="even">
+<td>Behavioral evaluator profiles</td>
+<td>Watchlist</td>
+<td>overlaps recent calibration brief; limited human QC and one task
+family</td>
+</tr>
+<tr class="odd">
+<td>CONTINUITY</td>
+<td>Watchlist; official MIT artifact verified</td>
+<td>deterministic synthetic conformance, explicit TCB, no real
+integration</td>
+</tr>
+<tr class="even">
+<td>Enterprise backlog</td>
+<td>Independent Analysis / Enterprise Inference</td>
+<td>options for reversible validation, not approved roadmap
+commitments</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Final boundary:</strong> benchmark improvements, exact
+conformance in a generated fault suite, stable schemas, or plausible
+explanations do not authorize production deployment. Before any
+implementation decision, the enterprise must supply its own workflow
+criticality, data sensitivity, authorization topology, model/vendor
+inventory, failure cost, evaluation truth, human accountability, and
+rollback constraints.</p></main></div>
+<footer>AI Research Intelligence Brief · September 8, 2026 · Research options, not deployment approval.</footer>
+<div class="toolbar"><button onclick="window.print()" aria-label="Print report">Print</button><button id="top" aria-label="Back to top">↑ Top</button></div>
+<script>
+const p=document.getElementById('progress');addEventListener('scroll',()=>{const h=document.documentElement;p.style.width=((h.scrollTop/(h.scrollHeight-h.clientHeight))*100)+'%'});document.getElementById('top').onclick=()=>scrollTo({top:0,behavior:'smooth'});
+document.querySelectorAll('main h4').forEach(h=>{if(/^\d+\./.test(h.textContent))h.setAttribute('data-backlog','true')});
+</script>
+</body></html>
