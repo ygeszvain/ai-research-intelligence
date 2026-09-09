@@ -1,0 +1,1517 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Evidence-grounded AI Research Intelligence Brief for September 9, 2026: revocation-safe memory, independent executable critics, and stage-aware search evaluation.">
+<meta name="report-date" content="2026-09-09">
+<meta name="research-window" content="2026-09-07T16:00:00-05:00/2026-09-09T04:00:00-05:00 America/Chicago">
+<meta name="deep-paper-count" content="3">
+<meta name="watchlist-count" content="2">
+<meta name="theme-color" content="#08131f">
+<title>AI Research Intelligence Brief — September 9, 2026</title>
+<style>
+:root{--bg:#07111d;--panel:#0d1b2a;--panel2:#10263a;--text:#e8f1f7;--muted:#9fb5c5;--line:#29445b;--cyan:#45d7c4;--gold:#f5c96a;--rose:#ff8d9a;--blue:#68a9ff;--max:1180px;color-scheme:dark}
+@media(prefers-color-scheme:light){:root{--bg:#f4f7f8;--panel:#fff;--panel2:#edf4f7;--text:#102131;--muted:#526979;--line:#cddbe2;--cyan:#087f73;--gold:#9b6300;--rose:#b92b45;--blue:#1661ad;color-scheme:light}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 90% 0,rgba(69,215,196,.12),transparent 30rem),var(--bg);color:var(--text);font:16px/1.67 ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}a{color:var(--cyan);text-underline-offset:3px}a:hover{text-decoration-thickness:2px}header{border-bottom:1px solid var(--line);background:linear-gradient(135deg,rgba(69,215,196,.09),rgba(104,169,255,.05));padding:54px 22px 34px}.hero{max-width:var(--max);margin:auto}.eyebrow{color:var(--cyan);text-transform:uppercase;letter-spacing:.15em;font-size:.76rem;font-weight:800}h1{font-size:clamp(2.2rem,6vw,4.7rem);line-height:.98;max-width:900px;margin:.35rem 0 1rem;letter-spacing:-.055em}header p{max-width:790px;color:var(--muted);font-size:1.09rem}.chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}.chip{border:1px solid var(--line);border-radius:999px;padding:6px 11px;background:var(--panel);font-size:.8rem}.topbets{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}.bet{border:1px solid var(--line);background:var(--panel);border-radius:14px;padding:15px}.bet b{display:block;color:var(--gold);font-size:1.15rem}.layout{max-width:var(--max);margin:auto;display:grid;grid-template-columns:250px minmax(0,1fr);gap:34px;padding:30px 22px 80px}nav{position:sticky;top:16px;align-self:start;max-height:calc(100vh - 32px);overflow:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:14px}nav strong{display:block;margin:2px 8px 10px;color:var(--gold)}nav ul{list-style:none;margin:0;padding:0}nav li{margin:0}nav a{display:block;color:var(--muted);text-decoration:none;padding:5px 8px;border-radius:7px;font-size:.83rem;line-height:1.25}nav a:hover{background:var(--panel2);color:var(--text)}main{min-width:0}main>h2{font-size:1.75rem;margin:2.6rem 0 1rem;padding-top:.7rem;border-top:1px solid var(--line)}main>h2:first-child{margin-top:0}h3{font-size:1.3rem;margin-top:2rem;color:var(--cyan)}h4{font-size:1.08rem;color:var(--gold);margin-bottom:.45rem}p,li{max-width:88ch}blockquote{margin:1rem 0;padding:1rem 1.2rem;border-left:4px solid var(--gold);background:var(--panel);color:var(--muted)}pre{white-space:pre-wrap;overflow:auto;background:#07101a;border:1px solid var(--line);border-radius:14px;padding:18px;color:#dcecf2;font-size:.86rem;line-height:1.45}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}table{width:100%;border-collapse:collapse;margin:1.25rem 0;background:var(--panel);font-size:.86rem}th,td{padding:10px 12px;border:1px solid var(--line);text-align:left;vertical-align:top}th{color:var(--gold);background:var(--panel2)}hr{border:0;border-top:1px solid var(--line)}main h4+ul,main h3+ul{border:1px solid var(--line);background:linear-gradient(135deg,var(--panel),var(--panel2));border-radius:14px;padding:15px 22px 15px 34px}main h4+ul li,main h3+ul li{margin:.5rem 0}.progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--cyan),var(--gold));width:0;z-index:9}.toolbar{position:fixed;right:18px;bottom:18px;display:flex;gap:8px}.toolbar button{border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:999px;padding:9px 12px;cursor:pointer;box-shadow:0 8px 30px rgba(0,0,0,.2)}.label{font-size:.75rem;color:var(--muted)}footer{border-top:1px solid var(--line);padding:24px;text-align:center;color:var(--muted)}
+@media(max-width:850px){.topbets{grid-template-columns:1fr}.layout{grid-template-columns:1fr}nav{position:relative;top:0;max-height:none}nav ul{columns:2}h1{font-size:2.65rem}}
+@media(max-width:520px){header{padding-top:34px}.layout{padding:20px 14px 60px}nav ul{columns:1}table{display:block;overflow-x:auto}h1{font-size:2.25rem}}
+@media print{body{background:white;color:#111;font-size:11pt}header{padding:18px 0}.layout{display:block;padding:0}nav,.toolbar,.progress{display:none}a{color:#145c70}main>h2{break-before:page}main>h2:first-child{break-before:auto}table,pre{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<header><div class="hero">
+<div class="eyebrow">AI Research Intelligence · Evidence before enthusiasm</div>
+<h1>Validate the state. Separate the critic. Diagnose the failure.</h1>
+<p>September 9, 2026 briefing. Three papers converge on a practical rule: information should become authority only after its validity, provenance, and evaluation independence are checked at the component boundary.</p>
+<div class="chips"><span class="chip">3 deep papers</span><span class="chip">2 Watchlist</span><span class="chip">36-hour research window</span><span class="chip">9 enterprise options</span><span class="chip">Primary sources + full-paper review</span></div>
+<div class="topbets"><div class="bet"><span class="label">TOP BET 1 · PROTOTYPE SOON</span><b>92.8 · Revocation-time validity gate</b><span>Prevent expired authority from entering model context.</span></div><div class="bet"><span class="label">TOP BET 2 · PROTOTYPE SOON</span><b>89.6 · Independent test-author / test-fix boundary</b><span>Freeze the contract and separate repair permissions.</span></div><div class="bet"><span class="label">TOP BET 3 · PROTOTYPE SOON</span><b>88.9 · Failure-stage diagnostic</b><span>Distinguish bypass, retrieval, and comprehension before fixing.</span></div></div>
+</div></header>
+<div class="layout"><nav><strong>Navigate</strong><ul>
+<li><a href="#scope-window-and-evidence-policy"
+id="toc-scope-window-and-evidence-policy">Scope, window, and evidence
+policy</a></li>
+<li><a href="#executive-signal" id="toc-executive-signal">Executive
+signal</a></li>
+<li><a href="#top-3-future-bets" id="toc-top-3-future-bets">Top 3 Future
+Bets</a></li>
+<li><a
+href="#deep-paper-1--revocation-is-a-retrieval-time-security-property"
+id="toc-deep-paper-1--revocation-is-a-retrieval-time-security-property">Deep
+paper 1 — Revocation is a retrieval-time security property</a>
+<ul>
+<li><a href="#contribution-and-quantitative-trace"
+id="toc-contribution-and-quantitative-trace">Contribution and
+quantitative trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison"
+id="toc-methodological-critique-and-prior-work-comparison">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#reproducibility-and-enterprise-readiness"
+id="toc-reproducibility-and-enterprise-readiness">Reproducibility and
+enterprise readiness</a></li>
+</ul></li>
+<li><a
+href="#deep-paper-2--tests-become-useful-only-when-they-remain-independent"
+id="toc-deep-paper-2--tests-become-useful-only-when-they-remain-independent">Deep
+paper 2 — Tests become useful only when they remain independent</a>
+<ul>
+<li><a href="#contribution-and-quantitative-trace-1"
+id="toc-contribution-and-quantitative-trace-1">Contribution and
+quantitative trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison-1"
+id="toc-methodological-critique-and-prior-work-comparison-1">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#reproducibility-and-enterprise-readiness-1"
+id="toc-reproducibility-and-enterprise-readiness-1">Reproducibility and
+enterprise readiness</a></li>
+</ul></li>
+<li><a
+href="#deep-paper-3--diagnose-search-failures-before-changing-the-model"
+id="toc-deep-paper-3--diagnose-search-failures-before-changing-the-model">Deep
+paper 3 — Diagnose search failures before changing the model</a>
+<ul>
+<li><a href="#contribution-and-quantitative-trace-2"
+id="toc-contribution-and-quantitative-trace-2">Contribution and
+quantitative trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison-2"
+id="toc-methodological-critique-and-prior-work-comparison-2">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#reproducibility-and-enterprise-readiness-2"
+id="toc-reproducibility-and-enterprise-readiness-2">Reproducibility and
+enterprise readiness</a></li>
+</ul></li>
+<li><a href="#watchlist" id="toc-watchlist">Watchlist</a>
+<ul>
+<li><a
+href="#reasoning-representations-may-change-human-error-detectionbut-the-study-is-narrow"
+id="toc-reasoning-representations-may-change-human-error-detectionbut-the-study-is-narrow">Reasoning
+representations may change human error detection—but the study is
+narrow</a></li>
+<li><a
+href="#audit-instruments-can-dominate-measured-demographic-effects"
+id="toc-audit-instruments-can-dominate-measured-demographic-effects">Audit
+instruments can dominate measured demographic effects</a></li>
+</ul></li>
+<li><a href="#cross-paper-synthesis"
+id="toc-cross-paper-synthesis">Cross-paper synthesis</a></li>
+<li><a href="#visual-1--where-evidence-becomes-authority"
+id="toc-visual-1--where-evidence-becomes-authority">Visual 1 — where
+evidence becomes authority</a></li>
+<li><a href="#visual-2--claim-strength-and-remaining-uncertainty"
+id="toc-visual-2--claim-strength-and-remaining-uncertainty">Visual 2 —
+claim strength and remaining uncertainty</a></li>
+<li><a href="#enterprise-ai-enhancement-backlog"
+id="toc-enterprise-ai-enhancement-backlog">Enterprise AI Enhancement
+Backlog</a>
+<ul>
+<li><a href="#priority-method-and-uncertainty"
+id="toc-priority-method-and-uncertainty">Priority method and
+uncertainty</a></li>
+<li><a href="#prototype-soon" id="toc-prototype-soon">Prototype
+Soon</a></li>
+<li><a href="#prepare-foundations" id="toc-prepare-foundations">Prepare
+Foundations</a></li>
+<li><a href="#monitor-for-maturity"
+id="toc-monitor-for-maturity">Monitor for Maturity</a></li>
+<li><a href="#deprioritize-for-now"
+id="toc-deprioritize-for-now">Deprioritize for Now</a></li>
+</ul></li>
+<li><a href="#enterprise-ai-architecture-implications"
+id="toc-enterprise-ai-architecture-implications">Enterprise AI
+Architecture Implications</a></li>
+<li><a href="#implementation-priorities"
+id="toc-implementation-priorities">Implementation priorities</a>
+<ul>
+<li><a href="#now--run-three-isolated-diagnostics"
+id="toc-now--run-three-isolated-diagnostics">Now — run three isolated
+diagnostics</a></li>
+<li><a href="#next--build-shared-foundations"
+id="toc-next--build-shared-foundations">Next — build shared
+foundations</a></li>
+<li><a href="#later--expand-only-after-triggers"
+id="toc-later--expand-only-after-triggers">Later — expand only after
+triggers</a></li>
+</ul></li>
+<li><a href="#knowledge-reinforcement"
+id="toc-knowledge-reinforcement">Knowledge reinforcement</a></li>
+<li><a href="#evidence-register-and-decision-boundaries"
+id="toc-evidence-register-and-decision-boundaries">Evidence register and
+decision boundaries</a>
+<ul>
+<li><a href="#sources" id="toc-sources">Sources</a></li>
+</ul></li>
+</ul></nav><main><h2 id="scope-window-and-evidence-policy">Scope,
+window, and evidence policy</h2>
+<p><strong>Research window.</strong> Monday, September 7, 2026 at 4:00
+PM CDT through Wednesday, September 9, 2026 at 4:00 AM CDT (36 hours;
+America/Chicago). Discovery covered the new arXiv cs.AI, cs.CL, cs.LG,
+cs.SE, cs.CR, cs.HC, and stat.ML feed plus targeted checks of current
+journal, conference, and research-lab releases. The arXiv screen
+returned 297 records before relevance, evidence, and duplication
+filtering. The original window was sufficient; no seven-day expansion
+was used.</p>
+<p><strong>Anti-duplication.</strong> Exact titles, arXiv identifiers,
+and core contributions were checked against the 30-report archive
+through September 8. None of the three deep papers or two Watchlist
+papers had appeared previously. The audit-instrument Watchlist paper
+overlaps thematically with recent measurement and fairness briefs, so it
+is retained as reinforcement rather than promoted as a new
+implementation signal.</p>
+<p><strong>Evidence policy.</strong> “Paper Fact” means directly
+reported by the paper or a verified first-party artifact. “Independent
+Analysis” is this briefing’s synthesis or calculation. “Enterprise
+Inference” translates a finding into a bounded future option.
+“Uncertainty” marks missing generalization, operational, economic, or
+causal evidence. Benchmark performance is not production readiness. All
+proposed experiments are isolated, reversible, and non-destructive.</p>
+<h2 id="executive-signal">Executive signal</h2>
+<blockquote>
+<p><strong>The important control point is where information becomes
+authority.</strong> A stale memory should not become actionable context;
+a generated test should not become a self-authored excuse for a code
+change; and a retrieved page should not be mistaken for grounded
+comprehension. The strongest new research therefore favors validity
+checks, independence, and failure-stage attribution at system
+boundaries—not more model autonomy by default.</p>
+</blockquote>
+<p>Three independent research programs converge on that signal. The
+memory study finds that five popular memory systems fail to enforce
+revocation consistently and that two systems return revoked records at
+rank 1 in every tested case; a store-level filter eliminates all 1,620
+unsafe actions in those two end-to-end evaluations. ExecCritic shows
+that a learned test agent can improve a repair agent, but also shows the
+danger of weak tests: tests from the untrained base model reduce repair
+performance. CIVI shows that civic search agents gain materially from
+search on average, yet 72.1% of observed errors remain retrieval-bound
+and high general benchmark rank only weakly predicts civic-search
+performance. (<a href="https://arxiv.org/abs/2609.08258">Revocation
+study</a>, <a href="https://arxiv.org/abs/2609.09133">ExecCritic</a>, <a
+href="https://arxiv.org/abs/2609.08094">CIVI</a>)</p>
+<p><strong>Decision posture.</strong> Prototype three control
+mechanisms: retrieval-time revocation enforcement, independent
+executable-test contracts, and stage-aware search diagnostics. Prepare
+the shared foundations—typed provenance, immutable evaluation artifacts,
+trace ledgers, policy versions, and authoritative-source routing—before
+broad agent learning or autonomous repair. Do not treat any selected
+benchmark as a deployment certificate.</p>
+<h2 id="top-3-future-bets">Top 3 Future Bets</h2>
+<ol type="1">
+<li><strong>Revocation-time validity gate — 92.8/100.</strong> Why it
+matters: deleting or superseding a memory is meaningless if retrieval
+can still grant it authority. Evidence that would change the
+recommendation: a multi-vendor replication showing that native systems
+already enforce revocation across indirect insertion, conflicting
+instructions, and privilege boundaries. Next reversible action: replay a
+synthetic revoked-record suite against a read-only copy of one retrieval
+path and compare native behavior with a deterministic pre-context
+filter.</li>
+<li><strong>Independent test-author / test-fix boundary —
+89.6/100.</strong> Why it matters: executable tests can add useful
+feedback, but only if repair cannot rewrite the contract and test
+quality is independently qualified. Evidence that would change the
+recommendation: no gain—or systematic false confidence—on representative
+internal repositories after controlling for extra compute and official
+evaluator leakage. Next reversible action: shadow 50 historical defects
+with separate test-writer and repair sandboxes; freeze qualified tests
+and prohibit repair writes to them.</li>
+<li><strong>ARISE-style failure-stage diagnostic — 88.9/100.</strong>
+Why it matters: search bypass, bad retrieval, and failure to use a
+correct source require different fixes. Evidence that would change the
+recommendation: low inter-rater or causal validity when the diagnostic
+is repeated on internal tasks and multiple retrieval providers. Next
+reversible action: label 100 failed search traces using source injection
+and trace evidence without changing production answers.</li>
+</ol>
+<h2
+id="deep-paper-1--revocation-is-a-retrieval-time-security-property">Deep
+paper 1 — Revocation is a retrieval-time security property</h2>
+<p><strong>Identity and status.</strong> <em>Revoked but Still
+Authoritative: An Empirical Study of Revocation Enforcement in
+Agent-Memory Systems</em>, Yi Ting Shen, Kentaroh Toyoda, and Alex
+Leung; submitted September 8, 2026; arXiv:2609.08258; cs.AI/cs.CR; paper
+licensed CC BY 4.0. The authors released an Apache-2.0 evaluation
+harness. (<a href="https://arxiv.org/abs/2609.08258">paper</a>, <a
+href="https://github.com/VulcanLab/Memory-Rebirth-Attack">artifact</a>)</p>
+<h3 id="contribution-and-quantitative-trace">Contribution and
+quantitative trace</h3>
+<p>The paper asks a deceptively simple question: after a policy,
+credential, consent, or instruction is revoked, will an agent-memory
+system still retrieve it and induce the model to act on it? It tests
+five memory systems across nine policy scenarios, nine language models,
+and six defense conditions. Retrieval uses top-<em>k</em>=10, with ten
+trials per scenario–model cell at temperature 0.7. The key distinction
+is between recording revocation and <strong>enforcing</strong> it before
+stale state reaches the model.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>What it establishes</th>
+<th>What it does not establish</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Native revocation enforcement</td>
+<td style="text-align: right;">No tested system enforces revocation in
+every case</td>
+<td>The failure mode spans multiple memory architectures</td>
+<td>Market-wide prevalence or a production incident rate</td>
+</tr>
+<tr class="even">
+<td>Retrieval persistence</td>
+<td style="text-align: right;">Graphiti and experimental mem0 return the
+revoked record in 81/81 scenario–model cells, always at rank 1</td>
+<td>Revoked state can dominate the retrieved context</td>
+<td>That every deployment configuration behaves identically</td>
+</tr>
+<tr class="odd">
+<td>Unsafe action</td>
+<td style="text-align: right;">Graphiti 358/810 (44.2%); experimental
+mem0 341/810 (42.1%); pooled 699/1,620 (43.1%)</td>
+<td>Retrieval exposure translates into substantial action risk in the
+authored scenarios</td>
+<td>A portable base rate across enterprises</td>
+</tr>
+<tr class="even">
+<td>Store-level filtering</td>
+<td style="text-align: right;">0/1,620 unsafe actions in the two
+exposed-status systems</td>
+<td>A deterministic boundary control can dominate prompt-only mitigation
+in this setup</td>
+<td>Effectiveness where the system does not expose valid status
+metadata</td>
+</tr>
+<tr class="odd">
+<td>Prompt hardening</td>
+<td style="text-align: right;">37.2% unsafe; output filtering 18.1%
+under an intentionally favorable setup</td>
+<td>Downstream text controls are weaker than preventing stale context
+from entering</td>
+<td>Real-world output filter performance under adversarial
+adaptation</td>
+</tr>
+<tr class="even">
+<td>Model variation</td>
+<td style="text-align: right;">15.0%–60.0% unsafe across nine models; no
+clean capability-tier relationship</td>
+<td>Stronger general models are not a substitute for state validity</td>
+<td>A complete causal explanation for model differences</td>
+</tr>
+<tr class="odd">
+<td>Explicit prohibition</td>
+<td style="text-align: right;">81.0% unsafe without a prohibition versus
+12.9% with one; 4.6% after excluding the reported outlier</td>
+<td>Explicit rules help, but do not eliminate the systems problem</td>
+<td>That prompt rules are a sufficient security boundary</td>
+</tr>
+</tbody>
+</table>
+<p>The pooled 43.1% figure above is an <strong>Independent
+Analysis</strong> calculation from the paper’s two 810-trial counts, not
+a paper-reported confidence interval. The experimental cells are
+repeated within common scenarios and prompts; treating all 1,620 trials
+as independent would overstate precision.</p>
+<p>Under indirect insertion, some systems fail before enforcement:
+Graphiti records revocation in 4/9 scenarios and Zep in 6/9. Other
+systems either fail to persist status, hide it from retrieval, or
+provide no enforceable validity field. The proposed guard performs
+exactly when explicit status is available. Under indirect insertion its
+results are mixed: it catches only 4/14 unsafe Zep cases in one reported
+slice and can withhold valid current records. That distinction
+matters—<strong>the strong 0/1,620 result is limited to the systems and
+conditions where revocation status is exposed correctly.</strong></p>
+<h3
+id="methodological-critique-and-prior-work-comparison">Methodological
+critique and prior-work comparison</h3>
+<p>Strengths include a crossed system–scenario–model design,
+action-level outcomes rather than retrieval-only proxies, defense
+comparisons, scenario-level tables, and a public harness. The study also
+separates memory write, retrieval, and downstream action failures, which
+makes the control point actionable.</p>
+<p>Material limitations remain. The nine scenarios are authored cases
+rather than a sampled population; pooled uncertainty is not reported;
+shared prompts and scenarios create within-cell correlation; provider
+models and hosted memory services can drift; and the guard is given the
+exact status field that the evaluated system exposes, so its best result
+is not an independent inference problem. Indirect insertion exposes
+false withholding and incomplete detection that the headline end-to-end
+result does not solve. No latency, availability, or organizational
+policy-authoring study demonstrates production readiness.</p>
+<p>Prior work on memory poisoning asks whether attackers can insert
+malicious state, while provenance systems track where state came from.
+Version-aware retrieval such as VersionRAG and memory stratification
+such as MemStrata address state evolution. This paper’s narrower advance
+is empirical: defender-authored stale state can remain retrievable and
+authoritative, and enforcement must occur before model context
+assembly.</p>
+<h3 id="reproducibility-and-enterprise-readiness">Reproducibility and
+enterprise readiness</h3>
+<p>The repository includes the evaluation harness, configurations,
+tests, and result-processing code under Apache-2.0; the paper is CC BY
+4.0. Exact replication still requires third-party API credentials,
+memory backends such as Neo4j, and mutable hosted models. The artifact
+is credible enough for a local replay, but not a turnkey production
+control. <strong>Enterprise readiness: medium for a deterministic status
+filter prototype; low-to-medium for general indirect-revocation
+enforcement. Research Utility Score: 93/100</strong> (rigor 23/25;
+quantitative traceability 24/25; reproducibility/artifacts 18/20;
+enterprise relevance 15/15; prior-work advance 13/15).</p>
+<h2
+id="deep-paper-2--tests-become-useful-only-when-they-remain-independent">Deep
+paper 2 — Tests become useful only when they remain independent</h2>
+<p><strong>Identity and status.</strong> <em>ExecCritic: Learn to Test,
+Test to Improve for Coding Agents</em>, Leitian Tao and colleagues;
+submitted September 8, 2026; arXiv:2609.09133; cs.AI/cs.CL/cs.SE; paper
+licensed CC BY 4.0. Microsoft Research’s Orchard repository is
+Apache-2.0. (<a href="https://arxiv.org/abs/2609.09133">paper</a>, <a
+href="https://github.com/MSR-Orchard/execcritic">artifact</a>)</p>
+<h3 id="contribution-and-quantitative-trace-1">Contribution and
+quantitative trace</h3>
+<p>ExecCritic separates a <strong>Test agent</strong> from a
+<strong>Repair agent</strong>. A fail-closed harness runs and qualifies
+the generated test, freezes it, grants the Repair agent write access
+only to source files, and preserves the benchmark’s official evaluator
+as the final authority. Both agents use Qwen-3.5-35B-A3B but are trained
+separately: the Test agent receives supervised training on 5,000
+DeepSeek-V4-Flash trajectories and 200 GRPO steps; the Repair agent
+receives 100 training steps. Training uses SWE-ReBench; evaluation uses
+SWE-bench Verified.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Evaluation</th>
+<th style="text-align: right;">Baseline</th>
+<th style="text-align: right;">Generated test</th>
+<th style="text-align: right;">Oracle test</th>
+<th>Interpretable delta</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Base Qwen Repair</td>
+<td style="text-align: right;">61.2%</td>
+<td style="text-align: right;">57.3% with base-Qwen tests</td>
+<td style="text-align: right;">69.4%</td>
+<td>Weak tests hurt by 3.9 points; a correct test offers 8.2 points of
+headroom</td>
+</tr>
+<tr class="even">
+<td>Trained Repair, round 0 vs learned Test agent</td>
+<td style="text-align: right;">68.3%</td>
+<td style="text-align: right;">72.6%</td>
+<td style="text-align: right;">77.6%</td>
+<td>Learned test adds 4.3 points over the same trained Repair starting
+point</td>
+</tr>
+<tr class="odd">
+<td>GPT-5.6, SWE-bench Verified</td>
+<td style="text-align: right;">81.5%</td>
+<td style="text-align: right;">85.7%</td>
+<td style="text-align: right;">89.7%</td>
+<td>Generated test closes roughly half the displayed oracle gap</td>
+</tr>
+<tr class="even">
+<td>GPT-5.6, SWE-bench Pro</td>
+<td style="text-align: right;">61.6%</td>
+<td style="text-align: right;">62.3%</td>
+<td style="text-align: right;">73.4%</td>
+<td>Small generated-test gain despite large oracle headroom</td>
+</tr>
+</tbody>
+</table>
+<p>The Test agent’s Base-to-Gold score rises from 22.2 for the base
+checkpoint to 39.6 after supervised fine-tuning and 62.2 after
+reinforcement learning. Reported comparators include Codex-5.3 at 61.0,
+DeepSeek at 73.4, and GPT-5.6 at 87.8. Cross-language transfer is uneven
+after Python-focused training: Python 62.2, Rust 66.7, C++ 58.3, C 26.1,
+and Java 2.4. That is a warning against treating the method as
+language-agnostic.</p>
+<p>The Pro result clarifies the bottleneck. Its median/mean
+failed-to-pass test counts are 3/14.43 versus 1/3.03 on Verified, so one
+fixed generated test covers less of a broader specification. The paper
+reports three repair runs with fixed test bundles. In a 120-trajectory
+analysis, repair takes a mean 13 turns, median 11, 75th percentile about
+17, and 90th percentile 34. The paper does not give end-to-end token,
+wall-clock, or dollar cost, so the incremental performance cannot yet be
+converted into enterprise economics.</p>
+<h3
+id="methodological-critique-and-prior-work-comparison-1">Methodological
+critique and prior-work comparison</h3>
+<p>The study’s strongest design choice is permission separation: test
+authoring, repair, and official verification are distinct. It also tests
+negative transfer—the untrained generated test makes repair worse—rather
+than reporting only a successful learned critic. Cross-language and
+harder-benchmark results expose real boundaries.</p>
+<p>Limitations include one fixed generated test per issue, possible
+semantic errors in the generated tests, gains confounded with extra
+inference and training compute, no interaction-level confidence
+intervals or significance tests in the headline comparisons, and a
+single model family for learned policies. Jointly trained Test and
+Repair agents could collude or overfit if independence is weakened. The
+repository contains code and launchers, but not the exact training
+trajectories, model checkpoints, benchmark environments, results, or
+credentials, limiting exact reproduction.</p>
+<p>Compared with fixed benchmark tests, ExecCritic creates
+issue-specific executable feedback. Compared with self-refinement
+approaches that let one agent inspect and rewrite everything, it treats
+tests as a separate contract. Compared with evolving-test methods, one
+frozen test reduces collusion but also under-covers multi-faceted tasks.
+The enterprise lesson is therefore the boundary design—not an assumption
+that this particular policy should be deployed.</p>
+<h3 id="reproducibility-and-enterprise-readiness-1">Reproducibility and
+enterprise readiness</h3>
+<p>The public Apache-2.0 repository is a useful scaffold and the paper
+provides detailed training recipes, but the release is young and
+externally unreplicated. Production use would require repository
+isolation, secret handling, deterministic sandboxes, test-flakiness
+controls, cost accounting, and an official human- or system-owned
+acceptance suite. <strong>Enterprise readiness: medium for shadow
+testing on historical defects; low-to-medium for autonomous repair.
+Research Utility Score: 91/100</strong> (rigor 22/25; quantitative
+traceability 23/25; reproducibility/artifacts 17/20; enterprise
+relevance 15/15; prior-work advance 14/15).</p>
+<h2
+id="deep-paper-3--diagnose-search-failures-before-changing-the-model">Deep
+paper 3 — Diagnose search failures before changing the model</h2>
+<p><strong>Identity and status.</strong> <em>CIVI: A Framework for
+Diagnosing Search Agent Failures in Civic Information</em>, Dingying
+Liu, Yunshun Zhong, Wentao Zhang, and Yiyuan Li; submitted September 8,
+2026; arXiv:2609.08094; cs.AI; paper licensed CC BY 4.0. The code is
+MIT-licensed and the dataset README declares CC BY 4.0. (<a
+href="https://arxiv.org/abs/2609.08094">paper</a>, <a
+href="https://github.com/dingyingliu/CIVI">code</a>, <a
+href="https://huggingface.co/datasets/dingyingliu/CIVI">dataset</a>)</p>
+<h3 id="contribution-and-quantitative-trace-2">Contribution and
+quantitative trace</h3>
+<p>CIVI contains 4,097 expert-verified multiple-choice questions derived
+from 576 public-sector pages across the United States, Canada, and
+Australia; federal, state/provincial, and local levels; and four UN
+COFOG functions. Two annotators review every question: raw agreement is
+96.8%, and 94.1% of generated items are accepted. Ten frontier search
+agents receive at most three search rounds and ten URLs through a common
+Exa retrieval substrate.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Finding</th>
+<th style="text-align: right;">Reported result</th>
+<th>Decision meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Human reference</td>
+<td style="text-align: right;">Five people × 150 stratified questions;
+92.67% mean, SD 3.1 points</td>
+<td>Useful ceiling estimate, but too small for a universal human
+benchmark</td>
+</tr>
+<tr class="even">
+<td>Best agent</td>
+<td style="text-align: right;">Gemini 3.1 Pro 78.28% ±1.3; 14.4 points
+below overall human result, 15.3 on matched subset</td>
+<td>A material gap remains in source-grounded civic tasks</td>
+</tr>
+<tr class="odd">
+<td>Jurisdiction effect</td>
+<td style="text-align: right;">Mean accuracy 65.6% federal, 62.6% state,
+56.7% local</td>
+<td>Local information is systematically harder in this corpus</td>
+</tr>
+<tr class="even">
+<td>Search value</td>
+<td style="text-align: right;">Agentic search averages +10.0 points over
+disabled and +9.1 over one-shot RAG</td>
+<td>Iterative retrieval helps on average</td>
+</tr>
+<tr class="odd">
+<td>Search inconsistency</td>
+<td style="text-align: right;">Invocation ranges 13.5%–99.8% across
+models</td>
+<td>“Has tools” does not mean “uses tools when needed”</td>
+</tr>
+<tr class="even">
+<td>Failure attribution</td>
+<td style="text-align: right;">34.5% search bypass + 37.6% retrieval
+failure = 72.1% retrieval-bound</td>
+<td>Most observed errors call for routing/retrieval controls before
+model replacement</td>
+</tr>
+<tr class="odd">
+<td>Benchmark transfer</td>
+<td style="text-align: right;">Spearman ρ=.27, p=.45, N=10; Kendall
+τ=.24, p=.38</td>
+<td>General leaderboard position is not a reliable selection rule
+here</td>
+</tr>
+</tbody>
+</table>
+<p>The model-level table is non-monotonic. GPT-5.4 rises from 60.4% with
+search disabled and 61.9% with one-shot RAG to 72.88% agentic. Gemini 3
+Flash falls from 66.5% disabled to 62.44% agentic, despite 54.2%
+one-shot RAG. Mistral improves from 32.0% disabled to 55.33% agentic,
+while its RAG score is 50.6%. These differences argue for
+policy-and-model evaluation as a unit rather than a model-only
+procurement score.</p>
+<p>ARISE combines trace evidence with authoritative-source injection to
+assign every error to search bypass, retrieval failure, or
+comprehension. Only 2.3%–4.8% of each model’s failures persist after the
+gold page is injected, even though the median page is roughly 1,000
+words. Source injection is a diagnostic intervention: it indicates what
+would have happened with the selected authoritative page in context, not
+what a production retriever will reliably find.</p>
+<h3
+id="methodological-critique-and-prior-work-comparison-2">Methodological
+critique and prior-work comparison</h3>
+<p>Strengths include cross-national and jurisdictional coverage, a
+common search-provider substrate, explicit baselines, source-level
+validation, model-level tables, human reference performance, and a
+taxonomy grounded in traces rather than answer correctness alone.</p>
+<p>The benchmark is English-only and covers three democracies; legal,
+language, and source ecosystems elsewhere may differ. A single Exa
+substrate improves comparability but limits ecological validity. The
+human baseline is only five people and 150 questions each. Public web
+pages and hosted models drift, and the source-text SQLite corpora used
+for exact runs are not distributed, though the code can rebuild them.
+Source injection can localize failure but does not prove that a proposed
+routing fix will cause a production improvement. Model rankings should
+be treated as dated observations, not durable vendor claims.</p>
+<p>Earlier public-sector QA datasets are typically single-country,
+single-jurisdiction, or answer-only. CIVI’s useful advance is to combine
+cross-national hierarchy with an explicit failure-stage diagnostic. For
+enterprise knowledge systems, the analogous move is to separate
+query-policy failure, authoritative-source discovery, content
+extraction, and comprehension rather than collapsing all errors into
+“RAG quality.”</p>
+<h3 id="reproducibility-and-enterprise-readiness-2">Reproducibility and
+enterprise readiness</h3>
+<p>The code and dataset licenses are explicit and the repository
+includes evaluation, prompts, and configuration. Exact numerical
+reproduction depends on mutable pages, models, and APIs; not all source
+snapshots are distributed. The framework is ready to adapt as an offline
+diagnostic but not validated as an online causal repair system.
+<strong>Enterprise readiness: medium for a trace-labeling benchmark;
+low-to-medium for automated routing changes. Research Utility Score:
+90/100</strong> (rigor 22/25; quantitative traceability 24/25;
+reproducibility/artifacts 16/20; enterprise relevance 14/15; prior-work
+advance 14/15).</p>
+<h2 id="watchlist">Watchlist</h2>
+<h3
+id="reasoning-representations-may-change-human-error-detectionbut-the-study-is-narrow">Reasoning
+representations may change human error detection—but the study is
+narrow</h3>
+<p><em>Do Reasoning Representations Help Humans Evaluate LLM
+Outputs?</em> studies six explanation formats across three benchmarks
+using GPT-5 traces. Of 140 candidate problems, 27 all-correct items are
+retained; researchers inject 42 error traces. Sixty-four people start
+and 51 finish; the analytic sample is 50. Zero-shot chain-of-thought has
+the lowest false-alarm rate (7.7%) and highest error localization
+(95.5%), while the most preferred format, Plan-and-Solve (26%
+preference), has 19.2% false alarms and 57.1% localization. Structural
+agreement is low: Krippendorff’s alpha is .11–.37 for key-step selection
+and .05–.48 for support judgments. (<a
+href="https://arxiv.org/abs/2609.09038">paper</a>)</p>
+<p><strong>Why Watchlist.</strong> The result usefully separates
+preference from diagnostic utility, but the study uses one model, a
+convenience sample from one institution, synthetically injected errors,
+an all-correct filter that retains only 19.3% of candidates, and prompt
+conditions that change both reasoning content and presentation. The main
+tables do not establish generalizable inferential differences, and no
+public study artifact was verified. Monitor for preregistered,
+multi-model, task-realistic replications. <strong>Research Utility
+Score: 74/100</strong> (rigor 18; traceability 20; artifacts 8;
+enterprise relevance 14; advance 14).</p>
+<h3
+id="audit-instruments-can-dominate-measured-demographic-effects">Audit
+instruments can dominate measured demographic effects</h3>
+<p><em>The Audit Decides the Verdict: Instrument Effects Rival
+Demographic Bias in LLM Decision Audits</em> reports 40,726 model
+requests across five models, three decision domains, 40 name pairs, and
+rating, decide, and rank instruments. None of 36 preregistered primary
+contrasts survives Benjamini–Hochberg correction; none of 12
+interactions is nonzero. A 12,000-slot precision extension estimates the
+hiring-ranking effect at +.008 with a 95% interval of [−.044, .060] and
+supports an equivalence bound below .052 against a .067 margin
+(<em>p</em>=.013). First-position effects are comparable to or larger
+than observed demographic effects. The authors also disclose and repair
+an accidental composition confound in a wording arm. (<a
+href="https://arxiv.org/abs/2609.09048">paper</a>, <a
+href="https://siddvoh.com/biasinaudits">project</a>)</p>
+<p><strong>Why Watchlist.</strong> The statistical design is stronger
+than typical audit papers, but the finding overlaps the archive’s recent
+evaluation-instrument and procedural-fairness themes. Names are the only
+demographic signal; profiles are synthetic; served models differ; and
+equivalence is established only for one bounded hiring-ranking
+comparison—not as a fairness certificate for lending, triage, or
+production decisions. Treat it as knowledge reinforcement and an
+argument for versioned audit instruments, not a production conclusion.
+<strong>Research Utility Score: 86/100</strong> (rigor 24; traceability
+24; artifacts 15; enterprise relevance 12; advance 11).</p>
+<h2 id="cross-paper-synthesis">Cross-paper synthesis</h2>
+<p>The papers address different systems—memory, code repair, and civic
+search—but their failure structures align:</p>
+<ol type="1">
+<li><strong>State can be present but invalid.</strong> The memory system
+retrieves a record whose authority has expired.</li>
+<li><strong>Feedback can be executable but wrong.</strong> A weak
+generated test actively reduces repair quality.</li>
+<li><strong>Evidence can be accessible but unused.</strong>
+Search-capable agents bypass search or retrieve the wrong source.</li>
+<li><strong>A downstream score hides the failure stage.</strong>
+Endpoint accuracy alone cannot tell whether the fix belongs in storage,
+routing, retrieval, comprehension, testing, or model choice.</li>
+<li><strong>The most reusable controls are architectural.</strong>
+Status metadata, immutable artifacts, permission separation, trace
+ledgers, authoritative-source registries, and independent evaluation can
+span models and vendors.</li>
+</ol>
+<p><strong>Independent Analysis.</strong> These results support a
+“boundary contract” model for enterprise AI. Every artifact crossing a
+component boundary should carry identity, provenance, validity interval,
+policy version, authority, and evaluation status. The receiving
+component should fail closed when a required field is missing or
+invalid. That will not solve semantic judgment, but it narrows the set
+of failures delegated to probabilistic models.</p>
+<h2 id="visual-1--where-evidence-becomes-authority">Visual 1 — where
+evidence becomes authority</h2>
+<pre class="text"><code>MEMORY / POLICY                    SOFTWARE REPAIR                    SEARCH / KNOWLEDGE
+
+record + provenance               issue + repository                question + jurisdiction
+        │                                  │                                  │
+        ▼                                  ▼                                  ▼
+validity / revocation gate        isolated Test agent              search-policy router
+        │                                  │                                  │
+        ├── invalid → quarantine           ▼                                  ├── bypass → trace
+        ▼                           qualified frozen test                     ▼
+typed context                              │                         authoritative retrieval
+        │                                  ▼                                  │
+        ▼                           source-only Repair agent                  ├── miss → retrieve
+action authorization                      │                                  ▼
+        │                                  ▼                         grounded comprehension
+        ▼                           official independent eval                 │
+audited side effect                        │                                  ├── fail → escalate
+                                           ▼                                  ▼
+                                    promote or reject                 answer + citations
+
+Shared substrate: identity • provenance • policy versions • immutable traces
+                  evaluation registry • human-review gates • cost telemetry</code></pre>
+<h2 id="visual-2--claim-strength-and-remaining-uncertainty">Visual 2 —
+claim strength and remaining uncertainty</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Research signal</th>
+<th>Direct evidence strength</th>
+<th>Safe reversible test</th>
+<th>Main uncertainty</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Filter revoked state before context assembly</td>
+<td>High within two exposed-status systems</td>
+<td>Replay-only retrieval filter</td>
+<td>Indirect revocation and missing metadata</td>
+</tr>
+<tr class="even">
+<td>Separate test authoring from repair</td>
+<td>Moderate-high on two SWE benchmarks</td>
+<td>Historical-defect shadow run</td>
+<td>Cost, language transfer, test semantic validity</td>
+</tr>
+<tr class="odd">
+<td>Attribute search failures by stage</td>
+<td>High as offline diagnosis</td>
+<td>Trace relabeling with injected sources</td>
+<td>Causal production lift and provider transfer</td>
+</tr>
+<tr class="even">
+<td>Pick human reasoning display by error-detection behavior</td>
+<td>Moderate-low</td>
+<td>Within-subject UI study</td>
+<td>Small convenience sample, synthetic errors</td>
+</tr>
+<tr class="odd">
+<td>Version the audit instrument</td>
+<td>Moderate-high methodological evidence</td>
+<td>Re-score a fixed corpus under several instruments</td>
+<td>External validity of synthetic profiles</td>
+</tr>
+</tbody>
+</table>
+<h2 id="enterprise-ai-enhancement-backlog">Enterprise AI Enhancement
+Backlog</h2>
+<h3 id="priority-method-and-uncertainty">Priority method and
+uncertainty</h3>
+<p>The <strong>Future Enterprise AI Priority Score</strong> is a
+decision aid, not a measured probability: strategic/business value 25%,
+technical leverage 20%, evidence strength 20%, enterprise readiness 15%,
+feasibility 10%, and risk-adjusted differentiation 10%. Component values
+are analyst judgments tied to the reviewed evidence. Differences under
+roughly three points should not be treated as a stable rank without
+internal cost, risk, data, workflow, and architecture context.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: right;">#</th>
+<th>Enhancement</th>
+<th>Band</th>
+<th style="text-align: right;">Strategic</th>
+<th style="text-align: right;">Leverage</th>
+<th style="text-align: right;">Evidence</th>
+<th style="text-align: right;">Readiness</th>
+<th style="text-align: right;">Feasibility</th>
+<th style="text-align: right;">Differentiation</th>
+<th style="text-align: right;">Weighted total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td>Revocation-time validity gate</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">96</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;"><strong>92.8</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td>Independent test-author / test-fix boundary</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">83</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;"><strong>89.6</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td>ARISE-style failure-stage diagnostic</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;"><strong>88.9</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td>Typed memory lifecycle metadata</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">76</td>
+<td style="text-align: right;">72</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;"><strong>87.2</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td>Authoritative-source routing policy</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;"><strong>86.3</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td>Executable behavior-contract registry</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">87</td>
+<td style="text-align: right;"><strong>84.9</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td>Audit-instrument versioning and planted controls</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;"><strong>82.0</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td>Human reasoning-display calibration harness</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">66</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">74</td>
+<td style="text-align: right;"><strong>73.7</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9</td>
+<td>Self-certifying autonomous repair loop</td>
+<td>Deprioritize for Now</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">74</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;"><strong>64.2</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="prototype-soon">Prototype Soon</h3>
+<h4 id="1-revocation-time-validity-gate--928100">1. Revocation-time
+validity gate — 92.8/100</h4>
+<ul>
+<li><strong>Category:</strong> Memory &amp; Context / Safety &amp;
+Governance / AI Security.</li>
+<li><strong>Research signal and support:</strong> <strong>Paper
+Fact</strong> — Graphiti and experimental mem0 returned revoked records
+in all 81/81 cells, and a store-level filter reduced unsafe actions from
+699/1,620 pooled to 0/1,620 where explicit status was exposed. Supports:
+Revocation study.</li>
+<li><strong>Problem or opportunity:</strong> Deleted, expired,
+superseded, or consent-withdrawn state may remain technically
+retrievable and become authoritative model context.</li>
+<li><strong>Proposed capability:</strong> <strong>Enterprise
+Inference</strong> — a deterministic pre-context gate evaluates record
+identity, status, policy version, validity interval, subject consent,
+and requester authorization. It excludes invalid records, logs the
+decision, and sends ambiguous cases to quarantine rather than to the
+model.</li>
+<li><strong>Placement:</strong> retrieval/knowledge, agent layer,
+security/governance, observability.</li>
+<li><strong>Business value:</strong> risk reduction, reliability,
+quality, customer trust. <strong>Technical value:</strong> makes
+revocation enforceable at the last deterministic boundary before
+probabilistic reasoning.</li>
+<li><strong>Maturity/readiness:</strong> Strong authored benchmark plus
+public harness; directly prototypable when metadata exists.
+Indirect-insertion results are incomplete. <strong>Confidence:</strong>
+High for exposed-status filtering; Moderate for general revocation.
+<strong>Horizon:</strong> Now. <strong>Effort:</strong> M.</li>
+<li><strong>Dependencies:</strong> canonical record IDs; lifecycle
+schema; policy-version ledger; identity and authorization; audit events;
+quarantine and human override.</li>
+<li><strong>Risks:</strong> missing or forged status, false withholding,
+split-brain stores, race conditions, privacy leakage in logs,
+emergency-access conflicts, operational bypass, user confusion after
+legitimate recall.</li>
+<li><strong>Build / Buy / Partner:</strong> Build the policy gate and
+logs because they encode enterprise authority; buy or partner for
+storage adapters and policy engines only after conformance tests.</li>
+<li><strong>Minimum reversible experiment:</strong> Read-only replay of
+synthetic active/revoked/conflicting records against one copied index;
+compare native retrieval, prompt hardening, and pre-context filtering
+without executing tools.</li>
+<li><strong>Success metrics / stop conditions:</strong> zero revoked
+records delivered in the test corpus; ≥99.5% valid-record recall;
+complete decision provenance; bounded p95 overhead. Stop if valid recall
+drops below the predeclared threshold, metadata coverage is
+insufficient, or bypass routes remain unobservable.</li>
+<li><strong>Roadmap trigger:</strong> two heterogeneous stores pass
+indirect-insertion, concurrency, and privilege-boundary tests; security
+and privacy owners approve the lifecycle schema; internal incident and
+latency budgets are defined.</li>
+</ul>
+<h4 id="2-independent-test-author--test-fix-boundary--896100">2.
+Independent test-author / test-fix boundary — 89.6/100</h4>
+<ul>
+<li><strong>Category:</strong> AI Software Engineering / Agentic AI /
+Evaluation &amp; Observability.</li>
+<li><strong>Research signal and support:</strong> <strong>Paper
+Fact</strong> — learned tests raise a trained Repair agent from 68.3% to
+72.6% on SWE-bench Verified, while untrained base-model tests lower
+repair from 61.2% to 57.3%. Supports: ExecCritic.</li>
+<li><strong>Problem or opportunity:</strong> Coding agents can optimize
+to weak or self-modified tests, creating apparent success without
+satisfying the real requirement.</li>
+<li><strong>Proposed capability:</strong> <strong>Enterprise
+Inference</strong> — run test authoring in an isolated role, qualify the
+test in a fail-closed sandbox, freeze its hash, deny the repair process
+write access to tests, and require an independently owned acceptance
+suite before promotion.</li>
+<li><strong>Placement:</strong> developer platform, orchestration,
+evaluation, security/governance.</li>
+<li><strong>Business value:</strong> productivity, quality, speed,
+reliability, risk reduction. <strong>Technical value:</strong> converts
+ambiguous natural-language issues into executable evidence while
+reducing evaluator–actor collusion.</li>
+<li><strong>Maturity/readiness:</strong> Strong benchmark signal and
+code scaffold; limited language transfer and missing cost evidence.
+<strong>Confidence:</strong> Moderate. <strong>Horizon:</strong> Now.
+<strong>Effort:</strong> L.</li>
+<li><strong>Dependencies:</strong> hermetic build/test sandbox;
+repository ACLs; flaky-test detector; secret isolation; official
+evaluation suite; patch provenance; compute and token telemetry.</li>
+<li><strong>Risks:</strong> generated tests encode the wrong
+requirement, repository poisoning, test leakage, nondeterminism, high
+cost, long repair loops, language underperformance, false confidence
+from a single passing test.</li>
+<li><strong>Build / Buy / Partner:</strong> Build the permission
+boundary and evidence registry; buy commodity sandboxes; partner only
+for language-specific test generation where internal expertise is
+absent.</li>
+<li><strong>Minimum reversible experiment:</strong> Re-run 50 resolved
+internal defects with a test-only agent and a source-only repair agent.
+Freeze qualified tests, keep outputs off production branches, and
+compare against the same repair budget without generated tests.</li>
+<li><strong>Success metrics / stop conditions:</strong> official-suite
+resolution lift; precision of generated tests against human
+requirements; flaky-test rate; changed-file policy violations; cost per
+valid fix; reviewer time. Stop if official-suite regressions rise,
+semantic-test precision is below 90%, or cost-adjusted lift is
+non-positive.</li>
+<li><strong>Roadmap trigger:</strong> statistically credible lift on at
+least two internal languages and repository types, no security boundary
+violations, and positive reviewer-time economics under a fixed compute
+budget.</li>
+</ul>
+<h4 id="3-arise-style-failure-stage-diagnostic--889100">3. ARISE-style
+failure-stage diagnostic — 88.9/100</h4>
+<ul>
+<li><strong>Category:</strong> RAG &amp; Knowledge / Evaluation &amp;
+Observability.</li>
+<li><strong>Research signal and support:</strong> <strong>Paper
+Fact</strong> — CIVI attributes 34.5% of errors to search bypass and
+37.6% to retrieval failure; only 2.3%–4.8% of each model’s failures
+remain after authoritative-source injection. Supports: CIVI.</li>
+<li><strong>Problem or opportunity:</strong> Endpoint accuracy cannot
+tell teams whether to change routing, retrieval, source policy, context
+construction, comprehension, or the model.</li>
+<li><strong>Proposed capability:</strong> <strong>Enterprise
+Inference</strong> — a diagnostic replay service injects a verified gold
+source into failed traces, compares behavior, and assigns failure stage
+with evidence links. It informs remediation but never alters production
+answers automatically.</li>
+<li><strong>Placement:</strong> evaluation, observability,
+retrieval/knowledge, human-review layer.</li>
+<li><strong>Business value:</strong> speed, cost, quality, reliability.
+<strong>Technical value:</strong> reduces blind model swapping and makes
+retrieval investments falsifiable.</li>
+<li><strong>Maturity/readiness:</strong> Detailed benchmark and public
+code/dataset; source injection is diagnostic rather than causal
+deployment evidence. <strong>Confidence:</strong> High for offline
+triage, Moderate for remediation choice. <strong>Horizon:</strong> Now.
+<strong>Effort:</strong> M.</li>
+<li><strong>Dependencies:</strong> representative failure corpus;
+source-of-truth owners; trace capture; authoritative-source labels;
+privacy-safe replay; adjudication rubric.</li>
+<li><strong>Risks:</strong> gold-source leakage, hindsight bias,
+ambiguous multi-source answers, evaluator disagreement, sensitive trace
+retention, false causal attribution, web drift.</li>
+<li><strong>Build / Buy / Partner:</strong> Build the domain taxonomy
+and gold-source registry; buy trace infrastructure if it preserves
+exportable event identity.</li>
+<li><strong>Minimum reversible experiment:</strong> Label 100 historical
+failed queries with original traces and injected approved sources;
+double-review 20% and make no runtime policy changes.</li>
+<li><strong>Success metrics / stop conditions:</strong> ≥0.8 adjudicator
+agreement; ≥90% failures assigned with evidence; remediation
+recommendations predict held-out replay gains. Stop if categories are
+unstable or source injection changes the task definition.</li>
+<li><strong>Roadmap trigger:</strong> failure labels remain stable
+across two retrievers and two model families and lead to a predeclared
+improvement in a held-out replay set.</li>
+</ul>
+<h3 id="prepare-foundations">Prepare Foundations</h3>
+<h4 id="4-typed-memory-lifecycle-metadata--872100">4. Typed memory
+lifecycle metadata — 87.2/100</h4>
+<ul>
+<li><strong>Category:</strong> Memory &amp; Context / Data &amp;
+Knowledge Infrastructure.</li>
+<li><strong>Research signal and support:</strong> <strong>Paper
+Fact</strong> — the revocation guard is exact where a system exposes
+trustworthy active/revoked status and incomplete where status is not
+recorded or surfaced. Supports: Revocation study.</li>
+<li><strong>Problem or opportunity:</strong> Memory stores often
+preserve content and embeddings while omitting enforceable lifecycle,
+authority, and supersession semantics.</li>
+<li><strong>Proposed capability:</strong> <strong>Enterprise
+Inference</strong> — a shared schema for record ID, lineage, author,
+authority, validity interval, supersedes/superseded-by, consent,
+classification, policy version, and deletion receipt; indexes inherit
+rather than recreate these facts.</li>
+<li><strong>Placement:</strong> data platform, retrieval/knowledge,
+security/governance.</li>
+<li><strong>Business value:</strong> reliability, risk reduction,
+quality. <strong>Technical value:</strong> enables revocation gates,
+rebuilds, provenance audits, and model-independent migration.</li>
+<li><strong>Maturity/readiness:</strong> The need is strongly supported;
+no cross-vendor schema standard is established.
+<strong>Confidence:</strong> High on need, Moderate on design.
+<strong>Horizon:</strong> 3–6 months. <strong>Effort:</strong> L.</li>
+<li><strong>Dependencies:</strong> data governance ownership; system
+inventory; canonical identity; retention and consent policy; schema
+registry; adapter strategy.</li>
+<li><strong>Risks:</strong> metadata drift, conflicting authorities,
+legacy gaps, high migration cost, privacy exposure, performance
+overhead, false finality in distributed deletion.</li>
+<li><strong>Build / Buy / Partner:</strong> Build the canonical schema
+and conformance suite; partner with vendors on adapters.</li>
+<li><strong>Minimum reversible experiment:</strong> Map 1,000 synthetic
+or non-sensitive records from two stores into the schema and test
+active, expired, superseded, and revoked resolution without migrating
+production data.</li>
+<li><strong>Success metrics / stop conditions:</strong> ≥99%
+deterministic lifecycle resolution; full lineage for all test records;
+no unauthorized metadata exposure. Stop if core stores cannot surface
+stable IDs or deletion receipts.</li>
+<li><strong>Roadmap trigger:</strong> two materially different stores
+pass conformance and governance approves the authority-resolution
+rules.</li>
+</ul>
+<h4 id="5-authoritative-source-routing-policy--863100">5.
+Authoritative-source routing policy — 86.3/100</h4>
+<ul>
+<li><strong>Category:</strong> RAG &amp; Knowledge / Data &amp;
+Knowledge Infrastructure.</li>
+<li><strong>Research signal and support:</strong> <strong>Paper
+Fact</strong> — CIVI reports average agentic-search gains but
+13.5%–99.8% search invocation and large local-jurisdiction degradation.
+Supports: CIVI.</li>
+<li><strong>Problem or opportunity:</strong> General web retrieval
+treats official, current, local, and jurisdiction-appropriate sources as
+ranking hints rather than explicit policy constraints.</li>
+<li><strong>Proposed capability:</strong> <strong>Enterprise
+Inference</strong> — route queries using domain, jurisdiction,
+freshness, and authority requirements; maintain approved source
+registries and require provenance-aware fallback when authoritative
+coverage is absent.</li>
+<li><strong>Placement:</strong> orchestration, retrieval/knowledge,
+model gateway, security/governance.</li>
+<li><strong>Business value:</strong> quality, customer experience, risk
+reduction, speed. <strong>Technical value:</strong> turns source
+authority into a testable retrieval objective.</li>
+<li><strong>Maturity/readiness:</strong> Search benefits and failure
+heterogeneity are well demonstrated in one civic benchmark; transfer is
+unproven. <strong>Confidence:</strong> Moderate.
+<strong>Horizon:</strong> 3–6 months. <strong>Effort:</strong> M.</li>
+<li><strong>Dependencies:</strong> domain taxonomy; source owners;
+freshness SLAs; jurisdiction metadata; crawl/index permissions; citation
+and provenance support.</li>
+<li><strong>Risks:</strong> source capture, stale official pages,
+missing local sources, accessibility failures, regional legal
+differences, latency, policy overconstraint.</li>
+<li><strong>Build / Buy / Partner:</strong> Build authority rules and
+registries; buy underlying search; partner with domain source owners for
+access and freshness.</li>
+<li><strong>Minimum reversible experiment:</strong> Replay 200 internal
+knowledge questions using current retrieval and an authority-constrained
+route, judged blind by domain owners.</li>
+<li><strong>Success metrics / stop conditions:</strong>
+authoritative-hit rate, supported-answer accuracy, abstention quality,
+freshness, latency and cost. Stop if authority constraints reduce answer
+accuracy or coverage without a compensating risk benefit.</li>
+<li><strong>Roadmap trigger:</strong> held-out improvement survives two
+retrieval providers and domain owners accept the abstention/fallback
+policy.</li>
+</ul>
+<h4 id="6-executable-behavior-contract-registry--849100">6. Executable
+behavior-contract registry — 84.9/100</h4>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability / AI
+Software Engineering / Safety &amp; Governance.</li>
+<li><strong>Research signal and support:</strong> <strong>Independent
+Analysis</strong> — frozen generated tests in ExecCritic and retrieval
+validity rules in the revocation study are both executable contracts
+whose identity and immutability determine trust.</li>
+<li><strong>Problem or opportunity:</strong> Prompts, policies, tests,
+and evaluators change independently, making it difficult to know which
+contract authorized a result.</li>
+<li><strong>Proposed capability:</strong> Version, hash, sign, and bind
+tests, policy rules, prompts, schemas, evaluators, and acceptance
+thresholds to each trace. Promotion requires an independent contract
+owner.</li>
+<li><strong>Placement:</strong> developer platform, evaluation,
+security/governance, observability.</li>
+<li><strong>Business value:</strong> reliability, quality, speed, risk
+reduction. <strong>Technical value:</strong> supports deterministic
+replay and prevents silent evaluator drift.</li>
+<li><strong>Maturity/readiness:</strong> Built from convergent evidence
+but not evaluated as one platform. <strong>Confidence:</strong>
+Moderate. <strong>Horizon:</strong> 3–6 months. <strong>Effort:</strong>
+L.</li>
+<li><strong>Dependencies:</strong> artifact registry; identity and
+signing; change management; lineage graph; evaluator ownership; replay
+infrastructure.</li>
+<li><strong>Risks:</strong> registry becomes procedural overhead,
+signatures without semantic review, stale contracts, owner bottlenecks,
+sensitive test exposure.</li>
+<li><strong>Build / Buy / Partner:</strong> Build the contract model and
+ownership rules; buy artifact storage/signing where
+standards-based.</li>
+<li><strong>Minimum reversible experiment:</strong> Register and replay
+one model evaluation, one retrieval policy, and one code test suite with
+immutable hashes and documented owners.</li>
+<li><strong>Success metrics / stop conditions:</strong> 100%
+trace-to-contract resolution; reproducible replay within tolerances;
+change-review latency. Stop if the system cannot distinguish semantic
+from cosmetic changes or imposes disproportionate delivery delay.</li>
+<li><strong>Roadmap trigger:</strong> three teams independently
+reproduce historical decisions and audit owners accept the promotion
+workflow.</li>
+</ul>
+<h4 id="7-audit-instrument-versioning-and-planted-controls--820100">7.
+Audit-instrument versioning and planted controls — 82.0/100</h4>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability / Safety
+&amp; Governance.</li>
+<li><strong>Research signal and support:</strong> <strong>Paper
+Fact</strong> — the Watchlist audit finds no corrected primary
+demographic effects in its tested conditions while instrument order
+effects are comparable or larger; it uses planted controls and
+equivalence bounds. Supports: Audit Decides the Verdict.</li>
+<li><strong>Problem or opportunity:</strong> Changes in prompt form,
+response scale, item order, or decision framing can be misread as model
+or demographic effects.</li>
+<li><strong>Proposed capability:</strong> <strong>Enterprise
+Inference</strong> — version every audit instrument; randomize order;
+include positive, negative, and position controls; prespecify correction
+and equivalence margins; retain raw outputs for re-analysis.</li>
+<li><strong>Placement:</strong> evaluation, observability, human-review
+layer, security/governance.</li>
+<li><strong>Business value:</strong> quality, risk reduction,
+reliability. <strong>Technical value:</strong> makes
+evaluation-instrument variance measurable rather than hidden.</li>
+<li><strong>Maturity/readiness:</strong> Statistically strong single
+study with synthetic profiles and bounded claims.
+<strong>Confidence:</strong> Moderate. <strong>Horizon:</strong> 3–6
+months. <strong>Effort:</strong> M.</li>
+<li><strong>Dependencies:</strong> audit governance; statistical review;
+instrument registry; randomization; privacy review; immutable raw-output
+store.</li>
+<li><strong>Risks:</strong> planted controls leak, multiple-testing
+misuse, equivalence margins chosen post hoc, synthetic audits
+overgeneralized, sensitive attribute handling.</li>
+<li><strong>Build / Buy / Partner:</strong> Build governance and
+prespecification; partner with domain and fairness experts for design
+review.</li>
+<li><strong>Minimum reversible experiment:</strong> Re-run a fixed
+internal audit corpus under rating, decision, and rank formats with
+randomized position and preregistered analysis.</li>
+<li><strong>Success metrics / stop conditions:</strong> instrument
+variance, control recovery, confidence-interval width, reproducibility.
+Stop if results are too underpowered for the stated decision or raw data
+cannot be governed safely.</li>
+<li><strong>Roadmap trigger:</strong> instrument effects are material or
+a stable effect survives correction, replication, and domain
+review.</li>
+</ul>
+<h3 id="monitor-for-maturity">Monitor for Maturity</h3>
+<h4 id="8-human-reasoning-display-calibration-harness--737100">8. Human
+reasoning-display calibration harness — 73.7/100</h4>
+<ul>
+<li><strong>Category:</strong> Human-AI Workflow / Evaluation &amp;
+Observability.</li>
+<li><strong>Research signal and support:</strong> <strong>Paper
+Fact</strong> — zero-shot chain-of-thought has 7.7% false alarms and
+95.5% localization in the Watchlist study, while the most preferred
+Plan-and-Solve format performs worse on both measures. Supports:
+Reasoning Representations.</li>
+<li><strong>Problem or opportunity:</strong> Interfaces optimize
+explanation readability or preference without measuring whether humans
+detect and localize consequential errors.</li>
+<li><strong>Proposed capability:</strong> <strong>Enterprise
+Inference</strong> — test multiple evidence presentations using
+task-specific seeded errors, measuring detection, localization,
+reliance, time, and downstream decisions; expose only formats that
+improve calibrated oversight.</li>
+<li><strong>Placement:</strong> applications, human-review layer,
+evaluation.</li>
+<li><strong>Business value:</strong> quality, productivity, customer
+experience, risk reduction. <strong>Technical value:</strong> separates
+interface preference from supervisory effectiveness.</li>
+<li><strong>Maturity/readiness:</strong> One small, synthetic,
+single-model study; no verified artifact. <strong>Confidence:</strong>
+Low-to-Moderate. <strong>Horizon:</strong> 6–12 months.
+<strong>Effort:</strong> M.</li>
+<li><strong>Dependencies:</strong> representative tasks; reviewer
+population; ethical study design; error-seeding process; accessibility
+support; decision-impact metrics.</li>
+<li><strong>Risks:</strong> reasoning traces are unfaithful, sensitive
+internals exposed, cognitive overload, automation bias, adversarially
+persuasive explanations, nonrepresentative users.</li>
+<li><strong>Build / Buy / Partner:</strong> Build a small internal
+harness; partner with human-factors researchers for high-stakes
+domains.</li>
+<li><strong>Minimum reversible experiment:</strong> Within-subject study
+with 30–50 representative reviewers on historical, non-live cases and
+prevalidated error seeds.</li>
+<li><strong>Success metrics / stop conditions:</strong> false alarms,
+miss rate, localization, decision quality, time and calibrated reliance.
+Stop if no format improves decision quality or if exposure creates
+security/privacy risk.</li>
+<li><strong>Roadmap trigger:</strong> replicated improvement on
+realistic errors across at least two workflows and reviewer groups.</li>
+</ul>
+<h3 id="deprioritize-for-now">Deprioritize for Now</h3>
+<h4 id="9-self-certifying-autonomous-repair-loop--642100">9.
+Self-certifying autonomous repair loop — 64.2/100</h4>
+<ul>
+<li><strong>Category:</strong> Agentic AI / AI Software
+Engineering.</li>
+<li><strong>Research signal and support:</strong> <strong>Paper Fact +
+Uncertainty</strong> — weak self-generated tests reduce repair
+performance, generated tests leave large oracle headroom on SWE-bench
+Pro, and language transfer falls to 2.4 on Java. Supports:
+ExecCritic.</li>
+<li><strong>Problem or opportunity:</strong> Full autonomy promises
+speed, but letting one agent write the code, define success, and approve
+promotion collapses independence.</li>
+<li><strong>Proposed capability:</strong> No production capability
+recommended. Keep any joint test-and-repair learner confined to research
+sandboxes with an external evaluator and no merge rights.</li>
+<li><strong>Placement:</strong> isolated experiment infrastructure
+only.</li>
+<li><strong>Business value:</strong> possible future speed; currently
+outweighed by reliability and security risk. <strong>Technical
+value:</strong> research on joint optimization, not a deployable
+control.</li>
+<li><strong>Maturity/readiness:</strong> Low; benchmark-only, incomplete
+cross-language generalization, missing economics, collusion risk.
+<strong>Confidence:</strong> High that production promotion is
+premature. <strong>Horizon:</strong> 12+ months.
+<strong>Effort:</strong> XL.</li>
+<li><strong>Dependencies:</strong> independent hidden suite; formal
+permissions; adversarial test generation; strong sandboxing; economic
+evidence; human acceptance owner.</li>
+<li><strong>Risks:</strong> evaluator gaming, test collusion, malicious
+patches, repository exfiltration, hidden regressions, escalating
+compute, accountability gaps.</li>
+<li><strong>Build / Buy / Partner:</strong> Do not buy or deploy.
+Maintain a small internal research track only if strategically
+relevant.</li>
+<li><strong>Minimum reversible experiment:</strong> Synthetic repository
+challenge where the external evaluator deliberately includes hidden
+anti-collusion and security cases; outputs cannot leave the
+sandbox.</li>
+<li><strong>Success metrics / stop conditions:</strong> zero permission
+breaches; improvement on independently held-out tasks; no reduction in
+semantic-test precision; bounded cost. Stop at any evaluator tampering,
+hidden regression, or negative cost-adjusted lift.</li>
+<li><strong>Roadmap trigger:</strong> multi-organization replication
+across languages, independent hidden-evaluator gains, demonstrated
+non-collusion, clear liability ownership, and positive total-cost
+evidence.</li>
+</ul>
+<h2 id="enterprise-ai-architecture-implications">Enterprise AI
+Architecture Implications</h2>
+<p><strong>Independent Analysis — 12–24 month view.</strong> The
+reviewed signals favor an enterprise AI architecture with a
+model-independent <strong>evidence and authority control plane</strong>.
+The model gateway remains useful for routing and cost, but durable
+reliability shifts toward typed artifacts and enforceable boundaries
+around it.</p>
+<pre class="text"><code>Applications / human review
+          │ explanations, appeals, approvals
+          ▼
+Agent orchestration ──────────────── model gateway + cost telemetry
+          │                                      │
+          ├── executable contract registry       ├── model/version identity
+          ├── permission-separated roles         └── serving-contract checks
+          │
+          ▼
+Context &amp; knowledge plane
+  ├── canonical record identity and provenance
+  ├── lifecycle / consent / revocation service
+  ├── authoritative-source registry
+  └── pre-context validity and authorization gate
+          │
+          ▼
+Evaluation &amp; observability plane
+  ├── immutable typed traces
+  ├── failure-stage attribution and replay
+  ├── independent verifier / test sandbox
+  ├── audit-instrument registry and planted controls
+  └── outcome, latency, cost and human-override telemetry</code></pre>
+<p>Shared foundations unlock multiple enhancements:</p>
+<ul>
+<li><strong>Identity and authorization:</strong> record, user, agent,
+model, test, evaluator, and policy identities must be stable across
+handoffs.</li>
+<li><strong>Data provenance and lifecycle:</strong> raw content, derived
+embeddings, supersession links, validity intervals, consent, and
+deletion receipts should remain connected.</li>
+<li><strong>Policy enforcement:</strong> deterministic gates should
+block invalid context and unauthorized actions before probabilistic
+reasoning.</li>
+<li><strong>Evaluation infrastructure:</strong> immutable test bundles,
+gold-source replay, hidden official evaluators, and instrument versions
+make decisions reproducible.</li>
+<li><strong>Observability:</strong> proposed, retrieved, delivered,
+executed, rejected, and human-overridden artifacts should be distinct
+events.</li>
+<li><strong>Human-review controls:</strong> ambiguous revocation,
+conflicting authority, high-impact repair, and unsupported answers
+require accountable escalation and appeal.</li>
+<li><strong>Experiment infrastructure:</strong> reversible shadow
+traffic, historical replay, variant registries, cost telemetry, and stop
+conditions let evidence mature without production side effects.</li>
+</ul>
+<p>No current enterprise stack, vendor, data platform, or security
+maturity is assumed. Before any roadmap decision, internal context is
+required on regulated data, authorization models, incident tolerance,
+repository languages, search domains, latency and cost budgets,
+human-review capacity, and existing provenance coverage.</p>
+<h2 id="implementation-priorities">Implementation priorities</h2>
+<h3 id="now--run-three-isolated-diagnostics">Now — run three isolated
+diagnostics</h3>
+<ol type="1">
+<li>Replay revoked records with and without a deterministic pre-context
+gate.</li>
+<li>Shadow historical defects with separated test-author and repair
+roles under a fixed compute budget.</li>
+<li>Relabel failed search traces by bypass, retrieval, and comprehension
+using verified source injection.</li>
+</ol>
+<h3 id="next--build-shared-foundations">Next — build shared
+foundations</h3>
+<ol type="1">
+<li>Define canonical IDs and lifecycle metadata for memories, sources,
+tests, policies, and evaluators.</li>
+<li>Add immutable hashes, ownership, and version bindings to every
+evaluation trace.</li>
+<li>Establish authoritative-source registries and privacy-safe replay
+stores.</li>
+<li>Record cost, latency, override, abstention, and incident telemetry
+alongside quality.</li>
+</ol>
+<h3 id="later--expand-only-after-triggers">Later — expand only after
+triggers</h3>
+<p>Move from replay to limited shadow traffic only when the stated
+metrics and stop conditions are met. Allow production side effects only
+after independent validation, threat modeling, privacy and security
+review, rollback testing, human accountability, and representative
+internal economics. Do not promote joint self-certifying agents merely
+because a public benchmark improves.</p>
+<h2 id="knowledge-reinforcement">Knowledge reinforcement</h2>
+<ul>
+<li><strong>Reinforced:</strong> recent archive findings that endpoint
+scores are an incomplete audit surface. Today’s papers add concrete
+boundary failures: invalid memory, weak executable feedback, and
+retrieval-stage errors.</li>
+<li><strong>Extended:</strong> the September 7 identity-handoff theme
+now includes policy validity and executable contract identity, not only
+citation identity.</li>
+<li><strong>Extended:</strong> the September 4 measurement-supply-chain
+theme now reaches audit instruments and human explanation formats.</li>
+<li><strong>Corrective:</strong> stronger general models do not remove
+the need for deterministic validity gates; general benchmark rank weakly
+predicts civic search in CIVI, and model capability tier does not
+cleanly predict revocation compliance.</li>
+<li><strong>Decision rule:</strong> ask “Who authored this artifact, is
+it still valid, can the actor change it, and which independent evidence
+authorizes promotion?” before adding autonomy.</li>
+</ul>
+<h2 id="evidence-register-and-decision-boundaries">Evidence register and
+decision boundaries</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Evidence label</th>
+<th>Verified</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Revoked records and defense results</td>
+<td>Paper Fact</td>
+<td>Full paper + first-party repository</td>
+<td>Authored scenarios; two systems support complete exposed-status
+end-to-end defense test</td>
+</tr>
+<tr class="even">
+<td>ExecCritic benchmark deltas and training recipe</td>
+<td>Paper Fact</td>
+<td>Full paper + first-party repository</td>
+<td>Hosted models, extra compute, one learned model family, incomplete
+release</td>
+</tr>
+<tr class="odd">
+<td>CIVI dataset, model table, and failure taxonomy</td>
+<td>Paper Fact</td>
+<td>Full paper + code + dataset repositories</td>
+<td>Three countries, English, one search provider, mutable
+web/models</td>
+</tr>
+<tr class="even">
+<td>Priority scores and architecture</td>
+<td>Independent Analysis</td>
+<td>Formula and components disclosed</td>
+<td>Requires internal value, cost, risk, and stack context</td>
+</tr>
+<tr class="odd">
+<td>Enterprise enhancements</td>
+<td>Enterprise Inference</td>
+<td>Explicitly traced to reviewed evidence</td>
+<td>Future options, not approved roadmap commitments</td>
+</tr>
+<tr class="even">
+<td>Production effectiveness</td>
+<td>Uncertainty</td>
+<td>Not established</td>
+<td>Requires representative internal trials and independent review</td>
+</tr>
+</tbody>
+</table>
+<h3 id="sources">Sources</h3>
+<ul>
+<li>Shen, Toyoda, and Leung. <a
+href="https://arxiv.org/abs/2609.08258">Revoked but Still Authoritative:
+An Empirical Study of Revocation Enforcement in Agent-Memory
+Systems</a>, submitted September 8, 2026; <a
+href="https://github.com/VulcanLab/Memory-Rebirth-Attack">Apache-2.0
+artifact</a>.</li>
+<li>Tao et al. <a href="https://arxiv.org/abs/2609.09133">ExecCritic:
+Learn to Test, Test to Improve for Coding Agents</a>, submitted
+September 8, 2026; <a
+href="https://github.com/MSR-Orchard/execcritic">Apache-2.0
+artifact</a>.</li>
+<li>Liu et al. <a href="https://arxiv.org/abs/2609.08094">CIVI: A
+Framework for Diagnosing Search Agent Failures in Civic Information</a>,
+submitted September 8, 2026; <a
+href="https://github.com/dingyingliu/CIVI">MIT code</a>; <a
+href="https://huggingface.co/datasets/dingyingliu/CIVI">CC BY 4.0
+dataset</a>.</li>
+<li>Lim, Shin, and Hong. <a href="https://arxiv.org/abs/2609.09038">Do
+Reasoning Representations Help Humans Evaluate LLM Outputs?</a>,
+submitted September 8, 2026.</li>
+<li>Vohra and Ravikiran. <a href="https://arxiv.org/abs/2609.09048">The
+Audit Decides the Verdict: Instrument Effects Rival Demographic Bias in
+LLM Decision Audits</a>, submitted September 8, 2026; <a
+href="https://siddvoh.com/biasinaudits">project page</a>.</li>
+</ul>
+<p><em>This briefing distinguishes direct paper evidence from analysis
+and enterprise inference. It is research intelligence, not legal,
+security, procurement, clinical, or production-deployment
+approval.</em></p></main></div>
+<footer>AI Research Intelligence Brief · September 9, 2026 · Research options, not deployment approval.</footer>
+<div class="toolbar"><button onclick="window.print()" aria-label="Print report">Print</button><button id="top" aria-label="Back to top">↑ Top</button></div>
+<script>
+const p=document.getElementById('progress');addEventListener('scroll',()=>{const h=document.documentElement;p.style.width=((h.scrollTop/(h.scrollHeight-h.clientHeight))*100)+'%'});document.getElementById('top').onclick=()=>scrollTo({top:0,behavior:'smooth'});
+document.querySelectorAll('main h4').forEach(h=>{if(/^\d+\./.test(h.textContent))h.setAttribute('data-backlog','true')});
+</script>
+</body></html>

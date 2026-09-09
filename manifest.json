@@ -3,12 +3,29 @@
     "title": "AI Research Intelligence",
     "url": "https://ygeszvain.github.io/ai-research-intelligence",
     "description": "Evidence-grounded daily AI and machine-learning research intelligence.",
-    "generated_at_utc": "2026-09-08T09:29:10Z",
-    "report_count": 30,
-    "latest_report": "2026-09-08",
-    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-08.html"
+    "generated_at_utc": "2026-09-09T09:26:44.085Z",
+    "report_count": 31,
+    "latest_report": "2026-09-09",
+    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-09.html"
   },
   "reports": [
+    {
+      "date": "2026-09-09",
+      "date_display": "September 9, 2026",
+      "title": "AI Research Intelligence Brief — September 9, 2026",
+      "excerpt": "Three papers show that enterprise AI needs boundary controls where information becomes authority: enforce memory revocation before context assembly, keep executable critics independent from repair, and diagnose search failures by stage before changing the model.",
+      "topics": [
+        "Memory & Context",
+        "AI Software Engineering",
+        "RAG & Knowledge",
+        "Evaluation & Observability",
+        "Safety & Governance"
+      ],
+      "path": "reports/2026-09-09.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-09.html",
+      "size_bytes": 82461,
+      "sha256": "c98eca3e259e3826a4b715a3b7015249ba72add24d024d8725ed0d2e9911d6a4"
+    },
     {
       "date": "2026-09-08",
       "date_display": "September 8, 2026",
