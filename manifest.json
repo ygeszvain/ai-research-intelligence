@@ -3,12 +3,29 @@
     "title": "AI Research Intelligence",
     "url": "https://ygeszvain.github.io/ai-research-intelligence",
     "description": "Evidence-grounded daily AI and machine-learning research intelligence.",
-    "generated_at_utc": "2026-09-09T09:26:44.085Z",
-    "report_count": 31,
-    "latest_report": "2026-09-09",
-    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-09.html"
+    "generated_at_utc": "2026-09-10T09:24:17.616Z",
+    "report_count": 32,
+    "latest_report": "2026-09-10",
+    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-10.html"
   },
   "reports": [
+    {
+      "date": "2026-09-10",
+      "date_display": "September 10, 2026",
+      "title": "AI Research Intelligence Brief — September 10, 2026",
+      "excerpt": "Three papers show that reliability proxies need explicit targets and independent evaluators: exact enterprise ground truth, decision-specific early-exit signals, and cross-model disagreement with shared-error controls.",
+      "topics": [
+        "Evaluation & Observability",
+        "Model & Inference",
+        "Agentic AI",
+        "Safety & Governance",
+        "Data & Knowledge Infrastructure"
+      ],
+      "path": "reports/2026-09-10.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-10.html",
+      "size_bytes": 89985,
+      "sha256": "e837a8eabd803731ebb694c3a5a2be6cfda4cb2d5308058993f58ab0065d1618"
+    },
     {
       "date": "2026-09-09",
       "date_display": "September 9, 2026",
