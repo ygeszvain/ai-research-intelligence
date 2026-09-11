@@ -3,24 +3,29 @@
     "title": "AI Research Intelligence",
     "url": "https://ygeszvain.github.io/ai-research-intelligence",
     "description": "Evidence-grounded daily AI and machine-learning research intelligence.",
-    "generated_at_utc": "2026-09-10T09:24:17.616Z",
-    "report_count": 32,
-    "latest_report": "2026-09-10",
-    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-10.html"
+    "generated_at_utc": "2026-09-11T09:28:00.000Z",
+    "report_count": 33,
+    "latest_report": "2026-09-11",
+    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-11.html"
   },
   "reports": [
+    {
+      "date": "2026-09-11",
+      "date_display": "September 11, 2026",
+      "title": "AI Research Intelligence Brief — September 11, 2026",
+      "excerpt": "Three papers show that safety, confidence semantics, and infrastructure economics must be re-qualified after retrieval, routing, or high-fanout execution changes the system around a model.",
+      "topics": ["RAG & Knowledge", "Safety & Governance", "Model & Inference", "Agentic AI", "Evaluation & Observability"],
+      "path": "reports/2026-09-11.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-11.html",
+      "size_bytes": 94830,
+      "sha256": "adad391b23ec5ca14f3aa5e49954447a77b47c688e1e5ffd52526fc5a87a7628"
+    },
     {
       "date": "2026-09-10",
       "date_display": "September 10, 2026",
       "title": "AI Research Intelligence Brief — September 10, 2026",
       "excerpt": "Three papers show that reliability proxies need explicit targets and independent evaluators: exact enterprise ground truth, decision-specific early-exit signals, and cross-model disagreement with shared-error controls.",
-      "topics": [
-        "Evaluation & Observability",
-        "Model & Inference",
-        "Agentic AI",
-        "Safety & Governance",
-        "Data & Knowledge Infrastructure"
-      ],
+      "topics": ["Evaluation & Observability", "Model & Inference", "Agentic AI", "Safety & Governance", "Data & Knowledge Infrastructure"],
       "path": "reports/2026-09-10.html",
       "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-10.html",
       "size_bytes": 89985,
@@ -31,13 +36,7 @@
       "date_display": "September 9, 2026",
       "title": "AI Research Intelligence Brief — September 9, 2026",
       "excerpt": "Three papers show that enterprise AI needs boundary controls where information becomes authority: enforce memory revocation before context assembly, keep executable critics independent from repair, and diagnose search failures by stage before changing the model.",
-      "topics": [
-        "Memory & Context",
-        "AI Software Engineering",
-        "RAG & Knowledge",
-        "Evaluation & Observability",
-        "Safety & Governance"
-      ],
+      "topics": ["Memory & Context", "AI Software Engineering", "RAG & Knowledge", "Evaluation & Observability", "Safety & Governance"],
       "path": "reports/2026-09-09.html",
       "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-09.html",
       "size_bytes": 82461,
@@ -48,13 +47,7 @@
       "date_display": "September 8, 2026",
       "title": "AI Research Intelligence Brief — September 8, 2026",
       "excerpt": "Three papers show that durable enterprise AI requires behavioral contracts around what persists, what explains, and what acts: rehearse memory migrations, test explanations with interventions, and verify hybrid action over shared state.",
-      "topics": [
-        "Memory & Context",
-        "Evaluation & Observability",
-        "Agentic AI",
-        "RAG & Knowledge",
-        "AI Security"
-      ],
+      "topics": ["Memory & Context", "Evaluation & Observability", "Agentic AI", "RAG & Knowledge", "AI Security"],
       "path": "reports/2026-09-08.html",
       "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-08.html",
       "size_bytes": 91604,
@@ -65,13 +58,7 @@
       "date_display": "September 7, 2026",
       "title": "AI Research Intelligence Brief — September 7, 2026",
       "excerpt": "Three papers show that reliable AI systems need protected objectives and identity-preserving evidence contracts: visible scores can diverge from true capability, selected evidence can disappear before reading, and fixed retrieval plans under-expand as evidence demands grow.",
-      "topics": [
-        "Evaluation & Observability",
-        "Safety & Governance",
-        "RAG & Knowledge",
-        "Agentic AI",
-        "Data & Knowledge Infrastructure"
-      ],
+      "topics": ["Evaluation & Observability", "Safety & Governance", "RAG & Knowledge", "Agentic AI", "Data & Knowledge Infrastructure"],
       "path": "reports/2026-09-07.html",
       "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-07.html",
       "size_bytes": 84535,
@@ -82,13 +69,7 @@
       "date_display": "September 6, 2026",
       "title": "AI Research Intelligence Brief — September 6, 2026",
       "excerpt": "Three peer-reviewed papers show why aggregate AI performance is incomplete: subgroup and topic slices, accountable appeal paths, and typed graph sampling expose failures hidden by averages.",
-      "topics": [
-        "Evaluation",
-        "Safety & Governance",
-        "Data & Knowledge Infrastructure",
-        "Model & Inference",
-        "Human-AI Workflow"
-      ],
+      "topics": ["Evaluation", "Safety & Governance", "Data & Knowledge Infrastructure", "Model & Inference", "Human-AI Workflow"],
       "path": "reports/2026-09-06.html",
       "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-06.html",
       "size_bytes": 76400,

@@ -1,0 +1,1714 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Evidence-grounded AI Research Intelligence Brief for September 11, 2026: composition-aware safety, calibrated routing, and high-fanout agent infrastructure.">
+<meta name="report-date" content="2026-09-11">
+<meta name="research-window" content="2026-09-09T16:00:00-05:00/2026-09-11T04:00:00-05:00 America/Chicago">
+<meta name="deep-paper-count" content="3">
+<meta name="watchlist-count" content="2">
+<meta name="theme-color" content="#08131f">
+<title>AI Research Intelligence Brief — September 11, 2026</title>
+<style>
+:root{--bg:#07111d;--panel:#0d1b2a;--panel2:#10263a;--text:#e8f1f7;--muted:#9fb5c5;--line:#29445b;--cyan:#45d7c4;--gold:#f5c96a;--rose:#ff8d9a;--blue:#68a9ff;--max:1180px;color-scheme:dark}
+@media(prefers-color-scheme:light){:root{--bg:#f4f7f8;--panel:#fff;--panel2:#edf4f7;--text:#102131;--muted:#526979;--line:#cddbe2;--cyan:#087f73;--gold:#9b6300;--rose:#b92b45;--blue:#1661ad;color-scheme:light}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 90% 0,rgba(69,215,196,.12),transparent 30rem),var(--bg);color:var(--text);font:16px/1.67 ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}a{color:var(--cyan);text-underline-offset:3px}a:hover{text-decoration-thickness:2px}header{border-bottom:1px solid var(--line);background:linear-gradient(135deg,rgba(69,215,196,.09),rgba(104,169,255,.05));padding:54px 22px 34px}.hero{max-width:var(--max);margin:auto}.eyebrow{color:var(--cyan);text-transform:uppercase;letter-spacing:.15em;font-size:.76rem;font-weight:800}h1{font-size:clamp(2.2rem,6vw,4.7rem);line-height:.98;max-width:900px;margin:.35rem 0 1rem;letter-spacing:-.055em}header p{max-width:790px;color:var(--muted);font-size:1.09rem}.chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}.chip{border:1px solid var(--line);border-radius:999px;padding:6px 11px;background:var(--panel);font-size:.8rem}.topbets{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}.bet{border:1px solid var(--line);background:var(--panel);border-radius:14px;padding:15px}.bet b{display:block;color:var(--gold);font-size:1.15rem}.layout{max-width:var(--max);margin:auto;display:grid;grid-template-columns:250px minmax(0,1fr);gap:34px;padding:30px 22px 80px}nav{position:sticky;top:16px;align-self:start;max-height:calc(100vh - 32px);overflow:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:14px}nav strong{display:block;margin:2px 8px 10px;color:var(--gold)}nav ul{list-style:none;margin:0;padding:0}nav li{margin:0}nav a{display:block;color:var(--muted);text-decoration:none;padding:5px 8px;border-radius:7px;font-size:.83rem;line-height:1.25}nav a:hover{background:var(--panel2);color:var(--text)}main{min-width:0}main>h2{font-size:1.75rem;margin:2.6rem 0 1rem;padding-top:.7rem;border-top:1px solid var(--line)}main>h2:first-child{margin-top:0}h3{font-size:1.3rem;margin-top:2rem;color:var(--cyan)}h4{font-size:1.08rem;color:var(--gold);margin-bottom:.45rem}p,li{max-width:88ch}blockquote{margin:1rem 0;padding:1rem 1.2rem;border-left:4px solid var(--gold);background:var(--panel);color:var(--muted)}pre{white-space:pre-wrap;overflow:auto;background:#07101a;border:1px solid var(--line);border-radius:14px;padding:18px;color:#dcecf2;font-size:.86rem;line-height:1.45}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}table{width:100%;border-collapse:collapse;margin:1.25rem 0;background:var(--panel);font-size:.86rem}th,td{padding:10px 12px;border:1px solid var(--line);text-align:left;vertical-align:top}th{color:var(--gold);background:var(--panel2)}hr{border:0;border-top:1px solid var(--line)}main h4+ul,main h3+ul{border:1px solid var(--line);background:linear-gradient(135deg,var(--panel),var(--panel2));border-radius:14px;padding:15px 22px 15px 34px}main h4+ul li,main h3+ul li{margin:.5rem 0}.progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--cyan),var(--gold));width:0;z-index:9}.toolbar{position:fixed;right:18px;bottom:18px;display:flex;gap:8px}.toolbar button{border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:999px;padding:9px 12px;cursor:pointer;box-shadow:0 8px 30px rgba(0,0,0,.2)}.label{font-size:.75rem;color:var(--muted)}footer{border-top:1px solid var(--line);padding:24px;text-align:center;color:var(--muted)}
+@media(max-width:850px){.topbets{grid-template-columns:1fr}.layout{grid-template-columns:1fr}nav{position:relative;top:0;max-height:none}nav ul{columns:2}h1{font-size:2.65rem}}
+@media(max-width:520px){header{padding-top:34px}.layout{padding:20px 14px 60px}nav ul{columns:1}table{display:block;overflow-x:auto}h1{font-size:2.25rem}}
+@media print{body{background:white;color:#111;font-size:11pt}header{padding:18px 0}.layout{display:block;padding:0}nav,.toolbar,.progress{display:none}a{color:#145c70}main>h2{break-before:page}main>h2:first-child{break-before:auto}table,pre{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<header><div class="hero">
+<div class="eyebrow">AI Research Intelligence · Evidence before enthusiasm</div>
+<h1>Re-qualify every composition boundary.</h1>
+<p>September 11, 2026 briefing. Three papers converge on a practical rule: safety, confidence, and infrastructure economics must be re-measured after retrieval, routing, or high-fanout execution changes the system around a model.</p>
+<div class="chips"><span class="chip">3 deep papers</span><span class="chip">2 Watchlist</span><span class="chip">36-hour research window</span><span class="chip">10 enterprise options</span><span class="chip">Primary sources + full-paper review</span></div>
+<div class="topbets"><div class="bet"><span class="label">TOP BET 1 · PROTOTYPE SOON</span><b>92.4 · Four-condition RAG safety qualification</b><span>Test the generator again after retrieval changes what it can answer.</span></div><div class="bet"><span class="label">TOP BET 2 · PROTOTYPE SOON</span><b>89.9 · Calibrated cascade shadow router</b><span>Route on calibrated risk and realized cost, not raw confidence.</span></div><div class="bet"><span class="label">TOP BET 3 · PREPARE FOUNDATIONS</span><b>89.5 · Retrieval provenance and content-risk policy plane</b><span>Bind every retrieved context to source, authorization, and risk metadata.</span></div></div>
+</div></header>
+<div class="layout"><nav><strong>Navigate</strong><ul>
+<li><a href="#scope-window-and-evidence-policy"
+id="toc-scope-window-and-evidence-policy">Scope, window, and evidence
+policy</a></li>
+<li><a href="#executive-signal" id="toc-executive-signal">Executive
+signal</a></li>
+<li><a href="#top-3-future-bets" id="toc-top-3-future-bets">Top 3 Future
+Bets</a></li>
+<li><a href="#deep-paper-1--retrieval-changes-the-safety-boundary"
+id="toc-deep-paper-1--retrieval-changes-the-safety-boundary">Deep paper
+1 — Retrieval changes the safety boundary</a></li>
+<li><a
+href="#deep-paper-2--high-fanout-sandboxes-are-a-distinct-systems-workload"
+id="toc-deep-paper-2--high-fanout-sandboxes-are-a-distinct-systems-workload">Deep
+paper 2 — High-fanout sandboxes are a distinct systems workload</a></li>
+<li><a
+href="#deep-paper-3--confidence-needs-a-shared-reliability-semantics"
+id="toc-deep-paper-3--confidence-needs-a-shared-reliability-semantics">Deep
+paper 3 — Confidence needs a shared reliability semantics</a></li>
+<li><a href="#watchlist" id="toc-watchlist">Watchlist</a></li>
+<li><a href="#cross-paper-synthesis"
+id="toc-cross-paper-synthesis">Cross-paper synthesis</a></li>
+<li><a
+href="#visual-1--composition-contracts-across-an-enterprise-ai-stack"
+id="toc-visual-1--composition-contracts-across-an-enterprise-ai-stack">Visual
+1 — composition contracts across an enterprise AI stack</a></li>
+<li><a href="#visual-2--evidence-strength-and-deployment-distance"
+id="toc-visual-2--evidence-strength-and-deployment-distance">Visual 2 —
+evidence strength and deployment distance</a></li>
+<li><a href="#enterprise-ai-enhancement-backlog"
+id="toc-enterprise-ai-enhancement-backlog">Enterprise AI Enhancement
+Backlog</a></li>
+<li><a href="#enterprise-ai-architecture-implications"
+id="toc-enterprise-ai-architecture-implications">Enterprise AI
+Architecture Implications</a></li>
+<li><a href="#implementation-priorities"
+id="toc-implementation-priorities">Implementation priorities</a></li>
+<li><a href="#knowledge-reinforcement"
+id="toc-knowledge-reinforcement">Knowledge reinforcement</a></li>
+<li><a href="#evidence-register-and-decision-boundaries"
+id="toc-evidence-register-and-decision-boundaries">Evidence register and
+decision boundaries</a></li>
+</ul></nav><main><h2 id="scope-window-and-evidence-policy">Scope,
+window, and evidence policy</h2>
+<p><strong>Research window.</strong> Wednesday, September 9, 2026 at
+4:00 PM CDT through Friday, September 11, 2026 at 4:00 AM CDT (36 hours;
+America/Chicago). Discovery covered current arXiv cs.AI, cs.CL, cs.LG,
+cs.SE, cs.CR, cs.IR, cs.OS, cs.HC, and stat.ML submissions, plus
+targeted checks of conference, journal, and research-lab releases. The
+screen included the September 11 arXiv update, whose visible first pages
+alone contained 171 cs.AI, 91 cs.CL, 171 cs.LG, and 38 cs.SE entries
+before overlap and relevance filtering. The original window was
+sufficient; no seven-day expansion was used.</p>
+<p><strong>Anti-duplication.</strong> Exact titles, identifiers, central
+claims, and enterprise implications were checked against the 32-report
+archive through September 10. None of the three deep papers or two
+Watchlist papers had appeared previously. Papers that merely repeated
+recent themes about evaluator dependence, memory upgrades, or adaptive
+governance were not promoted unless they supplied a new controlled
+intervention or systems measurement.</p>
+<p><strong>Evidence policy.</strong> <strong>Paper Fact</strong> means
+directly reported by a paper or verified first-party artifact.
+<strong>Independent Analysis</strong> is this briefing's synthesis,
+calculation, or critique. <strong>Enterprise Inference</strong>
+translates a finding into a bounded future option.
+<strong>Uncertainty</strong> marks missing generalization, artifact,
+causal, operational, economic, or governance evidence. Preprints are not
+treated as peer reviewed; conference status is reported only when stated
+on the source record. Benchmark performance is not production readiness.
+Every proposed experiment is isolated, reversible, measurable, and
+non-destructive.</p>
+<h2 id="executive-signal">Executive signal</h2>
+<blockquote>
+<p><strong>Composition creates new failure modes. A component's safety,
+confidence semantics, or cost profile does not survive unchanged when
+retrieval, routing, or high-fanout execution is added around
+it.</strong></p>
+</blockquote>
+<p>Three papers make that rule measurable at different layers.
+RAG-Safety-Bench holds the generator and query fixed while varying
+retrieved context; answer-bearing context raises unsafe capability
+across all five tested models, despite their baseline guardrails.
+Calibration-Aware Uncertainty Cascades shows that raw confidence
+thresholds are not portable across heterogeneous models; post-hoc
+calibration creates a shared selective-risk scale and avoids about 47%
+of strong-model calls in its language experiments. AgentZip shows that
+high-fanout sandboxes share enough memory structure to change the
+infrastructure economics, but extracting that redundancy trades memory
+capacity for restore and scheduling overhead. (<a
+href="https://arxiv.org/abs/2609.11758">RAG-Safety-Bench</a>, <a
+href="https://arxiv.org/abs/2609.11446">CAUC</a>, <a
+href="https://arxiv.org/abs/2609.11294">AgentZip</a>)</p>
+<p><strong>Decision posture.</strong> Prototype retrieval-specific
+safety qualification and calibrated routing in offline replay or shadow
+mode. Establish provenance, evaluator disagreement, calibration lineage,
+sandbox lifecycle telemetry, tenant boundaries, and cost observability
+before runtime authority is granted. Benchmark high-fanout memory
+behavior on the actual isolation technology and workload shape before
+evaluating compression. Do not assume that a safe base model yields a
+safe RAG system, that confidence scores are comparable across models, or
+that an 8.7× peak compression claim implies lower end-to-end cost.</p>
+<h2 id="top-3-future-bets">Top 3 Future Bets</h2>
+<ol type="1">
+<li><strong>Four-condition RAG safety qualification — 92.4/100.</strong>
+Why it matters: retrieval can make harmful answers available even when
+the base model would refuse, so generator-only safety tests miss a
+composition-specific risk. Evidence that would change the
+recommendation: representative internal corpora showing no material
+safety delta across no-context, answer-bearing, on-topic, and
+random-control conditions under multiple judges and human adjudication.
+Next reversible action: replay a small, policy-approved harmful-query
+set against a read-only synthetic knowledge base; log outputs without
+serving them to users.</li>
+<li><strong>Calibrated cascade shadow router — 89.9/100.</strong> Why it
+matters: model portfolios can reduce strong-model calls, but raw
+confidence has model-specific semantics and price proxies can mislead.
+Evidence that would change the recommendation: internal validation
+showing calibration drift, slice-specific regressions, or realized
+latency and dollar cost worse than a single-model baseline. Next
+reversible action: replay saved outputs from two approved models,
+calibrate each independently on held-out data, and compare a unified
+threshold with the current fixed routing policy.</li>
+<li><strong>Retrieval provenance and content-risk policy plane —
+89.5/100.</strong> Why it matters: safety controls need to know which
+information entered the context, whether the user was authorized to
+receive it, and which policy risks it carries. Evidence that would
+change the recommendation: pilots showing that provenance and risk
+metadata are too incomplete or inaccurate to explain or prevent material
+RAG failures. Next reversible action: emit observe-only context
+manifests for one read-only corpus and compare their policy labels with
+blinded human review.</li>
+</ol>
+<h2 id="deep-paper-1--retrieval-changes-the-safety-boundary">Deep paper
+1 — Retrieval changes the safety boundary</h2>
+<p><strong>Identity and status.</strong> <em>RAG-Safety-Bench: Reliable
+Evaluation of Retrieval-Augmented LLM Safety</em>, Adithiyan Rajan
+Indira Saravanan and Kathleen C. Fraser; submitted September 10, 2026;
+arXiv:2609.11758; cs.CL/cs.IR; accepted to the EMNLP 2026 main
+conference; CC BY 4.0 paper license. The public repository contains the
+frozen full and balanced evaluation inputs, provenance manifests,
+generation configurations, code for generation and local safety scoring,
+and paper figures. It does <strong>not</strong> include raw model
+responses, judge traces, or the private v2-rescoring artifacts;
+repository license files were not present at review time, and the README
+says final split-license files await approval. (<a
+href="https://arxiv.org/abs/2609.11758">paper</a>, <a
+href="https://github.com/The-Safe-AI-Lab/RAG-Safety-Bench">artifact</a>)</p>
+<h3 id="contribution-and-quantitative-claim-trace">Contribution and
+quantitative claim trace</h3>
+<p>The benchmark isolates retrieval's effect by giving the generator the
+same unsafe query under four conditions: no retrieved context; an oracle
+document containing answer-bearing harmful information; topically
+related documents that do not contain the answer; and safe, off-topic
+random documents. Providing contexts directly removes retriever quality
+from the causal contrast. The paper separately measures benign RAG
+capability, unsafe-answer accuracy, refusal reason, and harmfulness
+judgments.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>What it establishes</th>
+<th>What it does not establish</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Evaluation scope</td>
+<td style="text-align: right;">987 full harmful queries; 346 balanced
+queries across 19 subcategories; 4 retrieval conditions</td>
+<td>A structured, composition-specific safety test with category
+balancing</td>
+<td>Coverage of specialized advice, privacy, IP, non-English use, or
+proprietary corpora</td>
+</tr>
+<tr class="even">
+<td>Tested generators</td>
+<td style="text-align: right;">Gemma-3-12B-It, Llama-3.1-8B-Instruct,
+Ministral-3-8B-Instruct, Qwen-2.5-7B-Instruct, Phi-4-14B</td>
+<td>Cross-model evidence among open 7B–14B-class models</td>
+<td>Closed frontier models, tool-using agents, fine-tuned enterprise
+models</td>
+</tr>
+<tr class="odd">
+<td>Oracle context changes unsafe capability</td>
+<td style="text-align: right;">Non-RAG → oracle accuracy: Gemma
+25.7→74.9; Llama 6.4→41.3; Ministral 26.0→90.7; Phi 10.4→41.0; Qwen
+15.9→82.9</td>
+<td>Answer-bearing retrieval materially changes the system's ability to
+satisfy harmful requests</td>
+<td>The real-world incidence of such retrieval or harm outcomes</td>
+</tr>
+<tr class="even">
+<td>On-topic context effect</td>
+<td style="text-align: right;">Unsafe accuracy: 4.3%–18.8%; mixed effect
+versus each model's baseline</td>
+<td>Topic alone is not a uniform failure mechanism</td>
+<td>Safety for every model/corpus; Qwen remained an outlier</td>
+</tr>
+<tr class="odd">
+<td>Random safe context</td>
+<td style="text-align: right;">Unsafe accuracy: 0.3%–3.2%; safest
+condition overall</td>
+<td>Long context alone did not explain degradation in this setup</td>
+<td>Other long-context distributions or adversarial content</td>
+</tr>
+<tr class="even">
+<td>Capability relation</td>
+<td style="text-align: right;">Benign-oracle vs unsafe-oracle Pearson r
+= −0.70 across five models</td>
+<td>The hypothesized positive capability–unsafe-capability relation was
+not supported</td>
+<td>A stable population correlation; n=5 makes the estimate fragile</td>
+</tr>
+<tr class="odd">
+<td>Automated evaluator agreement</td>
+<td style="text-align: right;">Four-way Fleiss κ = 0.56; judge positive
+rates 14%, 17%, 20%</td>
+<td>Safety judgments are materially evaluator-dependent</td>
+<td>Which evaluator is correct for a particular enterprise policy</td>
+</tr>
+<tr class="even">
+<td>Accuracy-judge validation</td>
+<td style="text-align: right;">100 examples; human–LLM agreement 95–96%;
+Cohen κ 0.90–0.92</td>
+<td>The unsafe-answer accuracy labeler is credible on the audited
+sample</td>
+<td>Full-corpus human validation or independence from author
+sampling</td>
+</tr>
+<tr class="odd">
+<td>Refusal-label validation</td>
+<td style="text-align: right;">Human–LLM agreement 84–85%; κ
+0.71–0.73</td>
+<td>Refusal taxonomy is usable but noisier</td>
+<td>Error-free distinction between safety refusal and claimed lack of
+information</td>
+</tr>
+</tbody>
+</table>
+<p>The balanced subset is an exact subset of the full release. The
+repository documents deterministic generation settings—temperature 0.0,
+top-p 1.0, maximum 1,024 new tokens—and contexts capped at 12,000
+characters per document. The paper uses three automated safety
+classifiers: LlamaGuard-3-8B, ShieldGemma-2B, and WildGuard; a response
+is unsafe when at least two of three agree. Their category sensitivities
+differ: ShieldGemma flags fewer cyberattack and financial-crime
+responses, while WildGuard is more sensitive to hate speech and sexual
+harassment.</p>
+<h3
+id="methodological-critique-and-prior-work-comparison">Methodological
+critique and prior-work comparison</h3>
+<p>The strongest feature is causal isolation of retrieved information.
+Earlier end-to-end RAG safety work could confound a safe result with a
+retriever that simply failed to find harmful information. Here the
+oracle, on-topic, random, and no-context arms hold the query and
+generator constant while manipulating answer availability and topical
+context. The answerability audit reports 200 oracle contexts as fully
+answer-bearing and 146 as partially answer-bearing; all 346 on-topic
+contexts were classified as non-answer-bearing. The benchmark also
+refuses to collapse harmfulness, factual accuracy, and refusal into one
+score.</p>
+<p>The evidence has material boundaries. Benchmark questions were
+generated with Claude Sonnet 4.5 and judged for accuracy or
+answerability with Claude-family systems; authors performed the human
+validation, and only one generation run was evaluated. The five models
+exclude commercial systems because the harmful prompts would violate API
+terms. Wikipedia is public and unusually curated; enterprise retrieval
+includes permissions, stale documents, private data, conflicting
+policies, tables, code, emails, and malicious content. Safety judges
+show only moderate aggregate agreement and different category
+sensitivities. The benchmark excludes privacy, identification,
+intellectual-property leakage, specialized legal/medical advice, and
+direct harmful-content generation—all important enterprise risk
+classes.</p>
+<p>Relative to MIRAGE, which controls retrieval quality for benign
+capability, RAG-Safety-Bench changes the dependent variable to safety
+and adds harmful oracle/on-topic/random arms. Relative to prior findings
+that RAG systems can be less safe even with benign documents, the new
+contribution is factorization: in these experiments answer availability
+consistently drives risk, while topical context is model-dependent and
+random long context is safest. That narrows the mechanism rather than
+claiming a universal RAG safety law.</p>
+<h3 id="reproducibility-and-enterprise-readiness">Reproducibility and
+enterprise readiness</h3>
+<p>The released inputs, manifests, configurations, scoring code, and
+figures support partial reproduction. Exact paper reproduction is
+blocked because raw generations, judge traces, and the v2 rescoring
+workflow are withheld, and repository license files remain pending. The
+benchmark contains intentionally harmful material and requires
+controlled access, reviewer protection, and output handling.
+<strong>Enterprise readiness: high for designing an internal
+retrieval-specific safety test; medium for adapting the public benchmark
+in a controlled lab; low for treating its scores as a production
+certificate. Research Utility Score: 93/100</strong> (rigor 24/25;
+quantitative traceability 24/25; reproducibility/artifacts 17/20;
+enterprise relevance 15/15; prior-work advance 13/15). This is an
+analyst score, not a measured probability.</p>
+<h2
+id="deep-paper-2--high-fanout-sandboxes-are-a-distinct-systems-workload">Deep
+paper 2 — High-fanout sandboxes are a distinct systems workload</h2>
+<p><strong>Identity and status.</strong> <em>Memory Compression for
+High-Fanout Agent Sandboxes</em>, Mengming Li, Ceyu Xu, Qijun Zhang,
+Jiangnan Yu, Xiangfeng Sun, Haohui Mai, and Zhiyao Xie; submitted
+September 10, 2026; arXiv:2609.11294; cs.AI/cs.OS; preprint; CC BY-NC-ND
+4.0 paper license. AgentZip is implemented on Zeroboot, but no AgentZip
+code, benchmark traces, or machine image was linked from the reviewed
+record. (<a href="https://arxiv.org/abs/2609.11294">paper</a>, <a
+href="https://github.com/zerobootdev/zeroboot">Zeroboot
+dependency</a>)</p>
+<h3 id="contribution-and-quantitative-claim-trace-1">Contribution and
+quantitative claim trace</h3>
+<p>AgentZip treats sibling agent sandboxes as a cohort rather than
+unrelated virtual machines. It combines template-delta compression,
+dictionaries learned across related sandboxes, and local codecs; any
+page with a profitable representation can be compressed. Restore
+prefetching rather than conservative cold-page selection manages fault
+cost, and expensive compression is scheduled during periods when the
+sandbox waits for LLM output.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>Decision meaning</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Workload construction</td>
+<td style="text-align: right;">10 R2E-Gym Python repositories; 16
+concurrent rollout trajectories or 4 generate-and-filter candidates per
+task</td>
+<td>Tests two recognizable training/inference fanout patterns</td>
+<td>Replayed software-agent workloads, not a diverse production trace
+census</td>
+</tr>
+<tr class="even">
+<td>Persistent sibling similarity</td>
+<td style="text-align: right;">Rollout same-content pages: 96.26% at 25%
+of execution, 75.87% at completion</td>
+<td>Related trajectories preserve exploitable cross-sandbox
+structure</td>
+<td>Similarity depends on templates, repositories, runtimes, and cohort
+definition</td>
+</tr>
+<tr class="odd">
+<td>Template-delta opportunity</td>
+<td style="text-align: right;">Profitably compressible pages:
+84.64–96.25% on rollout; 82.10–90.34% on generate-and-filter</td>
+<td>Template-relative redundancy remains even after private writes</td>
+<td>Compressibility is not equivalent to lower cost or safe restore
+behavior</td>
+</tr>
+<tr class="even">
+<td>Rollout memory reduction</td>
+<td style="text-align: right;">AgentZip 88.55%; zswap 48.66%; KSM+zswap
+51.24%</td>
+<td>Large measured capacity gain in the 16-way cohort</td>
+<td>Single hardware/software stack and replay methodology</td>
+</tr>
+<tr class="odd">
+<td>Generate-and-filter memory reduction</td>
+<td style="text-align: right;">AgentZip 64.29%; zswap 4.86%; KSM+zswap
+21.25%</td>
+<td>Method retains advantage when candidate trajectories are more
+diverse</td>
+<td>Smaller four-way fanout and different latency trade-off</td>
+</tr>
+<tr class="even">
+<td>Rollout latency</td>
+<td style="text-align: right;">1.403× no-compression; zswap 1.436×;
+KSM+zswap 1.517×</td>
+<td>Best memory/latency point among tested compression schemes</td>
+<td>Still about 40% slower than no compression</td>
+</tr>
+<tr class="odd">
+<td>Generate-and-filter latency</td>
+<td style="text-align: right;">1.468×; zswap 1.118×; KSM+zswap
+1.159×</td>
+<td>Greater memory saving costs materially more wall time</td>
+<td>Economic break-even depends on concurrency, SLA, and memory
+price</td>
+</tr>
+<tr class="even">
+<td>Tenant boundary</td>
+<td style="text-align: right;">Dictionary, sandbox, and predictor state
+are namespaced by tenant</td>
+<td>The design acknowledges cross-tenant leakage risk</td>
+<td>No adversarial isolation or side-channel evaluation was
+reported</td>
+</tr>
+</tbody>
+</table>
+<p>The system runs on Intel Xeon Platinum 8480C processors with Linux
+5.15 and KVM/Firecracker snapshots. Sixteen rollout trajectories are
+generated with DeepSeek-V4 using different temperatures; four
+generate-and-filter candidates use role prompts for minimal patching,
+reproduction, test-guided repair, and root-cause diagnosis. Wall time
+runs from the start of concurrent replay until the last sandbox
+completes. Memory is average sandbox-owned private memory relative to a
+paired no-compression baseline.</p>
+<h3
+id="methodological-critique-and-prior-work-comparison-1">Methodological
+critique and prior-work comparison</h3>
+<p>The systems contribution is not merely a new codec. It changes three
+policies around the workload: <strong>how</strong> pages exploit
+template and sibling similarity, <strong>what</strong> pages are
+eligible, and <strong>when</strong> compression work runs. The paired
+workloads, no-compression baseline, Linux zswap, KSM+zswap, codec
+ablations, similarity measurements, dictionary sensitivity, prefetch
+studies, and explicit latency reporting make the memory claim more
+decision-useful than a headline ratio alone.</p>
+<p>The central limitation is external validity. The experiment uses one
+server architecture, one kernel family, one sandbox implementation, ten
+Python repositories, generated/replayed trajectories, and two cohort
+sizes. Production agents may execute browsers, databases, JVMs, native
+builds, GPUs, Windows applications, or long-lived interactive sessions.
+The paper reports no confidence intervals, fleet-level tail latency,
+energy, CPU contention under host oversubscription, dollar cost,
+operational recovery, or failure injection. The 1.403× and 1.468×
+wall-time multipliers are not small; whether higher density wins
+economically depends on memory saturation, throughput, queueing, SLA
+penalties, and host pricing.</p>
+<p>Security is acknowledged but not established. Tenant namespacing is a
+design control, not evidence against cross-tenant dictionary leakage,
+restore-based timing side channels, compressed-page corruption, stale
+predictor state, or isolation failure. E2B API translation shows
+interface compatibility, not behavioral compatibility for every SDK
+feature. No public AgentZip artifact means the claimed kernel/runtime
+modifications cannot yet be independently replayed.</p>
+<p>General-purpose zswap compresses pages independently; KSM requires
+exact equality; prior memory-tiering systems focus on predicting cold
+pages. AgentZip's distinctive insight is that agent fanout supplies
+approximate inter-page redundancy and long LLM-wait intervals. The
+closest enterprise implication is therefore workload-aware capacity
+management—not immediate adoption of this implementation.</p>
+<h3 id="reproducibility-and-enterprise-readiness-1">Reproducibility and
+enterprise readiness</h3>
+<p>The paper gives detailed architecture, algorithms, hardware,
+workloads, metrics, and ablations, but no AgentZip implementation or
+traces were verified. The dependency is public; the system under study
+is not. <strong>Enterprise readiness: high for measuring memory/fanout
+behavior; medium for a lab prototype on a compatible snapshot runtime;
+low for production compression pending code, multi-platform replication,
+security testing, and fleet economics. Research Utility Score:
+89/100</strong> (rigor 23/25; quantitative traceability 24/25;
+reproducibility/artifacts 12/20; enterprise relevance 15/15; prior-work
+advance 15/15). The artifact gap prevents novelty from compensating for
+missing reproducibility.</p>
+<h2
+id="deep-paper-3--confidence-needs-a-shared-reliability-semantics">Deep
+paper 3 — Confidence needs a shared reliability semantics</h2>
+<p><strong>Identity and status.</strong> <em>Calibration-Aware
+Uncertainty Cascades for Efficient Heterogeneous Model
+Collaboration</em>, Yilin Zhang, Han Jiang, Cai Xu, Ying Liu, and Wei
+Zhao; submitted September 10, 2026; arXiv:2609.11446; cs.AI; preprint
+under review; arXiv perpetual non-exclusive license. No public code,
+saved outputs, configurations, or model checkpoints were linked from the
+reviewed record. (<a
+href="https://arxiv.org/abs/2609.11446">paper</a>)</p>
+<h3 id="contribution-and-quantitative-claim-trace-2">Contribution and
+quantitative claim trace</h3>
+<p>CAUC independently calibrates each model's confidence, then uses a
+unified threshold to accept an early prediction, defer to a stronger
+model, or combine outputs when validation data indicates
+complementarity. Unlike a learned router tied to a fixed model pool, the
+intended decision interface is the calibrated probability of
+correctness.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>What it establishes</th>
+<th>What it does not establish</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Language evaluation</td>
+<td style="text-align: right;">6 multiple-choice tasks: MMLU, LogiQA,
+MathQA, MedMCQA, PIQA, SocialIQA</td>
+<td>Breadth across knowledge, logic, math, medicine, physical and social
+reasoning</td>
+<td>Open-ended generation, tool use, enterprise workflows, rare-risk
+tails</td>
+</tr>
+<tr class="even">
+<td>Average language outcome</td>
+<td style="text-align: right;">CAUC-RF 70.44% at mean nominal cost 21.73
+vs large-only 69.12% at 26.00</td>
+<td>Better mean accuracy with fewer strong-model-equivalent parameters
+invoked</td>
+<td>Dollar, latency, energy, and provider-specific cost</td>
+</tr>
+<tr class="odd">
+<td>Avoided strong-model calls</td>
+<td style="text-align: right;">About 47% on average</td>
+<td>Deferral can materially reduce endpoint use</td>
+<td>Savings after network, batching, token-length, cache, and retry
+effects</td>
+</tr>
+<tr class="even">
+<td>Language gains</td>
+<td style="text-align: right;">0.09–2.49 percentage points over
+large-only across six tasks</td>
+<td>Improvement is consistent in the reported matrix</td>
+<td>Statistical significance or stability under temporal/domain
+shift</td>
+</tr>
+<tr class="odd">
+<td>Vision outcome</td>
+<td style="text-align: right;">Relative GFLOPs 0.43–0.64 vs 1.05 for
+always-on two-model ensemble, with improved reported metrics</td>
+<td>Calibration-based cascading generalizes beyond LLMs in tested
+classification tasks</td>
+<td>Generative decoding or multimodal enterprise latency</td>
+</tr>
+<tr class="even">
+<td>Seven-model cascade</td>
+<td style="text-align: right;">Minimum cost at 4 models; 63.0% reduction
+for CAUC; 58.8% for CAUC-RF</td>
+<td>More stages can help until marginal interception is exhausted</td>
+<td>That longer cascades always help; stages 5–7 raise cost</td>
+</tr>
+<tr class="odd">
+<td>Five-model accuracy</td>
+<td style="text-align: right;">CAUC-RF 86.48% at &lt; half large-only
+cost, 0.26 points below large-only</td>
+<td>A near-endpoint trade-off exists at one ImageNet operating
+point</td>
+<td>Equivalence or acceptable slice-level risk</td>
+</tr>
+<tr class="even">
+<td>Fusion admission</td>
+<td style="text-align: right;">Complementarity sign selected the better
+fallback in all 6 displayed MMLU pairs; gains 0.05–0.56 points</td>
+<td>Validation-set complementarity can guide fixed fusion versus
+deferral</td>
+<td>A guarantee; broader points cross the zero-gain boundary</td>
+</tr>
+</tbody>
+</table>
+<p>Language quality is exact-match multiple-choice accuracy. The cost
+proxy is nominal parameter count because invocation prices were
+unavailable. Vision cost is forward-pass GFLOPs normalized to the large
+model. Calibration and cascade-validation sets are separated; when
+public test labels are unavailable, equal-size pools are drawn from
+training data for calibration and validation, while the original
+validation set serves as test.</p>
+<h3
+id="methodological-critique-and-prior-work-comparison-2">Methodological
+critique and prior-work comparison</h3>
+<p>The paper's strongest idea is semantic portability. Raw scores from a
+4B and 14B model need not mean the same thing; independent temperature
+calibration attempts to put them on a common correctness scale.
+Theoretical analysis connects calibration error to selective risk and
+bounds the regret of a unified threshold relative to a score-aware
+oracle. Using saved outputs across all policies makes method comparisons
+cheap and consistent, and separating calibration from cascade validation
+reduces direct threshold overfit.</p>
+<p>The operational cost evidence is weak. Nominal parameter count
+ignores input/output tokens, speculative decoding, batching,
+quantization, provider price, accelerator utilization, network latency,
+cold starts, rate limits, cache hits, and the fact that deferred
+examples pay for both models. Vision GFLOPs omit memory traffic and
+system overhead. Average accuracy can conceal exactly the high-risk
+slices that a cascade defers incorrectly. Reported improvements are
+sometimes tenths of a percentage point; no confidence intervals,
+significance tests, subgroup risk, abstention cost, or severe-error
+weighting are provided in the headline results.</p>
+<p>Calibration is distribution-dependent. A threshold can be reused
+after swapping a small model only if the new model is calibrated and the
+fallback setting remains unchanged; that is a strong operational
+precondition. Temperature scaling preserves class predictions and may
+align average reliability while missing local miscalibration. The
+iWildCam OOD result is useful, but it does not establish stability under
+changing prompts, policies, languages, providers, or enterprise traffic.
+Complementarity is explicitly an admission signal, not a guarantee.</p>
+<p>Learned routers such as RouteLLM, RouterDC, GraphRouter, Benchmark
+Routing, and EmbedLLM model which endpoint should answer a query but
+bind their decision to a task/model pool. Cascades such as FrugalGPT,
+margin sampling, and post-hoc embedding use staged invocation. CAUC's
+advance is to make independently calibrated confidence the shared
+interface and to choose fusion only when validation evidence suggests
+complementary errors. The enterprise translation is a calibration
+contract around a model gateway, not a license to route on self-reported
+confidence.</p>
+<h3 id="reproducibility-and-enterprise-readiness-2">Reproducibility and
+enterprise readiness</h3>
+<p>Algorithms, splits, baselines, metrics, and appendices are detailed,
+but the absence of code and saved outputs blocks exact reproduction.
+<strong>Enterprise readiness: high for an offline shadow-routing
+experiment; medium for low-risk runtime routing with continuous
+calibration and fallbacks; low for high-consequence decisions or direct
+adoption of the paper's thresholds. Research Utility Score:
+87/100</strong> (rigor 23/25; quantitative traceability 23/25;
+reproducibility/artifacts 11/20; enterprise relevance 15/15; prior-work
+advance 15/15).</p>
+<h2 id="watchlist">Watchlist</h2>
+<h3
+id="unlearning-audits-must-include-non-parameter-deployed-state">Unlearning
+audits must include non-parameter deployed state</h3>
+<p><em>Published Unlearning Numbers Move Per Checkpoint, and Not Because
+the Removed Data Survives: An Audit of 263 Released Batch-Normalized
+Checkpoints</em>, Junlong Shen and Xingyu Li; submitted September 10,
+2026; arXiv:2609.11490; cs.AI/cs.LG; preprint; arXiv perpetual
+non-exclusive license. The authors refit batch-normalization running
+statistics on retained data while holding trainable tensors
+bit-identical. Among 221 anchored checkpoints, 47 move beyond their
+release-specific margin on forget accuracy, 39 on retain accuracy, and
+40 on test accuracy. Twelve pass/fail verdicts cross; four exceed a
+measured generic recalibration budget and two do so on every replicate.
+The paper anchors artifacts to published tables, verifies weight hashes,
+controls multiplicity, reports negative results, and finds that
+method-level averages do not identify every moving checkpoint. (<a
+href="https://arxiv.org/abs/2609.11490">paper</a>)</p>
+<p><strong>Why Watchlist.</strong> The measurement discipline is
+excellent and the provenance lesson generalizes: a deployed model
+includes buffers, transforms, tokenizer/config state, and serving
+conventions—not only weights. But the effect is specific to
+batch-normalized vision checkpoints from two public unlearning releases;
+one family cannot be resolved, a predeclared plumbing control fails
+narrowly, and no public replication package was verified. Use the result
+to expand model-state inventories and checkpoint-specific audit
+contracts; monitor for independent replication across transformer state,
+quantization scales, adapters, optimizer-free deployment metadata, and
+production unlearning workflows. <strong>Research Utility Score:
+86/100</strong> (rigor 24; traceability 24; artifacts 12; enterprise
+relevance 13; advance 13).</p>
+<h3
+id="failure-clustered-harness-evolution-may-generalize-better-than-patching-every-failure">Failure-clustered
+harness evolution may generalize better than patching every failure</h3>
+<p><em>Ecdysis: Efficient and Effective Training of Runtime Harnesses
+for LLM Agents</em>, Ruiqing Yue, Yu Cui, Zhuoyu Sun, Sicheng Pan,
+Xianhong Xue, Tingyu Li, Ting Li, Wenzhuo Zhu, Yi Chen, Yifei Liu,
+Baohan Huang, Zhe Cui, Haibin Zhang, and Cong Zuo; submitted September
+10, 2026; arXiv:2609.11677; cs.SE/cs.AI; preprint; arXiv perpetual
+non-exclusive license. Ecdysis aggregates related failures across a
+round, then uses analyst, critic, engineer, and moderator roles to
+decide whether and how to modify the runtime harness. Its public README
+reports macro-average success of 59.33% for the full method versus
+46.67% for serial self-evolution and 38.17% direct, with 12.19% fewer
+evaluation tokens than self-evolution. Training-time speedups range from
+1.30× to 1.84× for the full method across two domains; the paper reports
+larger speedups without debate. (<a
+href="https://arxiv.org/abs/2609.11677">paper</a>, <a
+href="https://github.com/cuiyu-ai/Ecdysis">artifact</a>)</p>
+<p><strong>Why Watchlist.</strong> The repository contains
+implementation and tests but excludes raw benchmark data, generated
+traces, local run configurations, and private run artifacts; no
+repository license file was found. Evaluation spans two simulated
+customer-service domains and five open models, with small held-out
+subsets and wide variability. Multi-agent debate can add cost and
+correlated judgment without guaranteeing correctness. Keep the
+insight—distinguish harness defects from model limitations and validate
+changes on held-out tasks—but wait for complete artifacts, stronger
+baselines, independent reproduction, regression/security tests, and more
+varied tool environments. <strong>Research Utility Score:
+80/100</strong> (rigor 20; traceability 21; artifacts 15; enterprise
+relevance 14; advance 10).</p>
+<h2 id="cross-paper-synthesis">Cross-paper synthesis</h2>
+<p>The reviewed work converges on six composition rules:</p>
+<ol type="1">
+<li><strong>Safety must be tested after context composition.</strong>
+RAG-Safety-Bench shows that a generator's baseline refusal behavior does
+not certify the combined generator-plus-retrieval system.</li>
+<li><strong>Confidence must be calibrated after model
+selection.</strong> CAUC makes model-specific scores comparable only
+through held-out calibration; a raw threshold is not a stable
+cross-model contract.</li>
+<li><strong>Cost must be measured after execution composition.</strong>
+AgentZip can save far more memory while adding roughly 40–47% wall time;
+capacity, latency, and throughput must be evaluated together.</li>
+<li><strong>State includes what inference reads.</strong> The unlearning
+audit shows that bit-identical weights do not imply identical deployed
+behavior when fitted buffers differ.</li>
+<li><strong>Failures are evidence, not automatic change
+requests.</strong> Ecdysis is most valuable as a warning that a harness
+can overfit the current model's weaknesses.</li>
+<li><strong>Every aggregate needs a slice and a control.</strong> Safety
+varies by model and harm category, compression varies by fanout pattern,
+and cascade value depends on calibration, fallback cost, and
+distribution.</li>
+</ol>
+<p><strong>Independent Analysis.</strong> These are all failures of
+inherited properties. “Safe,” “confident,” “cheap,” “unlearned,” and
+“improved” are not compositional labels. An enterprise AI platform needs
+explicit contracts at the retrieval boundary, model-gateway boundary,
+sandbox boundary, deployed-state boundary, and harness-update boundary.
+Each contract should name the input distribution, actor, policy,
+evaluator, state version, dependency path, cost units, uncertainty,
+owner, and rollback.</p>
+<h2
+id="visual-1--composition-contracts-across-an-enterprise-ai-stack">Visual
+1 — composition contracts across an enterprise AI stack</h2>
+<pre class="text"><code>APPLICATION / HUMAN WORKFLOW
+          │ request + identity + purpose
+          ▼
+RETRIEVAL / KNOWLEDGE ── provenance ── content-risk labels ── authorization
+          │ context package                         │
+          │                         RAG safety qualification
+          ▼                                         │
+MODEL GATEWAY ── per-model calibration ── cascade policy ── cost/latency budget
+          │ selected generation                     │
+          │                         shadow replay + drift gate
+          ▼                                         │
+AGENT ORCHESTRATION ── harness version ── tool policy ── human-review boundary
+          │ sandbox cohort                          │
+          ▼                                         │
+SANDBOX / INFRASTRUCTURE ── tenant isolation ── memory/fault telemetry ── rollback
+          │ execution trace                         │
+          ▼                                         ▼
+EVALUATION &amp; OBSERVABILITY ───── outcome + slice + cost + evaluator lineage
+          │
+          ├── pass: bounded authority, owner, rollback, continuous checks
+          └── fail/unknown: diagnostic only; no production promotion</code></pre>
+<h2 id="visual-2--evidence-strength-and-deployment-distance">Visual 2 —
+evidence strength and deployment distance</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Signal</th>
+<th>Strongest verified evidence</th>
+<th>Safe near-term use</th>
+<th>Largest deployment gap</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Retrieval-specific safety degradation</td>
+<td>Controlled four-condition benchmark; five models; human-audited
+judges; EMNLP main</td>
+<td>Internal RAG safety replay and policy-gap discovery</td>
+<td>Proprietary corpora, closed models, multilingual and privacy/IP
+risks, repeated runs</td>
+</tr>
+<tr class="even">
+<td>Calibrated model cascading</td>
+<td>Six language and four vision settings; theory plus saved-output
+comparisons</td>
+<td>Offline or shadow routing</td>
+<td>Real dollar/latency costs, drift, severe-error slices, public
+artifacts</td>
+</tr>
+<tr class="odd">
+<td>Cohort-aware sandbox compression</td>
+<td>10 repositories; two fanout patterns; Linux baselines; memory and
+latency measurements</td>
+<td>Memory/fanout observability and lab capacity benchmark</td>
+<td>Public code, heterogeneous workloads, tail latency, security, fleet
+economics</td>
+</tr>
+<tr class="even">
+<td>Non-parameter model-state audit</td>
+<td>263 public checkpoints; hash controls; per-checkpoint and family
+analyses</td>
+<td>Expand deployment manifests and audit state beyond weights</td>
+<td>Transfer beyond batch normalization and public vision
+unlearning</td>
+</tr>
+<tr class="odd">
+<td>Failure-clustered harness evolution</td>
+<td>Two domains, five models, held-out evaluation, partial code
+release</td>
+<td>Offline candidate generation with regression gates</td>
+<td>Complete artifacts, security evaluation, broader environments,
+independent replication</td>
+</tr>
+</tbody>
+</table>
+<h2 id="enterprise-ai-enhancement-backlog">Enterprise AI Enhancement
+Backlog</h2>
+<h3 id="priority-method-and-uncertainty">Priority method and
+uncertainty</h3>
+<p>The <strong>Future Enterprise AI Priority Score</strong> is a
+transparent decision aid, not a measured probability: strategic/business
+value 25%, technical leverage 20%, evidence strength 20%, enterprise
+readiness 15%, feasibility 10%, and risk-adjusted differentiation 10%.
+Component values are analyst judgments tied to the reviewed evidence.
+Decision bands encode the next safe action rather than a production
+commitment. Differences smaller than roughly three points should be
+treated as unstable until internal data, architecture, risk tolerance,
+workflow, cost, and adoption constraints are known.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: right;">#</th>
+<th>Enhancement</th>
+<th>Decision band</th>
+<th style="text-align: right;">Strategic</th>
+<th style="text-align: right;">Leverage</th>
+<th style="text-align: right;">Evidence</th>
+<th style="text-align: right;">Readiness</th>
+<th style="text-align: right;">Feasibility</th>
+<th style="text-align: right;">Differentiation</th>
+<th style="text-align: right;">Weighted total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td>Four-condition RAG safety qualification</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">96</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;"><strong>92.4</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td>Calibrated cascade shadow router</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;"><strong>89.9</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td>Sandbox lifecycle and cohort observability</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">89</td>
+<td style="text-align: right;">87</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;"><strong>89.0</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td>Retrieval provenance and content-risk policy plane</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">96</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">72</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;"><strong>89.5</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td>Model calibration and routing-contract registry</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">89</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">79</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;"><strong>88.9</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td>Safety-evaluator disagreement and human arbitration</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">89</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">81</td>
+<td style="text-align: right;">73</td>
+<td style="text-align: right;">89</td>
+<td style="text-align: right;"><strong>87.9</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td>Complete deployed-state manifest</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;"><strong>87.4</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td>Tenant-isolated cohort compression runtime</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">58</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;"><strong>80.2</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9</td>
+<td>Failure-clustered harness evolution workbench</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">87</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">61</td>
+<td style="text-align: right;">67</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;"><strong>78.2</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">10</td>
+<td>Raw-confidence production routing</td>
+<td>Deprioritize for Now</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">62</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;"><strong>56.1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="prototype-soon">Prototype Soon</h3>
+<h4 id="1-four-condition-rag-safety-qualification--924100">1.
+Four-condition RAG safety qualification — 92.4/100</h4>
+<ul>
+<li><strong>Category:</strong> RAG &amp; Knowledge / Safety &amp;
+Governance / Evaluation &amp; Observability.</li>
+<li><strong>Research signal and support:</strong> <strong>Paper
+Fact</strong> — RAG-Safety-Bench holds queries constant and reports
+substantially higher unsafe-answer accuracy when answer-bearing context
+is supplied across all five models. On-topic context is model-dependent;
+random safe context is safest. Support: RAG-Safety-Bench.</li>
+<li><strong>Enterprise problem or opportunity:</strong> Base-model
+safety tests can miss unsafe behavior created by retrieved context,
+while poor retrieval can falsely make a system appear safe.</li>
+<li><strong>Proposed future capability:</strong> <strong>Enterprise
+Inference</strong> — a controlled evaluation service creates no-context,
+answer-bearing, on-topic/non-answer-bearing, and random-control context
+packages from approved synthetic documents. It measures harmful-answer
+accuracy, refusal reason, safety-judge disagreement, human adjudication,
+and slice-level deltas before a RAG change can progress.</li>
+<li><strong>Likely architectural placement:</strong>
+retrieval/knowledge, evaluation, observability, security/governance,
+human-review layer.</li>
+<li><strong>Expected business value:</strong> risk reduction,
+reliability, quality, customer trust. <strong>Technical value:</strong>
+isolates generator safety from retriever miss rate and distinguishes
+information availability from context effects.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Peer-reviewed benchmark with partial public reproduction package; no
+proprietary-corpus or closed-model validation.
+<strong>Confidence:</strong> High in the need for composition-specific
+testing; Moderate in transfer of benchmark rates.
+<strong>Horizon:</strong> Now. <strong>Effort:</strong> M.</li>
+<li><strong>Dependencies and prerequisites:</strong> approved harm
+taxonomy; synthetic/read-only corpus; model and retriever version
+pinning; output quarantine; multiple judges; trained human reviewers;
+legal, privacy, and safety review.</li>
+<li><strong>Key risks:</strong> exposure to harmful content, evaluator
+blind spots, benchmark leakage, policy mismatch, sensitive output
+retention, annotator wellbeing, false assurance from a narrow taxonomy,
+dual-use misuse.</li>
+<li><strong>Build / Buy / Partner:</strong> Build the policy-specific
+harness and evidence ledger; reuse open benchmark structure under rights
+review; partner with safety/legal teams for taxonomy and review
+procedures. Vendor safety scores alone are insufficient.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Run
+50–100 approved synthetic cases across four conditions in an isolated
+account; block all external actions and user delivery; compare at least
+two judges with human adjudication of disagreement.</li>
+<li><strong>Success metrics and stop conditions:</strong> success
+requires complete provenance, reproducible deltas, ≥90% human–judge
+agreement on audited high-risk labels, category-level reporting, and
+zero leakage from quarantine. Stop if harmful outputs escape, evaluator
+disagreement is not adjudicable, corpus rights are unclear, or results
+cannot be reproduced.</li>
+<li><strong>Roadmap trigger:</strong> two representative internal
+domains reproduce a material retrieval-specific delta and the control
+materially changes a launch or policy decision; internal enterprise
+context still required includes corpus classes, risk appetite, user
+populations, jurisdictions, and incident response.</li>
+</ul>
+<h4 id="2-calibrated-cascade-shadow-router--899100">2. Calibrated
+cascade shadow router — 89.9/100</h4>
+<ul>
+<li><strong>Category:</strong> Model &amp; Inference / Evaluation &amp;
+Observability / MLOps &amp; Platform.</li>
+<li><strong>Research signal and support:</strong> <strong>Paper
+Fact</strong> — CAUC-RF averages 70.44% accuracy at nominal cost 21.73
+versus 69.12% at 26.00 for large-only inference and avoids about 47% of
+strong-model calls; longer cascades stop helping after four to five
+stages in the reported vision study. Support: CAUC.</li>
+<li><strong>Enterprise problem or opportunity:</strong> Static or
+raw-confidence routing can overspend, misroute, and become invalid after
+a model swap.</li>
+<li><strong>Proposed future capability:</strong> <strong>Enterprise
+Inference</strong> — a shadow model-gateway policy calibrates each
+endpoint independently, stores the calibration distribution and version,
+computes a unified selective-risk threshold, and compares decisions with
+a single-model baseline. It has no runtime authority until held-out
+quality, severe-error, latency, and cost gates pass.</li>
+<li><strong>Likely architectural placement:</strong> model gateway,
+orchestration, evaluation, observability, infrastructure.</li>
+<li><strong>Expected business value:</strong> cost, speed, quality,
+reliability. <strong>Technical value:</strong> decouples the decision
+interface from raw model-specific score scales and makes model
+replacement testable.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Multi-benchmark preprint with theoretical support; no public artifact
+and cost is a proxy. <strong>Confidence:</strong> Moderate-High for
+shadow evaluation; Low-Moderate for production savings.
+<strong>Horizon:</strong> Now. <strong>Effort:</strong> M.</li>
+<li><strong>Dependencies and prerequisites:</strong> two approved
+endpoints; correct-answer or utility labels; calibration/validation/test
+splits; realized token, dollar, latency, retry, and cache telemetry;
+fallback policy; drift monitor.</li>
+<li><strong>Key risks:</strong> miscalibration under drift, correlated
+model errors, duplicated cost on deferrals, latency tails, vendor score
+changes, class imbalance, hidden high-severity regressions, threshold
+gaming.</li>
+<li><strong>Build / Buy / Partner:</strong> Build the calibration and
+decision contract; buy model endpoints as interchangeable providers if
+appropriate. Routing vendors may supply infrastructure, but
+enterprise-specific labels and thresholds should remain governed
+internally.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Replay
+1,000 historical low-risk labeled requests or the largest privacy-safe
+sample available; route only in shadow; compare raw confidence,
+calibrated cascade, learned router if available, and single-model
+controls.</li>
+<li><strong>Success metrics and stop conditions:</strong> predeclared
+non-inferiority on overall and critical slices; lower realized dollar
+cost; no p95 latency breach; stable expected calibration error; zero
+increase in severe mistakes. Stop on any critical-slice regression,
+unstable thresholds, or savings that disappear after end-to-end
+costs.</li>
+<li><strong>Roadmap trigger:</strong> stable performance across two
+time-separated holdouts and one model replacement, with measured—not
+proxy—economics; internal context required includes SLA, model
+contracts, quality loss budget, traffic mix, and failure cost.</li>
+</ul>
+<h4 id="3-sandbox-lifecycle-and-cohort-observability--890100">3. Sandbox
+lifecycle and cohort observability — 89.0/100</h4>
+<ul>
+<li><strong>Category:</strong> MLOps &amp; Platform / Agentic AI /
+Evaluation &amp; Observability.</li>
+<li><strong>Research signal and support:</strong> <strong>Paper
+Fact</strong> — AgentZip finds 75.87–96.26% same-content sibling pages
+over rollout progress and large template-delta opportunity, while memory
+and wall time move in different directions. Support: AgentZip.</li>
+<li><strong>Enterprise problem or opportunity:</strong> Agent fanout can
+exhaust memory before compute, but teams may lack per-cohort evidence
+needed to choose density, compression, or scheduling controls.</li>
+<li><strong>Proposed future capability:</strong> <strong>Enterprise
+Inference</strong> — add low-overhead telemetry for private memory,
+copy-on-write growth, cohort similarity estimates, LLM-wait versus
+tool-execution phases, page-restores, queueing, tail latency, tenant ID,
+and cost allocation. No compression or cross-tenant sharing is
+enabled.</li>
+<li><strong>Likely architectural placement:</strong> agent layer,
+orchestration, observability, infrastructure, security/governance.</li>
+<li><strong>Expected business value:</strong> cost, reliability,
+capacity, speed. <strong>Technical value:</strong> distinguishes
+memory-bound from compute-bound fanout and creates the evidence required
+for safe optimization.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+single-stack systems evidence; telemetry is lower risk than the
+compression mechanism. <strong>Confidence:</strong> High that
+measurement is valuable; Moderate that the same redundancy exists
+internally. <strong>Horizon:</strong> Now. <strong>Effort:</strong>
+M.</li>
+<li><strong>Dependencies and prerequisites:</strong> sandbox runtime
+hooks; cohort and tenant identifiers; privacy-preserving page
+fingerprints or aggregate counters; performance budget; retention
+controls; workload owner.</li>
+<li><strong>Key risks:</strong> side-channel creation, sensitive memory
+fingerprints, overhead, cardinality explosion, inaccurate attribution,
+cross-tenant joins, telemetry retention risk.</li>
+<li><strong>Build / Buy / Partner:</strong> Build a vendor-neutral
+telemetry schema; buy runtime-export capabilities where available. Do
+not require kernel modification for the first experiment.</li>
+<li><strong>Minimum reversible validation experiment:</strong>
+Instrument one non-production software-agent benchmark for one week or
+equivalent replay volume; sample metadata only; keep tenants isolated
+and disable compression.</li>
+<li><strong>Success metrics and stop conditions:</strong> &lt;2% runtime
+overhead, complete cohort attribution, identified memory saturation
+events, stable similarity estimates, and no sensitive payload capture.
+Stop on any cross-tenant data exposure or &gt;5% overhead.</li>
+<li><strong>Roadmap trigger:</strong> sustained memory saturation with
+high within-tenant redundancy and a credible density benefit after
+tail-latency accounting; internal context required includes sandbox
+technology, tenancy model, workload mix, SLA, and host economics.</li>
+</ul>
+<h3 id="prepare-foundations">Prepare Foundations</h3>
+<h4 id="4-retrieval-provenance-and-content-risk-policy-plane--895100">4.
+Retrieval provenance and content-risk policy plane — 89.5/100</h4>
+<ul>
+<li><strong>Category:</strong> RAG &amp; Knowledge / Data &amp;
+Knowledge Infrastructure / Safety &amp; Governance / AI Security.</li>
+<li><strong>Research signal and support:</strong> <strong>Paper
+Fact</strong> — answer-bearing retrieved information, not long context
+alone, is the consistent risk driver in RAG-Safety-Bench; Wikipedia
+provenance enabled controlled condition construction. Support:
+RAG-Safety-Bench.</li>
+<li><strong>Enterprise problem or opportunity:</strong> Context is often
+assembled without a machine-readable record of source, sensitivity,
+authorization, topic risk, answer-bearing status, freshness, or
+transformation history.</li>
+<li><strong>Proposed future capability:</strong> <strong>Enterprise
+Inference</strong> — every retrieved chunk receives an immutable
+provenance envelope and policy labels; the retrieval layer emits a
+signed context manifest to the model gateway. Policy can filter, redact,
+re-rank, require a safer model, or route to human review based on user
+identity, purpose, source, and content risk.</li>
+<li><strong>Likely architectural placement:</strong>
+retrieval/knowledge, data platform, model gateway,
+security/governance.</li>
+<li><strong>Expected business value:</strong> risk reduction, quality,
+auditability, customer experience. <strong>Technical value:</strong>
+makes context composition inspectable and supports deterministic safety
+replay.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+conceptual link; paper does not implement enterprise authorization or
+provenance controls. <strong>Confidence:</strong> High on foundation
+value; Moderate on automated content-risk accuracy.
+<strong>Horizon:</strong> 3–6 months. <strong>Effort:</strong> L.</li>
+<li><strong>Dependencies and prerequisites:</strong> content inventory;
+identity/authorization; data classification; lineage IDs; policy engine;
+document/chunk versioning; legal basis and retention rules.</li>
+<li><strong>Key risks:</strong> misclassification, stale permissions,
+metadata tampering, policy latency, source-linkability privacy,
+overblocking, incomplete lineage across transformations.</li>
+<li><strong>Build / Buy / Partner:</strong> Build the policy contract
+and lineage model around enterprise requirements; buy
+classifiers/connectors selectively; partner with data governance and
+security owners.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Generate
+manifests for one read-only corpus and run policy decisions in
+observe-only mode; compare with human review on risky and benign
+samples.</li>
+<li><strong>Success metrics and stop conditions:</strong> &gt;99%
+provenance completeness, no authorization regression, measured policy
+precision/recall by risk class, bounded latency, reproducible context
+reconstruction. Stop if missing lineage or stale ACLs can reach the
+model.</li>
+<li><strong>Roadmap trigger:</strong> provenance explains or prevents a
+material share of RAG safety or quality failures in two pilots; internal
+context required includes data ownership, access models, regulated
+classes, retention, and acceptable false-positive rates.</li>
+</ul>
+<h4 id="5-model-calibration-and-routing-contract-registry--889100">5.
+Model calibration and routing-contract registry — 88.9/100</h4>
+<ul>
+<li><strong>Category:</strong> Model &amp; Inference / MLOps &amp;
+Platform / Evaluation &amp; Observability.</li>
+<li><strong>Research signal and support:</strong> <strong>Paper
+Fact</strong> — CAUC requires each model to be calibrated independently
+and ties threshold validity to the calibration distribution and fallback
+setting. Support: CAUC.</li>
+<li><strong>Enterprise problem or opportunity:</strong> Confidence
+thresholds and router behavior can silently outlive the model, prompt,
+endpoint, or traffic distribution that made them valid.</li>
+<li><strong>Proposed future capability:</strong> <strong>Enterprise
+Inference</strong> — a registry versions model endpoint, prompt,
+decoding settings, calibration data, label contract, calibration method,
+reliability curves, slice metrics, fallback, cost model, threshold,
+owner, approval, and expiry. Gateway changes invalidate dependent
+routing contracts automatically.</li>
+<li><strong>Likely architectural placement:</strong> model gateway,
+developer platform, evaluation, observability, security/governance.</li>
+<li><strong>Expected business value:</strong> reliability, cost control,
+speed, risk reduction. <strong>Technical value:</strong> turns routing
+from configuration into a testable, expiring evidence object.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Standard calibration methods exist; portable enterprise contracts are
+analysis, not paper evidence. <strong>Confidence:</strong> High.
+<strong>Horizon:</strong> 3–6 months. <strong>Effort:</strong> M.</li>
+<li><strong>Dependencies and prerequisites:</strong> model registry,
+dataset/version registry, evaluation pipeline, change events, identity,
+approval workflow, cost telemetry.</li>
+<li><strong>Key risks:</strong> stale labels, false precision,
+calibration-data leakage, excessive invalidation, governance
+bottlenecks, score unavailability from providers.</li>
+<li><strong>Build / Buy / Partner:</strong> Build the contract schema
+and invalidation rules; integrate purchased registry or gateway products
+if they expose required lineage.</li>
+<li><strong>Minimum reversible validation experiment:</strong> register
+one existing threshold and deliberately change one dependency; verify
+the contract expires and shadow evaluation catches the change.</li>
+<li><strong>Success metrics and stop conditions:</strong> 100%
+dependency trace, automatic invalidation, reproducible curves, owner and
+expiry present, no unregistered threshold in the pilot. Stop if routing
+can bypass contract checks.</li>
+<li><strong>Roadmap trigger:</strong> registry prevents one stale or
+invalid routing policy and operates within delivery SLAs; internal
+context required includes change-management cadence and ownership
+model.</li>
+</ul>
+<h4
+id="6-safety-evaluator-disagreement-and-human-arbitration--879100">6.
+Safety-evaluator disagreement and human arbitration — 87.9/100</h4>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability / Safety
+&amp; Governance / Human-AI Workflow.</li>
+<li><strong>Research signal and support:</strong> <strong>Paper
+Fact</strong> — three RAG safety judges reach only moderate four-way
+agreement with the accuracy label (Fleiss κ 0.56) and differ
+substantially by harm category; refusal classification is noisier than
+answer-accuracy classification. Support: RAG-Safety-Bench.</li>
+<li><strong>Enterprise problem or opportunity:</strong> A single safety
+score can hide policy disagreement and systematic category blind
+spots.</li>
+<li><strong>Proposed future capability:</strong> <strong>Enterprise
+Inference</strong> — run policy-diverse evaluators, preserve per-judge
+labels and rationales, compute disagreement by category and slice, and
+escalate material disagreements to trained reviewers. Promotion
+decisions use a versioned adjudication rule, not majority vote
+alone.</li>
+<li><strong>Likely architectural placement:</strong> evaluation,
+observability, security/governance, human-review layer.</li>
+<li><strong>Expected business value:</strong> risk reduction, quality,
+auditability. <strong>Technical value:</strong> exposes evaluator
+dependence and supplies labeled disagreement data for calibration.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Direct
+benchmark evidence plus established human-review practice; policy
+transfer must be validated. <strong>Confidence:</strong> High.
+<strong>Horizon:</strong> 3–6 months. <strong>Effort:</strong> L.</li>
+<li><strong>Dependencies and prerequisites:</strong> risk taxonomy;
+independent evaluators; reviewer tooling; escalation SLAs;
+sensitive-content handling; wellbeing safeguards; appeal process.</li>
+<li><strong>Key risks:</strong> correlated judges, reviewer harm,
+inconsistent adjudication, high cost, privacy exposure, automation bias,
+policy churn.</li>
+<li><strong>Build / Buy / Partner:</strong> Partner for specialized
+moderation where appropriate; build enterprise policy mapping,
+disagreement ledger, and adjudication workflow.</li>
+<li><strong>Minimum reversible validation experiment:</strong>
+double-score 200 quarantined outputs with two judges and two blinded
+humans; measure per-category agreement, reversal rate, time, and
+cost.</li>
+<li><strong>Success metrics and stop conditions:</strong> adjudicated
+gold set, category-level κ/precision/recall, bounded review time,
+explicit appeal path, zero uncontrolled exposure. Stop if reviewer
+safety or data handling cannot be assured.</li>
+<li><strong>Roadmap trigger:</strong> disagreement changes ≥5% of
+material decisions or reveals a systematic category blind spot; internal
+context required includes review capacity, labor policy, jurisdictions,
+and severity thresholds.</li>
+</ul>
+<h4 id="7-complete-deployed-state-manifest--874100">7. Complete
+deployed-state manifest — 87.4/100</h4>
+<ul>
+<li><strong>Category:</strong> MLOps &amp; Platform / Safety &amp;
+Governance / Data &amp; Knowledge Infrastructure.</li>
+<li><strong>Research signal and support:</strong> <strong>Paper
+Fact</strong> — refitting batch-normalization buffers at bit-identical
+weights moves published metrics for dozens of released unlearning
+checkpoints. Support: unlearning checkpoint audit.</li>
+<li><strong>Enterprise problem or opportunity:</strong> Weight hashes
+alone cannot reproduce or audit inference behavior when buffers,
+tokenizers, transforms, adapters, quantization scales, prompts, or
+serving code differ.</li>
+<li><strong>Proposed future capability:</strong> <strong>Enterprise
+Inference</strong> — an immutable deployment manifest hashes and
+versions every inference-relevant artifact and convention, records its
+data provenance, and binds the manifest to evaluation and release
+decisions. Promotion fails closed on missing state.</li>
+<li><strong>Likely architectural placement:</strong> model gateway, data
+platform, MLOps/platform, security/governance, developer platform.</li>
+<li><strong>Expected business value:</strong> reliability, auditability,
+risk reduction, faster incident diagnosis. <strong>Technical
+value:</strong> makes behavioral reproduction and model-update diffing
+possible beyond weights.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+evidence for batch-normalized vision unlearning; broader state inventory
+is analytical generalization. <strong>Confidence:</strong> High on
+manifest need; Moderate on which fields are material by stack.
+<strong>Horizon:</strong> 3–6 months. <strong>Effort:</strong> M.</li>
+<li><strong>Dependencies and prerequisites:</strong> artifact registry;
+cryptographic hashing; deployment pipeline hooks; data lineage;
+configuration inventory; access control.</li>
+<li><strong>Key risks:</strong> false completeness, secrets in
+manifests, version drift, performance overhead, non-deterministic
+dependencies, vendor opacity.</li>
+<li><strong>Build / Buy / Partner:</strong> Build the manifest contract;
+integrate existing registries and SBOM/provenance tools; require vendors
+to expose equivalent attestations.</li>
+<li><strong>Minimum reversible validation experiment:</strong>
+reconstruct one deployed evaluation from a clean environment using only
+the manifest; compare outputs and hashes.</li>
+<li><strong>Success metrics and stop conditions:</strong> all
+inference-relevant artifacts resolved, deterministic or bounded replay,
+missing-state gate works, incident diff produced. Stop if sensitive
+values are exposed or key state remains unversioned.</li>
+<li><strong>Roadmap trigger:</strong> replay identifies a behaviorally
+material non-weight difference or reduces incident diagnosis time;
+internal context required includes model types, serving layers, and
+regulatory retention.</li>
+</ul>
+<h3 id="monitor-for-maturity">Monitor for Maturity</h3>
+<h4 id="8-tenant-isolated-cohort-compression-runtime--802100">8.
+Tenant-isolated cohort compression runtime — 80.2/100</h4>
+<ul>
+<li><strong>Category:</strong> MLOps &amp; Platform / Infrastructure /
+Agentic AI.</li>
+<li><strong>Research signal and support:</strong> <strong>Paper
+Fact</strong> — AgentZip reports 64.29–88.55% average sandbox-owned
+memory reduction and substantial sibling/template redundancy, but
+1.403–1.468× wall time versus no compression. Support: AgentZip.</li>
+<li><strong>Enterprise problem or opportunity:</strong> Memory may cap
+agent concurrency; workload-aware compression could raise density.</li>
+<li><strong>Proposed future capability:</strong> <strong>Enterprise
+Inference</strong> — within a single trust boundary, group sibling
+sandboxes by task/template, compress profitable pages using template
+deltas and cohort dictionaries, prefetch predicted restores, and
+schedule compression during model-wait phases. Cross-tenant dictionaries
+remain forbidden.</li>
+<li><strong>Likely architectural placement:</strong> orchestration,
+infrastructure, security/governance, observability.</li>
+<li><strong>Expected business value:</strong> cost, capacity,
+throughput. <strong>Technical value:</strong> exploits workload-specific
+redundancy general-purpose Linux mechanisms miss.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Detailed unreleased prototype on one stack; no independent replication
+or security evaluation. <strong>Confidence:</strong> Moderate on
+opportunity; Low on production design. <strong>Horizon:</strong> 12+
+months. <strong>Effort:</strong> XL.</li>
+<li><strong>Dependencies and prerequisites:</strong> favorable
+observability pilot; compatible snapshot runtime; kernel/runtime
+expertise; tenant isolation proof; fault/prefetch telemetry; rollback;
+capacity economics.</li>
+<li><strong>Key risks:</strong> timing side channels, dictionary
+leakage, corruption, restore storms, p99 latency, CPU contention, kernel
+instability, unsupported workload classes, operational lock-in.</li>
+<li><strong>Build / Buy / Partner:</strong> Partner with sandbox/runtime
+vendors after artifact release; avoid custom kernel investment until
+workload economics are verified.</li>
+<li><strong>Minimum reversible validation experiment:</strong>
+trace-driven simulator or isolated lab replay using synthetic memory
+pages; compare no compression, zswap, KSM+zswap, and candidate
+mechanisms with no customer data.</li>
+<li><strong>Success metrics and stop conditions:</strong> positive
+cost-throughput benefit, p95/p99 within budget, no cross-tenant state,
+safe rollback, stable host. Stop on any isolation uncertainty, &gt;10%
+SLA breach, or negative total cost.</li>
+<li><strong>Roadmap trigger:</strong> independent code release and
+replication plus two internal workload classes showing memory-bound
+economics; internal context required includes host fleet, tenancy, SLA,
+workloads, and security threat model.</li>
+</ul>
+<h4 id="9-failure-clustered-harness-evolution-workbench--782100">9.
+Failure-clustered harness evolution workbench — 78.2/100</h4>
+<ul>
+<li><strong>Category:</strong> Agentic AI / AI Software Engineering /
+Developer Platform / Evaluation &amp; Observability.</li>
+<li><strong>Research signal and support:</strong> <strong>Paper
+Fact</strong> — Ecdysis reports higher held-out task success and lower
+token use than serial self-evolution by aggregating failures and
+debating changes, while warning against model accommodation. Support:
+Ecdysis.</li>
+<li><strong>Enterprise problem or opportunity:</strong> Teams can patch
+agent prompts and tools after individual failures, creating brittle
+model-specific harnesses and duplicated engineering work.</li>
+<li><strong>Proposed future capability:</strong> <strong>Enterprise
+Inference</strong> — cluster failure traces, propose versioned harness
+changes with critic review, stage patches in an isolated branch, and
+require regression, security, cost, and cross-model tests before a human
+approves merge. No self-modification reaches production directly.</li>
+<li><strong>Likely architectural placement:</strong> developer platform,
+agent layer, orchestration, evaluation, human-review layer.</li>
+<li><strong>Expected business value:</strong> productivity, quality,
+speed, reliability. <strong>Technical value:</strong> converts scattered
+failures into auditable change proposals and tests generalization.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Partial
+code, two simulated domains, excluded traces/configs, no repo license.
+<strong>Confidence:</strong> Moderate-Low. <strong>Horizon:</strong>
+6–12 months. <strong>Effort:</strong> L.</li>
+<li><strong>Dependencies and prerequisites:</strong> structured traces;
+failure taxonomy; secure staging; regression estate; code review;
+prompt/tool versioning; cross-model holdout; rollback.</li>
+<li><strong>Key risks:</strong> correlated agent debate, prompt
+injection in traces, insecure patches, overfitting, cost growth, silent
+policy change, accountability diffusion, license uncertainty.</li>
+<li><strong>Build / Buy / Partner:</strong> Build the gated workflow
+around existing CI and review; treat research code as reference only
+pending license and artifact completion.</li>
+<li><strong>Minimum reversible validation experiment:</strong> produce
+suggestions from a frozen historical failure set; prevent automatic
+application; compare suggestions with human diagnoses and evaluate
+accepted patches offline.</li>
+<li><strong>Success metrics and stop conditions:</strong> fewer
+duplicate fixes, higher held-out pass rate, zero security regression,
+traceable rationale, reviewer acceptance, bounded token cost. Stop if
+patches exploit benchmarks, weaken policy, or fail cross-model
+holdout.</li>
+<li><strong>Roadmap trigger:</strong> two independent domains show
+significant held-out gains and security review approves the staging
+model; internal context required includes SDLC, tool permissions,
+owners, and acceptable autonomy.</li>
+</ul>
+<h3 id="deprioritize-for-now">Deprioritize for Now</h3>
+<h4 id="10-raw-confidence-production-routing--561100">10. Raw-confidence
+production routing — 56.1/100</h4>
+<ul>
+<li><strong>Category:</strong> Model &amp; Inference / MLOps &amp;
+Platform.</li>
+<li><strong>Research signal and support:</strong> <strong>Paper
+Fact</strong> — CAUC's premise and calibration plots show that
+uncalibrated confidence lacks common reliability semantics across
+heterogeneous models. Support: CAUC.</li>
+<li><strong>Enterprise problem or opportunity:</strong> A raw-score
+threshold is easy to implement and may appear to reduce cost.</li>
+<li><strong>Proposed future capability:</strong>
+<strong>Uncertainty</strong> — route live traffic directly on provider
+or model confidence without a held-out calibration contract. This item
+is recorded explicitly to reject it under current evidence.</li>
+<li><strong>Likely architectural placement:</strong> model gateway.</li>
+<li><strong>Expected business value:</strong> possible short-term cost
+and speed. <strong>Technical value:</strong> low; simplicity is
+outweighed by unbounded semantic drift.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Evidence argues against the premise for heterogeneous models.
+<strong>Confidence:</strong> High in deprioritization.
+<strong>Horizon:</strong> 12+ months or never without calibration.
+<strong>Effort:</strong> S.</li>
+<li><strong>Dependencies and prerequisites:</strong> representative
+labels and calibration would transform this into item 2, so the raw
+version has no valid prerequisite path.</li>
+<li><strong>Key risks:</strong> silent quality regression, drift,
+vendor-score incompatibility, severe-error concentration,
+non-reproducible decisions, false confidence.</li>
+<li><strong>Build / Buy / Partner:</strong> Do not build or buy as a
+production control. Use a vendor score only as one feature inside a
+governed, calibrated evaluation.</li>
+<li><strong>Minimum reversible validation experiment:</strong> offline
+comparison of raw versus calibrated reliability curves; no live
+routing.</li>
+<li><strong>Success metrics and stop conditions:</strong> raw scores
+would need stable calibration and slice non-inferiority across time and
+model changes; if achieved, the design is no longer raw-confidence
+routing. Stop immediately on calibration drift or high-severity
+misroutes.</li>
+<li><strong>Roadmap trigger:</strong> none under the current definition;
+an implementation case requires the calibrated registry and
+shadow-router evidence described above. Internal context cannot cure
+missing semantics without calibration.</li>
+</ul>
+<h2 id="enterprise-ai-architecture-implications">Enterprise AI
+Architecture Implications</h2>
+<p><strong>Independent Analysis.</strong> Over 12–24 months, the
+strongest reviewed signals favor an enterprise AI architecture with
+explicit composition contracts rather than a single “AI platform” trust
+boundary.</p>
+<ol type="1">
+<li><strong>Retrieval becomes a governed context compiler.</strong>
+Knowledge systems should emit a versioned context manifest containing
+document/chunk identity, provenance, authorization result, freshness,
+transformations, and content-risk labels. This unlocks RAG safety
+replay, post-incident reconstruction, policy enforcement, and grounded
+evaluation.</li>
+<li><strong>The model gateway becomes a calibrated decision
+plane.</strong> Endpoint identity, prompt/decoding configuration,
+calibration evidence, routing threshold, fallback, and cost model are
+versioned together. A model or traffic change invalidates dependent
+contracts and triggers shadow requalification.</li>
+<li><strong>Evaluation becomes multi-instrument.</strong> Accuracy,
+harmfulness, refusal, latency, cost, memory, and severe-error slices
+remain separate. Evaluator identity, policy version, judge disagreement,
+human adjudication, and label provenance are first-class—not hidden
+behind a composite score.</li>
+<li><strong>Agent orchestration and infrastructure share lifecycle
+telemetry.</strong> Task fanout, cohort identity, tenant boundary,
+model-wait phases, tool phases, memory, faults, and queueing connect
+agent behavior to capacity decisions. Compression and scheduling remain
+optional consumers of that telemetry.</li>
+<li><strong>Deployment provenance expands beyond weights.</strong> Model
+packages include buffers, tokenizer, templates, adapters, quantization
+state, transforms, runtime, retrieval index, policy, and serving
+interface. Evaluation references the same manifest that production
+deploys.</li>
+<li><strong>Human review is an architectural control.</strong> Material
+evaluator disagreement, high-risk retrieved content, harness changes,
+and uncertain routing outcomes should reach named reviewers with bounded
+context, appeal paths, and safe-content handling.</li>
+</ol>
+<p>Shared enabling foundations that unlock multiple enhancements are:
+model and artifact registries; model gateway; context/provenance
+service; identity and authorization; policy engine; evaluation and
+replay infrastructure; observability with cost/latency/memory telemetry;
+agent orchestration; sandbox tenant controls; human-review workflow;
+experiment registry; immutable outcome ledger; and rollback. No
+particular current stack, vendor, model, data platform, or maturity
+level is assumed. Implementation decisions require an internal
+architecture inventory, data classification, user/workflow map, risk
+appetite, SLA, cost baseline, threat model, and operating ownership.</p>
+<h2 id="implementation-priorities">Implementation priorities</h2>
+<h3 id="now--create-evidence-without-runtime-authority">Now — create
+evidence without runtime authority</h3>
+<ol type="1">
+<li>Run a quarantined four-condition RAG safety replay on synthetic,
+policy-approved cases.</li>
+<li>Shadow a two-model calibrated cascade using saved outputs and
+realized cost/latency telemetry.</li>
+<li>Add sandbox fanout, memory, lifecycle, and tenant telemetry without
+enabling compression.</li>
+<li>Inventory all inference-relevant deployed state for one model
+release.</li>
+</ol>
+<h3 id="next--build-shared-control-plane-foundations">Next — build
+shared control-plane foundations</h3>
+<ol type="1">
+<li>Define context provenance and content-risk manifest schemas.</li>
+<li>Create calibration/routing contracts with owners, expiry,
+invalidation, and rollback.</li>
+<li>Preserve per-evaluator judgments and establish human arbitration for
+material disagreement.</li>
+<li>Connect evaluation outcomes to the exact deployment and data-state
+manifests.</li>
+</ol>
+<h3 id="later--consider-mechanisms-only-after-triggers">Later — consider
+mechanisms only after triggers</h3>
+<ol type="1">
+<li>Evaluate cohort compression only if memory is the measured
+bottleneck and isolation can be proven.</li>
+<li>Evaluate harness-evolution assistance only in staged, human-approved
+CI with cross-model and security holdouts.</li>
+<li>Grant runtime routing authority only after time-separated
+validation, drift rehearsal, and end-to-end economics.</li>
+</ol>
+<h2 id="knowledge-reinforcement">Knowledge reinforcement</h2>
+<ol type="1">
+<li><strong>Why does a safe base model not certify a RAG
+application?</strong> Because retrieved context changes available
+information and model behavior; safety must be evaluated after context
+composition.</li>
+<li><strong>Why is retriever failure a safety-evaluation
+confounder?</strong> A retriever that misses harmful evidence can make
+the generator look safe even if it would comply when the evidence is
+present.</li>
+<li><strong>What does calibrated confidence add to a heterogeneous
+cascade?</strong> A shared approximate correctness scale that supports
+interpretable acceptance/deferral thresholds; raw scores are
+model-specific.</li>
+<li><strong>Why are nominal parameter counts an incomplete cost
+metric?</strong> They omit tokens, batching, hardware, latency, cache,
+retry, network, and double-compute on deferred cases.</li>
+<li><strong>What is AgentZip's most portable insight?</strong>
+High-fanout agent sandboxes have workload-specific redundancy and idle
+phases, so memory management should be cohort- and lifecycle-aware.</li>
+<li><strong>Why is the AgentZip headline not a deployment
+recommendation?</strong> The largest memory gains coexist with 40–47%
+wall-time overhead on one unreleased system and a narrow workload
+set.</li>
+<li><strong>What did the unlearning audit add to model
+governance?</strong> Evaluation must bind to all inference-relevant
+state; bit-identical trainable weights do not guarantee the same
+deployed behavior.</li>
+<li><strong>What is the safe interpretation of Ecdysis?</strong> Cluster
+failures and test changes on held-out tasks; do not let failure-driven
+systems patch production harnesses autonomously.</li>
+<li><strong>What internal facts are needed before roadmap
+decisions?</strong> Architecture, data classes, user/workflow risks,
+SLA, cost, threat model, ownership, regulatory obligations, and adoption
+constraints.</li>
+</ol>
+<h2 id="evidence-register-and-decision-boundaries">Evidence register and
+decision boundaries</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Evidence label</th>
+<th>Verified facts</th>
+<th>Material uncertainty</th>
+<th>Enterprise boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>RAG-Safety-Bench</td>
+<td>Paper Fact</td>
+<td>EMNLP main; 987/346 queries; four conditions; five models; repo with
+inputs/configs/code</td>
+<td>Closed models, private corpora, repeated runs, excluded harms; raw
+outputs and v2 traces absent</td>
+<td>Use for controlled qualification, not certification</td>
+</tr>
+<tr class="even">
+<td>AgentZip</td>
+<td>Paper Fact</td>
+<td>10 repositories; 16/4 fanout; 64.29–88.55% memory reduction;
+1.403–1.468× wall time</td>
+<td>No code, one stack, security and fleet economics untested</td>
+<td>Measure first; lab only before independent replication</td>
+</tr>
+<tr class="odd">
+<td>CAUC</td>
+<td>Paper Fact</td>
+<td>Six language tasks, four vision settings, calibration theory, ~47%
+strong-call avoidance</td>
+<td>Cost proxy, no code, no uncertainty intervals, drift and severe
+slices</td>
+<td>Shadow route; no high-risk authority</td>
+</tr>
+<tr class="even">
+<td>Unlearning checkpoint audit</td>
+<td>Paper Fact</td>
+<td>263 released checkpoints; non-parameter state moves checkpoint
+metrics and some verdicts</td>
+<td>Narrow architectures/releases; no verified replication package</td>
+<td>Expand manifests; do not generalize numeric rates</td>
+</tr>
+<tr class="odd">
+<td>Ecdysis</td>
+<td>Paper Fact</td>
+<td>Partial code; five models/two domains; reported success/token/time
+gains</td>
+<td>Missing traces/configs/data, no repo license, limited domains</td>
+<td>Suggest changes offline; human approval required</td>
+</tr>
+<tr class="even">
+<td>Backlog and architecture</td>
+<td>Enterprise Inference / Independent Analysis</td>
+<td>Explicitly derived from papers above</td>
+<td>Internal stack and operating context unknown</td>
+<td>Future options, not approved roadmap commitments</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Safety boundary.</strong> The RAG benchmark contains dual-use
+harmful material. This briefing reports aggregate scientific findings
+and governance implications; it does not reproduce actionable harmful
+prompts or answers. Any internal adaptation requires controlled access,
+reviewer safeguards, output quarantine, and appropriate legal/security
+approval.</p>
+<p><strong>Evidence maturity boundary.</strong> One deep paper is
+conference-accepted; two are preprints. Public artifacts are partial or
+absent. No reviewed paper establishes production safety, realized
+enterprise ROI, universal model rankings, or compliance. Future
+Enterprise AI Priority Scores express comparative analyst judgment and
+inherit these uncertainties.</p>
+<h3 id="sources">Sources</h3>
+<ol type="1">
+<li>Saravanan, Adithiyan Rajan Indira, and Kathleen C. Fraser. “<a
+href="https://arxiv.org/abs/2609.11758">RAG-Safety-Bench: Reliable
+Evaluation of Retrieval-Augmented LLM Safety</a>.” arXiv:2609.11758,
+submitted September 10, 2026; EMNLP 2026 main conference.</li>
+<li>The Safe AI Lab. “<a
+href="https://github.com/The-Safe-AI-Lab/RAG-Safety-Bench">RAG-Safety-Bench
+repository</a>.” Accessed September 11, 2026.</li>
+<li>Li, Mengming, et al. “<a
+href="https://arxiv.org/abs/2609.11294">Memory Compression for
+High-Fanout Agent Sandboxes</a>.” arXiv:2609.11294, submitted September
+10, 2026.</li>
+<li>Zeroboot. “<a
+href="https://github.com/zerobootdev/zeroboot">Zeroboot sandbox
+runtime</a>.” Accessed September 11, 2026.</li>
+<li>Zhang, Yilin, et al. “<a
+href="https://arxiv.org/abs/2609.11446">Calibration-Aware Uncertainty
+Cascades for Efficient Heterogeneous Model Collaboration</a>.”
+arXiv:2609.11446, submitted September 10, 2026.</li>
+<li>Shen, Junlong, and Xingyu Li. “<a
+href="https://arxiv.org/abs/2609.11490">Published Unlearning Numbers
+Move Per Checkpoint, and Not Because the Removed Data Survives</a>.”
+arXiv:2609.11490, submitted September 10, 2026.</li>
+<li>Yue, Ruiqing, et al. “<a
+href="https://arxiv.org/abs/2609.11677">Ecdysis: Efficient and Effective
+Training of Runtime Harnesses for LLM Agents</a>.” arXiv:2609.11677,
+submitted September 10, 2026.</li>
+<li>Cuiyu AI. “<a href="https://github.com/cuiyu-ai/Ecdysis">Ecdysis
+repository</a>.” Accessed September 11, 2026.</li>
+</ol></main></div>
+<footer>AI Research Intelligence Brief · September 11, 2026 · Research options, not deployment approval.</footer>
+<div class="toolbar"><button onclick="window.print()" aria-label="Print report">Print</button><button id="top" aria-label="Back to top">↑ Top</button></div>
+<script>
+const p=document.getElementById('progress');addEventListener('scroll',()=>{const h=document.documentElement;p.style.width=((h.scrollTop/(h.scrollHeight-h.clientHeight))*100)+'%'});document.getElementById('top').onclick=()=>scrollTo({top:0,behavior:'smooth'});
+document.querySelectorAll('main h4').forEach(h=>{if(/^\d+\./.test(h.textContent))h.setAttribute('data-backlog','true')});
+</script>
+</body></html>
