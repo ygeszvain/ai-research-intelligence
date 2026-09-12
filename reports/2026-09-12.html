@@ -1,0 +1,1639 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Evidence-grounded AI Research Intelligence Brief for September 12, 2026: admission controls for agent memory, workflow release, and selective risk decisions.">
+<meta name="report-date" content="2026-09-12">
+<meta name="research-window" content="2026-09-10T16:00:00-05:00/2026-09-12T04:00:00-05:00 America/Chicago">
+<meta name="deep-paper-count" content="3">
+<meta name="watchlist-count" content="2">
+<meta name="theme-color" content="#08131f">
+<title>AI Research Intelligence Brief — September 12, 2026</title>
+<style>
+:root{--bg:#07111d;--panel:#0d1b2a;--panel2:#10263a;--text:#e8f1f7;--muted:#9fb5c5;--line:#29445b;--cyan:#45d7c4;--gold:#f5c96a;--rose:#ff8d9a;--blue:#68a9ff;--max:1180px;color-scheme:dark}
+@media(prefers-color-scheme:light){:root{--bg:#f4f7f8;--panel:#fff;--panel2:#edf4f7;--text:#102131;--muted:#526979;--line:#cddbe2;--cyan:#087f73;--gold:#9b6300;--rose:#b92b45;--blue:#1661ad;color-scheme:light}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 90% 0,rgba(69,215,196,.12),transparent 30rem),var(--bg);color:var(--text);font:16px/1.67 ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}a{color:var(--cyan);text-underline-offset:3px}a:hover{text-decoration-thickness:2px}header{border-bottom:1px solid var(--line);background:linear-gradient(135deg,rgba(69,215,196,.09),rgba(104,169,255,.05));padding:54px 22px 34px}.hero{max-width:var(--max);margin:auto}.eyebrow{color:var(--cyan);text-transform:uppercase;letter-spacing:.15em;font-size:.76rem;font-weight:800}h1{font-size:clamp(2.2rem,6vw,4.7rem);line-height:.98;max-width:900px;margin:.35rem 0 1rem;letter-spacing:-.055em}header p{max-width:790px;color:var(--muted);font-size:1.09rem}.chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}.chip{border:1px solid var(--line);border-radius:999px;padding:6px 11px;background:var(--panel);font-size:.8rem}.topbets{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}.bet{border:1px solid var(--line);background:var(--panel);border-radius:14px;padding:15px}.bet b{display:block;color:var(--gold);font-size:1.15rem}.layout{max-width:var(--max);margin:auto;display:grid;grid-template-columns:250px minmax(0,1fr);gap:34px;padding:30px 22px 80px}nav{position:sticky;top:16px;align-self:start;max-height:calc(100vh - 32px);overflow:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:14px}nav strong{display:block;margin:2px 8px 10px;color:var(--gold)}nav ul{list-style:none;margin:0;padding:0}nav li{margin:0}nav a{display:block;color:var(--muted);text-decoration:none;padding:5px 8px;border-radius:7px;font-size:.83rem;line-height:1.25}nav a:hover{background:var(--panel2);color:var(--text)}main{min-width:0}main>h2{font-size:1.75rem;margin:2.6rem 0 1rem;padding-top:.7rem;border-top:1px solid var(--line)}main>h2:first-child{margin-top:0}h3{font-size:1.3rem;margin-top:2rem;color:var(--cyan)}h4{font-size:1.08rem;color:var(--gold);margin-bottom:.45rem}p,li{max-width:88ch}blockquote{margin:1rem 0;padding:1rem 1.2rem;border-left:4px solid var(--gold);background:var(--panel);color:var(--muted)}pre{white-space:pre-wrap;overflow:auto;background:#07101a;border:1px solid var(--line);border-radius:14px;padding:18px;color:#dcecf2;font-size:.86rem;line-height:1.45}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}table{width:100%;border-collapse:collapse;margin:1.25rem 0;background:var(--panel);font-size:.86rem}th,td{padding:10px 12px;border:1px solid var(--line);text-align:left;vertical-align:top}th{color:var(--gold);background:var(--panel2)}hr{border:0;border-top:1px solid var(--line)}main h4+ul,main h3+ul{border:1px solid var(--line);background:linear-gradient(135deg,var(--panel),var(--panel2));border-radius:14px;padding:15px 22px 15px 34px}main h4+ul li,main h3+ul li{margin:.5rem 0}.progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--cyan),var(--gold));width:0;z-index:9}.toolbar{position:fixed;right:18px;bottom:18px;display:flex;gap:8px}.toolbar button{border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:999px;padding:9px 12px;cursor:pointer;box-shadow:0 8px 30px rgba(0,0,0,.2)}.label{font-size:.75rem;color:var(--muted)}footer{border-top:1px solid var(--line);padding:24px;text-align:center;color:var(--muted)}
+@media(max-width:850px){.topbets{grid-template-columns:1fr}.layout{grid-template-columns:1fr}nav{position:relative;top:0;max-height:none}nav ul{columns:2}h1{font-size:2.65rem}}
+@media(max-width:520px){header{padding-top:34px}.layout{padding:20px 14px 60px}nav ul{columns:1}table{display:block;overflow-x:auto}h1{font-size:2.25rem}}
+@media print{body{background:white;color:#111;font-size:11pt}header{padding:18px 0}.layout{display:block;padding:0}nav,.toolbar,.progress{display:none}a{color:#145c70}main>h2{break-before:page}main>h2:first-child{break-before:auto}table,pre{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<header><div class="hero">
+<div class="eyebrow">AI Research Intelligence · Evidence before enthusiasm</div>
+<h1>Separate readiness from authority.</h1>
+<p>September 12, 2026 briefing. Three papers converge on a practical rule: memory writes, model-turn releases, and selective risk decisions need explicit evidence-backed admission gates.</p>
+<div class="chips"><span class="chip">3 deep papers</span><span class="chip">2 Watchlist</span><span class="chip">36-hour research window</span><span class="chip">9 enterprise options</span><span class="chip">Primary sources + full-paper review</span></div>
+<div class="topbets"><div class="bet"><span class="label">TOP BET 1 · PROTOTYPE SOON</span><b>92.1 · Probing-backed memory promotion</b><span>Verify scope and freshness before shared memory gains write authority.</span></div><div class="bet"><span class="label">TOP BET 2 · PROTOTYPE SOON</span><b>89.7 · Tail-aware release shadow</b><span>Preserve workflow choice before ready turns enter congested inference.</span></div><div class="bet"><span class="label">TOP BET 3 · PROTOTYPE SOON</span><b>88.8 · Selective-risk qualification</b><span>Lock thresholds on future data and retain an explicit abstention path.</span></div></div>
+</div></header>
+<div class="layout"><nav><strong>Navigate</strong><ul>
+<li><a href="#scope-window-and-evidence-policy"
+id="toc-scope-window-and-evidence-policy">Scope, window, and evidence
+policy</a></li>
+<li><a href="#executive-signal" id="toc-executive-signal">Executive
+signal</a></li>
+<li><a href="#top-3-future-bets" id="toc-top-3-future-bets">Top 3 Future
+Bets</a></li>
+<li><a href="#deep-paper-1--memory-writes-should-be-evidence-admitted"
+id="toc-deep-paper-1--memory-writes-should-be-evidence-admitted">Deep
+paper 1 — Memory writes should be evidence-admitted</a>
+<ul>
+<li><a href="#contribution-and-quantitative-claim-trace"
+id="toc-contribution-and-quantitative-claim-trace">Contribution and
+quantitative claim trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison"
+id="toc-methodological-critique-and-prior-work-comparison">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#reproducibility-and-enterprise-readiness"
+id="toc-reproducibility-and-enterprise-readiness">Reproducibility and
+enterprise readiness</a></li>
+</ul></li>
+<li><a
+href="#deep-paper-2--a-ready-turn-is-not-an-obligation-to-release"
+id="toc-deep-paper-2--a-ready-turn-is-not-an-obligation-to-release">Deep
+paper 2 — A ready turn is not an obligation to release</a>
+<ul>
+<li><a href="#contribution-and-quantitative-claim-trace-1"
+id="toc-contribution-and-quantitative-claim-trace-1">Contribution and
+quantitative claim trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison-1"
+id="toc-methodological-critique-and-prior-work-comparison-1">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#reproducibility-and-enterprise-readiness-1"
+id="toc-reproducibility-and-enterprise-readiness-1">Reproducibility and
+enterprise readiness</a></li>
+</ul></li>
+<li><a
+href="#deep-paper-3--selective-risk-requires-locked-thresholds-and-an-abstention-path"
+id="toc-deep-paper-3--selective-risk-requires-locked-thresholds-and-an-abstention-path">Deep
+paper 3 — Selective risk requires locked thresholds and an abstention
+path</a>
+<ul>
+<li><a href="#contribution-and-quantitative-claim-trace-2"
+id="toc-contribution-and-quantitative-claim-trace-2">Contribution and
+quantitative claim trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison-2"
+id="toc-methodological-critique-and-prior-work-comparison-2">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#reproducibility-and-enterprise-readiness-2"
+id="toc-reproducibility-and-enterprise-readiness-2">Reproducibility and
+enterprise readiness</a></li>
+</ul></li>
+<li><a href="#watchlist" id="toc-watchlist">Watchlist</a>
+<ul>
+<li><a
+href="#incident-evidence-can-audit-coverage-not-estimate-deployment-risk"
+id="toc-incident-evidence-can-audit-coverage-not-estimate-deployment-risk">Incident
+evidence can audit coverage, not estimate deployment risk</a></li>
+<li><a
+href="#latent-interfaces-may-be-private-dialects-and-harmful-warm-starts"
+id="toc-latent-interfaces-may-be-private-dialects-and-harmful-warm-starts">Latent
+interfaces may be private dialects and harmful warm starts</a></li>
+</ul></li>
+<li><a href="#cross-paper-synthesis"
+id="toc-cross-paper-synthesis">Cross-paper synthesis</a></li>
+<li><a
+href="#visual-1--admission-boundaries-in-an-enterprise-agent-system"
+id="toc-visual-1--admission-boundaries-in-an-enterprise-agent-system">Visual
+1 — admission boundaries in an enterprise agent system</a></li>
+<li><a href="#visual-2--evidence-strength-and-deployment-distance"
+id="toc-visual-2--evidence-strength-and-deployment-distance">Visual 2 —
+evidence strength and deployment distance</a></li>
+<li><a href="#enterprise-ai-enhancement-backlog"
+id="toc-enterprise-ai-enhancement-backlog">Enterprise AI Enhancement
+Backlog</a>
+<ul>
+<li><a href="#priority-method-and-uncertainty"
+id="toc-priority-method-and-uncertainty">Priority method and
+uncertainty</a></li>
+<li><a href="#prototype-soon" id="toc-prototype-soon">Prototype
+Soon</a></li>
+<li><a href="#prepare-foundations" id="toc-prepare-foundations">Prepare
+Foundations</a></li>
+<li><a href="#monitor-for-maturity"
+id="toc-monitor-for-maturity">Monitor for Maturity</a></li>
+<li><a href="#deprioritize-for-now"
+id="toc-deprioritize-for-now">Deprioritize for Now</a></li>
+</ul></li>
+<li><a href="#enterprise-ai-architecture-implications"
+id="toc-enterprise-ai-architecture-implications">Enterprise AI
+Architecture Implications</a></li>
+<li><a href="#implementation-priorities"
+id="toc-implementation-priorities">Implementation priorities</a></li>
+<li><a href="#knowledge-reinforcement"
+id="toc-knowledge-reinforcement">Knowledge reinforcement</a></li>
+<li><a href="#source-ledger-and-closing-boundary"
+id="toc-source-ledger-and-closing-boundary">Source ledger and closing
+boundary</a></li>
+</ul></nav><main><h2 id="scope-window-and-evidence-policy">Scope,
+window, and evidence policy</h2>
+<p><strong>Research window.</strong> Thursday, September 10, 2026 at
+4:00 PM CDT through Saturday, September 12, 2026 at 4:00 AM CDT (36
+hours; America/Chicago). Discovery covered current arXiv cs.AI, cs.CL,
+cs.LG, cs.SE, cs.CR, cs.IR, cs.OS, cs.HC, and stat.ML listings, then
+followed primary paper and first-party artifact links. The September 11
+arXiv update alone listed 171 cs.AI entries before cross-list and
+relevance filtering. The original window was sufficient; no seven-day
+expansion was used. The selected records were announced in the monitored
+September 11 update and carry September 10 v1 submission timestamps.</p>
+<p><strong>Anti-duplication.</strong> Exact titles, identifiers, central
+claims, and enterprise implications were checked against the 33-report
+archive through September 11. None of the three deep papers or two
+Watchlist papers had appeared previously. Work that restated memory,
+scheduling, or safety themes without a new controlled intervention,
+operational measurement, or reusable artifact was not promoted.</p>
+<p><strong>Evidence policy.</strong> <strong>Paper Fact</strong> means
+directly reported by a paper or verified first-party artifact.
+<strong>Independent Analysis</strong> is this briefing's synthesis,
+calculation, or critique. <strong>Enterprise Inference</strong>
+translates evidence into a bounded future option.
+<strong>Uncertainty</strong> marks missing causal, generalization,
+artifact, economic, security, governance, or operational evidence.
+Preprints are not treated as peer reviewed; venue status is reported
+only when the source record states it. Benchmark performance is not
+production readiness. Proposed experiments are isolated, reversible,
+measurable, and non-destructive.</p>
+<h2 id="executive-signal">Executive signal</h2>
+<blockquote>
+<p><strong>Readiness is not authority. Reliable enterprise agents need
+an explicit admission decision before a memory is written, a risky case
+is auto-disposed, or a ready model turn is released into shared
+capacity.</strong></p>
+</blockquote>
+<p>The three deep papers expose the same control error at different
+layers. Environment-probing curation checks a candidate memory against a
+live, read-only world before it enters shared memory. Tail-aware
+scheduling separates a turn becoming causally ready from the decision to
+commit it to a congested inference engine. SIRF demonstrates selective
+risk handling at high-precision operating points, but also shows why
+uncertain classes must remain in the original flow and why thresholds
+cannot be treated as probabilities. (<a
+href="https://arxiv.org/abs/2609.11060">Grounding Agent Memory</a>, <a
+href="https://arxiv.org/abs/2609.10964">Tail-Aware Scheduling</a>, <a
+href="https://arxiv.org/abs/2609.11752">SIRF</a>)</p>
+<p><strong>Decision posture.</strong> Prototype read-only memory
+verification and workflow release control in replay or shadow mode.
+Establish provenance, freshness, identity, policy-version, calibration,
+queue-pressure, cost, and human-review contracts before granting write
+or disposition authority. Treat policy internalization as a research
+signal rather than a deployment shortcut: the SIRF data, code, and model
+are not public, the main threshold is fitted and evaluated on the same
+set, and the balanced replication substantially narrows the headline
+margin.</p>
+<h2 id="top-3-future-bets">Top 3 Future Bets</h2>
+<ol type="1">
+<li><strong>Probing-backed memory promotion gate — 92.1/100.</strong>
+Why it matters: persistent agent memory can amplify a mistaken, stale,
+or over-broad trajectory across later sessions. Evidence that would
+change the recommendation: representative internal replay showing no
+improvement in correctness, freshness, or task-time tool use after
+read-only verification, or unacceptable connector/privacy cost. Next
+reversible action: shadow-curate a small stream of completed tasks
+against a synthetic read-only environment; compare proposed records with
+and without probes and commit neither.</li>
+<li><strong>Tail-aware workflow release shadow controller —
+89.7/100.</strong> Why it matters: once a ready turn enters the
+inference engine, workflow-level scheduling options disappear; under
+contention, this can dominate end-to-end tail latency. Evidence that
+would change the recommendation: multi-seed internal replay showing no
+P95 benefit, worsened fairness, or higher cost at relevant utilization.
+Next reversible action: log ready, release, service, tool-gap, and
+completion times for one low-risk agent workload and simulate release
+policies without delaying live traffic.</li>
+<li><strong>Selective-risk operating-point qualification —
+88.8/100.</strong> Why it matters: accuracy does not state how much work
+can be handled at a required precision, and an ambiguous class may have
+no safe threshold at all. Evidence that would change the recommendation:
+independent, time-separated evaluation showing unstable precision,
+materially worse subgroup outcomes, or human-review burden that erases
+value. Next reversible action: replay a de-identified three-way decision
+dataset, fit thresholds on one period, lock them, and test coverage,
+precision, calibration, appeals, and subgroup error on a later period
+with no automated action.</li>
+</ol>
+<h2 id="deep-paper-1--memory-writes-should-be-evidence-admitted">Deep
+paper 1 — Memory writes should be evidence-admitted</h2>
+<p><strong>Identity and status.</strong> <em>Grounding Agent Memory:
+Environment-Probing Curation for Enterprise Agents</em>, Susheel Suresh,
+Hazel Mak, Sahil Bhatnagar, Chhaya Methani, and Alejandro Gutierrez
+Munoz; submitted September 10, 2026; arXiv:2609.11060; cs.AI; Microsoft
+Corporation; preprint; arXiv perpetual non-exclusive license. The
+reviewed record links the GitHub Copilot SDK and benchmark dependencies
+but no paper-specific implementation, run logs, memory stores, or
+evaluation artifacts. (<a
+href="https://arxiv.org/abs/2609.11060">paper</a>, <a
+href="https://arxiv.org/html/2609.11060v1">full text</a>)</p>
+<h3 id="contribution-and-quantitative-claim-trace">Contribution and
+quantitative claim trace</h3>
+<p>The method inserts a separate curator after task completion. The task
+agent can read but not write memory. A non-writing distiller preserves
+decisive observations and unresolved assumptions. The curator alone
+holds memory CRUD authority and, in the probing condition, receives a
+least-privilege read-only subset of world tools. It follows
+propose–probe–commit: formulate a candidate record, test correctness,
+scope, freshness, preconditions, or a shorter procedure, then create,
+revise, narrow, delete, or skip the record. Future tasks and labels
+remain hidden.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>What it establishes</th>
+<th>What it does not establish</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Primary CLBench design</td>
+<td style="text-align: right;">40 hidden-database questions; schema
+migration after question 20; five independently shuffled paired runs per
+configuration; GPT-5.4 at xhigh</td>
+<td>Tests reuse and stale-memory repair under a controlled evolving
+environment</td>
+<td>Long-lived production drift, hostile connectors, concurrent
+curators, or human-edited memory</td>
+</tr>
+<tr class="even">
+<td>Pass-rate change</td>
+<td style="text-align: right;">No memory 39% ±4; trajectory memory 70%
+±16; probed memory 73% ±5</td>
+<td>Memory helps; probing has the highest mean and markedly tighter
+reported interval</td>
+<td>A statistically isolated probing effect over trajectory memory;
+intervals overlap and n=5</td>
+</tr>
+<tr class="odd">
+<td>Pass-discounted reward</td>
+<td style="text-align: right;">8.60 ±0.83 → 20.00 ±6.52 with memory →
+22.60 ±2.07 with probing</td>
+<td>Correctness-plus-tool-efficiency improves over no memory</td>
+<td>That the custom reward matches enterprise utility or failure
+cost</td>
+</tr>
+<tr class="even">
+<td>Task-time queries</td>
+<td style="text-align: right;">8.8 ±0.3 → 5.6 ±1.4 → 4.7 ±0.3 per
+question</td>
+<td>Stored procedures reduce repeated discovery</td>
+<td>Total system tool use; curator probes are excluded</td>
+</tr>
+<tr class="odd">
+<td>Task-agent cost</td>
+<td style="text-align: right;">$3.38 ±0.70 → $1.99 ±0.65 → $1.68
+±0.14</td>
+<td>User-facing agent inference cost falls in this pricing/model
+setup</td>
+<td>Total cost: distillation and curation are tracked separately and
+excluded</td>
+</tr>
+<tr class="even">
+<td>Cross-model no-drift reward</td>
+<td style="text-align: right;">Sonnet 4.6: probing 0.748 vs memory
+0.673; Opus 4.7: 0.721 vs 0.696</td>
+<td>The direction persists across two additional models without schema
+migration</td>
+<td>Broad model-family generalization or production significance</td>
+</tr>
+<tr class="odd">
+<td>Adapted APEX scope</td>
+<td style="text-align: right;">90 management-consulting tasks across six
+shared document worlds; five stateful runs and three stateless runs</td>
+<td>Extends beyond SQL into PDF/XLSX/DOCX/PPTX and artifact
+workflows</td>
+<td>Legal/financial subsets, arbitrary enterprise worlds, or real
+users</td>
+</tr>
+<tr class="even">
+<td>APEX direction</td>
+<td style="text-align: right;">All 18 memory-versus-baseline mean reward
+comparisons positive; probing best reward gain per task-agent dollar in
+5/6 worlds</td>
+<td>Memory benefits recur across world/difficulty combinations</td>
+<td>A clean probing-only causal estimate or total-cost advantage</td>
+</tr>
+</tbody>
+</table>
+<p>The reward is zero for failed tasks and, for passes, discounts the
+fraction of a tool budget consumed: 15 SQL calls for CLBench and 100
+Archipelago calls for APEX. Memory-management calls are excluded from
+the efficiency denominator, and token/cost totals exclude the distiller
+and curator. That exclusion is appropriate for isolating the responding
+agent but insufficient for procurement economics. Full ICL uses only 3.0
+queries per CLBench question yet 5.42M input tokens; compact probed
+memory uses 4.7 queries and 1.69M input tokens, illustrating that tool
+efficiency and context growth are distinct costs.</p>
+<h3
+id="methodological-critique-and-prior-work-comparison">Methodological
+critique and prior-work comparison</h3>
+<p>The strongest design choice is authority separation. The task agent
+cannot mutate shared memory, the distiller cannot write or see the
+grade, and the curator cannot see future tasks. The only change between
+the two memory conditions is read-only world access plus a verification
+instruction. Paired shuffles, a drift/no-drift split, cross-model
+checks, heterogeneous APEX worlds, and explicit task-agent cost make the
+evidence more decision-useful than a memory benchmark reporting answer
+accuracy alone.</p>
+<p>The main causal question is narrower than the headline. Against no
+memory, the gains are large. Against trajectory-only memory, CLBench
+pass rate moves 70% to 73% and the wide trajectory-memory interval
+overlaps the probing result. The paper reports means and Student-t
+intervals over five runs rather than a paired difference test for the
+probing increment. APEX says all memory conditions beat the baseline and
+probing wins cost-adjusted efficiency in five worlds, but does not
+establish that every probing-versus-memory difference is reliable. The
+selected APEX stream adapts 90 questions from 480 independent tasks by
+grouping one domain into shared worlds; this creates the
+continual-learning structure the method needs and may not reflect every
+deployment.</p>
+<p>Prior factual-memory systems improve record CRUD, hierarchy, graph
+structure, temporal handling, or retrieval. Procedural systems such as
+Reflexion, ExpeL, Agent Workflow Memory, ACE, ReasoningBank, and ReMe
+distill lessons from trajectories, grades, and existing records. The
+paper's distinct move is to widen the evidence boundary at write time:
+reflection over a partial trajectory cannot inspect unvisited state or
+refresh a rule after drift, whereas targeted read-only probes can. This
+is orthogonal to memory representation and retriever choice.</p>
+<p>Security and governance remain open. A “read-only” connector can
+still expose secrets, trigger metered queries, leak existence
+information, or produce prompt-injected content. A curator may
+over-explore, correlate records across authorization domains, or convert
+transient observations into durable sensitive state. The study assumes a
+safe read surface, authenticated tools, and audit inheritance; it does
+not adversarially test those assumptions. The record schema includes
+provenance, confidence, scope, utility, and usage metadata, but no
+public implementation verifies retention, deletion, tenant isolation, or
+right-to-correct behavior.</p>
+<h3 id="reproducibility-and-enterprise-readiness">Reproducibility and
+enterprise readiness</h3>
+<p>The full text supplies equations, prompts, runtime lifecycle,
+model/embedding choices, benchmark construction, and per-world tables.
+Exact replication is blocked by the missing paper-specific code, traces,
+persistent indexes, grades, seeds beyond the described protocol, and
+total curator-cost data. <strong>Enterprise readiness: high for an
+isolated shadow curation experiment; medium for a bounded read-only
+curator in a non-sensitive domain with human approval; low for
+autonomous production memory writes. Research Utility Score:
+91/100</strong> (rigor 24/25; quantitative traceability 23/25;
+reproducibility/artifacts 12/20; enterprise relevance 17/20; prior-work
+advance 15/15). The score is analyst judgment, not a probability.</p>
+<h2 id="deep-paper-2--a-ready-turn-is-not-an-obligation-to-release">Deep
+paper 2 — A ready turn is not an obligation to release</h2>
+<p><strong>Identity and status.</strong> <em>Decoupling Readiness from
+Release for Tail-Aware Scheduling of Agentic LLM Workflows</em>, Bochao
+Feng, Jianjiang Li, Haojie Wang, Lin Qiao, Yinghui Li, Yukun Yan, and
+Jidong Zhai; submitted September 10, 2026; arXiv:2609.10964; cs.AI;
+preprint; arXiv perpetual non-exclusive license. No public code, traces,
+container, configurations, or result logs were linked from the reviewed
+record. (<a href="https://arxiv.org/abs/2609.10964">paper</a>, <a
+href="https://arxiv.org/html/2609.10964v1">full text</a>)</p>
+<h3 id="contribution-and-quantitative-claim-trace-1">Contribution and
+quantitative claim trace</h3>
+<p>Agent workflows alternate model turns and tool gaps. Eager runtimes
+release a turn as soon as dependencies resolve. Near saturation,
+released-but-unfinished “committed work” accumulates inside the
+inference engine and cannot be withdrawn when older workflows become
+urgent. The proposed scheduler uses a mean–CVaR objective, an
+urgency-per-estimated-work priority, a congestion-adaptive
+committed-work budget, and a 180-second starvation safeguard. It
+controls only pre-engine release; vLLM's internal scheduling is
+unchanged.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>Decision meaning</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Workload scale</td>
+<td style="text-align: right;">Two traces of 100 tasks each; 1,597
+SWE-bench and 1,624 SWE-Gym model turns</td>
+<td>Multi-turn structure and tool gaps are represented</td>
+<td>Only software-engineering traces; task outcomes do not vary during
+replay</td>
+</tr>
+<tr class="even">
+<td>Model/hardware breadth</td>
+<td style="text-align: right;">Qwen3-8B on one, Qwen3-32B on two,
+Llama-3.3-70B on four NVIDIA A100 80GB GPUs; vLLM 0.20.2</td>
+<td>Tests three serving sizes under a fixed engine</td>
+<td>No other accelerators, quantization, batching stack, or commercial
+API</td>
+</tr>
+<tr class="odd">
+<td>Arrival regimes</td>
+<td style="text-align: right;">Poisson arrivals at five rates from light
+load to contention</td>
+<td>Exercises queue-pressure transitions</td>
+<td>One fixed arrival seed per reported point; no burst or diurnal
+replication</td>
+</tr>
+<tr class="even">
+<td>Low-load result</td>
+<td style="text-align: right;">Eager/proposed P95 ratio 0.99×–1.00×
+across six lowest-load points</td>
+<td>Explicit control adds no material measured penalty when capacity is
+free</td>
+<td>Confidence around the ratio or effects on throughput/energy</td>
+</tr>
+<tr class="odd">
+<td>Contended result</td>
+<td style="text-align: right;">Lower P95 across all six trace–model
+combinations; maximum 3.50× speedup</td>
+<td>Release policy can dominate tail latency near saturation</td>
+<td>A general production speedup; absolute values and operating points
+vary</td>
+</tr>
+<tr class="even">
+<td>Ordering ablation</td>
+<td style="text-align: right;">At 0.9 workflows/s on 70B: tail-aware
+ordering cuts P95 59.51% and 63.51% vs FIFO with the same adaptive
+budget</td>
+<td>Most gain is attributed to urgency-aware ordering</td>
+<td>Only one model/rate and one fixed seed</td>
+</tr>
+<tr class="odd">
+<td>Budget ablation</td>
+<td style="text-align: right;">Adaptive budget cuts P95 10.68% and
+11.62% vs fixed 120k under the same ordering</td>
+<td>Admission control adds a smaller consistent gain</td>
+<td>Stability across queue targets or workload drift</td>
+</tr>
+<tr class="even">
+<td>Full ablation outcome</td>
+<td style="text-align: right;">3.50× SWE-bench and 3.02× SWE-Gym P95
+speedup over eager</td>
+<td>Combined controller is best at that operating point</td>
+<td>Mean latency, fairness distribution, deadline misses, cost, or
+quality</td>
+</tr>
+</tbody>
+</table>
+<p>Turn work is estimated from prompt and decode units with decode
+weighted by a fixed coefficient of four. The release budget starts at
+120,000 work units, varies between 30,000 and 300,000, and responds to
+queue mean, queue P95, and waiting-request targets. The mean–CVaR
+objective adds a tail-risk weight after a workflow's age exceeds an
+estimated threshold, then normalizes urgency by estimated turn work. If
+no committed work exists, one oversized ready turn may progress; if a
+feasible turn waits at least 180 seconds, longest waiting wins.</p>
+<h3
+id="methodological-critique-and-prior-work-comparison-1">Methodological
+critique and prior-work comparison</h3>
+<p>The paired closed-loop replay is the main strength: model, engine,
+workflows, arrivals, inference work, and recorded tool delays are
+identical between policies. Repository-stratified salted-hash task
+selection is independent of success, workflow length, tokens, tool
+delay, model configuration, and outcome. The method also preserves a
+clean systems boundary by not altering vLLM.</p>
+<p>The largest weakness is statistical replication. Each point comes
+from one paired run with arrival seed 1. P95 is an order statistic and
+can be sensitive to arrival realization, trace ordering, and a few long
+workflows. There are no confidence intervals, repeated arrival seeds,
+bootstrap over tasks, or sensitivity grid for the 1s/5s/2-request queue
+targets, work coefficient, starvation threshold, and budget bounds. A
+fixed trace replay preserves turn sizes and tool gaps even if scheduling
+would alter agent decisions, retries, cache reuse, cancellation, or
+tool-side contention in a live system.</p>
+<p>Only P95 end-to-end flow time is the primary reported metric. A
+deployable scheduler also needs throughput, mean/median, P99, per-tenant
+fairness, starvation incidence, deadline miss rate, cancellation waste,
+cache hit rate, GPU utilization, energy, and dollar cost. Prior
+inference work optimizes token-level engine scheduling, preemption,
+fairness, or SLO goodput. Parrot, Agentix, and JITServe incorporate
+program or dependency context. The new contribution is treating
+pre-engine release time itself as an online workflow-level variable
+under tail risk. It complements rather than replaces engine
+scheduling.</p>
+<h3 id="reproducibility-and-enterprise-readiness-1">Reproducibility and
+enterprise readiness</h3>
+<p>The paper states algorithms, parameter values, engine version,
+models, hardware, task selection, trace statistics, and ablations, but
+releases no trace or implementation. Independent replay therefore
+requires reconstructing the scheduler and re-collecting workloads.
+<strong>Enterprise readiness: high for telemetry and offline simulation;
+medium for a shadow controller that makes recommendations only; low for
+production admission authority until multi-seed, multi-workload,
+fairness, cost, and failure tests pass. Research Utility Score:
+88/100</strong> (rigor 22/25; quantitative traceability 23/25;
+reproducibility/artifacts 10/20; enterprise relevance 18/20; prior-work
+advance 15/15).</p>
+<h2
+id="deep-paper-3--selective-risk-requires-locked-thresholds-and-an-abstention-path">Deep
+paper 3 — Selective risk requires locked thresholds and an abstention
+path</h2>
+<p><strong>Identity and status.</strong> <em>SIRF: A Spec-Internalized
+Risk Foundation Model for Industrial Content Risk Control</em>, Suwan
+Wu, Yumeng Lin, Pengcheng Yuan, and Xiaolong Jiang; submitted September
+10, 2026; arXiv:2609.11752; cs.AI; Xiaohongshu and Tianjin University;
+accepted to the EMNLP 2026 Industry Track; arXiv perpetual non-exclusive
+license. The data are proprietary and no code or model is released. (<a
+href="https://arxiv.org/abs/2609.11752">paper</a>, <a
+href="https://arxiv.org/html/2609.11752v1">full text</a>)</p>
+<h3 id="contribution-and-quantitative-claim-trace-2">Contribution and
+quantitative claim trace</h3>
+<p>SIRF decomposes roughly 100 platform policies into slower-changing
+judgment logic and volatile operating strategy. An automated pipeline
+expands entities, boundaries, counterexamples, genres, audiences, and
+account-level feature→clause→verdict chains. Continued pretraining
+internalizes the synthesized policy corpus; supervised fine-tuning
+teaches a three-way verdict. At deployment, separate per-class
+thresholds auto-escalate high-confidence Black cases, release
+high-confidence White cases, and leave Gray in the original flow.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>What it establishes</th>
+<th>What it does not establish</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Main evaluation</td>
+<td style="text-align: right;">n=1,000 live-distribution accounts: 596
+Black, 250 Gray, 154 White; 25 fine classes; time-based train/test</td>
+<td>Tests a real long-tailed operating distribution</td>
+<td>Independent labels, multi-platform validity, or adequate
+rare-subclass power</td>
+</tr>
+<tr class="even">
+<td>Same-source comparison</td>
+<td style="text-align: right;">Qwen3-8B-SFT vs SIRF-8B-SFT; same
+starting checkpoint, prompt, policy injection, and verdict form; CPT
+differs</td>
+<td>Stronger attribution than a cross-model leaderboard</td>
+<td>Isolation from every data-generation and tuning choice</td>
+</tr>
+<tr class="odd">
+<td>Headline operating point</td>
+<td style="text-align: right;">Black Recall@P95 56.2→71.3, +15.1 pp</td>
+<td>More risky cases retained at at least 95% precision on the fitted
+set</td>
+<td>Unbiased future-period coverage; threshold selected and evaluated on
+same set</td>
+</tr>
+<tr class="even">
+<td>Bootstrap</td>
+<td style="text-align: right;">+15.1 pp; 95% CI [+11.7,+18.5],
+1,000/1,000 positive</td>
+<td>Sampling stability of recall at the fixed selected threshold</td>
+<td>Threshold-selection uncertainty; authors explicitly exclude it</td>
+</tr>
+<tr class="odd">
+<td>Balanced replication</td>
+<td style="text-align: right;">n=4,638; SIRF 79.5 vs baseline 78.1
+B@P95; transferred threshold holds 95.7% Black precision</td>
+<td>Direction and precision constraint transfer to another
+distribution</td>
+<td>The headline effect size; margin shrinks from 15.1 to 1.4 pp</td>
+</tr>
+<tr class="even">
+<td>Three-way limitation</td>
+<td style="text-align: right;">Gray Recall@P95 0–19.2 across models</td>
+<td>Ambiguous cases lack a useful high-precision threshold</td>
+<td>That Gray is intrinsically unresolvable in other taxonomies</td>
+</tr>
+<tr class="odd">
+<td>Efficiency trade</td>
+<td style="text-align: right;">13% policy-prompt cut; P95 recall
+71.3→66.9; latency −8.8% to −18.2%, QPS +14% to +23% at concurrency
+≥16</td>
+<td>Internalization can reduce serving load, with a stated quality
+cost</td>
+<td>End-to-end cost or safe behavior after policy changes</td>
+</tr>
+<tr class="even">
+<td>Production adjudication</td>
+<td style="text-align: right;">About 10% of tree-model hits
+auto-escalated; good-sample release equivalent to +20% of original false
+positives</td>
+<td>Multi-month selective deployment evidence</td>
+<td>Full denominators, intervals, incident/appeal rates, or external
+audit</td>
+</tr>
+<tr class="odd">
+<td>First transfer</td>
+<td style="text-align: right;">About 70% relative mis-penalization
+reduction; million-user cumulative release scale; randomized A/B
+improves weekly active penetration by high-single to low-double
+digits</td>
+<td>One low-cost transfer and business outcome</td>
+<td>A general “foundation” across domains or causal mechanism
+detail</td>
+</tr>
+</tbody>
+</table>
+<p>Recall@P is computed one-vs-rest per class by selecting the smallest
+threshold whose accepted predictions meet target precision, then
+measuring accepted true cases over all gold cases. This is selective
+classification, not probability calibration. SIRF's raw first-token
+score is actually less calibrated than the same-source baseline (ECE
+0.176 vs 0.128; Brier 0.214 vs 0.197), although Platt scaling reduces
+ECE to 0.029. The paper correctly states that the score is a ranking,
+not a probability, and that thresholds are model- and
+class-specific.</p>
+<h3
+id="methodological-critique-and-prior-work-comparison-2">Methodological
+critique and prior-work comparison</h3>
+<p>The controlled same-source comparison, fixed-threshold bootstrap,
+balanced-set transfer, per-class analysis, prompt-efficiency trade-off,
+online deployment, and explicit non-auto-handling of Gray make this
+unusually operational. The paper avoids presenting its cross-model table
+as a leaderboard because models without token log probabilities are
+excluded and GPT-5.4 exposes a smaller top-logprob set. It also reports
+an adverse result: a 13% prompt reduction forfeits 4.4 points at
+P95—about 30% of the headline gain.</p>
+<p>Important uncertainty remains. The main threshold is fitted and
+evaluated on the same 1,000 records; the bootstrap fixes that threshold
+and therefore understates the full selection process. The independent
+balanced set preserves ≥95% precision but nearly removes the same-source
+recall advantage. Ground truth combines live disposition with a random
+human re-check, not a fully independent, blinded adjudication panel.
+Policies, labels, user population, and value judgments come from one
+Chinese-language platform. Public benchmarks suggest no broad ability
+degradation, but text-only CPT weakens instruction following;
+verdict-only deployment hides that cost.</p>
+<p>The design extends domain-adaptive pretraining by making policy
+specifications the continued-pretraining corpus and pairs it with
+classical reject-option/selective classification. It differs from
+prompt-only policy injection and guard models by moving stable rule
+structure into weights while leaving volatile strategy in thresholds and
+light tuning. That split is attractive but creates governance debt: a
+rule change may require identifying which knowledge is weight-bound,
+proving the new policy dominates, invalidating old thresholds, and
+auditing the synthetic teacher/judge pipeline.</p>
+<p>No public code, model, policies, training data, evaluation records,
+or A/B logs are available. Privacy claims say data are anonymized and
+used only for risk assessment, but fairness across populations or
+content types must be re-tested. High-precision automation still has
+irreversible false-positive and under-blocking risks; the paper itself
+says policy trade-offs require business values and human oversight.</p>
+<h3 id="reproducibility-and-enterprise-readiness-2">Reproducibility and
+enterprise readiness</h3>
+<p>The paper documents prompt structure, serialization, equations,
+dataset composition, ablations, calibration, and efficiency, but
+proprietary evidence blocks independent reproduction. <strong>Enterprise
+readiness: high for borrowing the selective-risk evaluation design;
+medium for testing a policy-specialized model in an isolated lab; low
+for weight-internalized production enforcement without independent
+validation, appeal controls, update lineage, and domain-specific legal
+review. Research Utility Score: 89/100</strong> (rigor 24/25;
+quantitative traceability 24/25; reproducibility/artifacts 7/20;
+enterprise relevance 19/20; prior-work advance 15/15).</p>
+<h2 id="watchlist">Watchlist</h2>
+<h3
+id="incident-evidence-can-audit-coverage-not-estimate-deployment-risk">Incident
+evidence can audit coverage, not estimate deployment risk</h3>
+<p><em>The Agent Incident Registry: Toward Preventing Repeated AI Agent
+Failures</em>, Divyanshu Kumar, Rohith HN, Nitin Aravind Birur, Sahil
+Agarwal, and Prashanth Harshangi; submitted September 10, 2026;
+arXiv:2609.11030; cs.AI; CC BY-SA 4.0 paper license. AIR contains 487
+source-linked records from 2022–2026; 457 are high confidence and 30
+medium confidence, while 52 unsupported leads remain quarantined. In the
+primary intersection of generative systems where the agent acted, 81 of
+336 records involve realized harm (24%). The authors repeatedly warn
+that this is disclosure composition, not deployment risk. Removing
+dominant source blocks moves the observed share as high as 40%, and
+apparent autonomy differences are confounded by disclosure class. The
+artifact is described as containing the frozen corpus, coding protocol,
+crosswalks, and reproduction code; the project page did not resolve in
+this review. (<a href="https://arxiv.org/abs/2609.11030">paper</a>, <a
+href="https://arxiv.org/html/2609.11030v1">full text</a>)</p>
+<p><strong>Why Watchlist.</strong> The registry's source admission,
+stable IDs, explicit missingness, second human review, agency-debatable
+flag, sensitivity bounds, and separation of realized harm from
+demonstrations are strong. Its most useful result is a coverage gap: the
+catalog includes 92 no-adversary safety failures, 87 realized, including
+destructive shell actions and uncommanded publication—mechanisms
+attacker-input evaluations miss. But public disclosures lack exposure
+denominators, source dependence is severe, control evidence is too
+incomplete for efficacy estimates, and the artifact could not be
+independently inspected. Use AIR-like fields to map evaluation coverage;
+do not produce vendor ranks, attack rates, autonomy causal claims, or
+automated severity scores. <strong>Research Utility Score:
+86/100</strong> (rigor 24; traceability 23; artifacts 14; enterprise
+relevance 14; advance 11).</p>
+<h3
+id="latent-interfaces-may-be-private-dialects-and-harmful-warm-starts">Latent
+interfaces may be private dialects and harmful warm starts</h3>
+<p><em>Portable Semantics, Private Dialects: Reuse and Negative Transfer
+in Latent Communication Between Language-Model Cells</em>, Narcis
+Marincat; submitted September 10, 2026; arXiv:2609.11365; cs.AI;
+preprint. A sealed causal interoperability audit tests all 30 directed
+pairs among six restricted four-cell societies. One same-initialization
+pair transfers raw packets perfectly both ways; a second is partially
+compatible; all 26 cross-initialization directions fail raw, orthogonal,
+affine, and nonlinear frozen alignment gates. In a single globally
+visible checkpoint, reinitializing only reader, writer, and mouth raises
+depth-three target accuracy from 0.169 to 0.857, localizing severe
+negative transfer to the inherited interface. Across two restricted
+checkpoints and two frozen target streams each, inherited interfaces
+never beat fresh controls by the preregistered 0.10 margin. (<a
+href="https://arxiv.org/abs/2609.11365">paper</a>, <a
+href="https://github.com/tokenosopher/populus-evidence-partitioning">artifact</a>,
+<a
+href="https://huggingface.co/tokenosopher/populus-evidence-partitioning-checkpoints">checkpoints</a>)</p>
+<p><strong>Why Watchlist.</strong> Reproducibility is unusually strong:
+preregistration, sealed manifests, hashes, fit/test packet banks,
+evaluation JSON, deterministic machine admission, checkpoints, fitted
+maps, scripts, and licenses were verified in first-party repositories.
+The interpretation is intentionally narrow: four cells share a frozen
+Qwen2.5-0.5B genome and rank-8 LoRA; the task is function composition
+over a 17-state space; the negative-transfer factorial is one
+checkpoint. It does not establish failure of text protocols, standard
+multi-agent orchestration, or general latent-communication transfer.
+Monitor as an architecture warning: independently trained learned
+interfaces require compatibility tests, and inherited communication
+modules need fresh-interface controls. <strong>Research Utility Score:
+87/100</strong> (rigor 25; traceability 23; artifacts 20; enterprise
+relevance 8; advance 11).</p>
+<h2 id="cross-paper-synthesis">Cross-paper synthesis</h2>
+<p>The reviewed work converges on seven admission rules:</p>
+<ol type="1">
+<li><strong>Proposed memory is untrusted evidence.</strong> A successful
+trajectory can contain wrong intermediate assumptions; a failed
+trajectory can contain reusable procedures. Grade and reflection alone
+do not establish scope or freshness.</li>
+<li><strong>Read-only is a capability boundary, not a safety
+certificate.</strong> Environment probing lowers side-effect risk but
+still requires authorization, privacy, budget, injection defense, and
+retention controls.</li>
+<li><strong>Causal readiness and operational release are different
+states.</strong> A ready turn is eligible; admission should also reflect
+congestion, workflow age, estimated work, fairness, and cancellation
+value.</li>
+<li><strong>High-confidence automation needs an explicit abstention
+class.</strong> SIRF's Gray result is a concrete reminder that some
+cases should remain routed rather than forced through a threshold.</li>
+<li><strong>A threshold is versioned operational state.</strong> It
+depends on model, class, score definition, calibration distribution,
+policy, and time period; it is neither universal nor automatically
+probabilistic.</li>
+<li><strong>Incident corpora reveal missing mechanisms, not
+prevalence.</strong> Without exposure denominators and matched systems,
+disclosure shares cannot rank vendors or quantify deployment risk.</li>
+<li><strong>Learned interfaces are dependencies.</strong> Semantic
+similarity does not guarantee interoperability; warm starts can create
+negative transfer, so fresh-interface controls belong in
+evaluation.</li>
+</ol>
+<p><strong>Independent Analysis.</strong> The common architecture
+pattern is a two-phase control: <em>propose or become eligible</em>,
+then <em>admit under an evidence contract</em>. That contract should
+name the actor, source, identity and authorization, model/version,
+policy/version, target metric, evaluator, uncertainty, resource budget,
+human-review path, owner, expiry, and rollback. Admission decisions
+should be observable and replayable. The design does not assume a
+specific vendor, model, data platform, or current maturity.</p>
+<h2
+id="visual-1--admission-boundaries-in-an-enterprise-agent-system">Visual
+1 — admission boundaries in an enterprise agent system</h2>
+<pre class="text"><code>USER / APPLICATION
+      │ request + identity + purpose
+      ▼
+AGENT ORCHESTRATION ── ready turn ──► RELEASE ADMISSION ──► MODEL GATEWAY
+      │                                  │ queue pressure / age / work
+      │ trajectory + outcome             └── shadow replay / fairness / SLO
+      ▼
+MEMORY CURATOR ── proposed record ──► MEMORY PROMOTION ──► SHARED MEMORY
+      │                                  │ provenance / probe / scope / expiry
+      │ read-only environment probe      └── reject / narrow / human review
+      ▼
+SELECTIVE DECISION MODEL ── score ──► DISPOSITION ADMISSION ──► bounded action
+                                         │ locked threshold / class / policy
+                                         └── abstain / appeal / rollback
+
+EVALUATION + OBSERVABILITY spans every gate:
+version lineage · evidence identity · slice metrics · incidents · cost · audit log</code></pre>
+<h2 id="visual-2--evidence-strength-and-deployment-distance">Visual 2 —
+evidence strength and deployment distance</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Signal</th>
+<th>Strongest verified evidence</th>
+<th>Safe near-term use</th>
+<th>Largest deployment gap</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Read-only memory verification</td>
+<td>Paired five-run CLBench, drift/no-drift, cross-model check, 90-task
+APEX adaptation</td>
+<td>Shadow curator and promotion-quality audit</td>
+<td>Public artifacts, total-system economics, connector/privacy/security
+tests</td>
+</tr>
+<tr class="even">
+<td>Tail-aware turn release</td>
+<td>Paired closed-loop replay across 2 traces × 3 model sizes × 5 rates;
+ablations</td>
+<td>Telemetry and offline/shadow scheduling</td>
+<td>Multiple seeds, broader workloads, fairness, throughput, code,
+failure injection</td>
+</tr>
+<tr class="odd">
+<td>Selective risk handling</td>
+<td>Same-source comparison, fixed-threshold bootstrap, balanced check,
+multi-month deployment, A/B</td>
+<td>Operating-point evaluation with abstention</td>
+<td>Proprietary evidence, threshold-selection bias,
+subgroup/fairness/appeal audit</td>
+</tr>
+<tr class="even">
+<td>Incident coverage mapping</td>
+<td>487 source-linked records, explicit missingness, sensitivity and
+identification bounds</td>
+<td>Evaluation taxonomy gap analysis</td>
+<td>Exposure denominators, source representativeness, inspectable
+artifact</td>
+</tr>
+<tr class="odd">
+<td>Latent-interface portability</td>
+<td>Sealed 30-direction audit, preregistration, public
+code/results/checkpoints</td>
+<td>Compatibility and fresh-initialization controls</td>
+<td>Tiny synthetic setting, one negative-transfer checkpoint, no
+production workload</td>
+</tr>
+</tbody>
+</table>
+<h2 id="enterprise-ai-enhancement-backlog">Enterprise AI Enhancement
+Backlog</h2>
+<h3 id="priority-method-and-uncertainty">Priority method and
+uncertainty</h3>
+<p>The <strong>Future Enterprise AI Priority Score</strong> is a
+transparent decision aid, not a measured probability: strategic/business
+value 25%, technical leverage 20%, evidence strength 20%, enterprise
+readiness 15%, feasibility 10%, and risk-adjusted differentiation 10%.
+Component values are analyst judgments grounded in this briefing.
+Differences below roughly three points are not decision-significant
+until internal workflow, architecture, cost, risk, data, legal,
+security, and adoption context is supplied.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: right;">#</th>
+<th>Enhancement</th>
+<th>Decision band</th>
+<th style="text-align: right;">Strategic</th>
+<th style="text-align: right;">Leverage</th>
+<th style="text-align: right;">Evidence</th>
+<th style="text-align: right;">Readiness</th>
+<th style="text-align: right;">Feasibility</th>
+<th style="text-align: right;">Differentiation</th>
+<th style="text-align: right;">Weighted total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td>Probing-backed memory promotion gate</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">89</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;"><strong>92.1</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td>Tail-aware workflow release shadow controller</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;"><strong>89.7</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td>Selective-risk operating-point qualification</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">87</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">89</td>
+<td style="text-align: right;"><strong>88.8</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td>Memory provenance, freshness, and expiry ledger</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">89</td>
+<td style="text-align: right;"><strong>89.2</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td>Committed-work and critical-path telemetry</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;"><strong>89.0</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td>Policy, score, and threshold lineage registry</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">83</td>
+<td style="text-align: right;">76</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;"><strong>88.0</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td>Incident-to-evaluation coverage mapper</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">83</td>
+<td style="text-align: right;">81</td>
+<td style="text-align: right;">87</td>
+<td style="text-align: right;"><strong>86.2</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td>Learned-interface compatibility and fresh-start harness</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">62</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;"><strong>76.5</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9</td>
+<td>Policy-in-weights autonomous disposition</td>
+<td>Deprioritize for Now</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">34</td>
+<td style="text-align: right;">38</td>
+<td style="text-align: right;">72</td>
+<td style="text-align: right;"><strong>67.2</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="prototype-soon">Prototype Soon</h3>
+<h4 id="1-probing-backed-memory-promotion-gate--921100">1.
+Probing-backed memory promotion gate — 92.1/100</h4>
+<ul>
+<li><strong>Category:</strong> Memory &amp; Context / Safety &amp;
+Governance / Evaluation &amp; Observability.</li>
+<li><strong>Research signal and support:</strong> <strong>Paper
+Fact</strong> — environment-probed curation improves CLBench pass rate,
+reward, queries, and task-agent cost over no memory and has the highest
+mean versus trajectory memory; APEX gains are positive across all 18
+memory comparisons. Support: Grounding Agent Memory.</li>
+<li><strong>Enterprise problem or opportunity:</strong> Shared memory
+can propagate errors, stale mappings, accidental answers, and over-broad
+procedures across sessions.</li>
+<li><strong>Proposed future capability:</strong> <strong>Enterprise
+Inference</strong> — a post-task curator proposes a typed record,
+retrieves related records, and uses least-privilege read-only tools to
+test correctness, scope, freshness, preconditions, and shorter
+alternatives. A promotion service records probe evidence and either
+rejects, narrows, expires, queues for human review, or writes the
+memory.</li>
+<li><strong>Likely architectural placement:</strong> agent layer,
+orchestration, retrieval/knowledge, observability, security/governance,
+human-review layer.</li>
+<li><strong>Expected business value:</strong> productivity, quality,
+reliability, cost, risk reduction. <strong>Technical value:</strong>
+turns shared memory writes into auditable evidence decisions and
+amortizes repeated environment discovery.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+paired benchmark evidence; probing increment and total cost are less
+certain; no public implementation. <strong>Confidence:</strong> High for
+a shadow test; Moderate for production benefit.
+<strong>Horizon:</strong> Now. <strong>Effort:</strong> M.</li>
+<li><strong>Dependencies and prerequisites:</strong> typed memory
+schema; source/tenant/user identity; safe read-only connector surface;
+probe budget; content filtering; provenance; expiry/deletion; evaluator
+and approval path.</li>
+<li><strong>Key risks:</strong> prompt injection in sources, secret
+exposure, cross-tenant correlation, read-side effects or cost, curator
+hallucination, over-retention, user correction/deletion failures,
+shadow-to-live behavior drift.</li>
+<li><strong>Build / Buy / Partner:</strong> Build the promotion contract
+and ledger because policy, identity, and retention are
+enterprise-specific; reuse existing memory/retrieval products behind the
+gate; partner with security, privacy, and data owners.</li>
+<li><strong>Minimum reversible validation experiment:</strong>
+Shadow-curate 100 synthetic or de-identified completed tasks in an
+isolated environment. Generate trajectory-only and probing-backed
+candidate records; commit neither; blinded reviewers compare
+correctness, scope, freshness, actionability, probe cost, and downstream
+replay.</li>
+<li><strong>Success metrics and stop conditions:</strong> ≥20% reduction
+in unsupported or stale candidate records, non-inferior downstream task
+success, lower task-time tool rediscovery after simulated promotion,
+100% provenance/tenant attribution, zero writes or external side
+effects. Stop on any sensitive-data leak, cross-tenant retrieval,
+unverifiable record, probe loop, or cost larger than expected downstream
+saving.</li>
+<li><strong>Roadmap trigger:</strong> two representative domains
+reproduce quality and cost benefit with approved authorization/retention
+controls. Internal context required: memory use cases, connectors,
+tenant model, data classes, retention obligations, correction rights,
+and failure cost.</li>
+</ul>
+<h4 id="2-tail-aware-workflow-release-shadow-controller--897100">2.
+Tail-aware workflow release shadow controller — 89.7/100</h4>
+<ul>
+<li><strong>Category:</strong> Agentic AI / MLOps &amp; Platform / Model
+&amp; Inference.</li>
+<li><strong>Research signal and support:</strong> <strong>Paper
+Fact</strong> — across six trace–model combinations, the scheduler
+matches eager release at light load and lowers P95 under contention; the
+maximum reported speedup is 3.50×. Support: Tail-Aware Scheduling.</li>
+<li><strong>Enterprise problem or opportunity:</strong> Eagerly
+submitted turns create committed work that cannot be reprioritized when
+workflow urgency and congestion change.</li>
+<li><strong>Proposed future capability:</strong> <strong>Enterprise
+Inference</strong> — a shadow admission controller estimates turn work,
+observes ready and committed queues, assigns workflow tail-risk urgency,
+proposes a release order/budget, and compares its counterfactual P95,
+fairness, throughput, and cost with live eager behavior. It has no
+production authority initially.</li>
+<li><strong>Likely architectural placement:</strong> orchestration,
+model gateway, infrastructure, evaluation, observability.</li>
+<li><strong>Expected business value:</strong> speed, reliability, cost,
+customer experience. <strong>Technical value:</strong> preserves
+workflow-level choice before engine commitment and gives dependent jobs
+an explicit SLO control surface.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Credible paired replay and ablations; single seed, no public artifact,
+software-only traces. <strong>Confidence:</strong> Moderate-High for
+shadow value; Moderate for portability. <strong>Horizon:</strong> Now.
+<strong>Effort:</strong> M.</li>
+<li><strong>Dependencies and prerequisites:</strong> workflow/turn IDs;
+ready/release/service/completion timestamps; token/work estimates;
+cancellation and tool-gap events; queue telemetry; SLO/fairness policy;
+replay simulator.</li>
+<li><strong>Key risks:</strong> starvation, tenant unfairness, bad work
+estimates, cache loss, feedback with engine scheduler, hidden throughput
+loss, clock skew, burst sensitivity, controller instability.</li>
+<li><strong>Build / Buy / Partner:</strong> Build a vendor-neutral
+shadow policy at orchestration/model-gateway boundary; buy/export engine
+telemetry where available. Do not couple the first experiment to one
+inference vendor.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Capture a
+week or equivalent replay of one low-risk multi-turn workload, remove
+payload content, and simulate eager, FIFO-budget, tail-ordering, and
+full admission policies across multiple resampled arrivals.</li>
+<li><strong>Success metrics and stop conditions:</strong> ≥15% P95
+improvement at relevant utilization, non-inferior throughput/mean/P99,
+bounded fairness and starvation, stable results across ≥10 arrival
+seeds, and positive realized cost model. Stop on any critical workflow
+starvation, &gt;2% throughput loss without accepted value, or unstable
+budget oscillation.</li>
+<li><strong>Roadmap trigger:</strong> benefit repeats across two
+workload families and a canary advisory-only run predicts measured
+outcomes. Internal context required: traffic shape, tenancy, SLA,
+cancellation semantics, model endpoints, cache behavior, and failure
+priorities.</li>
+</ul>
+<h4 id="3-selective-risk-operating-point-qualification--888100">3.
+Selective-risk operating-point qualification — 88.8/100</h4>
+<ul>
+<li><strong>Category:</strong> Safety &amp; Governance / Evaluation
+&amp; Observability / Human-AI Workflow.</li>
+<li><strong>Research signal and support:</strong> <strong>Paper
+Fact</strong> — SIRF reports 71.3 Black Recall@P95 versus 56.2 for a
+same-source baseline, while Gray offers no useful high-precision
+threshold and is kept in the original flow. The balanced-set difference
+is only 1.4 points. Support: SIRF.</li>
+<li><strong>Enterprise problem or opportunity:</strong> Accuracy
+averages conceal how much work is safe to automate at a required
+precision and whether an abstention region exists.</li>
+<li><strong>Proposed future capability:</strong> <strong>Enterprise
+Inference</strong> — an evaluation gate fits per-class thresholds on a
+training period, locks model/score/policy versions, tests coverage and
+precision on a later holdout, measures subgroup and appeal outcomes, and
+routes ambiguous cases to human or existing controls.</li>
+<li><strong>Likely architectural placement:</strong> applications, model
+gateway, evaluation, observability, security/governance, human-review
+layer.</li>
+<li><strong>Expected business value:</strong> quality, risk reduction,
+customer experience, productivity. <strong>Technical value:</strong>
+makes automation coverage conditional on a verifiable operating point
+rather than average accuracy or confidence rhetoric.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Accepted industry paper and deployment evidence, but proprietary
+artifacts and selection bias limit verification.
+<strong>Confidence:</strong> High in the evaluation pattern;
+Low-Moderate in direct performance transfer. <strong>Horizon:</strong>
+Now. <strong>Effort:</strong> M.</li>
+<li><strong>Dependencies and prerequisites:</strong> representative
+labels, time-separated splits, appeal taxonomy, subgroup definitions,
+cost matrix, threshold registry, human capacity, monitoring and
+rollback.</li>
+<li><strong>Key risks:</strong> threshold overfitting, distribution
+drift, rare-class uncertainty, calibration misuse, fairness harm,
+label-policy feedback, automation bias, opaque appeals.</li>
+<li><strong>Build / Buy / Partner:</strong> Build threshold governance
+and holdout validation; buy models only as interchangeable scored
+components; partner with legal, policy, domain reviewers, and
+affected-user representatives where appropriate.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Replay a
+de-identified decision set with an explicit defer class; fit on one
+period and evaluate on another; deliver no automated dispositions.</li>
+<li><strong>Success metrics and stop conditions:</strong> target-class
+precision holds with confidence bounds, coverage adds value after review
+cost, no material subgroup or appeal regression, all thresholds
+reproducible from lineage. Stop if holdout precision misses policy,
+Gray/defer backlog becomes unsafe, or appeal reversals exceed the
+baseline.</li>
+<li><strong>Roadmap trigger:</strong> two locked, time-separated
+evaluations and shadow operation sustain policy precision and acceptable
+fairness/review load. Internal context required: legal basis,
+reversibility, user notice, severity, human capacity, and acceptable
+error asymmetry.</li>
+</ul>
+<h3 id="prepare-foundations">Prepare Foundations</h3>
+<h4 id="4-memory-provenance-freshness-and-expiry-ledger--892100">4.
+Memory provenance, freshness, and expiry ledger — 89.2/100</h4>
+<ul>
+<li><strong>Category:</strong> Memory &amp; Context / Data &amp;
+Knowledge Infrastructure / Safety &amp; Governance.</li>
+<li><strong>Research signal and support:</strong> <strong>Paper
+Fact</strong> — trajectory-only records can retain rejected answers and
+obsolete schema names; the proposed record schema includes provenance,
+confidence, applicability scope, utility, and usage. Support: Grounding
+Agent Memory.</li>
+<li><strong>Enterprise problem or opportunity:</strong> Memory stores
+often lack enough identity and time semantics to audit why a record
+exists or invalidate it after source change.</li>
+<li><strong>Proposed future capability:</strong> <strong>Enterprise
+Inference</strong> — every record carries immutable source/actor/tenant
+IDs, evidence pointers, creation and verification time,
+environment/model/policy version, scope, sensitivity, expiry,
+contradiction links, use history, reviewer, and deletion/correction
+state.</li>
+<li><strong>Likely architectural placement:</strong>
+retrieval/knowledge, data platform, observability,
+security/governance.</li>
+<li><strong>Expected business value:</strong> reliability, risk
+reduction, quality, speed. <strong>Technical value:</strong> enables
+safe promotion, scoped retrieval, drift repair, right-to-correct,
+rollback, and memory-specific evaluation.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Metadata concepts are deployment-compatible; exact operational design is
+Independent Analysis. <strong>Confidence:</strong> High.
+<strong>Horizon:</strong> 3–6 months. <strong>Effort:</strong> M.</li>
+<li><strong>Dependencies and prerequisites:</strong> stable IDs, data
+catalog, authorization, lineage store, retention policy, source change
+events, schema ownership.</li>
+<li><strong>Key risks:</strong> metadata becomes stale, sensitive
+provenance leakage, high cardinality, inconsistent identity, orphan
+records, deletion propagation gaps.</li>
+<li><strong>Build / Buy / Partner:</strong> Build the cross-platform
+contract; buy storage/catalog primitives; partner with privacy, records,
+and data-governance owners.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Generate
+observe-only ledger entries for one synthetic memory collection; run
+contradiction, expiry, tenant, and deletion drills without changing
+retrieval.</li>
+<li><strong>Success metrics and stop conditions:</strong> 100%
+required-field coverage, deterministic lineage resolution, deletion
+propagation within policy, zero unauthorized cross-scope retrieval in
+tests. Stop if identity cannot be resolved or provenance itself violates
+minimization.</li>
+<li><strong>Roadmap trigger:</strong> ledger demonstrably enables
+promotion/rollback and passes privacy/security review for two domains.
+Internal context required: system of record, identity topology,
+retention, and regulatory obligations.</li>
+</ul>
+<h4 id="5-committed-work-and-critical-path-telemetry--890100">5.
+Committed-work and critical-path telemetry — 89.0/100</h4>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability / MLOps
+&amp; Platform / Agentic AI.</li>
+<li><strong>Research signal and support:</strong> <strong>Paper
+Fact</strong> — tail-aware scheduling depends on separating ready,
+committed, service, tool-gap, and completion states and estimating work.
+Support: Tail-Aware Scheduling.</li>
+<li><strong>Enterprise problem or opportunity:</strong> Request-level
+latency cannot explain whether workflow delay comes from tools,
+pre-engine admission, engine queueing, inference, retries, or downstream
+dependencies.</li>
+<li><strong>Proposed future capability:</strong> <strong>Enterprise
+Inference</strong> — a privacy-minimized trace model records workflow
+DAG, turn state transitions, estimated/actual tokens, queue pressure,
+cache/cancellation state, tool gaps, cost, deadline, and tenant/SLO
+class.</li>
+<li><strong>Likely architectural placement:</strong> agent layer,
+orchestration, model gateway, observability, infrastructure.</li>
+<li><strong>Expected business value:</strong> speed, reliability, cost,
+productivity. <strong>Technical value:</strong> enables critical-path
+diagnosis, release-policy replay, capacity planning, and fair SLO
+enforcement.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Instrumentation is a lower-risk prerequisite than scheduling authority.
+<strong>Confidence:</strong> High. <strong>Horizon:</strong> Now.
+<strong>Effort:</strong> M.</li>
+<li><strong>Dependencies and prerequisites:</strong> trace IDs,
+synchronized clocks, endpoint telemetry, retention/minimization,
+sampling, cost mapping, data quality SLO.</li>
+<li><strong>Key risks:</strong> payload leakage, overhead, cardinality,
+broken spans, vendor blind spots, misleading estimates, employee/user
+monitoring concerns.</li>
+<li><strong>Build / Buy / Partner:</strong> Adopt open telemetry
+conventions where possible, build agent-specific state semantics, buy
+exporters/adapters as needed.</li>
+<li><strong>Minimum reversible validation experiment:</strong>
+Instrument metadata-only traces for a non-production workload; compare
+reconstructed critical paths with ground truth and quantify
+overhead.</li>
+<li><strong>Success metrics and stop conditions:</strong> ≥99%
+state-transition completeness on sampled runs, &lt;2% overhead, accurate
+cost and critical-path attribution, no payload capture. Stop on
+sensitive-data exposure or unusable vendor gaps.</li>
+<li><strong>Roadmap trigger:</strong> telemetry identifies material
+committed-work or tool-gap bottlenecks and supports repeatable replay.
+Internal context required: current trace stack, model contracts, privacy
+rules, and SLO hierarchy.</li>
+</ul>
+<h4 id="6-policy-score-and-threshold-lineage-registry--880100">6.
+Policy, score, and threshold lineage registry — 88.0/100</h4>
+<ul>
+<li><strong>Category:</strong> Safety &amp; Governance / MLOps &amp;
+Platform / Evaluation &amp; Observability.</li>
+<li><strong>Research signal and support:</strong> <strong>Paper
+Fact</strong> — SIRF separates stable rules from volatile strategies,
+calibrates thresholds per model and class, and states the score is a
+ranking rather than probability. Support: SIRF.</li>
+<li><strong>Enterprise problem or opportunity:</strong> Model, prompt,
+policy, label taxonomy, score semantics, and threshold can change
+independently and silently invalidate an automated decision.</li>
+<li><strong>Proposed future capability:</strong> <strong>Enterprise
+Inference</strong> — a registry binds each decision policy to
+model/checkpoint, prompt, feature schema, policy clauses, score
+extraction, calibrator, class threshold, validation set, effective
+period, owner, approval, appeal route, and rollback version.</li>
+<li><strong>Likely architectural placement:</strong> model gateway,
+evaluation, observability, security/governance, developer platform.</li>
+<li><strong>Expected business value:</strong> risk reduction,
+reliability, audit speed, quality. <strong>Technical value:</strong>
+makes operating points reproducible and invalidates them automatically
+when dependencies change.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Selective classification is mature; the lineage synthesis is Independent
+Analysis. <strong>Confidence:</strong> High. <strong>Horizon:</strong>
+3–6 months. <strong>Effort:</strong> M.</li>
+<li><strong>Dependencies and prerequisites:</strong> model registry,
+policy IDs, dataset/version lineage, evaluation pipeline, approvals,
+drift detection, rollback mechanism.</li>
+<li><strong>Key risks:</strong> incomplete linkage, stale approvals,
+policy-code mismatch, false confidence from passing paperwork,
+proprietary model opacity.</li>
+<li><strong>Build / Buy / Partner:</strong> Build the semantic contract
+and invalidation rules; integrate existing registries/catalogs; partner
+with model risk, legal, compliance, and platform teams.</li>
+<li><strong>Minimum reversible validation experiment:</strong>
+Reconstruct lineage for one historical threshold change and verify that
+simulated model/prompt/policy changes invalidate the decision
+artifact.</li>
+<li><strong>Success metrics and stop conditions:</strong> complete
+dependency graph, deterministic reproduction, automatic invalidation,
+named owner/rollback/appeal. Stop if any production decision cannot be
+mapped to evidence and policy version.</li>
+<li><strong>Roadmap trigger:</strong> one domain passes an audit using
+the registry and catches a material stale-threshold condition. Internal
+context required: approval model, audit requirements, existing
+registries, and policy update cadence.</li>
+</ul>
+<h4 id="7-incident-to-evaluation-coverage-mapper--862100">7.
+Incident-to-evaluation coverage mapper — 86.2/100</h4>
+<ul>
+<li><strong>Category:</strong> AI Security / Safety &amp; Governance /
+Evaluation &amp; Observability.</li>
+<li><strong>Research signal and support:</strong> <strong>Paper
+Fact</strong> — AIR separates causal role, surface, vector, outcome, and
+disclosure class, and shows 92 no-adversary safety failures omitted by
+attacker-input-only evaluations. Support: AIR.</li>
+<li><strong>Enterprise problem or opportunity:</strong> Evaluation
+suites can look comprehensive while omitting ordinary misuse,
+spontaneous failure, destructive tools, uncommanded publication, or
+embodied-control mechanisms.</li>
+<li><strong>Proposed future capability:</strong> <strong>Enterprise
+Inference</strong> — map internal incidents and approved public cases to
+a missingness-aware mechanism taxonomy, then measure which surfaces,
+triggers, consequence types, and no-adversary cells each evaluation
+covers.</li>
+<li><strong>Likely architectural placement:</strong> evaluation,
+observability, security/governance, human-review layer.</li>
+<li><strong>Expected business value:</strong> risk reduction, quality,
+strategic learning. <strong>Technical value:</strong> converts incidents
+into evaluation coverage requirements without misusing disclosure counts
+as risk rates.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+registry method; first-party artifact was not inspectable and public
+data are selection-biased. <strong>Confidence:</strong> Moderate-High.
+<strong>Horizon:</strong> 3–6 months. <strong>Effort:</strong> M.</li>
+<li><strong>Dependencies and prerequisites:</strong> incident process,
+stable IDs, legal/reputation controls, taxonomy owner, restricted
+access, correction provenance, linkage to eval cases.</li>
+<li><strong>Key risks:</strong> unsupported allegations, vendor
+comparison misuse, disclosure bias, exploit amplification, privacy,
+inconsistent severity, automated decision misuse.</li>
+<li><strong>Build / Buy / Partner:</strong> Build the internal mapping
+and controls; use public catalogs only as candidate evidence; partner
+with security, safety, legal, and incident-response owners.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Classify
+20 de-identified internal near misses and 20 approved public cases;
+dual-review disagreements; produce coverage gaps without prevalence or
+vendor rankings.</li>
+<li><strong>Success metrics and stop conditions:</strong> ≥0.8 reviewer
+agreement after adjudication, explicit missingness, at least one
+actionable coverage gap, zero unsupported risk-rate claims. Stop on
+legal/privacy concerns or taxonomy instability.</li>
+<li><strong>Roadmap trigger:</strong> the mapper changes evaluation
+scope and catches a previously untested failure mechanism. Internal
+context required: incident disclosure policy, ownership, severity model,
+and evaluator inventory.</li>
+</ul>
+<h3 id="monitor-for-maturity">Monitor for Maturity</h3>
+<h4
+id="8-learned-interface-compatibility-and-fresh-start-harness--765100">8.
+Learned-interface compatibility and fresh-start harness — 76.5/100</h4>
+<ul>
+<li><strong>Category:</strong> Agentic AI / Model &amp; Inference / AI
+Software Engineering.</li>
+<li><strong>Research signal and support:</strong> <strong>Paper
+Fact</strong> — all 26 cross-initialization latent-packet directions
+fail frozen alignment gates; one inherited interface causes severe
+negative transfer versus partial reinitialization. Support: Portable
+Semantics.</li>
+<li><strong>Enterprise problem or opportunity:</strong> Modular learned
+agent interfaces may appear semantically aligned yet fail causally when
+components, seeds, checkpoints, or task families change.</li>
+<li><strong>Proposed future capability:</strong> <strong>Enterprise
+Inference</strong> — an R&amp;D harness runs swap/transplant, held-out
+alignment, derangement, fresh-interface, and partial-reinitialization
+controls before any learned communication module is reused.</li>
+<li><strong>Likely architectural placement:</strong> agent layer, model
+gateway, evaluation, developer platform.</li>
+<li><strong>Expected business value:</strong> reliability, risk
+reduction, strategic differentiation. <strong>Technical value:</strong>
+detects private dialects and negative-transfer priors that geometric
+similarity misses.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Excellent artifact quality but tiny synthetic setting and no enterprise
+workflow. <strong>Confidence:</strong> High in the reported case; Low
+for external validity. <strong>Horizon:</strong> 12+ months.
+<strong>Effort:</strong> L.</li>
+<li><strong>Dependencies and prerequisites:</strong> an actual learned
+latent interface use case, causal intervention access, checkpoint
+lineage, sealed test splits, reproducible training.</li>
+<li><strong>Key risks:</strong> high complexity, false analogies to text
+protocols, compute cost, leakage between alignment/test sets, vendor
+opacity, hard-to-debug failures.</li>
+<li><strong>Build / Buy / Partner:</strong> Partner with research teams;
+build only if latent inter-agent communication becomes strategically
+relevant. No mature general product is evidenced.</li>
+<li><strong>Minimum reversible validation experiment:</strong> On a toy
+internal research workload, compare inherited, reinitialized, and
+aligned interfaces with held-out causal controls; do not connect to
+production agents.</li>
+<li><strong>Success metrics and stop conditions:</strong> preregistered
+interoperability gate, causal negative controls, reproducibility across
+seeds, benefit over text baseline. Stop if latent interface lacks
+material value or cannot be audited.</li>
+<li><strong>Roadmap trigger:</strong> independent larger-scale
+replication and an internal workload where latent communication beats
+auditable text/structured contracts. Internal context required: research
+strategy, model access, performance need, and interpretability
+tolerance.</li>
+</ul>
+<h3 id="deprioritize-for-now">Deprioritize for Now</h3>
+<h4 id="9-policy-in-weights-autonomous-disposition--672100">9.
+Policy-in-weights autonomous disposition — 67.2/100</h4>
+<ul>
+<li><strong>Category:</strong> Safety &amp; Governance / Model &amp;
+Inference / Human-AI Workflow.</li>
+<li><strong>Research signal and support:</strong> <strong>Paper Fact
+plus Uncertainty</strong> — SIRF reports a strong selective operating
+point and production use, but the main threshold is selected/evaluated
+on one set, the balanced margin narrows, artifacts are proprietary, and
+policy/fairness evidence comes from one platform.</li>
+<li><strong>Enterprise problem or opportunity:</strong> Internalizing
+stable policy may reduce prompt size and latency, but moving rules into
+weights can obscure updates, accountability, and appeal.</li>
+<li><strong>Proposed future capability:</strong> None for production
+now. Maintain as a research option: policy-synthesized continued
+pretraining combined with external thresholds, explicit abstention, and
+human review.</li>
+<li><strong>Likely architectural placement:</strong> model gateway,
+security/governance, human-review layer, infrastructure.</li>
+<li><strong>Expected business value:</strong> possible speed, cost,
+consistency, and risk reduction. <strong>Technical value:</strong>
+compressed invocation of stable rules. Both remain highly
+context-dependent.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Credible single-company evidence, no independent reproduction,
+high-consequence governance gap. <strong>Confidence:</strong> Moderate
+in paper facts; Low in portability. <strong>Horizon:</strong> 12+
+months. <strong>Effort:</strong> XL.</li>
+<li><strong>Dependencies and prerequisites:</strong> formal policy
+corpus, update semantics, rights-cleared training data, independent
+labels, subgroup/appeal evaluation, model training/serving capability,
+threshold registry, rollback model, regulator/legal approval.</li>
+<li><strong>Key risks:</strong> stale hidden rules, weak-supervision
+error, policy leakage, fairness harm, irreversibility, appeal opacity,
+catastrophic false positives/negatives, retraining cost, jurisdiction
+conflict, vendor lock-in.</li>
+<li><strong>Build / Buy / Partner:</strong> Defer. If later
+investigated, partner with domain, legal, fairness, security, and
+affected-user governance; retain policy and final authority outside the
+weights.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Train
+only a small non-production model on a synthetic, low-consequence policy
+set; compare prompt-only, CPT, and fresh-model controls; allow no
+real-user action.</li>
+<li><strong>Success metrics and stop conditions:</strong> locked
+future-period precision, meaningful efficiency after full lifecycle
+cost, no subgroup/appeal regression, reliable policy-update and
+rollback. Stop on any non-reproducible rule, hidden-policy conflict, or
+inability to reverse.</li>
+<li><strong>Roadmap trigger:</strong> public or independently auditable
+multi-domain replication plus internal proof that policy updates,
+appeals, fairness, and rollback remain controllable. Internal context
+required across architecture, policy, training data, legal basis,
+governance, and risk appetite.</li>
+</ul>
+<h2 id="enterprise-ai-architecture-implications">Enterprise AI
+Architecture Implications</h2>
+<p><strong>Independent Analysis — 12–24 month view.</strong> The
+evidence favors a shift from agents that directly write, submit, or
+decide toward agents that produce <em>admission candidates</em>. A
+platform-level control plane then evaluates those candidates under
+versioned policy and evidence contracts. This is not a recommendation to
+deploy every reviewed technique; it is a modular architecture that keeps
+experimentation reversible.</p>
+<p>Shared enabling foundations unlock multiple enhancements:</p>
+<ul>
+<li><strong>Identity and authorization:</strong> user, tenant, agent,
+curator, tool, memory-record, workflow, and policy IDs with
+least-privilege scopes.</li>
+<li><strong>Evidence and provenance:</strong> immutable source pointers,
+environment and model versions, verification time, record scope,
+sensitivity, expiry, contradiction and correction lineage.</li>
+<li><strong>Agent orchestration:</strong> explicit ready, admitted,
+committed, running, waiting-on-tool, completed, cancelled, and failed
+states; release authority separate from dependency resolution.</li>
+<li><strong>Model gateway:</strong> versioned endpoints, score
+semantics, calibration artifacts, threshold lineage, fallback and
+abstention behavior, realized cost/latency telemetry.</li>
+<li><strong>Evaluation infrastructure:</strong> time-separated holdouts,
+slice and appeal metrics, paired/shadow replay, multiple evaluators,
+human adjudication, incident-to-test coverage, fresh-initialization
+controls.</li>
+<li><strong>Observability and cost telemetry:</strong> workflow critical
+paths, committed work, queue pressure, probe and curation cost,
+task-time savings, human-review load, policy/threshold invalidations,
+outcome feedback.</li>
+<li><strong>Security and governance:</strong> read-only connector
+policy, prompt-injection defense, retention/deletion, output quarantine,
+tenant isolation, audit logs, approval gates, incident response,
+reversible rollback.</li>
+<li><strong>Human-review controls:</strong> explicit ambiguous/defer
+class, reviewer capacity and wellbeing, disagreement handling, appeal
+and correction routes, automation-bias monitoring.</li>
+<li><strong>Experiment infrastructure:</strong> isolated accounts,
+synthetic/read-only environments, shadow decisions, sealed datasets,
+preregistered success/stop rules, canary and rollback support.</li>
+</ul>
+<p>The near-term architecture change is not a new monolith. It is three
+small gates around existing components: memory promotion, workflow
+release, and selective disposition. A single evidence ledger, identity
+plane, evaluation service, and observability fabric can serve all three.
+Additional internal enterprise context is mandatory before
+implementation: current stack and vendors, data/tenant model, risk
+appetite, workflow/SLO portfolio, policy ownership, legal jurisdictions,
+human-review capacity, cost baseline, incident history, and adoption
+constraints.</p>
+<h2 id="implementation-priorities">Implementation priorities</h2>
+<ol type="1">
+<li><strong>Instrument before controlling.</strong> Add
+privacy-minimized workflow and memory-proposal telemetry; do not alter
+live execution.</li>
+<li><strong>Create the shared evidence contract.</strong> Define stable
+IDs, provenance, scope, expiry, model/policy versions, evaluators,
+decision owner, and rollback.</li>
+<li><strong>Run two isolated prototypes.</strong> Shadow memory probing
+on synthetic/de-identified tasks and simulate workflow release across
+resampled arrivals.</li>
+<li><strong>Build a selective-risk evaluation kit.</strong> Use
+time-separated threshold fitting, explicit defer classes, subgroup and
+appeal metrics, and locked lineage.</li>
+<li><strong>Map incidents to evaluation gaps.</strong> Preserve
+missingness and source class; prohibit prevalence and vendor-ranking
+misuse.</li>
+<li><strong>Keep production authority unchanged.</strong> Promote only
+after predeclared gates hold across representative domains and
+security/privacy/governance review.</li>
+</ol>
+<h2 id="knowledge-reinforcement">Knowledge reinforcement</h2>
+<p><strong>Question 1. Why does read-only environment access improve
+memory quality without automatically making the design
+safe?</strong></p>
+<p>It can verify scope, freshness, preconditions, and alternative
+procedures before a record is written, but reads can still expose
+sensitive data, consume resources, import prompt injection, cross
+authorization boundaries, and create durable derived information.
+Read-only reduces mutation risk; it does not replace identity, privacy,
+content, budget, retention, and audit controls.</p>
+<p><strong>Question 2. Why can delaying a causally ready turn reduce
+completion time?</strong></p>
+<p>Under congestion, immediate release fills the engine with work that
+the workflow scheduler can no longer reorder. Holding some ready turns
+outside preserves the option to advance older or more urgent workflows
+when new information arrives. At light load there is little benefit,
+which is why the measured policies are nearly identical there.</p>
+<p><strong>Question 3. What is the most important caveat behind SIRF's
++15.1-point Black Recall@P95 claim?</strong></p>
+<p>The operating threshold is selected and evaluated on the same
+1,000-example set, while the bootstrap fixes that selected threshold. On
+an independent balanced set, the direction persists but the same-source
+gap narrows to 1.4 points. The appropriate lesson is to use locked,
+time-separated threshold validation—not to transfer the headline
+gain.</p>
+<p><strong>Question 4. Why can AIR support evaluation coverage audits
+but not deployment-risk estimates?</strong></p>
+<p>Its denominator is selected public disclosures, not deployed systems
+or exposure. Source concentration, disclosure class, and causal-role
+composition strongly change observed shares. It can show which
+mechanisms appear in documented cases and whether tests cover them, but
+not their real-world rate or a vendor's relative safety.</p>
+<p><strong>Question 5. What does the latent-interface Watchlist paper
+add to enterprise architecture thinking?</strong></p>
+<p>It demonstrates in a narrow, reproducible setting that semantically
+similar learned interfaces can be private coordinate dialects and that
+inherited interface state can be worse than reinitialization. The
+bounded enterprise lesson is to test compatibility causally and include
+fresh-start controls; it is not evidence that ordinary structured or
+text interfaces fail.</p>
+<h2 id="source-ledger-and-closing-boundary">Source ledger and closing
+boundary</h2>
+<p>Primary records reviewed in full: <a
+href="https://arxiv.org/abs/2609.11060">Grounding Agent Memory,
+arXiv:2609.11060</a>; <a
+href="https://arxiv.org/abs/2609.10964">Tail-Aware Scheduling,
+arXiv:2609.10964</a>; <a href="https://arxiv.org/abs/2609.11752">SIRF,
+arXiv:2609.11752</a>; <a href="https://arxiv.org/abs/2609.11030">Agent
+Incident Registry, arXiv:2609.11030</a>; <a
+href="https://arxiv.org/abs/2609.11365">Portable Semantics,
+arXiv:2609.11365</a>. Verified first-party artifacts for Portable
+Semantics: <a
+href="https://github.com/tokenosopher/populus-evidence-partitioning">GitHub
+release</a> and <a
+href="https://huggingface.co/tokenosopher/populus-evidence-partitioning-checkpoints">checkpoint
+repository</a>.</p>
+<p>This briefing presents evidence-grounded future options, not approved
+roadmap commitments or production deployment advice. Research metrics
+were not converted into enterprise guarantees. Internal architecture,
+vendor, model, data, security, governance, privacy, workforce, legal,
+and financial context was not assumed. Any implementation decision
+requires context-specific review, independent validation, named
+ownership, human oversight where consequences matter, and a tested
+rollback path.</p></main></div>
+<footer>AI Research Intelligence Brief · September 12, 2026 · Research options, not deployment approval.</footer>
+<div class="toolbar"><button onclick="window.print()" aria-label="Print report">Print</button><button id="top" aria-label="Back to top">↑ Top</button></div>
+<script>
+const p=document.getElementById('progress');addEventListener('scroll',()=>{const h=document.documentElement;p.style.width=((h.scrollTop/(h.scrollHeight-h.clientHeight))*100)+'%'});document.getElementById('top').onclick=()=>scrollTo({top:0,behavior:'smooth'});
+document.querySelectorAll('main h4').forEach(h=>{if(/^\d+\./.test(h.textContent))h.setAttribute('data-backlog','true')});
+</script>
+</body></html>

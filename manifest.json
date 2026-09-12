@@ -3,12 +3,23 @@
     "title": "AI Research Intelligence",
     "url": "https://ygeszvain.github.io/ai-research-intelligence",
     "description": "Evidence-grounded daily AI and machine-learning research intelligence.",
-    "generated_at_utc": "2026-09-11T09:28:00.000Z",
-    "report_count": 33,
-    "latest_report": "2026-09-11",
-    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-11.html"
+    "generated_at_utc": "2026-09-12T09:10:56.000Z",
+    "report_count": 34,
+    "latest_report": "2026-09-12",
+    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-12.html"
   },
   "reports": [
+    {
+      "date": "2026-09-12",
+      "date_display": "September 12, 2026",
+      "title": "AI Research Intelligence Brief — September 12, 2026",
+      "excerpt": "Three papers show that reliable enterprise agents need explicit admission decisions before a memory is written, a ready model turn is released, or a high-confidence case is automatically disposed.",
+      "topics": ["Memory & Context", "Agentic AI", "MLOps & Platform", "Safety & Governance", "Evaluation & Observability"],
+      "path": "reports/2026-09-12.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-12.html",
+      "size_bytes": 91933,
+      "sha256": "6b6774ac40f66293709efc26ae59a7635f8fc45ffa4fb07386a27b8ee5133fa0"
+    },
     {
       "date": "2026-09-11",
       "date_display": "September 11, 2026",
