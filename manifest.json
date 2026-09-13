@@ -3,12 +3,23 @@
     "title": "AI Research Intelligence",
     "url": "https://ygeszvain.github.io/ai-research-intelligence",
     "description": "Evidence-grounded daily AI and machine-learning research intelligence.",
-    "generated_at_utc": "2026-09-12T09:10:56.000Z",
-    "report_count": 34,
-    "latest_report": "2026-09-12",
-    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-12.html"
+    "generated_at_utc": "2026-09-13T09:12:00.000Z",
+    "report_count": 35,
+    "latest_report": "2026-09-13",
+    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-13.html"
   },
   "reports": [
+    {
+      "date": "2026-09-13",
+      "date_display": "September 13, 2026",
+      "title": "AI Research Intelligence Brief — September 13, 2026",
+      "excerpt": "Three papers show why correct answers, reusable skills, and benchmark scores need separate evidence contracts before they gain enterprise authority.",
+      "topics": ["Evaluation & Observability", "Agentic AI", "RAG & Knowledge", "Data & Knowledge Infrastructure", "Safety & Governance"],
+      "path": "reports/2026-09-13.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-13.html",
+      "size_bytes": 86665,
+      "sha256": "2c3209dcd47f883064329e2e5bfc02bfcb837db6a12b6fd9b6c638f5f7aabd44"
+    },
     {
       "date": "2026-09-12",
       "date_display": "September 12, 2026",
