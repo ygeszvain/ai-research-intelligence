@@ -1,0 +1,1582 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Evidence-grounded AI Research Intelligence Brief for September 14, 2026: whole-system observability, finite-opportunity retry evaluation, and benchmark ground-truth auditing.">
+<meta name="report-date" content="2026-09-14">
+<meta name="research-window" content="2026-09-11T04:00:00-05:00/2026-09-14T04:00:00-05:00 America/Chicago">
+<meta name="deep-paper-count" content="3">
+<meta name="watchlist-count" content="2">
+<meta name="theme-color" content="#08131f">
+<title>AI Research Intelligence Brief — September 14, 2026</title>
+<style>
+:root{--bg:#07111d;--panel:#0d1b2a;--panel2:#10263a;--text:#e8f1f7;--muted:#9fb5c5;--line:#29445b;--cyan:#45d7c4;--gold:#f5c96a;--rose:#ff8d9a;--blue:#68a9ff;--max:1180px;color-scheme:dark}
+@media(prefers-color-scheme:light){:root{--bg:#f4f7f8;--panel:#fff;--panel2:#edf4f7;--text:#102131;--muted:#526979;--line:#cddbe2;--cyan:#087f73;--gold:#9b6300;--rose:#b92b45;--blue:#1661ad;color-scheme:light}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 90% 0,rgba(69,215,196,.12),transparent 30rem),var(--bg);color:var(--text);font:16px/1.67 ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}a{color:var(--cyan);text-underline-offset:3px}a:hover{text-decoration-thickness:2px}header{border-bottom:1px solid var(--line);background:linear-gradient(135deg,rgba(69,215,196,.09),rgba(104,169,255,.05));padding:54px 22px 34px}.hero{max-width:var(--max);margin:auto}.eyebrow{color:var(--cyan);text-transform:uppercase;letter-spacing:.15em;font-size:.76rem;font-weight:800}h1{font-size:clamp(2.2rem,6vw,4.7rem);line-height:.98;max-width:900px;margin:.35rem 0 1rem;letter-spacing:-.055em}header p{max-width:790px;color:var(--muted);font-size:1.09rem}.chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}.chip{border:1px solid var(--line);border-radius:999px;padding:6px 11px;background:var(--panel);font-size:.8rem}.topbets{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}.bet{border:1px solid var(--line);background:var(--panel);border-radius:14px;padding:15px}.bet b{display:block;color:var(--gold);font-size:1.15rem}.layout{max-width:var(--max);margin:auto;display:grid;grid-template-columns:250px minmax(0,1fr);gap:34px;padding:30px 22px 80px}nav{position:sticky;top:16px;align-self:start;max-height:calc(100vh - 32px);overflow:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:14px}nav strong{display:block;margin:2px 8px 10px;color:var(--gold)}nav ul{list-style:none;margin:0;padding:0}nav li{margin:0}nav a{display:block;color:var(--muted);text-decoration:none;padding:5px 8px;border-radius:7px;font-size:.83rem;line-height:1.25}nav a:hover{background:var(--panel2);color:var(--text)}main{min-width:0}main>h2{font-size:1.75rem;margin:2.6rem 0 1rem;padding-top:.7rem;border-top:1px solid var(--line)}main>h2:first-child{margin-top:0}h3{font-size:1.3rem;margin-top:2rem;color:var(--cyan)}h4{font-size:1.08rem;color:var(--gold);margin-bottom:.45rem}p,li{max-width:88ch}blockquote{margin:1rem 0;padding:1rem 1.2rem;border-left:4px solid var(--gold);background:var(--panel);color:var(--muted)}pre{white-space:pre-wrap;overflow:auto;background:#07101a;border:1px solid var(--line);border-radius:14px;padding:18px;color:#dcecf2;font-size:.86rem;line-height:1.45}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}table{width:100%;border-collapse:collapse;margin:1.25rem 0;background:var(--panel);font-size:.86rem}th,td{padding:10px 12px;border:1px solid var(--line);text-align:left;vertical-align:top}th{color:var(--gold);background:var(--panel2)}hr{border:0;border-top:1px solid var(--line)}main h4+ul,main h3+ul{border:1px solid var(--line);background:linear-gradient(135deg,var(--panel),var(--panel2));border-radius:14px;padding:15px 22px 15px 34px}main h4+ul li,main h3+ul li{margin:.5rem 0}.progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--cyan),var(--gold));width:0;z-index:9}.toolbar{position:fixed;right:18px;bottom:18px;display:flex;gap:8px}.toolbar button{border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:999px;padding:9px 12px;cursor:pointer;box-shadow:0 8px 30px rgba(0,0,0,.2)}.label{font-size:.75rem;color:var(--muted)}footer{border-top:1px solid var(--line);padding:24px;text-align:center;color:var(--muted)}
+@media(max-width:850px){.topbets{grid-template-columns:1fr}.layout{grid-template-columns:1fr}nav{position:relative;top:0;max-height:none}nav ul{columns:2}h1{font-size:2.65rem}}
+@media(max-width:520px){header{padding-top:34px}.layout{padding:20px 14px 60px}nav ul{columns:1}table{display:block;overflow-x:auto}h1{font-size:2.25rem}}
+@media print{body{background:white;color:#111;font-size:11pt}header{padding:18px 0}.layout{display:block;padding:0}nav,.toolbar,.progress{display:none}a{color:#145c70}main>h2{break-before:page}main>h2:first-child{break-before:auto}table,pre{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<header><div class="hero">
+<div class="eyebrow">AI Research Intelligence · Evidence before enthusiasm</div>
+<h1>Make the score earn authority.</h1>
+<p>September 14, 2026 briefing. Three papers show that evaluation must observe the whole deployed surface, match finite opportunities, and audit the ground truth before a score can support an enterprise decision.</p>
+<div class="chips"><span class="chip">3 deep papers</span><span class="chip">2 Watchlist</span><span class="chip">72-hour Monday window</span><span class="chip">9 enterprise options</span><span class="chip">Primary sources + full-paper review</span></div>
+<div class="topbets"><div class="bet"><span class="label">TOP BET 1 · PROTOTYPE SOON</span><b>92.5 · Whole-system observability</b><span>Union authorized channels and require retain plus stability evidence.</span></div><div class="bet"><span class="label">TOP BET 2 · PROTOTYPE SOON</span><b>90.8 · Finite-opportunity retry harness</b><span>Credit learning only beyond matched retry and full resource accounting.</span></div><div class="bet"><span class="label">TOP BET 3 · PROTOTYPE SOON</span><b>90.2 · Ground-truth audit gate</b><span>Separate model, grader, and benchmark errors with human adjudication.</span></div></div>
+</div></header>
+<div class="layout"><nav><strong>Navigate</strong><ul>
+<li><a href="#scope-window-and-evidence-policy"
+id="toc-scope-window-and-evidence-policy">Scope, window, and evidence
+policy</a></li>
+<li><a href="#executive-signal" id="toc-executive-signal">Executive
+signal</a></li>
+<li><a href="#top-3-future-bets" id="toc-top-3-future-bets">Top 3 Future
+Bets</a></li>
+<li><a
+href="#deep-paper-1--final-answer-cleanliness-does-not-certify-deployed-system-forgetting"
+id="toc-deep-paper-1--final-answer-cleanliness-does-not-certify-deployed-system-forgetting">Deep
+paper 1 — Final-answer cleanliness does not certify deployed-system
+forgetting</a>
+<ul>
+<li><a href="#contribution-and-quantitative-claim-trace"
+id="toc-contribution-and-quantitative-claim-trace">Contribution and
+quantitative claim trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison"
+id="toc-methodological-critique-and-prior-work-comparison">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#reproducibility-and-enterprise-readiness"
+id="toc-reproducibility-and-enterprise-readiness">Reproducibility and
+enterprise readiness</a></li>
+</ul></li>
+<li><a
+href="#deep-paper-2--failure-memory-must-beat-a-matched-retry-under-the-same-opportunity-budget"
+id="toc-deep-paper-2--failure-memory-must-beat-a-matched-retry-under-the-same-opportunity-budget">Deep
+paper 2 — Failure memory must beat a matched retry under the same
+opportunity budget</a>
+<ul>
+<li><a href="#contribution-and-quantitative-claim-trace-1"
+id="toc-contribution-and-quantitative-claim-trace-1">Contribution and
+quantitative claim trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison-1"
+id="toc-methodological-critique-and-prior-work-comparison-1">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#reproducibility-and-enterprise-readiness-1"
+id="toc-reproducibility-and-enterprise-readiness-1">Reproducibility and
+enterprise readiness</a></li>
+</ul></li>
+<li><a
+href="#deep-paper-3--benchmark-and-grader-errors-can-dominate-apparent-model-failure"
+id="toc-deep-paper-3--benchmark-and-grader-errors-can-dominate-apparent-model-failure">Deep
+paper 3 — Benchmark and grader errors can dominate apparent model
+failure</a>
+<ul>
+<li><a href="#contribution-and-quantitative-claim-trace-2"
+id="toc-contribution-and-quantitative-claim-trace-2">Contribution and
+quantitative claim trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison-2"
+id="toc-methodological-critique-and-prior-work-comparison-2">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#reproducibility-and-enterprise-readiness-2"
+id="toc-reproducibility-and-enterprise-readiness-2">Reproducibility and
+enterprise readiness</a></li>
+</ul></li>
+<li><a href="#watchlist" id="toc-watchlist">Watchlist</a>
+<ul>
+<li><a
+href="#skill-issue--repository-knowledge-may-help-but-the-measured-gain-is-not-separable-from-variance"
+id="toc-skill-issue--repository-knowledge-may-help-but-the-measured-gain-is-not-separable-from-variance">Skill
+Issue — repository knowledge may help, but the measured gain is not
+separable from variance</a></li>
+<li><a
+href="#embodied-benchforge--promising-closed-loop-benchmark-construction-but-artifact-and-independence-evidence-are-incomplete"
+id="toc-embodied-benchforge--promising-closed-loop-benchmark-construction-but-artifact-and-independence-evidence-are-incomplete">Embodied-BenchForge
+— promising closed-loop benchmark construction, but artifact and
+independence evidence are incomplete</a></li>
+</ul></li>
+<li><a href="#cross-paper-synthesis"
+id="toc-cross-paper-synthesis">Cross-paper synthesis</a>
+<ul>
+<li><a
+href="#independent-analysis--the-evaluation-contract-has-three-orthogonal-boundaries"
+id="toc-independent-analysis--the-evaluation-contract-has-three-orthogonal-boundaries">Independent
+Analysis — the evaluation contract has three orthogonal
+boundaries</a></li>
+</ul></li>
+<li><a href="#visual-1--three-boundary-evaluation-assurance-loop"
+id="toc-visual-1--three-boundary-evaluation-assurance-loop">Visual 1 —
+three-boundary evaluation assurance loop</a></li>
+<li><a href="#visual-2--verified-signal-versus-safe-deployment-distance"
+id="toc-visual-2--verified-signal-versus-safe-deployment-distance">Visual
+2 — verified signal versus safe deployment distance</a></li>
+<li><a href="#enterprise-ai-enhancement-backlog"
+id="toc-enterprise-ai-enhancement-backlog">Enterprise AI Enhancement
+Backlog</a>
+<ul>
+<li><a href="#priority-method-and-uncertainty"
+id="toc-priority-method-and-uncertainty">Priority method and
+uncertainty</a></li>
+<li><a href="#prototype-soon" id="toc-prototype-soon">Prototype
+Soon</a></li>
+<li><a href="#prepare-foundations" id="toc-prepare-foundations">Prepare
+Foundations</a></li>
+<li><a href="#monitor-for-maturity"
+id="toc-monitor-for-maturity">Monitor for Maturity</a></li>
+<li><a href="#deprioritize-for-now"
+id="toc-deprioritize-for-now">Deprioritize for Now</a></li>
+</ul></li>
+<li><a href="#enterprise-ai-architecture-implications"
+id="toc-enterprise-ai-architecture-implications">Enterprise AI
+Architecture Implications</a>
+<ul>
+<li><a href="#independent-analysis--1224-month-direction"
+id="toc-independent-analysis--1224-month-direction">Independent Analysis
+— 12–24 month direction</a></li>
+</ul></li>
+<li><a href="#implementation-priorities"
+id="toc-implementation-priorities">Implementation priorities</a>
+<ul>
+<li><a href="#now" id="toc-now">Now</a></li>
+<li><a href="#next-36-months" id="toc-next-36-months">Next 3–6
+months</a></li>
+<li><a href="#612-months" id="toc-612-months">6–12 months</a></li>
+</ul></li>
+<li><a href="#knowledge-reinforcement"
+id="toc-knowledge-reinforcement">Knowledge reinforcement</a>
+<ul>
+<li><a href="#five-checks-to-remember"
+id="toc-five-checks-to-remember">Five checks to remember</a></li>
+</ul></li>
+<li><a href="#source-register-and-rejected-signal-notes"
+id="toc-source-register-and-rejected-signal-notes">Source register and
+rejected-signal notes</a>
+<ul>
+<li><a href="#deep-sources" id="toc-deep-sources">Deep sources</a></li>
+<li><a href="#watchlist-sources" id="toc-watchlist-sources">Watchlist
+sources</a></li>
+<li><a href="#discovery-and-exclusion-notes"
+id="toc-discovery-and-exclusion-notes">Discovery and exclusion
+notes</a></li>
+</ul></li>
+<li><a href="#evidence-boundary" id="toc-evidence-boundary">Evidence
+boundary</a></li>
+</ul></nav><main><h2 id="scope-window-and-evidence-policy">Scope,
+window, and evidence policy</h2>
+<p><strong>Research window.</strong> Friday, September 11, 2026 at 4:00
+AM CDT through Monday, September 14, 2026 at 4:00 AM CDT (72 hours;
+America/Chicago). Discovery covered the September 14 arXiv announcement
+cycle—167 cs.AI records—plus current cs.CL, cs.LG, cs.SE, cs.CR, cs.IR,
+cs.HC, cs.OS, stat.ML, ACL Anthology, OpenReview, PMLR, Nature-family
+research, first-party artifacts, and cited prior work. All three deep
+papers and both Watchlist records were submitted September 11 and first
+appeared in the September 14 listing. The 72-hour Monday window was
+sufficient; no seven-day expansion was used.</p>
+<p><strong>Anti-duplication.</strong> Exact titles, identifiers,
+principal claims, and enterprise implications were checked against the
+35-report archive through September 13. None of today's five papers had
+appeared previously. Papers used in the September 11–13 briefs were
+excluded. Embodied-BenchForge overlaps yesterday's dependency-graph
+theme, so it remains on the Watchlist rather than being promoted on
+novelty alone.</p>
+<p><strong>Evidence policy.</strong> <strong>Paper Fact</strong> means
+directly reported by a paper or a verified first-party artifact.
+<strong>Independent Analysis</strong> is this briefing's synthesis,
+calculation, or critique. <strong>Enterprise Inference</strong> is a
+bounded translation into a future enterprise option.
+<strong>Uncertainty</strong> marks missing causal, generalization,
+artifact, economic, security, governance, privacy, or operational
+evidence. All five papers are preprints, not peer reviewed. Reported
+model names, dates, metrics, licenses, and configurations are preserved
+as stated. Benchmark performance is not production readiness. Every
+proposed experiment is isolated, reversible, measurable, and
+non-destructive.</p>
+<h2 id="executive-signal">Executive signal</h2>
+<blockquote>
+<p><strong>A score is interpretable only when the evaluation observes
+the whole deployed surface, counts the opportunities the system
+consumed, and verifies the ground truth it uses.</strong></p>
+</blockquote>
+<p>The three deep papers expose different breaks in the same measurement
+chain. K-Bench finds secrets outside the final-answer channel and
+distinguishes suppression from agent collapse. VRL-Bench shows that
+failure-derived memory can underperform a memory-free retry unless
+complete-trial opportunities are matched. Expert re-grading of physics
+benchmarks shows that apparent model failures can instead be benchmark
+or grader failures. (<a
+href="https://arxiv.org/abs/2609.12808">K-Bench</a>, <a
+href="https://arxiv.org/abs/2609.12404">VRL-Bench</a>, <a
+href="https://arxiv.org/abs/2609.13009">physics audit</a>)</p>
+<p><strong>Decision posture.</strong> Prototype a whole-trajectory
+evaluation gate, a finite-opportunity retry harness, and a
+benchmark-ground-truth audit workflow. Build the shared substrate
+inventory, immutable opportunity ledger, evaluator challenge set, and
+human-adjudication path before allowing any evaluation to authorize
+deletion, autonomous retries, or production promotion. Do not treat
+refusal as verified unlearning, extra attempts as learning, corrected
+benchmark scores as vendor rankings, or a benchmark score as a
+production-readiness certificate.</p>
+<h2 id="top-3-future-bets">Top 3 Future Bets</h2>
+<ol type="1">
+<li><strong>Whole-system observability and utility gate —
+92.5/100.</strong> Why it matters: a model can hide a target in tool
+output, reasoning text, retrieval, or summary even when the answer looks
+clean; a low leak rate can also be caused by a broken agent. Evidence
+that would change the recommendation: representative internal tests
+showing answer-only evaluation catches every material disclosure and
+agent collapse without additional telemetry. Next reversible action:
+replay 100 synthetic secrets through one non-production agent and
+compare answer-only scoring with a union over all authorized observable
+channels plus retain and stability checks.</li>
+<li><strong>Finite-opportunity retry qualification harness —
+90.8/100.</strong> Why it matters: a memory update must beat a matched
+memory-free retry under the same complete-trial, interaction, and reset
+budget before it earns credit as learning. Evidence that would change
+the recommendation: internal tasks where retry is infeasible or where a
+simpler deterministic controller consistently dominates under equal cost
+and risk. Next reversible action: evaluate archived tasks under six
+matched attempts with shared first trials, memory-free retry, the
+current feedback method, and separate call/token/action ledgers.</li>
+<li><strong>Benchmark ground-truth and evaluator audit gate —
+90.2/100.</strong> Why it matters: in the physics audit, 238 of 250
+rejected cases were attributed to benchmark or grader error after expert
+review; release decisions cannot assume the benchmark is right. Evidence
+that would change the recommendation: independent internal audits
+showing negligible label, reference, ambiguity, and
+evaluator-equivalence error across decision-critical tests. Next
+reversible action: stratify 100 recent evaluation disagreements,
+blind-review them as model, grader, or benchmark errors, and quantify
+disagreement before changing any threshold.</li>
+</ol>
+<h2
+id="deep-paper-1--final-answer-cleanliness-does-not-certify-deployed-system-forgetting">Deep
+paper 1 — Final-answer cleanliness does not certify deployed-system
+forgetting</h2>
+<p><strong>Identity and status.</strong> <em>K-Bench: A Benchmark for
+LLM Unlearning in Agentic Deployments</em>, Guangsheng Yu, Yanna Jiang,
+Qin Wang, Baihe Ma, and Xu Wang; submitted September 11, 2026;
+arXiv:2609.12808; cs.AI; preprint; CC BY 4.0. The paper says the
+benchmark ships a harness, adapters, configurations, data splits, and
+replication scripts, but no independently resolvable first-party
+repository or tagged release was found during review. (<a
+href="https://arxiv.org/abs/2609.12808">paper</a>, <a
+href="https://arxiv.org/html/2609.12808">full text</a>)</p>
+<h3 id="contribution-and-quantitative-claim-trace">Contribution and
+quantitative claim trace</h3>
+<p>K-Bench wraps a ReAct agent and observes six channels:
+chain-of-thought, tool call, wide tool observation, retrieved text,
+answer, and elicited summary. It places the same synthetic PII in one of
+four isolated substrates—parametric weights, prompt context, free-text
+retrieval, or structured retrieval—and counts a query as leaked when any
+channel exposes the target. Its K-Score multiplies leakage suppression,
+retain-set preservation, and agent stability so collapse cannot
+masquerade as forgetting.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>Decision meaning</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Single-surface coverage gap</td>
+<td style="text-align: right;">TOFU and MUSE report no leakage on
+non-parametric substrates while the deployed Llama agent leaks on 22–86%
+of queries; Qwen reaches up to 99%</td>
+<td>The deployed agent, not the base model alone, is the
+compliance-relevant evaluation unit</td>
+<td>Synthetic, exactly located PII under a fixed attacker and agent
+scaffold</td>
+</tr>
+<tr class="even">
+<td>API deployment leakage</td>
+<td style="text-align: right;">Across eight served models and three
+non-parametric substrates, all 24 cells leak; OR(all) ranges 0.160–1.000
+depending on model and substrate</td>
+<td>Closed endpoints still require observable-surface evaluation</td>
+<td>No unlearning intervention can be applied to these black-box
+endpoints in the reported setup</td>
+</tr>
+<tr class="odd">
+<td>Cross-channel migration</td>
+<td style="text-align: right;">On structured retrieval, StaR reduces
+answer leakage but tool observations retain the secret and aggregate
+OR(all) is unchanged</td>
+<td>Channel-local filters can move rather than remove disclosure</td>
+<td>One ReAct format and structured lookup protocol</td>
+</tr>
+<tr class="even">
+<td>Published-method roster</td>
+<td style="text-align: right;">Twenty published methods × three base
+models on the parametric substrate; primary eligibility gates remove
+19/20 methods on Llama, 14/20 on Mistral, and 10/20 on Qwen</td>
+<td>Many apparent wins violate retain or stability preconditions;
+eligibility is model-dependent</td>
+<td>Seed 0 and 200 forget/200 retain queries per roster cell; ports
+include disclosed adaptations</td>
+</tr>
+<tr class="odd">
+<td>Statistical design</td>
+<td style="text-align: right;">Main Llama cells pool 3 seeds × 200
+queries; paired McNemar tests; BH FDR by forget/retain family;
+1,000-query bootstrap CIs; pre-registered thresholds</td>
+<td>Stronger than an uncorrected point-estimate leaderboard</td>
+<td>Cross-model and roster cells often use one seed; repeated queries
+share a synthetic schema</td>
+</tr>
+<tr class="even">
+<td>Collapse control</td>
+<td style="text-align: right;">Loading a distractor-only adapter breaks
+the ReAct format on 92.8% of non-parametric queries; activation edits
+can drive leakage to zero through degeneration</td>
+<td>Zero leakage must be conditioned on system viability</td>
+<td>Degeneration is operationally defined by this harness and output
+parser</td>
+</tr>
+<tr class="odd">
+<td>Ecological probe</td>
+<td style="text-align: right;">LUME case covers only date of birth on a
+249-entity forget corpus; address is excluded because 47% contain
+conversion artifacts</td>
+<td>A limited real-format check is included</td>
+<td>Not real-person PII, not multiple attributes, and not pretraining
+memorization</td>
+</tr>
+<tr class="even">
+<td>Artifact</td>
+<td style="text-align: right;">Paper states an open benchmark release
+and inspectable harness/configuration</td>
+<td>Independent replication may become feasible</td>
+<td>No public repository, release tag, commit, checksum, or code license
+was independently verified</td>
+</tr>
+</tbody>
+</table>
+<p>The paper's strongest result is not that unlearning is impossible. It
+is that the verdict changes when the observer expands and usability is
+enforced. ECO, an input-corruption reference with oracle target
+membership, reaches the reference verdict across eligible cross-model
+cells by corrupting the queried entity before substrate-specific
+encoding. That is an evaluated suppression mechanism, not proof that
+underlying knowledge was removed. A refusal-tuned method can similarly
+resist the tested extraction without verified deletion.</p>
+<h3
+id="methodological-critique-and-prior-work-comparison">Methodological
+critique and prior-work comparison</h3>
+<p>TOFU, MUSE, WMDP, and LUME read a single answer surface; agentic
+privacy work such as AgentLeak broadens channels but does not evaluate
+forgetting, retain preservation, and collapse together. K-Bench's
+contribution is the combination of a six-channel union observer, four
+causally isolated substrate lanes, pre-registered paired inference,
+failure localization, a collapse-aware score, and a large method
+audit.</p>
+<p>The main corpus contains 5,000 Faker-generated biographies with four
+fields, split into 1,000 forget and 4,000 retain entities. Parametric
+memory is created by LoRA continuation, not naturally occurring
+pretraining memorization. Each experiment puts a secret in exactly one
+substrate, while a production secret may exist simultaneously in logs,
+caches, prompts, retrieval replicas, weights, and downstream systems.
+The fixed query set is not an adaptive attacker. The OR-of-channels
+detector cannot reconstruct a secret split across channels and depends
+on known canonical target values. Chain-of-thought availability is
+provider-dependent and should never be assumed in an enterprise
+architecture.</p>
+<p>Method ports and base models materially affect the outcome. Several
+methods use OpenUnlearning; others use official modules or disclosed
+bounded adaptations. The authors found that the top method and eligible
+set change by base model. Therefore the roster supports a
+benchmark-level warning, not a universal ranking of unlearning
+algorithms. Compliance claims would also need a legal definition of
+erasure, data lineage, downstream deletion, access controls, repeated
+adaptive extraction, and an independent audit.</p>
+<h3 id="reproducibility-and-enterprise-readiness">Reproducibility and
+enterprise readiness</h3>
+<p>The full paper discloses model families, corpus construction, LoRA
+settings, retrieval index configuration, query counts, seeds, gates,
+statistics, method provenance, and many port differences. Exact
+replication is blocked today by the lack of an independently verified
+public repository, immutable release, checksums, environment image, and
+complete cost ledger. <strong>Enterprise readiness: high for adapting
+the evaluation pattern in a synthetic red-team harness; medium for
+adding multi-channel deletion qualification to an existing
+data-governance process; low for using this benchmark as legal proof of
+erasure. Research Utility Score: 95/100</strong> (rigor 25/25;
+quantitative traceability 24/25; reproducibility/artifacts 17/20;
+enterprise relevance 15/15; prior-work advance 14/15).</p>
+<h2
+id="deep-paper-2--failure-memory-must-beat-a-matched-retry-under-the-same-opportunity-budget">Deep
+paper 2 — Failure memory must beat a matched retry under the same
+opportunity budget</h2>
+<p><strong>Identity and status.</strong> <em>VRL-Bench: Benchmarking
+agents on computer control tasks under finite trial budgets</em>, Yu Bai
+et al.; submitted September 11, 2026; arXiv:2609.12404; cs.AI; preprint;
+CC BY 4.0. The paper and appendices specify prompts, model settings,
+environment versions, and the evaluation protocol, but no independently
+verified first-party code repository or tagged release was found. (<a
+href="https://arxiv.org/abs/2609.12404">paper</a>, <a
+href="https://arxiv.org/html/2609.12404">full text</a>)</p>
+<h3 id="contribution-and-quantitative-claim-trace-1">Contribution and
+quantitative claim trace</h3>
+<p>VRL-Bench asks whether a failure-derived textual update improves over
+simply trying again. It fixes a six-complete-trial budget, shares the
+realized first trial across methods, resets the environment between
+trials, and separately records success within budget (SR@6), recovery
+after the first failure (RR@6), censored first-success trial (AvgT@6,
+unsolved = 7), calls, tokens, and environment transitions. The model
+parameters stay fixed.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>Decision meaning</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Primary scale</td>
+<td style="text-align: right;">3 models × MiniWoB (64 families × 10
+reset sequences = 640 cases) and WebShop (100 fixed goals); 2,220 paired
+cases and 16,946 distinct complete trials across five conditions</td>
+<td>A substantial matched-opportunity comparison</td>
+<td>Two simulated benchmarks, a fixed six-trial budget, and visible
+feedback</td>
+</tr>
+<tr class="even">
+<td>Existing updates are inconsistent</td>
+<td style="text-align: right;">Reflexion, DC-Cu*, and ACE* each beat
+retry somewhere and lose somewhere; Reflexion gains 16 pp on GPT-5.4
+nano WebShop, CI [+8,+25], but falls on both GLM settings</td>
+<td>A memory label does not establish incremental learning</td>
+<td>DC-Cu and ACE are benchmark-constrained adaptations, not their
+original lifetime settings</td>
+</tr>
+<tr class="odd">
+<td>Replay exposure is not monotonic</td>
+<td style="text-align: right;">HotPotQA full replay leads at trials 2–4
+but ends 49% vs 50% no replay; AlfWorld 25% withholding reaches 81.3% vs
+76.1% full replay and 74.6% no replay</td>
+<td>Failure advice can anchor the policy and consume exploration
+opportunities</td>
+<td>Separate GPT-4o-mini study; endpoint difference on HotPotQA CI
+includes zero</td>
+</tr>
+<tr class="even">
+<td>Complementary recovery</td>
+<td style="text-align: right;">Across five schedules, best single
+schedule recovers 33/58 failed AlfWorld cases, while the union recovers
+49/58; HotPotQA 14/64 vs 18/64</td>
+<td>Similar aggregates can hide different failure sets</td>
+<td>Union is retrospective and not an achievable online policy</td>
+</tr>
+<tr class="odd">
+<td>Proposed VEX²</td>
+<td style="text-align: right;">Positive retry-relative point estimates
+in all six primary settings: +1.6 to +6.6 pp MiniWoB; +8 to +17 pp
+WebShop</td>
+<td>Budget-aware policy allocation is promising</td>
+<td>GLM intervals include zero; VEX² adds scheduler calls and relies on
+another LLM</td>
+</tr>
+<tr class="even">
+<td>VEX² uncertainty</td>
+<td style="text-align: right;">DeepSeek/GPT intervals exclude zero on
+both tasks; GLM MiniWoB CI [-1.1,+4.4], WebShop [-1,+17]</td>
+<td>Four settings have statistical support, two remain uncertain</td>
+<td>Six setting-specific intervals are not corrected for every
+comparison in the paper</td>
+</tr>
+<tr class="odd">
+<td>Trial-efficiency decomposition</td>
+<td style="text-align: right;">On DeepSeek WebShop, changed terminal
+outcomes explain 0.64 of the 0.65 lower censored AvgT; common successes
+contribute 0.01</td>
+<td>Lower AvgT primarily means more cases solved, not faster completion
+of common successes</td>
+<td>Censored means require careful interpretation</td>
+</tr>
+<tr class="even">
+<td>Artifact</td>
+<td style="text-align: right;">Paper includes version-pinned environment
+and prompt/configuration details</td>
+<td>Protocol adaptation is feasible</td>
+<td>No public repository, release, checksum, or code license was
+independently verified</td>
+</tr>
+</tbody>
+</table>
+<h3
+id="methodological-critique-and-prior-work-comparison-1">Methodological
+critique and prior-work comparison</h3>
+<p>Reflexion carries language feedback across attempts. Dynamic
+Cheatsheet and ACE typically learn across query streams; LATS spends a
+search budget on branch expansion and state restoration; Agent-Pro
+learns policies on a separate train phase. VRL-Bench's advance is
+measurement discipline: define a complete attempt, align the first
+realization and external-information boundary, cap interactions,
+preserve each update's internal representation, and compare against a
+strong memory-free retry.</p>
+<p>The paper explicitly does not match model calls or token use, only
+complete trials and interaction opportunities; the extra writer,
+curator, or scheduler computation therefore requires a separate economic
+comparison. MiniWoB uses fresh instances from the same family while
+WebShop resets the same goal, so the estimands differ. Irreversible
+actions, hidden feedback, asynchronous execution, human approvals, side
+effects, and security boundaries are untested. The scheduler's semantic
+policy tree is advice, not an executable state-search guarantee. Its
+positive point estimates should not become an autonomous retry policy
+without idempotency controls, permission scopes, action budgets,
+rollback or compensating transactions, and human review for
+consequential actions.</p>
+<h3 id="reproducibility-and-enterprise-readiness-1">Reproducibility and
+enterprise readiness</h3>
+<p>The paper specifies runtime versions, model identifiers, prompts,
+token settings, transition limits, seed pairing, bootstrap units,
+exposure schedules, and resource ledgers. It discloses that transports
+retries were disabled and separates public environment evidence from
+model-generated text. Missing public code, frozen trajectories,
+checksums, container images, and a total cost table limit exact
+reproduction. <strong>Enterprise readiness: high for an offline
+matched-retry benchmark and opportunity ledger; medium for a read-only
+or reversible shadow retry controller; low for autonomous production
+retries with side effects. Research Utility Score: 93/100</strong>
+(rigor 24/25; quantitative traceability 24/25; reproducibility/artifacts
+17/20; enterprise relevance 14/15; prior-work advance 14/15).</p>
+<h2
+id="deep-paper-3--benchmark-and-grader-errors-can-dominate-apparent-model-failure">Deep
+paper 3 — Benchmark and grader errors can dominate apparent model
+failure</h2>
+<p><strong>Identity and status.</strong> <em>How Good Are Frontier
+Models at Physics? Expert Re-Grading Reveals Broken Evaluations and
+Near-Saturation of Leading Benchmarks</em>, Ali Ansari et al.; submitted
+September 11, 2026; arXiv:2609.13009; cs.AI; preprint; CC BY 4.0. The
+study evaluates six physics benchmarks with three frontier models and
+domain-expert review. No first-party public audit dataset, code
+repository, frozen model responses, or tagged release was independently
+verified. (<a href="https://arxiv.org/abs/2609.13009">paper</a>, <a
+href="https://arxiv.org/html/2609.13009">full text</a>)</p>
+<h3 id="contribution-and-quantitative-claim-trace-2">Contribution and
+quantitative claim trace</h3>
+<p>The study re-evaluates HLE-Physics, CMT-Benchmark, CritPt, PHYBench,
+PRISM-Physics, and UGPhysics. Experts distinguish model error from
+grader error and benchmark error, then repair or exclude flawed items.
+It focuses on text-only, closed-ended problems with verifiable final
+answers.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>Decision meaning</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Pooled rejected-case audit</td>
+<td style="text-align: right;">502 questions in audit runs: 252 accepted
+and 250 rejected; among rejections, 143 benchmark, 95 grader, 12 model
+errors; 238/250 (95.2%) non-model</td>
+<td>Apparent model failure may be measurement failure</td>
+<td>Failure-enriched audit runs cannot estimate overall defect
+prevalence in each full benchmark</td>
+</tr>
+<tr class="even">
+<td>Expert-review reliability</td>
+<td style="text-align: right;">446 annotations; 196 double-reviewed and
+54 single-reviewed; 140/196 agreement (71.43%), 56 disagreements
+(28.57%), all adjudicated by a third review</td>
+<td>Expert adjudication is necessary but itself uncertain</td>
+<td>No chance-corrected agreement statistic; 54 items had one initial
+review</td>
+</tr>
+<tr class="odd">
+<td>HLE correction</td>
+<td style="text-align: right;">GPT-5.6-Sol mean@4 47.28→78.66%; pass@4
+55.94→91.38%; 116 of 202 text-only items retained</td>
+<td>Benchmark repair can change the capability conclusion</td>
+<td>Scores are on the retained/repaired subset, not the original
+set</td>
+</tr>
+<tr class="even">
+<td>CMT correction</td>
+<td style="text-align: right;">GPT-5.6-Sol mean@4 61.00→87.24%; pass@4
+72.00→97.96%; 49/50 retained, 29 repaired</td>
+<td>A nearly complete audit still produces a large score shift</td>
+<td>One specialist initially owns each CMT/CritPt item; project review
+follows</td>
+</tr>
+<tr class="odd">
+<td>CritPt correction</td>
+<td style="text-align: right;">GPT-5.6-Sol corrected mean@4 87.50% and
+pass@4 94.44% on 54 retained items</td>
+<td>The retained closed tasks are close to saturated for this route</td>
+<td>Pre-audit is mean@5 on 70 items, corrected is mean@4 on 54 of 56
+audited; not a like-for-like delta</td>
+</tr>
+<tr class="even">
+<td>Public-source subsets</td>
+<td style="text-align: right;">GPT-5.6-Sol mean@4 rises 26.50→90.23 PHY,
+13.00→94.59 PRISM, 83.00→92.07 UG; retained sizes 87, 74, 82</td>
+<td>Rule-based equivalence and reference flaws can dominate</td>
+<td>Public-source contamination and subset selection remain
+possible</td>
+</tr>
+<tr class="odd">
+<td>Configuration heterogeneity</td>
+<td style="text-align: right;">GPT and Claude use tool-enabled agents on
+expert benchmarks; Gemini uses no tools; all are tool-free on
+public-source sets</td>
+<td>Scores must bind model route, tools, attempts, and evaluator</td>
+<td>The study is not a controlled vendor ranking</td>
+</tr>
+<tr class="even">
+<td>External corroboration</td>
+<td style="text-align: right;">Paper notes a separate Anthropic CritPt
+correction yielding mean@16 88.4% for a different model, corrected set,
+and judge</td>
+<td>Independent correction supports the direction of effect</td>
+<td>Attempt budget, model, judge, and item set make scores
+non-comparable</td>
+</tr>
+</tbody>
+</table>
+<h3
+id="methodological-critique-and-prior-work-comparison-2">Methodological
+critique and prior-work comparison</h3>
+<p>Prior work has documented benchmark contamination, faulty references,
+brittle exact-match or rule-based graders, and LLM-judge variance. This
+paper's distinctive contribution is a large domain-expert audit that
+jointly inspects problem statements, reference solutions, graders, and
+model responses, then reports corrected scores. Reviewers outline an
+approach before reading the reference for CMT and CritPt, reducing
+anchoring to the supplied solution.</p>
+<p>The audit's strongest headline is also easy to misuse. The four
+pooled audit sets were deliberately enriched for rejected answers; 95.2%
+non-model error among rejections does not mean 95.2% of all benchmark
+items are broken. Corrected scores condition on repaired or retained
+subsets, and CritPt even changes attempt count and item count. The
+evaluation routes are heterogeneous. The 28.57% initial disagreement
+among double-reviewed items demonstrates that taxonomy
+boundaries—especially benchmark versus grader error—need adjudication
+and uncertainty reporting.</p>
+<p>Near-saturation applies only to well-posed, text-only, closed-ended
+physics problems under these specific routes. The authors explicitly
+state this does not imply end-to-end physics research capability and
+report no complete solution from their separate attempts on open
+theoretical problems. Enterprise teams should translate the paper into
+benchmark QA and evaluator challenge sets, not into a general claim
+about scientific autonomy or vendor superiority.</p>
+<h3 id="reproducibility-and-enterprise-readiness-2">Reproducibility and
+enterprise readiness</h3>
+<p>The paper documents benchmark selection, item counts, model
+configurations, tool access, audit categories, reviewer assignment,
+disagreement resolution, corrections, and corrected scoring.
+Reproduction is limited because the audit forms, repaired dataset,
+frozen outputs, prompts/evaluator code, and checksums are not released
+in a verified artifact. <strong>Enterprise readiness: high for adopting
+stratified human audit and disagreement adjudication; medium for
+repairing internal benchmarks under version control; low for treating
+corrected public scores as production-readiness or procurement evidence.
+Research Utility Score: 92/100</strong> (rigor 23/25; quantitative
+traceability 24/25; reproducibility/artifacts 15/20; enterprise
+relevance 15/15; prior-work advance 15/15).</p>
+<h2 id="watchlist">Watchlist</h2>
+<h3
+id="skill-issue--repository-knowledge-may-help-but-the-measured-gain-is-not-separable-from-variance">Skill
+Issue — repository knowledge may help, but the measured gain is not
+separable from variance</h3>
+<p><em>Skill Issue: Lessons from Optimizing Repository SKILLs for Coding
+Agents</em>, Mykhailo Kozyrev, Andrei Kozyrev, and Anton Podkopaev;
+arXiv:2609.12742; submitted September 11; preprint. The authors mine
+merged pull requests from three Kotlin repositories, revert them at a
+frozen base commit, and compare an agent with and without optimized
+repository documents. GEPA documents improve the score by 4.9 percentage
+points on average; SkillOpt improves 0.1 point over the seed. The paper
+explicitly says the GEPA gain cannot be separated from run-to-run
+variance at the number of tasks available from one repository. A
+maintainer qualitatively found valuable project knowledge. <strong>Watch
+trigger:</strong> promote when results replicate across more languages
+and repositories with paired uncertainty, fresh held-out PRs,
+security/secret-retention tests, and a verified reusable artifact.
+<strong>Research Utility Score: 81/100.</strong> (<a
+href="https://arxiv.org/abs/2609.12742">paper</a>)</p>
+<h3
+id="embodied-benchforge--promising-closed-loop-benchmark-construction-but-artifact-and-independence-evidence-are-incomplete">Embodied-BenchForge
+— promising closed-loop benchmark construction, but artifact and
+independence evidence are incomplete</h3>
+<p><em>Embodied-BenchForge: A Closed-Loop Agentic Workflow for Embodied
+Benchmark Construction</em>, Baoyang Jiang et al.; arXiv:2609.13082;
+submitted September 11; preprint; CC BY 4.0. The workflow uses typed
+skills, an artifact dependency graph, requirement contracts,
+provenance-guided local repair, and upstream rollback. It constructs six
+offline embodied-QA benchmarks and 220 AI2-THOR tasks. Removing
+verification and repair lowers human quality by 23.25 points and valid
+rate from 93.7% to 62.4%; judge–human Spearman correlation is 0.87 in
+the full system. However, four model judges help assess artifacts
+produced with GPT-5.5 Pro, no verified public repository or immutable
+benchmark package was found, and the paper has no explicit limitations
+section. Its dependency-graph implication also overlaps yesterday's
+briefing. <strong>Watch trigger:</strong> promote when the benchmark
+artifacts, code, provenance logs, human samples, failure cases, and
+licenses are released and independently reproduced against manually
+built controls. <strong>Research Utility Score: 78/100.</strong> (<a
+href="https://arxiv.org/abs/2609.13082">paper</a>, <a
+href="https://arxiv.org/html/2609.13082">full text</a>)</p>
+<h2 id="cross-paper-synthesis">Cross-paper synthesis</h2>
+<h3
+id="independent-analysis--the-evaluation-contract-has-three-orthogonal-boundaries">Independent
+Analysis — the evaluation contract has three orthogonal boundaries</h3>
+<ol type="1">
+<li><strong>Observation boundary.</strong> K-Bench asks what the
+deployed system can expose across every channel and substrate. An
+answer-only scorer is incomplete.</li>
+<li><strong>Opportunity boundary.</strong> VRL-Bench asks what
+additional attempts, environment interactions, and feedback a method
+consumed. A retry advantage is not automatically a learning
+advantage.</li>
+<li><strong>Ground-truth boundary.</strong> The physics audit asks
+whether the item, reference, and grader deserve authority. An apparent
+failure is not automatically a model failure.</li>
+</ol>
+<p>These boundaries should be recorded independently because fixing one
+does not fix the others. A six-channel observer can still use a bad
+label. A perfect reference can still compare unequal opportunity
+budgets. A matched trial budget can still miss a disclosure in a tool
+trace. The enterprise control plane should therefore treat evaluation as
+a versioned evidence object rather than a scalar score.</p>
+<h2 id="visual-1--three-boundary-evaluation-assurance-loop">Visual 1 —
+three-boundary evaluation assurance loop</h2>
+<pre class="text"><code>TEST INTENT
+   │
+   ├── Ground-truth gate ── item · reference · ambiguity · evaluator · adjudication
+   │
+   ├── Opportunity ledger ─ attempts · resets · actions · calls · tokens · tools · time
+   │
+   └── Observation union ── prompts · reasoning* · tool calls · tool outputs · retrieval · answer · summary
+                                  *only when legitimately available
+                                      │
+                                      ▼
+                         RETAIN / STABILITY / SAFETY GATES
+                                      │
+                                      ▼
+                       SCORE + UNCERTAINTY + ELIGIBILITY VERDICT
+                                      │
+                          human review / reversible decision</code></pre>
+<h2
+id="visual-2--verified-signal-versus-safe-deployment-distance">Visual 2
+— verified signal versus safe deployment distance</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Signal</th>
+<th>Strongest verified evidence</th>
+<th>Safe near-term use</th>
+<th>Largest deployment gap</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Multi-channel unlearning evaluation</td>
+<td>4 substrates, 6 channels, 13-method main analysis, 20-method roster,
+paired/FDR protocol</td>
+<td>Synthetic whole-trajectory deletion qualification</td>
+<td>Natural memorization, multi-location secrets, adaptive attackers,
+legal erasure, public artifact</td>
+</tr>
+<tr class="even">
+<td>Finite-budget retry evaluation</td>
+<td>2,220 paired cases, 16,946 trials, three models, two environments,
+replay sweep, CIs</td>
+<td>Offline matched-retry harness and opportunity ledger</td>
+<td>Irreversible side effects, hidden feedback, idempotency, human
+approvals, total economics</td>
+</tr>
+<tr class="odd">
+<td>Expert benchmark auditing</td>
+<td>Six benchmarks, 250 rejected cases, 446 annotations, repairs and
+adjudication</td>
+<td>Stratified label/reference/grader audit</td>
+<td>Released audit artifacts, unbiased defect prevalence, controlled
+model routes, open-ended work</td>
+</tr>
+<tr class="even">
+<td>Repository skill optimization</td>
+<td>Three Kotlin repositories; 4.9-point average GEPA gain acknowledged
+as inseparable from variance</td>
+<td>Qualitative knowledge discovery</td>
+<td>Adequate power, cross-language transfer, security, fresh
+holdouts</td>
+</tr>
+<tr class="odd">
+<td>Closed-loop benchmark synthesis</td>
+<td>Six offline suites, 220 interactive tasks, human/model judging,
+component ablations</td>
+<td>Research-only artifact pipeline experiment</td>
+<td>Independent validation, released artifacts, contamination and
+judge-dependence controls</td>
+</tr>
+</tbody>
+</table>
+<h2 id="enterprise-ai-enhancement-backlog">Enterprise AI Enhancement
+Backlog</h2>
+<h3 id="priority-method-and-uncertainty">Priority method and
+uncertainty</h3>
+<p>The <strong>Future Enterprise AI Priority Score</strong> is a
+transparent decision aid, not a measured probability: strategic/business
+value 25%, technical leverage 20%, evidence strength 20%, enterprise
+readiness 15%, feasibility 10%, and risk-adjusted differentiation 10%.
+Component values are bounded analyst judgments grounded in today's
+reviewed evidence. Differences below roughly three points should not
+drive commitments until internal workflow, architecture, cost, data,
+security, legal, privacy, and adoption context is supplied.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: right;">#</th>
+<th>Enhancement</th>
+<th>Decision band</th>
+<th style="text-align: right;">Strategic</th>
+<th style="text-align: right;">Leverage</th>
+<th style="text-align: right;">Evidence</th>
+<th style="text-align: right;">Readiness</th>
+<th style="text-align: right;">Feasibility</th>
+<th style="text-align: right;">Differentiation</th>
+<th style="text-align: right;">Weighted total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td>Whole-system observability and utility gate</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">96</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;"><strong>92.5</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td>Finite-opportunity retry qualification harness</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">83</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;"><strong>90.8</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td>Benchmark ground-truth and evaluator audit gate</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">89</td>
+<td style="text-align: right;"><strong>90.2</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td>Evidence-substrate inventory and deletion contract</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">72</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;"><strong>88.4</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td>Immutable agent opportunity and resource ledger</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;"><strong>88.0</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td>Human adjudication and benchmark-repair workflow</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">76</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;"><strong>85.7</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td>Semantic exploration–exploitation shadow scheduler</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">62</td>
+<td style="text-align: right;">66</td>
+<td style="text-align: right;">89</td>
+<td style="text-align: right;"><strong>81.8</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td>Closed-loop benchmark artifact repair engine</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">72</td>
+<td style="text-align: right;">52</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">87</td>
+<td style="text-align: right;"><strong>75.7</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9</td>
+<td>Production deletion certification from refusal or answer-only
+tests</td>
+<td>Deprioritize for Now</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">65</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;"><strong>49.8</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="prototype-soon">Prototype Soon</h3>
+<h4 id="1-whole-system-observability-and-utility-gate--925100">1.
+Whole-system observability and utility gate — 92.5/100</h4>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability / Safety
+&amp; Governance / AI Security.</li>
+<li><strong>Research signal and support:</strong> <strong>Paper
+Fact</strong> — K-Bench observes six channels, finds 22–86%
+non-parametric leakage missed by model-only probes, and separates
+suppression from retain damage and collapse. Support: K-Bench.</li>
+<li><strong>Enterprise problem or opportunity:</strong> Answer-only
+tests can miss disclosure in prompts, retrieval, tool observations,
+summaries, or legitimately available reasoning traces; broken agents can
+falsely look safe.</li>
+<li><strong>Proposed future capability:</strong> <strong>Enterprise
+Inference</strong> — a policy-configured evaluator unions authorized
+observable channels, resolves target fragments, measures retain behavior
+and task viability, and emits a panel plus eligibility verdict. It
+stores raw evidence under least-privilege access and redacts user-facing
+reports.</li>
+<li><strong>Likely architectural placement:</strong> agent layer, model
+gateway, retrieval/knowledge, evaluation, observability,
+security/governance.</li>
+<li><strong>Expected business value:</strong> reliability, quality, risk
+reduction, customer experience. <strong>Technical value:</strong>
+localizes leakage and prevents collapse from gaming the safety
+metric.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+benchmark method; synthetic secrets and unverified public artifact.
+<strong>Confidence:</strong> High for an isolated prototype.
+<strong>Horizon:</strong> Now. <strong>Effort:</strong> M.</li>
+<li><strong>Dependencies and prerequisites:</strong> authorized
+telemetry, channel schema, synthetic canaries, target resolver,
+retention policy, encrypted trace store, access controls, baseline
+task/retain suite.</li>
+<li><strong>Key risks:</strong> collecting sensitive traces, overbroad
+chain-of-thought logging, false negatives on transformed or fragmented
+secrets, evaluator access abuse, storage expansion, latency and
+cost.</li>
+<li><strong>Build / Buy / Partner:</strong> Build the enterprise
+evidence contract and policy plane; buy or reuse observability
+primitives after security review; partner with privacy, legal, security,
+and application owners.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Inject
+100 synthetic canary records into one substrate at a time in a
+non-production agent; compare answer-only and union scoring; disable
+writes and external side effects.</li>
+<li><strong>Success metrics and stop conditions:</strong> ≥95%
+seeded-canary recall, channel-level localization, ≤2% false positives on
+retain cases, no task-viability regression, complete evidence lineage.
+Stop on sensitive trace overcollection, unbounded false positives, or
+inability to purge the audit store.</li>
+<li><strong>Roadmap trigger:</strong> Two representative agent workflows
+show material hidden-surface discovery, stable evaluator performance,
+and privacy/security approval for bounded telemetry.</li>
+</ul>
+<h4 id="2-finite-opportunity-retry-qualification-harness--908100">2.
+Finite-opportunity retry qualification harness — 90.8/100</h4>
+<ul>
+<li><strong>Category:</strong> Agentic AI / Evaluation &amp;
+Observability / Reasoning &amp; Planning.</li>
+<li><strong>Research signal and support:</strong> <strong>Paper
+Fact</strong> — VRL-Bench shows every existing failure-memory update
+helps some settings and hurts others when compared with memory-free
+retry under six matched complete trials. Support: VRL-Bench.</li>
+<li><strong>Enterprise problem or opportunity:</strong> Teams can
+attribute gains to reflection or memory when another attempt, extra
+environment feedback, or additional calls caused the gain.</li>
+<li><strong>Proposed future capability:</strong> <strong>Enterprise
+Inference</strong> — a benchmark runner shares the first attempt, resets
+the task to a controlled state, caps complete trials and actions, and
+compares memory-free retry, the proposed update, and deterministic
+policies. Calls, tokens, transitions, latency, cost, and side-effect
+eligibility remain separate ledgers.</li>
+<li><strong>Likely architectural placement:</strong> orchestration,
+agent layer, evaluation, observability, infrastructure.</li>
+<li><strong>Expected business value:</strong> quality, reliability,
+cost, speed, risk reduction. <strong>Technical value:</strong> isolates
+incremental learning from resampling and exposes attempt
+efficiency.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+matched design in two simulated environments; no irreversible enterprise
+actions. <strong>Confidence:</strong> High for offline evaluation.
+<strong>Horizon:</strong> Now. <strong>Effort:</strong> M.</li>
+<li><strong>Dependencies and prerequisites:</strong> replayable
+fixtures, reset semantics, idempotency tags, success verifier,
+shared-seed support, cost telemetry, action limits, failure
+taxonomy.</li>
+<li><strong>Key risks:</strong> reset leakage, non-equivalent fixtures,
+hidden retries, retry amplification, rate-limit impact, side effects,
+undercounted model calls, optimization to an imperfect verifier.</li>
+<li><strong>Build / Buy / Partner:</strong> Build the opportunity
+contract and adapters around existing evaluation infrastructure; partner
+with application owners to define reset and side-effect rules.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Re-run 50
+archived failures under six controlled attempts with a shared first
+trial and three policies; no production write authority.</li>
+<li><strong>Success metrics and stop conditions:</strong> paired success
+gain with CI, non-inferior safety, lower or justified total cost, exact
+opportunity reconciliation, reproducible recovery sets. Stop if resets
+are not valid, opportunity counts diverge, gains vanish against retry,
+or side effects cannot be contained.</li>
+<li><strong>Roadmap trigger:</strong> Replication in two internal task
+families shows a stable retry-relative benefit under the full cost and
+risk ledger.</li>
+</ul>
+<h4 id="3-benchmark-ground-truth-and-evaluator-audit-gate--902100">3.
+Benchmark ground-truth and evaluator audit gate — 90.2/100</h4>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability / Safety
+&amp; Governance / Human-AI Workflow.</li>
+<li><strong>Research signal and support:</strong> <strong>Paper
+Fact</strong> — expert review attributes 238/250 rejected physics cases
+to benchmark or grader error; 28.57% of double-reviewed labels initially
+disagree. Support: physics audit.</li>
+<li><strong>Enterprise problem or opportunity:</strong> Faulty
+references, ambiguous tasks, and brittle evaluators can reject correct
+systems or approve wrong ones, distorting release and procurement
+decisions.</li>
+<li><strong>Proposed future capability:</strong> <strong>Enterprise
+Inference</strong> — stratified audit samples positives, negatives,
+disagreements, and high-impact items; blinded reviewers classify model,
+grader, benchmark, or indeterminate error; a second review and
+adjudication occur above risk thresholds. Corrected items receive new
+immutable versions.</li>
+<li><strong>Likely architectural placement:</strong> evaluation,
+human-review layer, security/governance, developer platform.</li>
+<li><strong>Expected business value:</strong> quality, reliability, risk
+reduction, cost. <strong>Technical value:</strong> separates system
+error from measurement error and creates evaluator regression
+suites.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+expert-audit signal; failure-enriched sampling and unreleased artifacts
+limit prevalence estimates. <strong>Confidence:</strong> High for
+process adoption. <strong>Horizon:</strong> Now.
+<strong>Effort:</strong> M.</li>
+<li><strong>Dependencies and prerequisites:</strong> domain reviewer
+pool, audit taxonomy, blinded interface, versioned benchmark store,
+adjudication SLA, sampling plan, conflict-of-interest and access
+controls.</li>
+<li><strong>Key risks:</strong> reviewer scarcity, inconsistent
+expertise, benchmark leakage, repair-induced selection bias, incentives
+to inflate scores, privacy exposure, unresolved indeterminate
+cases.</li>
+<li><strong>Build / Buy / Partner:</strong> Build the internal audit
+workflow and immutable versioning; partner with domain experts; buy
+labeling workflow software only if it preserves blind review and
+provenance.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Audit 100
+recent disagreements without changing release thresholds; double-review
+at least 50 and quantify label agreement, corrected score shift, and
+root cause.</li>
+<li><strong>Success metrics and stop conditions:</strong> 100%
+evidence-backed adjudications, ≥0.75 chance-corrected agreement after
+calibration, material defect localization, version reproducibility,
+bounded reviewer time. Stop if conflicts cannot be resolved or repaired
+sets become less representative.</li>
+<li><strong>Roadmap trigger:</strong> Two audit cycles change at least
+one decision materially while demonstrating stable review quality and
+governance approval.</li>
+</ul>
+<h3 id="prepare-foundations">Prepare Foundations</h3>
+<h4 id="4-evidence-substrate-inventory-and-deletion-contract--884100">4.
+Evidence-substrate inventory and deletion contract — 88.4/100</h4>
+<ul>
+<li><strong>Category:</strong> Data &amp; Knowledge Infrastructure /
+Memory &amp; Context / Safety &amp; Governance.</li>
+<li><strong>Research signal and support:</strong> <strong>Paper
+Fact</strong> — K-Bench isolates parametric, prompt-context, free-text
+retrieval, and structured-retrieval substrates and shows that model-only
+unlearning says nothing about other homes. Support: K-Bench.</li>
+<li><strong>Enterprise problem or opportunity:</strong> Data may persist
+across prompts, stores, caches, logs, summaries, fine-tunes, and
+downstream copies with no unified deletion or retention proof.</li>
+<li><strong>Proposed future capability:</strong> <strong>Enterprise
+Inference</strong> — an identity-linked inventory maps each sensitive
+datum class to stores, replicas, transformations, owners, retention
+rules, deletion mechanisms, verification queries, and residual
+uncertainty; requests create a signed per-substrate evidence
+bundle.</li>
+<li><strong>Likely architectural placement:</strong> data platform,
+retrieval/knowledge, model gateway, observability,
+security/governance.</li>
+<li><strong>Expected business value:</strong> risk reduction,
+reliability, customer experience. <strong>Technical value:</strong>
+makes deletion scope explicit and tests every reachable substrate.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+conceptual and benchmark evidence; internal architecture and legal
+meaning are unknown. <strong>Confidence:</strong> High for inventory,
+Moderate for verification. <strong>Horizon:</strong> 3–6 months.
+<strong>Effort:</strong> L.</li>
+<li><strong>Dependencies and prerequisites:</strong> data
+classification, lineage, identity resolution, owners, retention/legal
+mapping, store-specific deletion APIs, audit storage, model-provider
+contracts.</li>
+<li><strong>Key risks:</strong> incomplete discovery, shadow stores,
+derived-data ambiguity, shared embeddings, immutable backups, vendor
+opacity, legal mismatch, false assurance.</li>
+<li><strong>Build / Buy / Partner:</strong> Build the enterprise
+contract and evidence aggregation; buy/partner for lineage and
+store-specific connectors after verifying coverage and deletion
+semantics.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Trace one
+synthetic identity through a non-production RAG pipeline and execute a
+deletion rehearsal with evidence at every discovered substrate.</li>
+<li><strong>Success metrics and stop conditions:</strong> 100% expected
+stores discovered, deletion verified from authorized observers, retained
+records unaffected, evidence reconstructable. Stop on unknown ownership,
+unverifiable vendor paths, or collateral deletion.</li>
+<li><strong>Roadmap trigger:</strong> Two end-to-end rehearsals across
+distinct data paths reconcile inventory, action, and verification
+without unresolved high-risk gaps.</li>
+</ul>
+<h4 id="5-immutable-agent-opportunity-and-resource-ledger--880100">5.
+Immutable agent opportunity and resource ledger — 88.0/100</h4>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability / MLOps
+&amp; Platform / Agentic AI.</li>
+<li><strong>Research signal and support:</strong> <strong>Paper
+Fact</strong> — VRL-Bench distinguishes complete trials, dispatched
+transitions, zero-dispatch failures, calls, tokens, and cross-trial
+information; physics results also depend on attempts and tool access.
+Support: VRL-Bench and physics audit.</li>
+<li><strong>Enterprise problem or opportunity:</strong> Agent
+comparisons silently mix attempts, tool access, resets, model calls,
+search depth, and evaluator feedback.</li>
+<li><strong>Proposed future capability:</strong> <strong>Enterprise
+Inference</strong> — each evaluation run emits an append-only manifest
+for task identity, model route, prompts, tools, attempts, environment
+transitions, resets, calls, tokens, latency, cost, feedback, stop
+reason, and side-effect class. Eligibility rules reject non-comparable
+runs.</li>
+<li><strong>Likely architectural placement:</strong> orchestration,
+model gateway, evaluation, observability, infrastructure.</li>
+<li><strong>Expected business value:</strong> cost, quality,
+reliability, risk reduction. <strong>Technical value:</strong>
+reproducible opportunity accounting and fair agent comparisons.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Well-specified research protocol; implementation patterns are mature,
+internal integration unknown. <strong>Confidence:</strong> High.
+<strong>Horizon:</strong> 3–6 months. <strong>Effort:</strong> M.</li>
+<li><strong>Dependencies and prerequisites:</strong> canonical run ID,
+signed event schema, model gateway telemetry, tool/event
+instrumentation, cost table versions, clock synchronization, retention
+controls.</li>
+<li><strong>Key risks:</strong> double-counting, missing provider usage,
+sensitive payloads, clock/order errors, telemetry cost, schema drift,
+gaming the opportunity unit.</li>
+<li><strong>Build / Buy / Partner:</strong> Build the immutable contract
+and eligibility rules; use existing telemetry standards and
+observability storage where they preserve event identity.</li>
+<li><strong>Minimum reversible validation experiment:</strong>
+Instrument one evaluation suite, reconcile 100 runs against provider
+bills and tool logs, and replay five manifests into the scoring
+pipeline.</li>
+<li><strong>Success metrics and stop conditions:</strong> ≥99% event
+reconciliation, exact attempt/transition counts, historical cost
+reproduction, &lt;5% runtime overhead, no restricted payload leakage.
+Stop if reconciliation or access control fails.</li>
+<li><strong>Roadmap trigger:</strong> Two model/scaffold comparisons
+become reproducible from manifests and identify at least one previously
+invalid comparison.</li>
+</ul>
+<h4 id="6-human-adjudication-and-benchmark-repair-workflow--857100">6.
+Human adjudication and benchmark-repair workflow — 85.7/100</h4>
+<ul>
+<li><strong>Category:</strong> Human-AI Workflow / Evaluation &amp;
+Observability / Safety &amp; Governance.</li>
+<li><strong>Research signal and support:</strong> <strong>Paper
+Fact</strong> — the physics audit repairs or excludes defective items,
+requires experts to reason before reading references on two benchmarks,
+and resolves every double-review disagreement with a third review.
+Support: physics audit.</li>
+<li><strong>Enterprise problem or opportunity:</strong> Evaluation
+defects recur but fixes are handled informally, overwriting history or
+losing why a label changed.</li>
+<li><strong>Proposed future capability:</strong> <strong>Enterprise
+Inference</strong> — route disputed or sampled items to domain
+reviewers; require independent rationale, preserve original and repaired
+versions, record reviewer confidence, test evaluator equivalence, and
+publish impact analysis before activating a new benchmark version.</li>
+<li><strong>Likely architectural placement:</strong> human-review layer,
+evaluation, developer platform, security/governance.</li>
+<li><strong>Expected business value:</strong> quality, reliability, risk
+reduction, speed. <strong>Technical value:</strong> turns benchmark
+maintenance into an auditable lifecycle.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Expert
+workflow is credible; scale and economics unmeasured.
+<strong>Confidence:</strong> Moderate. <strong>Horizon:</strong> 3–6
+months. <strong>Effort:</strong> M.</li>
+<li><strong>Dependencies and prerequisites:</strong> reviewer roster,
+conflict rules, version control, access segmentation, annotation UI,
+reviewer training, change-impact analysis.</li>
+<li><strong>Key risks:</strong> reviewer fatigue, leakage, groupthink,
+overrepair toward observed models, inconsistent conventions, slow SLAs,
+hidden conflicts.</li>
+<li><strong>Build / Buy / Partner:</strong> Build governance and
+versioning; buy annotation tooling if blind review and immutable history
+are supported; partner with domain owners.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Repair 25
+historically disputed items in a forked benchmark; compare independent
+reviewers and rerun archived systems without replacing the active
+version.</li>
+<li><strong>Success metrics and stop conditions:</strong> resolved
+defect causes, stable agreement, reproducible deltas, no item leakage,
+documented representativeness impact. Stop if repairs are model-specific
+or reviewer disagreement remains high after calibration.</li>
+<li><strong>Roadmap trigger:</strong> Forked versions improve expert
+validity and evaluator agreement without erasing comparability or
+introducing model-targeted bias.</li>
+</ul>
+<h3 id="monitor-for-maturity">Monitor for Maturity</h3>
+<h4 id="7-semantic-explorationexploitation-shadow-scheduler--818100">7.
+Semantic exploration–exploitation shadow scheduler — 81.8/100</h4>
+<ul>
+<li><strong>Category:</strong> Agentic AI / Reasoning &amp; Planning /
+Memory &amp; Context.</li>
+<li><strong>Research signal and support:</strong> <strong>Paper
+Fact</strong> — VEX² is the only evaluated update with positive
+retry-relative point estimates in all six VRL-Bench settings, but two
+GLM intervals include zero. Support: VRL-Bench.</li>
+<li><strong>Enterprise problem or opportunity:</strong> Replaying one
+failure explanation can anchor all remaining attempts; pure retry can
+waste valid lessons.</li>
+<li><strong>Proposed future capability:</strong> <strong>Enterprise
+Inference</strong> — in shadow mode, generate multiple policy
+hypotheses, allocate a bounded remaining trial budget, preserve
+validated constraints, and withhold or rotate failure memory when
+exploration value is high. Execution remains with the existing approved
+controller.</li>
+<li><strong>Likely architectural placement:</strong> agent layer,
+orchestration, evaluation, human-review layer.</li>
+<li><strong>Expected business value:</strong> quality, speed, cost,
+strategic differentiation. <strong>Technical value:</strong> makes
+memory exposure conditional on remaining opportunities and
+uncertainty.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Promising two-environment preprint; no consequential-action evidence.
+<strong>Confidence:</strong> Moderate-Low. <strong>Horizon:</strong>
+6–12 months. <strong>Effort:</strong> L.</li>
+<li><strong>Dependencies and prerequisites:</strong> opportunity ledger,
+reversible environment, policy schema, uncertainty estimate,
+idempotency, safety verifier, action sandbox, holdout tasks.</li>
+<li><strong>Key risks:</strong> policy hallucination, extra cost, side
+effects, non-restorable state, unsafe exploration, repeated harmful
+actions, verifier gaming, context growth.</li>
+<li><strong>Build / Buy / Partner:</strong> Build a narrow shadow
+prototype after the ledger exists; do not buy an opaque production
+scheduler. Partner with workflow owners for safe policy families.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Generate
+scheduler recommendations for 50 replayable tasks but do not execute
+them; compare predicted policy diversity, safety, cost, and
+counterfactual success using a simulator.</li>
+<li><strong>Success metrics and stop conditions:</strong> statistically
+credible retry-relative gain, non-inferior safety, bounded scheduler
+cost, valid budget allocations, reproducible policies. Stop on unsafe
+proposals, unstable gains, or more than 20% cost increase without
+commensurate value.</li>
+<li><strong>Roadmap trigger:</strong> Multi-seed internal replication
+beats retry and a deterministic diversity baseline under matched
+full-resource budgets and red-team review.</li>
+</ul>
+<h4 id="8-closed-loop-benchmark-artifact-repair-engine--757100">8.
+Closed-loop benchmark artifact repair engine — 75.7/100</h4>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability / AI
+Software Engineering / Data &amp; Knowledge Infrastructure.</li>
+<li><strong>Research signal and support:</strong> <strong>Paper
+Fact</strong> — Embodied-BenchForge reports a 23.25-point human-quality
+drop and valid-rate fall from 93.7% to 62.4% without verification and
+repair; 91.6% of invoked modules are reused. Support:
+Embodied-BenchForge Watchlist.</li>
+<li><strong>Enterprise problem or opportunity:</strong>
+Benchmark-generation defects propagate across dependent artifacts,
+making full rebuilds expensive and opaque.</li>
+<li><strong>Proposed future capability:</strong> <strong>Enterprise
+Inference</strong> — typed artifact nodes declare contracts and
+provenance; failed checks trigger local reconstruction or explicit
+upstream rollback; humans approve new benchmark versions.</li>
+<li><strong>Likely architectural placement:</strong> evaluation,
+developer platform, data platform, orchestration.</li>
+<li><strong>Expected business value:</strong> speed, cost, quality.
+<strong>Technical value:</strong> localized repair and dependency-aware
+provenance.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Large
+appendix and ablations, but no verified public artifact and model-judge
+dependence. <strong>Confidence:</strong> Low. <strong>Horizon:</strong>
+12+ months. <strong>Effort:</strong> XL.</li>
+<li><strong>Dependencies and prerequisites:</strong> benchmark registry,
+artifact DAG, executable validators, provenance store, immutable
+datasets, judge calibration, human sampling, compute/cost controls.</li>
+<li><strong>Key risks:</strong> synthetic benchmark bias, judge
+self-preference, propagated hidden defects, source-license violations,
+contamination, expensive re-execution, false repair confidence.</li>
+<li><strong>Build / Buy / Partner:</strong> Partner for independent
+reproduction; build only a small artifact-contract experiment after
+provenance foundations; avoid buying unverifiable generated
+benchmarks.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Apply
+typed contracts and local repair to 100 manually authored evaluation
+artifacts in a fork; compare defect detection, reviewer quality, token
+cost, and repair scope with final-stage inspection.</li>
+<li><strong>Success metrics and stop conditions:</strong> higher
+human-validated quality, lower repair scope/cost, full provenance, no
+license or contamination breach. Stop if judges and humans diverge,
+artifacts cannot be reproduced, or defects propagate undetected.</li>
+<li><strong>Roadmap trigger:</strong> Public artifacts plus independent
+reproduction and an internal manual-control study show durable quality
+and economic advantage.</li>
+</ul>
+<h3 id="deprioritize-for-now">Deprioritize for Now</h3>
+<h4
+id="9-production-deletion-certification-from-refusal-or-answer-only-tests--498100">9.
+Production deletion certification from refusal or answer-only tests —
+49.8/100</h4>
+<ul>
+<li><strong>Category:</strong> Safety &amp; Governance / AI Security /
+Model &amp; Inference.</li>
+<li><strong>Research signal and support:</strong> <strong>Paper
+Fact</strong> — K-Bench shows answer-channel suppression can coexist
+with leakage elsewhere, and refusal or collapse does not verify removal.
+Support: K-Bench.</li>
+<li><strong>Enterprise problem or opportunity:</strong> A quick
+single-channel certificate appears cheap but can create false legal and
+security assurance.</li>
+<li><strong>Proposed future capability:</strong> <strong>Enterprise
+Inference</strong> — do not build this as an approval mechanism.
+Preserve answer-only/refusal checks only as one diagnostic inside a
+wider substrate, trajectory, retain, stability, and governance
+assessment.</li>
+<li><strong>Likely architectural placement:</strong> evaluation and
+security/governance.</li>
+<li><strong>Expected business value:</strong> risk reduction by avoiding
+false assurance. <strong>Technical value:</strong> prevents a weak proxy
+from gaining authority.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+evidence against the proposed certificate; no credible enterprise path
+as a stand-alone control. <strong>Confidence:</strong> High.
+<strong>Horizon:</strong> 12+ months / not planned.
+<strong>Effort:</strong> S to reject; XL to replace
+comprehensively.</li>
+<li><strong>Dependencies and prerequisites:</strong> whole-system gate,
+data lineage, legal interpretation, independent validation.</li>
+<li><strong>Key risks:</strong> undiscovered channels, refusal bypass,
+agent collapse, transformed-secret leakage, contractual noncompliance,
+reputational harm.</li>
+<li><strong>Build / Buy / Partner:</strong> Do not buy or build as
+certification. Partner with privacy, legal, and security teams on a
+multi-layer evidence standard.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Red-team
+any proposed answer-only certificate with synthetic secrets placed in
+prompt and retrieval substrates; no real personal data.</li>
+<li><strong>Success metrics and stop conditions:</strong> The experiment
+should demonstrate where the proxy fails. Stop immediately if a vendor
+presents refusal or zero answer leakage as verified deletion without
+multi-surface evidence.</li>
+<li><strong>Roadmap trigger:</strong> None for stand-alone use;
+reconsider only if independently validated theory and regulation
+establish a sufficient observable certificate across all relevant
+substrates.</li>
+</ul>
+<h2 id="enterprise-ai-architecture-implications">Enterprise AI
+Architecture Implications</h2>
+<h3 id="independent-analysis--1224-month-direction">Independent Analysis
+— 12–24 month direction</h3>
+<p>The likely change is not another model service. It is an assurance
+plane that sits across applications, agents, model gateways, retrieval,
+data systems, evaluators, observability, governance, and human review. A
+request or evaluation receives a stable identity. Every substrate that
+can hold relevant data is declared. Every attempt, tool transition,
+reset, model call, feedback item, and evaluator configuration enters an
+immutable ledger. Observable outputs are unioned under an explicit
+privacy policy. Ground truth is versioned and periodically audited by
+humans. Scores are released only with uncertainty, eligibility gates,
+and links to the underlying evidence.</p>
+<p>Shared enabling foundations unlock multiple enhancements:</p>
+<ul>
+<li><strong>Model gateway and identity/authorization:</strong> bind
+model route, version, tools, permissions, and tenant context to each
+run.</li>
+<li><strong>Context, memory, and knowledge services:</strong> expose
+substrate identity, retention, lineage, deletion mechanisms, retrieval
+provenance, and replica state.</li>
+<li><strong>Agent orchestration:</strong> enforce attempt/action
+budgets, reset semantics, idempotency, side-effect classes, and human
+approvals.</li>
+<li><strong>Evaluation and experiment infrastructure:</strong> pair
+runs, freeze fixtures, create strong retry baselines, maintain holdouts,
+and preserve benchmark versions.</li>
+<li><strong>Observability and cost telemetry:</strong> record calls,
+tokens, tool events, latency, errors, and channel evidence without
+indiscriminate sensitive-reasoning capture.</li>
+<li><strong>Policy enforcement and security:</strong> control who may
+observe, retain, export, challenge, delete, or adjudicate traces and
+benchmarks.</li>
+<li><strong>Human-review controls:</strong> support blind expert review,
+disagreement resolution, benchmark repair, and version-impact
+analysis.</li>
+<li><strong>Data provenance:</strong> connect benchmark items,
+references, model outputs, graders, repairs, and deployment
+decisions.</li>
+</ul>
+<p>Additional internal context is required before implementation
+decisions: current agent and model topology, data classifications,
+applicable deletion duties, model-provider contracts, retrievable
+telemetry, benchmark ownership, side-effect severity, reset/idempotency
+capabilities, risk appetite, reviewer capacity, budget, latency targets,
+and adoption constraints. Today's backlog is a set of evidence-grounded
+future options, not an approved roadmap.</p>
+<h2 id="implementation-priorities">Implementation priorities</h2>
+<h3 id="now">Now</h3>
+<ol type="1">
+<li>Choose one replayable, low-risk agent workflow and define its
+observable channels, data substrates, complete-trial unit, reset
+semantics, and success verifier.</li>
+<li>Add synthetic canaries and a retain/stability suite; compare
+answer-only with union scoring.</li>
+<li>Instrument attempts, transitions, calls, tokens, tools, feedback,
+cost, and stop reasons in a signed run manifest.</li>
+<li>Audit 100 evaluation disagreements with blinded human
+classification; do not alter active thresholds during the first
+cycle.</li>
+</ol>
+<h3 id="next-36-months">Next 3–6 months</h3>
+<ol type="1">
+<li>Expand substrate inventory and deletion rehearsal to a second
+workflow.</li>
+<li>Calibrate benchmark-repair and adjudication rules; version every
+change.</li>
+<li>Require matched-retry baselines and opportunity eligibility before
+agent-memory experiments can support release decisions.</li>
+<li>Add access-controlled evidence storage, cost telemetry, purge tests,
+and experiment rollback.</li>
+</ol>
+<h3 id="612-months">6–12 months</h3>
+<ol type="1">
+<li>Consider a VEX²-like shadow scheduler only after opportunity,
+idempotency, and safety controls are proven.</li>
+<li>Re-evaluate Watchlist items after public artifacts and independent
+replications appear.</li>
+<li>Measure whether the assurance plane predicts production-relevant
+error severity better than scalar benchmark scores.</li>
+</ol>
+<h2 id="knowledge-reinforcement">Knowledge reinforcement</h2>
+<h3 id="five-checks-to-remember">Five checks to remember</h3>
+<ol type="1">
+<li><strong>Where else could the behavior appear?</strong> Inspect the
+deployed system's authorized observable channels, not only the
+answer.</li>
+<li><strong>What opportunity did the method consume?</strong> Match
+complete trials, interactions, resets, tools, calls, and feedback before
+attributing learning.</li>
+<li><strong>Who verified the ground truth?</strong> Audit the task,
+reference, and grader; report reviewer disagreement.</li>
+<li><strong>Did the system stay useful?</strong> Pair safety or
+suppression metrics with retain behavior, task viability, and
+stability.</li>
+<li><strong>Can the decision be reconstructed?</strong> Preserve
+immutable identities, versions, artifacts, costs, uncertainty, and human
+adjudication.</li>
+</ol>
+<p><strong>Compact test:</strong> if a cleaner answer can hide a leaking
+tool trace, an extra attempt can look like learning, and a broken
+reference can look like model failure, then the scalar score is not yet
+decision-grade.</p>
+<h2 id="source-register-and-rejected-signal-notes">Source register and
+rejected-signal notes</h2>
+<h3 id="deep-sources">Deep sources</h3>
+<ul>
+<li><a href="https://arxiv.org/abs/2609.12808">K-Bench abstract and
+identity</a> · <a href="https://arxiv.org/html/2609.12808">full
+paper</a> · submitted September 11, 2026 · preprint · CC BY 4.0.</li>
+<li><a href="https://arxiv.org/abs/2609.12404">VRL-Bench abstract and
+identity</a> · <a href="https://arxiv.org/html/2609.12404">full
+paper</a> · submitted September 11, 2026 · preprint · CC BY 4.0.</li>
+<li><a href="https://arxiv.org/abs/2609.13009">Expert physics re-grading
+abstract and identity</a> · <a
+href="https://arxiv.org/html/2609.13009">full paper</a> · submitted
+September 11, 2026 · preprint · CC BY 4.0.</li>
+</ul>
+<h3 id="watchlist-sources">Watchlist sources</h3>
+<ul>
+<li><a href="https://arxiv.org/abs/2609.12742">Skill Issue</a> ·
+submitted September 11, 2026 · preprint; no verified first-party
+artifact used.</li>
+<li><a href="https://arxiv.org/abs/2609.13082">Embodied-BenchForge</a> ·
+<a href="https://arxiv.org/html/2609.13082">full paper</a> · submitted
+September 11, 2026 · preprint · CC BY 4.0; no verified first-party
+artifact used.</li>
+</ul>
+<h3 id="discovery-and-exclusion-notes">Discovery and exclusion
+notes</h3>
+<p>Current arXiv category listings, ACL Anthology, OpenReview, PMLR,
+Nature-family research pages, and first-party artifact searches were
+screened. Newly published Nature-family items on clinical preferences,
+regulation commentary, diagnostic anchoring, and narrow applied
+prediction were considered but did not displace the selected papers on
+combined methodological novelty, quantitative traceability, enterprise
+leverage, and anti-duplication. Commentary, marketing pages,
+unverifiable summaries, and repository claims without a resolvable
+first-party artifact were excluded from substantive evidence.</p>
+<h2 id="evidence-boundary">Evidence boundary</h2>
+<p>This briefing does not establish that any reviewed method satisfies a
+legal erasure standard, that VEX² is safe for consequential actions,
+that corrected physics scores compare vendors, that generated benchmarks
+are production-ready, or that repository skill optimization is
+statistically established. It does establish concrete reasons to broaden
+the observation surface, match finite opportunities, audit ground truth,
+preserve configuration and provenance, and route consequential
+uncertainty to humans.</p></main></div>
+<footer>AI Research Intelligence Brief · September 14, 2026 · Research options, not deployment approval.</footer>
+<div class="toolbar"><button onclick="window.print()" aria-label="Print report">Print</button><button id="top" aria-label="Back to top">↑ Top</button></div>
+<script>
+const p=document.getElementById('progress');addEventListener('scroll',()=>{const h=document.documentElement;p.style.width=((h.scrollTop/(h.scrollHeight-h.clientHeight))*100)+'%'});document.getElementById('top').onclick=()=>scrollTo({top:0,behavior:'smooth'});
+document.querySelectorAll('main h4').forEach(h=>{if(/^\d+\./.test(h.textContent))h.setAttribute('data-backlog','true')});
+</script>
+</body></html>
