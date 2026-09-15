@@ -3,12 +3,29 @@
     "title": "AI Research Intelligence",
     "url": "https://ygeszvain.github.io/ai-research-intelligence",
     "description": "Evidence-grounded daily AI and machine-learning research intelligence.",
-    "generated_at_utc": "2026-09-14T09:00:00.000Z",
-    "report_count": 36,
-    "latest_report": "2026-09-14",
-    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-14.html"
+    "generated_at_utc": "2026-09-15T09:00:00.000Z",
+    "report_count": 37,
+    "latest_report": "2026-09-15",
+    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-15.html"
   },
   "reports": [
+    {
+      "date": "2026-09-15",
+      "date_display": "September 15, 2026",
+      "title": "AI Research Intelligence Brief — September 15, 2026",
+      "excerpt": "Three papers show that enterprise agents need preserved context provenance, task-bounded authority, and transaction evidence before external effects become durable.",
+      "topics": [
+        "AI Security",
+        "Agentic AI",
+        "Safety & Governance",
+        "Evaluation & Observability",
+        "Data & Knowledge Infrastructure"
+      ],
+      "path": "reports/2026-09-15.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-15.html",
+      "size_bytes": 94195,
+      "sha256": "3e96fe53b2e6bd7f6b7bfbcf2dde7fc53e4d78c8042a05123ca7d28862d924a0"
+    },
     {
       "date": "2026-09-14",
       "date_display": "September 14, 2026",
