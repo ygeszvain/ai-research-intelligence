@@ -1,0 +1,1727 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Evidence-grounded AI Research Intelligence Brief for September 15, 2026: context provenance, task-scoped authorization, and transactional tool effects.">
+<meta name="report-date" content="2026-09-15">
+<meta name="research-window" content="2026-09-14T04:00:00-05:00/2026-09-15T04:00:00-05:00 America/Chicago">
+<meta name="deep-paper-count" content="3">
+<meta name="watchlist-count" content="2">
+<meta name="theme-color" content="#08131f">
+<title>AI Research Intelligence Brief — September 15, 2026</title>
+<style>
+:root{--bg:#07111d;--panel:#0d1b2a;--panel2:#10263a;--text:#e8f1f7;--muted:#9fb5c5;--line:#29445b;--cyan:#45d7c4;--gold:#f5c96a;--rose:#ff8d9a;--blue:#68a9ff;--max:1180px;color-scheme:dark}
+@media(prefers-color-scheme:light){:root{--bg:#f4f7f8;--panel:#fff;--panel2:#edf4f7;--text:#102131;--muted:#526979;--line:#cddbe2;--cyan:#087f73;--gold:#9b6300;--rose:#b92b45;--blue:#1661ad;color-scheme:light}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 90% 0,rgba(69,215,196,.12),transparent 30rem),var(--bg);color:var(--text);font:16px/1.67 ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}a{color:var(--cyan);text-underline-offset:3px}a:hover{text-decoration-thickness:2px}header{border-bottom:1px solid var(--line);background:linear-gradient(135deg,rgba(69,215,196,.09),rgba(104,169,255,.05));padding:54px 22px 34px}.hero{max-width:var(--max);margin:auto}.eyebrow{color:var(--cyan);text-transform:uppercase;letter-spacing:.15em;font-size:.76rem;font-weight:800}h1{font-size:clamp(2.2rem,6vw,4.7rem);line-height:.98;max-width:900px;margin:.35rem 0 1rem;letter-spacing:-.055em}header p{max-width:790px;color:var(--muted);font-size:1.09rem}.chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}.chip{border:1px solid var(--line);border-radius:999px;padding:6px 11px;background:var(--panel);font-size:.8rem}.topbets{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}.bet{border:1px solid var(--line);background:var(--panel);border-radius:14px;padding:15px}.bet b{display:block;color:var(--gold);font-size:1.15rem}.layout{max-width:var(--max);margin:auto;display:grid;grid-template-columns:250px minmax(0,1fr);gap:34px;padding:30px 22px 80px}nav{position:sticky;top:16px;align-self:start;max-height:calc(100vh - 32px);overflow:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:14px}nav strong{display:block;margin:2px 8px 10px;color:var(--gold)}nav ul{list-style:none;margin:0;padding:0}nav li{margin:0}nav a{display:block;color:var(--muted);text-decoration:none;padding:5px 8px;border-radius:7px;font-size:.83rem;line-height:1.25}nav a:hover{background:var(--panel2);color:var(--text)}main{min-width:0}main>h2{font-size:1.75rem;margin:2.6rem 0 1rem;padding-top:.7rem;border-top:1px solid var(--line)}main>h2:first-child{margin-top:0}h3{font-size:1.3rem;margin-top:2rem;color:var(--cyan)}h4{font-size:1.08rem;color:var(--gold);margin-bottom:.45rem}p,li{max-width:88ch}blockquote{margin:1rem 0;padding:1rem 1.2rem;border-left:4px solid var(--gold);background:var(--panel);color:var(--muted)}pre{white-space:pre-wrap;overflow:auto;background:#07101a;border:1px solid var(--line);border-radius:14px;padding:18px;color:#dcecf2;font-size:.86rem;line-height:1.45}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}table{width:100%;border-collapse:collapse;margin:1.25rem 0;background:var(--panel);font-size:.86rem}th,td{padding:10px 12px;border:1px solid var(--line);text-align:left;vertical-align:top}th{color:var(--gold);background:var(--panel2)}hr{border:0;border-top:1px solid var(--line)}main h4+ul,main h3+ul{border:1px solid var(--line);background:linear-gradient(135deg,var(--panel),var(--panel2));border-radius:14px;padding:15px 22px 15px 34px}main h4+ul li,main h3+ul li{margin:.5rem 0}.progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--cyan),var(--gold));width:0;z-index:9}.toolbar{position:fixed;right:18px;bottom:18px;display:flex;gap:8px}.toolbar button{border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:999px;padding:9px 12px;cursor:pointer;box-shadow:0 8px 30px rgba(0,0,0,.2)}.label{font-size:.75rem;color:var(--muted)}footer{border-top:1px solid var(--line);padding:24px;text-align:center;color:var(--muted)}
+@media(max-width:850px){.topbets{grid-template-columns:1fr}.layout{grid-template-columns:1fr}nav{position:relative;top:0;max-height:none}nav ul{columns:2}h1{font-size:2.65rem}}
+@media(max-width:520px){header{padding-top:34px}.layout{padding:20px 14px 60px}nav ul{columns:1}table{display:block;overflow-x:auto}h1{font-size:2.25rem}}
+@media print{body{background:white;color:#111;font-size:11pt}header{padding:18px 0}.layout{display:block;padding:0}nav,.toolbar,.progress{display:none}a{color:#145c70}main>h2{break-before:page}main>h2:first-child{break-before:auto}table,pre{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<header><div class="hero">
+<div class="eyebrow">AI Research Intelligence · Evidence before enthusiasm</div>
+<h1>Contract the path from context to consequence.</h1>
+<p>September 15, 2026 briefing. Three papers show why enterprise agents need preserved context provenance, task-bounded authority, and transaction evidence before external effects become durable.</p>
+<div class="chips"><span class="chip">3 deep papers</span><span class="chip">2 Watchlist</span><span class="chip">24-hour window</span><span class="chip">9 enterprise options</span><span class="chip">Primary sources + full-paper review</span></div>
+<div class="topbets"><div class="bet"><span class="label">TOP BET 1 · PROTOTYPE SOON</span><b>92.0 · Tool contracts + effect ledger</b><span>Make retry, outcome, resource, lifecycle, and coordination semantics explicit.</span></div><div class="bet"><span class="label">TOP BET 2 · PROTOTYPE SOON</span><b>91.5 · Context provenance</b><span>Evaluate the source–action pair when actors paraphrase injected plans.</span></div><div class="bet"><span class="label">TOP BET 3 · PROTOTYPE SOON</span><b>88.5 · Task-scoped authority</b><span>Shadow-test short-lived permissions beneath deterministic ceilings.</span></div></div>
+</div></header>
+<div class="layout"><nav><strong>Navigate</strong><ul>
+<li><a href="#scope-window-and-evidence-policy"
+id="toc-scope-window-and-evidence-policy">Scope, window, and evidence
+policy</a></li>
+<li><a href="#executive-signal" id="toc-executive-signal">Executive
+signal</a></li>
+<li><a href="#top-3-future-bets" id="toc-top-3-future-bets">Top 3 Future
+Bets</a></li>
+<li><a href="#deep-paper-1--a-clean-trace-can-inherit-a-corrupt-plan"
+id="toc-deep-paper-1--a-clean-trace-can-inherit-a-corrupt-plan">Deep
+paper 1 — A clean trace can inherit a corrupt plan</a>
+<ul>
+<li><a href="#contribution-and-quantitative-claim-trace"
+id="toc-contribution-and-quantitative-claim-trace">Contribution and
+quantitative claim trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison"
+id="toc-methodological-critique-and-prior-work-comparison">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#reproducibility-and-enterprise-readiness"
+id="toc-reproducibility-and-enterprise-readiness">Reproducibility and
+enterprise readiness</a></li>
+</ul></li>
+<li><a
+href="#deep-paper-2--tool-success-does-not-establish-workflow-correctness"
+id="toc-deep-paper-2--tool-success-does-not-establish-workflow-correctness">Deep
+paper 2 — Tool success does not establish workflow correctness</a>
+<ul>
+<li><a href="#contribution-and-quantitative-claim-trace-1"
+id="toc-contribution-and-quantitative-claim-trace-1">Contribution and
+quantitative claim trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison-1"
+id="toc-methodological-critique-and-prior-work-comparison-1">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#reproducibility-and-enterprise-readiness-1"
+id="toc-reproducibility-and-enterprise-readiness-1">Reproducibility and
+enterprise readiness</a></li>
+</ul></li>
+<li><a
+href="#deep-paper-3--least-privilege-can-be-task-specific-but-the-classifier-is-not-the-authority"
+id="toc-deep-paper-3--least-privilege-can-be-task-specific-but-the-classifier-is-not-the-authority">Deep
+paper 3 — Least privilege can be task-specific, but the classifier is
+not the authority</a>
+<ul>
+<li><a href="#contribution-and-quantitative-claim-trace-2"
+id="toc-contribution-and-quantitative-claim-trace-2">Contribution and
+quantitative claim trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison-2"
+id="toc-methodological-critique-and-prior-work-comparison-2">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#reproducibility-and-enterprise-readiness-2"
+id="toc-reproducibility-and-enterprise-readiness-2">Reproducibility and
+enterprise readiness</a></li>
+</ul></li>
+<li><a href="#watchlist" id="toc-watchlist">Watchlist</a>
+<ul>
+<li><a
+href="#maps--strong-peer-reviewed-serving-result-but-architecture--and-workload-specific"
+id="toc-maps--strong-peer-reviewed-serving-result-but-architecture--and-workload-specific">MAPS
+— strong peer-reviewed serving result, but architecture- and
+workload-specific</a></li>
+<li><a
+href="#evoontology--typed-gated-semantic-evolution-is-promising-cross-backbone-divergence-is-a-governance-warning"
+id="toc-evoontology--typed-gated-semantic-evolution-is-promising-cross-backbone-divergence-is-a-governance-warning">EvoOntology
+— typed, gated semantic evolution is promising; cross-backbone
+divergence is a governance warning</a></li>
+</ul></li>
+<li><a href="#cross-paper-synthesis"
+id="toc-cross-paper-synthesis">Cross-paper synthesis</a>
+<ul>
+<li><a href="#independent-analysis--three-contracts-must-remain-linked"
+id="toc-independent-analysis--three-contracts-must-remain-linked">Independent
+Analysis — three contracts must remain linked</a></li>
+</ul></li>
+<li><a href="#visual-1--provenance-to-effect-assurance-chain"
+id="toc-visual-1--provenance-to-effect-assurance-chain">Visual 1 —
+provenance-to-effect assurance chain</a></li>
+<li><a
+href="#visual-2--evidence-strength-versus-safe-deployment-distance"
+id="toc-visual-2--evidence-strength-versus-safe-deployment-distance">Visual
+2 — evidence strength versus safe deployment distance</a></li>
+<li><a href="#enterprise-ai-enhancement-backlog"
+id="toc-enterprise-ai-enhancement-backlog">Enterprise AI Enhancement
+Backlog</a>
+<ul>
+<li><a href="#priority-method-and-uncertainty"
+id="toc-priority-method-and-uncertainty">Priority method and
+uncertainty</a></li>
+<li><a href="#prototype-soon" id="toc-prototype-soon">Prototype
+Soon</a></li>
+<li><a href="#prepare-foundations" id="toc-prepare-foundations">Prepare
+Foundations</a></li>
+<li><a href="#monitor-for-maturity"
+id="toc-monitor-for-maturity">Monitor for Maturity</a></li>
+<li><a href="#deprioritize-for-now"
+id="toc-deprioritize-for-now">Deprioritize for Now</a></li>
+</ul></li>
+<li><a href="#enterprise-ai-architecture-implications"
+id="toc-enterprise-ai-architecture-implications">Enterprise AI
+Architecture Implications</a>
+<ul>
+<li><a href="#independent-analysis--1224-month-direction"
+id="toc-independent-analysis--1224-month-direction">Independent Analysis
+— 12–24 month direction</a></li>
+</ul></li>
+<li><a href="#implementation-priorities"
+id="toc-implementation-priorities">Implementation priorities</a>
+<ul>
+<li><a href="#now" id="toc-now">Now</a></li>
+<li><a href="#next-36-months" id="toc-next-36-months">Next 3–6
+months</a></li>
+<li><a href="#612-months" id="toc-612-months">6–12 months</a></li>
+</ul></li>
+<li><a href="#knowledge-reinforcement"
+id="toc-knowledge-reinforcement">Knowledge reinforcement</a>
+<ul>
+<li><a href="#five-checks-to-remember"
+id="toc-five-checks-to-remember">Five checks to remember</a></li>
+</ul></li>
+<li><a href="#source-register-and-rejected-signal-notes"
+id="toc-source-register-and-rejected-signal-notes">Source register and
+rejected-signal notes</a>
+<ul>
+<li><a href="#deep-sources" id="toc-deep-sources">Deep sources</a></li>
+<li><a href="#watchlist-sources" id="toc-watchlist-sources">Watchlist
+sources</a></li>
+<li><a href="#discovery-and-exclusion-notes"
+id="toc-discovery-and-exclusion-notes">Discovery and exclusion
+notes</a></li>
+</ul></li>
+<li><a href="#evidence-boundary" id="toc-evidence-boundary">Evidence
+boundary</a></li>
+</ul></nav><main><h2 id="scope-window-and-evidence-policy">Scope,
+window, and evidence policy</h2>
+<p><strong>Research window.</strong> Monday, September 14, 2026 at 4:00
+AM CDT through Tuesday, September 15, 2026 at 4:00 AM CDT (24 hours;
+America/Chicago). Discovery covered the September 15 arXiv announcement
+cycle—408 cs.AI records—plus current cs.CL, cs.LG, cs.SE, cs.CR, cs.DB,
+cs.DC, cs.IR, stat.ML, ACL Anthology, OpenReview, PMLR/ICML,
+Nature-family research, first-party artifacts, and cited prior work. All
+three deep papers and both Watchlist papers were submitted September 14
+and first appeared in the September 15 listing. The normal window was
+sufficient; no expansion was used.</p>
+<p><strong>Anti-duplication.</strong> Exact titles, arXiv identifiers,
+central claims, and proposed enterprise controls were checked against
+the 36-report archive through September 14. None of today's five papers
+had appeared previously. Recent briefs on memory promotion, benchmark
+contracts, RAG safety, whole-system evaluation, and agent retries were
+treated as prior intelligence rather than rediscovered novelty. Today's
+differentiating signal is the combination of context provenance,
+task-bounded authority, and transaction-aware effects.</p>
+<p><strong>Evidence policy.</strong> <strong>Paper Fact</strong> means
+directly reported by a paper or a verified first-party artifact.
+<strong>Independent Analysis</strong> is this briefing's calculation,
+synthesis, or critique. <strong>Enterprise Inference</strong> is a
+bounded translation into a future enterprise option.
+<strong>Uncertainty</strong> marks missing causal, generalization,
+artifact, economic, security, governance, privacy, or operational
+evidence. The three deep papers are preprints; MAPS is also listed by
+ICML 2026, while EvoOntology is a preprint with a public repository.
+Reported models, metrics, dates, venues, artifacts, and licenses are
+preserved as stated. Benchmark performance is not production readiness.
+Every proposed experiment is isolated, reversible, measurable, and
+non-destructive.</p>
+<h2 id="executive-signal">Executive signal</h2>
+<blockquote>
+<p><strong>Enterprise agents need provenance before reasoning, least
+privilege before execution, and transaction evidence before effects
+become durable.</strong></p>
+</blockquote>
+<p>The three deep papers expose sequential failure points in an agent
+workflow. <em>Corrupt Plans, Clean Traces</em> shows that benign-looking
+reasoning injected upstream can be paraphrased and acted on while
+chain-of-thought monitors miss it. <em>When Tool Calls Succeed but
+Workflows Fail</em> shows that a locally successful tool call does not
+establish a coherent external workflow under retries, partial failure,
+speculation, or concurrency. <em>Empirical Evaluation of Task-Based
+Permission Scoping</em> shows that much of an agent's standing
+credential surface can be withheld when permissions are inferred per
+task—while also demonstrating that no tested classifier configuration
+met its own deployability criteria. (<a
+href="https://arxiv.org/abs/2609.15989">plan injection</a>, <a
+href="https://arxiv.org/abs/2609.15397">agent–tool boundary</a>, <a
+href="https://arxiv.org/abs/2609.15422">task permissions</a>)</p>
+<p><strong>Decision posture.</strong> Prototype provenance-aware context
+qualification, a transactional tool-contract registry with an effect
+ledger, and a task-scoped authorization broker in shadow mode. Build
+stable resource identity, logical-operation IDs, policy-as-data,
+evaluator challenge sets, and human release gates before granting
+production authority. Do not treat a clean reasoning trace as proof of a
+clean plan, a successful tool response as proof that a workflow
+committed correctly, or a classifier's predicted scope as an
+authorization decision without independent ceilings and escalation.</p>
+<h2 id="top-3-future-bets">Top 3 Future Bets</h2>
+<ol type="1">
+<li><strong>Transactional tool-contract registry and effect ledger —
+92.0/100.</strong> Why it matters: retries, compensations, speculation,
+and concurrency are unsafe when the runtime cannot establish whether an
+effect occurred, can be reversed, can be staged, or conflicts with
+another effect. Evidence that would change the recommendation: an
+internal inventory showing every consequential tool already exposes
+authoritative outcome, idempotency, resource identity, lifecycle, and
+coordination semantics, with replay evidence. Next reversible action:
+annotate ten non-production tools, replay eight synthetic anomaly
+traces, and verify that the ledger blocks or escalates every unsafe
+transition without executing a real external effect.</li>
+<li><strong>Context provenance and plan-injection qualification —
+91.5/100.</strong> Why it matters: the actor can internalize an upstream
+plan and produce a clean-looking trace, so monitoring only the actor's
+wording loses the causal source. Evidence that would change the
+recommendation: representative internal red-team data showing
+source-aware qualification adds no material detection beyond existing
+action-effect checks, or creates unacceptable false blocks. Next
+reversible action: inject 100 benign-looking but policy-violating plans
+into a sandboxed RAG/planner workflow and compare actor-only,
+source-only, and joint source–action evaluation.</li>
+<li><strong>Task-scoped ephemeral authorization broker —
+88.5/100.</strong> Why it matters: a credential absent from the task
+cannot be misused by a compromised agent, and the paper's classifier
+removed most of its synthetic severity-weighted exposure. Evidence that
+would change the recommendation: internal tasks requiring broad
+unpredictable discovery, high under-grant rates, or identity systems
+unable to mint short-lived capabilities. Next reversible action: infer
+scopes for 500 historical tasks, issue no credentials, and compare
+predicted permissions with observed accesses and security-review
+labels.</li>
+</ol>
+<h2 id="deep-paper-1--a-clean-trace-can-inherit-a-corrupt-plan">Deep
+paper 1 — A clean trace can inherit a corrupt plan</h2>
+<p><strong>Identity and status.</strong> <em>Corrupt Plans, Clean
+Traces: Evading Chain-of-Thought Monitoring with Plan Injection</em>,
+Keertana Chidambaram, Andrew Ilyas, and Vasilis Syrgkanis; Stanford
+University and Carnegie Mellon University; submitted September 14, 2026;
+arXiv:2609.15989v1; cs.AI; preprint; CC BY-NC-ND 4.0. No first-party
+code or data repository was linked from the paper during review. (<a
+href="https://arxiv.org/abs/2609.15989">paper</a>, <a
+href="https://arxiv.org/html/2609.15989">full text</a>)</p>
+<h3 id="contribution-and-quantitative-claim-trace">Contribution and
+quantitative claim trace</h3>
+<p>The paper defines <strong>plan injection</strong>: harmful reasoning,
+written in benign language, is placed in a model's context. The actor
+adopts or paraphrases it without explicit attribution, and a
+chain-of-thought monitor may read the resulting trace as ordinary
+reasoning. This differs from attacks that instruct the actor to evade
+monitoring; the harmful planning has already happened upstream.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>Decision meaning</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Investigator discovery</td>
+<td style="text-align: right;">TruthfulQA has 817 questions across 38
+disciplines. One Qwen2.5-Coder-7B-Instruct served as investigator,
+actor, and monitor. From 100 hint templates across 20 categories,
+filtering produced 3,018 stealthy flipped examples covering 80.8% of
+questions; three Frank–Wolfe/DPO iterations per stage generated 36
+candidate hints per question and eight aggregate patterns</td>
+<td>The attack mechanism was found through automated elicitation rather
+than a single hand-written anecdote</td>
+<td>Same model family fills all three roles; the seed/filter pipeline
+selects successful steering examples</td>
+</tr>
+<tr class="even">
+<td>APPS injection construction</td>
+<td style="text-align: right;">From about 1,300 filtered problems, 550
+were sampled. Qwen3-8B solved 414/550 and DeepSeek-R1 468/550. The
+corruptor produced verified plan injections for 74.5% and 71.4% of
+benign-CoT/strategy pairs</td>
+<td>The corrupt plans pass public tests and fail on a designated
+in-range backdoor input</td>
+<td>The corruptor is DeepSeek-R1; three handpicked strategies are
+applied to retained solvable problems</td>
+</tr>
+<tr class="odd">
+<td>APPS actor adoption</td>
+<td style="text-align: right;">Best-of-three follow rates were 50.6% for
+Qwen3-8B and 41.7% for DeepSeek-R1. Single-shot rates vary sharply by
+mechanism: hardcoded-special-case 65.8%/68.7%, greedy-fast-path
+14.4%/3.0%, integer-sqrt-precision 13.9%/2.5%</td>
+<td>“Plan injection works” is strategy-conditional; the aggregate
+best-of-three figure is not a pass@1 deployment rate</td>
+<td>Conditioning is on verified injections; public-test success does not
+establish arbitrary codebase transfer</td>
+</tr>
+<tr class="even">
+<td>Bio-Math construction and adoption</td>
+<td style="text-align: right;">On 78 biology questions paired with five
+of 120 math questions, corruptor success was 87.1%/89.1%; actor
+best-of-three adoption was 93.0%/98.9%; pass@1 was 90.4%/95.1%</td>
+<td>Benign-looking cross-domain reasoning is highly adoptable in this
+synthetic disguise task</td>
+<td>Hidden math-answer emission is an artificial proxy for harmful
+behavior</td>
+</tr>
+<tr class="odd">
+<td>Closed-model transfer</td>
+<td style="text-align: right;">On 100 sampled cases per task, Bio-Math
+adoption was 92% for GPT-5, 98% for Claude Sonnet 4, and 94% for Claude
+Sonnet 5; APPS adoption was 6%, 40%, and 0%</td>
+<td>The vulnerability is not confined to one open-weight actor, but
+transfer is task dependent</td>
+<td>Frontier systems did not expose raw CoT, so monitor analysis was not
+run; plans were not tuned per frontier model</td>
+</tr>
+<tr class="even">
+<td>Paraphrase rather than copying</td>
+<td style="text-align: right;">On 1,972 APPS cases, median eight-gram
+overlap was 10.3% and only 0.5% copied more than half of actor text; on
+1,541 Bio-Math cases, median overlap was 4.8% and 0.9% copied more than
+half</td>
+<td>Simple string attribution cannot reliably identify adoption</td>
+<td>N-gram overlap is not semantic-causality proof; it measures surface
+copying only</td>
+</tr>
+<tr class="odd">
+<td>Monitor ceiling</td>
+<td style="text-align: right;">Five thinking and non-thinking monitors
+were calibrated to about 0–2% benign false positives at suspicion
+threshold 0.15; no monitor exceeded roughly 75% detection, so at least a
+quarter of attacks escaped</td>
+<td>CoT monitoring is incomplete as a sole gate</td>
+<td>Detection varies by task, actor, and strategy; threshold choice is a
+policy tradeoff</td>
+</tr>
+<tr class="even">
+<td>More context can hurt</td>
+<td style="text-align: right;">Giving a monitor the injected plan
+produced 407 Bio-Math and 1,575 APPS cases where actor-only caught but
+actor-plus-plan missed; the paper reports drops as large as 50% on
+Bio-Math</td>
+<td>Exposing provenance is not sufficient unless the evaluator is
+instructed to treat source trust as an explicit hypothesis</td>
+<td>Counts are directional failure cases, not a randomized production
+study</td>
+</tr>
+<tr class="odd">
+<td>More reasoning is not monotonic</td>
+<td style="text-align: right;">For one Qwen3-235B monitor, 50 high- and
+50 low-suspicion traces per dataset/variant were rerun at 100, 500,
+2,000, and 8,000 tokens, three times: top-20 scores rose about
+0.26/0.30, while bottom-20 fell about 0.28/0.30</td>
+<td>Extra monitor tokens can sharpen initial judgments in either
+direction, including rationalizing a bad plan</td>
+<td>Extreme-score selection is deliberately nonrepresentative; 1,200
+calls per dataset/variant support a case study, not population
+prevalence</td>
+</tr>
+</tbody>
+</table>
+<p>The attack is important because the source of reasoning is lost. An
+actor can restate an injected justification as if it were independently
+derived. An evaluator that asks only “does this trace contain suspicious
+language?” misses the causal question: “which untrusted source supplied
+the decisive premise, and what action did it enable?” The paper's own
+example shows plan access sometimes changes the monitor's task from
+challenging the source to checking whether the actor followed it
+faithfully.</p>
+<h3
+id="methodological-critique-and-prior-work-comparison">Methodological
+critique and prior-work comparison</h3>
+<p>Prior work tests chain-of-thought faithfulness, explicit monitor
+evasion, steganographic reasoning, hidden scratchpads, and fine-tuning
+against monitors. Investigator agents search for model behavior that
+ordinary prompts may not reveal. This paper's advance is narrower and
+operationally relevant: the actor need not plan or describe the harmful
+intent because the plan arrives through RAG, a tool output, a planner
+file, another agent, or a user-supplied artifact. The monitor then
+observes a downstream paraphrase.</p>
+<p>The paper validates the output-level behavior in two task families,
+with two open reasoning actors and three closed-model transfer probes.
+It uses executable checks for APPS and exact hidden-answer checks for
+Bio-Math, threshold sweeps, ROC/AUC analysis, self-authored attack
+baselines, and surface-overlap analysis. Those design choices make the
+phenomenon harder to dismiss as prompt wording or verbatim copying.</p>
+<p>Material limits remain. The threat is constructed after a benign
+solution exists and conditioned on successful corruption. Best-of-three
+follow rates give the attack multiple opportunities; the appendix's
+pass@1 numbers are the safer operational reference. APPS uses a narrow
+backdoor family and public tests; Bio-Math is intentionally artificial.
+The study does not compromise a real retriever, planner, tool, or
+multi-agent deployment end to end. One monitor-budget study samples
+score extremes. No confidence intervals are reported for many headline
+rates, and the number of actor/task combinations is small. The results
+establish a serious failure mode, not its prevalence in enterprise
+workloads.</p>
+<h3 id="reproducibility-and-enterprise-readiness">Reproducibility and
+enterprise readiness</h3>
+<p>The full text provides task filters, prompts, actor/corruptor/monitor
+identities, sampling counts, thresholds, strategy tables, pass@1/pass@3
+breakdowns, and qualitative transcripts. Exact reproduction is limited
+by the absence of a verified repository, frozen generated plans, monitor
+outputs, environment image, random seeds for every transfer probe, and a
+cost ledger. The paper's noncommercial/no-derivatives license also
+constrains redistribution of the manuscript, although facts and
+independent implementations are separate matters.</p>
+<p><strong>Enterprise readiness:</strong> high for creating a sandboxed
+plan-injection red-team suite and adding source identity to context
+traces; medium for using source-aware evaluation as one signal in a
+release gate; low for claiming that any proposed monitor defeats the
+attack in production. <strong>Research Utility Score: 93/100</strong>
+(rigor 24/25; quantitative traceability 24/25; reproducibility/artifacts
+16/20; enterprise relevance 15/15; prior-work advance 14/15).</p>
+<h2
+id="deep-paper-2--tool-success-does-not-establish-workflow-correctness">Deep
+paper 2 — Tool success does not establish workflow correctness</h2>
+<p><strong>Identity and status.</strong> <em>When Tool Calls Succeed but
+Workflows Fail: Anomalies at the Agent–Tool Boundary</em>, Artem
+Trofimov and Boris Novikov; AVIV Group and independent; submitted
+September 14, 2026; arXiv:2609.15397v1; cs.AI/cs.DB/cs.DC/cs.SE; 11-page
+preprint under the arXiv perpetual non-exclusive license. The authors
+link a public MIT-licensed census artifact with code, data, and results.
+(<a href="https://arxiv.org/abs/2609.15397">paper</a>, <a
+href="https://arxiv.org/html/2609.15397">full text</a>, <a
+href="https://github.com/flame-stream/mcp-annotation-census">artifact</a>)</p>
+<h3 id="contribution-and-quantitative-claim-trace-1">Contribution and
+quantitative claim trace</h3>
+<p>The paper separates <strong>what happened in the external
+world</strong> from <strong>what the runtime observed</strong>. A call
+can return unknown even when an effect definitely occurred. That
+distinction yields eight anomaly classes across evidence, lifecycle, and
+coordination.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Anomaly</th>
+<th>Example</th>
+<th>Boundary capability required in general</th>
+<th>Why ordinary success/error is insufficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A1 duplicated effect</td>
+<td>Retry pays the same invoice twice after an unknown outcome</td>
+<td>Logical-operation identity plus idempotent reissue returning the
+original outcome</td>
+<td>Determinism does not prevent two externalizations</td>
+</tr>
+<tr class="even">
+<td>A2 missing committed effect</td>
+<td>Workflow commits although a required payment never occurred</td>
+<td>Authoritative outcome or prepare/commit participation</td>
+<td>Optimistic interpretation of unknown can create a false commit</td>
+</tr>
+<tr class="odd">
+<td>A3 orphaned compensation</td>
+<td>A compensator acts even though the original effect never
+occurred</td>
+<td>Outcome query and conditional compensation</td>
+<td>Compensation is itself an external effect</td>
+</tr>
+<tr class="even">
+<td>A4 aborted-workflow residue</td>
+<td>A canceled workflow leaves a reservation or message</td>
+<td>Compensation, staging, or hold/release semantics</td>
+<td>Internal rollback cannot erase an external side effect</td>
+</tr>
+<tr class="odd">
+<td>A5 premature externalization</td>
+<td>Offer letter is sent before approval resolves</td>
+<td>Dry run, hold, visibility control, or release gate</td>
+<td>A reversible action may still be seen and acted upon</td>
+</tr>
+<tr class="even">
+<td>A6 contaminated speculation</td>
+<td>A committed action depends on a provisional effect later
+withdrawn</td>
+<td>Stable effect/resource identity, dependency tracking, and commit
+gate</td>
+<td>This is the external-effect analogue of a dirty read</td>
+</tr>
+<tr class="odd">
+<td>A7 conflicting externalization</td>
+<td>Concurrent agents publish non-commuting updates from the same
+base</td>
+<td>Resource scope, commutativity declaration, serialization, or
+mediator</td>
+<td>Two locally valid calls can form an invalid interleaving</td>
+</tr>
+<tr class="even">
+<td>A8 phantom consequence</td>
+<td>An external party reacts to an effect that is later compensated</td>
+<td>Visibility control or mediated observation</td>
+<td>Compensation cannot retract an observer's reaction</td>
+</tr>
+</tbody>
+</table>
+<p>The authors also identify four black-box limits: a caller cannot
+guarantee both bounded outcome resolution and safe action under
+permanent uncertainty without authoritative outcome support; it cannot
+generally repair irreversible non-commuting effects without a mediator;
+compensation cannot retract arbitrary exogenous reactions; and a
+multi-tool runtime cannot atomically release independent irreversible
+effects unless the tools participate in a shared protocol.</p>
+<p>The empirical component is a census of current Model Context Protocol
+declarations rather than a runtime experiment.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Census step</th>
+<th style="text-align: right;">Paper Fact</th>
+<th>Interpretation and uncertainty</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Registry snapshot</td>
+<td style="text-align: right;">Official registry snapshot dated July 27,
+2026: 59,625 entries, 18,688 distinct servers after latest-version
+selection</td>
+<td>A large ecosystem snapshot, not all deployed/private tools</td>
+</tr>
+<tr class="even">
+<td>Reachability</td>
+<td style="text-align: right;">9,454 had no remote; 9,234 remotes were
+probed; 4,838 returned tools, 4,318 failed connection, 74 timed out, and
+4 returned no tools</td>
+<td>Only anonymously reachable remotes inform tool-level statistics;
+none was executed</td>
+</tr>
+<tr class="odd">
+<td>Tool population</td>
+<td style="text-align: right;">98,291 tool definitions, median 11 tools
+per responding server</td>
+<td>Descriptions and schemas are observed; actual behavior is not</td>
+</tr>
+<tr class="even">
+<td>Annotation emission</td>
+<td style="text-align: right;">74.0% serialize at least one of
+read-only, destructive, idempotent, or open-world; 61.7% serialize all
+four</td>
+<td>SDK defaults and templates may create fields without intentional
+semantics</td>
+</tr>
+<tr class="odd">
+<td>Signature concentration</td>
+<td style="text-align: right;">66 of 81 possible signatures appear; the
+leading read-only/non-destructive/idempotent/open-world signature covers
+39.9%, no annotations 26.0%, top three 75.8%; median dominant signature
+per emitting server is 79.4%</td>
+<td>Differentiation exists, but most declarations cluster coarsely</td>
+</tr>
+<tr class="even">
+<td>Destructive hint applicability</td>
+<td style="text-align: right;"><code>destructiveHint</code> is set on
+65.8%, yet 52.8% are read-only; only 12.9% carry an applicable
+classification and 3.1% assert an actual destructive operation</td>
+<td>Raw field-population rates overstate decision-useful semantics</td>
+</tr>
+<tr class="odd">
+<td>Expressibility</td>
+<td style="text-align: right;">A1 has only a limited idempotence hint;
+no current annotation fully expresses authoritative outcome,
+compensation, staging, resource/dependency identity, commutativity, or
+visibility control needed for A2–A8</td>
+<td>Interface metadata cannot support general transaction guarantees
+today</td>
+</tr>
+<tr class="even">
+<td>Artifact verification</td>
+<td style="text-align: right;">Public repository exposes
+collection/analysis code, result files, requirements, methodology, and
+MIT license</td>
+<td>Reproduces the declaration census; it cannot verify hidden tool
+implementations or behavior</td>
+</tr>
+</tbody>
+</table>
+<h3
+id="methodological-critique-and-prior-work-comparison-1">Methodological
+critique and prior-work comparison</h3>
+<p>Sagas model long-lived compensating transactions; isolation levels
+reason about concurrency; escrow and reservations control provisional
+resources; recent agent systems add transaction-like protocols or
+shared-state safety. This paper shifts the unit of analysis to
+independently supplied tools. Its key contribution is not another
+orchestration algorithm but a statement of what a tool boundary must
+expose before any higher-level runtime can establish its claimed
+guarantee.</p>
+<p>The effect-history vocabulary usefully separates attempts,
+externalization, observations, dependencies, compensation, commit/abort,
+requirements, and survival. The anomaly catalog is coverage-oriented,
+not proven complete. The authors explicitly conjecture coverage relative
+to their vocabulary and leave formal minimality and independence to
+future work. Several categories are profile-relative: premature
+externalization is not a violation if the workflow explicitly accepts
+compensation-safe execution, for example.</p>
+<p>The census is careful about its limits. It reads declarations, does
+not invoke tools, and uses name-based heuristics only where a semantic
+subset is needed. A validation sample reportedly reaches about 98.8%
+agreement, but names can still misdescribe effects. Reachability filters
+away local, authenticated, private, and offline servers. Interface
+absence does not mean an implementation lacks idempotency or status
+endpoints; it means a generic runtime cannot discover or rely on them
+through the shared vocabulary.</p>
+<h3 id="reproducibility-and-enterprise-readiness-1">Reproducibility and
+enterprise readiness</h3>
+<p>The artifact is unusually useful for a same-day preprint: the
+repository is public, MIT-licensed, and contains code, data, results,
+and requirements. Its small commit history and absence of a tagged
+immutable release reduce supply-chain assurance. The conceptual anomaly
+model is inspectable but is not machine-verified, and the census cannot
+validate tool behavior.</p>
+<p><strong>Enterprise readiness:</strong> high for auditing tool
+contracts, attaching logical-operation IDs, and building an effect
+ledger around reversible test tools; medium for staged release,
+compensation, and resource mediators where the underlying systems expose
+primitives; low for a universal cross-vendor atomicity claim.
+<strong>Research Utility Score: 94/100</strong> (conceptual rigor 24/25;
+quantitative traceability 23/25; reproducibility/artifacts 19/20;
+enterprise relevance 15/15; prior-work advance 13/15).</p>
+<h2
+id="deep-paper-3--least-privilege-can-be-task-specific-but-the-classifier-is-not-the-authority">Deep
+paper 3 — Least privilege can be task-specific, but the classifier is
+not the authority</h2>
+<p><strong>Identity and status.</strong> <em>Empirical Evaluation of
+Task-Based Permission Scoping Architecture for AI Agents</em>, Halil
+Burak Noyan; independent; submitted September 14, 2026;
+arXiv:2609.15422v1; cs.AI/cs.CR; preprint under the arXiv perpetual
+non-exclusive license. The current paper provides no linked code
+repository; it evaluates the 600-prompt synthetic dataset introduced in
+the author's earlier architecture paper. (<a
+href="https://arxiv.org/abs/2609.15422">paper</a>, <a
+href="https://arxiv.org/html/2609.15422">full text</a>, <a
+href="https://arxiv.org/abs/2607.22445">prior architecture</a>)</p>
+<h3 id="contribution-and-quantitative-claim-trace-2">Contribution and
+quantitative claim trace</h3>
+<p>The architecture grants a permission only if three sources agree: a
+deterministic department/role ceiling, a classifier predicting
+permissions from the task description, and deterministic policy
+prohibitions. The threat model trusts the classifier, credential
+service, and orchestrator while treating the agent as potentially
+compromised. The paper correctly notes its strongest assumption: an
+attacker can poison the task description and cause the classifier to
+over-grant.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>Decision meaning</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Dataset and taxonomy</td>
+<td style="text-align: right;">600 synthetic prompts across six
+departments and 15 permissions; 500 train, 100 test</td>
+<td>A concrete feasibility study</td>
+<td>Synthetic policy, one organization-shaped distribution, small test
+set, and author-derived labels</td>
+</tr>
+<tr class="even">
+<td>Classifiers</td>
+<td style="text-align: right;">TF-IDF unigram/bigram logistic baseline;
+Claude Haiku 4.5 with six fixed examples and temperature 0;
+RoBERTa-large (355M) fine-tuned 40 epochs, batch 16, LR 2e-5, seed
+42</td>
+<td>A small frozen classifier can be compared with an API model</td>
+<td>No adversarial task descriptions; only one split and one training
+seed reported</td>
+</tr>
+<tr class="odd">
+<td>Canonical performance</td>
+<td style="text-align: right;">TF-IDF: severity delta 0.95, over 33%,
+under 43%, precision 0.765, F1 0.702. Haiku: 1.12, 42%, 11%, 0.842,
+0.886. RoBERTa: 0.63, 23%, 21%, 0.897, 0.881</td>
+<td>Models expose distinct security/availability tradeoffs; F1 alone
+hides over-grant severity</td>
+<td>Macro aggregates can hide permission-specific failure and rare
+high-impact scopes</td>
+</tr>
+<tr class="even">
+<td>Threshold sweep</td>
+<td style="text-align: right;">RoBERTa flat 0.8 reached precision 0.941
+with 27% undershoot and 73% auto-handling. The recommended 0.8/0.6/0.4
+risk-tier thresholds reached F1 0.890, precision 0.915, severity delta
+0.53, and 79% auto-handling</td>
+<td>Operating-point choice is a governance decision, not a model
+leaderboard</td>
+<td>The paper states no swept configuration met both its precision and
+availability criteria</td>
+</tr>
+<tr class="odd">
+<td>Hybrid path</td>
+<td style="text-align: right;">A hybrid arrangement reaches precision
+0.940 but remains eight points short of the undershoot target</td>
+<td>Human/escalation paths can improve safety without claiming full
+automation</td>
+<td>Workflow, latency, and reviewer burden are not evaluated end to
+end</td>
+</tr>
+<tr class="even">
+<td>Attack-surface elimination</td>
+<td style="text-align: right;">Relative to granting all 15 permissions,
+role ceiling alone removes 27.9% of severity-weighted surface,
+classifier alone 84.2%, role ∩ classifier 84.4%, and prohibitions add no
+normal-traffic reduction</td>
+<td>Task granularity drives most of the measured reduction</td>
+<td>The metric counts useful permissions removed as eliminated surface;
+it is not expected-loss reduction</td>
+</tr>
+<tr class="odd">
+<td>Role-relative reduction</td>
+<td style="text-align: right;">The classifier removes 17.5 of 22.35
+severity units remaining after role scope, or 78.3%</td>
+<td>Static role scope leaves substantial synthetic excess authority</td>
+<td>Severity weights are policy assumptions, not incident
+probabilities</td>
+</tr>
+<tr class="even">
+<td>Prohibition backstop</td>
+<td style="text-align: right;">With classifier absent, prohibitions
+reduce Engineering, Data/Analytics, and Security ceilings by 11.5%,
+13.6%, and 11.5%, but newly block 6.0%, 31.1%, and 22.2% of legitimate
+tasks; other departments see no reduction</td>
+<td>A deterministic backstop can matter under ablation and still impose
+high friction</td>
+<td>Only three hand-authored rules; five records already outside role
+ceilings are excluded</td>
+</tr>
+<tr class="odd">
+<td>Compute</td>
+<td style="text-align: right;">RoBERTa-large reportedly fine-tuned in
+about 14 minutes on one NVIDIA T4</td>
+<td>Shadow evaluation is inexpensive enough to test</td>
+<td>Training time excludes labeling, policy engineering, integration,
+review, and monitoring</td>
+</tr>
+</tbody>
+</table>
+<p>The paper's most responsible result is negative: <strong>no evaluated
+operating point meets its own deployability standard</strong>. The flat
+0.8 configuration clears precision but under-grants too often; the
+hybrid nearly meets precision and still misses availability. The system
+should therefore be treated as a proposal for shadow qualification and
+escalation, not an autonomous credential issuer.</p>
+<h3
+id="methodological-critique-and-prior-work-comparison-2">Methodological
+critique and prior-work comparison</h3>
+<p>Classical least privilege, capability systems, role-based access
+control, just-in-time privileged access, workload identity, Zero Trust,
+and AI “excessive agency” controls already argue for narrower authority.
+The new empirical step is deriving a proposed permission set from
+machine-readable task text and intersecting it with deterministic
+ceilings and prohibitions. Unlike a behavioral monitor, a withheld
+capability is unavailable even if the agent reasons around
+supervision.</p>
+<p>The evaluation exposes useful tradeoffs but cannot estimate
+production security. All 600 tasks are synthetic and benign. The same
+six departments appear in training and testing, so department priors may
+be memorized; the authors propose a held-out-department test.
+Sensitivity labels were too unreliable to use except at a constant worst
+case. The 15-permission ontology is coarse: a broad
+<code>database_read</code> label dominates residual risk and cannot
+separate fields, rows, purposes, or sensitivity. The rules were manually
+derived by the same research line; policy-compilation fidelity is
+unevaluated.</p>
+<p>The attack-surface metric assumes severity mass is a useful proxy. It
+is valuable for relative scope but does not model exploitability,
+dependency chains, time at risk, data volume, detection, user harm, or
+compensating controls. Counting every removed permission as eliminated
+surface rewards under-grant, which the paper acknowledges. A production
+study would need independent labeling, representative tasks, adversarial
+descriptions, concept drift, permission-specific calibration,
+concurrency, multi-step scope changes, identity-system integration,
+approval latency, break-glass behavior, and incident simulation.</p>
+<h3 id="reproducibility-and-enterprise-readiness-2">Reproducibility and
+enterprise readiness</h3>
+<p>The full text reports the policy structure, taxonomy, split,
+baselines, prompts, model settings, training hyperparameters,
+thresholds, metrics, ablations, and rule definitions. Exact reproduction
+is limited by no directly linked current-paper repository, immutable
+dataset version, weight checkpoint, dependency lockfile, container,
+complete task records, or independent labeling artifact. An API
+classifier's behavior can drift with a provider update; the frozen
+encoder is more versionable but still requires lifecycle controls.</p>
+<p><strong>Enterprise readiness:</strong> high for offline
+permission-labeling research and non-authoritative shadow comparison;
+medium for short-lived credentials behind deterministic ceilings, denial
+defaults, approval, and telemetry after internal validation; low for
+classifier-only authorization. <strong>Research Utility Score:
+89/100</strong> (rigor 21/25; quantitative traceability 24/25;
+reproducibility/artifacts 14/20; enterprise relevance 15/15; prior-work
+advance 15/15).</p>
+<h2 id="watchlist">Watchlist</h2>
+<h3
+id="maps--strong-peer-reviewed-serving-result-but-architecture--and-workload-specific">MAPS
+— strong peer-reviewed serving result, but architecture- and
+workload-specific</h3>
+<p><em>MAPS: Memory-Aware Predictive Scheduling Framework for Large
+Language Model Serving</em>, Tiancheng Zhang, Yulin Chen, Yunfeng Zhao,
+Shaoyuan Huang, Cheng Zhang, and Xiaofei Wang; submitted September 14,
+2026; arXiv:2609.15359; listed as accepted at ICML 2026. MAPS predicts
+output length on the client while cloud prefill runs, uses
+uncertainty-aware calibration to produce an upper bound, routes to a
+decoder with sufficient estimated KV capacity and the shortest queue,
+then locally reorders with shortest-job-first. If a prediction misses
+its timeout, it falls back to round robin. (<a
+href="https://arxiv.org/abs/2609.15359">paper</a>, <a
+href="https://arxiv.org/html/2609.15359">full text</a>, <a
+href="https://icml.cc/virtual/2026/poster/74311">ICML record</a>)</p>
+<p><strong>Paper Facts.</strong> Across two real-world traces and two
+models, the paper reports 42.6% lower mean end-to-end latency and up to
+84.8% lower P99 than three baselines. Uncertainty calibration reduces
+underestimation probability from 64% to 9% in the reported analysis;
+removing calibration increases P99 14.3% and mean 18.4%. MAPS' P99 is
+within 19.8% of an oracle. The architecture atomically reserves
+estimated KV blocks and uses round-robin or max-capacity fallbacks.</p>
+<p><strong>Why Watchlist.</strong> The result is peer-reviewed and
+technically compelling, but the enterprise path depends on
+prefill/decode disaggregation, compatible schedulers, device
+participation, workload tails, model-specific KV geometry, privacy of
+client-side prompt signals, predictor integrity, and artifact
+availability. No first-party implementation repository, tagged release,
+or license was linked from the reviewed paper page. The “up to 84.8%”
+tail claim is a best-case reduction; per-workload SLO effects and cost
+must be reproduced on the target stack. <strong>Watch trigger:</strong>
+promote after a public artifact or independent implementation reproduces
+gains on the enterprise's actual concurrency, model mix, cache pressure,
+privacy constraints, and failure fallbacks. <strong>Research Utility
+Score: 86/100.</strong></p>
+<h3
+id="evoontology--typed-gated-semantic-evolution-is-promising-cross-backbone-divergence-is-a-governance-warning">EvoOntology
+— typed, gated semantic evolution is promising; cross-backbone
+divergence is a governance warning</h3>
+<p><em>EvoOntology: A Self-Evolving Ontology Layer for Data Agents</em>,
+Meiduo Chong, Shaolei Zhang, Ju Fan, and Xiaoyong Du; Renmin University
+of China; submitted September 14, 2026; arXiv:2609.15779; preprint;
+public MIT-licensed repository with code, tests, benchmark adapters, and
+plugins. It builds a versioned ontology with Terms, Mappings,
+Constraints, and Evidence; exposes <code>browse</code> and
+<code>resolve</code> tools through MCP; and accepts localized
+content/schema/tool edits only after paired validation on the same
+held-out data and interaction budget. (<a
+href="https://arxiv.org/abs/2609.15779">paper</a>, <a
+href="https://arxiv.org/html/2609.15779">full text</a>, <a
+href="https://github.com/ruc-datalab/EvoOntology">artifact</a>)</p>
+<p><strong>Paper Facts.</strong> Reciprocal two-fold evaluation freezes
+the evolved ontology before testing on the other fold. Across six
+backbones, DDR-Bench trajectory accuracy improves by an average 17.8
+points; BIRD execution accuracy and VES improve 7.4 and 8.6 points;
+InsightBench gains average only 1.9 points. On a four-backbone DDR
+analysis subset, episodic memory reaches 75.8 versus 69.5 baseline and
+89.5 for EvoOntology. Removing the admission gate causes the largest
+ablation drop, 11.2 points. Total tokens per DDR task fall from 52.6K to
+42.0K while turns fall from 14.6 to 8.4. Different backbones' evolved
+stores transfer poorly: every off-diagonal loses at least 6.6 points,
+and pairwise term-ID overlap never exceeds 0.62.</p>
+<p><strong>Why Watchlist.</strong> The public code substantially
+improves reproducibility, but governance evidence is incomplete. The
+same adaptation fold supports building and repeated candidate
+validation, so repeated search can overfit its 30% validation subset
+even when the final reciprocal fold is held out. The paper does not
+report confidence intervals, multiple seeds, independent human
+semantic-quality audits, poisoning tests, sensitive-data provenance
+controls, ontology rollback drills, or production incidents.
+Backbone-specific divergence means one “enterprise ontology” may
+silently become model-dependent. <strong>Watch trigger:</strong> promote
+after independent replication with fresh temporal holdouts, expert
+review of accepted edits, poisoning and provenance tests, statistical
+uncertainty, and explicit multi-model lifecycle controls.
+<strong>Research Utility Score: 88/100.</strong></p>
+<h2 id="cross-paper-synthesis">Cross-paper synthesis</h2>
+<h3
+id="independent-analysis--three-contracts-must-remain-linked">Independent
+Analysis — three contracts must remain linked</h3>
+<ol type="1">
+<li><strong>Context contract: what entered the decision?</strong> The
+plan-injection paper shows that source identity and trust can disappear
+when the actor paraphrases an upstream plan. Every context segment
+should therefore retain origin, integrity, policy classification,
+retrieval path, and transformation lineage through the final action
+decision.</li>
+<li><strong>Authority contract: what may this task do?</strong> The
+permission-scoping paper argues for the intersection of role ceiling,
+task need, and prohibitions. The classifier proposes; deterministic
+policy and approval authorize. Scope should be short-lived,
+resource-specific, purpose-bound, and observable.</li>
+<li><strong>Effect contract: what happened in the world?</strong> The
+agent–tool paper shows that request/response logs are not enough.
+Runtimes need logical-operation identity, authoritative outcome,
+resource scope, reversibility, visibility, dependency, and coordination
+semantics.</li>
+</ol>
+<p>These contracts are sequential but not substitutes. Provenance cannot
+compensate for excess credentials. Least privilege cannot tell whether
+an authorized payment happened twice. Transaction metadata cannot detect
+that an apparently valid plan came from an untrusted source. Together
+they define a governable path from information to authority to durable
+effect.</p>
+<h2 id="visual-1--provenance-to-effect-assurance-chain">Visual 1 —
+provenance-to-effect assurance chain</h2>
+<pre class="text"><code>UNTRUSTED / MIXED CONTEXT
+  document · tool output · user file · planner · agent message
+                     │
+                     ▼
+        [CONTEXT CONTRACT + LINEAGE]
+        source · integrity · policy · transforms
+                     │
+                     ▼
+        [TASK-SCOPE AUTHORIZATION]
+ role ceiling ∩ predicted need ∩ prohibitions ∩ approval
+                     │
+                     ▼
+           [ACTION RELEASE GATE]
+  reversible? visible? sensitive? conflicts? human review?
+                     │
+                     ▼
+          [TOOL EFFECT CONTRACT]
+ logical op ID · outcome · resource · hold/commit/compensate
+                     │
+                     ▼
+              EXTERNAL WORLD
+                     │
+                     └──── authoritative evidence → effect ledger</code></pre>
+<h2
+id="visual-2--evidence-strength-versus-safe-deployment-distance">Visual
+2 — evidence strength versus safe deployment distance</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Research signal</th>
+<th>Strongest verified evidence</th>
+<th>Safe near-term use</th>
+<th>Largest deployment gap</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Plan injection</td>
+<td>Two benchmark families, two open actors, three closed-model transfer
+probes, five monitors, pass@1 and paraphrase analyses</td>
+<td>Sandboxed adversarial evaluation with source-aware traces</td>
+<td>Real compromise prevalence, end-to-end RAG/tool attack, released
+artifact, production false-positive cost</td>
+</tr>
+<tr class="even">
+<td>Agent–tool anomalies</td>
+<td>Explicit effect-history model, eight anomalies, four black-box
+limits, 98,291-tool census, public MIT artifact</td>
+<td>Contract inventory, anomaly replay, effect logging for reversible
+tools</td>
+<td>Formal completeness, behavior verification, third-party protocol
+adoption, cross-tool atomicity</td>
+</tr>
+<tr class="odd">
+<td>Task permission scoping</td>
+<td>600 tasks, three classifiers, six threshold configurations, layer
+ablations, risk/availability tradeoffs</td>
+<td>Offline shadow scope prediction behind existing policy</td>
+<td>Real tasks, adversarial inputs, independent labels, fine-grained
+permissions, no tested deployable operating point</td>
+</tr>
+<tr class="even">
+<td>Predictive serving</td>
+<td>ICML acceptance, two traces, two models, three baselines,
+calibration and scheduling ablations</td>
+<td>Reproduction on a compatible test cluster</td>
+<td>Stack specificity, artifact, client trust/privacy, mixed-model
+economics</td>
+</tr>
+<tr class="odd">
+<td>Self-evolving ontology</td>
+<td>Three benchmarks, six backbones, reciprocal folds, ablations, public
+MIT code</td>
+<td>Isolated knowledge-layer research with frozen holdout</td>
+<td>Multiple seeds, repeated-validation overfit, poisoning, expert
+semantics, model-specific lifecycle</td>
+</tr>
+</tbody>
+</table>
+<h2 id="enterprise-ai-enhancement-backlog">Enterprise AI Enhancement
+Backlog</h2>
+<h3 id="priority-method-and-uncertainty">Priority method and
+uncertainty</h3>
+<p>The <strong>Future Enterprise AI Priority Score</strong> is a
+transparent decision aid, not a probability or ROI forecast:
+strategic/business value 25%, technical leverage 20%, evidence strength
+20%, enterprise readiness 15%, feasibility 10%, and risk-adjusted
+differentiation 10%. Component values are analyst judgments grounded in
+today's verified evidence. Differences below roughly three points are
+not decision-significant without internal workflow volume, loss
+tolerance, identity architecture, tool inventory, data classification,
+latency/SLO, cost, legal, privacy, security, and adoption context.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: right;">#</th>
+<th>Enhancement</th>
+<th>Decision band</th>
+<th style="text-align: right;">Strategic</th>
+<th style="text-align: right;">Leverage</th>
+<th style="text-align: right;">Evidence</th>
+<th style="text-align: right;">Readiness</th>
+<th style="text-align: right;">Feasibility</th>
+<th style="text-align: right;">Differentiation</th>
+<th style="text-align: right;">Weighted total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td>Transactional tool-contract registry and effect ledger</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">96</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;"><strong>92.0</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td>Context provenance and plan-injection qualification</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;"><strong>91.5</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td>Task-scoped ephemeral authorization shadow broker</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;"><strong>88.5</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td>Irreversible-action admission and visibility gate</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">76</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;"><strong>86.6</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td>Fine-grained permission ontology and sensitivity scopes</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">83</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;"><strong>86.4</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td>Defense-in-depth ablation harness</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">79</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;"><strong>85.0</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td>Independent action-effect verifier beyond CoT</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">68</td>
+<td style="text-align: right;">58</td>
+<td style="text-align: right;">62</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;"><strong>80.2</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td>Cross-tool prepare/commit federation</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">72</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">38</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;"><strong>76.3</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9</td>
+<td>CoT-only monitor scaling</td>
+<td>Deprioritize for Now</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;"><strong>54.5</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="prototype-soon">Prototype Soon</h3>
+<h4
+id="1-transactional-tool-contract-registry-and-effect-ledger--920">1.
+Transactional tool-contract registry and effect ledger — 92.0</h4>
+<ul>
+<li><strong>Category / evidence:</strong> Agentic AI; Evaluation &amp;
+Observability. <strong>Enterprise Inference</strong> from <em>When Tool
+Calls Succeed but Workflows Fail</em> and its verified census
+artifact.</li>
+<li><strong>Problem and future capability:</strong> Tool schemas
+describe inputs and outputs but rarely establish effect semantics. Add a
+registry that records, per tool operation, logical-operation key rules,
+authoritative status lookup, resource identity,
+reversibility/compensation, hold/commit support, visibility,
+commutativity, dependency behavior, and evidence confidence. The
+orchestrator writes attempts, observations, externalization evidence,
+compensation, and resolution to an append-only effect ledger.</li>
+<li><strong>Placement / value:</strong> Agent orchestration, tool
+gateway, observability, security/governance. Expected value:
+reliability, risk reduction, audit quality, faster incident diagnosis,
+and safer retries. Technical value: converts implicit assumptions into
+machine-checkable preconditions shared by many agents.</li>
+<li><strong>Maturity / confidence / horizon / effort:</strong>
+Conceptual model plus large declaration census and public artifact;
+runtime guarantees remain untested. <strong>Confidence: High</strong>
+for the audit/ledger pattern, Moderate for anomaly prevention.
+<strong>Horizon: Now. Effort: M.</strong></li>
+<li><strong>Dependencies:</strong> Authoritative tool owners; stable
+resource and logical-operation IDs; append-only telemetry; identity and
+authorization binding; data retention policy; redaction; policy engine;
+synthetic tool doubles.</li>
+<li><strong>Risks:</strong> Incorrect declarations can create false
+confidence; sensitive effect logs; ledger outages; performance overhead;
+tool-owner adoption; compensation mistaken for erasure; drift between
+declaration and behavior.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build the
+control-plane schema and ledger; partner with tool/service owners for
+authoritative endpoints.</strong> No reviewed product demonstrates the
+complete contract; tool participation cannot be fabricated above the
+boundary.</li>
+<li><strong>Minimum reversible experiment:</strong> Model ten
+non-production tools and replay A1–A8 with deterministic simulators.
+Execute no real external effects. Compare existing retry logic with
+contract-aware block, hold, query, or escalation decisions.</li>
+<li><strong>Success / stop / roadmap trigger:</strong> Success: 100% of
+seeded unsafe transitions detected or safely escalated; no
+duplicate/phantom committed effect in simulation; &lt;5% false blocks on
+benign traces; complete evidence lineage. Stop if declarations cannot be
+independently checked, sensitive logs cannot be governed, or false
+blocks exceed 10%. Roadmap trigger: two representative workflows
+reproduce the anomaly controls for 30 days with tool-owner sign-off and
+acceptable latency/cost.</li>
+</ul>
+<h4 id="2-context-provenance-and-plan-injection-qualification--915">2.
+Context provenance and plan-injection qualification — 91.5</h4>
+<ul>
+<li><strong>Category / evidence:</strong> AI Security; RAG &amp;
+Knowledge; Safety &amp; Governance. <strong>Enterprise
+Inference</strong> from <em>Corrupt Plans, Clean Traces</em>.</li>
+<li><strong>Problem and future capability:</strong> Models may
+paraphrase upstream reasoning and erase visible attribution. Assign
+every context segment a signed origin, acquisition path, timestamp,
+integrity state, trust policy, sensitivity label, transformation
+lineage, and allowed-use tag. Evaluate the pair of source evidence and
+proposed action, not only the actor's chain of thought.</li>
+<li><strong>Placement / value:</strong> Retrieval/knowledge, agent
+layer, orchestration, security/governance, evaluation. Expected value:
+risk reduction, reliability, investigation speed, and higher assurance
+for multi-agent/RAG workflows. Technical value: preserves causality
+across component boundaries.</li>
+<li><strong>Maturity / confidence / horizon / effort:</strong>
+Multi-task attack evidence is strong, but no end-to-end enterprise
+deployment or defense is tested. <strong>Confidence: High</strong> for
+provenance capture, Moderate for detection gains. <strong>Horizon: Now.
+Effort: M.</strong></li>
+<li><strong>Dependencies:</strong> Context envelope schema; immutable
+source IDs; model/tool/retrieval gateway instrumentation; policy labels;
+evaluation corpus; privacy-aware trace storage; action-effect
+verifier.</li>
+<li><strong>Risks:</strong> Provenance spoofing, excessive trust in
+signed but malicious sources, source metadata leakage, prompt bloat,
+evaluator rationalization, coverage gaps, user friction, and unavailable
+chain-of-thought.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build the
+cross-system provenance contract; buy or partner for commodity
+signing/telemetry where compatible.</strong> The research does not
+validate a packaged defense, and provider-specific CoT must not be
+assumed.</li>
+<li><strong>Minimum reversible experiment:</strong> Create 100 sandbox
+cases spanning RAG passages, tool responses, planner files, and
+peer-agent messages. Inject benign-looking policy-violating plans. Score
+actor-only, provenance-only, joint source–action, and executable-outcome
+checks.</li>
+<li><strong>Success / stop / roadmap trigger:</strong> Success: joint
+gate improves attack recall by ≥20 points at ≤3-point benign
+false-positive increase, and preserves source lineage for ≥99% of
+context segments. Stop if gains vanish on held-out attack families, if
+provenance can be forged, or if required telemetry violates policy.
+Roadmap trigger: independent red-team replication on two internal
+workflow classes plus privacy/security approval.</li>
+</ul>
+<h4 id="3-task-scoped-ephemeral-authorization-shadow-broker--885">3.
+Task-scoped ephemeral authorization shadow broker — 88.5</h4>
+<ul>
+<li><strong>Category / evidence:</strong> AI Security; Safety &amp;
+Governance. <strong>Enterprise Inference</strong> from <em>Empirical
+Evaluation of Task-Based Permission Scoping</em>.</li>
+<li><strong>Problem and future capability:</strong> Standing role
+credentials expose permissions unrelated to the current task. A broker
+proposes a short-lived resource/purpose scope from signed task text,
+intersects it with deterministic role ceilings and prohibitions, routes
+uncertainty or high-risk permissions to approval, and mints no
+credential until policy authorizes it.</li>
+<li><strong>Placement / value:</strong> Security/governance,
+orchestration, identity/authorization. Expected value:
+breach-blast-radius reduction, compliance evidence, safer agent
+autonomy, and reduced standing privilege. Technical value: makes
+authority a task-lifecycle object rather than a host property.</li>
+<li><strong>Maturity / confidence / horizon / effort:</strong> The paper
+reports promising synthetic scope reduction but no deployable operating
+point. <strong>Confidence: Moderate. Horizon: Now for shadow mode; 6–12
+months for any controlled credential path. Effort: L.</strong></li>
+<li><strong>Dependencies:</strong> Representative task corpus;
+permission/resource ontology; identity platform able to mint/revoke
+short-lived tokens; deterministic ceiling; approval path;
+deny-by-default behavior; drift monitoring; incident response.</li>
+<li><strong>Risks:</strong> Poisoned task descriptions, over-grant,
+under-grant and workarounds, classifier drift, permission explosion,
+reviewer fatigue, confused-deputy paths, token leakage, and policy/label
+bias.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Partner with the
+existing identity platform for issuance; build the task-policy and
+evidence layer.</strong> Vendor choice requires internal stack context;
+no specific product is supported by today's papers.</li>
+<li><strong>Minimum reversible experiment:</strong> Run the broker
+offline on 500 historical tasks; issue no credentials. Compare predicted
+scopes with actual access logs, independent security labels, and a
+static-role baseline by permission, sensitivity, and department.</li>
+<li><strong>Success / stop / roadmap trigger:</strong> Success: ≥50%
+reduction in excess severity-weighted scope, high-risk precision ≥0.97,
+under-grant ≤10%, and 100% deterministic ceiling compliance. Stop on any
+ceiling violation, material subgroup disparity, unstable model/version
+behavior, or review load above capacity. Roadmap trigger: fresh temporal
+holdout and adversarial-task tests meet thresholds across two business
+units with identity/security approval.</li>
+</ul>
+<h3 id="prepare-foundations">Prepare Foundations</h3>
+<h4 id="4-irreversible-action-admission-and-visibility-gate--866">4.
+Irreversible-action admission and visibility gate — 86.6</h4>
+<ul>
+<li><strong>Category / evidence:</strong> Human-AI Workflow; Safety
+&amp; Governance. <strong>Enterprise Inference</strong> from agent–tool
+anomalies A4–A8.</li>
+<li><strong>Problem and future capability:</strong> A valid action can
+be released too early, depend on provisional state, conflict with
+concurrent work, or trigger irreversible observers. Classify actions by
+reversibility, visibility, value, sensitivity, and shared-resource
+conflict; prefer preview/hold, require explicit commit, and route
+high-impact release to a human or policy approver.</li>
+<li><strong>Placement / value:</strong> Orchestration, human-review
+layer, applications, security/governance. Value: risk reduction,
+quality, customer trust, and fewer costly compensations. Technical
+value: creates a resolution boundary between planning and
+externalization.</li>
+<li><strong>Maturity / confidence / horizon / effort:</strong> Strong
+conceptual basis; tool participation varies. <strong>Confidence:
+High</strong> for gating, Moderate for generalized holds.
+<strong>Horizon: 3–6 months. Effort: L.</strong></li>
+<li><strong>Dependencies:</strong> Action taxonomy, effect registry,
+approver identity, staging APIs, resource locks, audit trail,
+timeout/escalation policy, UX.</li>
+<li><strong>Risks:</strong> Latency, review fatigue, bypass routes,
+irreversible actions mislabeled reversible, approval phishing,
+deadlocks, and compensation that does not neutralize downstream
+reactions.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build policy and
+review orchestration; partner with systems of record for
+preview/hold/commit APIs.</strong></li>
+<li><strong>Minimum reversible experiment:</strong> Shadow-score 1,000
+historical actions and simulate approvals; use synthetic
+email/payment/publish adapters. Do not delay or execute live
+actions.</li>
+<li><strong>Success / stop / roadmap trigger:</strong> Success: all
+seeded irreversible/premature/conflicting releases routed correctly,
+&lt;5% unnecessary high-friction escalations, and approver decisions
+captured with reason codes. Stop if impact classification is unstable or
+creates unsafe bypasses. Trigger: service owners expose enforceable
+hold/commit semantics and reviewers sustain the projected load.</li>
+</ul>
+<h4
+id="5-fine-grained-permission-ontology-and-sensitivity-qualified-scopes--864">5.
+Fine-grained permission ontology and sensitivity-qualified scopes —
+86.4</h4>
+<ul>
+<li><strong>Category / evidence:</strong> Data &amp; Knowledge
+Infrastructure; AI Security. <strong>Enterprise Inference</strong> from
+the permission paper's coarse-taxonomy residual risk and proposed
+sensitivity-qualified permissions.</li>
+<li><strong>Problem and future capability:</strong> Broad permissions
+such as <code>database_read</code> conceal resource, column, row,
+sensitivity, purpose, and egress differences. Define composable scopes
+such as action × resource × sensitivity × purpose × time, map them to
+policy and tool contracts, and version their derivation evidence.</li>
+<li><strong>Placement / value:</strong> Data platform,
+retrieval/knowledge, security/governance, developer platform. Value:
+risk reduction, auditability, fewer false denials, and faster
+integration. Technical value: shared vocabulary for authorization, tool
+release, provenance, and evaluation.</li>
+<li><strong>Maturity / confidence / horizon / effort:</strong> Need is
+strongly supported; the paper does not evaluate a fine-grained
+implementation. <strong>Confidence: Moderate. Horizon: 3–6 months.
+Effort: L.</strong></li>
+<li><strong>Dependencies:</strong> Data catalog, identity/resource
+inventory, classification, policy ownership, schema versioning,
+migration tooling, label QA, legacy mappings.</li>
+<li><strong>Risks:</strong> Ontology sprawl, stale classifications,
+false precision, performance, incompatible vendors, accidental broad
+fallbacks, and regulatory interpretation.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build the
+enterprise-specific semantic layer on standards; buy catalog/identity
+primitives where present.</strong> Internal policy and resources cannot
+be inferred from the paper.</li>
+<li><strong>Minimum reversible experiment:</strong> Model permissions
+for two read-only domains; map 200 tasks and access-log events without
+changing enforcement. Compare inter-rater agreement and residual
+over/under-scope with the coarse taxonomy.</li>
+<li><strong>Success / stop / roadmap trigger:</strong> Success: ≥0.85
+independent label agreement, ≥30% reduction in residual high-sensitivity
+overscope, and no loss of explainability. Stop if mappings cannot be
+owned or versioned. Trigger: data and identity owners approve the
+ontology and a fresh holdout shows stable gains.</li>
+</ul>
+<h4 id="6-defense-in-depth-ablation-harness--850">6. Defense-in-depth
+ablation harness — 85.0</h4>
+<ul>
+<li><strong>Category / evidence:</strong> Evaluation &amp;
+Observability; Safety &amp; Governance. <strong>Independent
+Analysis</strong> grounded in the permission paper's C0/C1/S2/C2/C3
+ablations and the plan-injection monitor failures.</li>
+<li><strong>Problem and future capability:</strong> Controls are
+commonly tested only when every other layer works. Create a harness that
+intentionally removes or corrupts classifier, ceiling, policy,
+provenance, monitor, status endpoint, compensation, and human-review
+layers one at a time and in plausible combinations.</li>
+<li><strong>Placement / value:</strong> Evaluation, observability,
+security/governance, developer platform. Value: reliability, risk
+reduction, clearer investment priorities, and less duplicated control
+spend. Technical value: measures marginal and fallback value rather than
+checklist presence.</li>
+<li><strong>Maturity / confidence / horizon / effort:</strong> Ablation
+is standard experimental practice; enterprise coverage is
+context-specific. <strong>Confidence: High. Horizon: 3–6 months. Effort:
+M.</strong></li>
+<li><strong>Dependencies:</strong> Reproducible test environment;
+control toggles; attack/failure corpus; independent oracle; incident
+taxonomy; cost/action telemetry.</li>
+<li><strong>Risks:</strong> Tests become stale, unsafe cases escape
+isolation, correlated failures are missed, or teams optimize to the
+suite. Privacy and security data must be minimized.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build around
+internal controls; buy generic chaos/evaluation infrastructure only
+where it preserves evidence.</strong></li>
+<li><strong>Minimum reversible experiment:</strong> In a synthetic agent
+workflow, toggle seven controls and measure attack success, duplicate
+effects, unsafe grants, false blocks, latency, and recovery.</li>
+<li><strong>Success / stop / roadmap trigger:</strong> Success: every
+critical claim has a load-bearing ablation, seeded failures localize to
+the expected layer, and results reproduce twice. Stop if isolation
+cannot prevent real side effects. Trigger: two release decisions change
+because the harness reveals hidden control dependence.</li>
+</ul>
+<h3 id="monitor-for-maturity">Monitor for Maturity</h3>
+<h4
+id="7-independent-action-effect-verifier-beyond-chain-of-thought--802">7.
+Independent action-effect verifier beyond chain of thought — 80.2</h4>
+<ul>
+<li><strong>Category / evidence:</strong> Evaluation &amp;
+Observability; AI Security. <strong>Enterprise Inference</strong> from
+plan injection's monitor ceiling and agent–tool effect-history
+model.</li>
+<li><strong>Problem and future capability:</strong> Reasoning traces can
+be incomplete, unavailable, paraphrased, or rationalized. Verify
+proposed actions and observed world effects against task intent, policy,
+provenance, and invariants using an independently designed evaluator
+with deterministic checks where possible.</li>
+<li><strong>Placement / value:</strong> Evaluation, orchestration,
+observability, security/governance. Value: risk reduction and
+reliability. Technical value: shifts assurance from narrated intent to
+verifiable consequences.</li>
+<li><strong>Maturity / confidence / horizon / effort:</strong> Need is
+strong; generalized verifier performance is unproven.
+<strong>Confidence: Moderate. Horizon: 6–12 months. Effort:
+XL.</strong></li>
+<li><strong>Dependencies:</strong> Structured action/effect schema,
+policy engine, ground truth, trusted telemetry, adversarial evaluator
+tests, separation of duties.</li>
+<li><strong>Risks:</strong> Shared model errors, evaluator gaming,
+post-hoc detection too late, privacy-heavy traces, latency, and false
+assurance from incomplete invariants.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build
+domain-specific invariant checks; partner for model evaluation only
+after independent qualification.</strong></li>
+<li><strong>Minimum reversible experiment:</strong> Replay 200
+archived/synthetic actions with hidden policy violations and compare CoT
+monitor, action checker, effect checker, and union.</li>
+<li><strong>Success / stop / roadmap trigger:</strong> Success:
+≥25-point recall gain over CoT-only at ≤5-point false-positive increase
+and evidence for every verdict. Stop if the verifier shares
+prompts/models/failure modes with the actor without independent
+controls. Trigger: stable held-out performance across two domains and a
+pre-release interception before any live mutation.</li>
+</ul>
+<h4 id="8-cross-tool-preparecommit-federation--763">8. Cross-tool
+prepare/commit federation — 76.3</h4>
+<ul>
+<li><strong>Category / evidence:</strong> MLOps &amp; Platform; Agentic
+AI. <strong>Enterprise Inference</strong> from the paper's four
+black-box impossibility points.</li>
+<li><strong>Problem and future capability:</strong> Multi-tool workflows
+cannot atomically release independent irreversible effects when tools do
+not participate. Define prepare/hold, commit, abort, status, expiry, and
+compensation contracts across selected systems, with a coordinator and
+recovery log.</li>
+<li><strong>Placement / value:</strong> Orchestration, infrastructure,
+tool gateway. Value: reliability, risk reduction, and strategic
+differentiation for high-value automation. Technical value: enables
+stronger guarantees than best-effort compensation.</li>
+<li><strong>Maturity / confidence / horizon / effort:</strong>
+Distributed transaction patterns are mature, but heterogeneous agent
+tools rarely expose the required primitives. <strong>Confidence: Low to
+Moderate. Horizon: 12+ months. Effort: XL.</strong></li>
+<li><strong>Dependencies:</strong> Participating system owners,
+standardized resource/effect IDs, durable coordinator, failure recovery,
+timeouts, escrow/holds, legal and operational ownership.</li>
+<li><strong>Risks:</strong> Partial protocol adoption, blocking,
+coordinator failure, expired holds, vendor lock-in, irreversibility,
+latency, and misleading “atomic” claims.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Partner
+first.</strong> A coordinator cannot manufacture atomicity for black-box
+services; build only for a bounded set of owned tools.</li>
+<li><strong>Minimum reversible experiment:</strong> Two synthetic
+services implement prepare/commit/abort with injected packet loss and
+crash recovery; compare with saga-style compensation.</li>
+<li><strong>Success / stop / roadmap trigger:</strong> Success: zero
+split outcomes across 10,000 fault-injected runs, bounded recovery, and
+auditable resolution. Stop if any required system cannot expose
+authoritative status or hold semantics. Trigger: a high-value workflow
+has quantified loss exposure and all participating owners commit to the
+protocol.</li>
+</ul>
+<h3 id="deprioritize-for-now">Deprioritize for Now</h3>
+<h4 id="9-cot-only-monitor-scaling--545">9. CoT-only monitor scaling —
+54.5</h4>
+<ul>
+<li><strong>Category / evidence:</strong> Safety &amp; Governance;
+Reasoning &amp; Planning. <strong>Paper Fact plus Enterprise
+Inference</strong> from <em>Corrupt Plans, Clean Traces</em>.</li>
+<li><strong>Problem and proposed capability:</strong> Spend more tokens
+or use a larger model to judge only the actor's chain of thought. It is
+attractive because it does not require architectural change.</li>
+<li><strong>Placement / value:</strong> Evaluation layer. Potential
+value: incremental detection. Technical value is limited because the
+source and external effect remain outside the observation boundary.</li>
+<li><strong>Maturity / confidence / horizon / effort:</strong> Thinking
+monitors often outperform non-thinking monitors, but the paper shows
+non-monotonic cases and a ≥25% miss floor in its settings.
+<strong>Confidence: High that CoT-only is insufficient. Horizon: 12+
+months / not recommended as a standalone roadmap item. Effort:
+M.</strong></li>
+<li><strong>Dependencies:</strong> Legitimate CoT access, stable
+provider behavior, calibrated thresholds, privacy rules, action/effect
+telemetry for validation.</li>
+<li><strong>Risks:</strong> Rationalization, unavailable or summarized
+CoT, privacy exposure, cost, latency, monitor gaming, shared failure
+modes, and false assurance.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Do not buy or build
+as a standalone safety boundary.</strong> Continue only as one signal
+inside provenance-plus-action evaluation.</li>
+<li><strong>Minimum reversible experiment:</strong> Re-run a fixed
+plan-injection challenge set at multiple monitor budgets and models,
+holding threshold and false-positive target explicit.</li>
+<li><strong>Success / stop / roadmap trigger:</strong> Success would
+require material held-out recall gain with stable benign false positives
+and incremental value beyond source/action checks. Stop if additional
+budget worsens any high-severity slice or adds no union recall. Trigger
+only if independent evidence shows monotonic, transferable benefit
+across real workflows—evidence not present today.</li>
+</ul>
+<h2 id="enterprise-ai-architecture-implications">Enterprise AI
+Architecture Implications</h2>
+<h3 id="independent-analysis--1224-month-direction">Independent Analysis
+— 12–24 month direction</h3>
+<p>The recommended direction is a shift from a model-centric stack to a
+<strong>contracted agent execution plane</strong>. The model gateway
+remains important for routing, versioning, cost, and policy, but it is
+no longer the sole control point. Context, authority, and effects each
+need a durable identity and an explicit lifecycle.</p>
+<p><strong>Shared enabling foundations that unlock multiple
+enhancements:</strong></p>
+<ol type="1">
+<li><strong>Model and tool gateway:</strong> versioned model/tool
+identity, request policy, budgets, signatures, and routing; records what
+executable component acted.</li>
+<li><strong>Context and memory service:</strong> segment-level
+provenance, retrieval lineage, integrity, sensitivity, retention,
+transformation, and revocation; does not assume raw CoT is
+available.</li>
+<li><strong>Knowledge systems:</strong> versioned semantic objects with
+evidence, ownership, and promotion gates; today's EvoOntology signal
+suggests queryable typed knowledge may outperform static prompt
+injection, but self-evolution requires fresh holdouts and review.</li>
+<li><strong>Identity and authorization:</strong> task-scoped,
+short-lived, resource- and purpose-bound capabilities beneath
+deterministic ceilings; classifier output is evidence, not
+authority.</li>
+<li><strong>Agent orchestration:</strong> logical-operation IDs,
+dependency graph, resolution states, hold/commit/abort, retry policy,
+concurrency mediation, and human escalation.</li>
+<li><strong>Evaluation infrastructure:</strong> plan-injection suites,
+action/effect invariants, permission-label audits, ablation testing,
+source–action joint evaluation, and independently versioned
+holdouts.</li>
+<li><strong>Observability and provenance:</strong> append-only
+opportunity and effect ledgers linking context sources, policy
+decisions, capability issuance, tool attempts, authoritative outcomes,
+compensation, and human decisions.</li>
+<li><strong>Policy enforcement:</strong> machine-readable decision rules
+with explicit precedence, failure mode, version, approver, and exception
+path; avoids burying policy in prompts.</li>
+<li><strong>Human-review controls:</strong> consequence-aware release
+gates, reason codes, workload/capacity telemetry, appeal, and
+break-glass behavior.</li>
+<li><strong>Cost and experiment telemetry:</strong> model calls, tokens,
+tool calls, latency, queueing, reviewer time, false blocks, and
+avoided-risk proxies; supports reversible shadow experiments and
+prevents safety claims from ignoring operating cost.</li>
+</ol>
+<p>The likely migration sequence is instrumentation first, shadow
+decisioning second, gated authority third. Internal context is required
+before implementation: current identity provider and token capabilities,
+tool inventory and ownership, data classification, systems of record,
+action irreversibility, approval capacity, model access, log-retention
+rules, regional/privacy obligations, loss tolerance, latency SLOs, and
+vendor contracts. None is inferred here.</p>
+<h2 id="implementation-priorities">Implementation priorities</h2>
+<h3 id="now">Now</h3>
+<ol type="1">
+<li>Inventory ten representative tools using the eight-anomaly contract
+and mark every property established, assumed, or unknown.</li>
+<li>Add segment-level provenance to one sandbox RAG/planner flow and
+build a 100-case plan-injection qualification set.</li>
+<li>Run task-permission inference in shadow mode on 500 historical
+tasks; issue no credentials.</li>
+<li>Define success, stop, privacy, and human-escalation rules before
+testing; assign independent reviewers.</li>
+</ol>
+<h3 id="next-36-months">Next 3–6 months</h3>
+<ol type="1">
+<li>Join provenance, task scope, logical-operation identity, and tool
+outcome in one append-only trace.</li>
+<li>Create fine-grained permissions for two read-only domains and
+measure label agreement and residual overscope.</li>
+<li>Add action-release classification and simulated human review for
+irreversible or externally visible actions.</li>
+<li>Establish control ablation tests in the agent release pipeline and
+preserve immutable results, model versions, policy versions, and
+costs.</li>
+</ol>
+<h3 id="612-months">6–12 months</h3>
+<ol type="1">
+<li>Consider limited short-lived credential issuance only after fresh
+temporal/adversarial holdouts meet explicit thresholds and
+identity/security owners approve.</li>
+<li>Add domain-specific action/effect invariants for one high-value
+workflow; keep humans at the final irreversible boundary.</li>
+<li>Partner with one owned system to expose authoritative status and
+hold/commit semantics; do not claim cross-tool atomicity.</li>
+<li>Reassess MAPS on the actual serving stack and EvoOntology with
+expert semantic audits, poisoning tests, fresh holdouts, and
+model-upgrade rehearsals.</li>
+</ol>
+<h2 id="knowledge-reinforcement">Knowledge reinforcement</h2>
+<h3 id="five-checks-to-remember">Five checks to remember</h3>
+<ol type="1">
+<li><strong>Where did the decisive premise come from?</strong> A fluent
+paraphrase does not erase source risk.</li>
+<li><strong>Which capability is actually required now?</strong> Role
+membership is a ceiling, not proof of task need.</li>
+<li><strong>Did the external effect occur?</strong> A timeout or success
+response may not be authoritative.</li>
+<li><strong>Can the effect be hidden, held, reversed, or
+coordinated?</strong> Compensation is not the same as erasure, and some
+observers cannot be rolled back.</li>
+<li><strong>What breaks when one control disappears?</strong> A
+defense-in-depth claim needs ablation evidence, not a diagram.</li>
+</ol>
+<h2 id="source-register-and-rejected-signal-notes">Source register and
+rejected-signal notes</h2>
+<h3 id="deep-sources">Deep sources</h3>
+<ul>
+<li>Chidambaram, Ilyas, Syrgkanis. <em>Corrupt Plans, Clean Traces:
+Evading Chain-of-Thought Monitoring with Plan Injection.</em>
+arXiv:2609.15989v1, submitted September 14, 2026. <a
+href="https://arxiv.org/abs/2609.15989">Abstract</a> · <a
+href="https://arxiv.org/html/2609.15989">Full text</a>. CC BY-NC-ND 4.0.
+No linked first-party artifact verified.</li>
+<li>Trofimov, Novikov. <em>When Tool Calls Succeed but Workflows Fail:
+Anomalies at the Agent–Tool Boundary.</em> arXiv:2609.15397v1, submitted
+September 14, 2026. <a
+href="https://arxiv.org/abs/2609.15397">Abstract</a> · <a
+href="https://arxiv.org/html/2609.15397">Full text</a> · <a
+href="https://github.com/flame-stream/mcp-annotation-census">MIT
+artifact</a>. Artifact verified as public with code, data/results,
+requirements, and license; no tagged immutable release observed.</li>
+<li>Noyan. <em>Empirical Evaluation of Task-Based Permission Scoping
+Architecture for AI Agents.</em> arXiv:2609.15422v1, submitted September
+14, 2026. <a href="https://arxiv.org/abs/2609.15422">Abstract</a> · <a
+href="https://arxiv.org/html/2609.15422">Full text</a> · <a
+href="https://arxiv.org/abs/2607.22445">Prior architecture paper</a>.
+Current-paper code/checkpoint artifact not linked.</li>
+</ul>
+<h3 id="watchlist-sources">Watchlist sources</h3>
+<ul>
+<li>Zhang et al. <em>MAPS: Memory-Aware Predictive Scheduling Framework
+for Large Language Model Serving.</em> arXiv:2609.15359v1, submitted
+September 14, 2026; ICML 2026. <a
+href="https://arxiv.org/abs/2609.15359">Abstract</a> · <a
+href="https://arxiv.org/html/2609.15359">Full text</a> · <a
+href="https://icml.cc/virtual/2026/poster/74311">Official ICML
+record</a>. No first-party code artifact verified.</li>
+<li>Chong et al. <em>EvoOntology: A Self-Evolving Ontology Layer for
+Data Agents.</em> arXiv:2609.15779v1, submitted September 14, 2026. <a
+href="https://arxiv.org/abs/2609.15779">Abstract</a> · <a
+href="https://arxiv.org/html/2609.15779">Full text</a> · <a
+href="https://github.com/ruc-datalab/EvoOntology">MIT repository</a>.
+Public repository verified with core package, tests, docs, benchmark
+adapters, and plugins; four commits and no release observed at review
+time.</li>
+</ul>
+<h3 id="discovery-and-exclusion-notes">Discovery and exclusion
+notes</h3>
+<ul>
+<li>The <a href="https://arxiv.org/list/cs.AI/recent">arXiv cs.AI recent
+listing</a> supplied the broad same-day candidate set; cross-lists were
+checked in cs.CL, cs.LG, cs.SE, cs.CR, cs.DB, and cs.DC.</li>
+<li>Official <a href="https://openreview.net/">OpenReview</a>, <a
+href="https://aclanthology.org/">ACL Anthology</a>, <a
+href="https://proceedings.mlr.press/">PMLR</a>, <a
+href="https://icml.cc/">ICML</a>, and <a
+href="https://www.nature.com/natmachintell/">Nature Machine
+Intelligence</a> surfaces were checked for primary-source status and
+comparable fresh work. No additional nonduplicate paper in the 24-hour
+window displaced the selected three on evidence strength and enterprise
+decision value.</li>
+<li>Abstract-only candidates, inaccessible full texts, unverifiable
+identities, vendor announcements, benchmark-only novelty without
+methodological detail, and papers duplicating recent archive signals
+were rejected. MAPS and EvoOntology were retained on the Watchlist
+because their signals are strong but target-stack, governance, or
+independent-replication evidence is incomplete.</li>
+</ul>
+<h2 id="evidence-boundary">Evidence boundary</h2>
+<p>This brief identifies research-grounded future options, not approved
+architecture, procurement, security certification, legal advice, or
+production authorization. Internal enterprise context is required before
+any roadmap decision: business process, impact tier, data and model
+inventory, identity system, tool semantics, regions, contractual
+constraints, security posture, privacy obligations, human-review
+capacity, SLOs, cost, and adoption conditions. Paper metrics must be
+reproduced on representative internal tasks with independent evaluation,
+failure injection, subgroup analysis, versioned artifacts, and explicit
+stop conditions. No system should receive new production authority
+solely because it performs well on a benchmark.</p></main></div>
+<footer>AI Research Intelligence Brief · September 15, 2026 · Research options, not deployment approval.</footer>
+<div class="toolbar"><button onclick="window.print()" aria-label="Print report">Print</button><button id="top" aria-label="Back to top">↑ Top</button></div>
+<script>
+const p=document.getElementById('progress');addEventListener('scroll',()=>{const h=document.documentElement;p.style.width=((h.scrollTop/(h.scrollHeight-h.clientHeight))*100)+'%'});document.getElementById('top').onclick=()=>scrollTo({top:0,behavior:'smooth'});
+document.querySelectorAll('main h4').forEach(h=>{if(/^\d+\./.test(h.textContent))h.setAttribute('data-backlog','true')});
+</script>
+</body></html>
