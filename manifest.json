@@ -3,12 +3,29 @@
     "title": "AI Research Intelligence",
     "url": "https://ygeszvain.github.io/ai-research-intelligence",
     "description": "Evidence-grounded daily AI and machine-learning research intelligence.",
-    "generated_at_utc": "2026-09-15T09:00:00.000Z",
-    "report_count": 37,
-    "latest_report": "2026-09-15",
-    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-15.html"
+    "generated_at_utc": "2026-09-16T09:00:00.000Z",
+    "report_count": 38,
+    "latest_report": "2026-09-16",
+    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-16.html"
   },
   "reports": [
+    {
+      "date": "2026-09-16",
+      "date_display": "September 16, 2026",
+      "title": "AI Research Intelligence Brief — September 16, 2026",
+      "excerpt": "Three papers show why enterprise agents must be qualified across stateful trajectories, accepted through native artifacts, and bounded by domain semantics before actions gain authority.",
+      "topics": [
+        "Agentic AI",
+        "Evaluation & Observability",
+        "AI Software Engineering",
+        "Data & Knowledge Infrastructure",
+        "Safety & Governance"
+      ],
+      "path": "reports/2026-09-16.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-16.html",
+      "size_bytes": 98229,
+      "sha256": "b6324b7f67f9a26fcb13c30b9c8206fa268d496b81f52becd069985e7aa1184b"
+    },
     {
       "date": "2026-09-15",
       "date_display": "September 15, 2026",

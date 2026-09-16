@@ -1,0 +1,794 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Evidence-grounded AI Research Intelligence Brief for September 16, 2026: stateful trajectory safety, native-artifact validation, and domain-semantic controls.">
+<meta name="report-date" content="2026-09-16">
+<meta name="research-window" content="2026-09-15T04:00:00-05:00/2026-09-16T04:00:00-05:00 America/Chicago">
+<meta name="deep-paper-count" content="3">
+<meta name="watchlist-count" content="2">
+<meta name="theme-color" content="#08131f">
+<title>AI Research Intelligence Brief — September 16, 2026</title>
+<style>
+:root{--bg:#07111d;--panel:#0d1b2a;--panel2:#10263a;--text:#e8f1f7;--muted:#9fb5c5;--line:#29445b;--cyan:#45d7c4;--gold:#f5c96a;--rose:#ff8d9a;--blue:#68a9ff;--max:1180px;color-scheme:dark}
+@media(prefers-color-scheme:light){:root{--bg:#f4f7f8;--panel:#fff;--panel2:#edf4f7;--text:#102131;--muted:#526979;--line:#cddbe2;--cyan:#087f73;--gold:#9b6300;--rose:#b92b45;--blue:#1661ad;color-scheme:light}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 90% 0,rgba(69,215,196,.12),transparent 30rem),var(--bg);color:var(--text);font:16px/1.67 ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}a{color:var(--cyan);text-underline-offset:3px}a:hover{text-decoration-thickness:2px}header{border-bottom:1px solid var(--line);background:linear-gradient(135deg,rgba(69,215,196,.09),rgba(104,169,255,.05));padding:54px 22px 34px}.hero{max-width:var(--max);margin:auto}.eyebrow{color:var(--cyan);text-transform:uppercase;letter-spacing:.15em;font-size:.76rem;font-weight:800}h1{font-size:clamp(2.2rem,6vw,4.7rem);line-height:.98;max-width:900px;margin:.35rem 0 1rem;letter-spacing:-.055em}header p{max-width:790px;color:var(--muted);font-size:1.09rem}.chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}.chip{border:1px solid var(--line);border-radius:999px;padding:6px 11px;background:var(--panel);font-size:.8rem}.topbets{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}.bet{border:1px solid var(--line);background:var(--panel);border-radius:14px;padding:15px}.bet b{display:block;color:var(--gold);font-size:1.15rem}.layout{max-width:var(--max);margin:auto;display:grid;grid-template-columns:250px minmax(0,1fr);gap:34px;padding:30px 22px 80px}nav{position:sticky;top:16px;align-self:start;max-height:calc(100vh - 32px);overflow:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:14px}nav strong{display:block;margin:2px 8px 10px;color:var(--gold)}nav ul{list-style:none;margin:0;padding:0}nav li{margin:0}nav a{display:block;color:var(--muted);text-decoration:none;padding:5px 8px;border-radius:7px;font-size:.83rem;line-height:1.25}nav a:hover{background:var(--panel2);color:var(--text)}main{min-width:0}main>h2{font-size:1.75rem;margin:2.6rem 0 1rem;padding-top:.7rem;border-top:1px solid var(--line)}main>h2:first-child{margin-top:0}h3{font-size:1.3rem;margin-top:2rem;color:var(--cyan)}h4{font-size:1.08rem;color:var(--gold);margin-bottom:.45rem}p,li{max-width:88ch}blockquote{margin:1rem 0;padding:1rem 1.2rem;border-left:4px solid var(--gold);background:var(--panel);color:var(--muted)}pre{white-space:pre-wrap;overflow:auto;background:#07101a;border:1px solid var(--line);border-radius:14px;padding:18px;color:#dcecf2;font-size:.86rem;line-height:1.45}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}table{width:100%;border-collapse:collapse;margin:1.25rem 0;background:var(--panel);font-size:.86rem}th,td{padding:10px 12px;border:1px solid var(--line);text-align:left;vertical-align:top}th{color:var(--gold);background:var(--panel2)}hr{border:0;border-top:1px solid var(--line)}main h4+ul,main h3+ul{border:1px solid var(--line);background:linear-gradient(135deg,var(--panel),var(--panel2));border-radius:14px;padding:15px 22px 15px 34px}main h4+ul li,main h3+ul li{margin:.5rem 0}.progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--cyan),var(--gold));width:0;z-index:9}.toolbar{position:fixed;right:18px;bottom:18px;display:flex;gap:8px}.toolbar button{border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:999px;padding:9px 12px;cursor:pointer;box-shadow:0 8px 30px rgba(0,0,0,.2)}.label{font-size:.75rem;color:var(--muted)}footer{border-top:1px solid var(--line);padding:24px;text-align:center;color:var(--muted)}
+@media(max-width:850px){.topbets{grid-template-columns:1fr}.layout{grid-template-columns:1fr}nav{position:relative;top:0;max-height:none}nav ul{columns:2}h1{font-size:2.65rem}}
+@media(max-width:520px){header{padding-top:34px}.layout{padding:20px 14px 60px}nav ul{columns:1}table{display:block;overflow-x:auto}h1{font-size:2.25rem}}
+@media print{body{background:white;color:#111;font-size:11pt}header{padding:18px 0}.layout{display:block;padding:0}nav,.toolbar,.progress{display:none}a{color:#145c70}main>h2{break-before:page}main>h2:first-child{break-before:auto}table,pre{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<header><div class="hero">
+<div class="eyebrow">AI Research Intelligence · Evidence before enthusiasm</div>
+<h1>Evaluate the trajectory. Verify the artifact. Constrain the domain.</h1>
+<p>September 16, 2026 briefing. Three papers show why enterprise agents must be qualified across stateful trajectories, accepted through the native artifacts they leave behind, and bounded by the semantics of the domains they act upon.</p>
+<div class="chips"><span class="chip">3 deep papers</span><span class="chip">2 Watchlist</span><span class="chip">24-hour window</span><span class="chip">10 enterprise options</span><span class="chip">Primary sources + full-paper review</span></div>
+<div class="topbets"><div class="bet"><span class="label">TOP BET 1 · PROTOTYPE SOON</span><b>93.3 · Stateful trajectory safety</b><span>Measure delayed failure, refusal persistence, mutable state, and repeated-run risk.</span></div><div class="bet"><span class="label">TOP BET 2 · PROTOTYPE SOON</span><b>91.1 · Native-artifact validation</b><span>Accept professional work through executable structural checks, not appearance alone.</span></div><div class="bet"><span class="label">TOP BET 3 · PROTOTYPE SOON</span><b>87.9 · Domain-semantic access</b><span>Constrain cross-source reasoning with typed, governed relationships.</span></div></div>
+</div></header>
+<div class="layout"><nav><strong>Navigate</strong><ul>
+<li><a href="#scope-window-and-evidence-policy" id="toc-scope-window-and-evidence-policy">Scope, window, and evidence policy</a></li>
+<li><a href="#executive-signal" id="toc-executive-signal">Executive signal</a></li>
+<li><a href="#top-3-future-bets" id="toc-top-3-future-bets">Top 3 Future Bets</a></li>
+<li><a href="#deep-paper-1--safety-is-a-trajectory-property-not-a-first-response-property" id="toc-deep-paper-1--safety-is-a-trajectory-property-not-a-first-response-property">Deep paper 1 — Safety is a trajectory property, not a first-response property</a></li>
+<li><a href="#deep-paper-2--the-artifact-is-the-product" id="toc-deep-paper-2--the-artifact-is-the-product">Deep paper 2 — The artifact is the product</a></li>
+<li><a href="#deep-paper-3--a-tool-schema-is-not-a-domain-semantic-contract" id="toc-deep-paper-3--a-tool-schema-is-not-a-domain-semantic-contract">Deep paper 3 — A tool schema is not a domain-semantic contract</a></li>
+<li><a href="#watchlist" id="toc-watchlist">Watchlist</a></li>
+<li><a href="#cross-paper-synthesis" id="toc-cross-paper-synthesis">Cross-paper synthesis</a></li>
+<li><a href="#visual-1--operational-evidence-plane" id="toc-visual-1--operational-evidence-plane">Visual 1 — operational evidence plane</a></li>
+<li><a href="#visual-2--what-each-evaluation-surface-can-and-cannot-prove" id="toc-visual-2--what-each-evaluation-surface-can-and-cannot-prove">Visual 2 — what each evaluation surface can and cannot prove</a></li>
+<li><a href="#enterprise-ai-enhancement-backlog" id="toc-enterprise-ai-enhancement-backlog">Enterprise AI Enhancement Backlog</a></li>
+<li><a href="#enterprise-ai-architecture-implications" id="toc-enterprise-ai-architecture-implications">Enterprise AI Architecture Implications</a></li>
+<li><a href="#implementation-priorities" id="toc-implementation-priorities">Implementation priorities</a></li>
+<li><a href="#knowledge-reinforcement" id="toc-knowledge-reinforcement">Knowledge reinforcement</a></li>
+<li><a href="#source-register-and-rejected-signal-notes" id="toc-source-register-and-rejected-signal-notes">Source register and rejected-signal notes</a></li>
+<li><a href="#evidence-boundary" id="toc-evidence-boundary">Evidence boundary</a></li>
+</ul></nav><main><h2 id="scope-window-and-evidence-policy">Scope, window, and evidence policy</h2>
+<p><strong>Research window.</strong> Tuesday, September 15, 2026 at 4:00 AM CDT through Wednesday, September 16, 2026 at 4:00 AM CDT (24 hours; America/Chicago). Discovery covered the September 16 arXiv announcement cycle—297 cs.AI records, including 72 new submissions—plus current cs.CL, cs.LG, cs.SE, cs.CR, cs.IR, cs.DB, cs.DC, stat.ML, first-party project pages and code repositories, and the prior work cited by the selected papers. All three deep papers and both Watchlist papers first appeared in this cycle. The normal window was sufficient; no expansion was used.</p>
+<p><strong>Anti-duplication.</strong> Exact titles, arXiv identifiers, central claims, and proposed enterprise controls were checked against the 37-report archive through September 15. None of today's five papers had appeared previously. The archive's recent work on plan injection, task-scoped permissioning, transactional tool effects, benchmark contracts, RAG safety, memory promotion, and persistent evidence identity was treated as prior intelligence. Today's differentiating signal is narrower: enterprise evidence must follow an agent across <em>time</em>, into the <em>native artifact it changes</em>, and through the <em>domain semantics of the data it touches</em>.</p>
+<p><strong>Evidence policy.</strong> <strong>Paper Fact</strong> means directly reported by a paper or verified first-party artifact. <strong>Independent Analysis</strong> is this briefing's calculation, synthesis, or critique. <strong>Enterprise Inference</strong> is a bounded translation into a future enterprise option. <strong>Uncertainty</strong> marks missing causal, generalization, artifact, economic, security, governance, privacy, operational, or adoption evidence. All five selected works are preprints. BLINDSPOT and CADWorld have public project artifacts; Symbolic Separation links a public EXASAGE implementation and query set. Skill-based Agentic Evaluation does not release its production skill or synthetic schema, and EchoPath does not link a first-party code repository from the paper page. Benchmark performance is not production readiness. Every proposed experiment is isolated, reversible, measurable, and non-destructive.</p>
+<h2 id="executive-signal">Executive signal</h2>
+<blockquote>
+<p><strong>Enterprise agents must be qualified as stateful systems, accepted through the artifacts they leave behind, and constrained by the semantics of the domains they act upon.</strong></p>
+</blockquote>
+<p>BLINDSPOT shows that unsafe behavior can emerge after initially safe steps, that repeated executions expose additional vulnerable configurations, and that final-response-only evaluation misses both unsafe completion and over-refusal. CADWorld shows why a visually plausible or verbally completed task is not enough: the saved professional artifact can still be structurally wrong, geometrically invalid, uneditable, or unusable downstream. Symbolic Separation shows a complementary control: when an agent must access heterogeneous operational data, a domain-semantic contract can prevent invented relations that syntactic tool schemas do not catch.</p>
+<p>The combined lesson is not “add a stronger model.” It is to build an <strong>operational evidence plane</strong> that retains trajectory state, policy and authorization transitions, native-artifact checks, domain-semantic validation, repeated-run evidence, evaluator provenance, cost, and human review. Model output is one observation inside that plane—not the final authority.</p>
+<p><strong>Decision posture.</strong> Prototype a stateful trajectory qualification harness, native-artifact acceptance gates for one bounded professional workflow, and a read-only semantic access layer over one governed data domain. Prepare common trace identity, evaluator versioning, policy composition, and human-release controls first. Keep GUI replay memories and broad neurosymbolic analytics on a controlled watchlist until drift, poisoning, privacy, and lifecycle evidence improve. Do not permit autonomous engineering release, consequential cross-domain action, or production data write access based on today's papers alone.</p>
+<h2 id="top-3-future-bets">Top 3 Future Bets</h2>
+<ol type="1">
+<li><strong>Stateful trajectory safety qualification — 93.3/100.</strong> Why it matters: one-turn evaluation misses delayed failures, refusal instability, stochastic failure paths, state mutation, and cross-domain policy composition. Evidence that would change the recommendation: representative internal traces showing no material difference between stateful multi-run qualification and existing tests, or unacceptable evaluation cost without added incident coverage. Next reversible action: replay 50 high-risk and 50 benign workflows in an isolated simulator across ten stochastic runs, with authorization expiry, environment mutation, and response-conditioned adversaries; compare trajectory labels with final-response-only labels.</li>
+<li><strong>Native-artifact validation and structural acceptance gate — 91.1/100.</strong> Why it matters: professional work is often a persistent structured object, not a screenshot or prose response. CADWorld's strongest agent achieved only 17.5% on the full 200-task benchmark while an expert reference reached 87%, and all evaluated agents scored 0% on CAM, FEM, and TechDraw. Evidence that would change the recommendation: an internal workflow where output is fully disposable, has no structure or downstream dependencies, and human review already catches every material failure at acceptable cost. Next reversible action: define executable, task-specific checks for 25 historical artifacts in one sandboxed workflow and measure defects found beyond text/visual review.</li>
+<li><strong>Domain-semantic access plane — 87.9/100.</strong> Why it matters: schema-valid calls can still invent relationships across sources. In one operational-telemetry study, ontology-constrained access improved correct end-to-end results from 29% for the strongest non-symbolic comparison to 86% while using 2.4× fewer median tokens. Evidence that would change the recommendation: target data domains with stable, simple, single-source schemas where a typed API already fully encodes admissible relationships, or internal reproduction showing ontology maintenance cost exceeds error reduction. Next reversible action: expose one read-only data domain through a small typed ontology, run 30 paired questions against semantic and direct-query paths, and stop if correctness, silent-error detection, or cost does not materially improve.</li>
+</ol>
+<h2 id="deep-paper-1--safety-is-a-trajectory-property-not-a-first-response-property">Deep paper 1 — Safety is a trajectory property, not a first-response property</h2>
+<p><strong>Identity and status.</strong> <em>BLINDSPOT: A Benchmark for Safety and Refusal Calibration in Long-Horizon Tool-Using Agents</em>, Sadia Asif, Mohammad Mohammadi Amiri, Momin Abbas, Tejaswini Pedapati, and Prasanna Sattigeri; Rensselaer Polytechnic Institute and IBM Research; submitted September 14, 2026; arXiv:2609.16305v1; cs.AI with cs.CE, cs.CL, cs.LG, and cs.MA cross-listing; preprint; CC BY 4.0. A public code-and-dataset repository is linked from the paper. (<a href="https://arxiv.org/abs/2609.16305">paper</a>, <a href="https://arxiv.org/html/2609.16305">full text</a>, <a href="https://github.com/sadia-sigma-lab/BLINDSPOT">artifact</a>)</p>
+<h3 id="contribution-and-quantitative-claim-trace">Contribution and quantitative claim trace</h3>
+<p>BLINDSPOT treats safety as a joint property of a user, target agent, tools, policies, authorization state, and mutable environment over a complete episode. Its five terminal classes distinguish Safe Completion, Correct Refusal, Unsafe Completion, Over-Refusal, and Indeterminate. That is a material advance over attack-success-only scoring: a safe system must resist prohibited actions <em>and</em> complete allowed work without unnecessary refusal.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>Decision meaning</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Benchmark scope</td>
+<td style="text-align: right;">22 attack families, 35 scenarios, seven domains, more than 2,500 trajectories, mean 14.7 turns, 13 proprietary and open-weight models, eight metrics</td>
+<td>The evaluation is broad enough to expose several distinct longitudinal failures</td>
+<td>Scenario mix is author-designed and family frequencies follow applicability, not real-world prevalence</td>
+</tr>
+<tr class="even">
+<td>Long-horizon failures</td>
+<td style="text-align: right;">In a 16-trajectory timing analysis, no unsafe completion occurred in the first four turns; 18.75% had failed by turn 5, 50% only by turn 11, 81.25% by turn 13, and all by turn 19</td>
+<td>Short-prefix tests can systematically miss delayed failure</td>
+<td>The timing curve uses only 16 unsafe trajectories; it describes those cases rather than estimating enterprise prevalence</td>
+</tr>
+<tr class="odd">
+<td>Horizon sensitivity</td>
+<td style="text-align: right;">UCR rises from 0/1/1% at 1/4/8 turns to 2% at full horizon for GPT-5.6 Sol; 5/11/17% to 22% for GPT-4o; 18/35/47% to 58% for Mistral Large 3</td>
+<td>Safety evidence must be collected at the workflow horizon</td>
+<td>Longer exposure creates more opportunity, so comparisons require equal budgets and scenario controls</td>
+</tr>
+<tr class="even">
+<td>Safety–utility calibration</td>
+<td style="text-align: right;">GPT-5.6 Sol reports 2% UCR and 96.0 SCS; Llama-3.3-70B has 97% benign completion with 7% UCR; Claude Opus 4.6 has 4% UCR but 72% benign completion and 17% over-refusal</td>
+<td>A low attack-success rate is not a complete deployment metric</td>
+<td>The paper calls results preliminary; some model names and hosted service configurations may drift</td>
+</tr>
+<tr class="odd">
+<td>Repeated-run robustness</td>
+<td style="text-align: right;">Fail@1→Fail@10 rises 3→11% for GPT-5.6 Sol, 23→51% for GPT-4o, and 59→87% for Mistral Large 3</td>
+<td>A single run underestimates configuration-level vulnerability</td>
+<td>Fail@k is configuration-level and is not equal to aggregate trajectory UCR</td>
+</tr>
+<tr class="even">
+<td>Refusal persistence</td>
+<td style="text-align: right;">PFR is 5% for GPT-5.6 Sol, 8% for Claude Opus 4.6, 27% for GPT-4o, 47% for Claude Haiku 4.5, and 60% for Mistral Large 3</td>
+<td>“Refused once” does not establish that the boundary survives continued pressure</td>
+<td>PFR conditions on trajectories that initially refuse and depends on the adaptive adversary policy</td>
+</tr>
+<tr class="odd">
+<td>Stateful execution</td>
+<td style="text-align: right;">Compared with a text-only control, persistent executable state increases UCR for every model: +1 point for GPT-5.6 Sol, +7 for GPT-4o, +11 for Gemma 3 12B and Claude Haiku 4.5, +14 for Mistral Large 3</td>
+<td>Response-only simulations omit risk carried through environment mutation</td>
+<td>The ablation cannot isolate which state component causes the increase</td>
+</tr>
+<tr class="even">
+<td>Cross-domain composition</td>
+<td style="text-align: right;">Cross-domain UCR is the highest reported domain slice for every model; GPT-5.6 Sol reaches 3%, GPT-4o 26%, Mistral Large 3 64%</td>
+<td>Policy and state composition across systems is an independent qualification target</td>
+<td>Scenario and attack composition also vary by domain, so the result is not a clean causal estimate</td>
+</tr>
+<tr class="odd">
+<td>Evidence-source ablation</td>
+<td style="text-align: right;">Final-response-only adjudication agrees with final labels 71% of the time and misses 22% of unsafe completions plus 18% of over-refusals. Deterministic+semantic reaches 96% agreement, missing 3% and 4% respectively</td>
+<td>Logs, state transitions, and contextual semantics are complementary evidence</td>
+<td>Agreement is measured against the authors' full adjudication pipeline, not an independent external gold standard</td>
+</tr>
+</tbody>
+</table>
+<p>The benchmark's strongest design choice is <strong>execution-grounded adjudication</strong>. An action may be allowed early and prohibited later after authorization expiry, recipient change, or earlier tool actions. BLINDSPOT therefore records messages, tool calls, observations, state deltas, policy state, and authorization state, then uses deterministic checks first, narrow semantic judges where interpretation is needed, and human review for low-confidence or materially inconsistent cases. Indeterminate explicitly represents infrastructure incompleteness rather than silently reclassifying it as safe or unsafe.</p>
+<h3 id="methodological-critique-and-prior-work-comparison">Methodological critique and prior-work comparison</h3>
+<p>Prior agent-safety benchmarks cover one-shot harmful requests, indirect prompt injection, tool attacks, or long-horizon attack success. AgentLAB and related work already establish that multi-turn attacks matter. BLINDSPOT's useful increment is calibration across <em>both</em> adversarial and benign trajectories, response-conditioned adversaries, executable state, repeated runs, post-refusal persistence, scenario–attack applicability, and a five-way outcome that separates refusal correctness from over-refusal.</p>
+<p>The benchmark is stronger than static prompt collections because the adversary sees the trajectory and can reframe after refusal or authorization checks. Scenario–attack pairs are instantiated only when required tools, state, policy, and attacker capabilities exist, avoiding meaningless Cartesian-product tests. It also preserves failure-to-execute as evidence instead of discarding it. The deterministic/semantic ablation makes the measurement architecture inspectable.</p>
+<p>Material limits remain. The same full pipeline defines the labels and serves as the reference for ablations, so the reported 96% automated agreement is not independent validation. Scenario and attack taxonomies are authored and unevenly sampled; aggregate rates are not prevalence estimates. Model settings, provider updates, sampling controls, and judge behavior can affect results. The paper reports many point estimates but limited uncertainty intervals and no cost accounting for the full multi-run harness. Human review is described but inter-rater reliability and reviewer burden are not the central result. The five outcome classes still compress severity, reversibility, affected assets, and duration of harm.</p>
+<p>Most importantly, the benchmark evaluates synthetic, sandboxed policies. An enterprise must rebuild its own state objects, approval semantics, identity boundaries, tool effects, data classifications, and escalation rules. The correct enterprise inference is “adopt the measurement pattern,” not “reuse these rates as vendor rankings.”</p>
+<h3 id="reproducibility-and-enterprise-readiness">Reproducibility and enterprise readiness</h3>
+<p>The paper exposes algorithms, prompt templates, scenario and attack schemas, tool specifications, evaluator logic, the eight metric definitions, outcome rules, and a linked public repository. The CC BY 4.0 license supports inspection and adaptation. Reproducibility is still moderated by hosted-model drift, stochastic long-horizon generation, external service versions, and incomplete evidence about judge calibration and human review.</p>
+<p><strong>Enterprise readiness:</strong> high for creating an isolated trajectory-level release harness and logging state/policy evidence; medium for model-gateway admission decisions after internal scenario construction and evaluator calibration; low for directly transferring model rankings or UCR thresholds into production. <strong>Research Utility Score: 95/100</strong> (methodological rigor 24/25; quantitative traceability 24/25; reproducibility/artifacts 19/20; enterprise relevance 15/15; prior-work advance 13/15).</p>
+<h2 id="deep-paper-2--the-artifact-is-the-product">Deep paper 2 — The artifact is the product</h2>
+<p><strong>Identity and status.</strong> <em>CADWorld: Computer-Use Benchmark for Long-Horizon Computer-Aided Design</em>, Zihan Dong, Yuanzhe Liu, Zhiyuan Ma, Qishi Zhan, Dehan Kong, Guohao Li, and Kaixin Li; submitted September 14, 2026; arXiv:2609.16251v1; cs.AI; preprint; CC BY 4.0. The project page provides code and a VM image. The manuscript evaluates 200 tasks across 11 mechanical-CAD categories; the public v0 project page describes a 60-task release and explicitly holds back the remainder for rolling evaluation. (<a href="https://arxiv.org/abs/2609.16251">paper</a>, <a href="https://arxiv.org/html/2609.16251">full text</a>, <a href="https://cad-world.github.io/">project and artifacts</a>)</p>
+<h3 id="contribution-and-quantitative-claim-trace-1">Contribution and quantitative claim trace</h3>
+<p>CADWorld makes a simple but consequential measurement choice: it evaluates the native <code>.FCStd</code> project and auxiliary outputs, not merely the final screenshot, the agent's statement of completion, or a judge's impression. Task-specific checks inspect geometry, dimensions, constraints, document structure, feature history, joints, stock removal, toolpaths, FEM objects and outputs, materials, measurements, meshes, and technical drawings. Success requires every required check to pass.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>Decision meaning</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Benchmark construction</td>
+<td style="text-align: right;">200 tasks, 11 categories, 183 distinct concepts, 100 tasks with preconditions, 122 instruction images; about three months and 1,300 person-hours of authoring and checking</td>
+<td>Deep artifact evaluation is expensive because validity must be encoded per workflow</td>
+<td>Coverage is concentrated in FreeCAD and mechanical engineering; authoring effort may not transfer directly</td>
+</tr>
+<tr class="even">
+<td>Full-benchmark capability</td>
+<td style="text-align: right;">Human expert reference 87.0%; GPT5.4 17.5%, Opus4.8 16.0%, Kimi K2.6 7.5%, OpenCUA 1.5%, Holo 0.5%, Qwen3.6 and MiniMax M3 0%</td>
+<td>Generic GUI fluency is far from reliable professional execution</td>
+<td>Human result is one expert reference pass, not a population study; models use different provider interfaces and serving stacks</td>
+</tr>
+<tr class="odd">
+<td>Completion versus correctness</td>
+<td style="text-align: right;">GPT5.4 finishes 62.5% but succeeds on 17.5%; Opus4.8 finishes 49.5% but succeeds on 16.0%</td>
+<td>A “finished” run frequently leaves an invalid artifact</td>
+<td>Finish means no normalized execution error, not semantic completion</td>
+</tr>
+<tr class="even">
+<td>Workflow depth</td>
+<td style="text-align: right;">Strongest agents reach 22.1% on Part and 12.7% on Sketch; all seven evaluated agents score 0% on CAM, FEM, and TechDraw</td>
+<td>Specialized downstream state is a distinct competence gap</td>
+<td>Category sizes are uneven—only 3 FEM and 2 TechDraw tasks—so zero rates have wide uncertainty</td>
+</tr>
+<tr class="odd">
+<td>Interaction cost</td>
+<td style="text-align: right;">GPT5.4 averages 3.182M input tokens, 22.6K output tokens, and 104.6 actions; Opus4.8 averages 1.452M input tokens and 71.8 actions</td>
+<td>Long GUI work can be costly even when it fails</td>
+<td>Token accounting differs by provider; latency and cost are not fully comparable across hosted/self-hosted systems</td>
+</tr>
+<tr class="even">
+<td>Failure migration</td>
+<td style="text-align: right;">Weak agents often produce no valid file; stronger agents reach structural, geometric, and process checks but fail them</td>
+<td>Better screen control moves the bottleneck downstream rather than eliminating it</td>
+<td>Failure classes assign the first applicable reason, so later simultaneous defects are not counted</td>
+</tr>
+<tr class="odd">
+<td>Native structure</td>
+<td style="text-align: right;">Terminal-only agents can create visually plausible results but frequently have wrong document structure; the paper argues script-built shapes may not preserve engineer-editable sections</td>
+<td>Native editability, feature history, and process constraints belong in acceptance criteria</td>
+<td>The terminal ablation covers a stratified 50-task subset and may conflate interface with tool affordances</td>
+</tr>
+<tr class="even">
+<td>Executable diagnostics</td>
+<td style="text-align: right;">Eleven deterministic failure classes distinguish no file, corruption, lost precondition, wrong structure, tolerance errors, wrong geometry, wrong method, and missing diagnostics</td>
+<td>Evaluation can localize remediation instead of returning one opaque score</td>
+<td>Mid-episode causes such as why a click missed are deliberately left unattributed</td>
+</tr>
+<tr class="odd">
+<td>Public release discipline</td>
+<td style="text-align: right;">Project v0 releases 60 tasks across all 11 categories and holds back the remainder for rolling evaluation</td>
+<td>A retained holdout can slow benchmark overfitting</td>
+<td>Public page and paper report different primary slices (60 vs. 200), which must not be merged into one metric</td>
+</tr>
+</tbody>
+</table>
+<p>The central result is the gap between apparent completion and artifact validity. GPT5.4's 62.5% finish rate versus 17.5% success means that most “finished” runs do not survive the task-specific structural checks. CADWorld further reports death loops, missed compound mouse/keyboard interactions, incorrect workbenches, underconstrained sketches, wrong fields, omitted toolpaths, and wrong save paths. These are not cosmetic errors: a professional must reopen, inspect, edit, simulate, manufacture, or certify the resulting object.</p>
+<h3 id="methodological-critique-and-prior-work-comparison-1">Methodological critique and prior-work comparison</h3>
+<p>Earlier computer-use benchmarks test web navigation, desktop tasks, and professional workflows, while CAD benchmarks often score generated code, point clouds, meshes, rendered images, or short edits. CADWorld's advance is the combination of long-horizon screenshot interaction, a restricted action interface, native editable artifacts, human-authored task requirements, task-specific executable checks, and deterministic failure diagnostics.</p>
+<p>The design is unusually aligned with enterprise assurance: the VM is reset, the agent sees the same GUI a human uses, direct scripting and filesystem access are excluded, artifacts are extracted after termination, and evaluator outputs remain rerunnable. Keeping continuous geometry diagnostics beside a binary score supports both release decisions and debugging. A held-back task remainder is also a useful anti-overfitting mechanism.</p>
+<p>Several limits materially constrain inference. FreeCAD is open and reproducible but differs from commercial CAD kernels, UI conventions, cloud integrations, licensing, and downstream toolchains. The benchmark is coverage-oriented rather than sampled from enterprise incident frequency or business value. Models use different native computer-use interfaces, context policies, and provider infrastructure. Some category cells are tiny. The expert row is a single demonstration path. All-checks-pass scoring is appropriate for safety-critical engineering but may understate partial productivity in assistant workflows. No causal experiment separates model reasoning, GUI grounding, training exposure, and action-schema limitations.</p>
+<p>The artifact evaluator itself is part of the system under test. If it omits a material requirement, an agent can “pass” an invalid design. Enterprise adoption therefore needs evaluator validation, independent domain review, versioning, and challenge cases—not simply more agent testing.</p>
+<h3 id="reproducibility-and-enterprise-readiness-1">Reproducibility and enterprise readiness</h3>
+<p>The paper reports task packaging, action schemas, VM configuration, token and step accounting, deterministic evaluator families, failure rules, model adapters, and public project links to code and a VM image. CC BY 4.0 enables adaptation. Reproduction still depends on sizeable VM artifacts, hosted-model versions, provider interfaces, and the difference between the public 60-task release and the full 200-task manuscript evaluation.</p>
+<p><strong>Enterprise readiness:</strong> high for the measurement pattern—native artifact, task-specific checks, retained trace, diagnostic failure class, and held-out tasks; medium for adapting the harness to one low-risk internal professional workflow; low for autonomous engineering release or substituting these results for qualified human approval. <strong>Research Utility Score: 94/100</strong> (methodological rigor 24/25; quantitative traceability 23/25; reproducibility/artifacts 20/20; enterprise relevance 15/15; prior-work advance 12/15).</p>
+<h2 id="deep-paper-3--a-tool-schema-is-not-a-domain-semantic-contract">Deep paper 3 — A tool schema is not a domain-semantic contract</h2>
+<p><strong>Identity and status.</strong> <em>Symbolic Separation: Grounding Deep Agents in Knowledge Graphs for Trustworthy Operational Data Analytics</em>, Baibek Davletiyarov, Junaid Ahmed Khan, and Andrea Bartolini; submitted September 15, 2026; arXiv:2609.17107v1; cs.AI; preprint; CC BY 4.0. The authors link a public GitLab implementation of the EXASAGE Reflect Agent and a 75-question query set. Experiments use the public 49.9 TB M100 ExaData supercomputer telemetry corpus. (<a href="https://arxiv.org/abs/2609.17107">paper</a>, <a href="https://arxiv.org/html/2609.17107">full text</a>, <a href="https://gitlab.com/ecs-lab/multi-agent-system-public/exasage-reflect-agent-public">artifact</a>)</p>
+<h3 id="contribution-and-quantitative-claim-trace-2">Contribution and quantitative claim trace</h3>
+<p>The paper's “symbolic separation” principle lets the LLM reason freely but constrains data access to an ontology-conforming Virtual Knowledge Graph (VKG). The agent can propose entity extraction and SPARQL; deterministic components validate inputs, materialize the required graph, check ontology conformance, and execute the query. Complex cross-source relationships are defined before the agent acts rather than inferred across multiple tool calls.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>Decision meaning</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Data scale</td>
+<td style="text-align: right;">M100 ExaData covers 980+ compute nodes over 2.5 years, 49.9 TB uncompressed, across nine telemetry plugins with heterogeneous schemas</td>
+<td>The case study uses real operational complexity rather than toy tables</td>
+<td>It is one HPC environment, and the public corpus may differ from live enterprise access controls and drift</td>
+</tr>
+<tr class="even">
+<td>End-to-end design</td>
+<td style="text-align: right;">14 analytics questions × three architectures × two open-weight models = 84 trials; success requires retrieval plus code execution</td>
+<td>Architecture and model can be compared within one controlled workload</td>
+<td>Fourteen tasks are too few for a stable deployment estimate; no repeated seeds or confidence intervals are reported</td>
+</tr>
+<tr class="odd">
+<td>Correct end-to-end result</td>
+<td style="text-align: right;">Proposed EXASAGE Reflect + Qwen3.6 produces 12 correct, 1 incomplete, 1 failed (86%). Strongest non-symbolic path produces 4 correct, 1 incomplete, 2 hallucinated, 5 failed (29% correct), despite 6/14 nominal completions (43%)</td>
+<td>Nominal completion and correctness diverge; semantic grounding prevents plausible wrong outputs in this sample</td>
+<td>The paper manually classifies correctness and two architectures use different model backbones in the strongest comparison</td>
+</tr>
+<tr class="even">
+<td>Rigid workflow failure</td>
+<td style="text-align: right;">Prior EXASAGE Query Tool achieves 0/14 jointly successful with either model, even though its earlier templated result reported 93.6% accuracy</td>
+<td>Agentizing a rigid workflow does not remove its out-of-design brittleness</td>
+<td>One code step succeeded illegitimately by discovering a different MCP server, exposing experimental isolation as well as agent behavior</td>
+</tr>
+<tr class="odd">
+<td>Retrieval-level accuracy</td>
+<td style="text-align: right;">Direct datalake tool 36/75 (48%), rigid EXASAGE 42/75 (56%), proposed Reflect Agent 66/75 (88%)</td>
+<td>Decomposed, validated semantic access improves free-form retrieval</td>
+<td>Questions were translated from studies, drafted by an LLM, and rephrased by five researchers; they are not a random sample of production demand</td>
+</tr>
+<tr class="even">
+<td>Silent-error control</td>
+<td style="text-align: right;">Proposed system produced zero hallucinated answers on 14 end-to-end tasks; non-symbolic comparison produced two</td>
+<td>Fail-closed semantic validation can be preferable to plausible completion</td>
+<td>Zero of 14 is not evidence of zero production risk, and the definition depends on manual adjudication</td>
+</tr>
+<tr class="odd">
+<td>Token efficiency</td>
+<td style="text-align: right;">Median 300K tokens per successful proposed query versus 713K for the non-symbolic comparison—2.4× lower</td>
+<td>Domain structure can reduce reasoning and retry cost</td>
+<td>Individual proposed tasks still consume tens of thousands to 4.5M tokens; token cost is a proxy, not an end-to-end TCO</td>
+</tr>
+<tr class="even">
+<td>Retry behavior</td>
+<td style="text-align: right;">Proposed system usually uses zero or one retry; non-symbolic failures have median four retries and one task loops 14 times</td>
+<td>Semantic preconditions support fail-fast behavior and cost predictability</td>
+<td>Retry budgets and orchestration choices are implementation-specific</td>
+</tr>
+<tr class="odd">
+<td>Model/architecture interaction</td>
+<td style="text-align: right;">Proposed Qwen3.6 path reaches 86%; the same architecture with GPT-OSS-120B reaches 3/14; direct datalake is 2/14 with Qwen and 6/14 with GPT-OSS</td>
+<td>A larger model does not dominate architecture; both must be qualified together</td>
+<td>Because model and architecture interact, cross-row differences are not pure component effects</td>
+</tr>
+</tbody>
+</table>
+<p>The most valuable conceptual distinction is between an <strong>interface contract</strong> and a <strong>domain-semantic contract</strong>. A typed tool can prevent an invalid field or malformed call while still allowing the agent to compose a false relationship across valid calls. The VKG puts admissible entities, containment, equipment, software, metrics, time, and external signals into a queryable graph and rejects nonconforming constructs before execution.</p>
+<h3 id="methodological-critique-and-prior-work-comparison-2">Methodological critique and prior-work comparison</h3>
+<p>Knowledge-graph RAG, semantic layers, text-to-SQL, SPARQL agents, ontology-based data access, and constrained decoding all precede this paper. The new contribution is the combination of a deep-agent coordinator, specialist retrieval and code agents, ontology-constrained VKG access, deterministic pre-execution validation, clarification and state checkpoints, bounded reflection, and a direct non-symbolic ablation on a large operational corpus.</p>
+<p>The paper responsibly separates nominal completion from correctness and reports a cross-container escape rather than hiding it. It also analyzes token distribution and shows that context processing, not generated output, dominates multi-agent cost. The 75-query retrieval study helps explain why the prior 93.6% templated result collapses outside its ten archetypes.</p>
+<p>The evidence is still narrow. Fourteen end-to-end questions cannot support a general “trustworthy analytics” claim. Architecture and model choices are not fully crossed in the strongest headline comparison, and no repeated stochastic runs or uncertainty intervals are reported. The ontology, benchmark, system, and evaluation all come from the same research line, raising construct-validity and independence concerns. Correctness classification and “zero hallucinations” rely on manual inspection. The paper does not measure ontology authoring/maintenance cost, schema drift, poisoning, access-control enforcement, row/column security, purpose limitation, privacy, concurrency, failure recovery under live load, or human analyst time.</p>
+<p>The public implementation improves inspectability, but a project page is not an immutable reproducibility package. Enterprise use would require dependency locks, signed releases, ontology ownership, provenance for mappings, separation of duties, adversarial queries, audit of the escape path, and explicit authorization below the semantic layer.</p>
+<h3 id="reproducibility-and-enterprise-readiness-2">Reproducibility and enterprise readiness</h3>
+<p>The manuscript reports the ontology classes, pipeline stages, acceptance/clarification thresholds (0.7/0.5), state tuple, MCP tools, two model configurations, H100/vLLM environment, GraphDB and Polars components, question counts, per-query token and retry data, and the public data corpus. A GitLab repository exposes the Reflect Agent. Exact reproduction is limited by mutable dependencies, the 256K inference context, absence of repeated seeds, and incomplete evidence about annotations and the full runtime image.</p>
+<p><strong>Enterprise readiness:</strong> high for a read-only proof of concept over one bounded data domain and for encoding semantic relationships as policy; medium for analyst-assistance with provenance, authentication, authorization, and human review; low for broad write-capable cross-domain analytics or treating “zero hallucinations” as a production guarantee. <strong>Research Utility Score: 91/100</strong> (methodological rigor 22/25; quantitative traceability 24/25; reproducibility/artifacts 18/20; enterprise relevance 15/15; prior-work advance 12/15).</p>
+<h2 id="watchlist">Watchlist</h2>
+<h3 id="ground-truth-as-code--promising-for-live-data-evaluation-but-the-released-evidence-is-not-independently-reproducible">Ground-truth-as-code — promising for live-data evaluation, but the released evidence is not independently reproducible</h3>
+<p><em>Skill-based Agentic Evaluation for Real-time Data Science Tasks</em>, Aniruddha Tamhane, Raghavendra Addanki, Ayushi Aggarwal, Aditya Bansal, Rui Wang, Charles Menguy, and Swati Jain; submitted September 15, 2026; arXiv:2609.16487; cs.AI/cs.LG/cs.MA; CC BY 4.0. (<a href="https://arxiv.org/abs/2609.16487">paper</a>)</p>
+<p><strong>Paper Facts.</strong> The framework encodes each expected answer as an executable function that recomputes ground truth from current data, then decomposes both answer and reference into atomic factoids and scores precision, recall, and accuracy independent of prose, list, table, or HTML format. In a human–LLM agreement study on an internally developed production ML skill using a synthetic database that reproduces production schemas and relationships, the authors report a 29% relative improvement in Matthews Correlation Coefficient over natural-language ground truth and 16% fewer tokens per case. A self-directed baseline without explicit ground truth is reported as anti-correlated with human judgment.</p>
+<p><strong>Why Watchlist.</strong> This is a high-value measurement pattern for non-stationary dashboards, operations, finance, and data science, but the evidence is not yet portable. The production skill, schemas, reference functions, synthetic database, human labels, prompts, error breakdown, and code are not released from the paper page. The abstract reports relative MCC improvement without the absolute MCC values, sample size, confidence intervals, or task strata. Executable reference code can also be wrong, stale, overfit to schemas, or unsafe if it receives broader data access than the agent. <strong>Watch trigger:</strong> promote after an auditable public artifact or an internal reproduction shows absolute expert agreement, evaluator mutation-test coverage, temporal stability, access controls, and clear wins over deterministic comparison without an LLM judge. <strong>Research Utility Score: 82/100.</strong></p>
+<h3 id="echopath--large-replay-efficiency-gains-but-start-state-rejection-and-interface-drift-remain-deployment-blockers">EchoPath — large replay-efficiency gains, but start-state rejection and interface drift remain deployment blockers</h3>
+<p><em>EchoPath: Execution-Level Replayable Memory for GUI Agents</em>, Yao Zhao, Aditya Shanmugham, Swastik Roy, and Yanxun Xu; submitted September 15, 2026; arXiv:2609.16635; cs.AI; arXiv perpetual non-exclusive license. (<a href="https://arxiv.org/abs/2609.16635">paper</a>, <a href="https://arxiv.org/html/2609.16635">full text</a>)</p>
+<p><strong>Paper Facts.</strong> EchoPath promotes only artifact-validated GUI traces into versioned memories with intent keys, application/state preconditions, fixed versus flexible parameters, screenshots, target crops, validation provenance, and lifecycle state. In a paired two-pass OSWorld-Verified design, it intentionally changes resolution from 1920×1080 to 1600×900. Across 159 active memories, Codex replay completes 145/159 (91.2%) with median 20,370 tokens and 127.5 seconds; a Synapse planning-memory baseline achieves 91.8% with median 586,386 tokens and 315.7 seconds. Retrieval remains 100% in an offline stress test as the active library grows from 159 to 659 memories. Random-scale target re-aiming accepts 95% of 200 pointer cases; 188 of 190 accepted cases are within two pixels. Flexible rebinding accepts all 50 declared substitutions and rejects all 50 forbidden mutations. However, the state gate rejects only 39/50 incompatible starts (78% accuracy).</p>
+<p><strong>Why Watchlist.</strong> The results support a bounded efficiency claim for repeated tasks under controlled compatibility, not general autonomous GUI automation. The same tasks are replayed on the second pass; semantic task variation, software upgrades, localization, theme changes, responsive layouts, near-duplicate controls, compromised memories, privacy, and enterprise repository governance remain untested. An incompatible-start false accept can replay a valid procedure in the wrong state. No public implementation link or immutable release is provided on the paper page. <strong>Watch trigger:</strong> promote after independent replication with unseen task variants, live UI/version drift, adversarial memory poisoning, privacy controls, signed provenance, and ≥99.9% rejection of materially incompatible or unauthorized states on the target application. <strong>Research Utility Score: 87/100.</strong></p>
+<h2 id="cross-paper-synthesis">Cross-paper synthesis</h2>
+<h3 id="independent-analysis--the-operational-evidence-plane">Independent Analysis — the operational evidence plane</h3>
+<p>The three deep papers identify different points where an output-centric architecture loses the evidence needed for enterprise control:</p>
+<ol type="1">
+<li><strong>Across time:</strong> BLINDSPOT shows that the same current request can be safe or unsafe depending on previous state, authorization, and actions. The unit of evidence is the trajectory.</li>
+<li><strong>Across persistence:</strong> CADWorld shows that a correct-looking terminal screen or completion message can hide an invalid native object. The unit of acceptance is the saved artifact and its downstream invariants.</li>
+<li><strong>Across semantics:</strong> Symbolic Separation shows that individually valid calls can compose an invalid relationship. The unit of policy is the domain graph, not the API syntax.</li>
+</ol>
+<p>These are complementary controls. A trajectory log without artifact checks can faithfully record the creation of an unusable file. Artifact checks without trajectory policy can approve an object produced through unauthorized data or actions. A semantic data layer without longitudinal evaluation cannot detect delayed authorization drift or repeated-run fragility. The shared architecture should therefore retain evidence identity from context and policy, through action and tool execution, into native artifacts and domain consequences.</p>
+<h2 id="visual-1--operational-evidence-plane">Visual 1 — operational evidence plane</h2>
+<pre class="text"><code>INTENT + CONTEXT
+      │
+      ▼
+[POLICY / AUTHORIZATION STATE] ───────────────┐
+      │                                       │
+      ▼                                       │
+[TRAJECTORY EVIDENCE]                         │
+ messages · tool calls · observations         │
+ state deltas · refusal transitions · retries │
+      │                                       │
+      ├──────────────┐                        │
+      ▼              ▼                        │
+[DOMAIN-SEMANTIC]  [ACTION / TOOL]             │
+ graph contract     execution contract         │
+ validated joins    identity + effect evidence │
+      │              │                        │
+      └──────┬───────┘                        │
+             ▼                                │
+      [NATIVE ARTIFACT]                       │
+ structure · constraints · provenance         │
+ downstream invariants · version              │
+             │                                │
+             ▼                                │
+      [ACCEPT / REVIEW / REJECT] ◄────────────┘
+ deterministic checks + semantic review + human release</code></pre>
+<h2 id="visual-2--what-each-evaluation-surface-can-and-cannot-prove">Visual 2 — what each evaluation surface can and cannot prove</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Evaluation surface</th>
+<th>Can establish</th>
+<th>Cannot establish by itself</th>
+<th>Research signal</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Final response</td>
+<td>What the agent said at the end</td>
+<td>Whether unsafe state changed, whether refusal persists, whether the artifact is valid</td>
+<td>BLINDSPOT final-response-only misses 22% of unsafe and 18% of over-refusal cases</td>
+</tr>
+<tr class="even">
+<td>Trajectory + state</td>
+<td>How messages, actions, policy, authorization, and environment evolved</td>
+<td>Whether a professional artifact satisfies domain-specific native invariants</td>
+<td>BLINDSPOT deterministic+semantic reaches 96% agreement with final adjudication</td>
+</tr>
+<tr class="odd">
+<td>Screenshot / visual similarity</td>
+<td>What was visible to agent and reviewer</td>
+<td>Native structure, editability, constraints, feature history, simulation/manufacturing state</td>
+<td>CADWorld completion greatly exceeds all-checks success</td>
+</tr>
+<tr class="even">
+<td>Native artifact evaluator</td>
+<td>Whether task-specific structural and numerical invariants pass</td>
+<td>Whether source data relationships and access were semantically authorized</td>
+<td>CADWorld checks <code>.FCStd</code> structure and downstream state</td>
+</tr>
+<tr class="odd">
+<td>Typed tool schema</td>
+<td>Whether a call is syntactically valid</td>
+<td>Whether cross-source relationships are true or permitted</td>
+<td>Symbolic Separation distinguishes interface from semantic contract</td>
+</tr>
+<tr class="even">
+<td>Domain-semantic graph</td>
+<td>Whether entities and relationships conform before execution</td>
+<td>Long-horizon safety, stochastic failure, and post-action artifact quality</td>
+<td>EXASAGE Reflect reaches 66/75 retrieval correctness versus 36/75 direct datalake</td>
+</tr>
+</tbody>
+</table>
+<h2 id="enterprise-ai-enhancement-backlog">Enterprise AI Enhancement Backlog</h2>
+<h3 id="priority-method-and-uncertainty">Priority method and uncertainty</h3>
+<p>The <strong>Future Enterprise AI Priority Score</strong> is a transparent decision aid, not a probability, ROI forecast, or approval. It weights strategic/business value 25%, technical leverage 20%, evidence strength 20%, enterprise readiness 15%, feasibility 10%, and risk-adjusted differentiation 10%. Component values are analyst judgments grounded in today's verified evidence. Differences below roughly three points are not decision-significant without internal workflow volumes, loss severity, artifact types, identity architecture, data semantics, evaluator ownership, tool inventory, SLOs, cost, privacy, legal, security, and adoption context.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: right;">#</th>
+<th>Enhancement</th>
+<th>Decision band</th>
+<th style="text-align: right;">Strategic</th>
+<th style="text-align: right;">Leverage</th>
+<th style="text-align: right;">Evidence</th>
+<th style="text-align: right;">Readiness</th>
+<th style="text-align: right;">Feasibility</th>
+<th style="text-align: right;">Differentiation</th>
+<th style="text-align: right;">Weighted total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td>Stateful trajectory safety qualification</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">96</td>
+<td style="text-align: right;">97</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;">89</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;"><strong>93.3</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td>Native-artifact validation and structural acceptance gate</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">83</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;"><strong>91.1</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td>Domain-semantic access plane</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">96</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">76</td>
+<td style="text-align: right;">76</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;"><strong>87.9</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td>Evidence-linked agent trace schema</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">76</td>
+<td style="text-align: right;">87</td>
+<td style="text-align: right;"><strong>86.2</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td>Ground-truth-as-code dynamic evaluation</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">83</td>
+<td style="text-align: right;"><strong>85.6</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td>Cross-domain policy-composition test suite</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;">73</td>
+<td style="text-align: right;">72</td>
+<td style="text-align: right;">87</td>
+<td style="text-align: right;"><strong>84.0</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td>Versioned replayable GUI procedure registry</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">77</td>
+<td style="text-align: right;">66</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;"><strong>82.7</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td>Broad neurosymbolic operational-analytics rollout</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">58</td>
+<td style="text-align: right;">54</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;"><strong>82.1</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9</td>
+<td>Autonomous professional GUI artifact release</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">83</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;"><strong>74.1</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">10</td>
+<td>Response-only model score as release authority</td>
+<td>Deprioritize for Now</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">42</td>
+<td style="text-align: right;">68</td>
+<td style="text-align: right;">62</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;"><strong>51.9</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="prototype-soon">Prototype Soon</h3>
+<h4 id="1-stateful-trajectory-safety-qualification--933">1. Stateful trajectory safety qualification — 93.3</h4>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability / Safety &amp; Governance.</li>
+<li><strong>Research signal and supporting papers:</strong> BLINDSPOT finds delayed failures, post-refusal failures, higher Fail@k under repeated execution, and stateful UCR above text-only controls. <strong>Evidence label: Paper Fact.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> One-turn and final-answer gates can approve agents that later comply, accumulate unsafe state, or fail stochastically; over-refusal can also destroy usefulness.</li>
+<li><strong>Proposed future capability:</strong> An isolated simulator replays representative benign and adversarial workflows with mutable environment state, evolving authorization, adaptive users, and repeated runs. It records UCR, correct refusal, benign completion, over-refusal, indeterminate rate, Fail@k, post-refusal failure, and severity-weighted effects.</li>
+<li><strong>Likely architectural placement:</strong> evaluation, observability, orchestration, security/governance, and human-review layer.</li>
+<li><strong>Expected business value:</strong> reliability, risk reduction, quality, customer trust, and faster evidence-backed releases.</li>
+<li><strong>Technical value:</strong> Makes longitudinal and stochastic failure observable; separates behavioral failure from infrastructure incompleteness.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong preprint benchmark with public artifact; high readiness for sandboxed qualification, not for transferring thresholds. <strong>Confidence: High. Horizon: Now. Effort: M.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> Representative workflow taxonomy, versioned policies, simulated tools/state, authoritative effect checks, model/configuration pinning, evaluator registry, privacy-safe traces, and reviewers for ambiguous cases.</li>
+<li><strong>Key risks:</strong> Synthetic scenarios, benchmark overfitting, judge bias, high run cost, privacy in traces, false assurance from incomplete policy models, and metric gaming.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build the enterprise-specific scenarios and policy semantics; borrow or partner for harness components.</strong> The differentiating evidence lives in internal state and rules that a vendor cannot infer safely.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Run 100 isolated scenarios—50 benign, 50 adversarial—ten times across one agent version. Inject authorization expiry, changed recipients, state rollback, environment injection, and continued pressure after refusal. Compare full-trajectory labels with final-response-only labels.</li>
+<li><strong>Success metrics and stop conditions:</strong> Success: ≥15% additional material failures or over-refusals localized; ≥95% deterministic/semantic agreement on reviewed labels; complete provenance; bounded per-run cost. Stop if reviewers cannot reproduce labels, infrastructure errors exceed 5%, or added detection is &lt;3% after scenario validation.</li>
+<li><strong>Roadmap trigger:</strong> Two consecutive model/configuration releases show stable evaluator agreement and the harness prevents or predicts at least one material pre-production failure that existing tests miss. Internal incident severity and acceptable release latency are required before gating production.</li>
+</ul>
+<h4 id="2-native-artifact-validation-and-structural-acceptance-gate--911">2. Native-artifact validation and structural acceptance gate — 91.1</h4>
+<ul>
+<li><strong>Category:</strong> AI Software Engineering / Evaluation &amp; Observability.</li>
+<li><strong>Research signal and supporting papers:</strong> CADWorld's strongest agent succeeds on 17.5% of 200 tasks despite a 62.5% finish rate; native structure, geometry, and construction process create downstream failures. <strong>Evidence label: Paper Fact.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> Enterprise agents increasingly create spreadsheets, code, configurations, CAD, tickets, workflows, and reports whose internal structure—not presentation—determines downstream safety and editability.</li>
+<li><strong>Proposed future capability:</strong> A pluggable acceptance service executes task-specific checks against the native output, validates required structure and numerical invariants, retains diagnostics and provenance, and routes pass/review/reject before publication or downstream execution.</li>
+<li><strong>Likely architectural placement:</strong> applications, developer platform, evaluation, data platform, and human-review layer.</li>
+<li><strong>Expected business value:</strong> quality, reliability, rework reduction, faster review, risk reduction, and safer automation.</li>
+<li><strong>Technical value:</strong> Converts ambiguous “looks correct” evaluation into executable, repeatable artifact contracts.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong benchmark method with code/project assets; highly transferable pattern but domain checks must be rebuilt. <strong>Confidence: High. Horizon: Now. Effort: M.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> Native format access, artifact parsers, domain-owner specifications, golden examples, mutation tests, versioned evaluators, sandbox execution, provenance, and a human exception path.</li>
+<li><strong>Key risks:</strong> Incomplete or incorrect evaluators, brittleness under format versions, malicious artifacts, check maintenance, false negatives, and automation bias around passed checks.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build task-specific checks; buy commodity parsers/sandboxes where mature; partner with domain owners.</strong> Acceptance semantics are organization- and workflow-specific.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Select 25 historical artifacts from one low-risk workflow, encode 8–15 high-value invariants, mutate known defects, and compare executable findings with existing visual/manual review. Do not release generated outputs automatically.</li>
+<li><strong>Success metrics and stop conditions:</strong> Success: ≥90% seeded-defect detection, ≥95% evaluator repeatability, ≥20% review-time reduction in shadow mode, and no missed high-severity defect in the challenge set. Stop if evaluator coverage cannot be independently audited or format drift causes &gt;5% unexplained failures.</li>
+<li><strong>Roadmap trigger:</strong> Domain owners approve the contract, mutation coverage and retrospective defect detection remain stable across two format versions, and human-review burden decreases without missed material defects.</li>
+</ul>
+<h4 id="3-domain-semantic-access-plane--879">3. Domain-semantic access plane — 87.9</h4>
+<ul>
+<li><strong>Category:</strong> Data &amp; Knowledge Infrastructure / RAG &amp; Knowledge.</li>
+<li><strong>Research signal and supporting papers:</strong> Symbolic Separation reports 66/75 correct retrievals and 12/14 correct end-to-end tasks with ontology-constrained access, versus 36/75 and 4/14 correct for the strongest direct datalake comparison; median successful-query tokens are 2.4× lower. <strong>Evidence label: Paper Fact.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> Typed APIs and schemas do not prevent agents from inventing joins, confusing metrics, or composing relationships that are syntactically valid but semantically false.</li>
+<li><strong>Proposed future capability:</strong> A read-only semantic mediation layer maps governed entities, relationships, metrics, time, provenance, and access constraints into a versioned ontology or semantic graph; agent queries must validate against it before execution and ambiguities request clarification.</li>
+<li><strong>Likely architectural placement:</strong> retrieval/knowledge, data platform, orchestration, security/governance, and observability.</li>
+<li><strong>Expected business value:</strong> quality, reliability, analyst productivity, lower retry cost, and risk reduction from silent data-integrity errors.</li>
+<li><strong>Technical value:</strong> Moves relational composition from free-form inference into inspectable, testable structure and enables fail-fast rejection.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Real large telemetry corpus and public prototype, but small end-to-end sample and one domain. <strong>Confidence: Moderate. Horizon: 3–6 months. Effort: L.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> Bounded domain, authoritative glossary and relationship owners, read-only credentials, data lineage, identity/authorization, schema registry, mapping provenance, semantic tests, and cost telemetry.</li>
+<li><strong>Key risks:</strong> Ontology staleness or poisoning, mapping errors, maintenance cost, coverage gaps, false confidence, data leakage, slow graph construction, and bypass through alternate tools.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Hybrid.</strong> Buy or adopt graph/semantic infrastructure; build domain semantics and validators; partner with data owners and security. Evidence does not favor one vendor.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Model one domain with 20–50 entities/relations, run 30 representative questions through semantic and direct-query paths with identical read-only data, and independently adjudicate correctness, silent errors, retries, latency, and tokens.</li>
+<li><strong>Success metrics and stop conditions:</strong> Success: ≥20-point correctness gain or ≥50% reduction in silent relational errors, no unauthorized access, ≥25% lower retry/token cost, and ≤10% unanswered due to missing semantics. Stop if ontology maintenance exceeds observed benefit or direct typed APIs already encode all tested relations.</li>
+<li><strong>Roadmap trigger:</strong> Independent data owners approve relationship semantics, temporal/schema-drift tests pass, and the read-only pilot maintains benefit for at least two data-release cycles.</li>
+</ul>
+<h3 id="prepare-foundations">Prepare Foundations</h3>
+<h4 id="4-evidence-linked-agent-trace-schema--862">4. Evidence-linked agent trace schema — 86.2</h4>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability / MLOps &amp; Platform.</li>
+<li><strong>Research signal and supporting papers:</strong> BLINDSPOT requires messages, tool calls, policy state, authorization, observations, and environment deltas; CADWorld retains screenshots, actions, logs, artifacts, and evaluator diagnostics; Symbolic Separation traces execution graphs and tokens. <strong>Evidence label: Independent Analysis.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> Logs are often component-local and cannot connect a model decision to the policy version, tool effect, data semantics, native artifact, evaluator, or human release decision.</li>
+<li><strong>Proposed future capability:</strong> A common evidence envelope assigns stable IDs to task, trajectory, model/config, context source, policy/authorization state, logical operation, tool effect, data mapping, artifact version, evaluator version, and review outcome.</li>
+<li><strong>Likely architectural placement:</strong> observability, orchestration, model gateway, security/governance, developer platform, and human-review layer.</li>
+<li><strong>Expected business value:</strong> incident response, auditability, reliability, reuse of evaluation data, and lower debugging/review cost.</li>
+<li><strong>Technical value:</strong> Enables causal trace reconstruction and joins evidence across time, tools, data, and artifacts.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong cross-paper need; implementation standards and internal topology are unknown. <strong>Confidence: High on need, Moderate on design. Horizon: 3–6 months. Effort: L.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> Identity model, schema ownership, privacy classification, retention policy, tamper-evident storage, redaction, time synchronization, and connector instrumentation.</li>
+<li><strong>Key risks:</strong> Sensitive-data concentration, high telemetry cost, schema sprawl, missing capture, ambiguous semantics, and false belief that integrity proves truth.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build the canonical envelope and use open telemetry/storage components.</strong> Vendor observability can carry fields but should not define enterprise evidence semantics alone.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Instrument one sandbox workflow end to end and verify that five injected failures can be reconstructed without relying on ad hoc component logs.</li>
+<li><strong>Success metrics and stop conditions:</strong> Success: 100% required identity coverage, &lt;2% orphaned events, deterministic replay of evaluator inputs, and incident reconstruction in &lt;30 minutes. Stop if privacy controls or retention cannot be enforced before wider capture.</li>
+<li><strong>Roadmap trigger:</strong> Two independent teams can reconstruct the same workflow and agree on cause/effect using only the evidence envelope and approved artifacts.</li>
+</ul>
+<h4 id="5-ground-truth-as-code-dynamic-evaluation--856">5. Ground-truth-as-code dynamic evaluation — 85.6</h4>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability / Data &amp; Knowledge Infrastructure.</li>
+<li><strong>Research signal and supporting papers:</strong> Skill-based Agentic Evaluation reports 29% relative MCC improvement and 16% lower token use when executable references recompute answers from changing data. Symbolic Separation and CADWorld independently support executable rather than purely textual truth. <strong>Evidence label: Enterprise Inference.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> Static expected answers rot when dashboards, databases, prices, inventories, incidents, or time windows change.</li>
+<li><strong>Proposed future capability:</strong> Versioned reference functions execute in read-only sandboxes against time-pinned data snapshots, emit atomic expected facts with provenance, and compare agent outputs across formats.</li>
+<li><strong>Likely architectural placement:</strong> evaluation, data platform, developer platform, and observability.</li>
+<li><strong>Expected business value:</strong> quality, faster regression testing, reduced benchmark maintenance, and reliable evaluation of live-data agents.</li>
+<li><strong>Technical value:</strong> Keeps reference truth synchronized with the governed system and separates content from presentation.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Promising production-adjacent paper but missing public artifacts and absolute results. <strong>Confidence: Moderate. Horizon: 3–6 months. Effort: M.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> Read-only test data, deterministic snapshots, sandboxed reference execution, reference-code review, fact schema, evaluator mutation tests, and ownership for schema changes.</li>
+<li><strong>Key risks:</strong> Reference bugs, non-determinism, excessive data privilege, leakage of sensitive values, circular validation, and judge errors during fact extraction.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build for high-value internal data tasks; buy ordinary test orchestration.</strong> Reference semantics are inseparable from the domain.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Implement 20 reference functions for one rapidly changing dashboard workflow and compare them with the current static-answer suite across four weekly snapshots.</li>
+<li><strong>Success metrics and stop conditions:</strong> Success: ≥0.15 absolute MCC gain against human labels, ≥95% seeded-reference-mutation detection, zero write permissions, and stable results on replayed snapshots. Stop if an LLM judge adds no benefit over deterministic fact comparison or reference maintenance exceeds static-suite effort.</li>
+<li><strong>Roadmap trigger:</strong> Independent reviewers approve the references and the dynamic suite catches at least one real stale-answer regression without increasing high-severity false passes.</li>
+</ul>
+<h4 id="6-cross-domain-policy-composition-test-suite--840">6. Cross-domain policy-composition test suite — 84.0</h4>
+<ul>
+<li><strong>Category:</strong> Safety &amp; Governance / AI Security.</li>
+<li><strong>Research signal and supporting papers:</strong> BLINDSPOT reports the highest UCR slice in cross-domain scenarios for every evaluated model and shows policy/state composition as a distinct failure surface. <strong>Evidence label: Paper Fact.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> Agents frequently cross email, files, CRM, finance, code, and data systems; each local action may be allowed while the composed workflow violates purpose, segregation of duties, or approval scope.</li>
+<li><strong>Proposed future capability:</strong> A scenario library encodes cross-system identities, data classifications, authorization lifetimes, approval dependencies, compensating controls, and prohibited compositions; qualification tests exercise boundary transitions and partial failures.</li>
+<li><strong>Likely architectural placement:</strong> orchestration, security/governance, identity/authorization, evaluation, and human-review layer.</li>
+<li><strong>Expected business value:</strong> risk reduction, compliance evidence, and safer expansion of agent scope.</li>
+<li><strong>Technical value:</strong> Tests policy composition rather than individual connectors in isolation.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong benchmark signal; internal policy graph and tool semantics are prerequisites. <strong>Confidence: Moderate. Horizon: 3–6 months. Effort: L.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> Enterprise policy inventory, identity federation, data classification, tool-effect contracts, role and task scopes, approval records, and incident examples.</li>
+<li><strong>Key risks:</strong> Combinatorial explosion, stale policies, unrealistic simulators, governance ownership gaps, and leaking sensitive incident details into test data.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build core scenarios with risk/compliance owners; use vendor simulators only as infrastructure.</strong></li>
+<li><strong>Minimum reversible validation experiment:</strong> Model ten high-risk workflows spanning two systems and inject recipient change, stale approval, copied authorization, rollback, and conflicting purposes.</li>
+<li><strong>Success metrics and stop conditions:</strong> Success: all known prohibited compositions are blocked or escalated, benign completion ≥90%, and evidence traces identify the governing rule. Stop if policies cannot be represented unambiguously or scenario coverage remains ownerless.</li>
+<li><strong>Roadmap trigger:</strong> Security and business owners jointly sign off the policy graph and the suite becomes a stable pre-release control for two consecutive integrations.</li>
+</ul>
+<h3 id="monitor-for-maturity">Monitor for Maturity</h3>
+<h4 id="7-versioned-replayable-gui-procedure-registry--827">7. Versioned replayable GUI procedure registry — 82.7</h4>
+<ul>
+<li><strong>Category:</strong> Memory &amp; Context / Human-AI Workflow.</li>
+<li><strong>Research signal and supporting papers:</strong> EchoPath reports 91.2% replay success on the same 159 tasks with median tokens reduced from 586,386 to 20,370 versus a planning-memory baseline; CADWorld shows native artifact validation is essential. <strong>Evidence label: Paper Fact + Enterprise Inference.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> Repeated GUI tasks consume tokens, latency, and attention when agents rediscover the same procedure each time.</li>
+<li><strong>Proposed future capability:</strong> Promote only validated, signed GUI trajectories into a registry with state preconditions, fixed/flexible parameters, visual evidence, artifact checks, lifecycle status, ownership, expiry, and rollback; reject incompatible starts before any action.</li>
+<li><strong>Likely architectural placement:</strong> agent layer, orchestration, memory/context service, developer platform, endpoint security, and human-review layer.</li>
+<li><strong>Expected business value:</strong> productivity, speed, cost reduction, and consistent execution of repetitive work.</li>
+<li><strong>Technical value:</strong> Converts experience into a bounded callable procedure rather than unstructured prompt context.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong controlled replay evidence, weak drift/security/governance evidence; 78% incompatible-state rejection is insufficient for consequential use. <strong>Confidence: Moderate. Horizon: 6–12 months. Effort: L.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> Stable applications, endpoint instrumentation, signed traces, native artifact validation, state contracts, secret redaction, identity and authorization, version pinning, revocation, and human takeover.</li>
+<li><strong>Key risks:</strong> Wrong-state execution, UI drift, poisoning, privacy leakage from screenshots, stale credentials, unauthorized parameter rebinding, shared-memory contagion, and brittle recovery.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Partner or pilot with an endpoint-automation vendor while building enterprise governance and acceptance checks.</strong> Evidence does not justify a full custom production runtime yet.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Replay 20 low-risk, read-only tasks under controlled window moves, resolution changes, theme changes, and decoy controls; no external writes.</li>
+<li><strong>Success metrics and stop conditions:</strong> Success: ≥95% completion, 100% artifact/effect validation, ≥80% token reduction, and ≥99.9% rejection of unauthorized or materially incompatible states. Stop on any wrong-account/action event, secret retention, or unverifiable effect.</li>
+<li><strong>Roadmap trigger:</strong> Independent replication on unseen task variants plus signed provenance, privacy review, drift qualification, and near-zero false acceptance under adversarial state changes.</li>
+</ul>
+<h4 id="8-broad-neurosymbolic-operational-analytics-rollout--821">8. Broad neurosymbolic operational-analytics rollout — 82.1</h4>
+<ul>
+<li><strong>Category:</strong> Data &amp; Knowledge Infrastructure / Agentic AI.</li>
+<li><strong>Research signal and supporting papers:</strong> Symbolic Separation reports large gains in one HPC telemetry domain; public implementation exists, but only 14 end-to-end questions and 75 retrieval questions were evaluated. <strong>Evidence label: Uncertainty.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> Cross-source operational analysis is high value but vulnerable to schema and relationship hallucination.</li>
+<li><strong>Proposed future capability:</strong> A portfolio of governed semantic domains, each with ontology ownership, clarification, pre-execution validation, read/write separation, provenance, and evaluation.</li>
+<li><strong>Likely architectural placement:</strong> data platform, retrieval/knowledge, orchestration, security/governance, and human-review layer.</li>
+<li><strong>Expected business value:</strong> analyst productivity, lower query cost, reliability, and strategic differentiation in operational intelligence.</li>
+<li><strong>Technical value:</strong> Reuses semantic structure across agents and model versions.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> One promising domain study; insufficient evidence for broad rollout or writes. <strong>Confidence: Low–Moderate. Horizon: 12+ months. Effort: XL.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> Successful bounded pilot, semantic governance operating model, ontology CI/CD, lineage, access control, schema-drift handling, mapping review, and cost allocation.</li>
+<li><strong>Key risks:</strong> Ontology debt, organizational ownership disputes, security bypass, cross-domain contradictions, high maintenance cost, latency, and model-dependent orchestration.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Partner for platform, build semantics, and keep rollout incremental.</strong> No evidence supports a single enterprise-wide ontology or vendor.</li>
+<li><strong>Minimum reversible validation experiment:</strong> After the bounded pilot, add a second unrelated read-only domain and test whether shared infrastructure works without forcing incompatible semantics.</li>
+<li><strong>Success metrics and stop conditions:</strong> Success: maintained correctness and cost gains across two domains, independent semantic review, and no bypass. Stop if marginal domain onboarding exceeds six months or semantic inconsistencies cannot be governed.</li>
+<li><strong>Roadmap trigger:</strong> Two domain pilots survive schema changes and adversarial query tests while showing measurable analyst value and manageable ownership cost.</li>
+</ul>
+<h4 id="9-autonomous-professional-gui-artifact-release--741">9. Autonomous professional GUI artifact release — 74.1</h4>
+<ul>
+<li><strong>Category:</strong> Human-AI Workflow / Agentic AI.</li>
+<li><strong>Research signal and supporting papers:</strong> CADWorld reports a large expert gap, 0% across CAM/FEM/TechDraw, and structural errors even after apparent completion; EchoPath shows efficient replay only after validated first runs. <strong>Evidence label: Paper Fact.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> Autonomous release could accelerate engineering and other professional work, but errors can propagate into physical, financial, or regulated consequences.</li>
+<li><strong>Proposed future capability:</strong> Eventually permit agents to produce and release professional native artifacts under executable checks, dual control, and licensed human approval.</li>
+<li><strong>Likely architectural placement:</strong> applications, agent layer, evaluation, security/governance, and human-review layer.</li>
+<li><strong>Expected business value:</strong> productivity, speed, quality consistency, and differentiation—if reliability becomes defensible.</li>
+<li><strong>Technical value:</strong> End-to-end closed-loop automation over complex native artifacts.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Benchmark evidence strongly argues against current autonomy. <strong>Confidence: High that production release is premature. Horizon: 12+ months. Effort: XL.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> Domain-qualified evaluators, traceability, native editability, simulation/manufacturing verification, independent review, liability policy, fail-safe rollback, and validated human factors.</li>
+<li><strong>Key risks:</strong> Safety incidents, invalid physical designs, regulatory breach, liability, automation bias, workforce deskilling, and check incompleteness.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Partner for research; do not buy production autonomy as a black box.</strong></li>
+<li><strong>Minimum reversible validation experiment:</strong> Assistance-only mode on historical tasks with no production release; require expert comparison and native checks.</li>
+<li><strong>Success metrics and stop conditions:</strong> Success: &gt;90% task success on an internally representative held-out set, zero high-severity misses, and demonstrable review-time reduction. Stop on any unsafe artifact escaping the sandbox or if experts cannot diagnose failures.</li>
+<li><strong>Roadmap trigger:</strong> Independent multi-site evidence, target-stack reproduction, qualified evaluator coverage, and accountable human release controls.</li>
+</ul>
+<h3 id="deprioritize-for-now">Deprioritize for Now</h3>
+<h4 id="10-response-only-model-score-as-release-authority--519">10. Response-only model score as release authority — 51.9</h4>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability.</li>
+<li><strong>Research signal and supporting papers:</strong> BLINDSPOT final-response-only misses 22% of unsafe and 18% of over-refusal outcomes; CADWorld separates finish from native correctness; Symbolic Separation separates nominal completion from correct data. <strong>Evidence label: Paper Fact.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> A cheap single score is attractive but creates false assurance across stateful, artifact-producing, domain-constrained agents.</li>
+<li><strong>Proposed future capability:</strong> A leaderboard or single final-output judge used as the primary release gate.</li>
+<li><strong>Likely architectural placement:</strong> evaluation and model gateway.</li>
+<li><strong>Expected business value:</strong> low evaluation cost and fast comparison.</li>
+<li><strong>Technical value:</strong> useful only as a coarse screening signal, not an authority.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Mature as a benchmark convenience; contradicted as a sufficient enterprise control. <strong>Confidence: High. Horizon: Now only for screening. Effort: S.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> None beyond prompts and judges, which is precisely why misuse is tempting.</li>
+<li><strong>Key risks:</strong> missed delayed failures, unsafe state transitions, invalid artifacts, silent semantic errors, judge bias, and metric gaming.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Do not invest as a standalone release authority.</strong> Retain only as one low-cost feature inside a layered evidence system.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Compare current response-only results with trajectory, artifact, and semantic checks on 100 archived workflows.</li>
+<li><strong>Success metrics and stop conditions:</strong> Continue only if response-only has no material false passes relative to layered evidence; otherwise cap it as triage. One high-severity false pass is sufficient to reject standalone authority.</li>
+<li><strong>Roadmap trigger:</strong> None for consequential production decisions without independent state, artifact, and semantic evidence.</li>
+</ul>
+<h2 id="enterprise-ai-architecture-implications">Enterprise AI Architecture Implications</h2>
+<h3 id="independent-analysis--1224-month-evolution">Independent Analysis — 12–24 month evolution</h3>
+<p>Today's evidence favors an architecture in which the model is an interchangeable reasoning component inside a governed execution and evidence system:</p>
+<ol type="1">
+<li><strong>Model gateway:</strong> pin model/configuration identity, collect cost and latency, and route by qualified task class. No model-wide “safe” label should substitute for scenario evidence.</li>
+<li><strong>Context and memory services:</strong> store provenance, lifecycle, purpose, and version for retrieved context and replayable procedures; treat promotion and replay as gated operations.</li>
+<li><strong>Agent orchestration:</strong> make trajectory state, retries, refusal transitions, authorization changes, and environment deltas first-class. Preserve logical-operation identity across components.</li>
+<li><strong>Identity and authorization:</strong> bind task, user, agent, domain, tool, and data scope; expire authority and make cross-domain composition visible.</li>
+<li><strong>Knowledge systems:</strong> add semantic contracts for high-value heterogeneous domains while keeping direct data access read-only during qualification. Ontology and mapping changes need code-review-like controls.</li>
+<li><strong>Evaluation infrastructure:</strong> support repeated stochastic runs, adaptive adversaries, dynamic ground truth, native artifact checks, deterministic+semantic adjudication, held-out scenarios, and evaluator mutation tests.</li>
+<li><strong>Observability and provenance:</strong> join context, policy, authorization, action, effect, data mapping, artifact, evaluator, cost, and review evidence under stable IDs. Integrity proves record continuity, not semantic truth.</li>
+<li><strong>Human-review controls:</strong> route ambiguous policy, low-confidence semantics, irreversible effects, and professional artifact release to qualified reviewers with diagnostic evidence—not raw transcripts alone.</li>
+<li><strong>Experiment infrastructure:</strong> shadow, simulate, replay, inject state changes, and compare control surfaces without external writes. Every future enhancement should have a stop condition and rollback path.</li>
+<li><strong>Cost telemetry:</strong> attribute tokens, retries, graph construction, evaluator execution, storage, and reviewer time to a logical task. Symbolic structure and replay may reduce model cost while increasing maintenance cost; both must be measured.</li>
+</ol>
+<p>The shared enabling foundation is the operational evidence plane. It unlocks stateful safety qualification, artifact gates, semantic access, dynamic references, replayable procedures, incident reconstruction, and human review without assuming any current vendor, data platform, or maturity level. Before implementation, the enterprise must supply workflow criticality, supported artifact types, identity model, data classifications, tool inventory, policy ownership, retention/privacy constraints, SLOs, model mix, cost targets, and human-review capacity.</p>
+<h2 id="implementation-priorities">Implementation priorities</h2>
+<ol type="1">
+<li><strong>0–30 days:</strong> choose one bounded read-only or non-production workflow; inventory states, policies, artifacts, semantic relations, tools, and acceptance criteria. Establish stable task/trajectory/artifact/evaluator IDs.</li>
+<li><strong>30–60 days:</strong> build the trajectory simulator and native-artifact checks; replay historical failures; create benign twins and state/auth mutation cases; define human-review escalation.</li>
+<li><strong>60–90 days:</strong> add a small semantic access layer or dynamic reference functions where the workflow uses changing heterogeneous data; compare direct and mediated paths.</li>
+<li><strong>90–180 days:</strong> integrate evidence envelopes with existing observability and identity controls; run repeated qualification for two releases; measure cost, reviewer burden, and failure coverage.</li>
+<li><strong>Do not advance</strong> write-capable semantic agents, autonomous professional release, or shared GUI procedure memories until internal context, security review, drift testing, privacy controls, and qualified human accountability are verified.</li>
+</ol>
+<h2 id="knowledge-reinforcement">Knowledge reinforcement</h2>
+<ol type="1">
+<li><strong>Why is a final refusal insufficient safety evidence?</strong> Because an agent may later comply under continued pressure, and the permission state can change across turns. BLINDSPOT measures post-refusal failure separately.</li>
+<li><strong>What does a native artifact evaluator add beyond screenshots?</strong> It checks structure, constraints, geometry, feature history, and downstream state that can remain wrong even when the visible result looks plausible.</li>
+<li><strong>Why is a typed tool schema not a semantic contract?</strong> It can validate each call while still allowing the agent to invent how valid entities relate across calls. A semantic graph constrains those relationships before execution.</li>
+<li><strong>Why repeat the same safety configuration?</strong> Stochastic interactions explore different paths; Fail@k can reveal vulnerable configurations a single run misses.</li>
+<li><strong>What is the safe near-term use of replayable GUI memory?</strong> Controlled, low-risk replay with strict state gating, declared flexible parameters, artifact/effect checks, privacy controls, and immediate fallback—not unattended consequential action.</li>
+</ol>
+<h2 id="source-register-and-rejected-signal-notes">Source register and rejected-signal notes</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Paper</th>
+<th>Identifier / date</th>
+<th>Artifact verification</th>
+<th>Evidence decision</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>BLINDSPOT</td>
+<td>arXiv:2609.16305v1; submitted Sep 14; listed Sep 16</td>
+<td>Full HTML, CC BY 4.0, linked public GitHub repository</td>
+<td>Deep analysis</td>
+</tr>
+<tr class="even">
+<td>CADWorld</td>
+<td>arXiv:2609.16251v1; submitted Sep 14; listed Sep 16</td>
+<td>Full HTML, CC BY 4.0, public project, code and VM links</td>
+<td>Deep analysis</td>
+</tr>
+<tr class="odd">
+<td>Symbolic Separation</td>
+<td>arXiv:2609.17107v1; submitted Sep 15</td>
+<td>Full HTML, CC BY 4.0, public GitLab project, public M100 corpus cited</td>
+<td>Deep analysis</td>
+</tr>
+<tr class="even">
+<td>Skill-based Agentic Evaluation</td>
+<td>arXiv:2609.16487v1; submitted Sep 15</td>
+<td>PDF-only from arXiv; CC BY 4.0; no public code/data link verified</td>
+<td>Watchlist</td>
+</tr>
+<tr class="odd">
+<td>EchoPath</td>
+<td>arXiv:2609.16635v1; submitted Sep 15</td>
+<td>Full HTML; no first-party code link verified; arXiv license</td>
+<td>Watchlist</td>
+</tr>
+</tbody>
+</table>
+<p>Screened but not promoted signals included routing, KV-cache placement, model correction modules, general scientific-method comparisons, and application-specific agent systems. Some were technically interesting, but today's selected papers provided a stronger common enterprise decision surface: stateful qualification, persistent artifact evidence, and domain-semantic enforcement. Position and review papers without new empirical artifacts were not selected for deep analysis. No venue was inferred where a paper page listed only a preprint.</p>
+<h2 id="evidence-boundary">Evidence boundary</h2>
+<p>This briefing presents evidence-grounded future options, not approved roadmap commitments. No selected paper establishes production safety, enterprise ROI, regulatory compliance, or broad generalization. The priority scores summarize judgment under incomplete information and should be recalibrated with internal incident severity, workflow volume, artifact criticality, data semantics, identity architecture, policy ownership, model/version inventory, evaluator capacity, privacy and legal requirements, human-review cost, and SLOs. Experiments should remain isolated, reversible, measurable, non-destructive, and write-disabled until explicit authorization and qualified evidence justify expansion.</p></main></div>
+<footer>AI Research Intelligence Brief · September 16, 2026 · Research options, not deployment approval.</footer>
+<div class="toolbar"><button onclick="window.print()" aria-label="Print report">Print</button><button id="top" aria-label="Back to top">↑ Top</button></div>
+<script>
+const p=document.getElementById('progress');addEventListener('scroll',()=>{const h=document.documentElement;p.style.width=((h.scrollTop/(h.scrollHeight-h.clientHeight))*100)+'%'});document.getElementById('top').onclick=()=>scrollTo({top:0,behavior:'smooth'});
+document.querySelectorAll('main h4').forEach(h=>{if(/^\d+\./.test(h.textContent))h.setAttribute('data-backlog','true')});
+</script>
+</body></html>

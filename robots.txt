@@ -3,4 +3,4 @@ Allow: /
 
 Sitemap: https://ygeszvain.github.io/ai-research-intelligence/sitemap.xml
 
-# Archive metadata refreshed 2026-09-15.
+# Archive metadata refreshed 2026-09-16.
