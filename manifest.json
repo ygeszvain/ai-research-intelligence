@@ -3,12 +3,29 @@
     "title": "AI Research Intelligence",
     "url": "https://ygeszvain.github.io/ai-research-intelligence",
     "description": "Evidence-grounded daily AI and machine-learning research intelligence.",
-    "generated_at_utc": "2026-09-16T09:00:00.000Z",
-    "report_count": 38,
-    "latest_report": "2026-09-16",
-    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-16.html"
+    "generated_at_utc": "2026-09-17T09:00:00.000Z",
+    "report_count": 39,
+    "latest_report": "2026-09-17",
+    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-17.html"
   },
   "reports": [
+    {
+      "date": "2026-09-17",
+      "date_display": "September 17, 2026",
+      "title": "AI Research Intelligence Brief — September 17, 2026",
+      "excerpt": "Three deep papers show why enterprise agents need explicit evidence obligations before action, authoritative persistent-state checks after action, and executable admission tests before generated capabilities are reused.",
+      "topics": [
+        "Agentic AI",
+        "Safety & Governance",
+        "Evaluation & Observability",
+        "AI Software Engineering",
+        "Model & Inference"
+      ],
+      "path": "reports/2026-09-17.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-17.html",
+      "size_bytes": 99545,
+      "sha256": "dccac03ba52a1c9bbbb76f344ea6e07bb5e07724345127577cd28cab76d804df"
+    },
     {
       "date": "2026-09-16",
       "date_display": "September 16, 2026",

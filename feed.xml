@@ -5,7 +5,21 @@
     <link>https://ygeszvain.github.io/ai-research-intelligence/</link>
     <description>Evidence-grounded daily AI and machine-learning research intelligence.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 16 Sep 2026 09:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 17 Sep 2026 09:00:00 GMT</lastBuildDate>
+    <item>
+      <title>AI Research Intelligence Brief — September 17, 2026</title>
+      <link>https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-17.html</link>
+      <guid isPermaLink="true">https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-17.html</guid>
+      <pubDate>Thu, 17 Sep 2026 09:00:00 GMT</pubDate>
+      <description>Three deep papers show why enterprise agents need explicit evidence obligations before action, authoritative persistent-state checks after action, and executable admission tests before generated capabilities are reused.</description>
+    </item>
+    <item>
+      <title>AI Research Intelligence Brief — September 16, 2026</title>
+      <link>https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-16.html</link>
+      <guid isPermaLink="true">https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-16.html</guid>
+      <pubDate>Wed, 16 Sep 2026 09:00:00 GMT</pubDate>
+      <description>Three papers show why enterprise agents must be qualified across stateful trajectories, accepted through native artifacts, and bounded by domain semantics before actions gain authority.</description>
+    </item>
     <item>
       <title>AI Research Intelligence Brief — September 15, 2026</title>
       <link>https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-15.html</link>
@@ -264,13 +278,6 @@
       <guid isPermaLink="true">https://ygeszvain.github.io/ai-research-intelligence/reports/2026-08-05.html</guid>
       <pubDate>Wed, 05 Aug 2026 09:00:00 GMT</pubDate>
       <description>AI Research Intelligence Brief for August 5, 2026 — visual executive dashboard based on newly submitted arXiv papers.</description>
-    </item>
-    <item>
-      <title>AI Research Intelligence Brief — September 16, 2026</title>
-      <link>https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-16.html</link>
-      <guid isPermaLink="true">https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-16.html</guid>
-      <pubDate>Wed, 16 Sep 2026 09:00:00 GMT</pubDate>
-      <description>Three papers show why enterprise agents must be qualified across stateful trajectories, accepted through native artifacts, and bounded by domain semantics before actions gain authority.</description>
     </item>
   </channel>
 </rss>
