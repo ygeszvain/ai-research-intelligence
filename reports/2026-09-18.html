@@ -1,0 +1,1831 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Evidence-grounded AI Research Intelligence Brief for September 18, 2026: closed-world tool resolution, specification coverage, and search evidence lineage.">
+<meta name="report-date" content="2026-09-18">
+<meta name="research-window" content="2026-09-17T04:00:00-05:00/2026-09-18T04:00:00-05:00 America/Chicago">
+<meta name="deep-paper-count" content="3">
+<meta name="watchlist-count" content="2">
+<meta name="theme-color" content="#08131f">
+<title>AI Research Intelligence Brief — September 18, 2026</title>
+<style>
+:root{--bg:#07111d;--panel:#0d1b2a;--panel2:#10263a;--text:#e8f1f7;--muted:#9fb5c5;--line:#29445b;--cyan:#45d7c4;--gold:#f5c96a;--rose:#ff8d9a;--blue:#68a9ff;--max:1180px;color-scheme:dark}
+@media(prefers-color-scheme:light){:root{--bg:#f4f7f8;--panel:#fff;--panel2:#edf4f7;--text:#102131;--muted:#526979;--line:#cddbe2;--cyan:#087f73;--gold:#9b6300;--rose:#b92b45;--blue:#1661ad;color-scheme:light}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 90% 0,rgba(69,215,196,.12),transparent 30rem),var(--bg);color:var(--text);font:16px/1.67 ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}a{color:var(--cyan);text-underline-offset:3px}a:hover{text-decoration-thickness:2px}header{border-bottom:1px solid var(--line);background:linear-gradient(135deg,rgba(69,215,196,.09),rgba(104,169,255,.05));padding:54px 22px 34px}.hero{max-width:var(--max);margin:auto}.eyebrow{color:var(--cyan);text-transform:uppercase;letter-spacing:.15em;font-size:.76rem;font-weight:800}h1{font-size:clamp(2.2rem,6vw,4.7rem);line-height:.98;max-width:900px;margin:.35rem 0 1rem;letter-spacing:-.055em}header p{max-width:790px;color:var(--muted);font-size:1.09rem}.chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}.chip{border:1px solid var(--line);border-radius:999px;padding:6px 11px;background:var(--panel);font-size:.8rem}.topbets{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}.bet{border:1px solid var(--line);background:var(--panel);border-radius:14px;padding:15px}.bet b{display:block;color:var(--gold);font-size:1.15rem}.layout{max-width:var(--max);margin:auto;display:grid;grid-template-columns:250px minmax(0,1fr);gap:34px;padding:30px 22px 80px}nav{position:sticky;top:16px;align-self:start;max-height:calc(100vh - 32px);overflow:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:14px}nav strong{display:block;margin:2px 8px 10px;color:var(--gold)}nav ul{list-style:none;margin:0;padding:0}nav li{margin:0}nav a{display:block;color:var(--muted);text-decoration:none;padding:5px 8px;border-radius:7px;font-size:.83rem;line-height:1.25}nav a:hover{background:var(--panel2);color:var(--text)}main{min-width:0}main>h2{font-size:1.75rem;margin:2.6rem 0 1rem;padding-top:.7rem;border-top:1px solid var(--line)}main>h2:first-child{margin-top:0}h3{font-size:1.3rem;margin-top:2rem;color:var(--cyan)}h4{font-size:1.08rem;color:var(--gold);margin-bottom:.45rem}p,li{max-width:88ch}blockquote{margin:1rem 0;padding:1rem 1.2rem;border-left:4px solid var(--gold);background:var(--panel);color:var(--muted)}pre{white-space:pre-wrap;overflow:auto;background:#07101a;border:1px solid var(--line);border-radius:14px;padding:18px;color:#dcecf2;font-size:.86rem;line-height:1.45}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}table{width:100%;border-collapse:collapse;margin:1.25rem 0;background:var(--panel);font-size:.86rem}th,td{padding:10px 12px;border:1px solid var(--line);text-align:left;vertical-align:top}th{color:var(--gold);background:var(--panel2)}hr{border:0;border-top:1px solid var(--line)}main h4+ul,main h3+ul{border:1px solid var(--line);background:linear-gradient(135deg,var(--panel),var(--panel2));border-radius:14px;padding:15px 22px 15px 34px}main h4+ul li,main h3+ul li{margin:.5rem 0}.progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--cyan),var(--gold));width:0;z-index:9}.toolbar{position:fixed;right:18px;bottom:18px;display:flex;gap:8px}.toolbar button{border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:999px;padding:9px 12px;cursor:pointer;box-shadow:0 8px 30px rgba(0,0,0,.2)}.label{font-size:.75rem;color:var(--muted)}footer{border-top:1px solid var(--line);padding:24px;text-align:center;color:var(--muted)}
+@media(max-width:850px){.topbets{grid-template-columns:1fr}.layout{grid-template-columns:1fr}nav{position:relative;top:0;max-height:none}nav ul{columns:2}h1{font-size:2.65rem}}
+@media(max-width:520px){header{padding-top:34px}.layout{padding:20px 14px 60px}nav ul{columns:1}table{display:block;overflow-x:auto}h1{font-size:2.25rem}}
+@media print{body{background:white;color:#111;font-size:11pt}header{padding:18px 0}.layout{display:block;padding:0}nav,.toolbar,.progress{display:none}a{color:#145c70}main>h2{break-before:page}main>h2:first-child{break-before:auto}table,pre{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<header><div class="hero">
+<div class="eyebrow">AI Research Intelligence · Evidence before enthusiasm</div>
+<h1>Resolve the reference. Challenge the specification. Trace the evidence.</h1>
+<p>September 18, 2026 briefing. Three deep papers show why enterprise AI controls must name the exact tool, bound every proof by its specification, and preserve retrieved evidence through claims and citations.</p>
+<div class="chips"><span class="chip">3 deep papers</span><span class="chip">2 Watchlist</span><span class="chip">24-hour window</span><span class="chip">10 enterprise options</span><span class="chip">Primary sources + full-paper review</span></div>
+<div class="topbets"><div class="bet"><span class="label">TOP BET 1 · PROTOTYPE SOON</span><b>93.6 · Closed-world call admission</b><span>Resolve tool membership, provider, schema freshness and arguments before authorization.</span></div><div class="bet"><span class="label">TOP BET 2 · PROTOTYPE SOON</span><b>90.7 · Specification coverage gate</b><span>Pair formal proof with independently owned safety and functional oracles.</span></div><div class="bet"><span class="label">TOP BET 3 · PROTOTYPE SOON</span><b>90.2 · Search evidence lineage</b><span>Trace every consequential claim from query and result to exact supporting source.</span></div></div>
+</div></header>
+<div class="layout"><nav><strong>Navigate</strong><ul>
+<li><a href="#scope-window-and-evidence-policy"
+id="toc-scope-window-and-evidence-policy">Scope, window, and evidence
+policy</a></li>
+<li><a href="#executive-signal" id="toc-executive-signal">Executive
+signal</a></li>
+<li><a href="#top-3-future-bets" id="toc-top-3-future-bets">Top 3 Future
+Bets</a></li>
+<li><a
+href="#deep-paper-1--resolve-the-tool-before-asking-whether-it-is-allowed"
+id="toc-deep-paper-1--resolve-the-tool-before-asking-whether-it-is-allowed">Deep
+paper 1 — Resolve the tool before asking whether it is allowed</a>
+<ul>
+<li><a href="#contribution-and-quantitative-claim-trace"
+id="toc-contribution-and-quantitative-claim-trace">Contribution and
+quantitative claim trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison"
+id="toc-methodological-critique-and-prior-work-comparison">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#reproducibility-and-enterprise-readiness"
+id="toc-reproducibility-and-enterprise-readiness">Reproducibility and
+enterprise readiness</a></li>
+</ul></li>
+<li><a
+href="#deep-paper-2--a-proof-certificate-is-bounded-by-the-specification-it-proves"
+id="toc-deep-paper-2--a-proof-certificate-is-bounded-by-the-specification-it-proves">Deep
+paper 2 — A proof certificate is bounded by the specification it
+proves</a>
+<ul>
+<li><a href="#contribution-and-quantitative-claim-trace-1"
+id="toc-contribution-and-quantitative-claim-trace-1">Contribution and
+quantitative claim trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison-1"
+id="toc-methodological-critique-and-prior-work-comparison-1">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#reproducibility-and-enterprise-readiness-1"
+id="toc-reproducibility-and-enterprise-readiness-1">Reproducibility and
+enterprise readiness</a></li>
+</ul></li>
+<li><a
+href="#deep-paper-3--search-quality-is-an-end-to-end-evidence-flow-property"
+id="toc-deep-paper-3--search-quality-is-an-end-to-end-evidence-flow-property">Deep
+paper 3 — Search quality is an end-to-end evidence-flow property</a>
+<ul>
+<li><a href="#contribution-and-quantitative-claim-trace-2"
+id="toc-contribution-and-quantitative-claim-trace-2">Contribution and
+quantitative claim trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison-2"
+id="toc-methodological-critique-and-prior-work-comparison-2">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#reproducibility-and-enterprise-readiness-2"
+id="toc-reproducibility-and-enterprise-readiness-2">Reproducibility and
+enterprise readiness</a></li>
+</ul></li>
+<li><a href="#watchlist" id="toc-watchlist">Watchlist</a>
+<ul>
+<li><a
+href="#gui-choice-architecture-can-steer-agents-reasoning-redirects-rather-than-removes-susceptibility"
+id="toc-gui-choice-architecture-can-steer-agents-reasoning-redirects-rather-than-removes-susceptibility">GUI
+choice architecture can steer agents; reasoning redirects rather than
+removes susceptibility</a></li>
+<li><a
+href="#reusable-procedures-help-when-coverage-is-real-and-harm-when-approximate-context-is-forced"
+id="toc-reusable-procedures-help-when-coverage-is-real-and-harm-when-approximate-context-is-forced">Reusable
+procedures help when coverage is real and harm when approximate context
+is forced</a></li>
+</ul></li>
+<li><a href="#cross-paper-synthesis"
+id="toc-cross-paper-synthesis">Cross-paper synthesis</a>
+<ul>
+<li><a
+href="#independent-analysis--three-boundaries-that-enterprise-controls-must-make-explicit"
+id="toc-independent-analysis--three-boundaries-that-enterprise-controls-must-make-explicit">Independent
+Analysis — three boundaries that enterprise controls must make
+explicit</a></li>
+</ul></li>
+<li><a href="#visual-1--ordered-enterprise-control-path"
+id="toc-visual-1--ordered-enterprise-control-path">Visual 1 — ordered
+enterprise control path</a></li>
+<li><a href="#visual-2--apparent-control-versus-missing-boundary"
+id="toc-visual-2--apparent-control-versus-missing-boundary">Visual 2 —
+apparent control versus missing boundary</a></li>
+<li><a href="#enterprise-ai-enhancement-backlog"
+id="toc-enterprise-ai-enhancement-backlog">Enterprise AI Enhancement
+Backlog</a>
+<ul>
+<li><a href="#priority-method-and-uncertainty"
+id="toc-priority-method-and-uncertainty">Priority method and
+uncertainty</a></li>
+<li><a href="#prototype-soon" id="toc-prototype-soon">Prototype
+Soon</a></li>
+<li><a href="#prepare-foundations" id="toc-prepare-foundations">Prepare
+Foundations</a></li>
+<li><a href="#monitor-for-maturity"
+id="toc-monitor-for-maturity">Monitor for Maturity</a></li>
+<li><a href="#deprioritize-for-now"
+id="toc-deprioritize-for-now">Deprioritize for Now</a></li>
+</ul></li>
+<li><a href="#enterprise-ai-architecture-implications"
+id="toc-enterprise-ai-architecture-implications">Enterprise AI
+Architecture Implications</a>
+<ul>
+<li><a href="#independent-analysis--1224-month-architecture-shift"
+id="toc-independent-analysis--1224-month-architecture-shift">Independent
+Analysis — 12–24 month architecture shift</a></li>
+</ul></li>
+<li><a href="#implementation-priorities"
+id="toc-implementation-priorities">Implementation priorities</a>
+<ul>
+<li><a href="#next-30-days" id="toc-next-30-days">Next 30 days</a></li>
+<li><a href="#3090-days" id="toc-3090-days">30–90 days</a></li>
+<li><a href="#312-months" id="toc-312-months">3–12 months</a></li>
+</ul></li>
+<li><a href="#knowledge-reinforcement"
+id="toc-knowledge-reinforcement">Knowledge reinforcement</a></li>
+<li><a href="#evidence-ledger-and-boundary-statement"
+id="toc-evidence-ledger-and-boundary-statement">Evidence ledger and
+boundary statement</a></li>
+<li><a href="#primary-sources" id="toc-primary-sources">Primary
+sources</a></li>
+</ul></nav><main><h2 id="scope-window-and-evidence-policy">Scope,
+window, and evidence policy</h2>
+<p><strong>Research window.</strong> Thursday, September 17, 2026 at
+4:00 AM CDT through Friday, September 18, 2026 at 4:00 AM CDT (24 hours;
+America/Chicago). Discovery covered the September 18 arXiv announcement
+cycle—329 cs.AI records, including 89 new submissions—plus current
+cs.CL, cs.LG, cs.SE, cs.CR, cs.IR, cs.DB, cs.DC and stat.ML listings;
+Nature, Science, ACM Digital Library, ACL Anthology and OpenReview; and
+first-party paper pages, full texts, repositories, datasets and cited
+prior work. The normal window was sufficient; no expansion was used.</p>
+<p><strong>Anti-duplication.</strong> Exact titles, identifiers, central
+claims and proposed controls were checked against the 39-report archive
+through September 17. None of today's five selected papers appeared
+previously. Recent archive work on transactional tool contracts,
+task-scoped authorization, stateful trajectory qualification, artifact
+acceptance, evidence identity, benchmark lineage, reusable capability
+admission and persistent-state validation was treated as prior
+intelligence. Today's non-duplicate increment is the ordering and
+coverage problem: <strong>resolve an agent's reference before
+authorizing it, verify the completeness of the specification before
+trusting its proof, and preserve the retrieved evidence through the
+response before accepting its claims.</strong></p>
+<p><strong>Evidence policy.</strong> <strong>Paper Fact</strong> means
+directly reported by a paper or verified first-party artifact.
+<strong>Independent Analysis</strong> is this briefing's calculation,
+comparison or methodological critique. <strong>Enterprise
+Inference</strong> is a bounded translation into a future enterprise
+option. <strong>Uncertainty</strong> marks missing causal,
+generalization, artifact, economic, security, privacy, governance,
+operational or adoption evidence. All five selected works are preprints.
+MAGS and AgenticSearchLens use CC BY 4.0; the GUI-nudge study also uses
+CC BY 4.0 and links an anonymous public artifact. Closed-World
+Resolution and EconSkills use arXiv's non-exclusive distribution
+license. AgenticSearchLens links a public repository but cannot release
+donated conversations; it supplies mock data. MAGS does not link code
+from the paper page. Closed-World Resolution describes an installable
+benchmark but does not link a public source repository from the paper
+page. EconSkills does not link its skill library or experiment code from
+the paper page. Benchmark performance is not production readiness. All
+proposed experiments are isolated, reversible, measurable and
+non-destructive.</p>
+<h2 id="executive-signal">Executive signal</h2>
+<blockquote>
+<p><strong>A control is only as strong as the boundary it can name,
+specify and trace. Resolve the reference, challenge the specification
+and preserve the evidence path.</strong></p>
+</blockquote>
+<p>Three papers expose different ways an apparently rigorous control can
+miss its object:</p>
+<ol type="1">
+<li><strong>Closed-World Resolution</strong> shows that an authorization
+gate cannot reliably govern a fabricated or ambiguously merged tool
+reference. Namespace membership, provider identity, current schema and
+arguments must resolve before causal authorization.</li>
+<li><strong>MAGS</strong> shows that machine-checked proof remains
+conditional on semantic coverage and fidelity. All 220 outputs received
+Dafny certificates; only 82 of 100 terminal programs passed the
+independent security oracle, and robotic functional preservation was
+initially 0 of 20 before task-success constraints raised it to 11 of
+20.</li>
+<li><strong>AgenticSearchLens</strong> shows that retrieval is an
+evidence supply chain, not a binary feature. Four platforms searched at
+materially different rates, returned different source mixes and
+frequently generated claims supported by uncited results or by no
+retrieved evidence at all.</li>
+</ol>
+<p>The two Watchlist papers reinforce the same boundary discipline. GUI
+agents were highly steerable by defaults and social cues; more reasoning
+changed the attack surface rather than eliminating it. EconSkills
+improved controlled transfer when the correct procedure was known, but
+approximate matches erased the gain at library scale and the full
+50-skill context reduced success to 11.4%.</p>
+<p><strong>Decision posture.</strong> Prototype a closed-world tool-call
+admission resolver, a specification-coverage and independent-oracle gate
+for high-consequence generated code, and an evidence-flow audit for
+search-grounded outputs. Prepare qualified MCP namespaces, frozen domain
+semantics with ownership, and coverage-aware procedural memory. Monitor
+GUI choice-architecture robustness and agentic formal verification until
+independent reproduction, artifact maturity and operating economics
+improve. Deprioritize any policy that treats a formal certificate,
+aggregate search score, larger model or higher reasoning setting as
+stand-alone production authority.</p>
+<h2 id="top-3-future-bets">Top 3 Future Bets</h2>
+<ol type="1">
+<li><strong>Closed-world tool-call admission resolver —
+93.6/100.</strong> Why it matters: ten live models emitted 322
+single-registry hallucinations and 154 multi-server MCP hallucinations;
+the paper's central ordering result is that reference resolution must
+precede a downstream gate. Evidence that would change the
+recommendation: an internal runtime where every call is already
+generated from a live, decoder-enforced, provider-qualified schema and
+independent testing shows negligible false acceptance and false
+rejection under registry drift. Next reversible action: shadow-validate
+10,000 historical tool calls against immutable registry snapshots,
+qualified provider IDs, schema digests and strict argument types; block
+nothing until disagreement is adjudicated.</li>
+<li><strong>Specification coverage and independent-oracle gate —
+90.7/100.</strong> Why it matters: MAGS verified all 220 outputs, yet 18
+terminal programs failed the external security oracle and 9 of 20
+robotic policies still failed functional preservation after mitigation.
+Evidence that would change the recommendation: internal domains with
+complete, independently audited semantics and proof-to-executable
+mappings whose oracle disagreement remains zero across adversarial
+change. Next reversible action: choose one narrow safety property in a
+sandboxed code family, create the formal semantics and a separately
+owned adversarial oracle, and reject roadmap promotion if either misses
+injected defects.</li>
+<li><strong>Search evidence-flow and citation-lineage audit —
+90.2/100.</strong> Why it matters: AgenticSearchLens finds that 14–53%
+of claims across three platforms can be supported by
+retrieved-but-uncited URLs, while 15–20% remain ungrounded and score
+lower on factuality. Evidence that would change the recommendation:
+internal evaluation showing complete claim-to-source lineage and no
+material quality or attribution gap across representative search tasks.
+Next reversible action: instrument 200 non-sensitive search traces from
+query through result rank, claim generation and citation; measure
+support, attribution, source authority and omission without changing
+user-visible answers.</li>
+</ol>
+<h2
+id="deep-paper-1--resolve-the-tool-before-asking-whether-it-is-allowed">Deep
+paper 1 — Resolve the tool before asking whether it is allowed</h2>
+<p><strong>Identity and status.</strong> <em>Closed-World Resolution
+Against Tool Hallucination in LLM Agents</em>, Laxmipriya Ganesh Iyer;
+independent researcher; submitted September 16, 2026;
+arXiv:2609.19425v1; cs.AI; preprint; arXiv non-exclusive distribution
+license. The paper describes the versioned Hallucinated-Tools Benchmark
+(HTB 1.0) and an installable <code>toolguard-bench</code> package, but
+the paper page does not link a source repository or independent
+benchmark submission. (<a
+href="https://arxiv.org/abs/2609.19425">paper</a>, <a
+href="https://arxiv.org/html/2609.19425">full text</a>)</p>
+<h3 id="contribution-and-quantitative-claim-trace">Contribution and
+quantitative claim trace</h3>
+<p>The paper separates <strong>selection</strong>—which real tool best
+fits an intent—from <strong>resolution</strong>—whether an emitted name
+and arguments refer to any declared tool at all—and
+<strong>gating</strong>—whether the resolved real action is authorized
+in the current state. Its five single-registry classes cover fabricated
+names, hallucinated fields, type violations, unauthorized real tools and
+schema-valid arguments borrowed from another tool. A closed-world
+Resolution Rung checks registry membership and signature before any
+causal gate. H5 is deliberately residual when the borrowed arguments
+also satisfy the named tool's schema; only semantic selection can
+distinguish it.</p>
+<p>The primary live study exposes a fixed 10-tool subset of a 100-tool
+registry to ten Amazon Bedrock models and runs 60 adversarial probes per
+model under a schema-enforced surface and an unconstrained raw-JSON
+surface. Models include Claude Opus 4.8, Sonnet 4.6, Haiku 4.5, two
+Amazon Nova models, GPT-OSS-120B, Llama-3.1 at 8B and 70B,
+Ministral-3-8B and Mistral-Large-3 at 675B.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>Decision meaning</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Invocation surface dominates exposure</td>
+<td style="text-align: right;">Raw-JSON hallucination rates span 13–57%;
+schema-enforced rates are 0–5% for frontier/mid-tier models, but 17–62%
+for evaluated open-weight models</td>
+<td>Constrained decoding helps, but runtimes still need independent
+admission checks</td>
+<td>Only 60 probes/model/surface; no confidence intervals or seed
+sweep</td>
+</tr>
+<tr class="even">
+<td>Fabricated tools concentrate on unconstrained surfaces</td>
+<td style="text-align: right;">34 H1 fabricated-tool calls on raw JSON
+versus 3 under the schema surface</td>
+<td>Prompt-described catalogs are weaker than live decoder/runtime
+contracts</td>
+<td>The three schema-surface H1 calls came from two smaller open models;
+provider behavior may change</td>
+</tr>
+<tr class="odd">
+<td>Model scale is not the fix</td>
+<td style="text-align: right;">Llama raw-JSON rate is 0.55 at 8B and
+0.57 at 70B; Mistral is 0.45 at 8B and 0.55 at 675B</td>
+<td>Treat resolution as a runtime invariant, not a model-quality
+promise</td>
+<td>Cross-family comparisons confound training and alignment with
+scale</td>
+</tr>
+<tr class="even">
+<td>Downstream gates miss unresolved references by construction</td>
+<td style="text-align: right;">322 measured hallucinations; the modeled
+gating-only stack executes 322/322, the full stack 0/322</td>
+<td>Resolution must precede authorization</td>
+<td>The gate's fail-open behavior is defined by the model, not an
+observed production incident</td>
+</tr>
+<tr class="odd">
+<td>H5 cannot be completely schema-resolved</td>
+<td style="text-align: right;">Controlled residue 15.25%; HTB public
+split 19.25%; real-catalog adapter 1.5%</td>
+<td>Resolution and semantic tool selection are complementary</td>
+<td>Residue depends on field overlap; a controlled overlap sweep is
+future work</td>
+</tr>
+<tr class="even">
+<td>Multi-server merging creates a second hazard family</td>
+<td style="text-align: right;">Ten models emit 154 live MCP
+hallucinations: 62 shadowing, 52 collision and 40 cross-server
+fabrication; per-model rates 0.27–0.60</td>
+<td>Tool identity should be <code>(server, tool)</code>, not a flat
+name</td>
+<td>Live emissions cover M1–M3; stale definition and cross-server
+borrowing are only scripted</td>
+</tr>
+<tr class="odd">
+<td>Strict collision rejection has a usability cost</td>
+<td style="text-align: right;">Unique or pinned honest calls have 0
+rejection, but benign collided flat names are rejected 100%; pin-assist
+removes that cost in the study</td>
+<td>Ambiguity policy requires an explicit business choice</td>
+<td>Honest-call generator is not independent of the resolver</td>
+</tr>
+<tr class="even">
+<td>Benchmark baselines reveal incomplete controls</td>
+<td style="text-align: right;">Single-registry HTB: resolution+gate
+0.96, rung alone 0.76, JSON-schema validator 0.56, allowlist 0.20, fuzzy
+router 0.13; MCP rung 1.00 versus 0.40 for first-provider/highest-trust
+and 0 for naive</td>
+<td>Membership, signature, intent and authorization are separate
+layers</td>
+<td>Scores are on the authors' public benchmark split; no external
+submission is reported</td>
+</tr>
+</tbody>
+</table>
+<p>For MCP, the resolver qualifies names by server, rejects absent
+providers, rejects same-name ambiguity, rejects lower-trust shadowing,
+verifies the current schema digest against the listing digest and then
+checks arguments. The design is deterministic, training-free and
+model-agnostic. It does not decide whether the resolved tool is the
+right tool for the user's intent, nor whether the action is
+authorized.</p>
+<h3
+id="methodological-critique-and-prior-work-comparison">Methodological
+critique and prior-work comparison</h3>
+<p>Function-calling leaderboards measure model propensity;
+tool-selection systems improve retrieval among declared tools;
+grammar-constrained decoding restricts syntax; least-privilege and
+prompt-injection defenses gate real actions; MCP scanners audit servers
+offline. The useful increment is the <strong>ordering claim</strong>:
+the emitted reference must resolve to a live, qualified contract before
+selection and authorization can make a complete decision. Multi-server
+identity also makes collision, shadowing and staleness first-class
+runtime failures rather than vague security findings.</p>
+<p>The live transcript exhibit, two invocation surfaces, size
+comparisons and explicit by-construction labeling are strengths. The
+paper does not pretend that deterministic benchmark cells are empirical
+production leaks. It also states the trusted-registry assumption and the
+H5 limit rather than calling the resolver complete.</p>
+<p>The principal evidence weakness is circularity in honest
+over-rejection: a valid call is generated using the same registry the
+resolver treats as authoritative. The reported 0% is construction
+consistency, not independent false-reject evidence. Per-model estimates
+use 60 probes and lack intervals. The registry, attack prompts and
+benchmark are author-designed. No deployed latency, concurrency,
+availability or registry-governance study is provided. Schema digests do
+not prove that a tool implementation matches its declaration. The
+described package is not linked to an inspectable repository from the
+paper page, and no third-party HTB result exists. The paper's
+“gating-only executes all hallucinations” result depends on an
+explicitly fail-open abstract gate; real systems may fail earlier, but
+then that earlier check is functionally a resolver.</p>
+<h3 id="reproducibility-and-enterprise-readiness">Reproducibility and
+enterprise readiness</h3>
+<p>The taxonomy, algorithms, trial counts, model list, registry size,
+benchmark scoring and transcripts are described. Deterministic synthetic
+components should be reproducible if the released package is obtainable.
+Live reproduction depends on hosted model versions and Bedrock behavior.
+Artifact provenance, package license, signatures and maintenance
+ownership were not verified from a linked source repository.</p>
+<p><strong>Enterprise readiness:</strong> high for a shadow resolver
+over existing tool-call telemetry; medium for blocking admission after
+independent honest-call tests, registry ownership and availability
+qualification; low for relying on the paper's resolver as a complete
+authorization system. <strong>Research Utility Score: 91/100</strong>
+(methodological rigor 22/25; quantitative traceability 24/25;
+reproducibility/artifacts 15/20; enterprise relevance 15/15; prior-work
+advance 15/15).</p>
+<h2
+id="deep-paper-2--a-proof-certificate-is-bounded-by-the-specification-it-proves">Deep
+paper 2 — A proof certificate is bounded by the specification it
+proves</h2>
+<p><strong>Identity and status.</strong> <em>MAGS: Multi-agent
+Auto-formalization Guarantees Safety for Agentic Outputs</em>, Albert
+Wu, Nicholas Roberts, Tzu-Heng Huang, Haoran Lin, Gil Friedman, Sungjun
+Cho, Gabriel Orlanski and Frederic Sala; University of Wisconsin–Madison
+and Princeton University; submitted September 16, 2026;
+arXiv:2609.19391v1; cs.AI; preprint; CC BY 4.0. No code or immutable
+experiment artifact is linked from the paper page. (<a
+href="https://arxiv.org/abs/2609.19391">paper</a>, <a
+href="https://arxiv.org/html/2609.19391">full text</a>)</p>
+<h3 id="contribution-and-quantitative-claim-trace-1">Contribution and
+quantitative claim trace</h3>
+<p>MAGS separates execution language from proof language. Agents
+formalize domain APIs and safety requirements under human review, freeze
+that semantic core, translate generated programs into Dafny, plan
+proofs, use Dafny/Boogie/Z3 feedback to repair annotations or code,
+reject proof-bypass constructs, and deterministically compile the
+verified program back to CUDA, terminal or robot-control code.
+Program-level agents cannot see benchmark tests or independent oracles.
+Environmental assumptions become runtime <code>expect</code> checks.</p>
+<p>The evaluation covers 100 KernelBench Level-1 CUDA kernels, 100
+SecCodePLT terminal programs across 27 CWEs and 20 VLABench robotic-arm
+policies. Each task has a 25-agent-call retry budget. Safety is checked
+both by Dafny and by a domain oracle: CUDA compute-sanitizer, SecCodePLT
+cases, or MuJoCo collision/out-of-bounds metrics. Ten held-out
+functional tests per task compare original and compiled-back
+behavior.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>Decision meaning</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A common verification pipeline can issue certificates across
+domains</td>
+<td style="text-align: right;">Dafny verification: 100/100 CUDA, 100/100
+terminal, 20/20 robotics</td>
+<td>Verification-aware IR can unify heterogeneous generated-code
+controls</td>
+<td>Certificate applies only to frozen modeled properties</td>
+</tr>
+<tr class="even">
+<td>Independent safety agreement exposes missing semantics</td>
+<td style="text-align: right;">Oracle success: 100/100 CUDA, 82/100
+terminal, 20/20 robotics</td>
+<td>Every formal certificate needs an independently owned coverage
+challenge</td>
+<td>Terminal failures cluster in privileged access and concurrency CWEs
+not fully represented</td>
+</tr>
+<tr class="odd">
+<td>Formal safety can become functional vacuity</td>
+<td style="text-align: right;">Robotics functional preservation is
+initially 0/20; task-success steering raises it to 11/20 while safety
+remains 20/20</td>
+<td>Safety and usefulness are separate acceptance dimensions</td>
+<td>The added success conditions are not part of the formal
+certificate</td>
+</tr>
+<tr class="even">
+<td>More structured domains fare better</td>
+<td style="text-align: right;">CUDA and terminal functional preservation
+are 100/100 on ten held-out tests each</td>
+<td>Formalization may be viable in bounded code families</td>
+<td>Held-out tests do not prove semantic equivalence or unseen
+correctness</td>
+</tr>
+<tr class="odd">
+<td>Current overhead is material</td>
+<td style="text-align: right;">Mean 36.4 min/5.26M tokens/<span
+class="math inline">8.60<em>C</em><em>U</em><em>D</em><em>A</em>; 36.3<em>m</em><em>i</em><em>n</em>/6.51<em>M</em>/</span>9.01
+terminal; 68.3 min/10.07M/$10.17 robotics</td>
+<td>Target high-consequence generation, not routine code</td>
+<td>API prices, caching and parallelism are implementation-specific</td>
+</tr>
+<tr class="even">
+<td>Tails are wide</td>
+<td style="text-align: right;">CUDA latency 3.5–264.9 min and cost <span
+class="math inline">0.93–</span>52.14; terminal 10.7–203.7 min and <span
+class="math inline">3.37–</span>36.47</td>
+<td>Capacity planning needs tail budgets and cancellation</td>
+<td>No production concurrency or SLO experiment</td>
+</tr>
+<tr class="odd">
+<td>Semantic quality is partially audited</td>
+<td style="text-align: right;">Random 20% semantic audit; each library
+receives three safe and three unsafe probe programs</td>
+<td>Frozen semantics deserve versioned review and mutation tests</td>
+<td>A 20% sample and six probes/library cannot establish
+completeness</td>
+</tr>
+<tr class="even">
+<td>Anti-bypass controls reduce trivial proofs</td>
+<td style="text-align: right;"><code>assume</code>, axioms and disabled
+verification are rejected; up to eight solver seeds/configurations are
+used</td>
+<td>Proof pipelines need deterministic policy enforcement and
+diversity</td>
+<td>Compiler, solver, mapping and environment remain in the trusted
+base</td>
+</tr>
+</tbody>
+</table>
+<p>The paper is most valuable when read against its own headline. “100%
+verified” is true relative to the Dafny specifications. It is not
+equivalent to 100% external security or functional preservation. The 18
+terminal misses and robotic vacuity are not incidental defects; they
+identify the two canonical specification failures:
+<strong>under-specification admits unsafe behavior, and over-restriction
+admits safe but useless behavior.</strong></p>
+<h3
+id="methodological-critique-and-prior-work-comparison-1">Methodological
+critique and prior-work comparison</h3>
+<p>GPUVerify, AutoVerus, DafnyBench and related systems automate proof
+within a language or domain. VeriGuard verifies a monitoring policy
+rather than every generated program. ProofWright and verifier-guided
+repair automate parts of proof construction. MAGS's distinctive
+contribution is a reusable, frozen semantic layer plus a common
+verification-aware intermediate representation that returns executable
+code across three substantially different domains.</p>
+<p>Independent safety oracles and functional suites are strong design
+choices because they challenge the specification from outside the proof
+loop. Agents are blinded to those checks, reducing direct benchmark
+gaming. Reporting 0/20 robotics preservation before mitigation is also
+unusually candid and decision-useful.</p>
+<p>However, no repository, semantic library, prompts, traces or compiled
+outputs are linked. The paper uses future-generation hosted models named
+Opus 5, GPT 5.6 Sol, Gemini 3.0 Thinking and Claude Fable 5.1;
+reproducibility depends on access and version stability. Only 20% of
+autoformalized semantics are manually audited. Test-generation
+independence is organizationally weak if another related model creates
+all held-out tests. Ten cases per program are shallow evidence of
+functional equivalence. The deterministic compile-back mapping and
+runtime assumptions are trusted but not formally verified end-to-end.
+Safety checks cover selected properties, not supply-chain
+vulnerabilities, information flows, resource exhaustion or business
+authorization. The robotics success mitigation remains informal
+steering. Costs exclude the one-time semantic construction and review
+effort.</p>
+<p>MAGS therefore strengthens, rather than replaces, yesterday's
+artifact-acceptance insight: proofs should be one evidence channel in a
+multi-oracle acceptance contract. A certificate without a coverage
+ledger should never be presented as global safety.</p>
+<h3 id="reproducibility-and-enterprise-readiness-1">Reproducibility and
+enterprise readiness</h3>
+<p>The paper specifies benchmark sizes, core formalisms, agents,
+verification loop, safety oracles, functional protocol, time/token/cost
+ranges and failure modes. CC BY 4.0 permits adaptation. Without linked
+code and semantic artifacts, exact independent reproduction is not
+presently supported.</p>
+<p><strong>Enterprise readiness:</strong> medium for studying a narrow,
+high-consequence code family with mature formal semantics; low for a
+general autonomous verification service; very low for safety claims
+beyond explicitly modeled properties. <strong>Research Utility Score:
+89/100</strong> (methodological rigor 24/25; quantitative traceability
+24/25; reproducibility/artifacts 11/20; enterprise relevance 15/15;
+prior-work advance 15/15).</p>
+<h2
+id="deep-paper-3--search-quality-is-an-end-to-end-evidence-flow-property">Deep
+paper 3 — Search quality is an end-to-end evidence-flow property</h2>
+<p><strong>Identity and status.</strong> <em>Characterizing Web Search
+by Conversational LLM Agents: From Search Decisions and Strategies to
+Results and Responses</em>, Mahsa Amani, Seungeon Lee, Abhisek Dash and
+nine co-authors; Max Planck Institute for Software Systems, Saarland
+University, École Polytechnique, Seoul National University, Ruhr
+University Bochum and Microsoft; submitted September 16, 2026;
+arXiv:2609.19244v1; cs.AI; preprint; CC BY 4.0. The public
+AgenticSearchLens repository includes analysis code and mock data;
+donated conversation traces are not released for privacy. (<a
+href="https://arxiv.org/abs/2609.19244">paper</a>, <a
+href="https://arxiv.org/html/2609.19244">full text</a>, <a
+href="https://github.com/mahsaama/AgenticSearchLens/">artifact</a>)</p>
+<h3 id="contribution-and-quantitative-claim-trace-2">Contribution and
+quantitative claim trace</h3>
+<p>AgenticSearchLens studies the full search lifecycle: whether to
+search, how to query and refine, what domains the platform's engine
+returns, what the model cites, and which evidence actually supports each
+claim. It combines <strong>invivo</strong> donated multi-turn traces
+from ChatGPT, Claude, Grok and DeepSeek with <strong>invitro</strong>
+controlled API experiments using the same 1,000 sanitized first-turn
+prompts across provider models.</p>
+<p>The invivo corpus contains 310 ChatGPT users and 143,730
+conversations/690,754 turns; 102 Claude users and 9,267
+conversations/64,354 turns; 100 Grok users and 9,005
+conversations/53,840 turns; and 101 DeepSeek users and 9,262
+conversations/36,020 turns. Search appears in 42,273, 1,696, 3,004 and
+1,730 turns respectively.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>Decision meaning</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Search invocation policies differ sharply</td>
+<td style="text-align: right;">On the same 1,000 prompts: GPT-5.3-chat
+searches 140, Claude Sonnet 4.6 825, Grok-4.3 766, DeepSeek-v4-flash
+584</td>
+<td>Search rate is a system policy, not an inherent quality score</td>
+<td>APIs can use different harnesses from deployed products</td>
+</tr>
+<tr class="even">
+<td>More search is not automatically better</td>
+<td style="text-align: right;">No-web replay scores can exceed
+autonomous web-search responses on factuality, completeness or relevance
+for several models; paired bootstrap tests are reported</td>
+<td>Qualify when search helps and when it adds noise</td>
+<td>Quality is LLM-judged; causal attribution between harness and model
+is incomplete</td>
+</tr>
+<tr class="odd">
+<td>Query strategy is platform-specific</td>
+<td style="text-align: right;">Invivo median queries range from 2 for
+Claude to 4 for Grok; Claude is iterative while others also fan out;
+invitro only GPT fans out</td>
+<td>Orchestration affects coverage, cost and latency</td>
+<td>Proprietary hidden instructions and ranking systems are
+unavailable</td>
+</tr>
+<tr class="even">
+<td>Search results have platform-specific concentration</td>
+<td style="text-align: right;">ChatGPT averages 14.06 URLs/query and
+43.24/prompt; DeepSeek 5.46 and 14.37; top ten domains are 21.3% of
+invivo ChatGPT results and 32.3% of Grok results</td>
+<td>Evaluate source diversity and authority, not only answer
+quality</td>
+<td>Returned domains do not prove the agent read or relied on every
+page</td>
+</tr>
+<tr class="odd">
+<td>Claims can be supported by uncited results</td>
+<td style="text-align: right;">Retrieved-but-uncited URLs support 14–53%
+of claims across ChatGPT, Claude and Grok in invivo/invitro
+conditions</td>
+<td>Capture claim-to-result lineage before citations are pruned</td>
+<td>DeepSeek is excluded from this stated range; entailment is
+model-evaluated</td>
+</tr>
+<tr class="even">
+<td>A material residue remains ungrounded</td>
+<td style="text-align: right;">Upward of 15–20% of claims remain
+unsupported by cited or returned URLs</td>
+<td>Route unsupported consequential claims to verification or
+abstention</td>
+<td>Some claims may be correct from parametric knowledge; unsupported is
+not identical to false</td>
+</tr>
+<tr class="odd">
+<td>Grounding correlates with factuality</td>
+<td style="text-align: right;">ChatGPT claim factuality: 3.47 for
+associated citations, 3.35 for other citations, 3.33 for uncited search
+results, 2.84 for ungrounded claims</td>
+<td>Evidence identity is useful quality telemetry</td>
+<td>Scores are judge-model estimates on one platform slice, not
+calibrated truth probabilities</td>
+</tr>
+<tr class="even">
+<td>Human validation is mixed by task</td>
+<td style="text-align: right;">Three annotators/30 items; judge–human
+within-one agreement 67% factuality, 77% relevance and 73% completeness;
+categorical judge agreement is often 0.88–1.00</td>
+<td>Preserve evaluator uncertainty and review samples</td>
+<td>Ordinal weighted kappa is low for some replay and entailment tasks;
+authors serve as annotators</td>
+</tr>
+</tbody>
+</table>
+<p>The study also finds that nearly 80% of user prompts exceed 20 terms
+while almost all generated queries use fewer than 10–15; terms
+increasingly incorporate prior results and queries become more specific
+over iterations. Those are descriptive behaviors, not proof that a
+particular query plan is optimal.</p>
+<h3
+id="methodological-critique-and-prior-work-comparison-2">Methodological
+critique and prior-work comparison</h3>
+<p>Search benchmarks usually isolate retrieval, tool calling or answer
+grounding. Conversation datasets often cover one platform or
+self-selected shared links. This work's advance is to join observable
+search traces from four deployed products with same-prompt API
+experiments and claim-level evidence analysis. Its lifecycle view makes
+clear that “web enabled” collapses several separately fallible
+decisions.</p>
+<p>The scale of the invivo corpus and controlled 1,000-prompt replay are
+strengths. The code release, prompt appendices, platform/model table,
+bootstrap intervals and evaluator-validation appendix improve
+auditability. GDPR-compliant donation and mock-data substitution are
+appropriate privacy choices even though they limit full replication.</p>
+<p>Important limitations remain. Donors are self-selected, platform
+samples differ greatly in size and prompt distribution, and only first
+turns are used invitro. Hidden chain-of-thought, ranking algorithms and
+product harnesses are unavailable; model and platform effects cannot be
+cleanly separated. Product behavior changes quickly. The 30-item human
+validation samples are small and use authors as annotators. Factuality,
+entailment and citation mapping rely heavily on model judges, with only
+moderate agreement for replay scores. A URL returned by search is not
+necessarily read, and textual entailment does not establish source
+authority, freshness or independence. Citation presence does not prove
+causal use; citation absence does not prove fabrication. Donated data
+cannot be publicly released, so the most important invivo claims are
+only partially reproducible.</p>
+<h3 id="reproducibility-and-enterprise-readiness-2">Reproducibility and
+enterprise readiness</h3>
+<p>The repository exposes analysis code and mock schemas, and the paper
+includes prompts, model versions, confidence intervals and many appendix
+tables. Exact reproduction of invivo findings is impossible without the
+protected donations and proprietary platform traces; invitro behavior
+will drift with models, engines and harnesses.</p>
+<p><strong>Enterprise readiness:</strong> high for an internal
+trace-based evidence audit; medium for claim-level blocking after
+evaluator calibration and privacy review; low for adopting the reported
+platform rates as general thresholds. <strong>Research Utility Score:
+92/100</strong> (methodological rigor 23/25; quantitative traceability
+24/25; reproducibility/artifacts 16/20; enterprise relevance 15/15;
+prior-work advance 14/15).</p>
+<h2 id="watchlist">Watchlist</h2>
+<h3
+id="gui-choice-architecture-can-steer-agents-reasoning-redirects-rather-than-removes-susceptibility">GUI
+choice architecture can steer agents; reasoning redirects rather than
+removes susceptibility</h3>
+<p><em>A Dual-Process Perspective on Nudge Susceptibility in LLM-Based
+GUI Agents</em>, Haya Halimeh, Sascha Kaltenpoth, Kevin Bösch and Oliver
+Müller; Paderborn University; submitted September 17, 2026; manuscript
+completed November 2025; arXiv:2609.19843v1; cs.AI/econ.GN; preprint; CC
+BY 4.0. Public anonymous code and analysis are linked. (<a
+href="https://arxiv.org/abs/2609.19843">paper</a>, <a
+href="https://arxiv.org/html/2609.19843">full text</a>, <a
+href="https://anonymous.4open.science/r/Nudging_LLM_Agents-B1D5">artifact</a>)</p>
+<p><strong>Paper Facts.</strong> The authors run 3,600
+single-shopping-episode agents across six models from OpenAI, Google and
+Anthropic, with two reasoning settings and three conditions: no nudge, a
+default nudge and a social-influence nudge. Six decisions per agent
+yield 21,600 observations. Bayesian multilevel logistic models use four
+chains of 4,000 iterations, 1,000 warmup and weakly informative priors;
+reported R-hat values are approximately 1.00. Pooled marginal odds of
+selecting the nudged product are 8.70 for defaults and 37.24 for social
+influence versus control. High reasoning halves default-condition odds
+(OR 0.51, 95% HPD 0.41–0.62; predicted 92% to 86%) but raises
+social-influence odds 1.71× (1.26–2.20; predicted 96% to 98%).
+Exploratory size splits and some model cells show heterogeneity and
+ceiling separation.</p>
+<p><strong>Why Watchlist.</strong> The randomized experiment,
+multi-provider sample, preregistered-style hypotheses, Bayesian
+uncertainty and public artifact make the behavioral signal credible for
+the specific simulated store. But all episodes use one shopping task,
+one interface, one choice structure, two nudge types and agent instances
+with no enduring identity. “Reasoning” is provider-specific, not a
+common treatment. The very high baseline susceptibility and ceiling
+cells make odds ratios visually dramatic while absolute changes can be
+small. The scale analysis is exploratory, some point estimates are
+prior-sensitive, and the study does not test deception, adversarial
+websites, brand familiarity, price tradeoffs or enterprise approval
+workflows. <strong>Watch trigger:</strong> promote after replication on
+at least three enterprise-like GUI workflows with realistic constraints
+and heterogeneous interfaces demonstrates stable choice-architecture
+effects, and a shadow control reduces unwanted influence without
+suppressing legitimate evidence. <strong>Research Utility Score:
+87/100.</strong></p>
+<h3
+id="reusable-procedures-help-when-coverage-is-real-and-harm-when-approximate-context-is-forced">Reusable
+procedures help when coverage is real and harm when approximate context
+is forced</h3>
+<p><em>EconSkills: Studying Skill Transfer and Retrieval for Web Agents
+on Live Economic Data</em>, Yinzhu Quan and Zefang Liu; Georgia
+Institute of Technology and Capital One; submitted September 17, 2026;
+arXiv:2609.19523v1; cs.AI/cs.CL; preprint; arXiv non-exclusive
+distribution license. The paper links the EconWebArena dataset and the
+upstream BrowserGym/AgentLab frameworks but not the 50-skill library or
+its experiment code. (<a
+href="https://arxiv.org/abs/2609.19523">paper</a>, <a
+href="https://arxiv.org/html/2609.19523">full text</a>, <a
+href="https://huggingface.co/datasets/EconWebArena/EconWebArena">dataset</a>)</p>
+<p><strong>Paper Facts.</strong> Fifty successful seed trajectories
+across 37 authoritative websites and nine economic categories become
+seven-part parameterized procedures. Controlled transfer uses 100
+held-out variants, three conditions and three seeds—900 episodes—on
+gpt-5-mini with a 30-step budget. A known matched skill raises success
+from 41.0% to 49.3% (+8.3 points); 46 baseline failures become successes
+versus 21 regressions (McNemar p=0.0031). Among 102 cells where both
+succeed, matched skills use 2.37 fewer actions on average (sign test
+p=0.0012). At library scale, five retrieved skills reach 28.3% versus
+28.1% without skills overall, while leading 48.0% versus 44.0% on 150
+directly covered tasks and trailing 14.3% versus 16.7% on 210 uncovered
+tasks. The full 50-skill prompt collapses to 11.4%. A one-hint condition
+is neutral on 100 held-out covered variants but reduces uncovered
+success from 16.7% to 11.4% (p=0.043).</p>
+<p><strong>Why Watchlist.</strong> The controlled experiment separates
+the value of a known procedure from retrieval and context selection, and
+paired outcome tests reveal regressions hidden by averages. Yet the
+end-to-end deployment is statistically tied with no skills, each
+library-scale task runs once, one model and one benchmark are used,
+websites drift, and the artifact needed to reproduce the library is not
+linked. The result argues for a <strong>coverage classifier and
+abstention policy</strong>, not immediate deployment of a procedural
+memory library. <strong>Watch trigger:</strong> promote after a released
+artifact or independent reproduction across two agent backbones and
+multiple runs shows that a calibrated coverage gate preserves matched
+gains while eliminating uncovered-task regressions under site drift.
+<strong>Research Utility Score: 85/100.</strong></p>
+<h2 id="cross-paper-synthesis">Cross-paper synthesis</h2>
+<h3
+id="independent-analysis--three-boundaries-that-enterprise-controls-must-make-explicit">Independent
+Analysis — three boundaries that enterprise controls must make
+explicit</h3>
+<p>The selected work converges on one architecture rule:
+<strong>governed AI requires named boundaries with independent evidence
+at every handoff.</strong></p>
+<ol type="1">
+<li><strong>Reference boundary:</strong> Closed-World Resolution asks
+whether the call names a real, current, uniquely qualified contract. It
+must precede semantic selection and authorization.</li>
+<li><strong>Specification boundary:</strong> MAGS asks whether code
+satisfies a frozen specification. An external oracle and functional
+suite must challenge whether the specification covers the real hazard
+and permits useful behavior.</li>
+<li><strong>Evidence boundary:</strong> AgenticSearchLens asks whether
+retrieved evidence survives from result set to claim and citation. The
+final answer needs lineage, source authority and unsupported-claim
+handling.</li>
+<li><strong>Influence boundary:</strong> the GUI-nudge study shows that
+interface cues become inputs to agent decisions even when no malicious
+instruction exists; increased reasoning shifts susceptibility.</li>
+<li><strong>Coverage boundary:</strong> EconSkills shows that a stored
+procedure helps after a true match is known, while approximate or
+excessive context can reduce performance.</li>
+</ol>
+<p>This is a deeper correction than “add another guardrail.” Each
+failure appears when a downstream layer silently assumes that an
+upstream object is valid: the gate assumes a real tool; the proof
+assumes faithful semantics; the citation assumes a preserved evidence
+path; the agent assumes interface cues are relevant; the retriever
+assumes a procedure applies. The future architecture should turn those
+assumptions into testable admission contracts.</p>
+<h2 id="visual-1--ordered-enterprise-control-path">Visual 1 — ordered
+enterprise control path</h2>
+<pre class="text"><code>USER INTENT + RISK CLASS
+          │
+          ▼
+ [CONTEXT / EVIDENCE INGEST]
+ authority · freshness · provenance · UI influence labels
+          │
+          ▼
+ [REFERENCE RESOLUTION]  ← closed registry · qualified provider · live schema digest
+          │ resolved
+          ▼
+ [SEMANTIC SELECTION]    ← does this tool / procedure fit the intent and state?
+          │
+          ▼
+ [AUTHORIZATION GATE]    ← identity · purpose · amount · approval · reversibility
+          │
+          ▼
+ [EXECUTION / GENERATION]
+          │
+          ▼
+ [INDEPENDENT ACCEPTANCE]
+ spec coverage · external oracle · functional tests · persistent state
+          │
+          ▼
+ [CLAIM + CITATION LINEAGE]
+ every consequential claim → exact evidence object → source authority
+          │
+          ├── pass → release
+          └── fail / ambiguous / uncovered → quarantine, abstain or human review</code></pre>
+<h2 id="visual-2--apparent-control-versus-missing-boundary">Visual 2 —
+apparent control versus missing boundary</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Apparent control</th>
+<th>What it proves</th>
+<th>Missing boundary</th>
+<th>Research signal</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Tool authorization gate</td>
+<td>A policy evaluated a recognized action</td>
+<td>Whether the emitted name resolves to a unique live contract</td>
+<td>322 single-registry and 154 MCP hallucinations precede causal
+gating</td>
+</tr>
+<tr class="even">
+<td>Dafny certificate</td>
+<td>Program satisfies modeled properties</td>
+<td>Whether semantics cover real hazards and useful behavior</td>
+<td>100/100 terminal certificates but 82/100 external security passes;
+robotics 11/20 functional preservation after mitigation</td>
+</tr>
+<tr class="odd">
+<td>“Web search used”</td>
+<td>A retrieval tool ran</td>
+<td>Whether search was needed, sources were authoritative and claims
+retain lineage</td>
+<td>Same prompts trigger search 14% to 83%; 14–53% of claims use uncited
+results</td>
+</tr>
+<tr class="even">
+<td>High reasoning</td>
+<td>More inference was allocated</td>
+<td>Which influence route becomes stronger</td>
+<td>Default susceptibility falls; social-influence susceptibility
+rises</td>
+</tr>
+<tr class="odd">
+<td>Retrieved procedure</td>
+<td>Similar text was found</td>
+<td>Whether the procedure's scope actually covers the task</td>
+<td>Known matches add 8.3 points; full-library context falls to
+11.4%</td>
+</tr>
+</tbody>
+</table>
+<h2 id="enterprise-ai-enhancement-backlog">Enterprise AI Enhancement
+Backlog</h2>
+<h3 id="priority-method-and-uncertainty">Priority method and
+uncertainty</h3>
+<p>The <strong>Future Enterprise AI Priority Score</strong> is a
+transparent decision aid, not a probability, ROI forecast or roadmap
+commitment. It weights strategic/business value 25%, technical leverage
+20%, evidence strength 20%, enterprise readiness 15%, feasibility 10%
+and risk-adjusted differentiation 10%. Component scores are bounded
+analyst judgments grounded in today's papers and artifacts. Differences
+below about three points are not decision-significant without internal
+workflow volumes, loss severity, tool registries, identity model, data
+sensitivity, model estate, source policies, legal obligations, latency
+SLOs, evaluator ownership and adoption constraints.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: right;">#</th>
+<th>Enhancement</th>
+<th>Decision band</th>
+<th style="text-align: right;">Strategic</th>
+<th style="text-align: right;">Leverage</th>
+<th style="text-align: right;">Evidence</th>
+<th style="text-align: right;">Readiness</th>
+<th style="text-align: right;">Feasibility</th>
+<th style="text-align: right;">Differentiation</th>
+<th style="text-align: right;">Weighted total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td>Closed-world tool-call admission resolver</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">96</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;"><strong>93.6</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td>Specification coverage and independent-oracle gate</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">96</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;"><strong>90.7</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td>Search evidence-flow and citation-lineage audit</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">87</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">87</td>
+<td style="text-align: right;"><strong>90.2</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td>Qualified MCP namespace and schema-digest plane</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;"><strong>88.7</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td>Coverage-aware procedural memory router</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">89</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">81</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;"><strong>84.0</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td>Frozen domain-semantics registry</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">68</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;"><strong>83.6</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td>GUI choice-architecture qualification</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">63</td>
+<td style="text-align: right;">71</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;"><strong>79.9</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td>Agentic formal-verification service</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;"><strong>79.0</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9</td>
+<td>Formal certificate as sole release authority</td>
+<td>Deprioritize for Now</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;"><strong>43.5</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">10</td>
+<td>Model scale or reasoning as a substitute for controls</td>
+<td>Deprioritize for Now</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">27</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;"><strong>42.3</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="prototype-soon">Prototype Soon</h3>
+<h4 id="1-closed-world-tool-call-admission-resolver--936">1.
+Closed-world tool-call admission resolver — 93.6</h4>
+<ul>
+<li><strong>Category:</strong> AI Security / Agentic AI / Safety &amp;
+Governance.</li>
+<li><strong>Research signal and supporting papers:</strong> Closed-World
+Resolution measures 322 single-registry and 154 live MCP hallucinations
+across ten models and formalizes why reference resolution precedes
+gating. <strong>Evidence label: Paper Fact.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> Tool gates,
+approvals and least-privilege policies can fail ambiguously when a call
+names no tool, invents arguments, uses a stale schema or collides across
+providers.</li>
+<li><strong>Proposed future capability and how it works:</strong> Insert
+a deterministic admission step before selection and authorization.
+Require exact membership in a versioned registry, provider-qualified
+identity, current schema digest, strict types and explicit rejection
+codes. Schema-valid intent confusion proceeds to selection; resolved
+high-risk calls proceed to policy/approval.</li>
+<li><strong>Likely architectural placement:</strong> agent layer,
+orchestration, model gateway, security/governance and developer
+platform.</li>
+<li><strong>Expected business value:</strong> reliability, risk
+reduction, quality, incident prevention, auditability and faster
+root-cause analysis.</li>
+<li><strong>Technical value:</strong> Establishes a typed, closed-world
+trust boundary independent of model family; separates parse, resolution,
+selection and authorization failures.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+structural argument and live-model emission evidence; incomplete
+independent false-reject and field evidence. Ready for shadow
+evaluation. <strong>Confidence: High. Horizon: Now. Effort:
+S.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> Authoritative tool
+inventory, owners, immutable versions, qualified provider IDs, canonical
+schema hashing, strict parser, telemetry, fail behavior and escalation
+paths.</li>
+<li><strong>Key risks:</strong> Registry errors become shared-oracle
+failures; stale inventory causes false blocks; resolver availability
+becomes critical; schema-valid H5 confusion persists; ambiguous names
+create adoption friction.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build the thin
+resolver around internal contracts; buy mature schema, service-catalog
+and policy components where useful; partner with tool owners.</strong>
+Identity and fail semantics are enterprise-specific.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Replay
+10,000 historical calls plus seeded H1–H5 and M1–M5 mutations in shadow
+mode. Compare resolver decisions with tool logs and owner adjudication;
+do not block production.</li>
+<li><strong>Success metrics and stop conditions:</strong> Success:
+≥99.9% seeded H1–H3/M1–M4 rejection, &lt;0.5% independently adjudicated
+false rejection, &lt;5 ms p95 overhead and complete reason codes. Stop
+if the registry cannot be made authoritative, false rejection exceeds
+1%, or resolver outage can bypass admission.</li>
+<li><strong>Roadmap trigger:</strong> Two representative agent stacks
+reproduce results under registry drift and multi-provider collision
+tests; security and tool owners accept ownership/SLOs; the H5 handoff to
+semantic selection is measured.</li>
+</ul>
+<h4 id="2-specification-coverage-and-independent-oracle-gate--907">2.
+Specification coverage and independent-oracle gate — 90.7</h4>
+<ul>
+<li><strong>Category:</strong> AI Software Engineering / Evaluation
+&amp; Observability / Safety &amp; Governance.</li>
+<li><strong>Research signal and supporting papers:</strong> MAGS obtains
+220/220 Dafny certificates but only 82/100 terminal external security
+passes and 11/20 robotic functional-preservation passes after
+mitigation. <strong>Evidence label: Paper Fact.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> Formal or policy
+proofs can create false confidence when specifications omit hazards or
+overconstrain useful behavior.</li>
+<li><strong>Proposed future capability and how it works:</strong> Every
+certificate-producing pipeline must publish a property manifest, trusted
+computing base, semantic coverage ledger and executable mapping. A
+separately owned oracle team creates mutation tests, adversarial cases
+and functional-preservation checks; release requires both proof and
+oracle agreement.</li>
+<li><strong>Likely architectural placement:</strong> developer platform,
+evaluation, security/governance, infrastructure and human-review
+layer.</li>
+<li><strong>Expected business value:</strong> quality, reliability, risk
+reduction, fewer escaped defects and credible assurance for
+high-consequence code.</li>
+<li><strong>Technical value:</strong> Distinguishes proof soundness from
+specification adequacy and detects both unsafe under-specification and
+vacuous over-restriction.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+within-paper counterevidence; no released MAGS artifact or independent
+reproduction. Ready for a narrow sandbox. <strong>Confidence: High.
+Horizon: Now. Effort: M.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> Narrow domain,
+mature formalism, semantic owners, independent oracle owners, mutation
+corpus, deterministic build, runtime assumptions, certificate storage
+and review criteria.</li>
+<li><strong>Key risks:</strong> Shared model/test blind spots, unmodeled
+environment effects, compiler/solver trust, high cost, slow tails,
+property drift, review fatigue and certificates miscommunicated as
+global safety.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Partner with
+formal-methods experts; build domain semantics and oracles; buy
+supported solvers/toolchains.</strong> Internal properties and business
+invariants require ownership.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Formalize
+one bounded memory-safety or transaction invariant for 30 sandboxed
+generated programs; inject covered, uncovered and vacuity defects;
+measure proof/oracle disagreement and function preservation.</li>
+<li><strong>Success metrics and stop conditions:</strong> Success: all
+covered mutations rejected, all uncovered mutations surfaced by the
+external oracle, ≥95% useful-function preservation, reproducible
+certificates and bounded p95 cost. Stop on any silent external-oracle
+miss, unreviewed semantic extension or irreversible effect.</li>
+<li><strong>Roadmap trigger:</strong> Independent reviewers reproduce
+the certificate and oracle results; property coverage is approved;
+build-to-runtime mapping and rollback pass; economics are acceptable for
+the selected risk class.</li>
+</ul>
+<h4 id="3-search-evidence-flow-and-citation-lineage-audit--902">3.
+Search evidence-flow and citation-lineage audit — 90.2</h4>
+<ul>
+<li><strong>Category:</strong> RAG &amp; Knowledge / Evaluation &amp;
+Observability / Data &amp; Knowledge Infrastructure.</li>
+<li><strong>Research signal and supporting papers:</strong>
+AgenticSearchLens observes platform-specific invocation, result
+concentration, 14–53% retrieved-but-uncited claim support and 15–20%
+ungrounded claims. <strong>Evidence label: Paper Fact.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> Final answers
+can hide which result supported which claim, use weak sources, omit
+attribution or introduce unsupported model knowledge.</li>
+<li><strong>Proposed future capability and how it works:</strong> Record
+query, result rank, source identity, fetch time, content hash and access
+policy. Extract consequential claims, attach exact supporting spans,
+distinguish cited/retrieved/parametric support, score authority and
+independence, and route unsupported claims to abstention or review.</li>
+<li><strong>Likely architectural placement:</strong>
+retrieval/knowledge, model gateway, evaluation, observability and
+human-review layer.</li>
+<li><strong>Expected business value:</strong> quality, reliability,
+customer trust, regulatory defensibility, research speed and risk
+reduction.</li>
+<li><strong>Technical value:</strong> Makes grounding inspectable end to
+end; exposes lost attribution, source concentration and unsupported
+generation instead of collapsing them into answer quality.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Large
+observational dataset plus controlled replay and code; claim judges
+require local calibration. Ready for trace-only prototyping.
+<strong>Confidence: High. Horizon: Now. Effort: M.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> Search trace
+capture, content snapshots or hashes, claim segmenter, source policy,
+privacy controls, evaluator versioning and representative review
+set.</li>
+<li><strong>Key risks:</strong> Copyright and retention limits,
+sensitive queries, evaluator error, dynamic pages, source authority
+disputes, citation gaming, latency and overblocking useful
+synthesis.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build lineage and
+policy semantics; buy search/indexing and observability primitives;
+partner with legal, records and domain experts.</strong></li>
+<li><strong>Minimum reversible validation experiment:</strong> Audit 200
+non-sensitive historical research answers without altering output. Have
+two reviewers adjudicate claim support, authority, independence and
+attribution for a stratified sample.</li>
+<li><strong>Success metrics and stop conditions:</strong> Success: ≥90%
+reviewer agreement, ≥95% consequential-claim lineage coverage,
+quantified unsupported rate and &lt;10% false alarms. Stop if content
+retention violates policy, evaluator agreement stays below 80%, or trace
+capture materially changes source access.</li>
+<li><strong>Roadmap trigger:</strong> Two task families show repeatable
+detection of consequential unsupported claims, reviewer workload is
+acceptable and policy owners approve source/retention rules.</li>
+</ul>
+<h3 id="prepare-foundations">Prepare Foundations</h3>
+<h4 id="4-qualified-mcp-namespace-and-schema-digest-plane--887">4.
+Qualified MCP namespace and schema-digest plane — 88.7</h4>
+<ul>
+<li><strong>Category:</strong> AI Security / MLOps &amp; Platform.</li>
+<li><strong>Research signal and supporting papers:</strong> Closed-World
+Resolution measures 154 MCP hallucinations dominated by shadowing and
+collisions and specifies <code>(server, tool)</code> identity plus
+listing/current schema digests. <strong>Evidence label: Paper Fact +
+Enterprise Inference.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> Flattened tool
+names erase provider identity, trust tier and contract freshness across
+internal and third-party servers.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+Maintain signed server identities, trust tiers, qualified names, schema
+digests and explicit merge policy. Require provider pinning for
+cross-tier collision; allow reviewed same-tier pin-assist; quarantine
+digest drift.</li>
+<li><strong>Likely architectural placement:</strong> agent layer,
+orchestration, security/governance, infrastructure and developer
+platform.</li>
+<li><strong>Expected business value:</strong> risk reduction, platform
+reliability, safer ecosystem expansion and faster onboarding.</li>
+<li><strong>Technical value:</strong> Converts ambiguous federation into
+deterministic identity and freshness checks reusable by policy,
+telemetry and incident response.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Structural need is strong; live study is small and strict-policy utility
+is not field-tested. <strong>Confidence: Moderate. Horizon: 3–6 months.
+Effort: M.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> Workload identity,
+signing, trust taxonomy, inventory ownership, change process,
+compatibility rules and high-availability resolver.</li>
+<li><strong>Key risks:</strong> Central bottleneck, trust-tier politics,
+false quarantine during planned upgrades, malicious but correctly signed
+implementations and provider-pin spoofing.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build policy and
+identity integration; buy PKI/service-catalog primitives; partner with
+MCP/tool vendors for signed metadata.</strong></li>
+<li><strong>Minimum reversible validation experiment:</strong> Mirror
+two first-party and two test servers with deliberate collision, shadow
+and stale-schema cases; resolve in a sandbox under strict and
+pin-assisted policies.</li>
+<li><strong>Success metrics and stop conditions:</strong> Zero
+cross-tier shadow acceptance, complete drift detection, &lt;1% benign
+collision interruption under pin-assist and &lt;10 ms p95 lookup. Stop
+if unsigned exceptions become normal or fail-open remains possible.</li>
+<li><strong>Roadmap trigger:</strong> All critical tool servers expose
+stable identities/digests, multi-region availability passes and security
+approves collision/exception governance.</li>
+</ul>
+<h4 id="5-coverage-aware-procedural-memory-router--840">5.
+Coverage-aware procedural memory router — 84.0</h4>
+<ul>
+<li><strong>Category:</strong> Memory &amp; Context / Agentic AI /
+Human-AI Workflow.</li>
+<li><strong>Research signal and supporting papers:</strong> EconSkills
+raises controlled matched success 8.3 points but retrieves to an overall
+tie; uncovered hints regress 5.3 points and full-library context falls
+to 11.4%. <strong>Evidence label: Paper Fact.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> Reusable
+procedures can accelerate recurring work, but approximate matches and
+excessive context create negative transfer.</li>
+<li><strong>Proposed future capability and how it works:</strong> Store
+procedures with explicit portal, workflow, data, permissions, version
+and evidence preconditions. A calibrated router returns a skill only
+above coverage threshold; otherwise it abstains. Every applied skill
+carries freshness and postcondition checks.</li>
+<li><strong>Likely architectural placement:</strong> agent layer,
+orchestration, memory/context, retrieval/knowledge and developer
+platform.</li>
+<li><strong>Expected business value:</strong> productivity, speed,
+consistency, lower step cost and reduced relearning.</li>
+<li><strong>Technical value:</strong> Turns procedural memory into
+typed, abstention-capable context rather than unbounded prompt
+accumulation.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Controlled transfer signal is good; end-to-end gain is absent and
+artifacts are incomplete. <strong>Confidence: Moderate. Horizon: 3–6
+months. Effort: M.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> Verified successful
+trajectories, skill schema, coverage labels, drift detection, versioned
+sites/APIs, outcome oracle and owner.</li>
+<li><strong>Key risks:</strong> Negative transfer, stale procedures,
+prompt injection in stored skills, hidden permissions, context
+interference, feedback loops and coverage overconfidence.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build coverage and
+validation contracts; buy vector/search infrastructure; partner with
+workflow owners.</strong> Generic similarity is insufficient.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Create 20
+procedures for one non-sensitive portal and evaluate 60 covered/60
+uncovered tasks across no-skill, matched, router and forced-retrieval
+conditions with three seeds.</li>
+<li><strong>Success metrics and stop conditions:</strong> ≥5-point
+covered gain, no significant uncovered regression, ≥90% coverage
+precision, lower median steps and complete evidence checks. Stop if any
+stale skill causes durable change or uncovered performance drops &gt;2
+points.</li>
+<li><strong>Roadmap trigger:</strong> Gains reproduce on a second
+portal/model and the router maintains calibrated abstention through a
+site update.</li>
+</ul>
+<h4 id="6-frozen-domain-semantics-registry--836">6. Frozen
+domain-semantics registry — 83.6</h4>
+<ul>
+<li><strong>Category:</strong> AI Software Engineering / Data &amp;
+Knowledge Infrastructure / Safety &amp; Governance.</li>
+<li><strong>Research signal and supporting papers:</strong> MAGS reuses
+frozen, human-audited domain semantics; failures identify missing
+privileged/concurrent effects and restrictive robotic abstractions.
+<strong>Evidence label: Paper Fact + Enterprise Inference.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> Safety
+properties, API behavior and environmental assumptions are often
+scattered across prompts, tests and documentation with no versioned
+ownership.</li>
+<li><strong>Proposed future capability and how it works:</strong> Store
+machine-readable API semantics, safety properties, assumptions, owner,
+review evidence, coverage probes, known exclusions and dependent
+certificates. Freeze versions for builds; changes invalidate dependent
+proofs and trigger requalification.</li>
+<li><strong>Likely architectural placement:</strong> developer platform,
+data platform, security/governance and evaluation.</li>
+<li><strong>Expected business value:</strong> quality, reliability,
+reuse, auditability and faster high-assurance development.</li>
+<li><strong>Technical value:</strong> Amortizes formalization, makes
+coverage gaps explicit and creates lineage from semantic change to
+affected programs.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Conceptually strong but expensive; one paper, three domains and no
+artifact. <strong>Confidence: Moderate. Horizon: 6–12 months. Effort:
+L.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> Stable APIs, formal
+methods expertise, schema/version service, review board, mutation tests,
+dependency graph and exception policy.</li>
+<li><strong>Key risks:</strong> False completeness, semantic drift,
+review bottleneck, ownership gaps, incompatible formalisms and high
+maintenance cost.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Partner for
+formal-methods expertise, buy solver infrastructure, build the domain
+registry and ownership model.</strong></li>
+<li><strong>Minimum reversible validation experiment:</strong> Encode
+one library with five safety properties, 20 API operations, three
+safe/unsafe probes per property and an explicit exclusion list; re-run
+on one breaking API change.</li>
+<li><strong>Success metrics and stop conditions:</strong> All seeded
+semantic regressions detected, dependency invalidation complete,
+reviewers agree on coverage/exclusions and maintenance stays within
+budget. Stop if owners cannot define authoritative behavior or
+exclusions remain implicit.</li>
+<li><strong>Roadmap trigger:</strong> A second code family reuses the
+semantics with lower per-program assurance cost and no oracle
+disagreement across two releases.</li>
+</ul>
+<h3 id="monitor-for-maturity">Monitor for Maturity</h3>
+<h4 id="7-gui-choice-architecture-qualification--799">7. GUI
+choice-architecture qualification — 79.9</h4>
+<ul>
+<li><strong>Category:</strong> Human-AI Workflow / Safety &amp;
+Governance / Evaluation &amp; Observability.</li>
+<li><strong>Research signal and supporting papers:</strong> The nudge
+study reports default OR 8.70 and social-influence OR 37.24, with high
+reasoning decreasing one and increasing the other. <strong>Evidence
+label: Paper Fact.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> Computer-use
+agents act in interfaces containing defaults, popularity cues, rankings
+and vendor persuasion that may be irrelevant to user intent.</li>
+<li><strong>Proposed future capability and how it works:</strong> Build
+paired-interface tests that vary defaults, social proof, order, salience
+and disclosure while holding business facts constant; flag material
+decision instability and require human review for high-impact
+choices.</li>
+<li><strong>Likely architectural placement:</strong> applications, agent
+layer, evaluation, observability and human-review layer.</li>
+<li><strong>Expected business value:</strong> risk reduction, customer
+trust, procurement quality and fairness.</li>
+<li><strong>Technical value:</strong> Adds behavioral invariance testing
+beyond task-completion scores.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Credible single-environment experiment with artifact; enterprise
+generality unproven. <strong>Confidence: Moderate. Horizon: 6–12 months.
+Effort: M.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> Representative
+interfaces, user-preference model, paired fixtures, legal/fairness
+review and consequence thresholds.</li>
+<li><strong>Key risks:</strong> Legitimate cues mistaken for
+manipulation, UI drift, brittle screen reproduction, provider-specific
+reasoning controls and excessive human review.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build internal
+qualification cases; partner with HCI/behavioral experts; buy browser
+automation only as substrate.</strong></li>
+<li><strong>Minimum reversible validation experiment:</strong> Run 300
+sandbox decisions across three internal-style workflows under paired UI
+variants and two model configurations; no purchase or external
+submission occurs.</li>
+<li><strong>Success metrics and stop conditions:</strong> Detect ≥90%
+seeded influence, stable user-aligned choices across irrelevant variants
+and &lt;10% false alarms. Stop if ground-truth preferences cannot be
+specified or UI capture includes sensitive production data.</li>
+<li><strong>Roadmap trigger:</strong> Effects reproduce across two model
+families and mitigation lowers unwanted choice shifts without reducing
+correct completion more than 2 points.</li>
+</ul>
+<h4 id="8-agentic-formal-verification-service--790">8. Agentic
+formal-verification service — 79.0</h4>
+<ul>
+<li><strong>Category:</strong> AI Software Engineering / Reasoning &amp;
+Planning / Model &amp; Inference.</li>
+<li><strong>Research signal and supporting papers:</strong> MAGS
+demonstrates a shared Dafny pipeline over CUDA, terminal and robotics
+with 220 certificates, while exposing substantial coverage, preservation
+and cost gaps. <strong>Evidence label: Paper Fact +
+Uncertainty.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> High-consequence
+generated code needs assurance stronger than tests, but manual proof
+engineering does not scale.</li>
+<li><strong>Proposed future capability and how it works:</strong> A
+quarantined service translates a narrow class of generated code to a
+verification IR, uses frozen semantics, runs multiple proof/repair
+strategies and returns a certificate plus coverage/exclusion manifest
+and external-oracle results.</li>
+<li><strong>Likely architectural placement:</strong> developer platform,
+evaluation, infrastructure and human-review layer.</li>
+<li><strong>Expected business value:</strong> strategic differentiation,
+quality, reliability and risk reduction for select critical
+components.</li>
+<li><strong>Technical value:</strong> Machine-checkable property
+assurance with reusable semantics and explicit proof artifacts.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Promising preprint without released implementation; 36–68 minute means
+and multimillion-token costs; external disagreement. <strong>Confidence:
+Low. Horizon: 12+ months. Effort: XL.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> Formal semantics,
+solver expertise, deterministic compilation, isolated compute,
+certificate verifier, independent oracles, code owners and long-running
+job controls.</li>
+<li><strong>Key risks:</strong> Unsound or incomplete specs, vacuous
+repair, solver/toolchain defects, prohibitive cost, proprietary model
+drift, supply-chain exposure and false executive confidence.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Partner/research
+collaboration first; buy established verifiers; do not build a general
+platform yet.</strong></li>
+<li><strong>Minimum reversible validation experiment:</strong> Reproduce
+one published or internal narrow case offline with open artifacts;
+independently mutate semantics and programs before any integration.</li>
+<li><strong>Success metrics and stop conditions:</strong> Reproducible
+certificates, zero silent covered-property misses, ≥95% functional
+preservation, explicit exclusions and acceptable cost for the risk tier.
+Stop if code/artifacts remain unavailable or oracle disagreement cannot
+be explained.</li>
+<li><strong>Roadmap trigger:</strong> Independent reproduction plus a
+second domain demonstrates coverage, fidelity and economics; security
+and engineering owners accept the trusted base.</li>
+</ul>
+<h3 id="deprioritize-for-now">Deprioritize for Now</h3>
+<h4 id="9-formal-certificate-as-sole-release-authority--435">9. Formal
+certificate as sole release authority — 43.5</h4>
+<ul>
+<li><strong>Category:</strong> Safety &amp; Governance / Other.</li>
+<li><strong>Research signal and supporting papers:</strong> MAGS
+supplies the counterexample: every sample verifies, while terminal
+oracle and robotics functionality disagree materially. <strong>Evidence
+label: Paper Fact.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> Teams may
+mistake a precise certificate for comprehensive safety.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+<strong>Do not implement as authority.</strong> Retain certificates only
+as one channel in an acceptance record that also includes coverage,
+functional, environmental and adversarial evidence.</li>
+<li><strong>Likely architectural placement:</strong> security/governance
+and human-review layer.</li>
+<li><strong>Expected business value:</strong> Deprioritization avoids
+false assurance and escaped risk.</li>
+<li><strong>Technical value:</strong> Prevents an invalid composition of
+proof and policy.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+evidence against sole-authority use. <strong>Confidence: High. Horizon:
+12+ months. Effort: S to avoid.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> If reconsidered,
+complete semantics, verified compile-back, independent oracles and
+governance review.</li>
+<li><strong>Key risks:</strong> Specification gaming, omitted hazards,
+vacuous code, misunderstood scope and audit misrepresentation.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Neither.</strong>
+Use multi-oracle acceptance instead.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Red-team
+any proposed certificate by injecting one uncovered hazard and one
+vacuity defect.</li>
+<li><strong>Success metrics and stop conditions:</strong> Stop
+immediately if either defect passes while the certificate remains
+valid.</li>
+<li><strong>Roadmap trigger:</strong> Only a mature, independently
+audited domain with complete assumptions, zero external disagreement and
+legally accepted assurance scope could justify reconsideration.</li>
+</ul>
+<h4
+id="10-model-scale-or-reasoning-as-a-substitute-for-controls--423">10.
+Model scale or reasoning as a substitute for controls — 42.3</h4>
+<ul>
+<li><strong>Category:</strong> Model &amp; Inference / Safety &amp;
+Governance.</li>
+<li><strong>Research signal and supporting papers:</strong> Closed-World
+Resolution finds similar raw-JSON hallucination in 8B and 675B examples;
+the GUI-nudge study finds reasoning redirects susceptibility.
+<strong>Evidence label: Paper Fact.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> Capability
+upgrades are sometimes treated as implicit remediation for structural
+control failures.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+<strong>Do not use model choice as the control.</strong> Keep
+deterministic reference, authorization, provenance and acceptance layers
+invariant across model upgrades; requalify behavior separately.</li>
+<li><strong>Likely architectural placement:</strong> model gateway,
+orchestration, evaluation and security/governance.</li>
+<li><strong>Expected business value:</strong> cost discipline,
+reliability and risk reduction.</li>
+<li><strong>Technical value:</strong> Separates model capability from
+system invariants and prevents regression masking.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+evidence that scale/reasoning do not eliminate these classes; exact
+rates are study-specific. <strong>Confidence: High. Horizon: Now.
+Effort: S.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> Model-independent
+contracts, version lineage, regression suite and upgrade gate.</li>
+<li><strong>Key risks:</strong> Shadow bypasses, unsupported provider
+features, complacency and cost escalation.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build stable control
+interfaces; buy models behind them.</strong></li>
+<li><strong>Minimum reversible validation experiment:</strong> Re-run
+tool hallucination, GUI influence and search-lineage tests before/after
+one model upgrade in shadow mode.</li>
+<li><strong>Success metrics and stop conditions:</strong> Control
+results remain invariant; model change does not increase false
+acceptance or unsupported claims. Stop rollout on any material
+regression.</li>
+<li><strong>Roadmap trigger:</strong> No trigger for replacement; only
+evidence that a model improvement complements—never substitutes for—the
+deterministic controls.</li>
+</ul>
+<h2 id="enterprise-ai-architecture-implications">Enterprise AI
+Architecture Implications</h2>
+<h3 id="independent-analysis--1224-month-architecture-shift">Independent
+Analysis — 12–24 month architecture shift</h3>
+<p>Today's evidence favors an enterprise AI architecture built around
+<strong>admission contracts and independent acceptance</strong>, rather
+than one monolithic “agent safety” layer.</p>
+<ol type="1">
+<li><strong>Model gateway:</strong> preserve model/version, reasoning
+configuration, tool-invocation surface, prompt and cost telemetry. A
+model upgrade cannot silently change whether calls are schema
+constrained or how evidence is sought.</li>
+<li><strong>Context and evidence service:</strong> attach source
+identity, timestamp, authority, access decision, content digest and
+provenance to every context item. Mark interface cues, retrieved facts
+and model-generated content as different trust classes.</li>
+<li><strong>Tool and capability registry:</strong> use
+provider-qualified identities, signed/versioned contracts, schema
+digests, owners, risk class, preconditions, effects, permissions and
+rollback semantics. Flat names become display labels, not security
+identities.</li>
+<li><strong>Resolution before orchestration:</strong> deterministically
+resolve membership, provider, freshness and arguments. Only then perform
+semantic selection, planning and authorization.</li>
+<li><strong>Policy and identity plane:</strong> evaluate task-scoped
+authorization against the resolved action, user/service identity,
+purpose, resource, amount and approval state. Resolution cannot replace
+authorization; authorization cannot repair resolution.</li>
+<li><strong>Evaluation infrastructure:</strong> keep specification
+authors, proof agents and independent oracle owners separable. Store
+property manifests, covered/uncovered hazards, functional tests,
+mutation results, evaluator versions and confidence.</li>
+<li><strong>Observability:</strong> trace query → result → claim →
+citation and plan → call → resolution → authorization → effect. Log
+structured rejection reasons, not just model prose.</li>
+<li><strong>Human-review layer:</strong> surface ambiguity, ungrounded
+consequential claims, uncovered specification properties, high-impact
+GUI sensitivity and negative-transfer risk with the exact evidence
+needed for a decision.</li>
+<li><strong>Experiment infrastructure:</strong> support shadow
+resolution, sandbox execution, paired UI variants, mutation testing,
+replay, abstention calibration and non-destructive rollback.</li>
+</ol>
+<p>The shared foundations unlock multiple enhancements: authoritative
+inventories, immutable version lineage, content/schema digests, data
+provenance, identity and authorization, evaluator registries,
+policy-as-code, cost/latency telemetry, sandboxing, reversible
+experiments and explicit human ownership. Additional internal context is
+required before implementation: the existing tool/API inventory, MCP
+exposure, model invocation surfaces, critical workflows, application
+owners, evidence sources, data-retention policy, formal-methods
+capacity, acceptable latency, incident history and review budget. None
+is assumed here.</p>
+<h2 id="implementation-priorities">Implementation priorities</h2>
+<h3 id="next-30-days">Next 30 days</h3>
+<ol type="1">
+<li>Inventory one agent stack's tool-call path from model output through
+parser, registry, selection, authorization and execution; document where
+unknown names, stale schemas and collisions fail.</li>
+<li>Shadow-run a closed-world resolver on historical calls and seeded
+mutations; adjudicate false rejects with tool owners.</li>
+<li>Select one search-grounded workflow and capture
+query/result/claim/citation lineage for 200 non-sensitive cases.</li>
+<li>Select one narrow code-safety property and establish two owners:
+semantic specification and independent oracle.</li>
+</ol>
+<h3 id="3090-days">30–90 days</h3>
+<ol type="1">
+<li>Introduce provider-qualified tool identities and schema digests in a
+sandbox registry.</li>
+<li>Build coverage and exclusion manifests for proof/evaluation
+artifacts; prohibit the word “safe” without a property scope.</li>
+<li>Calibrate claim-support judges against human review, including
+authority, freshness and independence.</li>
+<li>Build a small procedural-memory experiment with covered/uncovered
+tasks and an explicit abstention threshold.</li>
+</ol>
+<h3 id="312-months">3–12 months</h3>
+<ol type="1">
+<li>Expand reference resolution and evidence lineage only after shadow
+precision and availability meet SLOs.</li>
+<li>Version semantic registries and invalidate dependent certificates on
+change.</li>
+<li>Add paired GUI-influence cases to computer-use evaluations.</li>
+<li>Keep formal-verification services and autonomous procedural memory
+quarantined until independently reproduced and economically
+justified.</li>
+</ol>
+<h2 id="knowledge-reinforcement">Knowledge reinforcement</h2>
+<ol type="1">
+<li><strong>Why must resolution precede authorization?</strong> Because
+a policy gate can only reason about an action with a real, current
+identity and declared arguments; fabricated or ambiguous references are
+not complete gate inputs.</li>
+<li><strong>What does a formal certificate actually establish?</strong>
+That a program satisfies specified properties under modeled assumptions
+and trusted tooling—not that the specification covers every real hazard
+or that the program remains useful.</li>
+<li><strong>Why is search invocation rate a poor quality
+metric?</strong> Search includes separate decisions about when to
+search, how to query, which results appear, which evidence is used and
+what is cited; more calls can add noise.</li>
+<li><strong>What is the H5 residue?</strong> A call that names one real
+tool but uses another tool's argument pattern in a way that still
+satisfies the named tool's schema; only intent/state reasoning can
+distinguish it.</li>
+<li><strong>Why does more reasoning not guarantee robustness?</strong>
+In the GUI study it reduced automatic default effects but increased
+reflective social-influence effects; reasoning changed which cues
+mattered.</li>
+<li><strong>What is the operational lesson from EconSkills?</strong>
+Reusable procedures need typed scope and abstention. Correct known
+matches helped, approximate matches erased gains and full-library
+context harmed performance.</li>
+</ol>
+<h2 id="evidence-ledger-and-boundary-statement">Evidence ledger and
+boundary statement</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Paper</th>
+<th>Status and date</th>
+<th>Verified artifact</th>
+<th>Strongest enterprise signal</th>
+<th>Material unresolved evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Closed-World Resolution</td>
+<td>arXiv preprint, Sep 16</td>
+<td>Package described; no source repository linked from paper page</td>
+<td>Resolve qualified tool identity and signature before
+authorization</td>
+<td>Independent false rejects, field deployment, package provenance,
+latency/SLOs</td>
+</tr>
+<tr class="even">
+<td>MAGS</td>
+<td>arXiv preprint, Sep 16; CC BY 4.0</td>
+<td>No code linked</td>
+<td>Pair proof with coverage ledger, external oracle and function
+preservation</td>
+<td>Reproduction, artifact access, semantic completeness, trusted
+compiler/runtime, total economics</td>
+</tr>
+<tr class="odd">
+<td>AgenticSearchLens</td>
+<td>arXiv preprint, Sep 16; CC BY 4.0</td>
+<td>Public code/mock data; donated traces private</td>
+<td>Trace query/result/claim/citation lifecycle</td>
+<td>Dataset access, platform drift, judge calibration, source authority
+and causal use</td>
+</tr>
+<tr class="even">
+<td>GUI nudge study</td>
+<td>arXiv preprint, Sep 17; CC BY 4.0</td>
+<td>Anonymous public code/analysis</td>
+<td>Qualify behavioral invariance to interface choice architecture</td>
+<td>Multi-domain generalization, absolute-effect interpretation,
+persistent agents</td>
+</tr>
+<tr class="odd">
+<td>EconSkills</td>
+<td>arXiv preprint, Sep 17</td>
+<td>Upstream dataset; skill library/code not linked</td>
+<td>Route procedural memory by coverage and abstain on weak matches</td>
+<td>Multi-model repeats, library artifact, site drift, end-to-end
+gain</td>
+</tr>
+</tbody>
+</table>
+<p>This briefing identifies future options, not approved deployments.
+Internal architecture, data, identity, vendor, security, legal, privacy
+and operating-model context has not been supplied and is not assumed. No
+production action should be authorized from these papers alone. Every
+proposed experiment must remain isolated, reversible, measurable,
+non-destructive and reviewed by accountable system and risk owners.</p>
+<h2 id="primary-sources">Primary sources</h2>
+<ul>
+<li><a href="https://arxiv.org/abs/2609.19425">Closed-World Resolution
+Against Tool Hallucination in LLM Agents</a> · <a
+href="https://arxiv.org/html/2609.19425">full text</a></li>
+<li><a href="https://arxiv.org/abs/2609.19391">MAGS: Multi-agent
+Auto-formalization Guarantees Safety for Agentic Outputs</a> · <a
+href="https://arxiv.org/html/2609.19391">full text</a></li>
+<li><a href="https://arxiv.org/abs/2609.19244">Characterizing Web Search
+by Conversational LLM Agents</a> · <a
+href="https://arxiv.org/html/2609.19244">full text</a> · <a
+href="https://github.com/mahsaama/AgenticSearchLens/">artifact</a></li>
+<li><a href="https://arxiv.org/abs/2609.19843">A Dual-Process
+Perspective on Nudge Susceptibility in LLM-Based GUI Agents</a> · <a
+href="https://arxiv.org/html/2609.19843">full text</a> · <a
+href="https://anonymous.4open.science/r/Nudging_LLM_Agents-B1D5">artifact</a></li>
+<li><a href="https://arxiv.org/abs/2609.19523">EconSkills: Studying
+Skill Transfer and Retrieval for Web Agents on Live Economic Data</a> ·
+<a href="https://arxiv.org/html/2609.19523">full text</a> · <a
+href="https://huggingface.co/datasets/EconWebArena/EconWebArena">EconWebArena
+dataset</a></li>
+</ul></main></div>
+<footer>AI Research Intelligence Brief · September 18, 2026 · Research options, not deployment approval.</footer>
+<div class="toolbar"><button onclick="window.print()" aria-label="Print report">Print</button><button id="top" aria-label="Back to top">↑ Top</button></div>
+<script>
+const p=document.getElementById('progress');addEventListener('scroll',()=>{const h=document.documentElement;p.style.width=((h.scrollTop/(h.scrollHeight-h.clientHeight))*100)+'%'});document.getElementById('top').onclick=()=>scrollTo({top:0,behavior:'smooth'});
+document.querySelectorAll('main h4').forEach(h=>{if(/^\d+\./.test(h.textContent))h.setAttribute('data-backlog','true')});
+</script>
+</body></html>

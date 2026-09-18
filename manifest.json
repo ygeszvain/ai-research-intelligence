@@ -3,12 +3,29 @@
     "title": "AI Research Intelligence",
     "url": "https://ygeszvain.github.io/ai-research-intelligence",
     "description": "Evidence-grounded daily AI and machine-learning research intelligence.",
-    "generated_at_utc": "2026-09-17T09:00:00.000Z",
-    "report_count": 39,
-    "latest_report": "2026-09-17",
-    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-17.html"
+    "generated_at_utc": "2026-09-18T09:00:00.000Z",
+    "report_count": 40,
+    "latest_report": "2026-09-18",
+    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-18.html"
   },
   "reports": [
+    {
+      "date": "2026-09-18",
+      "date_display": "September 18, 2026",
+      "title": "AI Research Intelligence Brief — September 18, 2026",
+      "excerpt": "Three deep papers show why enterprise AI controls must resolve exact tool identities, challenge formal specifications with independent oracles, and preserve retrieved evidence through claims and citations.",
+      "topics": [
+        "AI Security",
+        "Agentic AI",
+        "AI Software Engineering",
+        "RAG & Knowledge",
+        "Evaluation & Observability"
+      ],
+      "path": "reports/2026-09-18.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-18.html",
+      "size_bytes": 100520,
+      "sha256": "71bda0c3f02a06d925c6a9c210529554f6ae70090acb0dde8791f217efc34875"
+    },
     {
       "date": "2026-09-17",
       "date_display": "September 17, 2026",
