@@ -3,12 +3,30 @@
     "title": "AI Research Intelligence",
     "url": "https://ygeszvain.github.io/ai-research-intelligence",
     "description": "Evidence-grounded daily AI and machine-learning research intelligence.",
-    "generated_at_utc": "2026-09-18T09:00:00.000Z",
-    "report_count": 40,
-    "latest_report": "2026-09-18",
-    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-18.html"
+    "generated_at_utc": "2026-09-19T09:00:00.000Z",
+    "report_count": 41,
+    "latest_report": "2026-09-19",
+    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-19.html"
   },
   "reports": [
+    {
+      "date": "2026-09-19",
+      "date_display": "September 19, 2026",
+      "title": "AI Research Intelligence Brief — September 19, 2026",
+      "excerpt": "Three deep papers show why enterprise AI harness, retrieval and personalization policies must be qualified against model capability, resource budget, task stage and interaction history.",
+      "topics": [
+        "Agentic AI",
+        "AI Software Engineering",
+        "RAG & Knowledge",
+        "Memory & Context",
+        "Human-AI Workflow",
+        "Evaluation & Observability"
+      ],
+      "path": "reports/2026-09-19.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-19.html",
+      "size_bytes": 77685,
+      "sha256": "74fe5e534b28b3b7cbe1e957f7c8046132f4105ae3c8b331b632d220148262e3"
+    },
     {
       "date": "2026-09-18",
       "date_display": "September 18, 2026",

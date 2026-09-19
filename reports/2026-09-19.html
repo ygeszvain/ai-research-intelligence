@@ -1,0 +1,1443 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Evidence-grounded AI Research Intelligence Brief for September 19, 2026: conditional agent harnesses, stateful troubleshooting retrieval, and longitudinal personalization governance.">
+<meta name="report-date" content="2026-09-19">
+<meta name="research-window" content="2026-09-18T04:00:00-05:00/2026-09-19T04:00:00-05:00 America/Chicago">
+<meta name="deep-paper-count" content="3">
+<meta name="watchlist-count" content="2">
+<meta name="theme-color" content="#08131f">
+<title>AI Research Intelligence Brief — September 19, 2026</title>
+<style>
+:root{--bg:#07111d;--panel:#0d1b2a;--panel2:#10263a;--text:#e8f1f7;--muted:#9fb5c5;--line:#29445b;--cyan:#45d7c4;--gold:#f5c96a;--rose:#ff8d9a;--blue:#68a9ff;--max:1180px;color-scheme:dark}
+@media(prefers-color-scheme:light){:root{--bg:#f4f7f8;--panel:#fff;--panel2:#edf4f7;--text:#102131;--muted:#526979;--line:#cddbe2;--cyan:#087f73;--gold:#9b6300;--rose:#b92b45;--blue:#1661ad;color-scheme:light}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 90% 0,rgba(69,215,196,.12),transparent 30rem),var(--bg);color:var(--text);font:16px/1.67 ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}a{color:var(--cyan);text-underline-offset:3px}a:hover{text-decoration-thickness:2px}header{border-bottom:1px solid var(--line);background:linear-gradient(135deg,rgba(69,215,196,.09),rgba(104,169,255,.05));padding:54px 22px 34px}.hero{max-width:var(--max);margin:auto}.eyebrow{color:var(--cyan);text-transform:uppercase;letter-spacing:.15em;font-size:.76rem;font-weight:800}h1{font-size:clamp(2.2rem,6vw,4.7rem);line-height:.98;max-width:950px;margin:.35rem 0 1rem;letter-spacing:-.055em}header p{max-width:830px;color:var(--muted);font-size:1.09rem}.chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}.chip{border:1px solid var(--line);border-radius:999px;padding:6px 11px;background:var(--panel);font-size:.8rem}.topbets{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}.bet{border:1px solid var(--line);background:var(--panel);border-radius:14px;padding:15px}.bet b{display:block;color:var(--gold);font-size:1.15rem}.layout{max-width:var(--max);margin:auto;display:grid;grid-template-columns:250px minmax(0,1fr);gap:34px;padding:30px 22px 80px}nav{position:sticky;top:16px;align-self:start;max-height:calc(100vh - 32px);overflow:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:14px}nav strong{display:block;margin:2px 8px 10px;color:var(--gold)}nav ul{list-style:none;margin:0;padding:0}nav li{margin:0}nav a{display:block;color:var(--muted);text-decoration:none;padding:5px 8px;border-radius:7px;font-size:.83rem;line-height:1.25}nav a:hover{background:var(--panel2);color:var(--text)}main{min-width:0}main>h2{font-size:1.75rem;margin:2.6rem 0 1rem;padding-top:.7rem;border-top:1px solid var(--line)}main>h2:first-child{margin-top:0}h3{font-size:1.3rem;margin-top:2rem;color:var(--cyan)}h4{font-size:1.08rem;color:var(--gold);margin-bottom:.45rem}p,li{max-width:88ch}blockquote{margin:1rem 0;padding:1rem 1.2rem;border-left:4px solid var(--gold);background:var(--panel);color:var(--muted)}pre{white-space:pre-wrap;overflow:auto;background:#07101a;border:1px solid var(--line);border-radius:14px;padding:18px;color:#dcecf2;font-size:.86rem;line-height:1.45}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}table{width:100%;border-collapse:collapse;margin:1.25rem 0;background:var(--panel);font-size:.86rem}th,td{padding:10px 12px;border:1px solid var(--line);text-align:left;vertical-align:top}th{color:var(--gold);background:var(--panel2)}hr{border:0;border-top:1px solid var(--line)}main h4+ul,main h3+ul{border:1px solid var(--line);background:linear-gradient(135deg,var(--panel),var(--panel2));border-radius:14px;padding:15px 22px 15px 34px}main h4+ul li,main h3+ul li{margin:.5rem 0}.progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--cyan),var(--gold));width:0;z-index:9}.toolbar{position:fixed;right:18px;bottom:18px;display:flex;gap:8px}.toolbar button{border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:999px;padding:9px 12px;cursor:pointer;box-shadow:0 8px 30px rgba(0,0,0,.2)}.label{font-size:.75rem;color:var(--muted)}footer{border-top:1px solid var(--line);padding:24px;text-align:center;color:var(--muted)}
+@media(max-width:850px){.topbets{grid-template-columns:1fr}.layout{grid-template-columns:1fr}nav{position:relative;top:0;max-height:none}nav ul{columns:2}h1{font-size:2.65rem}}
+@media(max-width:520px){header{padding-top:34px}.layout{padding:20px 14px 60px}nav ul{columns:1}table{display:block;overflow-x:auto}h1{font-size:2.25rem}}
+@media print{body{background:white;color:#111;font-size:11pt}header{padding:18px 0}.layout{display:block;padding:0}nav,.toolbar,.progress{display:none}a{color:#145c70}main>h2{break-before:page}main>h2:first-child{break-before:auto}table,pre{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<header><div class="hero">
+<div class="eyebrow">AI Research Intelligence · Evidence before enthusiasm</div>
+<h1>Qualify the policy, not just the component.</h1>
+<p>September 19, 2026 briefing. Three deep papers show that agent harnesses, troubleshooting retrieval and personalization change value with model capability, resource budget, task stage and interaction history.</p>
+<div class="chips"><span class="chip">3 deep papers</span><span class="chip">2 Watchlist</span><span class="chip">24-hour window</span><span class="chip">9 enterprise options</span><span class="chip">Primary sources + full-paper review</span></div>
+<div class="topbets"><div class="bet"><span class="label">TOP BET 1 · PROTOTYPE SOON</span><b>93.1 · Harness qualification matrix</b><span>Version agent policies by model, task, context budget and measured risk.</span></div><div class="bet"><span class="label">TOP BET 2 · PROTOTYPE SOON</span><b>90.7 · Stateful case retrieval</b><span>Retrieve historical support evidence at the active investigation stage.</span></div><div class="bet"><span class="label">TOP BET 3 · PROTOTYPE SOON</span><b>89.3 · Personalization governance</b><span>Measure cumulative disclosure, reliance and regret with inspect/redact controls.</span></div></div>
+</div></header>
+<div class="layout"><nav><strong>Navigate</strong><ul>
+<li><a href="#scope-window-and-evidence-policy"
+id="toc-scope-window-and-evidence-policy">Scope, window, and evidence
+policy</a></li>
+<li><a href="#executive-signal" id="toc-executive-signal">Executive
+signal</a></li>
+<li><a href="#top-3-future-bets" id="toc-top-3-future-bets">Top 3 Future
+Bets</a></li>
+<li><a
+href="#deep-paper-1--harness-components-are-policies-not-universally-beneficial-features"
+id="toc-deep-paper-1--harness-components-are-policies-not-universally-beneficial-features">Deep
+paper 1 — Harness components are policies, not universally beneficial
+features</a></li>
+<li><a
+href="#deep-paper-2--troubleshooting-retrieval-should-follow-the-case-state"
+id="toc-deep-paper-2--troubleshooting-retrieval-should-follow-the-case-state">Deep
+paper 2 — Troubleshooting retrieval should follow the case
+state</a></li>
+<li><a
+href="#deep-paper-3--repetition-and-personalization-are-different-interventions"
+id="toc-deep-paper-3--repetition-and-personalization-are-different-interventions">Deep
+paper 3 — Repetition and personalization are different
+interventions</a></li>
+<li><a href="#watchlist" id="toc-watchlist">Watchlist</a></li>
+<li><a href="#cross-paper-synthesis"
+id="toc-cross-paper-synthesis">Cross-paper synthesis</a></li>
+<li><a href="#visual-1--conditional-policy-map"
+id="toc-visual-1--conditional-policy-map">Visual 1 — conditional policy
+map</a></li>
+<li><a href="#visual-2--1224-month-architecture-direction"
+id="toc-visual-2--1224-month-architecture-direction">Visual 2 — 12–24
+month architecture direction</a></li>
+<li><a href="#enterprise-ai-enhancement-backlog"
+id="toc-enterprise-ai-enhancement-backlog">Enterprise AI Enhancement
+Backlog</a></li>
+<li><a href="#enterprise-ai-architecture-implications"
+id="toc-enterprise-ai-architecture-implications">Enterprise AI
+Architecture Implications</a></li>
+<li><a href="#implementation-priorities"
+id="toc-implementation-priorities">Implementation priorities</a></li>
+<li><a href="#knowledge-reinforcement"
+id="toc-knowledge-reinforcement">Knowledge reinforcement</a></li>
+<li><a href="#evidence-ledger-and-source-index"
+id="toc-evidence-ledger-and-source-index">Evidence ledger and source
+index</a></li>
+<li><a href="#final-boundary" id="toc-final-boundary">Final
+boundary</a></li>
+</ul></nav><main><h2 id="scope-window-and-evidence-policy">Scope,
+window, and evidence policy</h2>
+<p><strong>Research window.</strong> Friday, September 18, 2026 at 4:00
+AM CDT through Saturday, September 19, 2026 at 4:00 AM CDT (24 hours;
+America/Chicago). Discovery covered the September 18 arXiv announcement
+cycle—215 cs.AI records—plus current cs.CL, cs.LG, cs.SE, cs.IR, cs.HC,
+cs.DC, cs.PF and stat.ML listings; primary paper pages and full texts;
+and linked repositories or preregistrations. The normal window was
+sufficient; no expansion was used.</p>
+<p><strong>Anti-duplication.</strong> Exact identifiers, titles, claims
+and proposed controls were checked against the 40-report archive through
+September 18. None of today's five selected papers appeared previously.
+Recent briefs already covered memory upgrade rehearsal, evidence
+identity, adaptive RAG, tail-aware scheduling, benchmark contracts,
+transaction-safe tool use, trajectory safety and closed-world tool
+resolution. Today's increment is different: <strong>the same AI feature
+changes value and risk with the model, resource budget, task stage and
+interaction history. Enterprise qualification therefore needs
+conditional policies, not a universal “best” harness, retriever or
+personalization mode.</strong></p>
+<p><strong>Evidence policy.</strong> <strong>Paper Fact</strong> means
+directly reported by a paper or verified first-party artifact.
+<strong>Independent Analysis</strong> is this briefing's calculation,
+comparison or methodological critique. <strong>Enterprise
+Inference</strong> is a bounded translation into a future option.
+<strong>Uncertainty</strong> marks missing causal, external-validity,
+artifact, economic, security, privacy, governance, operational or
+adoption evidence. The coding-harness and personalization papers are
+preprints. RAFT is accepted to the EMNLP 2026 Industry Track and links a
+public Microsoft repository. The financial-document and
+resource-dynamics papers are preprints. Benchmark performance is not
+deployment readiness. Every proposed experiment is isolated, reversible,
+measurable and non-destructive.</p>
+<h2 id="executive-signal">Executive signal</h2>
+<blockquote>
+<p><strong>AI architecture choices are conditional policies. Qualify
+them against the model, budget, task stage and human relationship they
+actually govern.</strong></p>
+</blockquote>
+<p>Three deep papers reach this conclusion from different
+directions:</p>
+<ol type="1">
+<li><strong>Harness design</strong> varies planning, action space and
+context management across four models, two benchmarks and four context
+budgets. Context management is most valuable when budgets are tight;
+planning scaffolds a weak model but becomes a cost reducer for stronger
+ones; structured tools help bash-weak models while bash-only can help
+capable ones.</li>
+<li><strong>RAFT</strong> treats troubleshooting as an evolving case
+rather than a static query. Timeline-entry retrieval improves Case Hit
+over vanilla RAG by 12.19–16.79 percentage points on the synthetic
+benchmark and shows similar directional gains on 30 real Apache Jira
+duplicate groups.</li>
+<li><strong>Longitudinal personalization</strong> finds that five days
+of repeated AI advice, not personalization alone, drives many changes in
+perceived competence, usefulness and closeness. Memory- and survey-based
+personalization produce different disclosure and regret patterns;
+implementation form matters.</li>
+</ol>
+<p>The Watchlist adds two compatible signals. A decomposed
+perception/layout/validation score with a conformal gate turns weak VLM
+confidence into high-coverage selective document extraction, but relies
+on historical labels and familiar layouts. Agent-container experiments
+show large task-dependent resource effects, but the infrastructure
+evidence is narrow and lacks a mature production artifact.</p>
+<p><strong>Decision posture.</strong> Prototype a model-and-budget-aware
+harness qualification matrix, stateful case-trajectory retrieval in a
+bounded support corpus, and a longitudinal personalization audit with
+inspect/redact controls. Prepare context-compaction telemetry, retrieval
+coverage metrics and governed memory provenance. Monitor
+document-confidence gating and resource-aware scheduling until
+independent reproduction, drift tests and internal economics are
+available. Deprioritize any universal harness profile or personalization
+default.</p>
+<h2 id="top-3-future-bets">Top 3 Future Bets</h2>
+<ol type="1">
+<li><strong>Conditional agent-harness qualification matrix —
+93.1/100.</strong> Why it matters: the 176-setting study shows that
+planning, tools and context policies change effect with model
+capability, benchmark and token budget; a component can improve accuracy
+in one cell and mostly reduce cost in another. Evidence that would
+change the recommendation: internal paired experiments showing one
+configuration dominates across representative models, tasks, budgets and
+release cycles without subgroup regressions. Next reversible action:
+replay 200 non-sensitive coding tasks through a small factorial matrix
+of two models, two context policies, planning on/off and structured
+tools versus shell in a sandbox.</li>
+<li><strong>Stateful case-trajectory retrieval pilot —
+90.7/100.</strong> Why it matters: RAFT's timeline representation
+improves synthetic Case Hit by 12.19–16.79 points over vanilla RAG and
+transfers directionally to real Jira duplicates. Evidence that would
+change the recommendation: no lift on internal progressive queries,
+materially worse resolution-step coverage, or indexing/privacy cost that
+exceeds support value. Next reversible action: index 500 redacted closed
+cases, issue queries at three investigation stages, and compare against
+the current retriever without exposing results to live users.</li>
+<li><strong>Longitudinal personalization and disclosure governance —
+89.3/100.</strong> Why it matters: a preregistered 992-person study
+finds repeated exposure changes perceived closeness and competence
+across conditions, while memory-based personalization raises measured
+disclosure counts and survey-based personalization produces marginally
+higher regret. Evidence that would change the recommendation: internal
+longitudinal tests showing no meaningful disclosure, reliance, regret or
+human-workflow displacement effects across representative roles and data
+sources. Next reversible action: run a consented two-week study with
+synthetic profiles, explicit memory inspection/redaction and no
+consequential automation.</li>
+</ol>
+<h2
+id="deep-paper-1--harness-components-are-policies-not-universally-beneficial-features">Deep
+paper 1 — Harness components are policies, not universally beneficial
+features</h2>
+<p><strong>Identity and status.</strong> <em>An Empirical Study of
+Harness Design for Coding Agents</em>, Run-Ze Fan, Zihao Zhang, Simin
+Ma, Yebowen Hu, Shouju Wang, Kaiqiang Song, Fei Liu, Hamed Zamani and
+Xiaoyang Wang; submitted September 17, announced September 18, 2026;
+arXiv:2609.20804v1; cs.AI/cs.CL/cs.LG/cs.SE; 43-page preprint under
+arXiv's non-exclusive distribution license. No repository is linked from
+the paper page. (<a href="https://arxiv.org/abs/2609.20804">paper</a>,
+<a href="https://arxiv.org/html/2609.20804">full text</a>)</p>
+<h3 id="contribution-and-quantitative-claim-trace">Contribution and
+quantitative claim trace</h3>
+<p>The authors build a fixed ReAct-style execution loop and vary three
+components: persistent planning, action space, and context management.
+Five context tiers compose elision, recoverable external storage and
+summarization. Four context budgets—32k, 64k, 96k and 128k—are evaluated
+on SWE-Bench Verified (500 issues) and Terminal-Bench 2.1 (89 tasks)
+with Nemotron-3 30B/120B/550B and Mistral-Medium-3.5-128B. Planning and
+action-space ablations use the 128k/T4 baseline. The result is 176
+matched settings. Paired success comparisons use exact two-sided McNemar
+tests with Benjamini–Hochberg false-discovery control at 0.05.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>Decision meaning</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Context management matters most under scarcity</td>
+<td style="text-align: right;">On SWE-Bench at 32k, T0 succeeds on 9.4%,
+11.4%, 6.4% and 12.6% by model; managed tiers reach 20.6–66.2%</td>
+<td>Treat compaction as a budget-specific reliability control</td>
+<td>Gains largely prevent overflow; they do not prove better
+reasoning</td>
+</tr>
+<tr class="even">
+<td>Managed policies eliminate measured overflows</td>
+<td style="text-align: right;">Every managed tier has zero
+window-overflow terminations at every tested budget</td>
+<td>Overflow telemetry can be an explicit admission/SLO signal</td>
+<td>No long-context models beyond 128k; truncation is capped at 24k
+characters</td>
+</tr>
+<tr class="odd">
+<td>Recall machinery is rarely useful</td>
+<td style="text-align: right;">Recoverable recall adds no accuracy over
+elision alone; models rarely invoke it</td>
+<td>Do not equate architectural richness with value</td>
+<td>Different training or explicit retrieval prompting could change
+use</td>
+</tr>
+<tr class="even">
+<td>Staged elision plus summarization is efficient</td>
+<td style="text-align: right;">T4 keeps success near other managed
+policies while limiting peak context and summarization calls</td>
+<td>Use cheap deterministic compaction before model-based summaries</td>
+<td>“Best” is aggregate and conditional, not universal</td>
+</tr>
+<tr class="odd">
+<td>Planning changes role with capability</td>
+<td style="text-align: right;">With planning, 30B SWE-Bench turns rise
+293.2% and calls 474.0%; stronger-model turns fall about 23–24% on
+SWE-Bench</td>
+<td>Planning can scaffold weak models and remove redundant work for
+strong ones</td>
+<td>Only one planning implementation; mechanism is not planning in
+general</td>
+</tr>
+<tr class="even">
+<td>Structured tools scaffold weak models</td>
+<td style="text-align: right;">For 30B, full tools raise success by 15.0
+points on SWE-Bench and 10.1 on Terminal-Bench versus bash-only</td>
+<td>Action interfaces should match model proficiency</td>
+<td>Full tools also change tracking, validation and diagnostics</td>
+</tr>
+<tr class="odd">
+<td>Bash can favor capable models</td>
+<td style="text-align: right;">On Terminal-Bench at 128k/T4, bash-only
+reaches 50.56% for 550B and 43.82% for Mistral versus 44.94% and 37.08%
+with full tools</td>
+<td>Tool abstraction may add interaction overhead</td>
+<td>Differences are not uniformly significant; shell access changes
+risk</td>
+</tr>
+<tr class="even">
+<td>Costs are configuration-dependent</td>
+<td style="text-align: right;">Token prices are applied per model; some
+policies raise accuracy by extending trajectories while others reduce
+redundant calls</td>
+<td>Optimize accuracy, tail latency and cost together</td>
+<td>Prices were accessed in August 2026 and exclude
+infrastructure/operator cost</td>
+</tr>
+</tbody>
+</table>
+<p>Safety and diagnostics are held constant: path resolution blocks
+project-root escapes, edits require prior reads and hash checks,
+permissions are allow/ask/deny, supported Python edits trigger fast
+diagnostics, and repeated identical failures terminate after a
+threshold. Those fixed controls are useful engineering context but were
+not themselves ablated.</p>
+<h3
+id="methodological-critique-and-prior-work-comparison">Methodological
+critique and prior-work comparison</h3>
+<p>Prior coding-agent studies usually compare complete systems,
+confounding model, planning, tools and memory. This paper's useful
+advance is controlled component-level comparison across both a
+model-capability axis and an explicit context-budget sweep. The paired
+task outcomes and multiple-testing correction are stronger than unpaired
+leaderboard deltas. Trajectory analysis explains whether interventions
+change stopping points, action granularity or merely trajectory
+length.</p>
+<p>The design is still not a full factorial experiment. Planning and
+action-space effects are tested only at T4/128k, so interactions with
+other context tiers and budgets remain unknown. The four models are
+concentrated in two families and served locally under one
+implementation. A “structured tools versus bash” contrast changes typed
+schemas, instructions, state tracking, read-before-write checks and
+automatic diagnostics together; attributing the effect to tool count
+would be wrong. Temperature zero does not make hosted or GPU inference
+perfectly deterministic, yet no seed/repeat variance is reported. Cost
+uses token prices, not wall-clock labor, hardware, sandbox or incident
+cost. The paper publishes prompts and detailed tables but no linked
+repository, container digest or immutable trajectories.</p>
+<h3 id="reproducibility-and-enterprise-readiness">Reproducibility and
+enterprise readiness</h3>
+<p>The benchmarks, models, prompts, thresholds and statistical tests are
+documented. Reproduction is feasible in principle but expensive: 176
+settings over 589 tasks imply a large run volume, and the absent
+artifact raises implementation ambiguity. <strong>Enterprise
+readiness:</strong> high for a small internal factorial harness
+evaluation; medium for adaptive runtime selection after repeated
+internal evidence; low for copying T4 or bash-only as a default.
+<strong>Research Utility Score: 93/100</strong> (methodological rigor
+24/25; quantitative traceability 24/25; reproducibility/artifacts 15/20;
+enterprise relevance 15/15; prior-work advance 15/15).</p>
+<h2
+id="deep-paper-2--troubleshooting-retrieval-should-follow-the-case-state">Deep
+paper 2 — Troubleshooting retrieval should follow the case state</h2>
+<p><strong>Identity and status.</strong> <em>RAFT: A Stateful
+Retrieval-Augmented Framework for Troubleshooting Agents</em>, Mingxuan
+Zhang, Xiaowen Wang, Anupma Sharan, Zhengyi Chen, Chenyu Diana Zhang,
+Shanshan Yang and Chittibabu Pacharu; Microsoft; submitted September 17,
+announced September 18, 2026; arXiv:2609.20754v1; accepted to EMNLP 2026
+Industry Track. The paper links an open Microsoft repository containing
+the implementation, benchmark and Apache Jira evaluation set. (<a
+href="https://arxiv.org/abs/2609.20754">paper</a>, <a
+href="https://arxiv.org/html/2609.20754">full text</a>, <a
+href="https://github.com/microsoft/RAFT">artifact</a>)</p>
+<h3 id="contribution-and-quantitative-claim-trace-1">Contribution and
+quantitative claim trace</h3>
+<p>RAFT converts each historical case into a directed chain of timeline
+entries, retrieves at the entry level against the evolving active case,
+and returns the parent trajectory anchored at the matched state. A
+configurable case-level graph is optional. The main synthetic corpus
+contains 826 Windows Server support cases across seven categories,
+averaging 10.4 messages and 2,767 tokens. One case per root-cause group
+is held out. Queries are built at 0%, 30% and 60% of the investigation.
+All systems share <code>text-embedding-3-large</code>, a GPT-5.2
+indexing model, GPT-5.4 evaluation, a 6,000-token return budget
+and—except chunk-returning Fast-GraphRAG—a five-case cap.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>Decision meaning</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Timeline retrieval improves early matching</td>
+<td style="text-align: right;">Case Hit at 0% is 84.2% versus 67.3%
+vanilla RAG and 65.0% HippoRAG2</td>
+<td>Early symptoms benefit from stage-aware historical cases</td>
+<td>Synthetic cases are generated from Microsoft Learn
+documentation</td>
+</tr>
+<tr class="even">
+<td>Gain persists as the case evolves</td>
+<td style="text-align: right;">RAFT reaches 88.8% Case Hit at 60%
+progress</td>
+<td>Retrieval should update with investigation state</td>
+<td>No end-to-end diagnosis or resolution agent is tested</td>
+</tr>
+<tr class="odd">
+<td>Paired uncertainty supports Case Hit</td>
+<td style="text-align: right;">RAFT minus vanilla: +16.79 pp
+[13.91,19.78] at 0%, +14.79 [12.02,17.73] at 30%, +12.19 [9.75,14.68] at
+60%</td>
+<td>Lift is not a five-split averaging artifact</td>
+<td>Bootstrap validity depends on root-cause clustering and benchmark
+construction</td>
+</tr>
+<tr class="even">
+<td>Coverage gains are smaller and stage-dependent</td>
+<td style="text-align: right;">Root-cause gains: +5.69, +4.15, +1.88 pp;
+resolution gains: +2.98, +2.01, +0.57; late intervals cross zero</td>
+<td>Matching a case is not equivalent to complete actionable
+evidence</td>
+<td>Coverage uses an LLM entailment judge</td>
+</tr>
+<tr class="odd">
+<td>Irrelevant updates stress vanilla RAG more</td>
+<td style="text-align: right;">At 60%, one unrelated turn changes Case
+Hit by −9.36 pp for RAFT versus −49.31 for vanilla; paired difference
++39.94 [35.73,44.10]</td>
+<td>Structured state may isolate conversational noise</td>
+<td>Noise is deterministic and synthetic, not organic support
+dialogue</td>
+</tr>
+<tr class="even">
+<td>Real transfer is directional</td>
+<td style="text-align: right;">On 30 audited Apache Jira duplicate
+groups, gains are +16.7, +17.3 and +10.5 points across progress
+stages</td>
+<td>The mechanism may transfer to real case histories</td>
+<td>Sample is small and has no confidence intervals</td>
+</tr>
+<tr class="odd">
+<td>Graph complexity is not the main driver</td>
+<td style="text-align: right;">Fast-GraphRAG trails vanilla RAG; RAFT's
+timeline structure is the central representation</td>
+<td>Use task structure before generic graph complexity</td>
+<td>Graph baselines use default configurations</td>
+</tr>
+</tbody>
+</table>
+<h3
+id="methodological-critique-and-prior-work-comparison-1">Methodological
+critique and prior-work comparison</h3>
+<p>Traditional RAG chunks documents; GraphRAG adds entities and
+relations; case-based support systems often retrieve entire tickets.
+RAFT's advance is to represent a case as stateful evidence and return
+coherent trajectories anchored at the matching investigation stage.
+Direct retrieval-layer evaluation isolates this mechanism from
+downstream agent variance. Equal embedding/evaluator models, fixed
+budgets, grouped holdouts and clustered bootstrap intervals make the
+comparison unusually interpretable.</p>
+<p>The central benchmark is synthetic and moderate in scale; production
+tickets can be much longer, noisier, multilingual and access-controlled.
+Synthetic cases share a generation process and a common source wiki,
+which may make timeline structure easier to exploit. GPT-5.4 judges
+root-cause and resolution-claim entailment; no reported human
+calibration establishes judge error at each stage. The Jira transfer
+study has only 30 groups, no interval and duplicate labels rather than
+root-cause/resolution outcomes. RAFT does not measure final diagnosis
+accuracy, time to resolution, engineer productivity, privacy leakage,
+access-control errors or stale-case harm. Default GraphRAG settings may
+not be competitive tuning.</p>
+<h3 id="reproducibility-and-enterprise-readiness-1">Reproducibility and
+enterprise readiness</h3>
+<p>The public artifact is a meaningful advantage: implementation,
+benchmark and Jira evaluation set are linked. Exact reproduction still
+depends on future model/API versions and costs. <strong>Enterprise
+readiness:</strong> high for offline retrieval evaluation on redacted
+cases; medium for support-engineer shadow suggestions with access
+controls; low for autonomous diagnosis or remediation. <strong>Research
+Utility Score: 92/100</strong> (methodological rigor 23/25; quantitative
+traceability 24/25; reproducibility/artifacts 19/20; enterprise
+relevance 15/15; prior-work advance 11/15).</p>
+<h2
+id="deep-paper-3--repetition-and-personalization-are-different-interventions">Deep
+paper 3 — Repetition and personalization are different
+interventions</h2>
+<p><strong>Identity and status.</strong> <em>Tailored to you:
+longitudinal effects of personalising language models</em>, Canfer
+Akbulut, Justine Breuch, Arianna Manzini, Lujain Ibrahim, Matija
+Franklin, Roma Patel, Iason Gabriel, Kristian Lum and Laura Weidinger;
+Google DeepMind; submitted September 17, announced September 18, 2026;
+arXiv:2609.20077v1; cs.AI; CC BY 4.0 preprint. The paper links an
+AsPredicted preregistration and reproduces prompts and measures, but
+does not link a public conversation dataset or analysis repository. (<a
+href="https://arxiv.org/abs/2609.20077">paper</a>, <a
+href="https://arxiv.org/html/2609.20077">full text</a>, <a
+href="https://aspredicted.org/fv6zs5.pdf">preregistration</a>)</p>
+<h3 id="contribution-and-quantitative-claim-trace-2">Contribution and
+quantitative claim trace</h3>
+<p>The preregistered randomized trial assigns 992 analytic participants
+to a no-personalization control, memory-based personalization using
+cumulative conversation summaries, or survey-based personalization using
+an intake persona. Each participant completes five 15–20 minute
+relationship-advice sessions: 4,960 conversations total. Mixed-effects
+models analyze daily measures; baseline-adjusted models analyze pre/post
+outcomes. Preregistered outcomes receive Benjamini–Hochberg correction,
+and pairwise estimated marginal means use Holm–Bonferroni correction.
+Power planning targeted 380 participants per arm and 90% power for a
+smallest effect of d=0.30.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>Decision meaning</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Repetition drives many perceptions</td>
+<td style="text-align: right;">Closeness rises by β=0.15/session (SE
+0.02, q&lt;0.001, d=0.19); competence and usefulness also rise;
+personalization interactions are mostly null</td>
+<td>Longitudinal exposure needs its own evaluation factor</td>
+<td>Five days is short; assigned advice topics are artificial</td>
+</tr>
+<tr class="even">
+<td>Personalization does not uniformly increase reliance</td>
+<td style="text-align: right;">Impossible-suggestion overreliance and
+many closeness/self-report outcomes show null condition effects</td>
+<td>Avoid generic claims that “personalization causes dependence”</td>
+<td>One model, prompt family, domain and text modality</td>
+</tr>
+<tr class="odd">
+<td>Memory changes observable disclosure</td>
+<td style="text-align: right;">Disclosure counts: memory mean 3.29
+versus control 2.93; adjusted contrast β=0.36, p=0.005, d=0.17;
+self-reported disclosure remains null</td>
+<td>Behavioral telemetry and user perception can diverge</td>
+<td>Automated disclosure classification may mismeasure sensitivity</td>
+</tr>
+<tr class="even">
+<td>Memory can feel less creepy</td>
+<td style="text-align: right;">Memory versus control β=−0.19, p=0.026,
+d=−0.10</td>
+<td>Familiarity can reduce friction while increasing data sharing</td>
+<td>Small effect; not a safety or consent endorsement</td>
+</tr>
+<tr class="odd">
+<td>Survey personalization may create regret</td>
+<td style="text-align: right;">Survey regret β=0.14, q=0.063, d=0.11
+versus control</td>
+<td>Pre-collected profiles may create retrospective discomfort</td>
+<td>Marginal after correction; should be treated as uncertainty</td>
+</tr>
+<tr class="even">
+<td>Repeated AI advice shifts norms</td>
+<td style="text-align: right;">Across conditions, endorsement increases
+for advice, care, friendship and intimate sharing; e.g. intimate-sharing
+change MΔ=0.744, SE=0.0444</td>
+<td>Exposure effects may exceed feature effects</td>
+<td>No untreated no-AI group separates AI use from study
+participation</td>
+</tr>
+<tr class="odd">
+<td>Advice uptake begins lower under personalized prompts</td>
+<td style="text-align: right;">First-session memory d=−0.35 and survey
+d=−0.41 versus control; uptake rises over sessions</td>
+<td>“Knowing the user” can initially trigger reactance</td>
+<td>Conditions differ in instructions before memory exists, confounding
+session one</td>
+</tr>
+<tr class="even">
+<td>Human-workflow effects are plausible, not settled</td>
+<td style="text-align: right;">After the study, participants were most
+comfortable asking AI versus the measured human sources; condition
+interactions differ</td>
+<td>Measure displacement of human advice/review channels</td>
+<td>Self-report does not establish actual substitution behavior</td>
+</tr>
+</tbody>
+</table>
+<h3
+id="methodological-critique-and-prior-work-comparison-2">Methodological
+critique and prior-work comparison</h3>
+<p>Most personalization evaluations are single-session preference or
+task-accuracy studies. This paper adds longitudinal randomized exposure
+and separates memory-based from survey-based personalization. The large
+sample, preregistration, attention checks, attrition test, repeated
+measures and corrected confirmatory analyses are strengths. It reports
+nulls rather than forcing a universal harm narrative.</p>
+<p>The trial has no no-AI control, so session effects combine repeated
+model exposure, repeated measurement, topic sequence and study demand.
+Participants who completed all five sessions form the analytic sample;
+attrition was balanced by condition but completer selection may limit
+population inference. The control and personalized system prompts
+differ, creating a first-session confound acknowledged by the authors.
+Relationship advice is a sensitive but narrow domain. All
+personalization is prompt-context injection; fine-tuning, inferred
+attributes, ambient enterprise data, voice and multimodal use may behave
+differently. Several decision-relevant results are exploratory or
+marginal after correction. Conversation data are sensitive and not
+publicly linked, limiting independent analysis.</p>
+<h3 id="reproducibility-and-enterprise-readiness-2">Reproducibility and
+enterprise readiness</h3>
+<p>Prompts, questionnaires, design and preregistration are available,
+but exact data and analysis code were not verified publicly.
+<strong>Enterprise readiness:</strong> high for adding longitudinal
+disclosure/reliance measures and inspect/delete controls; medium for
+consented internal studies with synthetic data; low for product-wide
+policy thresholds or high-stakes personalization. <strong>Research
+Utility Score: 91/100</strong> (methodological rigor 24/25; quantitative
+traceability 23/25; reproducibility/artifacts 15/20; enterprise
+relevance 15/15; prior-work advance 14/15).</p>
+<h2 id="watchlist">Watchlist</h2>
+<h3
+id="multi-signal-confidence-can-support-selective-document-automationif-the-calibration-population-holds">Multi-signal
+confidence can support selective document automation—if the calibration
+population holds</h3>
+<p><em>Perception, Layout, and Validation: Calibrated Confidence for
+Reliable Straight-Through Processing of Financial Documents</em>, Yichao
+Jin et al.; OCBC, Singapore; arXiv:2609.20110v1; submitted September 17,
+2026; CC BY 4.0 preprint. (<a
+href="https://arxiv.org/abs/2609.20110">paper</a>, <a
+href="https://arxiv.org/html/2609.20110">full text</a>)</p>
+<p><strong>Paper Facts.</strong> Two VLM families are evaluated on three
+public datasets. Native verbalized confidence and five-sample
+self-consistency yield AUROC 0.54–0.74 for extraction correctness. A
+LightGBM fusion of perception, retrieval-conditioned layout and
+validation features reaches 0.90–0.99; cross-model agreement adds a
+further tier. At a target error of at most 10%, native signals
+auto-approve 0.1–7.0% of fields, while the proposed pipeline
+auto-approves 49–72%. A Learn-Then-Test gate selects the acceptance
+threshold on held-out calibration data.</p>
+<p><strong>Why Watchlist.</strong> The decomposition, public datasets,
+two VLM families, reason codes and selective-risk framing are
+decision-useful. But the reported 10% accepted-field error target may be
+too permissive for financial identifiers or amounts; guarantees rely on
+exchangeability and representative calibration; templates are repeatedly
+sampled; historical correctness labels are required; no deployment
+drift, privacy, latency or review-cost study is reported. <strong>Watch
+trigger:</strong> promote after internal time-split and
+counterparty-disjoint evaluation with field-specific risk budgets,
+monitored drift and audited calibration sustains useful coverage without
+critical-field false acceptance. <strong>Research Utility Score:
+88/100.</strong></p>
+<h3
+id="resource-aware-scheduling-is-promising-but-todays-evidence-is-too-narrow-for-a-platform-commitment">Resource-aware
+scheduling is promising, but today's evidence is too narrow for a
+platform commitment</h3>
+<p><em>Not All AI Agents Are Equal: Characterizing Resource and
+Performance Dynamics</em>, Wonmi Choi, Minuk Park, Zhixiong Niu,
+Yongqiang Xiong, Chuck Yoo and Gyeongsik Yang; Korea University and
+Microsoft Research Asia; arXiv:2609.19947v1; submitted September 17,
+2026; preprint. (<a href="https://arxiv.org/abs/2609.19947">paper</a>,
+<a href="https://arxiv.org/html/2609.19947">full text</a>)</p>
+<p><strong>Paper Facts.</strong> The study profiles retrieval-augmented
+QA, web search and software coding agents using remote LLM APIs plus
+local tool containers. It reports task-dependent CPU, disk, memory and
+concurrency bottlenecks; faster remote responses or more CPU do not
+always reduce end-to-end latency. Prototype CPU-aware tool admission
+improves a CPU-sensitive task by about 5.4×, and task-aware allocation
+reduces average latency across multiple tasks by about 32% versus native
+agents.</p>
+<p><strong>Why Watchlist.</strong> The paper usefully treats agent
+execution as alternating remote waits and bursty local tools. Yet three
+task families, one experimental stack and prototype schedulers do not
+establish broad production economics; no public artifact, long-running
+availability test, security isolation analysis or cost-to-SLO comparison
+is linked. <strong>Watch trigger:</strong> promote after reproduction on
+internal traces across at least three agent classes shows tail-latency
+and cost gains under realistic concurrency without cross-tenant
+interference or safety regression. <strong>Research Utility Score:
+84/100.</strong></p>
+<h2 id="cross-paper-synthesis">Cross-paper synthesis</h2>
+<h3
+id="independent-analysis--qualification-must-be-conditional-and-longitudinal">Independent
+Analysis — qualification must be conditional and longitudinal</h3>
+<p>The papers converge on a single operating principle: <strong>an AI
+component does not have a context-free value.</strong> Its effect is a
+function of the state around it.</p>
+<ol type="1">
+<li><strong>Harness state:</strong> planning, tools and compaction
+interact with model capability, task family and context budget.</li>
+<li><strong>Knowledge state:</strong> retrieval must match the active
+investigation stage, not merely the initial ticket or the whole
+historical case.</li>
+<li><strong>Human state:</strong> personalization changes as
+familiarity, disclosure and advice-seeking accumulate over repeated
+sessions.</li>
+<li><strong>Document state:</strong> selective automation depends on
+template familiarity, field type, calibration population and risk
+budget.</li>
+<li><strong>Infrastructure state:</strong> an agent alternates between
+remote waiting and bursty local execution; static CPU allocation ignores
+that phase structure.</li>
+</ol>
+<p>The enterprise implication is not “make everything adaptive.”
+Unbounded adaptation is itself a risk. The safer pattern is
+<strong>measured conditional selection</strong>: define a small set of
+approved policies; observe the variables that make them applicable; log
+why one policy was chosen; preserve a stable fallback; and requalify on
+model, data, prompt, tool, workflow or user-population change.</p>
+<h2 id="visual-1--conditional-policy-map">Visual 1 — conditional policy
+map</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Decision</th>
+<th>Conditioning variables</th>
+<th>Evidence required before selection</th>
+<th>Safe fallback</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Context policy</td>
+<td>model, remaining budget, trajectory length, task type</td>
+<td>paired overflow, success, cost and information-loss results</td>
+<td>bounded elision with preserved recent turns</td>
+</tr>
+<tr class="even">
+<td>Planning scaffold</td>
+<td>model capability, task horizon, failure stage</td>
+<td>paired task outcomes and trajectory analysis</td>
+<td>explicit user-visible checklist or no planner</td>
+</tr>
+<tr class="odd">
+<td>Action interface</td>
+<td>tool proficiency, task type, mutation risk</td>
+<td>success, false-action, diagnostic and security results</td>
+<td>typed least-privilege tools</td>
+</tr>
+<tr class="even">
+<td>Case retrieval</td>
+<td>investigation stage, case ACL, root-cause coverage</td>
+<td>Case Hit plus root-cause and resolution evidence coverage</td>
+<td>document RAG or human search</td>
+</tr>
+<tr class="odd">
+<td>Personalization</td>
+<td>consent, data source, duration, domain, user role</td>
+<td>longitudinal disclosure, reliance, regret and fairness slices</td>
+<td>non-personalized mode with inspect/delete controls</td>
+</tr>
+<tr class="even">
+<td>Auto-approval</td>
+<td>field type, template familiarity, calibration set, loss
+severity</td>
+<td>selective risk with time-split audit and drift monitoring</td>
+<td>human review</td>
+</tr>
+<tr class="odd">
+<td>Container resources</td>
+<td>task phase, concurrency, CPU sensitivity, tenant</td>
+<td>tail latency, cost, isolation and starvation results</td>
+<td>conservative static quota</td>
+</tr>
+</tbody>
+</table>
+<h2 id="visual-2--1224-month-architecture-direction">Visual 2 — 12–24
+month architecture direction</h2>
+<pre class="text"><code>USER / WORKFLOW
+      │ consent · purpose · task stage · risk class
+      ▼
+[POLICY SELECTOR] ──────────────── qualification registry
+      │ chosen harness / retrieval / personalization policy + reason
+      ▼
+[AGENT ORCHESTRATION]
+      ├── planning profile
+      ├── typed action interface
+      ├── context budget + compaction ledger
+      └── stateful case query
+              │
+              ▼
+[KNOWLEDGE + MEMORY]
+  ACLs · timeline entries · provenance · inspect/redact · retention
+              │
+              ▼
+[MODEL GATEWAY + TOOL RUNTIME]
+  version pins · cost/tokens · phase-aware resource telemetry
+              │
+              ▼
+[EVALUATION / OBSERVABILITY]
+  success · overflow · evidence coverage · disclosure · regret
+  selective risk · tail latency · policy subgroup regressions
+              │
+              ├── pass → approved experiment cohort
+              └── fail / drift → stable fallback + human review</code></pre>
+<h2 id="enterprise-ai-enhancement-backlog">Enterprise AI Enhancement
+Backlog</h2>
+<h3 id="priority-method-and-uncertainty">Priority method and
+uncertainty</h3>
+<p>The <strong>Future Enterprise AI Priority Score</strong> is a
+transparent decision aid, not a probability, ROI forecast or roadmap
+approval. It weights strategic/business value 25%, technical leverage
+20%, evidence strength 20%, enterprise readiness 15%, feasibility 10%
+and risk-adjusted differentiation 10%. Component scores are analyst
+judgments grounded in today's papers. Differences below about three
+points are not decision-significant without internal task volumes,
+failure costs, model estate, support data, privacy obligations, user
+populations, latency SLOs, tool risk and adoption constraints.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: right;">#</th>
+<th>Enhancement</th>
+<th>Decision band</th>
+<th style="text-align: right;">Strategic</th>
+<th style="text-align: right;">Leverage</th>
+<th style="text-align: right;">Evidence</th>
+<th style="text-align: right;">Readiness</th>
+<th style="text-align: right;">Feasibility</th>
+<th style="text-align: right;">Differentiation</th>
+<th style="text-align: right;">Weighted total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td>Conditional agent-harness qualification matrix</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">96</td>
+<td style="text-align: right;">96</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;"><strong>93.1</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td>Stateful case-trajectory retrieval pilot</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;"><strong>90.7</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td>Longitudinal personalization and disclosure governance</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">83</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">87</td>
+<td style="text-align: right;"><strong>89.3</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td>Context-compaction telemetry and overflow control</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;"><strong>88.5</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td>Retrieval evidence-coverage evaluation</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;"><strong>87.6</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td>Inspectable and redactable personalization memory</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;">89</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">76</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;"><strong>86.2</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td>Multi-signal selective document gate</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">73</td>
+<td style="text-align: right;">68</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;"><strong>84.1</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td>Phase-aware agent-container scheduler</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">89</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">65</td>
+<td style="text-align: right;">64</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;"><strong>79.0</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9</td>
+<td>Universal harness or personalization default</td>
+<td>Deprioritize for Now</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">34</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;"><strong>46.8</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="prototype-soon">Prototype Soon</h3>
+<h4 id="1-conditional-agent-harness-qualification-matrix--931">1.
+Conditional agent-harness qualification matrix — 93.1</h4>
+<ul>
+<li><strong>Category:</strong> Agentic AI / AI Software Engineering /
+Evaluation &amp; Observability.</li>
+<li><strong>Research signal and supporting papers:</strong> Harness
+Design evaluates 176 settings and finds conditional effects of planning,
+action space and context management. <strong>Evidence label: Paper
+Fact.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> Teams often copy
+a “best” agent configuration across models and workflows, hiding
+accuracy/cost regressions and model-specific tool friction.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+Maintain approved harness profiles and a qualification matrix keyed by
+model version, task family, budget and risk. A release gate runs paired
+tasks and records success, overflow, cost, tail latency, unsafe actions
+and subgroup regressions before a profile can be selected.</li>
+<li><strong>Likely architectural placement:</strong> agent layer,
+orchestration, evaluation, observability and developer platform.</li>
+<li><strong>Expected business value:</strong> productivity, quality,
+reliability, cost control, speed and risk reduction.</li>
+<li><strong>Technical value:</strong> Turns harness changes into
+versioned, measurable policy changes; separates model capability from
+execution-layer effects.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+controlled benchmark evidence; no external reproduction or production
+workload. Ready for offline experimentation. <strong>Confidence: High.
+Horizon: Now. Effort: M.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> Representative task
+corpus, model/version registry, replayable sandboxes, token/cost
+telemetry, safety events, stable baselines and paired statistical
+analysis.</li>
+<li><strong>Key risks:</strong> Benchmark overfitting, factorial cost,
+false confidence from narrow tasks, silent provider drift, shell-risk
+expansion and operational complexity.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build</strong> the
+qualification layer and policy registry because tasks and loss functions
+are internal; buy commodity tracing and sandbox infrastructure.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Run 200
+historical tasks through a 2×2×2 matrix: two models, planning on/off,
+managed context versus bounded baseline; add structured tools versus
+shell on a safe subset.</li>
+<li><strong>Success metrics and stop conditions:</strong> Success:
+≥5-point lift or ≥20% cost reduction without &gt;2-point regression in
+any critical slice; zero context overflows under managed profiles;
+complete decision traces. Stop if conclusions flip across reruns,
+unsafe-action rates rise, or qualification cost exceeds expected
+savings.</li>
+<li><strong>Roadmap trigger:</strong> Two model releases and two task
+families reproduce stable profile-specific gains, with engineering and
+security owners accepting profile SLOs.</li>
+</ul>
+<h4 id="2-stateful-case-trajectory-retrieval-pilot--907">2. Stateful
+case-trajectory retrieval pilot — 90.7</h4>
+<ul>
+<li><strong>Category:</strong> RAG &amp; Knowledge / Data &amp;
+Knowledge Infrastructure.</li>
+<li><strong>Research signal and supporting papers:</strong> RAFT
+improves stage-specific Case Hit and releases an implementation; real
+Jira transfer is directional. <strong>Evidence label: Paper
+Fact.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> Static ticket
+retrieval ignores how diagnosis evolves and may return superficially
+similar but operationally irrelevant cases.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+Extract permissioned historical cases into evidence-linked timeline
+entries. Query with the active investigation state, retrieve matching
+entries, and return the parent trajectory anchored at the matching stage
+with provenance and ACL enforcement.</li>
+<li><strong>Likely architectural placement:</strong>
+retrieval/knowledge, data platform, agent layer and human-review
+layer.</li>
+<li><strong>Expected business value:</strong> productivity, speed,
+resolution quality, customer experience and cost.</li>
+<li><strong>Technical value:</strong> Preserves temporal state and
+coherent remediation evidence instead of isolated chunks.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Accepted industry-track paper and open artifact; synthetic core
+benchmark and small real transfer. <strong>Confidence: High. Horizon:
+Now. Effort: M.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> Redacted closed
+cases, root-cause/resolution labels, case ACLs, timeline schema,
+embedding/index service, provenance, retention and evaluator
+calibration.</li>
+<li><strong>Key risks:</strong> Sensitive ticket leakage, stale fixes,
+incorrect similarity, access-control inheritance,
+synthetic-to-production gap and support-team distrust.</li>
+<li><strong>Build / Buy / Partner:</strong>
+<strong>Partner/build</strong> using the open artifact as a reference;
+keep schema, permissions and acceptance evaluation under internal
+control.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Index 500
+redacted closed cases and compare RAFT-like, current chunk RAG and
+keyword retrieval at 0/30/60% progress with assessors blinded to
+method.</li>
+<li><strong>Success metrics and stop conditions:</strong> Success:
+≥8-point Case Hit gain, ≥5-point resolution-coverage gain, no ACL
+violation and &lt;20% p95 latency increase. Stop if coverage falls,
+sensitive cross-case leakage occurs, or assessors prefer baseline
+guidance.</li>
+<li><strong>Roadmap trigger:</strong> Gains persist on at least 100 real
+held-out cases across two support domains and a human-in-the-loop trial
+reduces search time without raising incorrect-resolution rate.</li>
+</ul>
+<h4
+id="3-longitudinal-personalization-and-disclosure-governance--893">3.
+Longitudinal personalization and disclosure governance — 89.3</h4>
+<ul>
+<li><strong>Category:</strong> Human-AI Workflow / Memory &amp; Context
+/ Safety &amp; Governance.</li>
+<li><strong>Research signal and supporting papers:</strong> The DeepMind
+trial separates repeated exposure from memory- and survey-based
+personalization effects over five days. <strong>Evidence label: Paper
+Fact.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> One-shot UX
+evaluation misses cumulative disclosure, familiarity, reliance, regret
+and displacement of human review or advice channels.</li>
+<li><strong>Proposed future capability and how it works:</strong> Add
+consented longitudinal evaluation cohorts, explicit data-source labels,
+non-personalized controls, disclosure/reliance measures, memory
+inspection/redaction and human-escalation tracking before enabling
+persistent personalization.</li>
+<li><strong>Likely architectural placement:</strong> applications,
+context/memory service, evaluation, security/governance and human-review
+layer.</li>
+<li><strong>Expected business value:</strong> customer experience,
+trust, adoption quality, risk reduction and strategic
+differentiation.</li>
+<li><strong>Technical value:</strong> Separates exposure effects from
+personalization mechanisms and creates versioned behavior evidence by
+data source.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Large
+preregistered trial but one advice domain, model and five-day horizon.
+Ready for consented internal study, not broad deployment policy.
+<strong>Confidence: Moderate. Horizon: Now. Effort: M.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> Consent UX, data
+minimization, privacy review, memory provenance, delete/export controls,
+cohort analytics, protected demographic slices and human-support
+metrics.</li>
+<li><strong>Key risks:</strong> Collection itself increases privacy
+exposure; self-report bias; emotional influence; worker monitoring
+concerns; disparate effects; inferred sensitive traits; low opt-out
+salience.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build governance and
+measurement; partner</strong> with privacy, legal, human-factors and
+domain experts. Vendor memory features cannot supply internal consent
+policy.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Two-week
+synthetic-profile study with volunteers; compare no memory,
+conversation-summary memory and declared profile context; prohibit
+consequential actions.</li>
+<li><strong>Success metrics and stop conditions:</strong> Success:
+user-rated benefit without material increase in sensitive disclosure,
+regret, mistaken reliance or avoidance of human channels; ≥95% success
+inspecting/deleting memory. Stop on adverse-event signal, unclear
+consent, sensitive-trait inference or subgroup harm.</li>
+<li><strong>Roadmap trigger:</strong> Two independent cohorts and two
+low-risk domains show stable benefit, negligible harm deltas and
+effective recourse under privacy review.</li>
+</ul>
+<h3 id="prepare-foundations">Prepare Foundations</h3>
+<h4 id="4-context-compaction-telemetry-and-overflow-control--885">4.
+Context-compaction telemetry and overflow control — 88.5</h4>
+<ul>
+<li><strong>Category:</strong> Memory &amp; Context / MLOps &amp;
+Platform / Evaluation &amp; Observability.</li>
+<li><strong>Research signal and supporting papers:</strong> Managed
+tiers eliminate observed window-overflow terminations; staged elision
+plus summarization controls peak context, while recall adds little.
+<strong>Evidence label: Paper Fact and Enterprise
+Inference.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> Context failure
+is often invisible until a run truncates, loops or silently loses
+evidence.</li>
+<li><strong>Proposed future capability and how it works:</strong> Emit
+per-turn budget, elision, summary, evidence-loss and overflow events;
+preserve recent turns and immutable provenance pointers; qualify
+compaction profiles by task/model.</li>
+<li><strong>Placement:</strong> orchestration, context/memory,
+observability and model gateway. <strong>Business value:</strong>
+reliability, cost, speed and quality. <strong>Technical value:</strong>
+makes context a controlled resource with auditable loss.</li>
+<li><strong>Maturity/readiness:</strong> Strong benchmark signal;
+transfer uncertain. <strong>Confidence: High. Horizon: 3–6 months.
+Effort: M.</strong></li>
+<li><strong>Dependencies:</strong> Token accounting, message lineage,
+summary versioning, retrieval pointers, replay corpus and failure
+taxonomy.</li>
+<li><strong>Risks:</strong> Summaries distort instructions/evidence;
+telemetry contains sensitive data; thresholds overfit; recall remains
+unused.</li>
+<li><strong>Build/Buy/Partner:</strong> <strong>Build thin telemetry and
+policy; buy tracing storage</strong> if controls and retention are
+adequate.</li>
+<li><strong>Minimum experiment:</strong> Replay long trajectories with
+deterministic elision, summary-only and staged policies; manually audit
+lost decision-critical facts.</li>
+<li><strong>Success/stop:</strong> Zero overflow, &lt;1% critical-fact
+loss and ≥15% token reduction. Stop if fact loss exceeds 2% or privacy
+review rejects trace retention.</li>
+<li><strong>Roadmap trigger:</strong> Stable results across two models
+and three long-horizon workflows.</li>
+</ul>
+<h4 id="5-retrieval-evidence-coverage-evaluation--876">5. Retrieval
+evidence-coverage evaluation — 87.6</h4>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability / RAG
+&amp; Knowledge.</li>
+<li><strong>Research signal:</strong> RAFT separates Case Hit from
+root-cause and resolution-step coverage; large hit gains coexist with
+smaller coverage gains. <strong>Evidence label: Paper
+Fact.</strong></li>
+<li><strong>Problem/opportunity:</strong> Top-k retrieval success can
+mask incomplete actionable evidence.</li>
+<li><strong>Capability:</strong> Atomize gold explanations/procedures,
+score whether retrieved context supports each atom, calibrate model
+judges against humans, and report coverage by case stage and access
+slice.</li>
+<li><strong>Placement:</strong> evaluation, retrieval/knowledge and
+observability. <strong>Business value:</strong> quality, reliability and
+risk reduction. <strong>Technical value:</strong> measures evidence
+sufficiency rather than mere similarity.</li>
+<li><strong>Maturity/readiness:</strong> Metrics are clear; judge
+validity is unproven. <strong>Confidence: Moderate. Horizon: 3–6 months.
+Effort: M.</strong></li>
+<li><strong>Dependencies:</strong> Curated gold cases, atomization
+guidelines, human adjudication, judge registry, ACL-aware
+evaluation.</li>
+<li><strong>Risks:</strong> Expensive labels, judge circularity,
+ambiguous procedures, stale gold, gaming coverage.</li>
+<li><strong>Build/Buy/Partner:</strong> <strong>Build</strong>
+domain-specific gold/evaluation; buy generic annotation workflow
+only.</li>
+<li><strong>Minimum experiment:</strong> 100 held-out cases, two
+retrieval systems, double human annotation, compare judge
+precision/recall and stage-wise coverage.</li>
+<li><strong>Success/stop:</strong> Judge F1 ≥0.85 versus adjudication;
+coverage predicts expert preference/resolution. Stop if inter-annotator
+agreement is too low or coverage fails to correlate with outcomes.</li>
+<li><strong>Roadmap trigger:</strong> Metric remains stable across two
+domains and a time-based split.</li>
+</ul>
+<h4 id="6-inspectable-and-redactable-personalization-memory--862">6.
+Inspectable and redactable personalization memory — 86.2</h4>
+<ul>
+<li><strong>Category:</strong> Memory &amp; Context / Safety &amp;
+Governance / Human-AI Workflow.</li>
+<li><strong>Research signal:</strong> Memory personalization changes
+observable disclosure while users may not report deeper disclosure;
+authors call for paths to surface and redact data. <strong>Evidence
+label: Paper Fact and Enterprise Inference.</strong></li>
+<li><strong>Problem/opportunity:</strong> Users cannot give durable
+consent when they cannot see what the system remembers, why, or where it
+is used.</li>
+<li><strong>Capability:</strong> Store memory atoms with source,
+purpose, sensitivity, retention, owner and last-use metadata; provide
+inspect, correct, redact, export and disable controls; require policy
+checks before use.</li>
+<li><strong>Placement:</strong> context/memory, data platform,
+applications and security/governance. <strong>Business value:</strong>
+trust, compliance, risk reduction and customer experience.
+<strong>Technical value:</strong> creates a governed memory contract and
+deletion proof.</li>
+<li><strong>Maturity/readiness:</strong> Governance need is strong;
+causal product evidence is limited. <strong>Confidence: Moderate.
+Horizon: 3–6 months. Effort: L.</strong></li>
+<li><strong>Dependencies:</strong> Identity, consent ledger, data
+classification, deletion propagation, audit log and UI research.</li>
+<li><strong>Risks:</strong> Incomplete deletion, inferred traits,
+dark-pattern consent, cross-tenant leaks, user confusion, degraded
+personalization after edits.</li>
+<li><strong>Build/Buy/Partner:</strong> <strong>Build the policy/data
+model; partner</strong> with identity/privacy teams; buy storage only
+with verifiable deletion.</li>
+<li><strong>Minimum experiment:</strong> Synthetic accounts exercise
+create/view/edit/delete/export across downstream caches; measure
+propagation and comprehension.</li>
+<li><strong>Success/stop:</strong> 100% deletion propagation in test
+graph, ≥90% user comprehension, no undisclosed source. Stop on orphaned
+replicas or unclear ownership.</li>
+<li><strong>Roadmap trigger:</strong> Independent privacy test verifies
+lifecycle controls and a consented pilot shows useful personalization
+after edits.</li>
+</ul>
+<h3 id="monitor-for-maturity">Monitor for Maturity</h3>
+<h4 id="7-multi-signal-selective-document-gate--841">7. Multi-signal
+selective document gate — 84.1</h4>
+<ul>
+<li><strong>Category:</strong> Multimodal / Evaluation &amp;
+Observability / Human-AI Workflow.</li>
+<li><strong>Research signal:</strong> P/L/V fusion raises AUROC to
+0.90–0.99 and accepted coverage to 49–72% at a reported ≤10% error
+target. <strong>Evidence label: Paper Fact.</strong></li>
+<li><strong>Problem/opportunity:</strong> Native VLM confidence is
+poorly calibrated for straight-through processing.</li>
+<li><strong>Capability:</strong> Fuse image quality, OCR agreement,
+layout familiarity, type/checksum rules and cross-model agreement; apply
+field-specific selective-risk gates and route uncertain fields to
+review.</li>
+<li><strong>Placement:</strong> applications, evaluation, human-review
+and model gateway. <strong>Value:</strong> productivity, quality and
+cost. <strong>Technical value:</strong> decomposed reason codes plus
+bounded selective acceptance.</li>
+<li><strong>Maturity/readiness:</strong> Strong public-dataset results;
+weak drift and critical-field evidence. <strong>Confidence: Moderate.
+Horizon: 6–12 months. Effort: L.</strong></li>
+<li><strong>Dependencies:</strong> Historical labeled documents,
+template index, field loss taxonomy, calibration/drift service and
+review queue.</li>
+<li><strong>Risks:</strong> Exchangeability failure, template drift,
+sensitive-document leakage, 10% target misuse, correlated model
+errors.</li>
+<li><strong>Build/Buy/Partner:</strong> <strong>Partner/buy extraction
+components; build internal risk gate</strong> because thresholds and
+losses are domain-specific.</li>
+<li><strong>Minimum experiment:</strong> Time- and counterparty-disjoint
+shadow evaluation with zero automation; stratify by field
+criticality.</li>
+<li><strong>Success/stop:</strong> No critical-field false accept,
+useful coverage at internal loss budget, stable calibration. Stop if
+drift breaks bounds or review load rises.</li>
+<li><strong>Roadmap trigger:</strong> Independent audit and two time
+windows sustain calibrated coverage under production-like mix.</li>
+</ul>
+<h4 id="8-phase-aware-agent-container-scheduler--790">8. Phase-aware
+agent-container scheduler — 79.0</h4>
+<ul>
+<li><strong>Category:</strong> MLOps &amp; Platform /
+Infrastructure.</li>
+<li><strong>Research signal:</strong> Task-aware prototypes report ~5.4×
+improvement on a CPU-sensitive task and 32% average latency reduction.
+<strong>Evidence label: Paper Fact; production transfer is
+Uncertainty.</strong></li>
+<li><strong>Problem/opportunity:</strong> Static quotas waste CPU during
+remote waits yet under-provision bursty tool phases.</li>
+<li><strong>Capability:</strong> Classify tool phases, predict CPU
+sensitivity, admit bursts within tenant budgets, and preserve hard
+isolation/fairness.</li>
+<li><strong>Placement:</strong> infrastructure, orchestration and
+observability. <strong>Value:</strong> cost, speed and reliability.
+<strong>Technical value:</strong> aligns resources with agent phase
+behavior.</li>
+<li><strong>Maturity/readiness:</strong> Narrow research prototype;
+insufficient availability and security evidence. <strong>Confidence:
+Low. Horizon: 12+ months. Effort: XL.</strong></li>
+<li><strong>Dependencies:</strong> Container telemetry, workload
+classifier, scheduler hooks, tenancy model, quotas and tail-SLO
+simulator.</li>
+<li><strong>Risks:</strong> Starvation, noisy neighbors, timing side
+channels, prediction error, scheduler instability and operational
+complexity.</li>
+<li><strong>Build/Buy/Partner:</strong> <strong>Monitor/partner</strong>
+with infrastructure vendors; do not build a bespoke scheduler before
+trace evidence.</li>
+<li><strong>Minimum experiment:</strong> Offline trace replay plus a
+non-production cluster with synthetic contention and fixed safety
+quotas.</li>
+<li><strong>Success/stop:</strong> ≥15% p95 latency or cost improvement
+without fairness/isolation regression. Stop on starvation, unstable
+oscillation or weak savings.</li>
+<li><strong>Roadmap trigger:</strong> Gains reproduce across three
+internal agent classes at realistic concurrency for four weeks.</li>
+</ul>
+<h3 id="deprioritize-for-now">Deprioritize for Now</h3>
+<h4 id="9-universal-harness-or-personalization-default--468">9.
+Universal harness or personalization default — 46.8</h4>
+<ul>
+<li><strong>Category:</strong> Other / Safety &amp; Governance.</li>
+<li><strong>Research signal:</strong> Both the harness and
+personalization studies show heterogeneous or implementation-specific
+effects. <strong>Evidence label: Paper Fact and Independent
+Analysis.</strong></li>
+<li><strong>Problem/opportunity:</strong> A single global default is
+operationally simple but masks conditional regressions.</li>
+<li><strong>Capability:</strong> None recommended. Preserve explicit
+stable fallbacks while collecting qualification evidence.</li>
+<li><strong>Placement:</strong> governance and developer platform.
+<strong>Value:</strong> short-term simplicity only. <strong>Technical
+value:</strong> low.</li>
+<li><strong>Maturity/readiness:</strong> Evidence argues against the
+premise. <strong>Confidence: High. Horizon: 12+ months. Effort:
+S.</strong></li>
+<li><strong>Dependencies:</strong> Would require proof of dominance
+across models, tasks, budgets, users and time—currently absent.</li>
+<li><strong>Risks:</strong> Systematic failure, hidden subgroup harm,
+excess cost, privacy regret and brittle upgrades.</li>
+<li><strong>Build/Buy/Partner:</strong> <strong>Do not buy or build as a
+universal policy.</strong></li>
+<li><strong>Minimum experiment:</strong> None beyond the qualification
+matrix; never impose globally to “test” it.</li>
+<li><strong>Success/stop:</strong> Stop immediately if any critical
+slice regresses; success would require replicated Pareto dominance.</li>
+<li><strong>Roadmap trigger:</strong> Only multi-release internal
+evidence of dominance with no material subgroup regression could reopen
+this decision.</li>
+</ul>
+<h2 id="enterprise-ai-architecture-implications">Enterprise AI
+Architecture Implications</h2>
+<h3 id="independent-analysis">Independent Analysis</h3>
+<p>Over 12–24 months, the recommended options imply a shift from a
+monolithic agent stack to a <strong>qualified-policy
+architecture</strong>:</p>
+<ul>
+<li>A <strong>model and harness registry</strong> stores approved
+combinations, evaluation evidence, budgets, risk classes and expiry
+dates.</li>
+<li>An <strong>orchestration policy selector</strong> chooses among a
+small approved set using task stage, model version, context pressure and
+risk—not free-form self-modification.</li>
+<li>A <strong>context service</strong> exposes token budgets,
+provenance-preserving compaction and memory lifecycle controls.</li>
+<li>A <strong>stateful knowledge layer</strong> represents cases as
+timelines with ACLs, source identity and stage-aware retrieval.</li>
+<li>An <strong>evaluation plane</strong> measures paired success,
+overflow, cost, evidence coverage, selective risk and longitudinal human
+outcomes.</li>
+<li>An <strong>observability plane</strong> links policy choice to
+model/tool/data versions, cost, tail latency and fallback behavior.</li>
+<li>A <strong>human-review layer</strong> receives uncertain document
+fields, unresolved support cases and personalization concerns with
+reason codes and reversible controls.</li>
+</ul>
+<p>Shared enabling foundations unlock multiple backlog items: identity
+and authorization, data provenance, a model gateway, experiment
+infrastructure, cost telemetry, policy enforcement, evaluation
+registries, privacy-preserving trace stores and human escalation. Before
+roadmap commitment, internal context is required: representative
+workflow volumes, failure severity, support-case sensitivity, retention
+rules, model procurement, existing observability, user roles, regional
+privacy obligations, latency targets and change-management capacity.</p>
+<h2 id="implementation-priorities">Implementation priorities</h2>
+<ol type="1">
+<li><strong>Now — instrument and replay.</strong> Build the harness
+qualification matrix, context-overflow telemetry and a 500-case
+RAFT-like offline corpus. No live automation.</li>
+<li><strong>Next — validate people and evidence.</strong> Run a
+consented longitudinal personalization study and calibrate retrieval
+coverage against humans.</li>
+<li><strong>Then — introduce bounded pilots.</strong> Expose stateful
+retrieval to support engineers in shadow/read-only mode; keep
+personalization synthetic or low risk; retain stable fallbacks.</li>
+<li><strong>Later — selective automation.</strong> Consider document
+auto-approval or adaptive infrastructure only after time-split drift
+evidence, field-specific loss budgets, isolation tests and operational
+ownership exist.</li>
+</ol>
+<h2 id="knowledge-reinforcement">Knowledge reinforcement</h2>
+<h3 id="five-things-to-remember">Five things to remember</h3>
+<ol type="1">
+<li>Context management mostly prevents resource exhaustion; that is
+different from improving reasoning.</li>
+<li>Planning can be an accuracy scaffold for weak models and an
+efficiency aid for strong ones.</li>
+<li>A retrieved matching case is not the same as complete root-cause and
+resolution evidence.</li>
+<li>Repeated exposure can change user perceptions even when
+personalization has no incremental effect.</li>
+<li>Personalization implementation matters: conversational memory and
+pre-collected profiles should not share one risk label.</li>
+</ol>
+<h3 id="decision-checks">Decision checks</h3>
+<ul>
+<li>What model, task, budget, user population and time horizon qualified
+this policy?</li>
+<li>Which evidence metric measures the actual objective rather than a
+convenient proxy?</li>
+<li>What is the stable fallback when state classification is
+uncertain?</li>
+<li>Can users and operators inspect, correct and delete the state that
+conditions behavior?</li>
+<li>Which change—model, prompt, data, tool, schema, population or
+regulation—forces requalification?</li>
+</ul>
+<h2 id="evidence-ledger-and-source-index">Evidence ledger and source
+index</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Source</th>
+<th>Status and date</th>
+<th>Verified artifact</th>
+<th>Primary use</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://arxiv.org/abs/2609.20804">Harness Design</a> / <a
+href="https://arxiv.org/html/2609.20804">full text</a></td>
+<td>arXiv v1, submitted Sep 17, announced Sep 18, 2026</td>
+<td>No repository linked</td>
+<td>Deep analysis; conditional harness evidence</td>
+</tr>
+<tr class="even">
+<td><a href="https://arxiv.org/abs/2609.20754">RAFT</a> / <a
+href="https://arxiv.org/html/2609.20754">full text</a></td>
+<td>EMNLP 2026 Industry Track; arXiv v1</td>
+<td><a href="https://github.com/microsoft/RAFT">Microsoft
+repository</a></td>
+<td>Deep analysis; stateful retrieval</td>
+</tr>
+<tr class="odd">
+<td><a href="https://arxiv.org/abs/2609.20077">Tailored to you</a> / <a
+href="https://arxiv.org/html/2609.20077">full text</a></td>
+<td>arXiv v1, Sep 17, 2026; CC BY 4.0</td>
+<td><a href="https://aspredicted.org/fv6zs5.pdf">Preregistration</a>;
+prompts in paper</td>
+<td>Deep analysis; longitudinal personalization</td>
+</tr>
+<tr class="even">
+<td><a href="https://arxiv.org/abs/2609.20110">Calibrated Financial
+Documents</a> / <a href="https://arxiv.org/html/2609.20110">full
+text</a></td>
+<td>arXiv v1, Sep 17, 2026; CC BY 4.0</td>
+<td>No code linked</td>
+<td>Watchlist; selective confidence</td>
+</tr>
+<tr class="odd">
+<td><a href="https://arxiv.org/abs/2609.19947">Agent Resource
+Dynamics</a> / <a href="https://arxiv.org/html/2609.19947">full
+text</a></td>
+<td>arXiv v1, Sep 17, 2026</td>
+<td>No code linked</td>
+<td>Watchlist; infrastructure scheduling</td>
+</tr>
+</tbody>
+</table>
+<h2 id="final-boundary">Final boundary</h2>
+<p>This briefing identifies research-backed options, not approved
+roadmap commitments. Internal decisions require current architecture,
+data classification, identity and authorization, legal obligations, user
+roles, model contracts, loss severity, economics and operational
+ownership. No benchmark result in this report authorizes production
+deployment. The next actions are deliberately reversible: replay, shadow
+evaluation, synthetic-data studies and human-reviewed
+pilots.</p></main></div>
+<footer>AI Research Intelligence Brief · September 19, 2026 · Research options, not deployment approval.</footer>
+<div class="toolbar"><button onclick="window.print()" aria-label="Print report">Print</button><button id="top" aria-label="Back to top">↑ Top</button></div>
+<script>
+const p=document.getElementById('progress');addEventListener('scroll',()=>{const h=document.documentElement;p.style.width=((h.scrollTop/(h.scrollHeight-h.clientHeight))*100)+'%'});document.getElementById('top').onclick=()=>scrollTo({top:0,behavior:'smooth'});
+document.querySelectorAll('main h4').forEach(h=>{if(/^\d+\./.test(h.textContent))h.setAttribute('data-backlog','true')});
+</script>
+</body></html>
