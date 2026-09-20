@@ -1,0 +1,1449 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Evidence-grounded AI Research Intelligence Brief for September 20, 2026: claim-safe evaluation, accountable retrieval, and disagreement-aware multi-agent systems.">
+<meta name="report-date" content="2026-09-20">
+<meta name="research-window" content="2026-09-17T04:00:00-05:00/2026-09-20T04:00:00-05:00 America/Chicago">
+<meta name="deep-paper-count" content="3">
+<meta name="watchlist-count" content="2">
+<meta name="theme-color" content="#08131f">
+<title>AI Research Intelligence Brief — September 20, 2026</title>
+<style>
+:root{--bg:#07111d;--panel:#0d1b2a;--panel2:#10263a;--text:#e8f1f7;--muted:#9fb5c5;--line:#29445b;--cyan:#45d7c4;--gold:#f5c96a;--rose:#ff8d9a;--blue:#68a9ff;--max:1180px;color-scheme:dark}
+@media(prefers-color-scheme:light){:root{--bg:#f4f7f8;--panel:#fff;--panel2:#edf4f7;--text:#102131;--muted:#526979;--line:#cddbe2;--cyan:#087f73;--gold:#9b6300;--rose:#b92b45;--blue:#1661ad;color-scheme:light}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 90% 0,rgba(69,215,196,.12),transparent 30rem),var(--bg);color:var(--text);font:16px/1.67 ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}a{color:var(--cyan);text-underline-offset:3px}a:hover{text-decoration-thickness:2px}header{border-bottom:1px solid var(--line);background:linear-gradient(135deg,rgba(69,215,196,.09),rgba(104,169,255,.05));padding:54px 22px 34px}.hero{max-width:var(--max);margin:auto}.eyebrow{color:var(--cyan);text-transform:uppercase;letter-spacing:.15em;font-size:.76rem;font-weight:800}h1{font-size:clamp(2.2rem,6vw,4.7rem);line-height:.98;max-width:950px;margin:.35rem 0 1rem;letter-spacing:-.055em}header p{max-width:830px;color:var(--muted);font-size:1.09rem}.chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}.chip{border:1px solid var(--line);border-radius:999px;padding:6px 11px;background:var(--panel);font-size:.8rem}.topbets{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}.bet{border:1px solid var(--line);background:var(--panel);border-radius:14px;padding:15px}.bet b{display:block;color:var(--gold);font-size:1.15rem}.layout{max-width:var(--max);margin:auto;display:grid;grid-template-columns:250px minmax(0,1fr);gap:34px;padding:30px 22px 80px}nav{position:sticky;top:16px;align-self:start;max-height:calc(100vh - 32px);overflow:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:14px}nav strong{display:block;margin:2px 8px 10px;color:var(--gold)}nav ul{list-style:none;margin:0;padding:0}nav li{margin:0}nav a{display:block;color:var(--muted);text-decoration:none;padding:5px 8px;border-radius:7px;font-size:.83rem;line-height:1.25}nav a:hover{background:var(--panel2);color:var(--text)}main{min-width:0}main>h2{font-size:1.75rem;margin:2.6rem 0 1rem;padding-top:.7rem;border-top:1px solid var(--line)}main>h2:first-child{margin-top:0}h3{font-size:1.3rem;margin-top:2rem;color:var(--cyan)}h4{font-size:1.08rem;color:var(--gold);margin-bottom:.45rem}p,li{max-width:88ch}blockquote{margin:1rem 0;padding:1rem 1.2rem;border-left:4px solid var(--gold);background:var(--panel);color:var(--muted)}pre{white-space:pre-wrap;overflow:auto;background:#07101a;border:1px solid var(--line);border-radius:14px;padding:18px;color:#dcecf2;font-size:.86rem;line-height:1.45}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}table{width:100%;border-collapse:collapse;margin:1.25rem 0;background:var(--panel);font-size:.86rem}th,td{padding:10px 12px;border:1px solid var(--line);text-align:left;vertical-align:top}th{color:var(--gold);background:var(--panel2)}hr{border:0;border-top:1px solid var(--line)}main h4+ul,main h3+ul{border:1px solid var(--line);background:linear-gradient(135deg,var(--panel),var(--panel2));border-radius:14px;padding:15px 22px 15px 34px}main h4+ul li,main h3+ul li{margin:.5rem 0}.progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--cyan),var(--gold));width:0;z-index:9}.toolbar{position:fixed;right:18px;bottom:18px;display:flex;gap:8px}.toolbar button{border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:999px;padding:9px 12px;cursor:pointer;box-shadow:0 8px 30px rgba(0,0,0,.2)}.label{font-size:.75rem;color:var(--muted)}footer{border-top:1px solid var(--line);padding:24px;text-align:center;color:var(--muted)}
+@media(max-width:850px){.topbets{grid-template-columns:1fr}.layout{grid-template-columns:1fr}nav{position:relative;top:0;max-height:none}nav ul{columns:2}h1{font-size:2.65rem}}
+@media(max-width:520px){header{padding-top:34px}.layout{padding:20px 14px 60px}nav ul{columns:1}table{display:block;overflow-x:auto}h1{font-size:2.25rem}}
+@media print{body{background:white;color:#111;font-size:11pt}header{padding:18px 0}.layout{display:block;padding:0}nav,.toolbar,.progress{display:none}a{color:#145c70}main>h2{break-before:page}main>h2:first-child{break-before:auto}table,pre{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<header><div class="hero">
+<div class="eyebrow">AI Research Intelligence · Evidence before enthusiasm</div>
+<h1>Preserve the limits of the evidence.</h1>
+<p>September 20, 2026 briefing. Three deep papers show why reliable AI must retain support boundaries, source-discovery paths and disagreement instead of compressing them into scores, answers or consensus.</p>
+<div class="chips"><span class="chip">3 deep papers</span><span class="chip">2 Watchlist</span><span class="chip">72-hour expanded window</span><span class="chip">9 enterprise options</span><span class="chip">Primary sources + full-paper review</span></div>
+<div class="topbets"><div class="bet"><span class="label">TOP BET 1 · PROTOTYPE SOON</span><b>92.3 · Claim ledger + abstention</b><span>Make support, coverage and per-claim validity machine-readable.</span></div><div class="bet"><span class="label">TOP BET 2 · PROTOTYPE SOON</span><b>91.1 · Accountable retrieval</b><span>Preserve the query-to-source path across corpora and decisions.</span></div><div class="bet"><span class="label">TOP BET 3 · PROTOTYPE SOON</span><b>90.2 · Disagreement-aware agents</b><span>Measure wrong consensus and preserve minority evidence.</span></div></div>
+</div></header>
+<div class="layout"><nav><strong>Navigate</strong><ul>
+<li><a href="#scope-window-and-evidence-policy"
+id="toc-scope-window-and-evidence-policy">Scope, window, and evidence
+policy</a></li>
+<li><a href="#executive-signal" id="toc-executive-signal">Executive
+signal</a></li>
+<li><a href="#top-3-future-bets" id="toc-top-3-future-bets">Top 3 Future
+Bets</a></li>
+<li><a href="#deep-paper-1--evaluation-should-refuse-unsupported-claims"
+id="toc-deep-paper-1--evaluation-should-refuse-unsupported-claims">Deep
+paper 1 — Evaluation should refuse unsupported claims</a>
+<ul>
+<li><a href="#contribution-and-quantitative-claim-trace"
+id="toc-contribution-and-quantitative-claim-trace">Contribution and
+quantitative claim trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison"
+id="toc-methodological-critique-and-prior-work-comparison">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#reproducibility-and-enterprise-readiness"
+id="toc-reproducibility-and-enterprise-readiness">Reproducibility and
+enterprise readiness</a></li>
+</ul></li>
+<li><a
+href="#deep-paper-2--retrieval-accountability-is-a-source-discovery-problem"
+id="toc-deep-paper-2--retrieval-accountability-is-a-source-discovery-problem">Deep
+paper 2 — Retrieval accountability is a source-discovery problem</a>
+<ul>
+<li><a href="#contribution-and-quantitative-claim-trace-1"
+id="toc-contribution-and-quantitative-claim-trace-1">Contribution and
+quantitative claim trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison-1"
+id="toc-methodological-critique-and-prior-work-comparison-1">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#reproducibility-and-enterprise-readiness-1"
+id="toc-reproducibility-and-enterprise-readiness-1">Reproducibility and
+enterprise readiness</a></li>
+</ul></li>
+<li><a href="#deep-paper-3--agent-agreement-is-not-human-consensus"
+id="toc-deep-paper-3--agent-agreement-is-not-human-consensus">Deep paper
+3 — Agent agreement is not human consensus</a>
+<ul>
+<li><a href="#contribution-and-quantitative-claim-trace-2"
+id="toc-contribution-and-quantitative-claim-trace-2">Contribution and
+quantitative claim trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison-2"
+id="toc-methodological-critique-and-prior-work-comparison-2">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#reproducibility-and-enterprise-readiness-2"
+id="toc-reproducibility-and-enterprise-readiness-2">Reproducibility and
+enterprise readiness</a></li>
+</ul></li>
+<li><a href="#watchlist" id="toc-watchlist">Watchlist</a>
+<ul>
+<li><a
+href="#skillaa--targeted-skill-repair-with-validation-and-rollback"
+id="toc-skillaa--targeted-skill-repair-with-validation-and-rollback">SkillAA
+— targeted skill repair with validation and rollback</a></li>
+<li><a
+href="#when-ai-agents-commit--formal-consistency-at-the-mutation-boundary"
+id="toc-when-ai-agents-commit--formal-consistency-at-the-mutation-boundary">When
+AI Agents Commit — formal consistency at the mutation boundary</a></li>
+</ul></li>
+<li><a href="#cross-paper-synthesis"
+id="toc-cross-paper-synthesis">Cross-paper synthesis</a></li>
+<li><a href="#visual-1--evidence-boundary-map"
+id="toc-visual-1--evidence-boundary-map">Visual 1 — evidence boundary
+map</a></li>
+<li><a href="#visual-2--enterprise-ai-architecture-implications"
+id="toc-visual-2--enterprise-ai-architecture-implications">Visual 2 —
+Enterprise AI Architecture Implications</a></li>
+<li><a href="#enterprise-ai-enhancement-backlog"
+id="toc-enterprise-ai-enhancement-backlog">Enterprise AI Enhancement
+Backlog</a>
+<ul>
+<li><a href="#priority-method-and-uncertainty"
+id="toc-priority-method-and-uncertainty">Priority method and
+uncertainty</a></li>
+<li><a href="#prototype-soon" id="toc-prototype-soon">Prototype
+Soon</a></li>
+<li><a href="#prepare-foundations" id="toc-prepare-foundations">Prepare
+Foundations</a></li>
+<li><a href="#monitor-for-maturity"
+id="toc-monitor-for-maturity">Monitor for Maturity</a></li>
+<li><a href="#deprioritize-for-now"
+id="toc-deprioritize-for-now">Deprioritize for Now</a></li>
+</ul></li>
+<li><a href="#implementation-priorities"
+id="toc-implementation-priorities">Implementation priorities</a>
+<ul>
+<li><a href="#next-30-days" id="toc-next-30-days">Next 30 days</a></li>
+<li><a href="#36-months" id="toc-36-months">3–6 months</a></li>
+<li><a href="#do-not-do-yet" id="toc-do-not-do-yet">Do not do
+yet</a></li>
+</ul></li>
+<li><a href="#knowledge-reinforcement"
+id="toc-knowledge-reinforcement">Knowledge reinforcement</a></li>
+<li><a href="#source-and-artifact-register"
+id="toc-source-and-artifact-register">Source and artifact
+register</a></li>
+<li><a href="#closing-judgment" id="toc-closing-judgment">Closing
+judgment</a></li>
+</ul></nav><main><h2 id="scope-window-and-evidence-policy">Scope,
+window, and evidence policy</h2>
+<p><strong>Research window.</strong> Thursday, September 17, 2026 at
+4:00 AM CDT through Sunday, September 20, 2026 at 4:00 AM CDT (72 hours;
+America/Chicago; 09:00 UTC to 09:00 UTC). The original 24-hour window
+contained no new weekend arXiv announcement batch, so discovery expanded
+to 72 hours. Screening covered the September 18 arXiv cycle across
+cs.AI, cs.CL, cs.LG, cs.IR, cs.SE, cs.MA, cs.CY, cs.DC and stat.ML;
+current primary pages from major publishers and conference repositories;
+full PDFs; and linked code, preregistration, data and artifact pages.
+Five papers were retained from the expanded window; three cleared deep
+analysis and two remain Watchlist-only.</p>
+<p><strong>Anti-duplication.</strong> Exact identifiers and titles were
+checked against the 41-report archive through September 19. None of
+today's five papers appeared previously. The prior brief examined
+conditional harness design, stateful troubleshooting retrieval and
+longitudinal personalization. Today's increment is different:
+<strong>reliable AI must preserve where evidence is supported, why a
+source was selected, what disagreement was lost, and whether the
+premises used to authorize a durable effect are still
+valid.</strong></p>
+<p><strong>Evidence policy.</strong> <strong>Paper Fact</strong> denotes
+a statement directly reported in a paper or verified first-party
+artifact. <strong>Independent Analysis</strong> denotes this briefing's
+comparison, calculation or critique. <strong>Enterprise
+Inference</strong> translates evidence into a bounded future option.
+<strong>Uncertainty</strong> marks missing causal, external-validity,
+artifact, licensing, economic, privacy, security, governance,
+operational or adoption evidence. All three deep papers are recent
+manuscripts; TRACE reports acceptance to CIKM 2026, while the other two
+do not claim a peer-reviewed venue on their arXiv records. No benchmark
+result is treated as production readiness. Proposed experiments are
+isolated, reversible, measurable and non-destructive.</p>
+<h2 id="executive-signal">Executive signal</h2>
+<blockquote>
+<p><strong>Reliable AI must keep the limits of its evidence as
+first-class system state. A score without support, a source without a
+retrieval path, or consensus without preserved dissent is an unsafe
+compression.</strong></p>
+</blockquote>
+<p>Three deep papers establish complementary parts of that control
+plane:</p>
+<ol type="1">
+<li><strong>Claim-safe closed-loop evaluation</strong> makes abstention
+an explicit outcome, separates execution, operational safety, coverage
+and structural claims, and treats distribution-shift alarms as requests
+to refresh a reference rather than immediate proof of failure.</li>
+<li><strong>TRACE</strong> treats retrieval as accountable source
+discovery. Corpus-targeted decomposition, multi-channel retrieval,
+explicit accept/hold/reject states and cross-subquestion confirmation
+outperform sparse, dense, graph and agentic baselines on 1,752
+historical questions while retaining a query-to-source path.</li>
+<li><strong>Belief-anchored agent groups</strong> over-produce consensus
+relative to matched human groups. The excess persists under
+participation-matched scoring and surface reparameterization;
+reasoning-mode groups can agree almost unanimously on incorrect
+answers.</li>
+</ol>
+<p>The Watchlist extends the same pattern. SkillAA localizes skill edits
+and gates them with scoped validation and rollback, but evidence is
+limited to moderate graphs, mostly single-turn benchmarks, three
+optimization seeds and a repository with no surfaced software license.
+Cognitive Serializability defines deterministic admission contracts for
+agent-derived mutations, but its safety and performance evidence comes
+from one prototype and complete mediation is a strong deployment
+assumption.</p>
+<p><strong>Decision posture.</strong> Prototype an executable claim
+ledger, accountable retrieval provenance and disagreement-aware
+multi-agent evaluation. Prepare reference-map lifecycle controls and
+human-review queue metrics. Monitor gated skill-graph adaptation,
+human-proxy governance and cognitive commit envelopes until independent
+replication and internal workload evidence exist. Deprioritize any
+policy that converts evaluator refusal into a forced score, agent
+agreement into human consensus, or a mutable reasoning trace directly
+into an authorized effect.</p>
+<h2 id="top-3-future-bets">Top 3 Future Bets</h2>
+<ol type="1">
+<li><strong>Executable claim ledger and abstention gate —
+92.3/100.</strong> Why it matters: the claim-safe protocol admitted only
+55 of 72 regime-component units at reference time, and this
+incompleteness was part of the result rather than silently filtered.
+Evidence that would change the recommendation: internal evaluation
+showing the gate abstains so often that it hides material failures, or
+that human reviewers cannot act consistently on separated claim states.
+Next reversible action: wrap one offline evaluation pipeline with four
+outputs—execution, support/coverage, operational safety and per-claim
+verdict—without changing any production decision.</li>
+<li><strong>Accountable retrieval provenance and corpus-aware
+decomposition — 91.1/100.</strong> Why it matters: TRACE reaches R@10
+0.856 and MRR 0.653 on 1,752 questions, versus 0.734/0.535 for dense
+retrieval, while exposing subquestion, search and acceptance rationale.
+Evidence that would change the recommendation: no lift on internal
+multi-hop corpora, provenance traces that fail expert audit, or
+materially higher latency/cost than the decision value. Next reversible
+action: replay 150 multi-source research or policy questions over a
+permissioned corpus and compare source recall, reading-queue precision,
+verification time and access-control integrity.</li>
+<li><strong>Disagreement-aware multi-agent qualification —
+90.2/100.</strong> Why it matters: participation-matched agent groups
+exceed human full consensus by 34.1 points in chat mode and 44.4 points
+in reasoning mode; reparameterized reasoning groups reach 98.7%
+consensus, mostly on wrong answers. Evidence that would change the
+recommendation: independent task families showing calibrated minority
+survival and correct-versus-wrong consensus that match human or expert
+distributions. Next reversible action: add answer diversity, minority
+survival, wrong-consensus and peer-influence diagnostics to one advisory
+ensemble; do not expose its aggregate as a proxy for human
+agreement.</li>
+</ol>
+<h2 id="deep-paper-1--evaluation-should-refuse-unsupported-claims">Deep
+paper 1 — Evaluation should refuse unsupported claims</h2>
+<p><strong>Identity and status.</strong> <em>Refuse, Decompose, Refresh:
+A Claim-Safe Protocol for Closed-Loop AI Evaluation</em>, Peiying Zhu
+and Sidi Chang; submitted September 17, 2026; arXiv:2609.20538v1; cs.AI;
+eight-page preprint under arXiv's non-exclusive distribution license.
+The paper links a reproducibility artifact on anonymous.4open.science;
+the artifact endpoint was reachable during review, but anonymous hosting
+and the absence of an independently verified software license reduce
+long-term provenance. (<a
+href="https://arxiv.org/abs/2609.20538">paper</a>, <a
+href="https://anonymous.4open.science/r/artifact-9f37d2/tae_2026">artifact</a>)</p>
+<h3 id="contribution-and-quantitative-claim-trace">Contribution and
+quantitative claim trace</h3>
+<p>The paper argues that closed-loop evaluation changes its own
+observation distribution: policy selects visited states, visible
+components and failure traces. Its protocol has three actions.
+<strong>Refuse</strong> when no clean reference or matched runtime
+comparison supports scoring. <strong>Decompose</strong> execution, false
+admission, descriptive coverage and structural hypotheses rather than
+compressing them into PASS/FAIL. <strong>Refresh</strong> when a
+detector's reference distribution is obsolete. The simulator includes 24
+policy components, three demand regimes, two fault-mask families,
+independent development and held-out seeds, 1,440 held-out cases and
+21,600 partition rows.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>Decision meaning</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Support is incomplete and measurable</td>
+<td style="text-align: right;">55/72 regime-component units and 20/24
+components are reference-admitted; 54/55 units remain
+runtime-admitted</td>
+<td>Publish the denominator-generating mechanism and refusal rate</td>
+<td>Simulator support rules may not transfer to enterprise logs</td>
+</tr>
+<tr class="even">
+<td>The frozen operational safety rule passes</td>
+<td style="text-align: right;">Stable false admission is 0/20
+represented components; one-sided exact 95% upper bound 0.1391 under a
+0.20 rule</td>
+<td>Safety gates should report an upper bound, not “zero false
+positives”</td>
+<td>Only about 20 represented clusters; unseen classes are not
+covered</td>
+</tr>
+<tr class="odd">
+<td>Convenient size proxies can measure the wrong construct</td>
+<td style="text-align: right;">Affected clean traffic beats nominal
+fault-cell fraction by 0.1264 nats per unit-arm row; 95%
+component-cluster interval [0.0593, 0.1918]</td>
+<td>Validate the exposure variable behind an evaluation score</td>
+<td>Conditional on admitted units, tested regimes and planted
+faults</td>
+</tr>
+<tr class="even">
+<td>Shift alarms are reference-relative</td>
+<td style="text-align: right;">Clean fault-null partitions alarm 15/15,
+0/15 and 14/15 across low, matched and high demand regimes</td>
+<td>Treat drift alarms as maintenance triggers before fault claims</td>
+<td>No sensitivity target was preregistered; pattern is descriptive</td>
+</tr>
+<tr class="odd">
+<td>Separate claims avoid logical overreach</td>
+<td style="text-align: right;">The frozen ledger distinguishes protocol
+execution, operational safety, coverage, structural hypotheses and
+maintenance</td>
+<td>Store claim type and evidence scope alongside every result</td>
+<td>A ledger does not guarantee reviewers interpret it correctly</td>
+</tr>
+</tbody>
+</table>
+<h3
+id="methodological-critique-and-prior-work-comparison">Methodological
+critique and prior-work comparison</h3>
+<p>Model-evaluation frameworks such as HELM widen scenarios and metrics;
+dataset-shift tests detect distribution changes; measurement scholarship
+warns that reproducibility does not establish construct validity. This
+paper's useful advance is operational: support, denominators, null
+distributions and allowed inferences become executable contract states.
+Independent held-out seeds, a frozen claim grammar, exact binomial
+inversion, cluster-level uncertainty and explicit forbidden inferences
+reduce post hoc storytelling.</p>
+<p>The evidence is deliberately narrow. All traces are
+simulator-generated; no real model, user, production controller or
+high-dimensional observation stream is evaluated. Thresholds were
+developed for one simulator and should not be copied. The
+traffic-versus-family sufficiency margin is only 0.0034 nats and may be
+vulnerable to a 20-cluster percentile bootstrap. The refresh path reuses
+the locked buffer, so it validates control flow and map-hash
+integrity—not whether new post-shift data repairs an obsolete map. The
+study does not establish localization accuracy, detector sensitivity,
+fairness, real privacy safety or external validity.</p>
+<h3 id="reproducibility-and-enterprise-readiness">Reproducibility and
+enterprise readiness</h3>
+<p>The paper specifies the frozen schedule, endpoints, support counts
+and artifact location, which is stronger than an unexecuted conceptual
+framework. The artifact's anonymous address and unclear license weaken
+durability and legal reuse. <strong>Enterprise readiness:</strong> high
+for adding claim states and refusal telemetry to offline evaluation;
+medium for using them as release gates after reviewer training and
+domain calibration; low for transferring thresholds. <strong>Research
+Utility Score: 91/100</strong> (methodological rigor 24/25; quantitative
+traceability 24/25; reproducibility/artifacts 16/20; enterprise
+relevance 14/15; prior-work advance 13/15).</p>
+<h2
+id="deep-paper-2--retrieval-accountability-is-a-source-discovery-problem">Deep
+paper 2 — Retrieval accountability is a source-discovery problem</h2>
+<p><strong>Identity and status.</strong> <em>TRACE: Accountable Agentic
+Retrieval for Source Discovery in Digital Archives</em>, Donghan Bian,
+Marie Puren, Florian Cafiero and collaborators; submitted September 17,
+2026; arXiv:2609.19897v1; CIKM 2026 journal reference on the arXiv
+record. The public GitHub repository contained six commits, executable
+pipeline code, multi-provider configuration and evaluation instructions
+when inspected; no license file surfaced in the repository listing, so
+reuse rights require confirmation. The internal prototype serves 24
+researchers across six partner institutions. (<a
+href="https://arxiv.org/abs/2609.19897">paper</a>, <a
+href="https://github.com/Kepler1908/TRACE">artifact</a>)</p>
+<h3 id="contribution-and-quantitative-claim-trace-1">Contribution and
+quantitative claim trace</h3>
+<p>TRACE targets OCR-degraded, heterogeneous French historical
+collections. A planner decomposes a question into corpus-targeted
+subquestions. Each subquestion receives reciprocal-rank-fused BM25,
+date/metadata and dense candidates, followed by an agent loop with
+explicit accept, hold and reject decisions. Memory and replanning carry
+evidence between subquestions; a final reranker uses cross-subquestion
+confirmation. HistoriQA-ThirdRepublic contains 1,752 questions over 1887
+parliamentary and newspaper sources.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>Decision meaning</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>TRACE improves ranked source discovery</td>
+<td style="text-align: right;">Overall R@10 0.856 and MRR 0.653; dense
+retrieval 0.734/0.535; HippoRAG2 0.737/0.453</td>
+<td>Domain orchestration can outperform heavier generic indexing</td>
+<td>One historical year, language and corpus relationship</td>
+</tr>
+<tr class="even">
+<td>Agent decisions are more selective and complete</td>
+<td style="text-align: right;">Accepted-set precision/recall
+0.393/0.879; MA-RAG 0.085/0.697; A-RAG 0.056/0.517</td>
+<td>Evaluate the reading queue, not only the final answer</td>
+<td>Baseline trajectories are ranked by discovery order, not native
+relevance order</td>
+</tr>
+<tr class="odd">
+<td>Decomposition is the largest measured component</td>
+<td style="text-align: right;">Cumulative R@10 rises from 0.688 to 0.777
+with decomposition (+8.9 points), then to 0.801 with memory/replan,
+0.851 with warm start and 0.856 with hold/re-evaluation</td>
+<td>Add structural orchestration in measured stages</td>
+<td>Cumulative ablation does not isolate interactions</td>
+</tr>
+<tr class="even">
+<td>Most misses occur before final reranking</td>
+<td style="text-align: right;">82.6% of misses occur inside the loop;
+36.8% are surfaced then rejected, 36.5% never retrieved, 9.3% held but
+not promoted</td>
+<td>Instrument retrieval and relevance judgment separately</td>
+<td>Attribution is for one model/configuration</td>
+</tr>
+<tr class="odd">
+<td>Cost is measurable but nontrivial</td>
+<td style="text-align: right;">177.6M input and 39.7M output tokens;
+about $36 total or $0.02/question under reported pricing; 33.8 LLM
+calls/question</td>
+<td>Cost telemetry belongs beside retrieval quality</td>
+<td>Prices and provider performance can change; human verification cost
+omitted</td>
+</tr>
+<tr class="even">
+<td>Planning failures are rare but concentrated</td>
+<td style="text-align: right;">About 98% of multi-hop queries get at
+least two subquestions; 13 of 18 collapsed cases fail (72% versus 20%
+base failure)</td>
+<td>Detect planner under-decomposition as an explicit failure mode</td>
+<td>Only 18 affected questions</td>
+</tr>
+</tbody>
+</table>
+<h3
+id="methodological-critique-and-prior-work-comparison-1">Methodological
+critique and prior-work comparison</h3>
+<p>Sparse, dense and graph retrieval usually optimize candidate ranking;
+generation-centric agentic RAG may obscure whether sources were found,
+accepted and used. TRACE treats source discovery and expert reading
+queues as first-class outputs. Shared corpora, the same backbone for the
+main comparison, explicit retrieval metrics, per-type reporting and
+component ablation make the mechanism clearer than answer-only
+comparisons. The live multi-institution prototype adds practical
+evidence, although it is not a controlled user study.</p>
+<p>Important constraints remain. The corpus is one year of French
+history, and prompts encode corpus-specific relationships between
+parliamentary debates and newspapers. The two agentic baselines do not
+natively return ranked lists; ranking by discovery order is generous for
+recall but structurally mismatched for MRR. The ablation is cumulative
+rather than factorial. The default model makes 33.8 calls and takes 169
+seconds of serial model time per question; eight-way concurrency lowers
+observed completion to roughly 22 seconds, but responsiveness remains
+provider-bound. A user study has not shown that the trace reduces expert
+verification time or improves trust. The repository omits the paper's
+full corpus and does not surface a software license.</p>
+<h3 id="reproducibility-and-enterprise-readiness-1">Reproducibility and
+enterprise readiness</h3>
+<p>The public implementation exposes the pipeline, prompts, JSONL
+contract, model providers, token limits and evaluation outputs. Missing
+corpus redistribution and an unsurfaced code license prevent turnkey
+reuse. <strong>Enterprise readiness:</strong> high for an offline pilot
+over a permissioned archive; medium for analyst-facing source discovery
+after ACL, citation and cost controls; low for autonomous conclusions.
+<strong>Research Utility Score: 93/100</strong> (methodological rigor
+23/25; quantitative traceability 24/25; reproducibility/artifacts 18/20;
+enterprise relevance 14/15; prior-work advance 14/15).</p>
+<h2 id="deep-paper-3--agent-agreement-is-not-human-consensus">Deep paper
+3 — Agent agreement is not human consensus</h2>
+<p><strong>Identity and status.</strong> <em>Language-model groups
+overstate consensus when replaying human deliberation on a reasoning
+task</em>, Tengfei Shao; submitted September 17, 2026;
+arXiv:2609.20543v1; cs.AI/cs.CL/cs.CY/cs.MA; 37-page CC BY 4.0
+manuscript. The study links an OSF preregistration and a Zenodo record
+containing analysis/replay code under MIT; the DOI redirected
+successfully during verification. (<a
+href="https://arxiv.org/abs/2609.20543">paper</a>, <a
+href="https://osf.io/5jp7s">preregistration</a>, <a
+href="https://doi.org/10.5281/zenodo.21318346">artifact</a>)</p>
+<h3 id="contribution-and-quantitative-claim-trace-2">Contribution and
+quantitative claim trace</h3>
+<p>The study replays 100 held-out human groups from DeliData's
+Wason-selection discussions. One belief-anchored agent represents each
+participant's pre-discussion answer. Humans and agents are scored with
+the same code, while alternative definitions expose a key measurement
+asymmetry: roughly one fifth of humans never posted, whereas agents
+almost always responded. Confirmatory tests were preregistered;
+participation-matched analyses are explicitly post-unblinding
+sensitivities.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>Decision meaning</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Consensus depends on the measurement contract</td>
+<td style="text-align: right;">Human full consensus ranges from 24.0%
+carry-forward to 52.0% submitted, 57.0% active-only and 51.1% in 45
+lurker-free groups</td>
+<td>Preserve participation and final-state definitions</td>
+<td>Alternative definitions do not fully equalize forced agent
+elicitation</td>
+</tr>
+<tr class="even">
+<td>Agent groups over-converge</td>
+<td style="text-align: right;">In lurker-free groups, chat reaches 85.2%
+versus 51.1% human (+34.1 points; 95% CI [19.3,48.9]); reasoning reaches
+95.6% (+44.4 [29.6,59.3])</td>
+<td>Agreement is not independent corroboration</td>
+<td>One objective reasoning task drives confirmatory evidence</td>
+</tr>
+<tr class="odd">
+<td>The gap survives an independent measurement route</td>
+<td style="text-align: right;">Submit-based excess is +34.0 points
+[24.1,44.2] for chat and +43.9 [34.0,53.7] for reasoning across 98
+groups</td>
+<td>The result is not only a carry-forward artifact</td>
+<td>Still reuses the same held-out groups</td>
+</tr>
+<tr class="even">
+<td>Early stopping does not explain the result</td>
+<td style="text-align: right;">Fixed-horizon consensus is 87.0% chat and
+100.0% reasoning</td>
+<td>Stopping-rule fixes are insufficient</td>
+<td>Final elicitation is still forced</td>
+</tr>
+<tr class="odd">
+<td>Consensus can concentrate error</td>
+<td style="text-align: right;">Under neutral-token reparameterization,
+reasoning consensus is 98.7%; wrong consensus rises to 74.0%, +62.0
+points [53.3,70.7] versus the classic task</td>
+<td>Track wrong consensus and minority survival</td>
+<td>Neutral tokens are ordinary words; not a pure memorization test</td>
+</tr>
+<tr class="even">
+<td>Cross-family evidence is directional</td>
+<td style="text-align: right;">Qwen3-14B reaches 65.7% consensus versus
+24.0% human carry-forward; 42.0% wrong and 23.7% correct consensus</td>
+<td>Over-convergence is not unique to one hosted mode</td>
+<td>Same 100 groups and one open-weight model; exploratory</td>
+</tr>
+</tbody>
+</table>
+<h3
+id="methodological-critique-and-prior-work-comparison-2">Methodological
+critique and prior-work comparison</h3>
+<p>Prior work uses LLM agents to reproduce selected human-subject
+patterns or simulate populations. This study asks a stricter question:
+do agent groups reproduce the distribution of human group outcomes when
+initialized from human beliefs? Its strongest methodological choices are
+held-out replays, preregistration, multiple operationalizations, a
+fixed-horizon check, an isomorphic task, wrong-versus-correct consensus,
+an open-weight robustness point and an adversarial verification audit.
+It explicitly separates confirmatory all-group tests from
+post-unblinding participation-matched estimates.</p>
+<p>The external-validity boundary is large. Confirmatory evidence comes
+from one Wason task; the small subjective-task Study 2 is
+non-inferential and reportedly shows the opposite direction. Two
+DeepSeek modes share one served identifier and fingerprint, so they are
+not independent model families. Human participants can remain silent
+while agents are force-elicited; same code is not identical measurement.
+The lurker-free headline subset contains 45 groups and was chosen after
+unblinding, although the independent submit-based estimate lands within
+0.5 points. Belief anchors leak: reasoning accuracy rises sharply during
+discussion. These limitations weaken human-simulation claims but do not
+erase the finding that agent consensus is an unsafe default proxy.</p>
+<h3 id="reproducibility-and-enterprise-readiness-2">Reproducibility and
+enterprise readiness</h3>
+<p>Preregistration, deposited code/data, MIT analysis code and a
+rerunnable local Qwen configuration make this the strongest artifact
+package today. Exact regeneration of the hosted model is not guaranteed.
+<strong>Enterprise readiness:</strong> high for adding disagreement
+diagnostics to offline multi-agent evaluation; medium for advisory
+ensembles with preserved minority reports; low for treating agent panels
+as human research, governance votes or stakeholder consensus.
+<strong>Research Utility Score: 94/100</strong> (methodological rigor
+25/25; quantitative traceability 24/25; reproducibility/artifacts 19/20;
+enterprise relevance 13/15; prior-work advance 13/15).</p>
+<h2 id="watchlist">Watchlist</h2>
+<h3
+id="skillaa--targeted-skill-repair-with-validation-and-rollback">SkillAA
+— targeted skill repair with validation and rollback</h3>
+<p><em>SkillAA: Attribution-Guided Skill-Graph Updating with Targeted
+Validation and Rollback</em> (arXiv:2609.20455v1) represents skill
+applicability, execution and composition in an addressable graph. Failed
+and successful rollouts route candidate edits to specific fields or
+edges; a Local Gate tests affected cases and a Big Gate controls
+epoch-level commitment. The paper reports 81.5%, 66.7% and 91.2% for
+gpt-5.6-sol on SearchQA, LiveMath and DocVQA, and its source-protocol
+table reports the highest point estimate in nine model-benchmark cells.
+Removing structured attribution costs 8.3 points on average; removing
+the Local Gate costs 4.9. (<a
+href="https://arxiv.org/abs/2609.20455">paper</a>, <a
+href="https://github.com/Ziqiao-Shang/SkillAA">repository</a>)</p>
+<p><strong>Why Watchlist.</strong> The result is compelling but not a
+production claim. Baseline supervision and compute are not matched; only
+three optimization seeds support dispersion; graphs are moderate and
+mostly fully rendered; main tasks are single-turn; exact-match scorers
+are brittle; and ALFWorld supplies a useful negative result—every method
+succeeds within 100 steps, but the initial skill is best under 50 steps.
+The public one-commit repository is substantial and includes code, tests
+and split metadata, but raw benchmark files are not redistributed,
+hosted models can drift, and no software license surfaced. <strong>Watch
+trigger:</strong> independent replication on a large skill library and a
+long-horizon enterprise task, with licensed artifacts,
+distribution-shift tests and rollback audits.</p>
+<h3
+id="when-ai-agents-commit--formal-consistency-at-the-mutation-boundary">When
+AI Agents Commit — formal consistency at the mutation boundary</h3>
+<p><em>When AI Agents Commit: Cognitive Serializability Across Data,
+Evidence, Policy, and Authority</em> (arXiv:2609.20261v1; CC BY 4.0)
+distinguishes strict derivation-faithful admission from
+effect-compatible recertification. Its prototype mediates dependency
+capture, policy and authority, seals an envelope, validates guards and
+co-commits a receipt. Across 28 injected histories run 100 times, both
+profiles behave as specified; mean measured commit overhead is 3.22 ms
+(p99 8.41 ms), and compatible admission peaks at 1,842
+transactions/second on the reported server. (<a
+href="https://arxiv.org/abs/2609.20261">paper</a>)</p>
+<p><strong>Why Watchlist.</strong> This is a formal architecture plus
+one prototype, not independent evidence for heterogeneous enterprise
+systems. Safety requires complete trusted mediation, registered
+predicate footprints, non-bypassable dispatchers, correct registries and
+fail-stop components. Unmediated side effects, Byzantine trusted
+components, implicit model knowledge and incomplete dependency capture
+are outside the guarantee. No public implementation is linked.
+<strong>Watch trigger:</strong> an auditable open prototype or
+independent implementation across a workflow with remote side effects,
+plus failure injection, usability and policy-authoring cost.</p>
+<h2 id="cross-paper-synthesis">Cross-paper synthesis</h2>
+<p><strong>Independent Analysis.</strong> The papers converge on one
+architectural rule: <strong>evidence boundaries must survive
+composition.</strong> Four compressions are especially dangerous:</p>
+<ol type="1">
+<li><strong>Score compression:</strong> unsupported cases disappear into
+a denominator and the remaining number looks universal.</li>
+<li><strong>Retrieval compression:</strong> a final answer hides which
+subquestion, corpus, search path and acceptance decision produced each
+source.</li>
+<li><strong>Social compression:</strong> agent unanimity hides
+participation asymmetry, shared priors, peer influence and wrong
+consensus.</li>
+<li><strong>Transaction compression:</strong> a durable effect preserves
+neither the current applicability of evidence nor the authority that
+justified the proposal.</li>
+</ol>
+<p>The shared countermeasure is a typed evidence state:
+supported/unsupported; accepted/held/rejected;
+majority/minority/wrong-consensus; sealed/revalidated/rejected. These
+states should be logged alongside model outputs, not reconstructed after
+an incident. A system can then abstain, request new evidence, route to a
+human, preserve dissent, or recertify a bounded effect without
+pretending its stochastic derivation remained valid.</p>
+<h2 id="visual-1--evidence-boundary-map">Visual 1 — evidence boundary
+map</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Boundary</th>
+<th>Unsafe compression</th>
+<th>State to preserve</th>
+<th>Reversible action</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Evaluation</td>
+<td>one PASS/FAIL or aggregate score</td>
+<td>executed, supported, coverage, safety, per-claim verdict</td>
+<td>abstain and open a review case</td>
+</tr>
+<tr class="even">
+<td>Retrieval</td>
+<td>answer plus citations only</td>
+<td>subquestion, corpus, query, candidate, accept/hold/reject
+rationale</td>
+<td>replay retrieval with another policy</td>
+</tr>
+<tr class="odd">
+<td>Multi-agent deliberation</td>
+<td>majority or unanimity</td>
+<td>participation, minority views, correct/wrong consensus, peer
+visibility</td>
+<td>surface dissent and request independent evidence</td>
+</tr>
+<tr class="even">
+<td>Skill adaptation</td>
+<td>edit reusable skill after failure</td>
+<td>blamed graph object, affected cases, local/global gate, prior
+version</td>
+<td>reject patch or roll back graph</td>
+</tr>
+<tr class="odd">
+<td>Durable action</td>
+<td>transaction succeeded</td>
+<td>dependency vector, current policy/authority, sealed effect,
+receipt</td>
+<td>recertify effect or refuse commit</td>
+</tr>
+</tbody>
+</table>
+<h2 id="visual-2--enterprise-ai-architecture-implications">Visual 2 —
+Enterprise AI Architecture Implications</h2>
+<p><strong>Independent Analysis.</strong> Over the next 12–24 months,
+these signals favor an evidence-control plane spanning evaluation,
+knowledge, orchestration and durable effects. No current enterprise
+stack is assumed.</p>
+<pre class="text"><code>APPLICATION / HUMAN WORKFLOW
+  question · intent · risk · consent · review decision
+                     │
+                     ▼
+[AGENT ORCHESTRATION]
+  task decomposition · peer visibility · minority preservation
+                     │
+          ┌──────────┴──────────┐
+          ▼                     ▼
+[KNOWLEDGE / RETRIEVAL]    [SKILL / MEMORY SERVICE]
+ source ACLs · query path   stable object IDs · versions
+ accept/hold/reject         local gate · rollback
+          └──────────┬──────────┘
+                     ▼
+[MODEL GATEWAY + POLICY ENFORCEMENT]
+ model/version · cost · approved tools · current authority
+                     │
+                     ▼
+[EVIDENCE CONTROL PLANE]
+ support gate · claim ledger · reference maps · disagreement metrics
+ provenance · policy version · experiment cohort · stop conditions
+                     │
+          ┌──────────┴──────────┐
+          ▼                     ▼
+   unsupported / drift      supported proposal
+   human review / refresh          │
+                                  ▼
+                    [DURABLE EFFECT ADMISSION]
+                    dependency recertification · receipt</code></pre>
+<p>Shared enabling foundations unlock several enhancements at once: a
+versioned model and policy gateway; an evaluation registry with claim
+schemas and subgroup denominators; provenance-preserving retrieval;
+identity and authorization bound to source objects; immutable experiment
+manifests; cost and latency telemetry; skill/memory versioning;
+human-review queues that retain uncertainty and dissent; and a
+deterministic effect boundary with idempotency and receipts. Internal
+task loss, regulatory scope, model estate, knowledge ACLs, latency SLOs
+and reviewer capacity are required before implementation decisions.</p>
+<h2 id="enterprise-ai-enhancement-backlog">Enterprise AI Enhancement
+Backlog</h2>
+<h3 id="priority-method-and-uncertainty">Priority method and
+uncertainty</h3>
+<p>The <strong>Future Enterprise AI Priority Score</strong> is a
+decision aid, not a probability, ROI forecast or roadmap commitment. It
+weights strategic/business value 25%, technical leverage 20%, evidence
+strength 20%, enterprise readiness 15%, feasibility 10% and
+risk-adjusted differentiation 10%. Components are analyst judgments
+grounded in today's papers. Differences below roughly three points are
+not decision-significant without internal task volumes, error costs,
+model estate, source ACLs, regulatory obligations, human-review capacity
+and latency/cost constraints.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: right;">#</th>
+<th>Enhancement</th>
+<th>Decision band</th>
+<th style="text-align: right;">Strategic</th>
+<th style="text-align: right;">Leverage</th>
+<th style="text-align: right;">Evidence</th>
+<th style="text-align: right;">Readiness</th>
+<th style="text-align: right;">Feasibility</th>
+<th style="text-align: right;">Differentiation</th>
+<th style="text-align: right;">Weighted total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td>Executable claim ledger and abstention gate</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">87</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;"><strong>92.3</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td>Accountable retrieval provenance and corpus-aware decomposition</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;"><strong>91.1</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td>Disagreement-aware multi-agent qualification</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;"><strong>90.2</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td>Reference-map lifecycle and drift refresh</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;"><strong>87.9</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td>Evidence reading-queue and source-coverage evaluation</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;"><strong>87.8</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td>Gated skill-graph update and rollback service</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">72</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;"><strong>86.0</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td>Human-proxy simulation governance</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">74</td>
+<td style="text-align: right;">76</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;"><strong>84.7</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td>Cognitive commit envelope for high-risk agent effects</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">96</td>
+<td style="text-align: right;">96</td>
+<td style="text-align: right;">79</td>
+<td style="text-align: right;">66</td>
+<td style="text-align: right;">58</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;"><strong>84.1</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9</td>
+<td>Forced-scoring, consensus-as-truth or auto-edit default</td>
+<td>Deprioritize for Now</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;"><strong>49.9</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="prototype-soon">Prototype Soon</h3>
+<h4 id="1-executable-claim-ledger-and-abstention-gate--923">1.
+Executable claim ledger and abstention gate — 92.3</h4>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability / Safety
+&amp; Governance.</li>
+<li><strong>Research signal and supporting papers:</strong> Claim-safe
+evaluation retains refusal, coverage and per-claim state; only 55/72
+units were reference-admitted. <strong>Evidence label: Paper
+Fact.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> Aggregate scores
+hide unsupported cases, reference mismatch and logically distinct
+claims, leading release owners to overgeneralize evidence.</li>
+<li><strong>Proposed future capability and how it works:</strong> Define
+a typed result schema for every evaluation: execution validity,
+support/reference status, coverage denominator, operational-safety
+endpoint, structural claim verdict and maintenance state. Unsupported
+cases produce an explicit abstention and review task.</li>
+<li><strong>Likely architectural placement:</strong> evaluation,
+observability, security/governance and developer platform.</li>
+<li><strong>Expected business value:</strong> quality, reliability, risk
+reduction, audit speed and decision confidence.</li>
+<li><strong>Technical value:</strong> Makes claim scope
+machine-readable; prevents downstream dashboards from combining
+incompatible results.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+frozen simulator protocol and quantitative audit; no production
+replication. Ready for offline instrumentation. <strong>Confidence:
+High. Horizon: Now. Effort: M.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> Evaluation
+registry, versioned reference data, claim taxonomy, coverage telemetry,
+immutable run manifests, reviewer workflow and ownership.</li>
+<li><strong>Key risks:</strong> Excess abstention, taxonomy complexity,
+reviewers treating abstention as failure, gaming coverage, sensitive
+denominator leakage and dashboard fragmentation.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build</strong> the
+claim schema and release rules because the acceptable claims and loss
+functions are enterprise-specific; buy generic observability
+storage.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Add the
+schema to one existing benchmark pipeline and shadow-report 30
+historical runs without affecting releases.</li>
+<li><strong>Success metrics and stop conditions:</strong> Success: 100%
+claim-to-evidence linkage; unsupported slices visible; reviewer
+agreement ≥90%; no silent denominator change. Stop if reviewers cannot
+distinguish states, abstention exceeds 40% without actionable causes, or
+schema maintenance exceeds decision value.</li>
+<li><strong>Roadmap trigger:</strong> Two release cycles show the ledger
+catches at least one material overclaim or stale-reference decision and
+reviewers accept the operating procedure.</li>
+</ul>
+<h4
+id="2-accountable-retrieval-provenance-and-corpus-aware-decomposition--911">2.
+Accountable retrieval provenance and corpus-aware decomposition —
+91.1</h4>
+<ul>
+<li><strong>Category:</strong> RAG &amp; Knowledge / Data &amp;
+Knowledge Infrastructure.</li>
+<li><strong>Research signal and supporting papers:</strong> TRACE's
+decomposition and source-accountability pipeline improves R@10/MRR and
+exposes query-to-source paths. <strong>Evidence label: Paper
+Fact.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> Complex research
+questions cross repositories; answer-only RAG obscures missing evidence,
+source ACLs and rejected candidates.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+Decompose questions by corpus and evidence need; run multiple retrieval
+channels; record candidate origin and accept/hold/reject decisions;
+require source objects with stable IDs, ACLs and rationales before
+synthesis.</li>
+<li><strong>Likely architectural placement:</strong>
+retrieval/knowledge, orchestration, data platform, applications and
+human-review layer.</li>
+<li><strong>Expected business value:</strong> analyst productivity,
+quality, auditability, customer trust and risk reduction.</li>
+<li><strong>Technical value:</strong> Separates retrieval coverage from
+reranking and generation; makes source discovery replayable.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Peer-reviewed venue reference, full benchmark, public code and internal
+deployment; one specialized corpus and no user-study proof.
+<strong>Confidence: High. Horizon: Now. Effort: M.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> Permissioned
+corpora, document identities, ACL propagation, benchmark questions with
+gold/source judgments, retrieval tracing and cost telemetry.</li>
+<li><strong>Key risks:</strong> ACL leakage, prompt-specific corpus
+bias, long latency, model-based rejection errors, stale sources and
+unlicensed code reuse.</li>
+<li><strong>Build / Buy / Partner:</strong>
+<strong>Partner/build</strong> from the disclosed architecture; confirm
+licensing and retain internal control of identity, permissions and
+evaluation.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Replay
+150 multi-source questions across dense baseline and TRACE-like
+retrieval; keep outputs internal and blinded to assessors.</li>
+<li><strong>Success metrics and stop conditions:</strong> Success:
+≥8-point R@10 gain or ≥20% verification-time reduction; no ACL
+violations; source-path completeness ≥98%; cost within approved budget.
+Stop if reading-queue precision falls, assessors cannot reproduce
+rationales, or p95 latency more than doubles without value.</li>
+<li><strong>Roadmap trigger:</strong> Gains persist in two corpora,
+source traces shorten human verification, and privacy/security approve
+identity and access controls.</li>
+</ul>
+<h4 id="3-disagreement-aware-multi-agent-qualification--902">3.
+Disagreement-aware multi-agent qualification — 90.2</h4>
+<ul>
+<li><strong>Category:</strong> Agentic AI / Human-AI Workflow /
+Evaluation &amp; Observability.</li>
+<li><strong>Research signal and supporting papers:</strong>
+Belief-anchored agent groups over-converge by 34.1–44.4 points under
+participation matching and can agree nearly unanimously on wrong
+answers. <strong>Evidence label: Paper Fact.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> Multi-agent
+votes and debates can create false confidence because agents share
+models, prompts, training priors or interaction dynamics.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+Evaluate ensembles with participation, answer diversity, minority
+survival, correct-versus-wrong consensus, peer-hidden controls and
+shared-dependency labels; preserve dissent in the final advisory
+record.</li>
+<li><strong>Likely architectural placement:</strong> agent layer,
+orchestration, evaluation, observability and human-review layer.</li>
+<li><strong>Expected business value:</strong> decision quality, risk
+reduction, strategic differentiation and trustworthy governance.</li>
+<li><strong>Technical value:</strong> Detects correlated error that
+majority voting and self-consistency can hide.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Preregistered held-out study with strong artifact package; one primary
+task and limited model matrix. Ready for offline diagnostics.
+<strong>Confidence: High. Horizon: Now. Effort: M.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> Ground-truth tasks,
+independent evidence channels, agent lineage metadata, peer-visibility
+controls, diversity metrics and human escalation.</li>
+<li><strong>Key risks:</strong> Synthetic diversity, increased
+cost/latency, minority-output overload, gaming disagreement metrics and
+confusing human stakeholders.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build</strong> the
+evaluation and dissent record; partner with human-factors/domain experts
+for task-specific interpretation.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Run 100
+historical advisory cases through solo, visible-peer and peer-hidden
+ensembles; compare error correlation, wrong consensus and human reviewer
+value.</li>
+<li><strong>Success metrics and stop conditions:</strong> Success:
+wrong-consensus detection captures ≥80% of correlated failures;
+preserved dissent improves reviewer accuracy without &gt;25% review-time
+increase. Stop if diversity is purely stylistic, reviewers perform
+worse, or cost exceeds benefit.</li>
+<li><strong>Roadmap trigger:</strong> Two domains show stable diagnostic
+value and an operating owner accepts how dissent changes escalation or
+approval.</li>
+</ul>
+<h3 id="prepare-foundations">Prepare Foundations</h3>
+<h4 id="4-reference-map-lifecycle-and-drift-refresh--879">4.
+Reference-map lifecycle and drift refresh — 87.9</h4>
+<ul>
+<li><strong>Category:</strong> MLOps &amp; Platform / Evaluation &amp;
+Observability.</li>
+<li><strong>Research signal and supporting papers:</strong> Claim-safe
+evaluation shows clean-but-shifted streams can alarm 15/15 or 14/15
+while the matched clean null alarms 0/15. <strong>Evidence label: Paper
+Fact.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> Teams often
+interpret drift alarms as faults or continue scoring against stale
+baselines.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+Version reference maps, record their data regime and expiry, separate
+drift alarm from fault evidence, and route alarms into controlled
+reference refresh with dual-run comparison.</li>
+<li><strong>Likely architectural placement:</strong> evaluation,
+observability, data platform and security/governance.</li>
+<li><strong>Expected business value:</strong> reliability, reduced false
+incident response, quality and risk reduction.</li>
+<li><strong>Technical value:</strong> Preserves the null distribution
+and calibration lineage behind every alarm.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Mechanism is credible; empirical evidence is simulator-only and refresh
+effectiveness untested. <strong>Confidence: Moderate. Horizon: 3–6
+months. Effort: M.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> Versioned datasets,
+drift features, shadow recalibration, approval owner, rollback and
+protected subgroup monitoring.</li>
+<li><strong>Key risks:</strong> Normalizing true faults as drift,
+baseline poisoning, delayed response, privacy exposure in reference data
+and excessive retraining.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build</strong>
+lifecycle policy around existing monitoring tools; buy statistical
+detectors where appropriate.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Replay
+six months of evaluation logs against frozen and rolling references;
+never replace the active map automatically.</li>
+<li><strong>Success metrics and stop conditions:</strong> Success: fewer
+false escalations with no missed known incidents; every alarm names its
+reference; refresh is reproducible. Stop if refreshed maps suppress
+known failures or subgroup coverage shrinks.</li>
+<li><strong>Roadmap trigger:</strong> Shadow refresh improves alert
+precision across two known regime changes and governance approves
+promotion controls.</li>
+</ul>
+<h4 id="5-evidence-reading-queue-and-source-coverage-evaluation--878">5.
+Evidence reading-queue and source-coverage evaluation — 87.8</h4>
+<ul>
+<li><strong>Category:</strong> RAG &amp; Knowledge / Evaluation &amp;
+Observability / Human-AI Workflow.</li>
+<li><strong>Research signal and supporting papers:</strong> TRACE
+measures accepted-set precision/recall and finds judgment errors—not
+only retrieval gaps—drive misses. <strong>Evidence label: Paper
+Fact.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> Citation
+presence and answer quality do not measure the burden or completeness of
+sources delivered to analysts.</li>
+<li><strong>Proposed future capability and how it works:</strong> Track
+source recall, accepted-set precision, never-retrieved evidence,
+rejected relevant evidence, held-but-unpromoted evidence and human
+reading time by question type.</li>
+<li><strong>Likely architectural placement:</strong> evaluation,
+retrieval/knowledge, observability and human-review layer.</li>
+<li><strong>Expected business value:</strong> productivity, quality,
+cost and customer experience.</li>
+<li><strong>Technical value:</strong> Creates diagnosable retrieval SLOs
+and connects them to human verification cost.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Mature
+information-retrieval metrics plus strong single-domain evidence.
+<strong>Confidence: High. Horizon: 3–6 months. Effort: S.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> Gold-source sets,
+relevance annotation, candidate-level logs, stable document IDs and
+reviewer-time instrumentation.</li>
+<li><strong>Key risks:</strong> Incomplete gold sets, annotation cost,
+optimizing to assessor preferences, surveillance concerns and metric
+gaming.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build</strong>
+metric definitions and benchmark; buy labeling workflow if privacy
+permits.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Label 100
+questions and compare three retrieval strategies on source coverage and
+analyst minutes.</li>
+<li><strong>Success metrics and stop conditions:</strong> Success: ≥15%
+lower verification time with non-inferior recall and smaller irrelevant
+queue. Stop if inter-rater agreement &lt;0.7 or gold incompleteness
+reverses conclusions.</li>
+<li><strong>Roadmap trigger:</strong> Metrics predict analyst effort and
+identify a repeatable failure class across two releases.</li>
+</ul>
+<h3 id="monitor-for-maturity">Monitor for Maturity</h3>
+<h4 id="6-gated-skill-graph-update-and-rollback-service--860">6. Gated
+skill-graph update and rollback service — 86.0</h4>
+<ul>
+<li><strong>Category:</strong> Agentic AI / Memory &amp; Context / MLOps
+&amp; Platform.</li>
+<li><strong>Research signal and supporting papers:</strong> SkillAA
+routes failures to graph objects, tests affected cases and rolls back
+rejected edits; negative ALFWorld results show when not to update.
+<strong>Evidence label: Paper Fact.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> Reusable agent
+procedures can regress when edited globally from isolated failures.</li>
+<li><strong>Proposed future capability and how it works:</strong> Store
+skills as versioned objects with applicability and exclusion boundaries;
+attribute failure to an object; synthesize a patch; run local
+affected-case and pooled gates; atomically promote or roll back.</li>
+<li><strong>Likely architectural placement:</strong> agent layer,
+memory/context service, evaluation and developer platform.</li>
+<li><strong>Expected business value:</strong> productivity, reliability,
+speed and strategic differentiation.</li>
+<li><strong>Technical value:</strong> Narrows the blast radius of
+non-parametric adaptation and creates audit/rollback lineage.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Broad
+benchmark point estimates and public code, but small seed count,
+moderate graphs, single-turn bias, unsurfaced license and no independent
+reproduction. <strong>Confidence: Moderate. Horizon: 6–12 months.
+Effort: L.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> Skill registry,
+stable IDs, execution traces, attribution taxonomy, affected-case index,
+held-out gates, semantic versioning and rollback.</li>
+<li><strong>Key risks:</strong> Misattribution, patch accumulation, gate
+overfitting, skill conflicts, prompt injection into learned procedures,
+compute cost and licensing.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Research
+partner</strong> first; build only a sandboxed internal prototype after
+license review.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Use 20
+synthetic skills and injected defects; prohibit production promotion;
+test patch locality, regression detection and rollback
+completeness.</li>
+<li><strong>Success metrics and stop conditions:</strong> Success: ≥80%
+injected defects correctly localized; ≥95% regressions caught; 100%
+rollback fidelity. Stop if edits leak across tenants, attribution is
+unstable or gates overfit update cases.</li>
+<li><strong>Roadmap trigger:</strong> Independent replication and
+internal long-horizon tasks demonstrate net benefit over manual skill
+review.</li>
+</ul>
+<h4 id="7-human-proxy-simulation-governance--847">7. Human-proxy
+simulation governance — 84.7</h4>
+<ul>
+<li><strong>Category:</strong> Safety &amp; Governance / Human-AI
+Workflow.</li>
+<li><strong>Research signal and supporting papers:</strong> Agent-group
+consensus differs materially from matched human consensus and depends on
+participation and elicitation contracts. <strong>Evidence label: Paper
+Fact.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> Synthetic panels
+may be used as substitutes for customers, employees, experts or public
+stakeholders without validity evidence.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+Require a use-case registry, human reference sample,
+measurement-equivalence audit, served-model disclosure, task-transfer
+test and explicit “not human evidence” label before simulated-group
+results influence decisions.</li>
+<li><strong>Likely architectural placement:</strong>
+security/governance, evaluation and human-review layer.</li>
+<li><strong>Expected business value:</strong> risk reduction, research
+quality, reputation and compliance.</li>
+<li><strong>Technical value:</strong> Makes proxy validity testable
+instead of assumed.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+warning evidence, but generalization across tasks and populations is
+unknown. <strong>Confidence: Moderate. Horizon: 6–12 months. Effort:
+M.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> Research governance
+board, consented reference data, measurement specialists, model/version
+logs and disclosure templates.</li>
+<li><strong>Key risks:</strong> Token human studies, demographic
+stereotyping, privacy harm, false assurance from small samples and
+slowed discovery.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build governance;
+partner</strong> with research ethics, legal and domain experts.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Audit one
+existing synthetic-panel use case against six validity checks without
+changing the underlying business decision.</li>
+<li><strong>Success metrics and stop conditions:</strong> Success: all
+inferential claims trace to matched human evidence; no simulated output
+is presented as population prevalence without validation. Stop if no
+lawful reference sample exists or task transfer reverses direction.</li>
+<li><strong>Roadmap trigger:</strong> Repeated matched studies establish
+bounded tasks where simulation adds predictive value beyond simpler
+baselines.</li>
+</ul>
+<h4 id="8-cognitive-commit-envelope-for-high-risk-agent-effects--841">8.
+Cognitive commit envelope for high-risk agent effects — 84.1</h4>
+<ul>
+<li><strong>Category:</strong> AI Security / Safety &amp; Governance /
+MLOps &amp; Platform.</li>
+<li><strong>Research signal and supporting papers:</strong> Cognitive
+Serializability blocks injected evidence, policy and authority anomalies
+and reports 3.22 ms mean prototype overhead. <strong>Evidence label:
+Paper Fact.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> An agent can
+reason from evidence or permissions that change before its effect
+becomes durable; database serializability alone does not protect
+external premises.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+Capture typed dependencies through trusted mediators, seal the proposed
+effect and policy version, recertify current applicability/authority at
+commit, execute an idempotent registered dispatcher and co-commit a
+receipt.</li>
+<li><strong>Likely architectural placement:</strong> orchestration,
+security/governance, data platform and infrastructure.</li>
+<li><strong>Expected business value:</strong> reliability, risk
+reduction and auditability for consequential workflows.</li>
+<li><strong>Technical value:</strong> Separates stochastic reasoning
+from deterministic effect admission and binds authority to exact
+effects.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Formal
+conditions and one prototype; no public code or independent deployment.
+Complete mediation is difficult. <strong>Confidence: Moderate. Horizon:
+12+ months. Effort: XL.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> Operation registry,
+dependency capture, policy/authority service, idempotent actuators,
+transaction/outbox infrastructure, cryptographic identity, receipts and
+failure-recovery design.</li>
+<li><strong>Key risks:</strong> Incomplete footprints, bypass paths,
+long-held locks, remote side effects, policy-authoring errors, denial of
+service, clock assumptions and false claims of completeness.</li>
+<li><strong>Build / Buy / Partner:</strong>
+<strong>Partner/research</strong> before building; use established
+transaction, policy and authorization components rather than
+implementing cryptography or distributed commit ad hoc.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Implement
+one synthetic high-risk workflow with injected evidence supersession,
+policy change, revoked authority, retries and network loss; no real
+mutation target.</li>
+<li><strong>Success metrics and stop conditions:</strong> Success: 100%
+rejection of invalid histories, idempotent recovery, complete receipts
+and overhead within the workflow budget. Stop on any bypass, uncovered
+dependency or irreconcilable remote effect.</li>
+<li><strong>Roadmap trigger:</strong> An independent implementation
+passes a broader adversarial suite and internal architecture can
+guarantee mediation coverage.</li>
+</ul>
+<h3 id="deprioritize-for-now">Deprioritize for Now</h3>
+<h4
+id="9-forced-scoring-consensus-as-truth-or-auto-edit-default--499">9.
+Forced-scoring, consensus-as-truth or auto-edit default — 49.9</h4>
+<ul>
+<li><strong>Category:</strong> Other / Safety &amp; Governance.</li>
+<li><strong>Research signal and supporting papers:</strong> Unsupported
+evaluation, agent over-consensus and unnecessary skill editing each
+produce misleading or harmful outputs. <strong>Evidence label:
+Independent Analysis.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> Product pressure
+rewards a result for every case, a single consensus answer and
+continuous self-improvement even when evidence is insufficient.</li>
+<li><strong>Proposed future capability and how it works:</strong> None
+recommended. Preserve refusal, dissent, human review and no-change
+outcomes instead.</li>
+<li><strong>Likely architectural placement:</strong> applications,
+orchestration and governance.</li>
+<li><strong>Expected business value:</strong> short-term speed only;
+likely quality and risk harm.</li>
+<li><strong>Technical value:</strong> Low because it destroys diagnostic
+state.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Evidence against the default is stronger than evidence for a credible
+enterprise path. <strong>Confidence: High. Horizon: 12+ months. Effort:
+S to enable, XL to make safe.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> Would require
+validity evidence that current papers explicitly do not supply.</li>
+<li><strong>Key risks:</strong> Silent unsupported decisions, correlated
+errors, minority erasure, irreversible regressions, regulatory exposure
+and loss of trust.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Do not build or buy
+as a default.</strong></li>
+<li><strong>Minimum reversible validation experiment:</strong> If
+strategically unavoidable, shadow only; compare against abstention,
+dissent-preserving and manual-review baselines.</li>
+<li><strong>Success metrics and stop conditions:</strong> Stop on any
+unsupported claim, wrong consensus, unauthorized effect or skill
+regression. Promotion requires superiority on safety and decision
+utility, not output rate.</li>
+<li><strong>Roadmap trigger:</strong> None from today's evidence; only
+strong multi-domain, independent and internally relevant validation
+could reopen the decision.</li>
+</ul>
+<h2 id="implementation-priorities">Implementation priorities</h2>
+<h3 id="next-30-days">Next 30 days</h3>
+<ol type="1">
+<li>Define a minimal claim-ledger schema and replay one existing
+evaluation pipeline.</li>
+<li>Add candidate-level provenance and accepted-set precision/recall to
+one RAG benchmark.</li>
+<li>Add wrong-consensus, minority-survival and peer-hidden controls to
+one multi-agent evaluation.</li>
+<li>Inventory current reference datasets, refresh owners and silent
+denominator filters.</li>
+</ol>
+<h3 id="36-months">3–6 months</h3>
+<ol type="1">
+<li>Establish versioned reference maps, approval and rollback.</li>
+<li>Build a permissioned multi-corpus source-discovery benchmark with
+human verification-time measurement.</li>
+<li>Create governance language that prohibits presenting unvalidated
+synthetic panels as human consensus.</li>
+<li>Prototype versioned skill objects and regression gates without
+automatic promotion.</li>
+</ol>
+<h3 id="do-not-do-yet">Do not do yet</h3>
+<ul>
+<li>Do not transfer the claim-safe paper's 0.20 threshold, TRACE prompts
+or SkillAA gates into production unchanged.</li>
+<li>Do not interpret high agent agreement as independent evidence or
+stakeholder consensus.</li>
+<li>Do not enable self-editing skills or autonomous durable effects
+without versioning, rollback, authorization and human ownership.</li>
+<li>Do not claim an evaluation is safe merely because unsupported cases
+were excluded.</li>
+</ul>
+<h2 id="knowledge-reinforcement">Knowledge reinforcement</h2>
+<p><strong>Question 1. Why is abstention an evaluation result rather
+than missing data?</strong> Because closed-loop policy determines what
+is observable. If unsupported cases are filtered silently, the
+denominator becomes endogenous and the reported score overstates the
+domain of evidence.</p>
+<p><strong>Question 2. What is TRACE's most important enterprise
+contribution?</strong> Not its headline R@10 alone. It makes source
+discovery inspectable: corpus-targeted subquestions, candidate origin,
+acceptance state and cross-question confirmation can be reviewed
+separately from the generated answer.</p>
+<p><strong>Question 3. Why can agent consensus be dangerous even when
+agents improve accuracy?</strong> Correlated systems can converge on
+shared errors. The study's reparameterized reasoning agents reached
+98.7% full consensus while 74.0% of all groups agreed on a wrong
+answer.</p>
+<p><strong>Question 4. What would move gated skill adaptation into a
+roadmap?</strong> Independent reproduction on large skill libraries and
+long-horizon tasks, licensed artifacts, stable attribution, demonstrated
+rollback, distribution-shift tests and internal net benefit versus
+manual review.</p>
+<p><strong>Question 5. What internal context is still required?</strong>
+The current model/vendor estate; evaluation corpus and known incident
+history; knowledge repositories and ACLs; source-verification labor;
+multi-agent use cases; high-risk mutation workflows;
+policy/authorization architecture; latency and cost SLOs;
+privacy/regulatory obligations; and named owners for abstention,
+refresh, dissent and rollback.</p>
+<h2 id="source-and-artifact-register">Source and artifact register</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Paper</th>
+<th>Primary paper</th>
+<th>Verified artifact</th>
+<th>Status / license boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Refuse, Decompose, Refresh</td>
+<td><a href="https://arxiv.org/abs/2609.20538">arXiv:2609.20538</a></td>
+<td><a
+href="https://anonymous.4open.science/r/artifact-9f37d2/tae_2026">anonymous.4open.science</a></td>
+<td>Preprint; arXiv non-exclusive license; anonymous artifact, reuse
+license not independently verified</td>
+</tr>
+<tr class="even">
+<td>TRACE</td>
+<td><a href="https://arxiv.org/abs/2609.19897">arXiv:2609.19897</a></td>
+<td><a href="https://github.com/Kepler1908/TRACE">GitHub</a></td>
+<td>CIKM 2026 journal reference; repository accessible; no surfaced
+software license</td>
+</tr>
+<tr class="odd">
+<td>Agent groups overstate consensus</td>
+<td><a href="https://arxiv.org/abs/2609.20543">arXiv:2609.20543</a></td>
+<td><a href="https://osf.io/5jp7s">OSF</a>, <a
+href="https://doi.org/10.5281/zenodo.21318346">Zenodo</a></td>
+<td>CC BY 4.0 manuscript; analysis/replay code reported MIT</td>
+</tr>
+<tr class="even">
+<td>SkillAA</td>
+<td><a href="https://arxiv.org/abs/2609.20455">arXiv:2609.20455</a></td>
+<td><a href="https://github.com/Ziqiao-Shang/SkillAA">GitHub</a></td>
+<td>Preprint; arXiv non-exclusive license; repository accessible, no
+surfaced software license</td>
+</tr>
+<tr class="odd">
+<td>When AI Agents Commit</td>
+<td><a href="https://arxiv.org/abs/2609.20261">arXiv:2609.20261</a></td>
+<td>No public implementation linked</td>
+<td>CC BY 4.0 preprint; prototype evidence only</td>
+</tr>
+</tbody>
+</table>
+<h2 id="closing-judgment">Closing judgment</h2>
+<p>Today's research does not justify another autonomous feature. It
+justifies a better control plane for evidence. The immediate opportunity
+is to make support, source paths, disagreement and current authority
+visible and machine-actionable. That can be prototyped safely without
+changing a production outcome. Production deployment would require
+internal evidence about tasks, failure costs, data rights, reviewers,
+latency, adversaries and organizational ownership that these papers
+cannot provide.</p></main></div>
+<footer>AI Research Intelligence Brief · September 20, 2026 · Research options, not deployment approval.</footer>
+<div class="toolbar"><button onclick="window.print()" aria-label="Print report">Print</button><button id="top" aria-label="Back to top">↑ Top</button></div>
+<script>
+const p=document.getElementById('progress');addEventListener('scroll',()=>{const h=document.documentElement;p.style.width=((h.scrollTop/(h.scrollHeight-h.clientHeight))*100)+'%'});document.getElementById('top').onclick=()=>scrollTo({top:0,behavior:'smooth'});
+document.querySelectorAll('main h4').forEach(h=>{if(/^\d+\./.test(h.textContent))h.setAttribute('data-backlog','true')});
+</script>
+</body></html>
