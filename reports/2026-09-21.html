@@ -1,0 +1,1438 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Evidence-grounded AI Research Intelligence Brief for September 21, 2026: certified selective action, closed-loop workflow qualification, and authorization revocation.">
+<meta name="report-date" content="2026-09-21">
+<meta name="research-window" content="2026-09-18T04:00:00-05:00/2026-09-21T04:00:00-05:00 America/Chicago plus complete Monday arXiv announcement batch">
+<meta name="deep-paper-count" content="3">
+<meta name="watchlist-count" content="2">
+<meta name="theme-color" content="#08131f">
+<title>AI Research Intelligence Brief — September 21, 2026</title>
+<style>
+:root{--bg:#07111d;--panel:#0d1b2a;--panel2:#10263a;--text:#e8f1f7;--muted:#9fb5c5;--line:#29445b;--cyan:#45d7c4;--gold:#f5c96a;--rose:#ff8d9a;--blue:#68a9ff;--max:1180px;color-scheme:dark}
+@media(prefers-color-scheme:light){:root{--bg:#f4f7f8;--panel:#fff;--panel2:#edf4f7;--text:#102131;--muted:#526979;--line:#cddbe2;--cyan:#087f73;--gold:#9b6300;--rose:#b92b45;--blue:#1661ad;color-scheme:light}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 90% 0,rgba(69,215,196,.12),transparent 30rem),var(--bg);color:var(--text);font:16px/1.67 ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}a{color:var(--cyan);text-underline-offset:3px}a:hover{text-decoration-thickness:2px}header{border-bottom:1px solid var(--line);background:linear-gradient(135deg,rgba(69,215,196,.09),rgba(104,169,255,.05));padding:54px 22px 34px}.hero{max-width:var(--max);margin:auto}.eyebrow{color:var(--cyan);text-transform:uppercase;letter-spacing:.15em;font-size:.76rem;font-weight:800}h1{font-size:clamp(2.2rem,6vw,4.7rem);line-height:.98;max-width:950px;margin:.35rem 0 1rem;letter-spacing:-.055em}header p{max-width:830px;color:var(--muted);font-size:1.09rem}.chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}.chip{border:1px solid var(--line);border-radius:999px;padding:6px 11px;background:var(--panel);font-size:.8rem}.topbets{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}.bet{border:1px solid var(--line);background:var(--panel);border-radius:14px;padding:15px}.bet b{display:block;color:var(--gold);font-size:1.15rem}.layout{max-width:var(--max);margin:auto;display:grid;grid-template-columns:250px minmax(0,1fr);gap:34px;padding:30px 22px 80px}nav{position:sticky;top:16px;align-self:start;max-height:calc(100vh - 32px);overflow:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:14px}nav strong{display:block;margin:2px 8px 10px;color:var(--gold)}nav ul{list-style:none;margin:0;padding:0}nav li{margin:0}nav a{display:block;color:var(--muted);text-decoration:none;padding:5px 8px;border-radius:7px;font-size:.83rem;line-height:1.25}nav a:hover{background:var(--panel2);color:var(--text)}main{min-width:0}main>h2{font-size:1.75rem;margin:2.6rem 0 1rem;padding-top:.7rem;border-top:1px solid var(--line)}main>h2:first-child{margin-top:0}h3{font-size:1.3rem;margin-top:2rem;color:var(--cyan)}h4{font-size:1.08rem;color:var(--gold);margin-bottom:.45rem}p,li{max-width:88ch}blockquote{margin:1rem 0;padding:1rem 1.2rem;border-left:4px solid var(--gold);background:var(--panel);color:var(--muted)}pre{white-space:pre-wrap;overflow:auto;background:#07101a;border:1px solid var(--line);border-radius:14px;padding:18px;color:#dcecf2;font-size:.86rem;line-height:1.45}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}table{width:100%;border-collapse:collapse;margin:1.25rem 0;background:var(--panel);font-size:.86rem}th,td{padding:10px 12px;border:1px solid var(--line);text-align:left;vertical-align:top}th{color:var(--gold);background:var(--panel2)}hr{border:0;border-top:1px solid var(--line)}main h4+ul,main h3+ul{border:1px solid var(--line);background:linear-gradient(135deg,var(--panel),var(--panel2));border-radius:14px;padding:15px 22px 15px 34px}main h4+ul li,main h3+ul li{margin:.5rem 0}.progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--cyan),var(--gold));width:0;z-index:9}.toolbar{position:fixed;right:18px;bottom:18px;display:flex;gap:8px}.toolbar button{border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:999px;padding:9px 12px;cursor:pointer;box-shadow:0 8px 30px rgba(0,0,0,.2)}.label{font-size:.75rem;color:var(--muted)}footer{border-top:1px solid var(--line);padding:24px;text-align:center;color:var(--muted)}
+@media(max-width:850px){.topbets{grid-template-columns:1fr}.layout{grid-template-columns:1fr}nav{position:relative;top:0;max-height:none}nav ul{columns:2}h1{font-size:2.65rem}}
+@media(max-width:520px){header{padding-top:34px}.layout{padding:20px 14px 60px}nav ul{columns:1}table{display:block;overflow-x:auto}h1{font-size:2.25rem}}
+@media print{body{background:white;color:#111;font-size:11pt}header{padding:18px 0}.layout{display:block;padding:0}nav,.toolbar,.progress{display:none}a{color:#145c70}main>h2{break-before:page}main>h2:first-child{break-before:auto}table,pre{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<header><div class="hero">
+<div class="eyebrow">AI Research Intelligence · Evidence before enthusiasm</div>
+<h1>Qualify permission, completion and shutdown separately.</h1>
+<p>September 21, 2026 briefing. Three deep papers show why reliable enterprise AI needs separate evidence that an action is supportable, a workflow succeeds from its own state, and withdrawn authority cannot still commit.</p>
+<div class="chips"><span class="chip">3 deep papers</span><span class="chip">2 Watchlist</span><span class="chip">72-hour Monday window + full announcement batch</span><span class="chip">9 enterprise options</span><span class="chip">Primary sources + full-paper review</span></div>
+<div class="topbets"><div class="bet"><span class="label">TOP BET 1 · PROTOTYPE SOON</span><b>92.8 · Closed-loop qualification</b><span>Test complete self-history workflows, not only repaired next turns.</span></div><div class="bet"><span class="label">TOP BET 2 · PROTOTYPE SOON</span><b>90.4 · Certified selective action</b><span>Bind precision, coverage and granularity to independent evidence.</span></div><div class="bet"><span class="label">TOP BET 3 · PROTOTYPE SOON</span><b>89.5 · Revocation shadow harness</b><span>Prove retired authority cannot cross a protected effect boundary.</span></div></div>
+</div></header>
+<div class="layout"><nav><strong>Navigate</strong><ul>
+<li><a href="#scope-window-and-evidence-policy"
+id="toc-scope-window-and-evidence-policy">Scope, window, and evidence
+policy</a></li>
+<li><a href="#executive-signal" id="toc-executive-signal">Executive
+signal</a></li>
+<li><a href="#top-3-future-bets" id="toc-top-3-future-bets">Top 3 Future
+Bets</a></li>
+<li><a href="#deep-paper-1--safety-gates-need-an-evidence-budget"
+id="toc-deep-paper-1--safety-gates-need-an-evidence-budget">Deep paper 1
+— Safety gates need an evidence budget</a></li>
+<li><a
+href="#deep-paper-2--better-turns-can-still-produce-failed-workflows"
+id="toc-deep-paper-2--better-turns-can-still-produce-failed-workflows">Deep
+paper 2 — Better turns can still produce failed workflows</a></li>
+<li><a href="#deep-paper-3--cancellation-is-not-authorization-closure"
+id="toc-deep-paper-3--cancellation-is-not-authorization-closure">Deep
+paper 3 — Cancellation is not authorization closure</a></li>
+<li><a href="#watchlist" id="toc-watchlist">Watchlist</a></li>
+<li><a href="#cross-paper-synthesis"
+id="toc-cross-paper-synthesis">Cross-paper synthesis</a></li>
+<li><a href="#visual-1--three-boundary-assurance-chain"
+id="toc-visual-1--three-boundary-assurance-chain">Visual 1 —
+three-boundary assurance chain</a></li>
+<li><a href="#visual-2--enterprise-ai-architecture-implications"
+id="toc-visual-2--enterprise-ai-architecture-implications">Visual 2 —
+Enterprise AI Architecture Implications</a></li>
+<li><a href="#enterprise-ai-enhancement-backlog"
+id="toc-enterprise-ai-enhancement-backlog">Enterprise AI Enhancement
+Backlog</a></li>
+<li><a href="#implementation-priorities"
+id="toc-implementation-priorities">Implementation priorities</a></li>
+<li><a href="#knowledge-reinforcement"
+id="toc-knowledge-reinforcement">Knowledge reinforcement</a></li>
+<li><a href="#source-and-artifact-register"
+id="toc-source-and-artifact-register">Source and artifact
+register</a></li>
+<li><a href="#closing-judgment" id="toc-closing-judgment">Closing
+judgment</a></li>
+</ul></nav><main><h2 id="scope-window-and-evidence-policy">Scope,
+window, and evidence policy</h2>
+<p><strong>Research window.</strong> Friday, September 18, 2026 at 4:00
+AM CDT through Monday, September 21, 2026 at 4:00 AM CDT (72 hours;
+America/Chicago; 09:00 UTC to 09:00 UTC), plus the complete September 21
+arXiv announcement batch. Three selected papers were submitted 5–8 hours
+before the strict window but first appeared in the Monday announcement;
+the practical discovery window is therefore disclosed as approximately
+80 hours. Screening covered 222 records across cs.AI, cs.CL, cs.LG,
+cs.IR and cs.SE, adjacent cs.CR/cs.PL work, current primary pages from
+major publishers and conference repositories, full PDFs, TeX source
+bundles, and linked or claimed artifacts. Five papers were retained:
+three cleared deep analysis and two remain Watchlist-only.</p>
+<p><strong>Anti-duplication.</strong> Exact identifiers and titles were
+checked against the 42-report archive through September 20 and the local
+source corpus. None of today's five papers appeared previously. The
+prior brief examined support boundaries, accountable source discovery
+and false consensus. Today's increment is operationally downstream:
+<strong>an AI system is not controlled merely because one prediction is
+confident, one turn is correct, or one cancellation is acknowledged.
+Control requires evidence that the serving slice can be certified, the
+complete trajectory succeeds, and retired authority cannot still produce
+a durable effect.</strong></p>
+<p><strong>Evidence policy.</strong> <strong>Paper Fact</strong> denotes
+a statement directly reported in a paper or verified first-party
+artifact. <strong>Independent Analysis</strong> denotes this briefing's
+calculation, comparison or critique. <strong>Enterprise
+Inference</strong> translates evidence into a bounded future option.
+<strong>Uncertainty</strong> marks missing causal, external-validity,
+artifact, licensing, economic, privacy, security, governance,
+operational or adoption evidence. Available Guardrails and When Better
+Turns... use CC BY 4.0; Authorization Revocation uses arXiv's
+non-exclusive distribution license. The workflow paper reports REALM
+Workshop at EMNLP 2026 acceptance. No benchmark result is treated as
+production approval. Proposed experiments are isolated, reversible,
+measurable and non-destructive.</p>
+<h2 id="executive-signal">Executive signal</h2>
+<blockquote>
+<p><strong>Reliable enterprise AI needs three distinct proofs: that the
+action is statistically supportable, that the workflow succeeds from its
+own state, and that withdrawn authority can no longer create a durable
+effect. Confidence, turn accuracy and cancellation acknowledgement are
+not substitutes.</strong></p>
+</blockquote>
+<p>Three deep papers establish complementary controls:</p>
+<ol type="1">
+<li><strong>Available Guardrails</strong> separates certificate validity
+from certificate availability. Fine-grained safety targets can exhaust
+calibration evidence, and distribution shift can leave a formally valid
+gate unsafe for current traffic.</li>
+<li><strong>When Better Turns Do Not Make Better Agents</strong> shows
+that supervised fine-tuning improves gold-history next-turn scores while
+complete tool workflows still fail. The best strict completion is 8/77;
+a holistic judge accepts 0/77 for every evaluated model.</li>
+<li><strong>Authorization Revocation for Long-Running AI Agents</strong>
+formalizes root-scoped quiescence. Cancellation and token revocation do
+not settle already accepted work; an authorization cut, sink-local
+fence, exact carrier accounting and fail-closed evidence are
+required.</li>
+</ol>
+<p>The Watchlist adds two useful but incomplete operating ideas.
+EnterpriseVal proposes a frozen use-case evaluation charter with value
+and risk gates, but its bank pilot omits sample sizes, confidence
+intervals, agreement statistics and harness parity. Efficient
+Benchmarking in Production shows that fixed question subsets can reduce
+recurring evaluation load, but the benchmark, question-level outcomes
+and implementation are not released, and the study does not test
+release-threshold errors.</p>
+<p><strong>Decision posture.</strong> Prototype closed-loop workflow
+qualification, a certified selective-action gate and a provider-free
+revocation shadow harness. Prepare configuration lineage, protected
+reporting-unit semantics and a full-benchmark sentinel. Monitor
+enterprise value modeling and automatic partition optimization until
+internal evidence and independent replication exist. Deprioritize any
+release policy that equates next-turn improvement with agent success or
+cancellation acknowledgement with effect closure.</p>
+<h2 id="top-3-future-bets">Top 3 Future Bets</h2>
+<ol type="1">
+<li><strong>Closed-loop workflow qualification gate — 92.8/100.</strong>
+Why it matters: average gold-history all-turn success rose 19.3 points
+after fine-tuning, yet the best strict tool-workflow completion was only
+10.4% and holistic success was zero. Evidence that would change the
+recommendation: internal workflows in which gold-history gains reliably
+predict closed-loop completion and error recovery across models, tools
+and seeds. Next reversible action: replay 100 sanitized workflows with
+both gold-history and self-history protocols; do not change production
+routing.</li>
+<li><strong>Certified selective-action and abstention gate —
+90.4/100.</strong> Why it matters: a 0.90 precision target can require
+450 examples per group for 50 groups at 0.05 true error, but 13,407 when
+true error rises to 0.09; safety granularity is an evidence-budget
+decision. Evidence that would change the recommendation: internal
+calibration showing simple global or fixed semantic gates dominate
+availability-aware planning with adequate subgroup protection. Next
+reversible action: compute precision–coverage–granularity frontiers
+offline for one consequential router using frozen groups and independent
+calibration data.</li>
+<li><strong>Root-scoped revocation shadow harness — 89.5/100.</strong>
+Why it matters: both cancellation-only cases and the cut-only case
+admitted a late effect; cut-plus-fence, restart and stale-process cases
+rejected it. Evidence that would change the recommendation: proof that
+in-scope workflows have no durable carriers, delegation, retries or
+asynchronous effects, or that existing transaction infrastructure
+already provides equivalent end-to-end fencing. Next reversible action:
+model one non-production agent workflow with inert effects, enumerate
+carriers and test cancellation, credential revocation, cut-only and
+cut-plus-fence races.</li>
+</ol>
+<h2 id="deep-paper-1--safety-gates-need-an-evidence-budget">Deep paper 1
+— Safety gates need an evidence budget</h2>
+<p><strong>Identity and status.</strong> <em>Available Guardrails:
+Certifying Selective Prediction across ML Systems</em>, Parivesh Priye,
+Yufeng Wang, Haibin Ling and Michael Chaykowsky; submitted September 18,
+2026; arXiv:2609.22048v1; cs.LG; 26-page CC BY 4.0 manuscript. The TeX
+uses an ICLR 2027 conference template, but the arXiv record does not
+claim acceptance. The paper states that supplementary material contains
+code, preregistration records and machine-readable results; the
+downloaded arXiv source package contained the manuscript and figures but
+not those claimed experimental artifacts, and no public repository
+surfaced during verification. (<a
+href="https://arxiv.org/abs/2609.22048">paper</a>)</p>
+<h3 id="contribution-and-quantitative-claim-trace">Contribution and
+quantitative claim trace</h3>
+<p>A selective predictor acts only when its estimated reliability
+crosses a threshold. Existing work focuses on whether a returned
+certificate is valid. This paper asks whether finite calibration data
+can produce a certificate at all for every declared reporting unit. It
+derives exact-binomial availability, optimizes contiguous partitions
+under a frozen reliability order, uses
+construction/selection/certification splits to reduce selection bias,
+and tests the safety–granularity–coverage frontier across synthetic
+designs, intent routing and four additional task families.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>Decision meaning</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Certification support grows rapidly near the error threshold</td>
+<td style="text-align: right;">At target precision 0.90 and 80%
+availability, one group needs 179 served calibration examples; 50 groups
+need 450 at true error 0.05 and 13,407 at 0.09</td>
+<td>Treat labels and failures as a budget for safe automation</td>
+<td>Exact requirement depends on frozen target, multiplicity correction
+and IID assumptions</td>
+</tr>
+<tr class="even">
+<td>Population optimization is easier than finite-data optimization</td>
+<td style="text-align: right;">Truth-informed planner gains 0.1568 mean
+coverage over support balancing; direct plug-in gains 0.0050 and falls
+to −0.0659 at K=500</td>
+<td>Do not mistake an oracle frontier for a deployable planner</td>
+<td>Synthetic design; approximate objective and fixed ordering</td>
+</tr>
+<tr class="odd">
+<td>Independent selection recovers some opportunity</td>
+<td style="text-align: right;">Held-out planner gains 0.0601 mean
+coverage across 1,340 configurations, but has 221 losses; median gain
+0.00146</td>
+<td>Separate policy construction from policy selection</td>
+<td>Almost half of conditions are ties or losses; random order is
+strong</td>
+</tr>
+<tr class="even">
+<td>Direction generalizes more than magnitude</td>
+<td style="text-align: right;">59/60 model-by-granularity effects are
+positive across BANKING77, CLINC150 and HWU64 with two architectures;
+gains range 0.0045–0.2128</td>
+<td>Report per-model and per-domain effects, not one average</td>
+<td>Five models per cell; smallest exact two-sided sign p-value is
+0.0625</td>
+</tr>
+<tr class="odd">
+<td>Semantic constraints have measurable cost</td>
+<td style="text-align: right;">Preserving HWU scenario boundaries
+reduces IID coverage 0.167–0.246 for DeBERTa and 0.225–0.229 for
+DistilRoBERTa</td>
+<td>Legal or fairness groups must not be merged merely to improve
+coverage</td>
+<td>Reliability ordering is not a ceiling for semantically constrained
+partitions</td>
+</tr>
+<tr class="even">
+<td>Distribution shift can invalidate practical safety</td>
+<td style="text-align: right;">Under 30% out-of-scope prevalence, stale
+precision falls to 0.753; exact reweighting reaches 0.935 at 0.455
+coverage. At 5% conditional shift, fresh labels reach 0.913 by roughly
+halving coverage; 10% shift causes full abstention</td>
+<td>Bind certificates to population and refresh conditions</td>
+<td>Guarantees apply to certification distribution; monitoring detects
+only 11.3% of 2.5% shift within 2,000 probes</td>
+</tr>
+</tbody>
+</table>
+<h3
+id="methodological-critique-and-prior-work-comparison">Methodological
+critique and prior-work comparison</h3>
+<p>Conformal risk control and exact-binomial methods establish validity
+once a policy is selected. Fair or group risk control exposes
+heterogeneous risk. This paper's advance is to make
+<strong>availability</strong> an explicit deployment resource and
+optimize the reporting partition before a fresh certification sample.
+The preregistered synthetic confirmations, disjoint roles for planning
+and certification data, explicit strong baselines, per-model effects,
+controlled shift study and semantic constraints are unusually
+disciplined.</p>
+<p>The study also demonstrates why optimization claims must be read
+cautiously. The structured candidate family contributes only 0.0027 mean
+coverage over held-out random-five candidates in the matched-pool
+mechanism study; most benefit comes from independent selection. In real
+intent data, the held-out planner does not dominate the random-order
+comparator. Cross-domain studies use one frozen predictor each, so
+resplits measure allocation variability rather than training
+variability. The BFCL experiment is single-turn tool calling, not an
+autonomous agent. The skin-lesion result is benchmark classification,
+not clinical efficacy. MovieLens allows users/items across random splits
+and excludes cold-start guarantees. The paper acknowledges that adaptive
+candidate choice and unmitigated drift fall outside the certificate.</p>
+<h3 id="reproducibility-and-enterprise-readiness">Reproducibility and
+enterprise readiness</h3>
+<p>The mathematical contract, datasets, split roles, training recipes,
+seeds and reporting tables are unusually complete. However, the arXiv
+package available during review did not include the code and
+machine-readable artifacts claimed in the reproducibility statement;
+therefore deterministic reproduction was not independently attempted.
+<strong>Enterprise readiness:</strong> high for offline frontier
+analysis and evidence-budget planning; medium for a shadow
+selective-action gate after semantic/legal group review and fresh
+calibration; low for autonomous production gating under uncontrolled
+shift. <strong>Research Utility Score: 92/100</strong> (methodological
+rigor 25/25; quantitative traceability 24/25; reproducibility/artifacts
+14/20; enterprise relevance 15/15; prior-work advance 14/15).</p>
+<h2
+id="deep-paper-2--better-turns-can-still-produce-failed-workflows">Deep
+paper 2 — Better turns can still produce failed workflows</h2>
+<p><strong>Identity and status.</strong> <em>When Better Turns Do Not
+Make Better Agents: Diagnosing the Gap Between Next-Turn Metrics and
+Workflow Success</em>, Md Tahmid Rahman Laskar and 13 collaborators at
+Dialpad; submitted September 18, 2026; arXiv:2609.21187v1; cs.CL;
+seven-page CC BY 4.0 manuscript accepted to the REALM Workshop at EMNLP
+2026. No public code or evaluation data is linked; the workflows,
+policies and tools are proprietary, although sanitized data-generation
+and judge prompts appear in the appendix. (<a
+href="https://arxiv.org/abs/2609.21187">paper</a>)</p>
+<h3 id="contribution-and-quantitative-claim-trace-1">Contribution and
+quantitative claim trace</h3>
+<p>The study holds models and workflows fixed while changing the
+evaluation protocol. Qwen3-4B/14B and Gemma-3-4B/12B are evaluated
+before and after five-epoch supervised fine-tuning. Gold-history
+protocols reset every turn to the correct state; closed-loop replay
+makes each model continue from its own prior decisions. The held-out set
+contains 84 validated conversations, 542 next-action decisions and 77
+tool-requiring workflows.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>Decision meaning</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Fine-tuning improves visible turn metrics</td>
+<td style="text-align: right;">Mean ROUGE-1 rises 24.4 points, text-turn
+success 25.2 points and all-turn success 19.3 points</td>
+<td>Local quality metrics are useful diagnostics</td>
+<td>Gemini-2.5-Pro judge is uncalibrated in the paper; one domain</td>
+</tr>
+<tr class="even">
+<td>Tool execution improves much less</td>
+<td style="text-align: right;">LLM-judged tool-turn success rises 5.9
+points; exact-call accuracy 3.5%→8.5%; argument F1 6.7%→14.3%</td>
+<td>Separate language and tool capability</td>
+<td>Gains concentrate in Qwen; Gemma-3-4B exact accuracy falls
+3.0%→0.0%</td>
+</tr>
+<tr class="odd">
+<td>Gold history changes the conclusion</td>
+<td style="text-align: right;">Qwen3-14B SFT completes 8/77 workflows
+(10.4%); Qwen3-4B completes 3/77; all Gemma and pre-SFT arms complete
+0/77</td>
+<td>Qualification must include self-history execution</td>
+<td>Exact-reference matching may reject valid alternative action
+sequences</td>
+</tr>
+<tr class="even">
+<td>Tool completion is not business success</td>
+<td style="text-align: right;">Holistic workflow success is 0/77 for all
+eight model/condition arms</td>
+<td>A correct-looking terminal tool path can still violate policy or
+miss user goals</td>
+<td>Holistic judgment uses one LLM judge and no reported human
+calibration</td>
+</tr>
+<tr class="odd">
+<td>Early errors compound</td>
+<td style="text-align: right;">Gold-history scoring restores the correct
+state before each decision; closed-loop replay exposes state drift and
+retry exhaustion</td>
+<td>Trajectory state is part of the evaluated system</td>
+<td>Deterministic user simulator and up to two retries simplify real
+interaction</td>
+</tr>
+</tbody>
+</table>
+<h3
+id="methodological-critique-and-prior-work-comparison-1">Methodological
+critique and prior-work comparison</h3>
+<p>Task-oriented dialogue metrics and next-action benchmarks are cheap
+and reproducible but prevent early errors from contaminating later
+context. Interactive benchmarks such as τ-bench and τ²-bench evaluate
+trajectories, but this paper directly compares protocols on identical
+models and workflows. The protocol ladder—lexical similarity, judged
+turn success, deterministic tool matching, closed-loop completion and
+holistic success—shows exactly where the apparent improvement
+collapses.</p>
+<p>The inference boundary is narrow. The training data is synthetically
+generated and filtered, with 5,834 training examples and 664 validation
+examples. The held-out sample is one customer-support domain; only two
+open model families are tested. Exact tool matching assumes a single
+reference trajectory even when several actions may be valid. The
+deterministic simulator can underrepresent ambiguous users, unexpected
+tool state and recovery. The holistic judge has no human agreement
+analysis. Most importantly, the paper demonstrates a failure of proxy
+validity, not a universal claim that fine-tuning cannot improve
+agents.</p>
+<h3 id="reproducibility-and-enterprise-readiness-1">Reproducibility and
+enterprise readiness</h3>
+<p>Model identities, training size, evaluation counts, prompts and
+headline tables are public, but proprietary policies, tool definitions,
+trajectories and no code prevent direct replication. <strong>Enterprise
+readiness:</strong> high for adding closed-loop and holistic slices to
+evaluation; medium for release gating once valid alternative paths and
+judge calibration are addressed; low for transferring reported failure
+rates. <strong>Research Utility Score: 89/100</strong> (methodological
+rigor 23/25; quantitative traceability 24/25; reproducibility/artifacts
+12/20; enterprise relevance 15/15; prior-work advance 15/15).</p>
+<h2 id="deep-paper-3--cancellation-is-not-authorization-closure">Deep
+paper 3 — Cancellation is not authorization closure</h2>
+<p><strong>Identity and status.</strong> <em>Authorization Revocation
+for Long-Running AI Agents: Root-Scoped Quiescence under Delegation and
+Asynchronous Execution</em>, Genliang Zhu and Chu Wang; submitted
+September 18, 2026; arXiv:2609.21284v1; cs.PL/cs.AI/cs.CR; 39-page
+manuscript under arXiv's non-exclusive distribution license with
+complete proof appendix. The paper describes a registered executable
+artifact, runner, independent checker and adversarial traces, but the
+arXiv source package available during review contained only
+LaTeX/BibTeX; no public code repository or artifact URI was found. (<a
+href="https://arxiv.org/abs/2609.21284">paper</a>)</p>
+<h3 id="contribution-and-quantitative-claim-trace-2">Contribution and
+quantitative claim trace</h3>
+<p>Long-running agents create authority carriers that outlive the
+initiating process: credentials, delegated tasks, queues, callbacks,
+reservations and provider-side operations. The paper defines
+<strong>root-scoped authorization quiescence</strong>. A durable cut
+retires one root epoch; registered sinks fence that epoch; every
+pre-fence acceptance receives an exact terminal receipt; continuing work
+must atomically rebind to an independently sufficient current root;
+cross-provider channel tokens must balance; missing evidence remains
+Indeterminate rather than becoming success.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>Decision meaning</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cancellation acknowledgement does not stop accepted work</td>
+<td style="text-align: right;">2/2 cancellation-only cases acknowledge
+cancellation and accept the late epoch-1 effect</td>
+<td>Never equate requested cancellation with durable-effect
+prevention</td>
+<td>Provider-free inert effects, not live external services</td>
+</tr>
+<tr class="even">
+<td>Cutting authority without fencing the sink is incomplete</td>
+<td style="text-align: right;">1/1 cut-only case blocks new authority
+expansion but admits already scheduled old-root effect</td>
+<td>Authorization issuer and effect sink need coordinated barriers</td>
+<td>Assumes every protected commit crosses a registered sink</td>
+</tr>
+<tr class="odd">
+<td>Cut plus fence changes the outcome</td>
+<td style="text-align: right;">2/2 cut-plus-fence, 1/1 restart and 1/1
+stale-process late effects are rejected</td>
+<td>Test the linearization point at the durable boundary</td>
+<td>Four mechanism rejections are a small deterministic corpus</td>
+</tr>
+<tr class="even">
+<td>Fail-closed evidence distinguishes unknown from safe</td>
+<td style="text-align: right;">Root totals: six Quiescent, three
+Not-Quiescent and two Indeterminate; all insufficient-evidence cases
+remain Indeterminate</td>
+<td>Preserve uncertainty as a machine state</td>
+<td>Manifest completeness is a trusted premise</td>
+</tr>
+<tr class="odd">
+<td>Independent checking catches semantic tampering</td>
+<td style="text-align: right;">Runner and checker agree 17/17; checker
+rejects 44/44 consistently rehashed semantic regressions</td>
+<td>Verify semantics, not only hashes</td>
+<td>Checker observes serialized evidence, not unexecuted external
+facts</td>
+</tr>
+<tr class="even">
+<td>Precise rebind preserves unrelated authority</td>
+<td style="text-align: right;">One alternate-root case advances root B
+to epoch 2 and rebinds exactly; conjunctive case rejects an incomplete
+witness</td>
+<td>Avoid over-revoking shared work</td>
+<td>Correct support antichains and registries are hard to maintain</td>
+</tr>
+</tbody>
+</table>
+<h3
+id="methodological-critique-and-prior-work-comparison-2">Methodological
+critique and prior-work comparison</h3>
+<p>Cancellation APIs express intent; OAuth revocation closes a named
+credential; task frameworks expose lifecycle state; distributed
+termination detects process/message quiescence; graph revocation
+determines surviving authorization. The paper composes a narrower but
+practically important claim: after retiring a specific root epoch, no
+registered carrier or in-flight transfer can use that retired atom to
+create another protected acceptance within a bound manifest. It
+distinguishes quiescence from global idleness, business completion,
+rollback and physical cessation.</p>
+<p>The formal discipline is strong: explicit threat model, exact support
+witnesses, linearized cut, local sink fences, crash-safe evidence,
+replay identity, counterexamples, proof obligations, a registered case
+corpus and a separately implemented checker. The assurance boundary is
+equally material. Complete carrier coverage, complete mediation,
+authentic leaves, correct adapter semantics, exact channel accounting,
+crash-safe storage and protected sinks are premises. An omitted queue,
+bypassable tool, unregistered credential or false provider receipt can
+invalidate the positive certificate. The experiment never invokes a real
+MCP, A2A, OAuth, cloud queue or payment provider. It measures a
+file-backed local semantics, not cross-provider production behavior,
+performance or usability.</p>
+<h3 id="reproducibility-and-enterprise-readiness-2">Reproducibility and
+enterprise readiness</h3>
+<p>The paper gives detailed state transitions, case definitions,
+registered outcomes and proof appendix, but the executable artifact is
+not publicly obtainable from the paper or source bundle reviewed.
+<strong>Enterprise readiness:</strong> medium-high for threat modeling
+and an inert shadow harness; low for a production certificate service
+without provider adapters, complete carrier discovery and independent
+implementation. <strong>Research Utility Score: 90/100</strong>
+(methodological rigor 25/25; quantitative traceability 23/25;
+reproducibility/artifacts 12/20; enterprise relevance 15/15; prior-work
+advance 15/15).</p>
+<h2 id="watchlist">Watchlist</h2>
+<h3
+id="enterpriseval--a-useful-charter-without-decision-grade-pilot-evidence">EnterpriseVal
+— a useful charter without decision-grade pilot evidence</h3>
+<p><em>EnterpriseVal: Quantifying the Efficacy, Reliability and Value of
+Generative AI in the Enterprise</em>, Abbas Raza Ali, Muhammad Ajmal
+Siddiqui and Moona Zahid; arXiv:2609.21841v1; submitted September 18,
+2026; CC BY 4.0. The manuscript footer states “Proceedings of the 10th
+MLSys Conference, 2027,” while the current arXiv record does not provide
+a journal reference; venue status therefore remains unverified. The
+framework freezes the socio-technical configuration, grades
+fidelity/utility/efficiency/reliability/assurance/oversight, uses
+conservative confidence-bound gates, and models value with measured
+reviewer catch rate. (<a
+href="https://arxiv.org/abs/2609.21841">paper</a>)</p>
+<p><strong>Why Watchlist.</strong> The bank pilot is candidly
+incomplete: sample sizes, confidence intervals and agreement were not
+recorded; graders were not always blind; model harness parity is
+undocumented; baselines are estimated; one workflow has no results;
+agentic extensions are proposed but untested. Credit-memo citation
+precision is reported at 88% and hallucination at 1.6% for Gemini 2.5,
+but without denominators or intervals. Procedure refinement drops from
+an estimated 27.4 to 2.9 hours/document on seven version-two documents,
+without fidelity grading. No open implementation exists; the authors
+plan one. <strong>Watch trigger:</strong> preregistered thresholds,
+reported denominators/CIs/agreement, blinded human grading, observed
+time baselines, parity-controlled model comparison and a public
+reference implementation.</p>
+<h3
+id="efficient-benchmarking-in-production--credible-deployment-evidence-opaque-reproduction">Efficient
+Benchmarking in Production — credible deployment evidence, opaque
+reproduction</h3>
+<p><em>Efficient Benchmarking in Production: A Study of an Evolving LLM
+Agent</em>, Yining She and Lei Lin; arXiv:2609.21267v1; submitted
+September 18, 2026; 28-page CC BY 4.0 manuscript. The study uses 574
+complete runs of a 519-question production analytics-agent benchmark
+over 52 days, split chronologically 287/287. Multidimensional 2PL
+adaptive testing reaches 1.03 percentage-point MAE at 200 questions
+(38.5% of a full run) and 0.992 Spearman at 300. The team deployed
+difficulty-stratified fixed subsets for operational simplicity; without
+recalibration, the subset beats random sampling at 11/12 budgets across
+299 runs from five additional families. (<a
+href="https://arxiv.org/abs/2609.21267">paper</a>)</p>
+<p><strong>Why Watchlist.</strong> This is valuable first-hand
+production evidence, but one organization, one central benchmark and
+anonymized agent families limit external validity. The benchmark
+questions, question-level outcome matrix and implementation are not
+released. MAE and rank correlation do not quantify missed regressions,
+false release approvals or agreement at operational thresholds.
+Short-window stability may reflect a mature, slowly changing agent.
+<strong>Watch trigger:</strong> an internal replication with
+release-threshold error metrics, periodic full-run sentinels,
+material-change invalidation rules and a clear
+cost-versus-missed-regression curve.</p>
+<h2 id="cross-paper-synthesis">Cross-paper synthesis</h2>
+<p><strong>Independent Analysis.</strong> The five papers describe a
+three-boundary assurance chain:</p>
+<ol type="1">
+<li><strong>Before acting — statistical admission.</strong> Can the
+system certify the requested precision for this declared unit,
+population and granularity with current evidence? If not, abstain or
+collect labels.</li>
+<li><strong>While acting — trajectory qualification.</strong> Does the
+workflow succeed from its own evolving state, with correct tool calls,
+policy compliance and recovery, rather than from a reset gold
+history?</li>
+<li><strong>After authority changes — effect closure.</strong> Can
+retired authority still reach a protected sink through already accepted
+work, delegated tasks, queues or retries? If evidence is missing, remain
+Indeterminate.</li>
+</ol>
+<p>The common failure is <strong>proxy substitution</strong>: confidence
+for certification, turn correctness for workflow completion, or
+cancellation status for effect closure. Each proxy is locally useful but
+becomes unsafe when promoted to a stronger claim. The shared remedy is a
+versioned contract that binds evidence to the exact prediction
+population, workflow configuration, authority epoch, semantic unit and
+durable effect boundary.</p>
+<p>The papers also reveal a recurring economics problem. Finer
+guarantees consume more calibration data; closed-loop replay costs more
+than next-turn scoring; root-scoped closure requires instrumentation at
+every carrier and sink. These are not reasons to omit the controls. They
+are reasons to reserve stronger automation for consequences whose value
+justifies the evidence and observability cost.</p>
+<h2 id="visual-1--three-boundary-assurance-chain">Visual 1 —
+three-boundary assurance chain</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Decision boundary</th>
+<th>Tempting proxy</th>
+<th>Stronger evidence required</th>
+<th>Safe fallback</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Select an automated action</td>
+<td>model confidence or global accuracy</td>
+<td>independent calibration, precision bound, subgroup/semantic unit,
+coverage and drift contract</td>
+<td>abstain or human route</td>
+</tr>
+<tr class="even">
+<td>Release an agent workflow</td>
+<td>gold-history next-turn score</td>
+<td>self-history replay, tool correctness, end state, policy and
+holistic completion</td>
+<td>sandbox, manual completion or reject</td>
+</tr>
+<tr class="odd">
+<td>Withdraw an agent's authority</td>
+<td>cancel/exit/revoke status</td>
+<td>root-epoch cut, carrier manifest, sink fence, pre-fence receipts,
+channel closure</td>
+<td>keep Not-Quiescent/Indeterminate and block new effects</td>
+</tr>
+<tr class="even">
+<td>Scale a use case</td>
+<td>benchmark capability or estimated hours saved</td>
+<td>frozen configuration, observed baseline, quality gate, review catch
+rate, realized value</td>
+<td>conditional pilot</td>
+</tr>
+<tr class="odd">
+<td>Reduce evaluation cost</td>
+<td>subset MAE or rank correlation</td>
+<td>release-threshold error, full-run sentinel and invalidation
+trigger</td>
+<td>run full benchmark</td>
+</tr>
+</tbody>
+</table>
+<h2 id="visual-2--enterprise-ai-architecture-implications">Visual 2 —
+Enterprise AI Architecture Implications</h2>
+<p><strong>Independent Analysis.</strong> Over the next 12–24 months,
+the evidence favors a layered assurance architecture that keeps
+admission, trajectory and effect-closure proofs separate. No current
+enterprise stack is assumed.</p>
+<pre class="text"><code>APPLICATION / HUMAN REVIEW
+  intent · consequence tier · override · appeal · accepted residual risk
+                              │
+                              ▼
+[USE-CASE + CONFIGURATION REGISTRY]
+ model · prompt · tools · retrieval · policy · autonomy · reviewer design
+                              │
+               ┌──────────────┴──────────────┐
+               ▼                             ▼
+[SELECTIVE-ACTION GATE]            [AGENT ORCHESTRATION]
+ frozen reporting units            self-history state
+ calibration + precision bound      tool calls + recovery
+ coverage + drift contract          holistic completion
+               └──────────────┬──────────────┘
+                              ▼
+[EVALUATION + OBSERVABILITY CONTROL PLANE]
+ evidence budget · semantic slices · trajectory traces · full-run sentinel
+ cost/latency · subgroup outcomes · reviewer catch rate · change lineage
+                              │
+                              ▼
+[IDENTITY / AUTHORIZATION / EFFECT PLANE]
+ root epochs · delegated authority · carrier manifest · channel tokens
+ sink-local fences · idempotency · receipts · Indeterminate fail-closed state
+                              │
+                              ▼
+                   PROTECTED DURABLE SYSTEMS</code></pre>
+<p>Shared foundations unlock multiple enhancements: a model gateway and
+immutable configuration identity; experiment manifests and
+chronologically isolated calibration sets; semantic reporting-unit
+registries; trajectory replay and deterministic tool validators; policy
+enforcement and human review; agent/workflow identity, authorization
+epochs and carrier inventories; sink-local effect gateways with
+idempotency and receipts; cost/latency/value telemetry; and a periodic
+full-benchmark path. Internal consequence costs, regulatory groups, task
+volumes, label budgets, model/tool estate, async carriers, review
+capacity and latency SLOs are required before implementation
+decisions.</p>
+<h2 id="enterprise-ai-enhancement-backlog">Enterprise AI Enhancement
+Backlog</h2>
+<h3 id="priority-method-and-uncertainty">Priority method and
+uncertainty</h3>
+<p>The <strong>Future Enterprise AI Priority Score</strong> is a
+decision aid, not a probability, ROI forecast or roadmap commitment. It
+weights strategic/business value 25%, technical leverage 20%, evidence
+strength 20%, enterprise readiness 15%, feasibility 10% and
+risk-adjusted differentiation 10%. Components are analyst judgments
+grounded in today's papers. Differences below roughly three points are
+not decision-significant without internal loss functions, task volumes,
+authority topology, subgroup obligations, calibration data, review
+capacity and engineering constraints.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: right;">#</th>
+<th>Enhancement</th>
+<th>Decision band</th>
+<th style="text-align: right;">Strategic</th>
+<th style="text-align: right;">Leverage</th>
+<th style="text-align: right;">Evidence</th>
+<th style="text-align: right;">Readiness</th>
+<th style="text-align: right;">Feasibility</th>
+<th style="text-align: right;">Differentiation</th>
+<th style="text-align: right;">Weighted total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td>Closed-loop workflow qualification gate</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">96</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;"><strong>92.8</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td>Certified selective-action and abstention gate</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;"><strong>90.4</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td>Root-scoped revocation shadow harness</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">97</td>
+<td style="text-align: right;">96</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">77</td>
+<td style="text-align: right;">68</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;"><strong>89.5</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td>Frozen socio-technical configuration registry</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;">83</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;"><strong>88.1</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td>Semantic reporting-unit and evidence-budget planner</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">89</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;">79</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">87</td>
+<td style="text-align: right;"><strong>87.2</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td>Full-benchmark sentinel with efficient recurring subsets</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">89</td>
+<td style="text-align: right;">87</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;"><strong>85.2</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td>Enterprise value and reviewer-catch ledger</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;">73</td>
+<td style="text-align: right;">68</td>
+<td style="text-align: right;">72</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;"><strong>81.5</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td>Automatic reporting-partition optimizer</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">68</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">83</td>
+<td style="text-align: right;"><strong>80.4</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9</td>
+<td>Next-turn-only release or cancellation-only closure policy</td>
+<td>Deprioritize for Now</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;"><strong>47.5</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="prototype-soon">Prototype Soon</h3>
+<h4 id="1-closed-loop-workflow-qualification-gate--928">1. Closed-loop
+workflow qualification gate — 92.8</h4>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability / Agentic
+AI.</li>
+<li><strong>Research signal and supporting papers:</strong> Gold-history
+gains in <em>When Better Turns...</em> do not transfer to complete tool
+workflows; holistic success is 0/77 in every arm. <strong>Evidence
+label: Paper Fact.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> Next-turn scores
+restore correct state after every decision and can approve agents that
+cannot maintain workflow state, invoke tools or recover.</li>
+<li><strong>Proposed future capability and how it works:</strong> Run a
+protocol ladder for every consequential agent: gold-history turn
+diagnostics, deterministic tool/schema checks, self-history replay,
+terminal-state validation, policy checks and holistic user-goal scoring.
+Release decisions use conjunctive trajectory criteria rather than an
+average turn score.</li>
+<li><strong>Likely architectural placement:</strong> evaluation, agent
+layer, orchestration, observability and human-review layer.</li>
+<li><strong>Expected business value:</strong> quality, reliability, risk
+reduction, customer experience and lower incident rework.</li>
+<li><strong>Technical value:</strong> Exposes error propagation, state
+drift and tool failures that static benchmarks suppress.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Peer-reviewed workshop paper with a controlled protocol comparison;
+proprietary single-domain data and uncalibrated holistic judge. Ready
+for offline shadow replay. <strong>Confidence: High. Horizon: Now.
+Effort: M.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> Sanitized
+trajectory corpus, deterministic simulator or staging environment, tool
+schemas, valid end-state predicates, policy oracle, alternative-path
+handling and judge calibration.</li>
+<li><strong>Key risks:</strong> Simulator mismatch, false rejection of
+valid paths, privacy leakage in traces, flaky tools, judge bias, high
+replay cost and teams optimizing to the harness.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build</strong>
+domain trajectories, state predicates and release policy; buy generic
+trace/evaluation infrastructure where appropriate.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Replay
+100 historical workflows under gold-history and self-history; compare
+conclusions while production routing remains unchanged.</li>
+<li><strong>Success metrics and stop conditions:</strong> Success: ≥95%
+trace completeness; human agreement ≥85% on holistic outcomes; material
+failure modes uniquely found by closed loop; reproducible reruns. Stop
+if simulator fidelity is poor, valid-path false rejection exceeds 10%,
+or judge disagreement cannot be resolved.</li>
+<li><strong>Roadmap trigger:</strong> Two model/configuration changes
+show that the closed-loop gate predicts staging incidents or rejects a
+materially unsafe release missed by turn metrics.</li>
+</ul>
+<h4 id="2-certified-selective-action-and-abstention-gate--904">2.
+Certified selective-action and abstention gate — 90.4</h4>
+<ul>
+<li><strong>Category:</strong> Safety &amp; Governance / Evaluation
+&amp; Observability.</li>
+<li><strong>Research signal and supporting papers:</strong> Available
+Guardrails quantifies the evidence required to certify precision across
+reporting units and shows safety–coverage–granularity frontiers across
+intent routing, tool calls, moderation, vision and recommendation.
+<strong>Evidence label: Paper Fact.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> Global accuracy
+can hide unsafe tools, intents or subgroups; overly fine certification
+can leave insufficient evidence and silently eliminate automation.</li>
+<li><strong>Proposed future capability and how it works:</strong> Freeze
+semantic units, risk target, multiplicity budget and score; use an
+independent calibration set to certify each unit; abstain where no
+certificate is available; report served coverage and drift alongside
+precision.</li>
+<li><strong>Likely architectural placement:</strong> model gateway,
+evaluation, security/governance, observability and human-review
+layer.</li>
+<li><strong>Expected business value:</strong> reliability, risk
+reduction, quality and defensible automation coverage.</li>
+<li><strong>Technical value:</strong> Converts uncertainty into explicit
+routing and exposes the label budget needed for safer granularity.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+math and multi-domain benchmark evidence; no production trial and
+unavailable claimed code. Ready for offline analysis.
+<strong>Confidence: High. Horizon: Now. Effort: M.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> Stable outcome
+labels, independent planning/certification data, semantic group
+registry, distribution-monitoring contract, abstention route and review
+capacity.</li>
+<li><strong>Key risks:</strong> IID violation, sparse groups, legally
+invalid mergers, delayed drift detection, gaming of labels, loss of
+service coverage and overconfidence in the certificate scope.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build</strong> the
+risk contract and semantic groups; use established statistical libraries
+after independent implementation review.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Recompute
+last quarter's router decisions under global and per-unit certificates;
+no live behavior change.</li>
+<li><strong>Success metrics and stop conditions:</strong> Success: zero
+uncertified automated slices; precision target met on frozen holdout;
+coverage loss quantified; protected groups preserved. Stop if evidence
+is insufficient for critical units, labels are unreliable, or drift
+invalidates the frozen distribution.</li>
+<li><strong>Roadmap trigger:</strong> Shadow certificates remain stable
+over two calibration periods and identify at least one unsafe slice or
+justified automation opportunity missed by the global gate.</li>
+</ul>
+<h4 id="3-root-scoped-revocation-shadow-harness--895">3. Root-scoped
+revocation shadow harness — 89.5</h4>
+<ul>
+<li><strong>Category:</strong> AI Security / Safety &amp; Governance /
+Agentic AI.</li>
+<li><strong>Research signal and supporting papers:</strong>
+<em>Authorization Revocation...</em> shows cancellation-only and
+cut-only cases admit late effects, whereas sink fencing plus exact
+accounting rejects them under the provider-free protocol.
+<strong>Evidence label: Paper Fact.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> Agent work can
+survive process exit through credentials, queues, delegated tasks,
+retries, callbacks and prepared operations.</li>
+<li><strong>Proposed future capability and how it works:</strong> Model
+an authorization root and epoch; enumerate carriers and protected sinks;
+simulate a durable cut, sink fences, pre-fence receipts, alternate-root
+rebind and Indeterminate outcomes; compare against current cancellation
+and credential-revocation behavior using inert effects.</li>
+<li><strong>Likely architectural placement:</strong>
+security/governance, orchestration, infrastructure,
+identity/authorization and observability.</li>
+<li><strong>Expected business value:</strong> risk reduction, incident
+containment, auditability and reliability.</li>
+<li><strong>Technical value:</strong> Makes residual authority and
+already accepted work observable; separates shutdown intent from effect
+closure.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Formal
+proofs and deterministic local cases, but no public artifact or real
+provider adapters. Suitable only for a shadow harness.
+<strong>Confidence: Moderate. Horizon: Now. Effort: L.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> Agent identity,
+authority lineage, carrier inventory, durable event ledger, effect
+gateway, idempotency keys, provider adapter contracts and
+failure-injection environment.</li>
+<li><strong>Key risks:</strong> Incomplete manifests, bypassable sinks,
+false provider evidence, operational deadlock, over-revocation, privacy
+in traces, complex recovery and misleading positive certificates.</li>
+<li><strong>Build / Buy / Partner:</strong>
+<strong>Build/partner.</strong> The authority model is
+enterprise-specific; partner with identity, workflow and
+transaction-platform owners for adapter contracts.</li>
+<li><strong>Minimum reversible validation experiment:</strong> One
+staging-only workflow with inert side effects and injected
+cancellation/restart/queue races; no external mutations.</li>
+<li><strong>Success metrics and stop conditions:</strong> Success: all
+carriers cataloged; no retired-epoch post-fence acceptance; missing
+evidence remains Indeterminate; independent trace checker detects
+tampering. Stop if complete mediation cannot be established or the
+manifest omits plausible carriers.</li>
+<li><strong>Roadmap trigger:</strong> The shadow harness reproduces at
+least one late-effect gap in existing cancellation and then blocks it
+with a tested fence across restart and retry.</li>
+</ul>
+<h3 id="prepare-foundations">Prepare Foundations</h3>
+<h4 id="4-frozen-socio-technical-configuration-registry--881">4. Frozen
+socio-technical configuration registry — 88.1</h4>
+<ul>
+<li><strong>Category:</strong> MLOps &amp; Platform / Safety &amp;
+Governance.</li>
+<li><strong>Research signal and supporting papers:</strong>
+EnterpriseVal treats model, prompt, retrieval, tools, guardrails and
+human oversight as the evaluated object; Available Guardrails and the
+revocation protocol bind guarantees to frozen policies, populations and
+manifests. <strong>Evidence label: Enterprise Inference.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> Evaluation
+results are reused after material system changes, obscuring which
+configuration was actually qualified.</li>
+<li><strong>Proposed future capability and how it works:</strong> Assign
+an immutable configuration identity to every evaluation and deployment;
+include model/version, prompts, retrieval index, tools, policies,
+autonomy, reviewer design, semantic groups and authority/effect
+profiles. Material changes invalidate affected evidence.</li>
+<li><strong>Likely architectural placement:</strong> developer platform,
+model gateway, evaluation, observability and security/governance.</li>
+<li><strong>Expected business value:</strong> reliability, release
+speed, auditability, cost control and risk reduction.</li>
+<li><strong>Technical value:</strong> Enables reproducible comparisons,
+targeted requalification and exact linkage from metrics to running
+systems.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+convergence across papers; EnterpriseVal's implementation remains
+proposed. <strong>Confidence: High. Horizon: 3–6 months. Effort:
+M.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> Versioned
+deployment manifests, artifact hashes, policy IDs, model gateway logs,
+ownership and change-classification rules.</li>
+<li><strong>Key risks:</strong> Registry drift, hidden vendor changes,
+incomplete manifests, excessive requalification and sensitive
+configuration exposure.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build</strong> the
+schema and invalidation rules; integrate with existing CI/CD, model
+registry and policy stores.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Backfill
+identities for three prior releases and test whether every metric maps
+to one exact deployable configuration.</li>
+<li><strong>Success metrics and stop conditions:</strong> Success: ≥98%
+manifest completeness; deterministic diff classification; no orphaned
+release evidence. Stop if teams cannot reproduce the deployed
+configuration or change rules create unbounded manual work.</li>
+<li><strong>Roadmap trigger:</strong> Registry catches a material
+untracked change or reduces requalification scope for two consecutive
+releases.</li>
+</ul>
+<h4 id="5-semantic-reporting-unit-and-evidence-budget-planner--872">5.
+Semantic reporting-unit and evidence-budget planner — 87.2</h4>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability / Safety
+&amp; Governance.</li>
+<li><strong>Research signal and supporting papers:</strong> Available
+Guardrails shows that statistical merging improves certifiability but
+semantic constraints reduce coverage 0.167–0.246 in tested HWU settings.
+<strong>Evidence label: Paper Fact and Enterprise
+Inference.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> Teams define
+slices after results are seen or merge sparse groups in ways that erase
+legal, fairness or operational meaning.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+Maintain a governed hierarchy of immutable and mergeable reporting
+units; forecast label requirements and attainable coverage before
+certification; reserve protected units that cannot be merged.</li>
+<li><strong>Likely architectural placement:</strong> evaluation, data
+platform, security/governance and human-review layer.</li>
+<li><strong>Expected business value:</strong> risk reduction, compliance
+readiness, predictable label spend and clearer service-level
+decisions.</li>
+<li><strong>Technical value:</strong> Couples data acquisition, subgroup
+semantics and automation coverage before release.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+benchmark evidence for the trade-off; internal ontology and legal review
+are prerequisites. <strong>Confidence: High. Horizon: 3–6 months.
+Effort: M.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> Group ontology,
+legal/fairness constraints, label inventory, outcome taxonomy, budget
+forecasts and ownership.</li>
+<li><strong>Key risks:</strong> Proxy discrimination, unstable groups,
+privacy leakage, false precision from tiny cells and governance
+deadlock.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build</strong> the
+semantic layer with governance; buy labeling and experiment-management
+capabilities as needed.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Map one
+router's historical intents into protected/mergeable units and estimate
+label demand under three precision targets.</li>
+<li><strong>Success metrics and stop conditions:</strong> Success: 100%
+protected groups preserved; evidence shortfalls forecast; calibration
+spend tied to coverage. Stop if group definitions cannot be governed or
+outcomes are too sparse/noisy.</li>
+<li><strong>Roadmap trigger:</strong> The planner prevents a
+semantically invalid merge or enables a safe high-value slice with a
+justified label plan.</li>
+</ul>
+<h4
+id="6-full-benchmark-sentinel-with-efficient-recurring-subsets--852">6.
+Full-benchmark sentinel with efficient recurring subsets — 85.2</h4>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability / MLOps
+&amp; Platform.</li>
+<li><strong>Research signal and supporting papers:</strong> Efficient
+Benchmarking reports 1.03-point MAE at 38.5% execution for
+multidimensional adaptive testing and deploys fixed
+difficulty-stratified subsets; its own limitations omit release-gate
+error. <strong>Evidence label: Paper Fact and Uncertainty.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> Full trajectory
+benchmarks are expensive, so teams run them rarely or replace them with
+unvalidated subsets.</li>
+<li><strong>Proposed future capability and how it works:</strong> Use a
+stable diagnostic subset for frequent runs, but execute the full
+benchmark periodically and after material configuration changes; track
+subset/full decision disagreement, missed regressions and recalibration
+triggers.</li>
+<li><strong>Likely architectural placement:</strong> evaluation,
+developer platform, orchestration and cost observability.</li>
+<li><strong>Expected business value:</strong> speed, cost reduction,
+release confidence and developer productivity.</li>
+<li><strong>Technical value:</strong> Separates fast monitoring from
+authoritative qualification and measures the approximation error
+continuously.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Credible production case but no released data/code and no
+threshold-decision analysis. <strong>Confidence: Moderate. Horizon: 3–6
+months. Effort: M.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> Full benchmark
+history, per-item outcomes, stable item identity, change lineage,
+release thresholds and compute budget.</li>
+<li><strong>Key risks:</strong> Subset overfitting, blind spots after
+capability shifts, benchmark contamination, flaky outcomes and false
+release decisions.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build</strong>
+selection and sentinel policy around internal data; use standard
+IRT/statistical tooling only after validation.</li>
+<li><strong>Minimum reversible validation experiment:</strong>
+Retrospectively select subsets from the first half of historical runs
+and score release-decision agreement on the second half.</li>
+<li><strong>Success metrics and stop conditions:</strong> Success: ≥98%
+release-decision agreement; zero missed severe regressions; ≥40% cost
+reduction; bounded recalibration frequency. Stop if a material
+regression is missed or subset error drifts beyond the approved
+bound.</li>
+<li><strong>Roadmap trigger:</strong> Three full-run sentinels confirm
+stable decision agreement across at least one material model/tool
+change.</li>
+</ul>
+<h3 id="monitor-for-maturity">Monitor for Maturity</h3>
+<h4 id="7-enterprise-value-and-reviewer-catch-ledger--815">7. Enterprise
+value and reviewer-catch ledger — 81.5</h4>
+<ul>
+<li><strong>Category:</strong> Human-AI Workflow / Evaluation &amp;
+Observability.</li>
+<li><strong>Research signal and supporting papers:</strong>
+EnterpriseVal proposes observed baselines, quality gates, human-review
+effort, residual risk and measured reviewer catch rate; its pilot lacks
+the evidence needed to validate those quantities. <strong>Evidence
+label: Enterprise Inference and Uncertainty.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> Productivity
+claims often use estimated manual effort and assume human review catches
+fluent defects.</li>
+<li><strong>Proposed future capability and how it works:</strong> For
+each use case, record observed baseline time/cost, AI plus review time,
+defect severity, seeded-defect catch rate, rework, incidents and
+realized outcome value under the frozen configuration.</li>
+<li><strong>Likely architectural placement:</strong> applications,
+human-review layer, evaluation, observability and data platform.</li>
+<li><strong>Expected business value:</strong> cost, productivity,
+quality, risk reduction and portfolio prioritization.</li>
+<li><strong>Technical value:</strong> Connects evaluation outcomes to
+real workflow economics without assuming review is perfect.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+conceptual fit; today's pilot is not statistically qualified.
+<strong>Confidence: Moderate. Horizon: 6–12 months. Effort:
+L.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> Time studies,
+defect taxonomy, safe seeded-defect protocol, finance partnership,
+privacy controls and reviewer consent.</li>
+<li><strong>Key risks:</strong> Surveillance concerns, Hawthorne
+effects, unsafe seeding, biased baselines, benefit attribution and
+incentive gaming.</li>
+<li><strong>Build / Buy / Partner:</strong>
+<strong>Partner/build</strong> with finance, risk, human-factors and
+workflow owners; generic analytics products cannot define enterprise
+loss.</li>
+<li><strong>Minimum reversible validation experiment:</strong> One
+opt-in workflow study with 30–50 cases, blinded quality review and no
+compensation or staffing decision tied to individuals.</li>
+<li><strong>Success metrics and stop conditions:</strong> Success:
+observed—not recalled—baseline; catch-rate CI; quality non-inferiority;
+positive risk-adjusted value. Stop on privacy/ethics concerns, weak
+inter-rater agreement or negative quality-adjusted economics.</li>
+<li><strong>Roadmap trigger:</strong> A preregistered study shows
+sustained value with bounded residual risk over two operating
+periods.</li>
+</ul>
+<h4 id="8-automatic-reporting-partition-optimizer--804">8. Automatic
+reporting-partition optimizer — 80.4</h4>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability / Model
+&amp; Inference.</li>
+<li><strong>Research signal and supporting papers:</strong> Available
+Guardrails' held-out planner improves mean coverage, but structured
+search adds little over random candidates and loses in 221/1,340
+configurations. <strong>Evidence label: Paper Fact and
+Uncertainty.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> Manual grouping
+may waste evidence, but automatic grouping can erase meaning or exploit
+estimation noise.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+Generate only governance-approved candidate partitions, select on data
+independent of construction, certify on fresh data, and retain a simple
+baseline plus full audit trail.</li>
+<li><strong>Likely architectural placement:</strong> evaluation, data
+platform and security/governance.</li>
+<li><strong>Expected business value:</strong> coverage, cost efficiency
+and faster calibration planning.</li>
+<li><strong>Technical value:</strong> Potentially recovers certified
+traffic while preserving the validity contract.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Statistically rigorous evidence with inconsistent gains; no enterprise
+deployment or accessible code. <strong>Confidence: Low. Horizon: 12+
+months. Effort: L.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> Enhancement 5,
+large labeled pools, independent splits, admissible hierarchy, baseline
+comparator and review process.</li>
+<li><strong>Key risks:</strong> Selection bias, unstable partitions,
+hidden discrimination, label leakage, excessive complexity and
+negligible median gain.</li>
+<li><strong>Build / Buy / Partner:</strong>
+<strong>Partner/research.</strong> Do not buy as a black box; semantic
+admissibility and statistical audits must be inspectable.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Offline
+comparison of support-balanced, random-order and held-out approved
+candidates on frozen data.</li>
+<li><strong>Success metrics and stop conditions:</strong> Success:
+material gain over the strongest simple baseline, no protected-boundary
+violations, stable out-of-time performance. Stop if median gain is near
+zero, any protected group is merged, or selection fails under
+resampling.</li>
+<li><strong>Roadmap trigger:</strong> Two independent domains show
+≥5-point certified-coverage gain over strong baselines with unchanged
+precision guarantees.</li>
+</ul>
+<h3 id="deprioritize-for-now">Deprioritize for Now</h3>
+<h4
+id="9-next-turn-only-release-or-cancellation-only-closure-policy--475">9.
+Next-turn-only release or cancellation-only closure policy — 47.5</h4>
+<ul>
+<li><strong>Category:</strong> Safety &amp; Governance / AI
+Security.</li>
+<li><strong>Research signal and supporting papers:</strong> <em>When
+Better Turns...</em> shows next-turn gains with zero holistic success;
+<em>Authorization Revocation...</em> shows acknowledged cancellation and
+cut-only controls permit late effects. <strong>Evidence label: Paper
+Fact.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> Cheap proxies
+can accelerate releases while silently overstating workflow competence
+or shutdown safety.</li>
+<li><strong>Proposed future capability and how it works:</strong> None.
+Retain next-turn metrics and cancellation status as diagnostics only;
+forbid them from serving alone as release or closure evidence.</li>
+<li><strong>Likely architectural placement:</strong> evaluation,
+orchestration, security/governance and human-review layer.</li>
+<li><strong>Expected business value:</strong> apparent speed only;
+material downside in quality, reliability and risk.</li>
+<li><strong>Technical value:</strong> Low as a control; useful only for
+local debugging.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Direct
+evidence against proxy substitution. <strong>Confidence: High. Horizon:
+Now—to reject. Effort: S.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> Policy language
+defining allowed inferences and stronger replacement gates.</li>
+<li><strong>Key risks:</strong> False assurance, cascading tool errors,
+residual authority, incidents, audit failure and customer harm.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Do not build as an
+approval gate.</strong></li>
+<li><strong>Minimum reversible validation experiment:</strong>
+Historical audit: compare decisions from proxy-only versus closed-loop
+and effect-boundary evidence.</li>
+<li><strong>Success metrics and stop conditions:</strong> Success means
+zero production approvals based solely on these proxies. Stop the policy
+immediately if any such approval is found.</li>
+<li><strong>Roadmap trigger:</strong> None unless independent evidence
+establishes equivalence for one tightly bounded, non-consequential
+workflow.</li>
+</ul>
+<h2 id="implementation-priorities">Implementation priorities</h2>
+<h3 id="next-30-days">Next 30 days</h3>
+<ol type="1">
+<li>Select one tool-using workflow and build a 100-case self-history
+replay set with end-state and policy checks.</li>
+<li>Inventory one router's semantic units, calibration counts, outcome
+labels and current abstention path; compute the first precision–coverage
+frontier.</li>
+<li>Map one asynchronous agent workflow's authorization roots, queues,
+retries, callbacks and protected effects; run inert cancellation
+races.</li>
+<li>Define the immutable configuration manifest shared by all three
+experiments.</li>
+</ol>
+<h3 id="36-months">3–6 months</h3>
+<ol type="1">
+<li>Add chronologically independent calibration/certification splits and
+protect legal/fairness groups from statistical merging.</li>
+<li>Calibrate holistic judges against expert review and support multiple
+valid workflow paths.</li>
+<li>Introduce a periodic full-benchmark sentinel and measure subset/full
+release-decision disagreement.</li>
+<li>Prototype sink-local fences and exact receipts in staging only;
+require Indeterminate when carrier evidence is incomplete.</li>
+</ol>
+<h3 id="do-not-do-yet">Do not do yet</h3>
+<ol type="1">
+<li>Do not copy reported precision thresholds, group-merging policies or
+sample sizes into production.</li>
+<li>Do not claim a statistically valid certificate covers shifted
+deployment traffic without refresh evidence.</li>
+<li>Do not approve an agent from gold-history or aggregate next-turn
+metrics alone.</li>
+<li>Do not interpret process exit, task cancellation or credential
+revocation as proof that durable effects have stopped.</li>
+<li>Do not automate enterprise ROI gates from estimated baselines or
+assumed reviewer catch rates.</li>
+</ol>
+<h2 id="knowledge-reinforcement">Knowledge reinforcement</h2>
+<ol type="1">
+<li><strong>Why can a valid gate be unavailable?</strong> A guarantee
+may be statistically correct when issued, yet finite calibration data
+may be too sparse to issue it for every required unit at the target
+precision and familywise error level.</li>
+<li><strong>Why is gold history a weaker test than closed-loop
+replay?</strong> Gold history repairs prior mistakes before every turn.
+It measures local action prediction from a correct state, not whether
+the agent can construct, preserve and recover that state.</li>
+<li><strong>What does a cancellation acknowledgement prove?</strong>
+Only that a cancellation request was acknowledged under the provider's
+lifecycle semantics. It does not settle already accepted work, delegated
+carriers or future durable effects.</li>
+<li><strong>Why keep Indeterminate separate from failure?</strong>
+Not-Quiescent means known live authority or work; Indeterminate means
+required evidence is missing or conflicting. Collapsing the latter into
+success creates false closure.</li>
+<li><strong>Why can semantic group protection reduce automation
+coverage?</strong> Preventing merges preserves legal, fairness and
+operational meaning but leaves less support per certifiable unit. The
+cost is real and should be budgeted, not hidden.</li>
+<li><strong>Why must a benchmark subset retain a full-run
+sentinel?</strong> The agent, tools and item difficulties evolve. A
+subset can preserve average score while missing the exact regressions
+that determine a release.</li>
+</ol>
+<h2 id="source-and-artifact-register">Source and artifact register</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Primary identifier</th>
+<th>Publication status</th>
+<th>Verified artifact status</th>
+<th>License evidence</th>
+<th>Evidence boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Available Guardrails</td>
+<td><a
+href="https://arxiv.org/abs/2609.22048">arXiv:2609.22048v1</a></td>
+<td>Recent manuscript; ICLR 2027 template, no acceptance claim on
+arXiv</td>
+<td>Paper claims supplementary code/data; arXiv source package reviewed
+contained manuscript/figures but no experiment code</td>
+<td>CC BY 4.0 on arXiv</td>
+<td>Benchmark and synthetic evidence; no deployment safety claim</td>
+</tr>
+<tr class="even">
+<td>When Better Turns Do Not Make Better Agents</td>
+<td><a
+href="https://arxiv.org/abs/2609.21187">arXiv:2609.21187v1</a></td>
+<td>REALM Workshop at EMNLP 2026 accepted</td>
+<td>No public code/data; sanitized prompts in appendix</td>
+<td>CC BY 4.0 on arXiv</td>
+<td>One proprietary customer-support domain; one uncalibrated holistic
+judge</td>
+</tr>
+<tr class="odd">
+<td>Authorization Revocation for Long-Running AI Agents</td>
+<td><a
+href="https://arxiv.org/abs/2609.21284">arXiv:2609.21284v1</a></td>
+<td>Recent manuscript with proof appendix</td>
+<td>Described executable artifact not linked or included in reviewed
+source package</td>
+<td>arXiv non-exclusive distribution license</td>
+<td>Provider-free inert ledger; production adapters untested</td>
+</tr>
+<tr class="even">
+<td>EnterpriseVal</td>
+<td><a
+href="https://arxiv.org/abs/2609.21841">arXiv:2609.21841v1</a></td>
+<td>Manuscript footer claims MLSys 2027; arXiv venue field absent</td>
+<td>No public implementation; planned open reference implementation</td>
+<td>CC BY 4.0 on arXiv</td>
+<td>Pilot omits n, CIs, agreement and parity; agentic extension
+proposed</td>
+</tr>
+<tr class="odd">
+<td>Efficient Benchmarking in Production</td>
+<td><a
+href="https://arxiv.org/abs/2609.21267">arXiv:2609.21267v1</a></td>
+<td>Recent industry manuscript</td>
+<td>Benchmark, outcome matrix and code explicitly not released</td>
+<td>CC BY 4.0 on arXiv</td>
+<td>One organization; no release-threshold error analysis</td>
+</tr>
+</tbody>
+</table>
+<h2 id="closing-judgment">Closing judgment</h2>
+<p>Today's strongest signal is architectural, not algorithmic.
+Enterprise AI needs to qualify <strong>permission to act</strong>,
+<strong>ability to finish</strong>, and <strong>ability to stop</strong>
+as separate properties. A calibrated selective gate cannot prove the
+workflow succeeds. A successful local action cannot prove the trajectory
+is safe. A cancellation status cannot prove retired authority is unable
+to commit. The near-term opportunity is to make those boundaries
+executable in shadow mode—using frozen configuration identities,
+independent evidence, complete traces and fail-closed uncertainty—before
+considering production automation.</p></main></div>
+<footer>AI Research Intelligence Brief · September 21, 2026 · Research options, not deployment approval.</footer>
+<div class="toolbar"><button onclick="window.print()" aria-label="Print report">Print</button><button id="top" aria-label="Back to top">↑ Top</button></div>
+<script>
+const p=document.getElementById('progress');addEventListener('scroll',()=>{const h=document.documentElement;p.style.width=((h.scrollTop/(h.scrollHeight-h.clientHeight))*100)+'%'});document.getElementById('top').onclick=()=>scrollTo({top:0,behavior:'smooth'});
+document.querySelectorAll('main h4').forEach(h=>{if(/^\d+\./.test(h.textContent))h.setAttribute('data-backlog','true')});
+</script>
+</body></html>

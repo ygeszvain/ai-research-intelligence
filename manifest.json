@@ -3,12 +3,30 @@
     "title": "AI Research Intelligence",
     "url": "https://ygeszvain.github.io/ai-research-intelligence",
     "description": "Evidence-grounded daily AI and machine-learning research intelligence.",
-    "generated_at_utc": "2026-09-20T09:00:00.000Z",
-    "report_count": 42,
-    "latest_report": "2026-09-20",
-    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-20.html"
+    "generated_at_utc": "2026-09-21T09:00:00.000Z",
+    "report_count": 43,
+    "latest_report": "2026-09-21",
+    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-21.html"
   },
   "reports": [
+    {
+      "date": "2026-09-21",
+      "date_display": "September 21, 2026",
+      "title": "AI Research Intelligence Brief — September 21, 2026",
+      "excerpt": "Three deep papers show why reliable enterprise AI needs separate evidence that an action is supportable, a workflow succeeds from its own state and withdrawn authority cannot still create a durable effect.",
+      "topics": [
+        "Evaluation & Observability",
+        "Agentic AI",
+        "Safety & Governance",
+        "AI Security",
+        "MLOps & Platform",
+        "Human-AI Workflow"
+      ],
+      "path": "reports/2026-09-21.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-21.html",
+      "size_bytes": 79717,
+      "sha256": "ef2037acf8d1a2e03221669072b59855e0142d13b99320b14f484d67a0705a5b"
+    },
     {
       "date": "2026-09-20",
       "date_display": "September 20, 2026",
