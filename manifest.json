@@ -3,12 +3,30 @@
     "title": "AI Research Intelligence",
     "url": "https://ygeszvain.github.io/ai-research-intelligence",
     "description": "Evidence-grounded daily AI and machine-learning research intelligence.",
-    "generated_at_utc": "2026-09-21T09:00:00.000Z",
-    "report_count": 43,
-    "latest_report": "2026-09-21",
-    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-21.html"
+    "generated_at_utc": "2026-09-22T09:00:00.000Z",
+    "report_count": 44,
+    "latest_report": "2026-09-22",
+    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-22.html"
   },
   "reports": [
+    {
+      "date": "2026-09-22",
+      "date_display": "September 22, 2026",
+      "title": "AI Research Intelligence Brief — September 22, 2026",
+      "excerpt": "Three deep papers show why enterprise agent controls must govern relational and persistent state created by peers, active users, memory and self-authored rules.",
+      "topics": [
+        "Evaluation & Observability",
+        "Agentic AI",
+        "Safety & Governance",
+        "AI Security",
+        "Memory & Context",
+        "Data & Knowledge Infrastructure"
+      ],
+      "path": "reports/2026-09-22.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-22.html",
+      "size_bytes": 82925,
+      "sha256": "145a34c59a713b3685a91a6f5efd8ffbf1807444cc843eacfaed0a73b804931e"
+    },
     {
       "date": "2026-09-21",
       "date_display": "September 21, 2026",
