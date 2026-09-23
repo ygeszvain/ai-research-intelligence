@@ -1,0 +1,1493 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Evidence-grounded AI Research Intelligence Brief for September 23, 2026: uncertainty, deterministic skill boundaries, and causal reasoning oversight.">
+<meta name="report-date" content="2026-09-23">
+<meta name="research-window" content="2026-09-22T04:00:00-05:00/2026-09-23T04:00:00-05:00 America/Chicago plus complete Wednesday arXiv announcement batch; practical span approximately 38 hours">
+<meta name="deep-paper-count" content="3">
+<meta name="watchlist-count" content="2">
+<meta name="theme-color" content="#08131f">
+<title>AI Research Intelligence Brief — September 23, 2026</title>
+<style>
+:root{--bg:#07111d;--panel:#0d1b2a;--panel2:#10263a;--text:#e8f1f7;--muted:#9fb5c5;--line:#29445b;--cyan:#45d7c4;--gold:#f5c96a;--rose:#ff8d9a;--blue:#68a9ff;--max:1180px;color-scheme:dark}
+@media(prefers-color-scheme:light){:root{--bg:#f4f7f8;--panel:#fff;--panel2:#edf4f7;--text:#102131;--muted:#526979;--line:#cddbe2;--cyan:#087f73;--gold:#9b6300;--rose:#b92b45;--blue:#1661ad;color-scheme:light}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 90% 0,rgba(69,215,196,.12),transparent 30rem),var(--bg);color:var(--text);font:16px/1.67 ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}a{color:var(--cyan);text-underline-offset:3px}a:hover{text-decoration-thickness:2px}header{border-bottom:1px solid var(--line);background:linear-gradient(135deg,rgba(69,215,196,.09),rgba(104,169,255,.05));padding:54px 22px 34px}.hero{max-width:var(--max);margin:auto}.eyebrow{color:var(--cyan);text-transform:uppercase;letter-spacing:.15em;font-size:.76rem;font-weight:800}h1{font-size:clamp(2.2rem,6vw,4.7rem);line-height:.98;max-width:950px;margin:.35rem 0 1rem;letter-spacing:-.055em}header p{max-width:830px;color:var(--muted);font-size:1.09rem}.chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}.chip{border:1px solid var(--line);border-radius:999px;padding:6px 11px;background:var(--panel);font-size:.8rem}.topbets{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}.bet{border:1px solid var(--line);background:var(--panel);border-radius:14px;padding:15px}.bet b{display:block;color:var(--gold);font-size:1.15rem}.layout{max-width:var(--max);margin:auto;display:grid;grid-template-columns:250px minmax(0,1fr);gap:34px;padding:30px 22px 80px}nav{position:sticky;top:16px;align-self:start;max-height:calc(100vh - 32px);overflow:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:14px}nav strong{display:block;margin:2px 8px 10px;color:var(--gold)}nav ul{list-style:none;margin:0;padding:0}nav li{margin:0}nav a{display:block;color:var(--muted);text-decoration:none;padding:5px 8px;border-radius:7px;font-size:.83rem;line-height:1.25}nav a:hover{background:var(--panel2);color:var(--text)}main{min-width:0}main>h2{font-size:1.75rem;margin:2.6rem 0 1rem;padding-top:.7rem;border-top:1px solid var(--line)}main>h2:first-child{margin-top:0}h3{font-size:1.3rem;margin-top:2rem;color:var(--cyan)}h4{font-size:1.08rem;color:var(--gold);margin-bottom:.45rem}p,li{max-width:88ch}blockquote{margin:1rem 0;padding:1rem 1.2rem;border-left:4px solid var(--gold);background:var(--panel);color:var(--muted)}pre{white-space:pre-wrap;overflow:auto;background:#07101a;border:1px solid var(--line);border-radius:14px;padding:18px;color:#dcecf2;font-size:.86rem;line-height:1.45}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}table{width:100%;border-collapse:collapse;margin:1.25rem 0;background:var(--panel);font-size:.86rem}th,td{padding:10px 12px;border:1px solid var(--line);text-align:left;vertical-align:top}th{color:var(--gold);background:var(--panel2)}hr{border:0;border-top:1px solid var(--line)}main h4+ul,main h3+ul{border:1px solid var(--line);background:linear-gradient(135deg,var(--panel),var(--panel2));border-radius:14px;padding:15px 22px 15px 34px}main h4+ul li,main h3+ul li{margin:.5rem 0}.progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--cyan),var(--gold));width:0;z-index:9}.toolbar{position:fixed;right:18px;bottom:18px;display:flex;gap:8px}.toolbar button{border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:999px;padding:9px 12px;cursor:pointer;box-shadow:0 8px 30px rgba(0,0,0,.2)}.label{font-size:.75rem;color:var(--muted)}footer{border-top:1px solid var(--line);padding:24px;text-align:center;color:var(--muted)}
+@media(max-width:850px){.topbets{grid-template-columns:1fr}.layout{grid-template-columns:1fr}nav{position:relative;top:0;max-height:none}nav ul{columns:2}h1{font-size:2.65rem}}
+@media(max-width:520px){header{padding-top:34px}.layout{padding:20px 14px 60px}nav ul{columns:1}table{display:block;overflow-x:auto}h1{font-size:2.25rem}}
+@media print{body{background:white;color:#111;font-size:11pt}header{padding:18px 0}.layout{display:block;padding:0}nav,.toolbar,.progress{display:none}a{color:#145c70}main>h2{break-before:page}main>h2:first-child{break-before:auto}table,pre{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<header><div class="hero">
+<div class="eyebrow">AI Research Intelligence · Evidence before enthusiasm</div>
+<h1>Preserve uncertainty. Prove the boundary. Verify the effect.</h1>
+<p>September 23, 2026 briefing. Three deep papers test when an assistant should commit, when repeated reasoning can safely become a deterministic skill, and when visible reasoning actually constrains an answer.</p>
+<div class="chips"><span class="chip">3 deep papers</span><span class="chip">2 Watchlist</span><span class="chip">Complete announcement batch</span><span class="chip">9 enterprise options</span><span class="chip">Primary sources + full-paper review</span></div>
+<div class="topbets"><div class="bet"><span class="label">TOP BET 1 · PROTOTYPE SOON</span><b>91.9 · Uncertainty-preserving task state</b><span>Invalidate stale hypotheses and rebuild consequential artifacts after clarification.</span></div><div class="bet"><span class="label">TOP BET 2 · PROTOTYPE SOON</span><b>91.1 · Boundary-qualified skill routing</b><span>Use deterministic fast paths only inside proven coverage with a warm fallback.</span></div><div class="bet"><span class="label">TOP BET 3 · PROTOTYPE SOON</span><b>87.9 · Difficulty-conditioned oversight</b><span>Test whether written reasoning is causally load-bearing before using it as a control.</span></div></div>
+</div></header>
+<div class="layout"><nav><strong>Navigate</strong><ul>
+<li><a href="#scope-window-and-evidence-policy"
+id="toc-scope-window-and-evidence-policy">Scope, window, and evidence
+policy</a></li>
+<li><a href="#executive-signal" id="toc-executive-signal">Executive
+signal</a></li>
+<li><a href="#top-3-future-bets" id="toc-top-3-future-bets">Top 3 Future
+Bets</a></li>
+<li><a
+href="#deep-paper-1--determinism-is-valuable-only-inside-a-proven-boundary"
+id="toc-deep-paper-1--determinism-is-valuable-only-inside-a-proven-boundary">Deep
+paper 1 — Determinism is valuable only inside a proven boundary</a>
+<ul>
+<li><a href="#contribution-and-quantitative-claim-trace"
+id="toc-contribution-and-quantitative-claim-trace">Contribution and
+quantitative claim trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison"
+id="toc-methodological-critique-and-prior-work-comparison">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#reproducibility-and-enterprise-readiness"
+id="toc-reproducibility-and-enterprise-readiness">Reproducibility and
+enterprise readiness</a></li>
+</ul></li>
+<li><a
+href="#deep-paper-2--a-clarification-is-not-proof-that-stale-state-was-removed"
+id="toc-deep-paper-2--a-clarification-is-not-proof-that-stale-state-was-removed">Deep
+paper 2 — A clarification is not proof that stale state was removed</a>
+<ul>
+<li><a href="#contribution-and-quantitative-claim-trace-1"
+id="toc-contribution-and-quantitative-claim-trace-1">Contribution and
+quantitative claim trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison-1"
+id="toc-methodological-critique-and-prior-work-comparison-1">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#reproducibility-and-enterprise-readiness-1"
+id="toc-reproducibility-and-enterprise-readiness-1">Reproducibility and
+enterprise readiness</a></li>
+</ul></li>
+<li><a
+href="#deep-paper-3--written-reasoning-becomes-more-causal-near-the-competence-boundary"
+id="toc-deep-paper-3--written-reasoning-becomes-more-causal-near-the-competence-boundary">Deep
+paper 3 — Written reasoning becomes more causal near the competence
+boundary</a>
+<ul>
+<li><a href="#contribution-and-quantitative-claim-trace-2"
+id="toc-contribution-and-quantitative-claim-trace-2">Contribution and
+quantitative claim trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison-2"
+id="toc-methodological-critique-and-prior-work-comparison-2">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#reproducibility-and-enterprise-readiness-2"
+id="toc-reproducibility-and-enterprise-readiness-2">Reproducibility and
+enterprise readiness</a></li>
+</ul></li>
+<li><a href="#watchlist" id="toc-watchlist">Watchlist</a>
+<ul>
+<li><a
+href="#robust-failure-conservative-repair--useful-repair-requires-an-activation-boundary"
+id="toc-robust-failure-conservative-repair--useful-repair-requires-an-activation-boundary">Robust
+Failure, Conservative Repair — useful repair requires an activation
+boundary</a></li>
+<li><a
+href="#learned-enterprise-data-comprehension--promising-result-proprietary-substrate"
+id="toc-learned-enterprise-data-comprehension--promising-result-proprietary-substrate">Learned
+Enterprise Data Comprehension — promising result, proprietary
+substrate</a></li>
+</ul></li>
+<li><a href="#cross-paper-synthesis"
+id="toc-cross-paper-synthesis">Cross-paper synthesis</a>
+<ul>
+<li><a href="#the-common-failure-is-premature-compression"
+id="toc-the-common-failure-is-premature-compression">The common failure
+is premature compression</a></li>
+</ul></li>
+<li><a href="#visual-1--state-and-boundary-assurance-loop"
+id="toc-visual-1--state-and-boundary-assurance-loop">Visual 1 —
+state-and-boundary assurance loop</a></li>
+<li><a href="#enterprise-ai-architecture-implications"
+id="toc-enterprise-ai-architecture-implications">Enterprise AI
+Architecture Implications</a></li>
+<li><a href="#enterprise-ai-enhancement-backlog"
+id="toc-enterprise-ai-enhancement-backlog">Enterprise AI Enhancement
+Backlog</a>
+<ul>
+<li><a href="#priority-method-and-material-uncertainty"
+id="toc-priority-method-and-material-uncertainty">Priority method and
+material uncertainty</a></li>
+<li><a href="#prototype-soon" id="toc-prototype-soon">Prototype
+Soon</a></li>
+<li><a href="#prepare-foundations" id="toc-prepare-foundations">Prepare
+Foundations</a></li>
+<li><a href="#monitor-for-maturity"
+id="toc-monitor-for-maturity">Monitor for Maturity</a></li>
+<li><a href="#deprioritize-for-now"
+id="toc-deprioritize-for-now">Deprioritize for Now</a></li>
+</ul></li>
+<li><a href="#implementation-priorities"
+id="toc-implementation-priorities">Implementation priorities</a>
+<ul>
+<li><a href="#next-30-days" id="toc-next-30-days">Next 30 days</a></li>
+<li><a href="#36-months-conditional-on-pilot-evidence"
+id="toc-36-months-conditional-on-pilot-evidence">3–6 months, conditional
+on pilot evidence</a></li>
+<li><a href="#do-not-treat-as-approved-roadmap-commitments"
+id="toc-do-not-treat-as-approved-roadmap-commitments">Do not treat as
+approved roadmap commitments</a></li>
+</ul></li>
+<li><a href="#knowledge-reinforcement"
+id="toc-knowledge-reinforcement">Knowledge reinforcement</a></li>
+<li><a href="#source-and-artifact-register"
+id="toc-source-and-artifact-register">Source and artifact
+register</a></li>
+<li><a href="#closing-judgment" id="toc-closing-judgment">Closing
+judgment</a></li>
+</ul></nav><main><h2 id="scope-window-and-evidence-policy">Scope,
+window, and evidence policy</h2>
+<p><strong>Research window.</strong> Tuesday, September 22, 2026 at 4:00
+AM CDT through Wednesday, September 23, 2026 at 4:00 AM CDT
+(America/Chicago; 09:00 UTC to 09:00 UTC), expanded to approximately 38
+hours to include the complete September 23 arXiv announcement batch. The
+three deep papers and both Watchlist papers were first announced on
+September 23 and submitted on September 21; the earliest selected
+submission preceded the strict window by about 14 hours. Broad screening
+covered current new-submission records across cs.AI, cs.CL, cs.LG,
+cs.CR, cs.IR, cs.SE, cs.MA and stat.ML, followed by primary
+abstract-page, full-paper and public-artifact review. Three papers
+cleared deep analysis; two remain Watchlist-only.</p>
+<p><strong>Anti-duplication.</strong> Titles and arXiv identifiers were
+checked against the 44-report archive through September 22 and the local
+source corpus. None of today's five papers appeared previously.
+Yesterday's brief focused on peer, user, memory and self-authored-rule
+state. Today's increment is a tighter control principle:
+<strong>enterprise AI should preserve uncertainty before commitment,
+prove boundary coverage before replacing reasoning with deterministic
+execution, and establish whether observable reasoning is causally
+load-bearing before treating it as a control.</strong></p>
+<p><strong>Evidence policy.</strong> <strong>Paper Fact</strong> denotes
+a directly reported statement or verified first-party artifact.
+<strong>Independent Analysis</strong> denotes this briefing's
+calculation, comparison or critique. <strong>Enterprise
+Inference</strong> translates evidence into a bounded future option.
+<strong>Uncertainty</strong> marks missing causal, external-validity,
+artifact, licensing, economic, privacy, security, governance,
+operational or adoption evidence. Public repositories were inspected,
+but experiments requiring provider credentials or GPU execution were not
+rerun. Benchmark results do not authorize production. Every proposed
+experiment is isolated, reversible, measurable and non-destructive.</p>
+<h2 id="executive-signal">Executive signal</h2>
+<blockquote>
+<p><strong>Reliable enterprise AI needs a state-and-boundary control
+plane. Unresolved intent must remain unresolved state; deterministic
+skills must decline outside proven coverage; and visible reasoning must
+not be mistaken for causal control without intervention
+evidence.</strong></p>
+</blockquote>
+<p>Three deep papers establish the signal from different directions:</p>
+<ol type="1">
+<li><strong>Making Agents More Consistent</strong> shows that
+deterministic specialization can make repeated work exact and cheaper,
+but its guard admitted 26% of near-boundary inputs and 11 of 13
+resulting failures were invisible to trace conformance.</li>
+<li><strong>Clarification Is Not Correction</strong> finds
+order-sensitive task failure, especially in coding, and shows that
+common summaries, chain-of-thought and single-state ledgers do not
+preserve uncertainty. A small rollback intervention improved success
+17.5%→27.5% and eliminated measured contamination, but does not
+establish a general solution.</li>
+<li><strong>From Decorative to Load-Bearing</strong> causally perturbs
+reasoning traces and finds error propagation depends strongly on
+model-relative difficulty. On Gemma, propagation rises 3.9%→22.3%→40.9%
+across GSM8K, MMLU and BBH; a 28,584-continuation model attributes 98.8%
+of explained deviance to difficulty versus 0.8% to perturbation
+type.</li>
+</ol>
+<p>The Watchlist reinforces boundary discipline. <strong>Robust Failure,
+Conservative Repair</strong> improves a strong cheat-sheet baseline
+68.50%→71.25% without source-model regressions by routing textual
+repairs only where their activation boundary is supported, yet
+cross-model regressions remain. <strong>Learned Enterprise Data
+Comprehension</strong> reports 94.67% dataset-macro Pass@1 across five
+trials on 54 queries and 12 datasets, but source code and
+hyperparameters are proprietary and the benchmark is too small to
+support an architecture commitment.</p>
+<p><strong>Decision posture.</strong> Prototype uncertainty-preserving
+task state, boundary-qualified deterministic skills and
+difficulty-conditioned reasoning oversight. Prepare shared state
+lineage, outcome oracles, evaluator calibration and replay. Monitor
+cross-model textual repair and learned identity routing. Deprioritize
+ungated skill promotion and chain-of-thought-only approval.</p>
+<h2 id="top-3-future-bets">Top 3 Future Bets</h2>
+<ol type="1">
+<li><strong>Uncertainty-preserving task-state and rebuild gate —
+91.9/100.</strong> Why it matters: equivalent final information produced
+materially different outcomes by order, coding success fell to 24.4% in
+ambiguous-first interactions, and summaries or single-state ledgers
+increased contamination. Evidence that would change the recommendation:
+internal multi-turn tests showing no meaningful order effect, or a
+controlled state-management pilot that fails to reduce stale-assumption
+carryover. Next reversible action: replay 100 historical, non-sensitive
+dialogues in a read-only harness that tags assumptions as tentative,
+confirmed, contradicted or unresolved and rebuilds artifacts after
+clarification.</li>
+<li><strong>Boundary-qualified deterministic skill router —
+91.1/100.</strong> Why it matters: deterministic replay was exact on 456
+served dispatches and cut tokens, but near-boundary false admission
+reached 26% and trace conformance missed most boundary errors. Evidence
+that would change the recommendation: internal repeated workflows with
+low recurrence, unstable schemas or boundary tests showing no precision
+advantage over a reasoned fallback. Next reversible action: shadow one
+high-volume, low-consequence template with an explicit coverage
+predicate, fail-closed parameter extraction and the incumbent reasoner
+kept warm.</li>
+<li><strong>Difficulty-conditioned reasoning oversight qualification —
+87.9/100.</strong> Why it matters: the causal influence of written
+reasoning varied 16× under a matched arithmetic contrast and differed
+sharply by model family; visible traces are not a uniform safety sensor.
+Evidence that would change the recommendation: internal
+perturb-and-continue tests showing stable load-bearingness across
+relevant models, task slices and updates, or outcome controls that make
+reasoning traces operationally irrelevant. Next reversible action:
+perturb one intermediate step on a 200-case offline set, stratify by
+model-relative difficulty, and compare trace alerts with outcome
+failures.</li>
+</ol>
+<h2
+id="deep-paper-1--determinism-is-valuable-only-inside-a-proven-boundary">Deep
+paper 1 — Determinism is valuable only inside a proven boundary</h2>
+<p><strong>Identity and status.</strong> <em>Making Agents More
+Consistent: Skills Should Form Habits for Repeat Tasks</em>, Travis
+Weber and Rohit Taneja; submitted September 21, 2026;
+arXiv:2609.25299v1; cs.AI/cs.CR; CC BY 4.0. The paper presents a lineage
+architecture and preliminary evidence on self-authored text-to-SQL and
+retrieval-routing workloads. No public implementation repository or
+frozen result artifact was linked in the paper. (<a
+href="https://arxiv.org/abs/2609.25299">paper</a>)</p>
+<h3 id="contribution-and-quantitative-claim-trace">Contribution and
+quantitative claim trace</h3>
+<p>The paper treats a skill as an executable lineage: a reasoned anchor
+remains available while partial deterministic variants claim bounded
+input regions. Four gates check recoverability, inherited guardrails,
+trace conformance and production non-inferiority plus human
+authorization.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>Decision meaning</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Reasoning is inconsistent under repetition</td>
+<td style="text-align: right;">14 templates × 3 instances × 3 repeats
+across four arms (504 calls); byte-identical across all three repeats on
+26/42 tasks for Sonnet, 13/42 for GLM, and 11/42 for Qwen and Kimi</td>
+<td>Repeated-work reliability must be measured directly</td>
+<td>Self-authored text-to-SQL with 42 questions is narrow</td>
+</tr>
+<tr class="even">
+<td>Deterministic dispatch can make a served slice exact</td>
+<td style="text-align: right;">Identical route and parameters on all 456
+served inputs across five repeats: 2,280 calls with no disagreement</td>
+<td>Structural determinism is a useful assurance property</td>
+<td>Exact repetition does not establish correctness outside the admitted
+slice</td>
+</tr>
+<tr class="odd">
+<td>Planning dominates tokens on this workload</td>
+<td style="text-align: right;">Reasoning is 95.3%–97.2% of generated
+tokens and 62.7%–75.0% of billed tokens for three metered arms</td>
+<td>Recurring plans may be a real cost target</td>
+<td>Provider accounting and short SQL outputs favor this result</td>
+</tr>
+<tr class="even">
+<td>Cost benefits depend on reuse and baseline</td>
+<td style="text-align: right;">13.9%–55.5% gross token reduction;
+break-even 7, 16, 17 or 53 reuses by arm after charging 7,691 authoring
+tokens/template</td>
+<td>Instrument reuse before optimizing</td>
+<td>Not a universal ROI estimate; the cheapest-planning arm crosses
+late</td>
+</tr>
+<tr class="odd">
+<td>Phrasing, not SQL complexity, broke the guard</td>
+<td style="text-align: right;">18/18 harder shapes passed held-out
+validation, but both hand- and LLM-authored candidates covered 0/40
+unseen paraphrases</td>
+<td>Boundary coverage needs linguistic variation, not only harder
+in-template cases</td>
+<td>Zero coverage is safe deferral, not false admission</td>
+</tr>
+<tr class="even">
+<td>Natural and near-boundary false admission remains material</td>
+<td style="text-align: right;">2.6% of natural paraphrases and 26% of
+near-boundary inputs were wrongly admitted; 11/13 failures were
+invisible to the trace gate at every threshold</td>
+<td>Trace similarity cannot substitute for outcome semantics</td>
+<td>Boundary set construction is authored and domain-specific</td>
+</tr>
+<tr class="odd">
+<td>Separate routing from parameter extraction</td>
+<td style="text-align: right;">Joint guard .888 end-to-end; route-known
+small extractor .952 at 43% cost; deterministic schema-aware extractor
+.925 and declines instead of guessing</td>
+<td>Decompose classification from value resolution and let components
+abstain</td>
+<td>Frozen 76-item substrate; routing itself was perfect in this
+pilot</td>
+</tr>
+</tbody>
+</table>
+<h3
+id="methodological-critique-and-prior-work-comparison">Methodological
+critique and prior-work comparison</h3>
+<p>The lineage framing usefully combines tracing JITs, pseudo-oracles,
+reject-option routing and non-inferiority testing. Relative to mutable
+skill libraries or prompt optimizers, it keeps ancestors executable,
+requires narrowing coverage and funds shadow sampling from savings. The
+paper is unusually explicit about negative results: deterministic errors
+repeat exactly; trace conformance can validate the route while missing
+bad values; constrained decoding converted declines into confident
+substitutions; mined corrections alone produce class imbalance;
+personalization fragments cost amortization.</p>
+<p>The evidence is still preliminary. The primary SQL tasks use fixed
+sentence skeletons and substitutable literals. The 456 dispatches are
+repeated over 76 frozen items, not 456 independent cases. The
+framework's four core quantities—achievable coverage, trace-opacity,
+candidate yield through all gates and fallthrough-maintenance cost
+across deprecation—remain unmeasured. No auditor-efficiency study
+supports the auditability argument. Production-scale lineage depth,
+cross-tenant leakage and long-run drift are not tested. Non-inferiority
+is relative to an anchor that may itself be wrong.</p>
+<h3 id="reproducibility-and-enterprise-readiness">Reproducibility and
+enterprise readiness</h3>
+<p>Models, denominators, thresholds, costs and failure analyses are
+described, and the paper is CC BY 4.0. But no code, prompts, database
+snapshot, dispatch traces or result manifest were verified, so exact
+reproduction is not currently possible from public artifacts.
+<strong>Enterprise readiness:</strong> high for the conceptual pattern
+of bounded fast path plus retained fallback; medium for a read-only
+shadow prototype; low for automatic production promotion.
+<strong>Research Utility Score: 88/100</strong> (methodological rigor
+23/25; quantitative traceability 23/25; reproducibility/artifacts 12/20;
+enterprise relevance 15/15; prior-work advance 15/15).</p>
+<h2
+id="deep-paper-2--a-clarification-is-not-proof-that-stale-state-was-removed">Deep
+paper 2 — A clarification is not proof that stale state was removed</h2>
+<p><strong>Identity and status.</strong> <em>Clarification Is Not
+Correction: LLMs Fail to Let Go</em>, Jianzhe Lin, Xiaolin Li, Fei Wang,
+Robert Douglas, Rajeshkumar Golani and Jubin Chheda; submitted September
+21, 2026; arXiv:2609.25337v1; cs.AI; work done at Meta. The study
+evaluates Gemini-2.5-Pro and Gemini-2.5-Flash on generated and
+hand-crafted writing, planning and coding dialogues. No public code,
+dataset or frozen outputs were linked; the arXiv record uses the
+perpetual non-exclusive license. (<a
+href="https://arxiv.org/abs/2609.25337">paper</a>)</p>
+<h3 id="contribution-and-quantitative-claim-trace-1">Contribution and
+quantitative claim trace</h3>
+<p>The paper calls the failure <strong>early posterior
+collapse</strong>: an ambiguous request becomes a single committed task
+state before evidence resolves it, and later clarification patches
+rather than invalidates that state.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>Decision meaning</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Equivalent information gives different results by order</td>
+<td style="text-align: right;">Pro success: full 54.2%, clarified-first
+50.0%, ambiguous-first 42.8%; Flash: 62.3%, 55.4%, 45.7%</td>
+<td>Test conversational order and stale-state effects</td>
+<td>Constraint scores move less; result is not a clean causal separation
+from position or recency</td>
+</tr>
+<tr class="even">
+<td>Structured artifacts are most vulnerable</td>
+<td style="text-align: right;">Ambiguous-first success/contamination:
+writing 69.3%/.125, planning 37.5%/.141, coding 24.4%/.256</td>
+<td>Coding and planning need artifact rebuild, not acknowledgment
+alone</td>
+<td>Pooled category result; exact per-cell denominators are not in the
+headline table</td>
+</tr>
+<tr class="odd">
+<td>Acknowledgment is not behavioral revision</td>
+<td style="text-align: right;">Coding acknowledgment 93.5%, revision
+86.4%, +7.1-point gap; model-level gaps are +2.5 for Pro and −3.3 for
+Flash</td>
+<td>Observe artifact state, not verbal agreement</td>
+<td>The aggregate model-level effect is not universal</td>
+</tr>
+<tr class="even">
+<td>Common memory/reasoning baselines do not solve it</td>
+<td style="text-align: right;">Raw history success/.contamination
+43.2/.177; summary 48.7/.228; CoT 44.3/.182; single-state ledger
+44.6/.295</td>
+<td>Epistemic status and invalidation matter more than storage format
+alone</td>
+<td>Same model family and authored tasks; no confidence intervals
+reported in main table</td>
+</tr>
+<tr class="odd">
+<td>Summaries often compress away ambiguity</td>
+<td style="text-align: right;">62.5% of analyzed summaries collapse
+uncertainty; 37.5% preserve it</td>
+<td>Store tentative/contradicted/unresolved labels</td>
+<td>Summary sample size is not surfaced beside the main table</td>
+</tr>
+<tr class="even">
+<td>Explicit rollback helps in a small controlled setting</td>
+<td style="text-align: right;">Normal clarification success 17.5%,
+contamination .100; rollback 27.5%, contamination 0</td>
+<td>Rebuild from revised state after material correction</td>
+<td>Small supplementary experiment; no proof of general prompt-level
+sufficiency</td>
+</tr>
+<tr class="odd">
+<td>Two-phase policy is the strongest tested prompt policy</td>
+<td style="text-align: right;">Direct wrong commitment/contamination
+40.0%/1.20; ask-first 0%/.40; two-phase 0%/0</td>
+<td>Resolve uncertainty, then execute from the new state</td>
+<td>Small controlled condition; contamination scale is not a production
+risk probability</td>
+</tr>
+</tbody>
+</table>
+<p>The complete suite reports about 13,900 API calls and 7,160 trials:
+290 generated tasks, 20 hand-crafted pilots and 30 adversarial
+coding/planning tasks. Gemini-2.5-Pro also serves as temperature-0
+judge.</p>
+<h3
+id="methodological-critique-and-prior-work-comparison-1">Methodological
+critique and prior-work comparison</h3>
+<p>Prior ambiguity benchmarks mainly ask whether a model should clarify;
+memory work asks whether relevant content persists. This paper studies
+what happens after an early commitment is contradicted. It distinguishes
+recall, acknowledgment, revision and old-hypothesis contamination, and
+its intervention logic—delay commitment, invalidate contradicted
+hypotheses, regenerate—maps to a concrete state machine.</p>
+<p>However, the mechanism is not isolated. Ambiguous-first ordering
+changes recency, position, interaction length and instruction structure.
+The authors acknowledge they cannot fully separate stale-state
+contamination from ordinary order sensitivity or instruction
+brittleness. The model being evaluated also judges many outputs,
+increasing shared-bias risk. Main tables omit uncertainty intervals and
+some condition denominators. The generated dataset, prompts and outputs
+are not public. Results cover two models from one family and three
+authored task families. Naively listing more hypotheses is unstable—Pro
+improves K=1→5 while Flash degrades—which supports arbitration, but also
+warns against treating the paper's sketched protocol as validated
+architecture.</p>
+<h3 id="reproducibility-and-enterprise-readiness-1">Reproducibility and
+enterprise readiness</h3>
+<p>Task families, metrics, experiment IDs and aggregate scales are
+documented, but no executable artifact or data release was verified.
+Model versions are named, yet future reruns may be sensitive to silent
+provider changes. <strong>Enterprise readiness:</strong> high for adding
+epistemic-status fields and rollback tests to evaluation; medium for a
+controller prototype; low for production gating until internal domain
+results and human calibration exist. <strong>Research Utility Score:
+87/100</strong> (methodological rigor 23/25; quantitative traceability
+23/25; reproducibility/artifacts 12/20; enterprise relevance 15/15;
+prior-work advance 14/15).</p>
+<h2
+id="deep-paper-3--written-reasoning-becomes-more-causal-near-the-competence-boundary">Deep
+paper 3 — Written reasoning becomes more causal near the competence
+boundary</h2>
+<p><strong>Identity and status.</strong> <em>From Decorative to
+Load-Bearing: Task Difficulty Shapes the Causal Role of
+Chain-of-Thought</em>, Renee Jia and Di Mu; submitted September 21,
+2026; arXiv:2609.25366v1; accepted to Transactions on Machine Learning
+Research, 2026; CC BY 4.0. The <a
+href="https://github.com/r2m-ai/load-bearing-cot">MIT-licensed
+repository</a> exposes code, tests, prompts, analyses, result snapshots,
+manuscript source and human-annotation materials; a linked Hugging Face
+dataset contains labeled continuations and steering outputs. (<a
+href="https://arxiv.org/abs/2609.25366">paper</a>)</p>
+<h3 id="contribution-and-quantitative-claim-trace-2">Contribution and
+quantitative claim trace</h3>
+<p>Continuation-based causal testing corrupts one reasoning step,
+truncates at the intervention and forces continuation from that prefix.
+Outcomes are silent bypass, self-correction or error propagation. The
+primary claim uses the binary error-propagation versus non-propagation
+split because that boundary is stable across judge prompts and human
+annotators.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>Decision meaning</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Error propagation rises with model-relative difficulty</td>
+<td style="text-align: right;">Gemma: GSM8K 3.9%, MMLU 22.3%, BBH 40.9%
+while base accuracy falls 86.5%→74.8%→57.9%</td>
+<td>Reasoning-monitor value depends on task/model regime</td>
+<td>Only correct multi-step baselines are retained; rates are
+conditional</td>
+</tr>
+<tr class="even">
+<td>The clean within-domain gradient is large</td>
+<td style="text-align: right;">MMLU subjects range 7.5%→53.7%;
+subject-rank β=.069, p=1.9×10⁻¹⁰²</td>
+<td>Stratify oversight by competence slice, not benchmark average</td>
+<td>Subject difficulty is model-relative and observational</td>
+</tr>
+<tr class="odd">
+<td>Difficulty dominates perturbation type in the fitted design</td>
+<td style="text-align: right;">Matched arithmetic propagation 3.9% on
+GSM8K vs 64.5% on hard BBH; logistic model over 28,584 continuations
+assigns 98.8% explained deviance to difficulty, .8% type and .4%
+interaction</td>
+<td>Qualify by model × task difficulty</td>
+<td>Sequential deviance shares are model- and design-specific, not
+universal causal proportions</td>
+</tr>
+<tr class="even">
+<td>Model family changes the regime</td>
+<td style="text-align: right;">Llama overall propagation 57.2% at 41.6%
+accuracy, n=7,791; DeepSeek-R1-Distill is lower/non-monotonic with 1,603
+filtered continuations</td>
+<td>Requalify every model family and update</td>
+<td>DeepSeek filter and visible post-think trace make it a contrast, not
+clean replication</td>
+</tr>
+<tr class="odd">
+<td>Label quality can dominate probe results</td>
+<td style="text-align: right;">Correcting labels drops same-feature
+three-class probe accuracy 99.9%→75.0%; two annotators on n=500 have
+κ=.93 overall and κ=1.00 for C vs non-C</td>
+<td>Treat evaluator calibration as part of the model</td>
+<td>A/B self-correction labels remain prompt-sensitive</td>
+</tr>
+<tr class="even">
+<td>Detection is not control</td>
+<td style="text-align: right;">Linear probes reach 86.2%
+error-propagation detection, but single-direction steering shows no dose
+response; eight-direction steering flips 14/57 Type-C cases at the
+strongest setting</td>
+<td>Do not infer controllability from probe separability</td>
+<td>Steering conclusion covers only tested additive interventions and
+layers</td>
+</tr>
+<tr class="odd">
+<td>Compute and artifacts are unusually well documented</td>
+<td style="text-align: right;">7,691 eligible baselines; 21,238 labeled
+original continuations; roughly 4.4 single-pass GPU hours; full project
+~22 hours on one H100</td>
+<td>Reproduction is feasible for a qualified team</td>
+<td>Hidden-state arrays/checkpoints must be regenerated; reusable
+evaluator's live GPU path is not yet fully validated</td>
+</tr>
+</tbody>
+</table>
+<h3
+id="methodological-critique-and-prior-work-comparison-2">Methodological
+critique and prior-work comparison</h3>
+<p>Prior CoT faithfulness work often changes hints or compares outputs
+after a new turn, leaving re-derivation as a confound. This paper
+intervenes within the same trace and separates bypass, repair and
+propagation. The matched difficulty/type analysis, clustered sensitivity
+check, four judge variants, blind human study and cross-model
+comparisons are strong. The paper also sharply distinguishes CoT→answer
+causality from computation→CoT mechanistic faithfulness.</p>
+<p>The experiment conditions on initially correct, multi-step
+examples—7,691 of 11,390 for Gemma—so reported rates do not describe all
+queries. BBH loses more baselines, potentially selecting near-boundary
+items. Perturbations are intentionally artificial. The primary 98.8%
+deviance allocation comes from Gemma and an ordinal difficulty
+specification. Llama's text-on-GSM8K construction yields 97.7% empty
+continuations and is excluded from headlines. DeepSeek tests only
+visible post-think text. The causal test tells whether the edited trace
+constrains the answer; it does not prove the trace faithfully reveals
+internal computation or that monitoring improves real incidents.</p>
+<h3 id="reproducibility-and-enterprise-readiness-2">Reproducibility and
+enterprise readiness</h3>
+<p>This is today's strongest artifact package: MIT code, offline tests,
+experiment map, result snapshots, protocol spec, reproduction guide,
+human annotations and a full record dataset. The README explicitly marks
+which reusable GPU path is not yet validated. <strong>Enterprise
+readiness:</strong> high for an offline evaluator adaptation; medium for
+release qualification on models exposing suitable traces; low for using
+CoT monitoring as a standalone runtime safety control. <strong>Research
+Utility Score: 95/100</strong> (methodological rigor 25/25; quantitative
+traceability 25/25; reproducibility/artifacts 20/20; enterprise
+relevance 12/15; prior-work advance 13/15).</p>
+<h2 id="watchlist">Watchlist</h2>
+<h3
+id="robust-failure-conservative-repair--useful-repair-requires-an-activation-boundary">Robust
+Failure, Conservative Repair — useful repair requires an activation
+boundary</h3>
+<p><em>Robust Failure, Conservative Repair: Textual Knowledge
+Distillation from Cross-Model Failures</em>, Andrew Ren, Haokun Liu and
+Chenhao Tan; submitted September 21, 2026; arXiv:2609.25400v1; accepted
+to EMNLP 2026 Main. The <a
+href="https://github.com/ChicagoHAI/RFCR">public repository</a> contains
+code, frozen atoms and cheat sheets. The method derives compact rule
+atoms from failures shared across models, sharpens activation boundaries
+with source-private failures and anchor-correct cases, and abstains when
+evidence is weak. On a frozen 400-item BBH set, CS-ICL rises
+68.50%→71.25% (+2.75 points; 95% CI +1.25,+4.50) with no previously
+correct source case degraded. (<a
+href="https://arxiv.org/abs/2609.25400">paper</a>)</p>
+<p><strong>Why Watchlist:</strong> the gain is 11 items and concentrated
+in geometric-shape and disambiguation tasks. The zero-regression result
+holds only for the locked source protocol. Cross-model application
+without target tuning produces −0.50 points for Gemini-2.5-Flash-Lite
+while improving three other families. The authors explicitly state that
+leave-one-family-out atom generation remains undone. This is strong
+evidence for routed, abstaining repair and weak evidence for portable
+prompt memory.</p>
+<h3
+id="learned-enterprise-data-comprehension--promising-result-proprietary-substrate">Learned
+Enterprise Data Comprehension — promising result, proprietary
+substrate</h3>
+<p><em>Learned Enterprise Data Comprehension: Compression and Routing
+for Data Agents</em>, Ethan Torres and Eric Mills; submitted September
+21, 2026; arXiv:2609.25286v1. The system learns persistent task-relevant
+identities, dataset-relative evidence realizations and query-conditioned
+routing before a downstream agent reasons. On the Data Agent Benchmark,
+54 queries across 12 datasets, the paper reports 94.67% dataset-macro
+stratified Pass@1 over five full trials and 258/270 raw successes,
+versus 55.51% for a Claude Opus 4.6 reference. (<a
+href="https://arxiv.org/abs/2609.25286">paper</a>)</p>
+<p><strong>Why Watchlist:</strong> the public paper gives architecture
+and proofs, and states that benchmark results were externally validated,
+but source code and some hyperparameters are withheld because the system
+is proprietary. The evaluation has only 54 questions; the comparison
+bundles learned routing, a strong agent, arbitration and conservative
+finalization. The local stability certificate covers embedding
+perturbations under a fixed prototype bank and does not establish
+semantic correctness or stability when the bank changes. A bounded
+identity inventory can miss novel roles. Require an independent internal
+replication before treating 94.67% as portable evidence.</p>
+<h2 id="cross-paper-synthesis">Cross-paper synthesis</h2>
+<h3 id="the-common-failure-is-premature-compression">The common failure
+is premature compression</h3>
+<p><strong>Independent Analysis.</strong> The deep papers appear to
+study different systems—dialogue, skills and reasoning traces—but share
+one control error: collapsing a distribution into a single operational
+state before the boundary is established.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Compression</th>
+<th>What is lost</th>
+<th>Reported failure</th>
+<th>Required control</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Ambiguous intent → one task state</td>
+<td>tentative versus confirmed versus contradicted assumptions</td>
+<td>ambiguous-first success drops; summaries and ledgers increase
+contamination</td>
+<td>typed epistemic state, clarification and destructive rebuild</td>
+</tr>
+<tr class="even">
+<td>Repeated reasoning → deterministic skill</td>
+<td>the region where a procedure is valid</td>
+<td>26% near-boundary false admission; most misses invisible to trace
+conformance</td>
+<td>explicit coverage, fail-closed extraction, warm fallback and outcome
+tests</td>
+</tr>
+<tr class="odd">
+<td>Visible rationale → safety explanation</td>
+<td>whether trace tokens causally constrain the answer</td>
+<td>propagation varies 3.9%→40.9% by task and sharply by model</td>
+<td>perturbation-based qualification and outcome acceptance</td>
+</tr>
+<tr class="even">
+<td>Failure examples → reusable textual rule</td>
+<td>model- and task-specific activation boundary</td>
+<td>source no-regression but target-family regression</td>
+<td>cross-model boundary validation and no-op routing</td>
+</tr>
+<tr class="odd">
+<td>Heterogeneous schema → persistent identity</td>
+<td>novel roles, opposing evidence and bank drift</td>
+<td>high benchmark score with proprietary implementation</td>
+<td>evidence provenance, novelty detection and independent benchmark
+replay</td>
+</tr>
+</tbody>
+</table>
+<p>The system-level lesson is not to reject compression. It is to make
+every compression reversible, scoped and evidence-bearing: preserve the
+richer state until acceptance criteria are met, retain the fallback and
+measure error at the boundary where information was discarded.</p>
+<h2 id="visual-1--state-and-boundary-assurance-loop">Visual 1 —
+state-and-boundary assurance loop</h2>
+<pre class="text"><code>RICH, UNRESOLVED STATE
+ hypotheses · evidence · prior trace · schema roles · model/task difficulty
+                              │
+                              ▼
+ [TYPE + PROVENANCE]  tentative / confirmed / contradicted / unresolved
+                              │
+                              ▼
+ [BOUNDARY TEST]  coverage predicate · activation rule · eligibility · abstention
+                 ┌────────────┴────────────┐
+                 ▼                         ▼
+         boundary not proven        boundary supported
+         clarify / reason / defer          │
+                 │                         ▼
+                 │               [PROVISIONAL FAST PATH]
+                 │                shadow · read-only · no durable effect
+                 └────────────┬────────────┘
+                              ▼
+ [INDEPENDENT OUTCOME ACCEPTANCE]
+ final artifact · protected cases · causal perturbation · cost · residual risk
+                 ┌────────────┴────────────┐
+                 ▼                         ▼
+       decline / rebuild / rollback      promote with lineage</code></pre>
+<h2 id="enterprise-ai-architecture-implications">Enterprise AI
+Architecture Implications</h2>
+<p><strong>Independent Analysis.</strong> Over the next 12–24 months,
+the recommended options imply a shared state-and-assurance plane rather
+than additional prompt conventions. No current enterprise architecture,
+vendor, model, data platform or security maturity is assumed.</p>
+<pre class="text"><code>APPLICATIONS + HUMAN REVIEW
+ consequence tier · ambiguity UX · approval · appeal · artifact acceptance
+                                │
+                                ▼
+ [TASK-STATE / CONTEXT SERVICE]
+ hypotheses · epistemic status · unresolved slots · invalidation · rebuild lineage
+                                │
+              ┌─────────────────┴──────────────────┐
+              ▼                                    ▼
+ [AGENT / SKILL ORCHESTRATION]           [MODEL + TOOL GATEWAY]
+ coverage predicates · abstention         model/version · cost · policy
+ warm fallback · skill lineage            identity/authorization · effect scope
+              └─────────────────┬──────────────────┘
+                                ▼
+ [EVALUATION + OBSERVABILITY PLANE]
+ repeated-run consistency · boundary suites · protected cases · outcome oracles
+ perturb-and-continue · difficulty slices · judge calibration · drift telemetry
+                                │
+                                ▼
+ [GOVERNANCE + EXPERIMENT INFRASTRUCTURE]
+ immutable manifests · provenance · sealed holdouts · human authorization
+ isolated shadow traffic · rollback · data/license controls · audit export</code></pre>
+<p>Shared enabling foundations unlock multiple enhancements: model and
+tool gateways; typed context/memory with invalidation and lineage;
+explicit agent, user and tool identity; skill registries with coverage
+and fallthrough; deterministic outcome oracles; judge calibration;
+trajectory replay; protected-case and boundary suites; sealed holdouts;
+provenance; cost telemetry; human review; and isolated experiments.
+Before implementation decisions, internal context is required on task
+volumes and recurrence, consequence tiers, ambiguity patterns, data
+sensitivity, memory retention, tool authority, accepted
+false-admit/false-decline costs, available outcome oracles, model trace
+access, latency SLOs, review capacity, regulated decisions and vendor
+constraints.</p>
+<h2 id="enterprise-ai-enhancement-backlog">Enterprise AI Enhancement
+Backlog</h2>
+<h3 id="priority-method-and-material-uncertainty">Priority method and
+material uncertainty</h3>
+<p>The <strong>Future Enterprise AI Priority Score</strong> is a
+structured comparison, not a probability, ROI estimate or approved
+roadmap. It weights strategic/business value 25%, technical leverage
+20%, evidence strength 20%, enterprise readiness 15%, feasibility 10%
+and risk-adjusted differentiation 10%. Component values are analyst
+judgments grounded in today's evidence. Differences under roughly three
+points are not decision-significant without internal volumes, loss
+functions, architecture, security boundaries, regulatory obligations,
+staffing and cost data.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: right;">#</th>
+<th>Enhancement</th>
+<th>Decision band</th>
+<th style="text-align: right;">Strategic</th>
+<th style="text-align: right;">Leverage</th>
+<th style="text-align: right;">Evidence</th>
+<th style="text-align: right;">Readiness</th>
+<th style="text-align: right;">Feasibility</th>
+<th style="text-align: right;">Differentiation</th>
+<th style="text-align: right;">Weighted total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td>Uncertainty-preserving task-state and rebuild gate</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">96</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">87</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;"><strong>91.9</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td>Boundary-qualified deterministic skill router</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;"><strong>91.1</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td>Difficulty-conditioned reasoning oversight qualification</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">79</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;"><strong>87.9</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td>Decision-state lineage and counterfactual replay</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;"><strong>88.9</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td>Outcome oracle and trace/outcome separation</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">83</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">87</td>
+<td style="text-align: right;"><strong>88.5</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td>Boundary drift and skill-requalification harness</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;"><strong>87.0</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td>Cross-model conservative textual repair</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">68</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;"><strong>81.0</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td>Learned identity-based enterprise evidence router</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">63</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;"><strong>78.2</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9</td>
+<td>Ungated skill promotion or CoT-only approval</td>
+<td>Deprioritize for Now</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;"><strong>53.0</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="prototype-soon">Prototype Soon</h3>
+<h4 id="1-uncertainty-preserving-task-state-and-rebuild-gate--919">1.
+Uncertainty-preserving task-state and rebuild gate — 91.9</h4>
+<ul>
+<li><strong>Category:</strong> Memory &amp; Context / Human-AI Workflow
+/ Safety &amp; Governance.</li>
+<li><strong>Research signal and supporting papers:</strong>
+Clarification Is Not Correction reports order-sensitive performance,
+elevated coding contamination, failure of summary/CoT/single-state
+baselines and a small rollback benefit. <strong>Evidence label: Paper
+Fact.</strong> The enterprise architecture below is <strong>Enterprise
+Inference.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> Assistants may
+acknowledge a correction while preserving invalidated assumptions in
+code, plans or tool choices.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+Maintain typed hypotheses and unresolved slots outside free text; block
+consequential execution while high-impact uncertainty remains;
+invalidate contradicted state and regenerate the artifact from the
+revised state rather than patching it.</li>
+<li><strong>Likely architectural placement:</strong> applications,
+context/memory service, orchestration and human-review layer.</li>
+<li><strong>Expected business value:</strong> quality, reliability,
+productivity, risk reduction and customer experience.</li>
+<li><strong>Technical value:</strong> Separates belief-state management
+from generation and makes stale assumptions testable.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Large
+authored run but two models from one family, self-judging and no public
+data. <strong>Confidence: Moderate. Horizon: Now. Effort:
+M.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> Task-state schema,
+artifact versioning, materiality threshold, clarification UX, outcome
+tests, audit logging and privacy review.</li>
+<li><strong>Key risks:</strong> Excessive questioning, wrong uncertainty
+labels, state leakage, prompt gaming, longer latency and user
+frustration.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build</strong>
+domain state schema and acceptance logic; buy generic conversation
+storage only if epistemic labels and lineage remain exportable.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Offline
+replay of 100 historical dialogues with ambiguous-first versus
+clarified-first order; compare normal patching with
+invalidate-and-rebuild under blinded human review.</li>
+<li><strong>Success metrics and stop conditions:</strong> Success: ≥30%
+relative reduction in stale-assumption contamination, no material
+task-quality loss and acceptable clarification rate. Stop if state tags
+expose sensitive content, increase harmful assumptions or add &gt;20%
+latency without benefit.</li>
+<li><strong>Roadmap trigger:</strong> Replicated gains across two
+domains, two model families and an untouched holdout with calibrated
+human agreement.</li>
+</ul>
+<h4 id="2-boundary-qualified-deterministic-skill-router--911">2.
+Boundary-qualified deterministic skill router — 91.1</h4>
+<ul>
+<li><strong>Category:</strong> Agentic AI / AI Software Engineering /
+MLOps &amp; Platform.</li>
+<li><strong>Research signal and supporting papers:</strong> Making
+Agents More Consistent reports exact repeatability on 456 served inputs
+and lower token use, but 26% near-boundary false admission and
+trace-gate blind spots. RFCR independently shows that activation
+precision governs whether reusable rules help. <strong>Evidence label:
+Paper Fact.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> Repeated
+workflows waste reasoning tokens and vary, while aggressive caching can
+create perfectly repeatable wrong actions.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+Register partial deterministic variants with explicit coverage
+predicates, fail-closed parameter extraction, schema/value validation, a
+retained reasoned anchor and automatic fallback on any uncertainty.</li>
+<li><strong>Likely architectural placement:</strong> agent layer,
+orchestration, model gateway and developer platform.</li>
+<li><strong>Expected business value:</strong> reliability, cost, speed,
+productivity and auditability.</li>
+<li><strong>Technical value:</strong> Converts repeat work into a
+bounded fast path without deleting adaptive reasoning.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+pilot signal but self-authored tasks and no public artifact.
+<strong>Confidence: Moderate. Horizon: Now. Effort: M.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> High-volume
+repeated task, stable tool contract, boundary corpus, deterministic
+validator, route/extraction separation, lineage registry and
+rollback.</li>
+<li><strong>Key risks:</strong> False admission, schema drift, tenant
+leakage, brittle phrasing, silent repeated error and stale
+fallback.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build</strong>
+coverage and validators around existing orchestration; buy commodity
+routing/feature infrastructure only with abstention and raw
+telemetry.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Shadow
+one low-consequence recurring workflow for four weeks; fast path has no
+durable effect, and every admit/decline is replayed against the
+incumbent.</li>
+<li><strong>Success metrics and stop conditions:</strong> Success:
+≥99.5% boundary precision on protected tests, zero critical outcome
+regressions, reproducibility improvement and measured net savings after
+admission cost. Stop on any high-consequence false admit or stale-schema
+escape.</li>
+<li><strong>Roadmap trigger:</strong> Stable precision under paraphrase,
+schema and temporal drift plus demonstrated internal break-even and
+rollback rehearsal.</li>
+</ul>
+<h4
+id="3-difficulty-conditioned-reasoning-oversight-qualification--879">3.
+Difficulty-conditioned reasoning oversight qualification — 87.9</h4>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability /
+Reasoning &amp; Planning / Safety &amp; Governance.</li>
+<li><strong>Research signal and supporting papers:</strong> From
+Decorative to Load-Bearing finds causal trace influence varies sharply
+by model-relative difficulty and model family; Clarification Is Not
+Correction shows CoT can look clean without improving task success.
+<strong>Evidence label: Paper Fact.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> A uniform
+chain-of-thought monitor can miss failures on easy/decorative traces and
+overstate control on harder/load-bearing traces.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+Perturb intermediate reasoning, retrieved facts or tool outputs;
+stratify propagation by model, task and difficulty; accept runtime trace
+monitoring only where it adds calibrated predictive value beyond outcome
+checks.</li>
+<li><strong>Likely architectural placement:</strong> evaluation,
+observability, model gateway and developer platform.</li>
+<li><strong>Expected business value:</strong> quality, reliability and
+risk reduction.</li>
+<li><strong>Technical value:</strong> Measures whether the monitored
+channel can causally affect the answer.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Peer-reviewed paper, strong artifacts and multiple models, but small
+open models and artificial perturbations. <strong>Confidence: Moderate.
+Horizon: 3–6 months. Effort: M.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> Trace access,
+baseline-correct cases, task-difficulty estimator, outcome parser,
+clustered statistics and human label audit.</li>
+<li><strong>Key risks:</strong> Sensitive reasoning retention, provider
+trace unavailability, artificial interventions, judge noise and
+Goodharting.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build</strong>
+domain probes; partner for mechanistic research if hidden-state access
+is required.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Run 200
+offline cases across easy/medium/hard slices for two candidate models;
+perturb one step and retain unedited controls.</li>
+<li><strong>Success metrics and stop conditions:</strong> Success:
+stable, calibrated incremental detection over outcome-only controls and
+≥90% human agreement on the primary binary label. Stop if trace
+retention violates policy or propagation is unstable across minor prompt
+changes.</li>
+<li><strong>Roadmap trigger:</strong> Two releases show repeatable
+slice-level predictive value and a defined intervention window before
+durable effects.</li>
+</ul>
+<h3 id="prepare-foundations">Prepare Foundations</h3>
+<h4 id="4-decision-state-lineage-and-counterfactual-replay--889">4.
+Decision-state lineage and counterfactual replay — 88.9</h4>
+<ul>
+<li><strong>Category:</strong> Memory &amp; Context / Evaluation &amp;
+Observability.</li>
+<li><strong>Research signal and supporting papers:</strong>
+Clarification Is Not Correction requires invalidation and regeneration;
+skill lineage retains executable ancestors; CoT testing relies on
+matched perturbed and unedited prefixes. <strong>Evidence label:
+Enterprise Inference grounded in all three deep papers.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> Current logs
+often store messages but not the hypothesis, boundary, fallback and
+artifact version that produced an action.</li>
+<li><strong>Proposed future capability and how it works:</strong> Store
+versioned state transitions, epistemic labels, skill/model/tool IDs and
+accepted effects; support branch-and-replay from a pre-commit state
+under revised assumptions.</li>
+<li><strong>Likely architectural placement:</strong> context/memory,
+observability, data platform and security/governance.</li>
+<li><strong>Expected business value:</strong> reliability, speed, risk
+reduction and auditability.</li>
+<li><strong>Technical value:</strong> Makes rollback, counterfactual
+analysis and regression localization possible across enhancements.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Architectural need is well supported; implementation economics are
+enterprise-specific. <strong>Confidence: High. Horizon: 3–6 months.
+Effort: L.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> Event schema,
+immutable IDs, retention policy, access control, snapshotting, redaction
+and cost telemetry.</li>
+<li><strong>Key risks:</strong> Sensitive-state accumulation, storage
+cost, lineage gaps, replay non-determinism and unclear ownership.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build</strong>
+semantic state contract; buy durable event storage if it meets isolation
+and export requirements.</li>
+<li><strong>Minimum reversible validation experiment:</strong>
+Instrument one sandbox workflow for 30 days and reproduce ten decisions
+from stored state after changing one assumption.</li>
+<li><strong>Success metrics and stop conditions:</strong> Success: ≥95%
+replay completeness, every durable effect linked to a state/version and
+privacy-approved retention. Stop if replay requires inaccessible hidden
+state or retained data exceeds purpose limits.</li>
+<li><strong>Roadmap trigger:</strong> A real evaluation or incident is
+resolved materially faster using lineage, with no unresolved privacy
+finding.</li>
+</ul>
+<h4 id="5-outcome-oracle-and-traceoutcome-separation--885">5. Outcome
+oracle and trace/outcome separation — 88.5</h4>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability / AI
+Software Engineering.</li>
+<li><strong>Research signal and supporting papers:</strong> Skill trace
+conformance misses wrong parameters; CoT probe accuracy is bounded by
+labels; clarification acknowledgment diverges from artifact revision.
+<strong>Evidence label: Paper Fact.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> Systems
+over-trust plausible traces, acknowledgments and judge explanations
+while the durable artifact is wrong.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+Evaluate final state through deterministic invariants, execution,
+transaction receipts and blinded human checks; treat trace quality as a
+separate diagnostic signal.</li>
+<li><strong>Likely architectural placement:</strong> evaluation,
+observability, applications and human-review layer.</li>
+<li><strong>Expected business value:</strong> quality, reliability and
+risk reduction.</li>
+<li><strong>Technical value:</strong> Prevents a reassuring internal
+narrative from becoming the acceptance criterion.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Cross-paper evidence is strong; oracle availability varies by domain.
+<strong>Confidence: High. Horizon: Now. Effort: M.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> Machine-checkable
+outcomes, effect ledger, gold cases, adjudication policy, judge
+calibration and assertion mutation tests.</li>
+<li><strong>Key risks:</strong> Incomplete oracles, proxy gaming,
+human-review cost, false confidence and non-deterministic
+environments.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build</strong>
+domain semantics; buy generic evaluation workflow only if raw outputs
+and disagreement data remain accessible.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Regrade
+200 traces using independent artifact execution and compare with
+trace/judge verdicts.</li>
+<li><strong>Success metrics and stop conditions:</strong> Success:
+quantified incremental value for each signal, ≥90% human–oracle
+agreement on critical outcomes and calibrated abstention. Stop if no
+credible outcome oracle exists for consequential automation.</li>
+<li><strong>Roadmap trigger:</strong> Outcome checks catch
+release-relevant failures missed by trace evaluation and remain stable
+on an untouched holdout.</li>
+</ul>
+<h4 id="6-boundary-drift-and-skill-requalification-harness--870">6.
+Boundary drift and skill-requalification harness — 87.0</h4>
+<ul>
+<li><strong>Category:</strong> MLOps &amp; Platform / Evaluation &amp;
+Observability.</li>
+<li><strong>Research signal and supporting papers:</strong>
+Deterministic skill economics assume a stable coverage region; phrasing
+and schema/value boundaries fail differently; the CoT paper shows model
+updates change trace regimes. <strong>Evidence label: Enterprise
+Inference.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> A once-safe fast
+path can become unsafe after schema, vocabulary, traffic or model
+change.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+Maintain boundary-focused tests, paraphrase generators, schema
+mutations, temporal holdouts and model-update rehearsal; narrow coverage
+automatically when drift exceeds thresholds.</li>
+<li><strong>Likely architectural placement:</strong> developer platform,
+evaluation, observability and orchestration.</li>
+<li><strong>Expected business value:</strong> reliability, speed, cost
+and risk reduction.</li>
+<li><strong>Technical value:</strong> Turns coverage into a maintained
+contract instead of a one-time score.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Failure
+modes are directly observed; long-run operational evidence is missing.
+<strong>Confidence: Moderate. Horizon: 3–6 months. Effort:
+L.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> Skill registry,
+replayable traffic, synthetic mutation, drift metrics, fallback capacity
+and rollback permissions.</li>
+<li><strong>Key risks:</strong> Synthetic boundary mismatch, alert
+fatigue, hidden dependencies, test leakage and excessive fallback
+cost.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build</strong>
+domain mutations; buy generic drift telemetry where useful.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Mutate
+phrasing, values and schemas for one candidate skill weekly while all
+outputs remain shadow-only.</li>
+<li><strong>Success metrics and stop conditions:</strong> Success: ≥95%
+of seeded boundary failures decline or fall back, with low false decline
+on valid traffic. Stop if the harness cannot represent real drift or
+fallback capacity is inadequate.</li>
+<li><strong>Roadmap trigger:</strong> Two update cycles demonstrate
+accurate detection, automatic narrowing and successful rollback
+rehearsal.</li>
+</ul>
+<h3 id="monitor-for-maturity">Monitor for Maturity</h3>
+<h4 id="7-cross-model-conservative-textual-repair--810">7. Cross-model
+conservative textual repair — 81.0</h4>
+<ul>
+<li><strong>Category:</strong> Reasoning &amp; Planning / Memory &amp;
+Context.</li>
+<li><strong>Research signal and supporting papers:</strong> RFCR reports
++2.75 points with zero source regressions but a −.50-point target-family
+result and explicitly incomplete leave-family-out validation.
+<strong>Evidence label: Paper Fact.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> Reusable
+failure-derived rules can improve recurring reasoning without weight
+updates, but model-specific patches may regress other models.</li>
+<li><strong>Proposed future capability and how it works:</strong> Mine
+shared failures, write atoms with activate/do-not-activate boundaries,
+preserve no-op routing and require per-model protected sets before
+exposure.</li>
+<li><strong>Likely architectural placement:</strong> model gateway,
+context/memory and evaluation.</li>
+<li><strong>Expected business value:</strong> quality, productivity and
+cost.</li>
+<li><strong>Technical value:</strong> Creates inspectable, abstaining
+corrective memory.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Peer-reviewed with public artifacts; small concentrated gain and
+incomplete cross-family evidence. <strong>Confidence: Moderate. Horizon:
+6–12 months. Effort: L.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> Multi-model failure
+corpus, frozen anchors, target-specific validation, versioned atoms and
+no-op fallback.</li>
+<li><strong>Key risks:</strong> Prompt bloat, model regressions, stale
+rules, test leakage, conflicting atoms and privacy leakage from
+failures.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build</strong>
+domain atoms and validation; partner for model-family coverage.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Offline
+leave-one-model-family-out generation and sealed target evaluation on
+one non-sensitive reasoning domain.</li>
+<li><strong>Success metrics and stop conditions:</strong> Success:
+positive paired effect with zero critical regressions and stable
+activation precision. Stop on any target-family protected-case
+regression.</li>
+<li><strong>Roadmap trigger:</strong> End-to-end leave-family-out
+replication plus net cost benefit under internal model/version
+turnover.</li>
+</ul>
+<h4 id="8-learned-identity-based-enterprise-evidence-router--782">8.
+Learned identity-based enterprise evidence router — 78.2</h4>
+<ul>
+<li><strong>Category:</strong> Data &amp; Knowledge Infrastructure / RAG
+&amp; Knowledge.</li>
+<li><strong>Research signal and supporting papers:</strong> Learned
+Enterprise Data Comprehension reports 94.67% macro Pass@1 and 258/270
+raw successes with persistent identities and query-conditioned evidence
+routing. <strong>Evidence label: Paper Fact.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> Agents
+repeatedly rediscover schema roles and cross-system correspondences,
+consuming context and calls.</li>
+<li><strong>Proposed future capability and how it works:</strong> Learn
+reusable semantic identities and dataset-local realizations, retain soft
+memberships and opposing evidence, then surface bounded evidence views
+to a reasoner.</li>
+<li><strong>Likely architectural placement:</strong>
+retrieval/knowledge, data platform and agent layer.</li>
+<li><strong>Expected business value:</strong> productivity, speed,
+quality and strategic differentiation.</li>
+<li><strong>Technical value:</strong> Separates reusable semantic roles
+from dataset-specific schema forms.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Small
+externally validated benchmark but proprietary code/hyperparameters and
+no independent replication. <strong>Confidence: Low. Horizon: 12+
+months. Effort: XL.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> Data catalog,
+semantic identity inventory, provenance, negative evidence, novelty
+detection, training pipeline and benchmark harness.</li>
+<li><strong>Key risks:</strong> Wrong identity mapping, novel-role miss,
+schema leakage, prototype drift, vendor lock-in and uninspectable
+learned routing.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Partner</strong> for
+a sandbox proof; build internal identity definitions and acceptance
+tests. No production buy decision from the paper alone.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Reproduce
+the factorization with a simple, inspectable baseline on two synthetic
+cross-schema datasets before any proprietary learner.</li>
+<li><strong>Success metrics and stop conditions:</strong> Success:
+significant gain over catalog/RAG baselines, traceable evidence identity
+and safe abstention on novel roles. Stop if provenance is lost or the
+learned router underperforms a simpler baseline.</li>
+<li><strong>Roadmap trigger:</strong> Independent internal replication
+on two real but de-identified domains with transparent failure analysis
+and acceptable maintenance economics.</li>
+</ul>
+<h3 id="deprioritize-for-now">Deprioritize for Now</h3>
+<h4 id="9-ungated-skill-promotion-or-cot-only-approval--530">9. Ungated
+skill promotion or CoT-only approval — 53.0</h4>
+<ul>
+<li><strong>Category:</strong> Safety &amp; Governance / Agentic
+AI.</li>
+<li><strong>Research signal and supporting papers:</strong>
+Near-boundary deterministic errors evade trace conformance; CoT
+influence is task/model-dependent; acknowledgment and visible reasoning
+do not prove artifact revision. <strong>Evidence label: Paper
+Fact.</strong></li>
+<li><strong>Enterprise problem or opportunity:</strong> Immediate
+caching and trace-based approval are cheap but confuse repeatability or
+legibility with correctness.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+<strong>Do not deploy as an autonomous production mechanism.</strong> If
+studied, use an ephemeral sandbox with no credentials, durable state or
+external effects, and compare against gated alternatives.</li>
+<li><strong>Likely architectural placement:</strong> isolated experiment
+infrastructure only.</li>
+<li><strong>Expected business value:</strong> Research learning only;
+production value is unproven.</li>
+<li><strong>Technical value:</strong> Negative control for measuring the
+benefit of coverage, fallback and outcome acceptance.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+evidence against the proxy and no credible governed path.
+<strong>Confidence: High. Horizon: 12+ months. Effort: S for sandbox;
+unsafe for production.</strong></li>
+<li><strong>Dependencies and prerequisites:</strong> Complete isolation,
+synthetic data, hard reset, protected cases, kill switch and human
+supervision.</li>
+<li><strong>Key risks:</strong> Repeatable wrong actions, stale
+assumptions, evaluator gaming, hidden boundary failure and operator
+over-trust.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Neither for
+production.</strong> Build only a minimal research control arm.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Compare
+ungated versus gated promotion on synthetic boundary cases, resetting
+all state after each trial.</li>
+<li><strong>Success metrics and stop conditions:</strong> Success is
+evidence generation only. Stop on sandbox escape, protected-case
+regression or any durable external effect.</li>
+<li><strong>Roadmap trigger:</strong> None from benchmark novelty.
+Reconsider only after independent replication, explicit authority
+boundaries, comprehensive outcome oracles and internal governance
+approval.</li>
+</ul>
+<h2 id="implementation-priorities">Implementation priorities</h2>
+<h3 id="next-30-days">Next 30 days</h3>
+<ol type="1">
+<li>Inventory workflows where ambiguity becomes code, plans, tool
+arguments or retained memory; identify which systems can invalidate
+rather than patch state.</li>
+<li>Select one repeated, low-consequence workflow and build a read-only
+coverage-gated deterministic shadow with the incumbent reasoner
+retained.</li>
+<li>Define separate acceptance signals for trace conformance and final
+artifact correctness.</li>
+<li>Assemble 100 ambiguity and boundary cases from historical,
+de-identified interactions and annotate epistemic status plus expected
+durable outcome.</li>
+</ol>
+<h3 id="36-months-conditional-on-pilot-evidence">3–6 months, conditional
+on pilot evidence</h3>
+<ol type="1">
+<li>Add state lineage, counterfactual replay and coverage narrowing to
+the shared evaluation plane.</li>
+<li>Qualify reasoning-trace monitoring per model, task slice and update
+using causal perturbations.</li>
+<li>Calibrate judges and outcome oracles with blinded human review and
+sealed holdouts.</li>
+<li>Evaluate routed textual repair only after target-family protected
+sets and no-op fallback exist.</li>
+</ol>
+<h3 id="do-not-treat-as-approved-roadmap-commitments">Do not treat as
+approved roadmap commitments</h3>
+<ul>
+<li>Do not infer production safety from exact replay, a clean reasoning
+trace, a statistical probe or a benchmark score.</li>
+<li>Do not persist self-authored skills, corrective memories or learned
+identity mappings without provenance, a decline path, protected cases
+and rollback.</li>
+<li>Do not assume enterprise value without internal recurrence, latency,
+cost, security, privacy, governance and adoption evidence.</li>
+</ul>
+<h2 id="knowledge-reinforcement">Knowledge reinforcement</h2>
+<ol type="1">
+<li><strong>Why is deterministic replay not sufficient?</strong> It
+proves the same procedure repeats; it does not prove the coverage guard
+admitted the right inputs or that parameters and outcomes are
+correct.</li>
+<li><strong>Why can a summary worsen dialogue state?</strong> It may
+retain content while dropping whether an assumption was tentative,
+contradicted or unresolved, converting uncertainty into apparent
+fact.</li>
+<li><strong>What does 98.8% explained deviance mean?</strong> In the
+paper's fitted Gemma design, task difficulty accounts for nearly all
+explained model deviance relative to perturbation type. It is not a
+universal causal percentage.</li>
+<li><strong>Why separate trace and outcome acceptance?</strong> Trace
+conformance missed most near-boundary skill errors; acknowledgments and
+CoT can appear correct while the artifact remains contaminated.</li>
+<li><strong>Why are the two routed-learning papers Watchlist?</strong>
+RFCR has a modest, concentrated source gain with cross-model
+regressions; the enterprise-data router is proprietary and tested on
+only 54 queries.</li>
+</ol>
+<h2 id="source-and-artifact-register">Source and artifact register</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Primary source</th>
+<th>Artifact</th>
+<th>Verified boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Skills Should Form Habits</td>
+<td><a href="https://arxiv.org/abs/2609.25299">arXiv:2609.25299</a></td>
+<td>No public repo linked</td>
+<td>Full paper reviewed; CC BY 4.0; public reproduction package not
+verified</td>
+</tr>
+<tr class="even">
+<td>Clarification Is Not Correction</td>
+<td><a href="https://arxiv.org/abs/2609.25337">arXiv:2609.25337</a></td>
+<td>No public repo/data linked</td>
+<td>Full paper reviewed; no executable reproduction artifact
+verified</td>
+</tr>
+<tr class="odd">
+<td>Decorative to Load-Bearing</td>
+<td><a href="https://arxiv.org/abs/2609.25366">arXiv:2609.25366</a></td>
+<td><a href="https://github.com/r2m-ai/load-bearing-cot">MIT
+repository</a></td>
+<td>Code/tests/results/annotations present; full dataset linked; some
+reusable GPU path not yet validated</td>
+</tr>
+<tr class="even">
+<td>Robust Failure, Conservative Repair</td>
+<td><a href="https://arxiv.org/abs/2609.25400">arXiv:2609.25400</a></td>
+<td><a href="https://github.com/ChicagoHAI/RFCR">public
+repository</a></td>
+<td>Frozen atoms/cheat sheets/code present; cross-family zero-regression
+not established</td>
+</tr>
+<tr class="odd">
+<td>Learned Enterprise Data Comprehension</td>
+<td><a href="https://arxiv.org/abs/2609.25286">arXiv:2609.25286</a></td>
+<td>Proprietary implementation</td>
+<td>Benchmark externally validated per authors; code and some
+hyperparameters withheld</td>
+</tr>
+</tbody>
+</table>
+<h2 id="closing-judgment">Closing judgment</h2>
+<p>Today's papers do not justify autonomous skill promotion, universal
+CoT monitoring or a proprietary evidence router. They justify a shared
+engineering rule: <strong>do not compress uncertainty, coverage or
+causality into a single operational state without preserving the
+evidence needed to reverse that compression.</strong> The best near-term
+move is a shadow control plane that keeps assumptions typed, keeps the
+reasoned fallback executable, evaluates durable outcomes independently
+and requalifies every boundary when the model, task, schema or traffic
+changes.</p></main></div>
+<footer>AI Research Intelligence Brief · September 23, 2026 · Research options, not deployment approval.</footer>
+<div class="toolbar"><button onclick="window.print()" aria-label="Print report">Print</button><button id="top" aria-label="Back to top">↑ Top</button></div>
+<script>
+const p=document.getElementById('progress');addEventListener('scroll',()=>{const h=document.documentElement;p.style.width=((h.scrollTop/(h.scrollHeight-h.clientHeight))*100)+'%'});document.getElementById('top').onclick=()=>scrollTo({top:0,behavior:'smooth'});
+document.querySelectorAll('main h4').forEach(h=>{if(/^\d+\./.test(h.textContent))h.setAttribute('data-backlog','true')});
+</script>
+</body></html>

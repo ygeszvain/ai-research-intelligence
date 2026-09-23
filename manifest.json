@@ -3,12 +3,30 @@
     "title": "AI Research Intelligence",
     "url": "https://ygeszvain.github.io/ai-research-intelligence",
     "description": "Evidence-grounded daily AI and machine-learning research intelligence.",
-    "generated_at_utc": "2026-09-22T09:00:00.000Z",
-    "report_count": 44,
-    "latest_report": "2026-09-22",
-    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-22.html"
+    "generated_at_utc": "2026-09-23T09:00:00.000Z",
+    "report_count": 45,
+    "latest_report": "2026-09-23",
+    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-23.html"
   },
   "reports": [
+    {
+      "date": "2026-09-23",
+      "date_display": "September 23, 2026",
+      "title": "AI Research Intelligence Brief — September 23, 2026",
+      "excerpt": "Three deep papers show why enterprise AI should preserve uncertainty before commitment, prove deterministic-skill boundaries, and causally qualify reasoning oversight.",
+      "topics": [
+        "Memory & Context",
+        "Agentic AI",
+        "Evaluation & Observability",
+        "Reasoning & Planning",
+        "MLOps & Platform",
+        "Data & Knowledge Infrastructure"
+      ],
+      "path": "reports/2026-09-23.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-23.html",
+      "size_bytes": 81541,
+      "sha256": "0a780c0737df2a81ec9f99e1e002a786c5b7da6315a51f2c2e7518479ade2b99"
+    },
     {
       "date": "2026-09-22",
       "date_display": "September 22, 2026",
