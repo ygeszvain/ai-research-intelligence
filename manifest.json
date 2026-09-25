@@ -3,12 +3,30 @@
     "title": "AI Research Intelligence",
     "url": "https://ygeszvain.github.io/ai-research-intelligence",
     "description": "Evidence-grounded daily AI and machine-learning research intelligence.",
-    "generated_at_utc": "2026-09-24T09:00:00.000Z",
-    "report_count": 46,
-    "latest_report": "2026-09-24",
-    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-24.html"
+    "generated_at_utc": "2026-09-25T09:00:00.000Z",
+    "report_count": 47,
+    "latest_report": "2026-09-25",
+    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-25.html"
   },
   "reports": [
+    {
+      "date": "2026-09-25",
+      "date_display": "September 25, 2026",
+      "title": "AI Research Intelligence Brief — September 25, 2026",
+      "excerpt": "Three deep papers show why enterprise agents need independent trace custody, stateful effect-level monitoring, and simulation that screens without replacing live acceptance.",
+      "topics": [
+        "AI Security",
+        "Agentic AI",
+        "Evaluation & Observability",
+        "MLOps & Platform",
+        "Safety & Governance",
+        "Human-AI Workflow"
+      ],
+      "path": "reports/2026-09-25.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-25.html",
+      "size_bytes": 78432,
+      "sha256": "d34ce04cd02fb3ec85eec2fec45a53fc69b0ea2be5d98c41741e198c66ed389d"
+    },
     {
       "date": "2026-09-24",
       "date_display": "September 24, 2026",
