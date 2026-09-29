@@ -3,12 +3,30 @@
     "title": "AI Research Intelligence",
     "url": "https://ygeszvain.github.io/ai-research-intelligence",
     "description": "Evidence-grounded daily AI and machine-learning research intelligence.",
-    "generated_at_utc": "2026-09-28T09:00:00.000Z",
-    "report_count": 50,
-    "latest_report": "2026-09-28",
-    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-28.html"
+    "generated_at_utc": "2026-09-29T09:00:00.000Z",
+    "report_count": 51,
+    "latest_report": "2026-09-29",
+    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-29.html"
   },
   "reports": [
+    {
+      "date": "2026-09-29",
+      "date_display": "September 29, 2026",
+      "title": "AI Research Intelligence Brief — September 29, 2026",
+      "excerpt": "Three deep papers show why reliable AI needs independent evidence at artifact-memory, post-failure claim, and verifier-optimization boundaries.",
+      "topics": [
+        "Agentic AI",
+        "Memory & Context",
+        "Human-AI Workflow",
+        "Evaluation & Observability",
+        "Safety & Governance",
+        "AI Security"
+      ],
+      "path": "reports/2026-09-29.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-29.html",
+      "size_bytes": 84078,
+      "sha256": "1b6842d3b06bcac9e6ff69b4eebf56f38b1ab16d4547a72ef3624c2d5a06d1cd"
+    },
     {
       "date": "2026-09-28",
       "date_display": "September 28, 2026",
