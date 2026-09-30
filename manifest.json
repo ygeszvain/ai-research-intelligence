@@ -3,12 +3,30 @@
     "title": "AI Research Intelligence",
     "url": "https://ygeszvain.github.io/ai-research-intelligence",
     "description": "Evidence-grounded daily AI and machine-learning research intelligence.",
-    "generated_at_utc": "2026-09-29T09:00:00.000Z",
-    "report_count": 51,
-    "latest_report": "2026-09-29",
-    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-29.html"
+    "generated_at_utc": "2026-09-30T09:00:00.000Z",
+    "report_count": 52,
+    "latest_report": "2026-09-30",
+    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-30.html"
   },
   "reports": [
+    {
+      "date": "2026-09-30",
+      "date_display": "September 30, 2026",
+      "title": "AI Research Intelligence Brief — September 30, 2026",
+      "excerpt": "Three deep papers show why reliable AI must distinguish declared plans, tool observations, durable effects, and benchmark score provenance.",
+      "topics": [
+        "Agentic AI",
+        "Reasoning & Planning",
+        "AI Software Engineering",
+        "Evaluation & Observability",
+        "Safety & Governance",
+        "AI Security"
+      ],
+      "path": "reports/2026-09-30.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-30.html",
+      "size_bytes": 83139,
+      "sha256": "fbe1801b10d4793fd8da8a982b024c0add324497b2a136c632e01cc6a5202260"
+    },
     {
       "date": "2026-09-29",
       "date_display": "September 29, 2026",
