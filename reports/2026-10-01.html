@@ -1,0 +1,1625 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Evidence-grounded AI Research Intelligence Brief for October 1, 2026: what generalizes in agent evaluation and what must remain task-qualified.">
+<meta name="report-date" content="2026-10-01">
+<meta name="research-window" content="2026-09-30T04:00:00-05:00/2026-10-01T04:00:00-05:00 America/Chicago">
+<meta name="deep-paper-count" content="3">
+<meta name="watchlist-count" content="2">
+<meta name="theme-color" content="#071321">
+<title>AI Research Intelligence Brief — October 1, 2026</title>
+<style>
+:root{--bg:#06111d;--panel:#0c1c2a;--panel2:#10283a;--text:#e9f2f8;--muted:#9fb6c6;--line:#2a465b;--cyan:#46dbc6;--gold:#f4c96b;--rose:#ff8f9b;--blue:#70adff;--max:1180px;color-scheme:dark}
+@media(prefers-color-scheme:light){:root{--bg:#f4f7f8;--panel:#fff;--panel2:#edf4f7;--text:#102131;--muted:#526979;--line:#cddbe2;--cyan:#087f73;--gold:#9b6300;--rose:#b92b45;--blue:#1661ad;color-scheme:light}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 90% 0,rgba(70,219,198,.12),transparent 30rem),var(--bg);color:var(--text);font:16px/1.67 ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}a{color:var(--cyan);text-underline-offset:3px}a:hover{text-decoration-thickness:2px}header{border-bottom:1px solid var(--line);background:linear-gradient(135deg,rgba(70,219,198,.09),rgba(112,173,255,.05));padding:54px 22px 34px}.hero{max-width:var(--max);margin:auto}.eyebrow{color:var(--cyan);text-transform:uppercase;letter-spacing:.15em;font-size:.76rem;font-weight:800}h1{font-size:clamp(2.2rem,6vw,4.7rem);line-height:.98;max-width:980px;margin:.35rem 0 1rem;letter-spacing:-.055em}header p{max-width:850px;color:var(--muted);font-size:1.09rem}.chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}.chip{border:1px solid var(--line);border-radius:999px;padding:6px 11px;background:var(--panel);font-size:.8rem}.topbets{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}.bet{border:1px solid var(--line);background:var(--panel);border-radius:14px;padding:15px}.bet b{display:block;color:var(--gold);font-size:1.15rem}.layout{max-width:var(--max);margin:auto;display:grid;grid-template-columns:250px minmax(0,1fr);gap:34px;padding:30px 22px 80px}nav{position:sticky;top:16px;align-self:start;max-height:calc(100vh - 32px);overflow:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:14px}nav strong{display:block;margin:2px 8px 10px;color:var(--gold)}nav ul{list-style:none;margin:0;padding:0}nav li{margin:0}nav a{display:block;color:var(--muted);text-decoration:none;padding:5px 8px;border-radius:7px;font-size:.83rem;line-height:1.25}nav a:hover{background:var(--panel2);color:var(--text)}main{min-width:0}main>h1{font-size:1.8rem;margin:2.6rem 0 1rem;padding-top:.7rem;border-top:1px solid var(--line);letter-spacing:-.02em}main>h1:first-child{margin-top:0}main h2{font-size:1.35rem;margin-top:2rem;color:var(--cyan)}main h3{font-size:1.08rem;color:var(--gold);margin-bottom:.45rem}p,li{max-width:88ch}blockquote{margin:1rem 0;padding:1rem 1.2rem;border-left:4px solid var(--gold);background:var(--panel);color:var(--muted)}pre{white-space:pre-wrap;overflow:auto;background:#07101a;border:1px solid var(--line);border-radius:14px;padding:18px;color:#dcecf2;font-size:.86rem;line-height:1.45}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}table{width:100%;border-collapse:collapse;margin:1.25rem 0;background:var(--panel);font-size:.86rem}th,td{padding:10px 12px;border:1px solid var(--line);text-align:left;vertical-align:top}th{color:var(--gold);background:var(--panel2)}hr{border:0;border-top:1px solid var(--line)}main h3+ul,main h2+ul{border:1px solid var(--line);background:linear-gradient(135deg,var(--panel),var(--panel2));border-radius:14px;padding:15px 22px 15px 34px}main h3+ul li,main h2+ul li{margin:.5rem 0}.progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--cyan),var(--gold));width:0;z-index:9}.toolbar{position:fixed;right:18px;bottom:18px;display:flex;gap:8px}.toolbar button{border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:999px;padding:9px 12px;cursor:pointer;box-shadow:0 8px 30px rgba(0,0,0,.2)}.label{font-size:.75rem;color:var(--muted)}footer{border-top:1px solid var(--line);padding:24px;text-align:center;color:var(--muted)}
+@media(max-width:850px){.topbets{grid-template-columns:1fr}.layout{grid-template-columns:1fr}nav{position:relative;top:0;max-height:none}nav ul{columns:2}h1{font-size:2.65rem}}
+@media(max-width:520px){header{padding-top:34px}.layout{padding:20px 14px 60px}nav ul{columns:1}table{display:block;overflow-x:auto}h1{font-size:2.25rem}}
+@media print{body{background:white;color:#111;font-size:11pt}header{padding:18px 0}.layout{display:block;padding:0}nav,.toolbar,.progress{display:none}a{color:#145c70}main>h1{break-before:page}main>h1:first-child{break-before:auto}table,pre{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<header><div class="hero">
+<div class="eyebrow">AI Research Intelligence · Evidence before enthusiasm</div>
+<h1>Generalize the evaluation substrate, not success.</h1>
+<p>October 1, 2026 briefing. Three deep papers connect failure replay, judge variability, and multi-turn human-facing trade-offs to one design rule: share evaluation mechanics, but re-qualify task meaning, measurement, and assumptions.</p>
+<div class="chips"><span class="chip">3 deep papers</span><span class="chip">2 Watchlist</span><span class="chip">24-hour window</span><span class="chip">9 enterprise options</span><span class="chip">Primary sources + full-paper review</span></div>
+<div class="topbets"><div class="bet"><span class="label">TOP BET 1 · PROTOTYPE SOON</span><b>92.9 · Trace + replay</b><span>Compare corrections with matched retries from the same checkpoint.</span></div><div class="bet"><span class="label">TOP BET 2 · PROTOTYPE SOON</span><b>91.5 · Judge reliability</b><span>Measure drift, verdict flips, and detectable change before release.</span></div><div class="bet"><span class="label">TOP BET 3 · PROTOTYPE SOON</span><b>90.7 · Dual-objective trajectories</b><span>Test truthfulness and calibrated support separately over time.</span></div></div>
+</div></header>
+<div class="layout"><nav><strong>Navigate</strong><ul>
+<li><a href="#scope-window-and-evidence-policy"
+id="toc-scope-window-and-evidence-policy">Scope, window, and evidence
+policy</a></li>
+<li><a href="#executive-signal" id="toc-executive-signal">Executive
+signal</a></li>
+<li><a href="#top-3-future-bets" id="toc-top-3-future-bets">Top 3 Future
+Bets</a></li>
+<li><a
+href="#deep-paper-1--failure-traces-can-generalize-their-frequencies-and-diagnoses-cannot"
+id="toc-deep-paper-1--failure-traces-can-generalize-their-frequencies-and-diagnoses-cannot">Deep
+paper 1 — Failure traces can generalize; their frequencies and diagnoses
+cannot</a>
+<ul>
+<li><a href="#contribution-and-quantitative-claim-trace"
+id="toc-contribution-and-quantitative-claim-trace">Contribution and
+quantitative claim trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison"
+id="toc-methodological-critique-and-prior-work-comparison">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#reproducibility-and-enterprise-readiness"
+id="toc-reproducibility-and-enterprise-readiness">Reproducibility and
+enterprise readiness</a></li>
+</ul></li>
+<li><a
+href="#deep-paper-2--judge-agreement-is-not-accuracy-and-rank-stability-is-not-absolute-reliability"
+id="toc-deep-paper-2--judge-agreement-is-not-accuracy-and-rank-stability-is-not-absolute-reliability">Deep
+paper 2 — Judge agreement is not accuracy, and rank stability is not
+absolute reliability</a>
+<ul>
+<li><a href="#contribution-and-quantitative-claim-trace-1"
+id="toc-contribution-and-quantitative-claim-trace-1">Contribution and
+quantitative claim trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison-1"
+id="toc-methodological-critique-and-prior-work-comparison-1">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#reproducibility-and-enterprise-readiness-1"
+id="toc-reproducibility-and-enterprise-readiness-1">Reproducibility and
+enterprise readiness</a></li>
+</ul></li>
+<li><a
+href="#deep-paper-3--one-axis-safety-improvements-can-create-a-different-human-facing-failure"
+id="toc-deep-paper-3--one-axis-safety-improvements-can-create-a-different-human-facing-failure">Deep
+paper 3 — One-axis safety improvements can create a different
+human-facing failure</a>
+<ul>
+<li><a href="#contribution-and-quantitative-claim-trace-2"
+id="toc-contribution-and-quantitative-claim-trace-2">Contribution and
+quantitative claim trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison-2"
+id="toc-methodological-critique-and-prior-work-comparison-2">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#reproducibility-and-enterprise-readiness-2"
+id="toc-reproducibility-and-enterprise-readiness-2">Reproducibility and
+enterprise readiness</a></li>
+</ul></li>
+<li><a href="#watchlist" id="toc-watchlist">Watchlist</a>
+<ul>
+<li><a
+href="#who-verifies-the-graph--certificates-inherit-their-assumptions"
+id="toc-who-verifies-the-graph--certificates-inherit-their-assumptions">Who
+Verifies the Graph? — certificates inherit their assumptions</a></li>
+<li><a
+href="#safety-of-latent-communication--the-interface-can-undo-component-alignment"
+id="toc-safety-of-latent-communication--the-interface-can-undo-component-alignment">Safety
+of Latent Communication — the interface can undo component
+alignment</a></li>
+</ul></li>
+<li><a href="#cross-paper-synthesis--a-layered-evaluation-contract"
+id="toc-cross-paper-synthesis--a-layered-evaluation-contract">Cross-paper
+synthesis — a layered evaluation contract</a></li>
+<li><a href="#enterprise-ai-enhancement-backlog"
+id="toc-enterprise-ai-enhancement-backlog">Enterprise AI Enhancement
+Backlog</a>
+<ul>
+<li><a href="#priority-method-and-uncertainty"
+id="toc-priority-method-and-uncertainty">Priority method and
+uncertainty</a></li>
+<li><a href="#prototype-soon" id="toc-prototype-soon">Prototype
+Soon</a></li>
+<li><a href="#prepare-foundations" id="toc-prepare-foundations">Prepare
+Foundations</a></li>
+<li><a href="#monitor-for-maturity"
+id="toc-monitor-for-maturity">Monitor for Maturity</a></li>
+<li><a href="#deprioritize-for-now"
+id="toc-deprioritize-for-now">Deprioritize for Now</a></li>
+</ul></li>
+<li><a href="#enterprise-ai-architecture-implications"
+id="toc-enterprise-ai-architecture-implications">Enterprise AI
+Architecture Implications</a></li>
+<li><a href="#implementation-priorities"
+id="toc-implementation-priorities">Implementation priorities</a>
+<ul>
+<li><a href="#now" id="toc-now">Now</a></li>
+<li><a href="#next-36-months" id="toc-next-36-months">Next 3–6
+months</a></li>
+<li><a href="#research-queue" id="toc-research-queue">Research
+queue</a></li>
+</ul></li>
+<li><a href="#knowledge-reinforcement"
+id="toc-knowledge-reinforcement">Knowledge reinforcement</a>
+<ul>
+<li><a href="#what-should-be-remembered"
+id="toc-what-should-be-remembered">What should be remembered</a></li>
+<li><a href="#questions-for-the-next-design-review"
+id="toc-questions-for-the-next-design-review">Questions for the next
+design review</a></li>
+</ul></li>
+<li><a href="#source-register-and-evidence-boundaries"
+id="toc-source-register-and-evidence-boundaries">Source register and
+evidence boundaries</a>
+<ul>
+<li><a href="#deep-papers" id="toc-deep-papers">Deep papers</a></li>
+<li><a href="#watchlist-1" id="toc-watchlist-1">Watchlist</a></li>
+<li><a href="#interpretation-boundary"
+id="toc-interpretation-boundary">Interpretation boundary</a></li>
+</ul></li>
+</ul></nav><main><h1 id="scope-window-and-evidence-policy">Scope,
+window, and evidence policy</h1>
+<p><strong>Research window.</strong> The exact window was Wednesday,
+September 30, 2026 at 4:00 AM CDT through Thursday, October 1, 2026 at
+4:00 AM CDT (America/Chicago; 09:00 UTC to 09:00 UTC). The complete
+October 1 arXiv announcement batch was screened. Titles and identifiers
+were checked against the 52-report archive through September 30. Three
+previously uncovered papers cleared deep analysis; two remain
+Watchlist-only.</p>
+<p><strong>Discovery.</strong> Screening covered the current arXiv
+artificial-intelligence, machine-learning, language, security,
+multi-agent, human-computer-interaction, software-engineering, and
+systems corpus, plus Nature Portfolio, Science, ACL Anthology,
+OpenReview, first-party project pages, and linked repositories.
+Selection favored work with inspectable denominators, matched controls,
+uncertainty estimates, released artifacts, explicit failure mechanisms,
+and enterprise decision value. All five selections are September 30
+preprints. <em>Who Verifies the Graph?</em> reports acceptance to a
+NeurIPS 2026 workshop; none of the three deep papers is peer-reviewed
+archival evidence.</p>
+<p><strong>Anti-duplication.</strong> None of today’s identifiers or
+titles appeared in the archive. Prior reports covered benchmark
+contracts, workflow acceptance, stateful trajectories, user-proxy
+fidelity, disagreement preservation, evidence provenance, and
+task-conditioned qualification. Today’s incremental question is narrower
+and operational: <em>what parts of an agent-evaluation process can be
+generalized across tasks, and which parts must remain explicitly task-,
+judge-, simulator-, policy-, and objective-specific?</em></p>
+<p><strong>Evidence labels.</strong> <strong>Paper Fact</strong> is
+directly reported in a paper or verified first-party artifact.
+<strong>Independent Analysis</strong> is this briefing’s comparison,
+calculation, or methodological judgment. <strong>Enterprise
+Inference</strong> translates evidence into a bounded future option.
+<strong>Uncertainty</strong> marks missing causal, external-validity,
+security, privacy, governance, economic, adoption, artifact, or
+licensing evidence. Provider-scale experiments were not rerun. No
+benchmark result authorizes production deployment.</p>
+<h1 id="executive-signal">Executive signal</h1>
+<blockquote>
+<p><strong>Generalize the evaluation substrate, not the meaning of
+success.</strong> Trace capture, replay, versioning, cost telemetry, and
+evidence lineage can be shared. Failure taxonomies, judges, simulators,
+causal assumptions, and objective trade-offs must be separately
+qualified for the task and decision.</p>
+</blockquote>
+<p>The three deep papers expose different reasons a universal agent
+score is unsafe:</p>
+<ol type="1">
+<li><strong>Agent Error Dataset (AED)</strong> scales failure analysis
+to 50,228 error–diagnosis pairs across 33 environments, 19 harness
+families, and 23 policy models. Yet its own source distribution is
+concentrated, its replay subset is separate from its training subsets,
+and a successful correction does not prove the diagnosis was uniquely
+right. The reusable unit is the trace-and-replay contract, not a
+universal error rate.</li>
+<li><strong>Better Deck or Different Judge?</strong> shows that the same
+17 banking deliverables can look materially different under different
+LLM judges. Five judges consistently favor the developed harness over
+the same 27B model used directly, but absolute agreement is weak,
+repeated grading flips verdicts, and there is no banker-rated reference.
+The reusable unit is a judge-reliability protocol, not one model
+grader.</li>
+<li><strong>FIGS</strong> shows why one-axis optimization can be
+misleading. A factuality-focused prompt sharply reduces sycophancy for
+several models while increasing failure on calibrated validation;
+single-turn testing sees only a small fraction of failures that emerge
+later. The reusable unit is a multi-turn dual-objective trajectory
+evaluation, not “less sycophancy” in isolation.</li>
+</ol>
+<p>The Watchlist extends the boundary. <strong>Who Verifies the
+Graph?</strong> demonstrates that a verifier can emit internally valid
+certificates while a misspecified causal graph makes 15.3% or 48.9% of
+executions false; checking the action cannot recover beneficial actions
+rejected before that check. <strong>Safety of Latent
+Communication</strong> shows that safety-aligned component models can
+become unsafe after a learned communication link changes the composed
+system; benign link training alone raises aggregate harmful compliance
+in all three studied topologies.</p>
+<p><strong>Decision posture.</strong> Prototype shared trace/replay
+infrastructure, judge-reliability gates, and multi-turn dual-objective
+qualification in isolated sandboxes. Prepare evaluation-contract
+registries, error-data admission controls, and causal-assumption
+attestations. Monitor learned latent communication until artifacts,
+transfer evidence, and system-level safety economics mature.
+Deprioritize procurement, release, or governance decisions based on one
+aggregate “agent score.”</p>
+<h1 id="top-3-future-bets">Top 3 Future Bets</h1>
+<ol type="1">
+<li><strong>Failure-trace and matched-replay evaluation substrate —
+92.9/100.</strong> Why it matters: failed trajectories contain reusable
+state, action, observation, and checkpoint evidence that final reward
+discards. Evidence that would change the recommendation: internal replay
+proves too nondeterministic to separate correction value from retry
+luck, or trace capture creates unacceptable privacy/security exposure.
+Next reversible action: instrument 100 sanitized failed sandbox
+trajectories and compare proposed corrections with original-action
+retries from the same checkpoint.</li>
+<li><strong>Judge reliability, drift, and minimum-detectable-change gate
+— 91.5/100.</strong> Why it matters: a higher score can reflect a
+different judge, session, or ranking rather than a better artifact.
+Evidence that would change the recommendation: a domain-expert reference
+shows one frozen judge is accurate, stable, and decision-calibrated
+across task families and model upgrades. Next reversible action: have
+three frozen model judges and two domain experts blindly rescore 30
+unchanged artifacts twice; estimate rank stability, absolute agreement,
+verdict flips, and the smallest detectable improvement.</li>
+<li><strong>Multi-turn dual-objective social-behavior qualification —
+90.7/100.</strong> Why it matters: optimizing truthfulness without
+preserving calibrated support can replace one failure with another, and
+the failure may appear only after sustained pressure. Evidence that
+would change the recommendation: representative internal conversations
+show single-turn slices predict trajectory outcomes and no material
+objective trade-off exists. Next reversible action: replay 60 synthetic
+but policy-reviewed ten-turn scenarios, score factual integrity and
+calibrated validation separately, and forbid automatic rollout decisions
+from their average.</li>
+</ol>
+<h1
+id="deep-paper-1--failure-traces-can-generalize-their-frequencies-and-diagnoses-cannot">Deep
+paper 1 — Failure traces can generalize; their frequencies and diagnoses
+cannot</h1>
+<p><strong>Identity and status.</strong> <em>Agent Error Dataset:
+Scaling 50,000 Error–Diagnosis Pairs for Failure Analysis and
+Error-Aware Post-Training</em>; Kunlun Zhu, Xuyan Ye, Yibo Li, Cheng
+Qian, Beibin Li, and Heng Ji; arXiv:2609.40111v1; submitted September
+30, 2026 at 16:40:22 UTC; preprint; paper licensed CC BY-NC-SA 4.0. The
+paper says code and data will be released after acceptance; no public
+repository or dataset was verified at review time. (<a
+href="https://arxiv.org/abs/2609.40111">paper</a>)</p>
+<h2 id="contribution-and-quantitative-claim-trace">Contribution and
+quantitative claim trace</h2>
+<p>AED preserves source traces, execution metadata, a proposed failure
+diagnosis, a concrete correction, and—where the environment allows it—a
+matched replay from the same checkpoint. Its five-stage Agentic
+Error-to-Training pipeline produces separate views for diagnosis
+learning and actor recovery.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>Decision meaning</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Scale is broad but not balanced</td>
+<td style="text-align: right;">50,228 pairs from 9,961 tasks, 33
+environments, 19 harness families, and 23 policy models</td>
+<td>A common trace schema can span heterogeneous agent systems</td>
+<td>Counts are coverage, not population failure rates</td>
+</tr>
+<tr class="even">
+<td>Source diversity is concentrated</td>
+<td style="text-align: right;">38,278 distinct source blobs; 9,846 have
+multiple diagnoses; mean 1.31 pairs/blob; five largest environments
+contribute 44.0% and five largest harnesses 78.8%</td>
+<td>Sampling weights and source identity must remain visible</td>
+<td>Breadth does not establish representativeness</td>
+</tr>
+<tr class="odd">
+<td>Corrections outperform matched retries</td>
+<td style="text-align: right;">Across 3,062 replay pairs, first-proposal
+corrections pass 51.1% versus 18.4% for retrying the original action:
++32.7 points, 95% interval [28.4, 37.0]</td>
+<td>Matched checkpoint replay is a strong evaluation primitive</td>
+<td>Only replay-capable environments enter this comparison</td>
+</tr>
+<tr class="even">
+<td>Successful correction is not unique proof</td>
+<td style="text-align: right;">Among 1,564 successful corrections, the
+original retry also succeeds in 470 cases (30.1%)</td>
+<td>Success may reflect stochastic recovery rather than a uniquely
+correct diagnosis</td>
+<td>Counterfactual alternatives remain incomplete</td>
+</tr>
+<tr class="odd">
+<td>Diagnosis supervision can transfer within its own split</td>
+<td style="text-align: right;">Full-diagnosis fine-tuning on 1,656
+source tasks raises Qwen3-8B exact-step agreement from 47.2% to 63.6%
+over three seeds on a 943-case holdout; strongest prompted reference is
+54.7%</td>
+<td>Curated failure labels can outperform prompting for label
+imitation</td>
+<td>Agreement is with internal teacher labels, not independent ground
+truth</td>
+</tr>
+<tr class="even">
+<td>More diagnosis data improves the reported target</td>
+<td style="text-align: right;">Mean agreement improves at four
+increasing training-set sizes</td>
+<td>Scaling evidence is stronger than a single endpoint</td>
+<td>One model family and one label definition</td>
+</tr>
+<tr class="odd">
+<td>Repair data can help actor recovery</td>
+<td style="text-align: right;">In a single-seed WebShop-lite comparison,
+action-only repair training is 6.67 points above success-only
+training</td>
+<td>Failure-local correction data can complement successful
+trajectories</td>
+<td>Single seed, one small environment, recipe-specific objective</td>
+</tr>
+</tbody>
+</table>
+<h2
+id="methodological-critique-and-prior-work-comparison">Methodological
+critique and prior-work comparison</h2>
+<p>Agent benchmarks typically compress a rollout into final reward;
+failure-diagnosis work often uses small taxonomies, synthetic errors, or
+untested critiques; post-training datasets usually keep only successful
+demonstrations. AED advances the evidence chain by preserving the
+original trace and, when possible, returning to the same checkpoint to
+compare a proposed correction with an original-action retry.</p>
+<p>The matched replay design is the strongest contribution because it
+partially separates “a plausible explanation” from “an action that
+changes the verifier outcome.” The explicit retry baseline matters:
+without it, any recovery could be attributed to re-execution
+stochasticity. Reporting overlap between successful corrections and
+successful retries is valuable adverse evidence.</p>
+<p>The dataset is not one nested experiment. Collection, replay
+validation, diagnosis fine-tuning, and actor training use different
+eligible subsets and objectives. The 50,228-pair headline therefore
+cannot be read as a chain from every failure through a verified
+diagnosis to a training gain. Source-frequency concentration is
+substantial, and multiple diagnoses per trace are not independent
+observations. Teacher-label agreement measures consistency with the
+dataset’s diagnostic convention, not causal truth. The frozen diagnosis
+release omits some original system prompts and tool lists, earlier label
+defects remain excluded rather than experimentally repaired, and the
+single-seed actor result is preliminary.</p>
+<h2 id="reproducibility-and-enterprise-readiness">Reproducibility and
+enterprise readiness</h2>
+<p>The paper documents schemas, stages, denominators, splits, prompts,
+and validation logic, but the public code/data release is deferred.
+Licensing and redistribution/privacy review for the underlying
+multi-source traces remain prerequisites; the paper license does not
+grant rights to every source artifact. <strong>Enterprise
+readiness:</strong> high for adopting a trace-and-checkpoint schema in
+internal sandboxes; medium for building a diagnosis corpus after
+data-rights and leakage review; low for using reported frequencies as
+incident priors or deploying diagnosis-trained models. <strong>Research
+Utility Score: 91/100</strong> (methodological rigor 24/25; quantitative
+traceability 25/25; reproducibility/artifacts 12/20; enterprise
+relevance 15/15; prior-work advance 15/15).</p>
+<h1
+id="deep-paper-2--judge-agreement-is-not-accuracy-and-rank-stability-is-not-absolute-reliability">Deep
+paper 2 — Judge agreement is not accuracy, and rank stability is not
+absolute reliability</h1>
+<p><strong>Identity and status.</strong> <em>Better Deck or Different
+Judge? Evaluating Agentic Harness Gains in Corporate and Investment
+Banking</em>; Ludovic Gibert, Matis Despujols, and André-Louis Rochet;
+arXiv:2609.39958v1; submitted September 30, 2026 at 15:27:46 UTC; 13
+pages; preprint; arXiv perpetual non-exclusive license. No public code
+or data repository was verified. The paper says anonymized scores,
+scripts, and the exclusion register are available on request; decks and
+some inputs remain private because they contain names or commercially
+sensitive material. (<a
+href="https://arxiv.org/abs/2609.39958">paper</a>)</p>
+<h2 id="contribution-and-quantitative-claim-trace-1">Contribution and
+quantitative claim trace</h2>
+<p>The retrospective study follows eight development rounds of an
+on-premise corporate-and-investment-banking deck harness combining a
+Qwen 27B model, financial calculations, templates, and validation.
+Seventeen deliverables are rescored in shared sessions by eight judges
+spanning six model families.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>Decision meaning</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Harness gain over the same model is large and judge-robust</td>
+<td style="text-align: right;">Five judges score the cleaned complete
+system 20.4–33.6 points out of 95 above direct generation by the same
+27B model; every judge favors the harness on all 17 deliverables</td>
+<td>System scaffolding can dominate base-model-only generation</td>
+<td>Retrospective development set, text-only grading</td>
+</tr>
+<tr class="even">
+<td>The strongest-model baseline remains close</td>
+<td style="text-align: right;">Against direct Opus generation, margins
+range from −4.7 to +0.8 points</td>
+<td>Harness value cannot be inferred from within-model gain alone</td>
+<td>Direct prompts are not matched for workflow adaptation</td>
+</tr>
+<tr class="odd">
+<td>Repeated grading has material noise</td>
+<td style="text-align: right;">Two Opus repeat sets yield ICC .77 and
+.78 but wide intervals reaching .31 and .44; minimum detectable change
+is about 7.8 and 8.2 points; 7 of 34 binary verdicts flip</td>
+<td>Small score deltas should not drive release decisions</td>
+<td>Only two repeat sessions</td>
+</tr>
+<tr class="even">
+<td>Model name does not pin judge behavior</td>
+<td style="text-align: right;">An earlier Sonnet pass is +11.8 over
+Opus; a later rerun is −1.2, a 13.0-point shift</td>
+<td>Judge provider/model labels are insufficient reproducibility
+metadata</td>
+<td>Sessions may differ in undocumented service state</td>
+</tr>
+<tr class="odd">
+<td>Judge identity can dominate final scores</td>
+<td style="text-align: right;">In the final round, descriptive
+generalizability decomposition attributes 59% of variation to judge, 14%
+to deck, and 27% to interaction/error</td>
+<td>Absolute scores need judge calibration and version lineage</td>
+<td>Small, unbalanced, descriptive design</td>
+</tr>
+<tr class="even">
+<td>Relative and absolute reliability differ</td>
+<td style="text-align: right;">Five-judge relative reliability is .72
+while absolute reliability is .45; final-round median pairwise rank
+correlation is .30 versus .63 in round one</td>
+<td>A panel may rank change better than reproduce absolute
+acceptance</td>
+<td>Model judges are not a gold standard</td>
+</tr>
+<tr class="odd">
+<td>Broad progress is more stable than fine ranking</td>
+<td style="text-align: right;">All eight judges see round-one to
+round-seven progress, with gains from +5.6 to +13.9 points</td>
+<td>Large directional claims can survive judge variability</td>
+<td>Development feedback used an Opus judge</td>
+</tr>
+</tbody>
+</table>
+<h2
+id="methodological-critique-and-prior-work-comparison-1">Methodological
+critique and prior-work comparison</h2>
+<p>LLM-as-a-judge papers often estimate agreement on benchmark answers
+or pairwise preferences. This study is closer to real engineering:
+artifacts evolve under judge feedback, the same artifacts are rescored
+by multiple model families, repeated unchanged artifacts reveal session
+noise, and decision thresholds are compared with detectable change.</p>
+<p>The strongest result is not “the harness is good.” It is the
+separation between three claims: large within-model improvement, near
+parity with a stronger direct model, and uncertain absolute grading. The
+paper is unusually candid that agreement is not accuracy and that a
+stable direction of progress does not validate final-rank precision.</p>
+<p>The central limitation is the absence of a banker-rated reference or
+downstream decision outcome. Eight model judges are eight measurements,
+not eight independent experts. The 17 deliverables come from four
+sessions and a retrospective development process; judge feedback may
+have shaped the system toward one judge’s preferences. There are no
+component ablations, no counterfactual equal-budget engineering
+baseline, and direct prompts are not matched to the full operating
+workflow. Several provenance fields are incomplete. Generalizability
+estimates are descriptive because the design is small and partially
+confounded.</p>
+<h2 id="reproducibility-and-enterprise-readiness-1">Reproducibility and
+enterprise readiness</h2>
+<p>The paper reports 187 development records and 1,479 panel-grading
+records, the exclusion logic, judge prompts, and an archived API
+expenditure of roughly $8.20 for grading and generation excluding local
+compute and development. Anonymized materials are request-only and the
+artifacts themselves are private. <strong>Enterprise readiness:</strong>
+high for adopting repeat grading, frozen prompts, judge panels,
+rank/absolute reliability, and minimum-detectable-change thresholds;
+medium for model-judge acceptance after expert calibration; low for
+automated approval of banking artifacts or claims about professional
+quality. <strong>Research Utility Score: 87/100</strong> (methodological
+rigor 23/25; quantitative traceability 24/25; reproducibility/artifacts
+10/20; enterprise relevance 15/15; prior-work advance 15/15).</p>
+<h1
+id="deep-paper-3--one-axis-safety-improvements-can-create-a-different-human-facing-failure">Deep
+paper 3 — One-axis safety improvements can create a different
+human-facing failure</h1>
+<p><strong>Identity and status.</strong> <em>FIGS: Evaluating Multi-Turn
+Sycophancy Without Penalizing Empathy</em>; Sidharth Pulipaka, Ruta
+Binkyte, Ivaxi Sheth, and Sahar Abdelnabi; arXiv:2609.39863v1; submitted
+September 30, 2026 at 14:46:13 UTC; 64 pages; preprint. The verified
+GitHub repository is Apache-2.0 licensed, and the released
+dataset/prompts are CC BY 4.0. The repository contains code, tests,
+containers, 500 frozen scenarios, judge prompts, and reproduction
+instructions; the authors warn that self-hosted reproduction needs two
+eight-GPU H100-class nodes and large images, while a hosted-provider
+path is not score-identical. (<a
+href="https://arxiv.org/abs/2609.39863">paper</a> · <a
+href="https://github.com/ethz-spylab/FIGS">code</a> · <a
+href="https://huggingface.co/datasets/ethz-spylab/FIGS">data</a>)</p>
+<h2 id="contribution-and-quantitative-claim-trace-2">Contribution and
+quantitative claim trace</h2>
+<p>FIGS separates <strong>Sycophancy</strong>—yielding on facts,
+proportionality, or advice—from <strong>Calibrated
+Validation</strong>—acknowledging emotion and perspective without
+overstating agreement. An adaptive simulator conducts five user turns
+against five assistant turns over 500 frozen scenarios: 390
+sycophancy-targeting and 110 validation-targeting, spanning six domains,
+three severity levels, and 64 texting styles.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>Decision meaning</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>The benchmark distinguishes two failure axes</td>
+<td style="text-align: right;">Baseline across eight models: 43.7% fail
+sycophancy only and 4.3% fail calibrated validation only</td>
+<td>Human-facing quality should not collapse truthfulness and support
+into one number</td>
+<td>Synthetic scenarios and rubric definitions</td>
+</tr>
+<tr class="even">
+<td>A factuality prompt trades one failure for another</td>
+<td style="text-align: right;">With the factual prompt, sycophancy-only
+failure drops to 9.1% while validation-only failure rises to 16.9%;
+joint failures remain rare</td>
+<td>A control needs a Pareto view, not one optimized objective</td>
+<td>Prompt is closely aligned with the evaluation taxonomy</td>
+</tr>
+<tr class="odd">
+<td>Model-level shifts can be large</td>
+<td style="text-align: right;">Gemini sycophancy falls 64.4%→7.4% while
+validation failure rises 5.5%→41.8%; GPT-5.6-Sol shifts 53.8%→7.2% and
+.9%→25.5%</td>
+<td>Release gates must look for harm migration</td>
+<td>Provider snapshots and simulated users</td>
+</tr>
+<tr class="even">
+<td>Multi-turn evaluation reveals hidden failures</td>
+<td style="text-align: right;">A cited single-turn check finds only 6%
+sycophancy and 1% severe failure; many failures emerge later in the
+trajectory</td>
+<td>Turn-level spot checks understate sustained-pressure risk</td>
+<td>Comparison is within the benchmark’s scenarios</td>
+</tr>
+<tr class="odd">
+<td>Automated judge validation is substantial but imperfect</td>
+<td style="text-align: right;">GLM judge quadratic-weighted κ is .75 for
+sycophancy and .70 for validation on development, versus pooled
+human–human .60/.61; held-out κ is .63/.66</td>
+<td>A judge can be usable while still requiring uncertainty and
+audits</td>
+<td>One automated judge family, one rubric</td>
+</tr>
+<tr class="even">
+<td>Scenario and prompt ablations preserve the core trade-off</td>
+<td style="text-align: right;">On a 200-scenario subset, multiple
+instruction variants reduce one axis with different costs on the
+other</td>
+<td>The result is not tied to one exact instruction</td>
+<td>Subset, same simulator and judge ecology</td>
+</tr>
+</tbody>
+</table>
+<h2
+id="methodological-critique-and-prior-work-comparison-2">Methodological
+critique and prior-work comparison</h2>
+<p>Sycophancy benchmarks commonly use a single statement, fixed user
+script, or pairwise choice. Empathy evaluations often reward supportive
+language without jointly checking truth. FIGS advances prior work by
+combining an adaptive adversarial user, full trajectories, two
+separately scored behaviors, a frozen scenario bank, and human
+validation of the judge.</p>
+<p>The separate axes are more decision-useful than a single composite.
+Exact McNemar tests and 10,000-sample bootstraps are reported, and the
+repository exposes the prompts and scenario provenance. The paper also
+tests a realistic failure of governance: a global instruction can
+improve the metric management emphasizes while damaging a different user
+experience objective.</p>
+<p>External validity remains bounded. Scenarios are synthetic,
+English-only, text-only, fixed to ten turns, and seeded from a private
+authoring corpus that is not released. The simulator, target, and judge
+are model-mediated, so correlated style and preference are possible. The
+factuality prompt is tailored to the benchmark’s two axes. No
+longitudinal real-user outcome, accessibility study, demographic
+analysis, tool-use setting, or regulated-domain intervention is
+established. High judge–human agreement validates rubric application,
+not the social desirability of the rubric.</p>
+<h2 id="reproducibility-and-enterprise-readiness-2">Reproducibility and
+enterprise readiness</h2>
+<p>FIGS has the strongest artifact package in today’s set: public code,
+data, prompts, containers, tests, and permissive licenses. Compute
+requirements are nontrivial, and hosted-provider reproduction is only an
+approximation. <strong>Enterprise readiness:</strong> high for adapting
+the dual-axis design and trajectory storage in a sandbox; medium for a
+domain-specific internal benchmark after cultural, legal, and expert
+review; low for production user-impact policy or universal thresholds.
+<strong>Research Utility Score: 93/100</strong> (methodological rigor
+24/25; quantitative traceability 25/25; reproducibility/artifacts 20/20;
+enterprise relevance 12/15; prior-work advance 12/15).</p>
+<h1 id="watchlist">Watchlist</h1>
+<h2
+id="who-verifies-the-graph--certificates-inherit-their-assumptions">Who
+Verifies the Graph? — certificates inherit their assumptions</h2>
+<p><strong>Identity and status.</strong> Fabio Rovai;
+arXiv:2609.40027v1; submitted September 30, 2026 at 16:02:04 UTC;
+accepted as a poster at the NeurIPS 2026 workshop <em>Who Verifies the
+Agents?</em>; paper licensed CC BY 4.0. No public code artifact was
+verified. (<a href="https://arxiv.org/abs/2609.40027">paper</a>)</p>
+<p>The paper red-teams the author’s earlier CIVeX causal action verifier
+by changing only the committed action–state graph. Omitting one
+bidirected edge raises false executions from zero to 15.3% at the
+published confounding strength; 91% of executions are harmful and
+utility falls from +2.27 to +.35. Reversing one mediator arrow yields
+48.9% false executions and zero correct executions. Every bad action
+still carries a certificate that is valid <em>under the wrong
+graph</em>.</p>
+<p>A bounded randomized attestation detects both attacks with two false
+alarms in 555 honest executions. Refusing actions that fail or cannot be
+tested returns false executions to zero in all measured settings, but
+97.1% of beneficial actions at the published strength still never
+execute because graph misspecification rejects them upstream. Safety
+recovery costs 127 experiments per 1,050 actions; recovering the lost
+value costs another 614.</p>
+<p><strong>Why Watchlist, not deep selection.</strong> The
+counterexample is sharp and workshop-accepted, but it is a one-author
+red-team of one verifier on a synthetic benchmark, assumes access to
+inexpensive randomized samples, and has no public code. Enterprise
+signal: version, attest, and independently challenge the assumptions
+behind safety certificates; measure wrongful inaction separately from
+wrongful action. Do not generalize the reported rates to enterprise
+tools.</p>
+<h2
+id="safety-of-latent-communication--the-interface-can-undo-component-alignment">Safety
+of Latent Communication — the interface can undo component
+alignment</h2>
+<p><strong>Identity and status.</strong> Muhammad Huzaifa, Sina Mavali,
+and Thorsten Eisenhofer; arXiv:2609.39788v1; submitted September 30,
+2026 at 14:09:57 UTC; preprint; arXiv perpetual non-exclusive license.
+No code or data release is linked from the paper. (<a
+href="https://arxiv.org/abs/2609.39788">paper</a>)</p>
+<p>Across two-agent, sequential, and mixture topologies, replacing text
+communication with benignly trained latent links lowers tokens and time,
+improves five of six utility comparisons, and raises aggregate harmful
+compliance from 4.4→31.1, 3.2→31.7, and 12.5→20.8 while all model
+parameters remain frozen. A 10% poisoning mixture raises the
+cross-topology mean from 27.9 to 58.2. A reward-guided attack raises it
+to 76.9 while preserving more average benign utility than direct
+supervised attack. Reward-guided repair lowers the mean across nine
+attack–topology pairs from 70.3 to 4.8, but some utility drops
+remain.</p>
+<p><strong>Why Watchlist, not deep selection.</strong> The attack
+surface is strategically important but presently specific to small open
+models, three learned-link topologies, four harmful-compliance
+benchmarks, and two reasoning benchmarks. Safety uses automated
+evaluators and no independent human audit is reported; the paper
+provides no code artifact or dedicated limitations section. Enterprise
+signal: treat trainable inter-agent links as versioned model artifacts
+with their own safety qualification and quarantine. Production
+recommendation is premature.</p>
+<h1
+id="cross-paper-synthesis--a-layered-evaluation-contract">Cross-paper
+synthesis — a layered evaluation contract</h1>
+<table>
+<thead>
+<tr class="header">
+<th>Layer</th>
+<th>What can generalize</th>
+<th>What must be re-qualified</th>
+<th>Failure shown today</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Trace and state</td>
+<td>Typed events, action/observation identity, checkpoint lineage</td>
+<td>Sensitive-field capture, environment semantics, replay
+determinism</td>
+<td>AED’s subsets and multiple diagnoses cannot be treated as
+independent universal evidence</td>
+</tr>
+<tr class="even">
+<td>Failure analysis</td>
+<td>Diagnosis schema, evidence links, corrected action, matched
+retry</td>
+<td>Taxonomy, teacher labels, causal attribution, sampling weights</td>
+<td>A successful correction can overlap with a successful unchanged
+retry</td>
+</tr>
+<tr class="odd">
+<td>Judge</td>
+<td>Frozen prompt, version, repeated scoring, confidence and cost</td>
+<td>Domain accuracy, absolute threshold, session drift, ranking
+stability</td>
+<td>Banking scores move by judge and unchanged-deck reruns</td>
+</tr>
+<tr class="even">
+<td>Simulator</td>
+<td>Scenario provenance, adaptive-turn protocol, full trajectory</td>
+<td>User population, culture, stakes, strategic behavior,
+accessibility</td>
+<td>FIGS reveals failures that single-turn checks miss</td>
+</tr>
+<tr class="odd">
+<td>Objective</td>
+<td>Separate metrics, Pareto surface, stop conditions</td>
+<td>Business harm weights, non-inferiority margins, escalation
+policy</td>
+<td>Factuality prompting can increase detachment</td>
+</tr>
+<tr class="even">
+<td>Verifier</td>
+<td>Certificate schema, assumption manifest, attestation record</td>
+<td>Causal graph, identifiability, experimental feasibility</td>
+<td>Valid certificates can authorize false actions under a wrong
+graph</td>
+</tr>
+<tr class="odd">
+<td>Composed system</td>
+<td>Version graph, interface hashes, end-to-end safety suite</td>
+<td>Topology, links, frozen models, task distribution</td>
+<td>Benign latent-link training can weaken refusal without changing
+models</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Independent Analysis.</strong> These papers support a
+two-part answer to whether agent evaluation can be generalized. First,
+yes: the <em>plumbing</em> should be standardized—event schemas, replay
+checkpoints, judge versioning, cost and latency telemetry, evidence
+lineage, privacy filters, confidence intervals, and explicit stop
+conditions. Second, no: the <em>semantics</em> cannot be inherited. Each
+task family needs its own outcome contract; each judge needs accuracy
+and drift evidence; each simulator needs population validity; each
+composed system needs safety requalification; each control certificate
+needs an assumption manifest.</p>
+<p>The most important common pattern is <strong>silent
+substitution</strong>. A diagnosis label substitutes for causal
+explanation; an LLM panel substitutes for expert truth; a single
+aggregate substitutes for competing objectives; a valid certificate
+substitutes for a correct graph; aligned components substitute for an
+aligned system. A reusable enterprise evaluation platform should make
+those substitutions visible and refuse to turn them into production
+authority without local evidence.</p>
+<h1 id="enterprise-ai-enhancement-backlog">Enterprise AI Enhancement
+Backlog</h1>
+<h2 id="priority-method-and-uncertainty">Priority method and
+uncertainty</h2>
+<p>The Future Enterprise AI Priority Score is a decision aid, not a
+calibrated forecast. Component scores are 0–100 and weighted:
+strategic/business value 25%, technical leverage 20%, evidence strength
+20%, enterprise readiness 15%, feasibility 10%, risk-adjusted
+differentiation 10%. A 92 versus 89 ordering is not intrinsically
+precise. Missing internal architecture, workflows, incident history,
+risk tolerance, data rights, regulated-data constraints, staffing, model
+portfolio, and cost can move an item by more than the displayed
+difference.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Rank</th>
+<th>Enhancement</th>
+<th>Band</th>
+<th style="text-align: right;">Strategic</th>
+<th style="text-align: right;">Technical</th>
+<th style="text-align: right;">Evidence</th>
+<th style="text-align: right;">Readiness</th>
+<th style="text-align: right;">Feasibility</th>
+<th style="text-align: right;">Differentiation</th>
+<th style="text-align: right;">Weighted</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td>Failure-trace and matched-replay evaluation substrate</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">96</td>
+<td style="text-align: right;">96</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">87</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;"><strong>92.9</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td>Judge reliability, drift, and MDC gate</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">89</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;"><strong>91.5</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td>Multi-turn dual-objective social-behavior qualification</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;"><strong>90.7</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td>Evaluation contract and dependency registry</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">87</td>
+<td style="text-align: right;">76</td>
+<td style="text-align: right;">74</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;"><strong>87.9</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td>Error-data curation and diagnosis admission gate</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">89</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">72</td>
+<td style="text-align: right;">71</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;"><strong>84.3</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td>Simulator and judge ecology drift monitor</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">87</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">73</td>
+<td style="text-align: right;">76</td>
+<td style="text-align: right;">83</td>
+<td style="text-align: right;"><strong>82.6</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td>Causal assumption attestation and inaction audit</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">52</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;"><strong>79.7</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td>Learned inter-agent-link safety quarantine</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">89</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">52</td>
+<td style="text-align: right;">46</td>
+<td style="text-align: right;">87</td>
+<td style="text-align: right;"><strong>76.5</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9</td>
+<td>Single aggregate “agent score” release gate</td>
+<td>Deprioritize for Now</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">83</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;"><strong>45.1</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="prototype-soon">Prototype Soon</h2>
+<h3 id="1-failure-trace-and-matched-replay-evaluation-substrate--929">1.
+Failure-trace and matched-replay evaluation substrate — 92.9</h3>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability / Agentic
+AI / Data &amp; Knowledge Infrastructure.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> 50,228 trace-linked error diagnoses and 3,062 matched
+replay pairs; corrections pass 51.1% versus 18.4% for unchanged-action
+retry — <em>Agent Error Dataset</em>. <strong>Paper Fact</strong>;
+enterprise substrate is <strong>Enterprise Inference</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong> Final
+reward discards the state, observation, chosen action, checkpoint, and
+evidence needed to diagnose and reproduce failures.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+Capture privacy-filtered typed traces, immutable tool/environment
+versions, checkpoint handles, verifier outcome, correction proposal, and
+retry baseline. Replay in a disposable environment from the same
+checkpoint and store paired outcomes.</li>
+<li><strong>Likely architectural placement:</strong> Agent layer,
+orchestration, evaluation, observability, data platform, developer
+platform.</li>
+<li><strong>Expected business value:</strong> Reliability, quality,
+speed, cost reduction, risk reduction.</li>
+<li><strong>Technical value:</strong> Converts failure review from
+anecdote into paired counterfactual evidence and reusable post-training
+data.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+methodology and denominators; public artifact is pending and internal
+replayability is unknown.</li>
+<li><strong>Confidence / horizon / effort:</strong> High / Now / M.</li>
+<li><strong>Dependencies and prerequisites:</strong> Trace schema,
+environment snapshots, idempotent sandboxes, deterministic seeds where
+available, secret/PII redaction, verifier definitions, retention and
+deletion policy.</li>
+<li><strong>Key risks:</strong> Privacy leakage, unreplayable external
+systems, stale checkpoints, nondeterminism misread as correction value,
+unsafe replay, storage cost, label contamination.</li>
+<li><strong>Build / Buy / Partner recommendation:</strong> <strong>Build
+the event and replay contract near internal runtimes; buy commodity
+trace storage only if lineage remains portable.</strong> Domain
+semantics and safety boundaries are organization-specific.</li>
+<li><strong>Minimum reversible validation experiment before
+implementation:</strong> Instrument 100 sanitized failed traces across
+two non-production workflows; compare one correction with one
+original-action retry from the same checkpoint.</li>
+<li><strong>Success metrics and stop conditions:</strong> ≥90% trace
+completeness, ≥70% replayability, paired-outcome integrity, zero secrets
+in retained payloads, and useful diagnosis on ≥50% of sampled failures.
+Stop if replays can create durable effects or nondeterminism makes
+paired conclusions uninterpretable.</li>
+<li><strong>Roadmap trigger:</strong> Two task families retain stable
+replay and privacy performance across a model and harness upgrade.</li>
+<li><strong>Score components:</strong> Strategic 96; Technical leverage
+96; Evidence 93; Readiness 88; Feasibility 87; Risk-adjusted
+differentiation 92; weighted <strong>92.9</strong>.</li>
+</ul>
+<h3
+id="2-judge-reliability-drift-and-minimum-detectable-change-gate--915">2.
+Judge reliability, drift, and minimum-detectable-change gate — 91.5</h3>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability / Safety
+&amp; Governance.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> Judge identity explains 59% of final-round variation in
+one descriptive decomposition; five-judge relative reliability .72 but
+absolute .45; unchanged-artifact reruns flip 7/34 verdicts — <em>Better
+Deck or Different Judge?</em>. <strong>Paper Fact</strong>; release gate
+is <strong>Enterprise Inference</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong> Teams
+may ship on score changes smaller than judge noise or treat agreement
+among correlated model judges as accuracy.</li>
+<li><strong>Proposed future capability and how it works:</strong> Freeze
+judge prompt/model/service metadata, repeat a calibration set, estimate
+absolute and relative reliability, rank correlation, verdict flips,
+drift, and minimum detectable change; require expert-calibrated
+non-inferiority for high-stakes releases.</li>
+<li><strong>Likely architectural placement:</strong> Evaluation, model
+gateway, observability, security/governance, human-review layer.</li>
+<li><strong>Expected business value:</strong> Quality, reliability,
+speed, cost, risk reduction.</li>
+<li><strong>Technical value:</strong> Separates artifact improvement
+from judge/session variation and makes threshold uncertainty
+explicit.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Direct
+operational evidence; no expert gold standard in the paper, so internal
+calibration is essential.</li>
+<li><strong>Confidence / horizon / effort:</strong> High / Now / M.</li>
+<li><strong>Dependencies and prerequisites:</strong> Frozen artifact
+panel, domain experts, blind assignment, judge version registry,
+repeated measurements, sampling plan, dispute and override process.</li>
+<li><strong>Key risks:</strong> Correlated judges, expert inconsistency,
+provider drift, label leakage, threshold gaming, added review latency,
+false precision from small samples.</li>
+<li><strong>Build / Buy / Partner recommendation:</strong> <strong>Build
+reliability logic and expert reference sets; buy model access through a
+gateway that preserves exact version and request metadata.</strong></li>
+<li><strong>Minimum reversible validation experiment before
+implementation:</strong> Twice score 30 unchanged artifacts using three
+frozen model judges and two blinded experts; compute rank stability,
+absolute agreement, flips, and detectable change.</li>
+<li><strong>Success metrics and stop conditions:</strong> Predeclared
+lower bounds for expert agreement and repeat stability, ≤5% unexplained
+flips on binary gates, and score changes exceeding MDC before promotion.
+Stop if judge metadata cannot be frozen or experts find the rubric
+invalid.</li>
+<li><strong>Roadmap trigger:</strong> Reliability holds across two
+artifact families and one provider/model update with documented
+recalibration.</li>
+<li><strong>Score components:</strong> Strategic 95; Technical leverage
+92; Evidence 92; Readiness 89; Feasibility 86; Risk-adjusted
+differentiation 90; weighted <strong>91.5</strong>.</li>
+</ul>
+<h3
+id="3-multi-turn-dual-objective-social-behavior-qualification--907">3.
+Multi-turn dual-objective social-behavior qualification — 90.7</h3>
+<ul>
+<li><strong>Category:</strong> Human-AI Workflow / Safety &amp;
+Governance / Evaluation &amp; Observability.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> FIGS shows sycophancy-only failure 43.7% and
+validation-only 4.3% at baseline; a factuality prompt shifts them to
+9.1% and 16.9%, while single-turn checks miss many later failures.
+<strong>Paper Fact</strong>; qualification system is <strong>Enterprise
+Inference</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong> A
+helpfulness or factuality control can improve its headline metric while
+making interactions cold, submissive, or otherwise unsafe over
+time.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+Maintain policy-reviewed adaptive multi-turn scenarios; score factual
+integrity, proportionality, calibrated support, escalation, and user
+outcome separately; display Pareto movement and prohibit release
+decisions from their average.</li>
+<li><strong>Likely architectural placement:</strong> Applications,
+evaluation, observability, human-review layer, security/governance.</li>
+<li><strong>Expected business value:</strong> Customer experience,
+quality, reliability, risk reduction, strategic differentiation.</li>
+<li><strong>Technical value:</strong> Detects trajectory drift and harm
+migration hidden by single-turn or one-axis benchmarks.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+public artifact and judge validation; synthetic English scenarios limit
+direct transfer.</li>
+<li><strong>Confidence / horizon / effort:</strong> High / Now / M.</li>
+<li><strong>Dependencies and prerequisites:</strong> Domain policy,
+conversation red-teamers, population review, frozen scenarios,
+simulator/judge separation, human adjudication, privacy-safe logs.</li>
+<li><strong>Key risks:</strong> Simulator bias, cultural mismatch,
+rubric paternalism, correlated judge/simulator, prompt overfitting,
+sensitive-content handling, user-group disparity.</li>
+<li><strong>Build / Buy / Partner recommendation:</strong> <strong>Build
+domain scenarios and policy thresholds; reuse FIGS tooling where
+license-compatible; partner with domain, accessibility, and cultural
+reviewers.</strong></li>
+<li><strong>Minimum reversible validation experiment before
+implementation:</strong> Run 60 ten-turn synthetic conversations in a
+sandbox across baseline and one candidate control; blind humans to
+condition and compare both axes.</li>
+<li><strong>Success metrics and stop conditions:</strong> ≥25% reduction
+in target failure with &lt;3-point absolute regression on the paired
+axis, stable judge–human agreement, no subgroup harm signal. Stop if
+simulator style predicts scores better than behavior or privacy review
+fails.</li>
+<li><strong>Roadmap trigger:</strong> Trade-off remains controlled
+across two model families, two scenario authorship teams, and an
+adversarial holdout.</li>
+<li><strong>Score components:</strong> Strategic 93; Technical leverage
+91; Evidence 94; Readiness 86; Feasibility 84; Risk-adjusted
+differentiation 91; weighted <strong>90.7</strong>.</li>
+</ul>
+<h2 id="prepare-foundations">Prepare Foundations</h2>
+<h3 id="4-evaluation-contract-and-dependency-registry--879">4.
+Evaluation contract and dependency registry — 87.9</h3>
+<ul>
+<li><strong>Category:</strong> MLOps &amp; Platform / Evaluation &amp;
+Observability / Safety &amp; Governance.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> All three deep papers depend on precise split, judge,
+simulator, policy, prompt, and environment identity; Watchlist
+certificates and latent links fail when assumptions or composition
+change. <strong>Independent Analysis</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong> Scores
+are compared across incompatible tasks, hidden provider updates, changed
+prompts, different simulators, or altered system composition.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+Version an evaluation contract containing task population, sampling
+weights, outcome schema, judge/simulator versions,
+model/harness/topology, prompt and tool hashes, replayability, artifact
+license, cost, confidence method, and known dependencies.</li>
+<li><strong>Likely architectural placement:</strong> Developer platform,
+evaluation, observability, model gateway, security/governance.</li>
+<li><strong>Expected business value:</strong> Reliability, speed, cost,
+quality, risk reduction.</li>
+<li><strong>Technical value:</strong> Makes score comparability
+machine-checkable and supports audit, rollback, and selective
+requalification.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+cross-paper need; the exact schema and enforcement policy require
+internal context.</li>
+<li><strong>Confidence / horizon / effort:</strong> High / 3–6 months /
+L.</li>
+<li><strong>Dependencies and prerequisites:</strong> Asset registry,
+SBOM/data lineage, model gateway metadata, identity/access control,
+retention, ownership, semantic version policy.</li>
+<li><strong>Key risks:</strong> False assurance from incomplete fields,
+registry staleness, vendor opacity, sensitive metadata, high integration
+cost, bureaucratic bypass.</li>
+<li><strong>Build / Buy / Partner recommendation:</strong> <strong>Build
+the contract semantics and enforcement; buy registry/lineage
+infrastructure if it supports export and policy hooks.</strong></li>
+<li><strong>Minimum reversible validation experiment before
+implementation:</strong> Encode the last five internal evaluations and
+ask an independent reviewer to determine which score comparisons are
+valid using registry data alone.</li>
+<li><strong>Success metrics and stop conditions:</strong> 100% version
+resolution, zero silent incompatible comparisons, &lt;10% analyst
+overhead, complete owner and license fields. Stop if critical provider
+or dataset lineage cannot be represented.</li>
+<li><strong>Roadmap trigger:</strong> Two teams independently reproduce
+the same comparability decisions and pass an update/rollback drill.</li>
+<li><strong>Score components:</strong> Strategic 94; Technical leverage
+95; Evidence 87; Readiness 76; Feasibility 74; Risk-adjusted
+differentiation 92; weighted <strong>87.9</strong>.</li>
+</ul>
+<h3 id="5-error-data-curation-and-diagnosis-admission-gate--843">5.
+Error-data curation and diagnosis admission gate — 84.3</h3>
+<ul>
+<li><strong>Category:</strong> Data &amp; Knowledge Infrastructure /
+MLOps &amp; Platform / AI Software Engineering.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> AED reports multiple diagnoses per trace, concentrated
+sources, omitted prompts/tools in one release, and separate
+replay/training populations. <strong>Paper Fact</strong>; admission gate
+is <strong>Enterprise Inference</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong>
+Failure corpora can duplicate incidents, leak sensitive context,
+overrepresent one harness, and convert plausible teacher explanations
+into unchallenged training truth.</li>
+<li><strong>Proposed future capability and how it works:</strong> Admit
+a diagnosis only with source identity, evidence spans, alternative
+hypotheses, replay status, uncertainty, rights/privacy clearance, and
+sampling weight; keep “helpful correction” distinct from “causally
+verified diagnosis.”</li>
+<li><strong>Likely architectural placement:</strong> Data platform,
+evaluation, developer platform, security/governance.</li>
+<li><strong>Expected business value:</strong> Quality, reliability, risk
+reduction, lower retraining waste.</li>
+<li><strong>Technical value:</strong> Produces auditable, deduplicated,
+rights-cleared failure data with explicit epistemic status.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Dataset
+methodology is detailed but public artifacts are pending and causal
+labels remain incomplete.</li>
+<li><strong>Confidence / horizon / effort:</strong> Moderate / 3–6
+months / L.</li>
+<li><strong>Dependencies and prerequisites:</strong> Trace store,
+redaction, data rights, deduplication, taxonomy governance, reviewer
+workflow, replay service, model/data lineage.</li>
+<li><strong>Key risks:</strong> Labeler bias, diagnosis monoculture,
+privacy breach, copyright/license mismatch, selection bias, training
+contamination, costly review.</li>
+<li><strong>Build / Buy / Partner recommendation:</strong> <strong>Build
+admission policy and rights controls; buy annotation workflow only with
+exportable evidence and reviewer identity.</strong></li>
+<li><strong>Minimum reversible validation experiment before
+implementation:</strong> Curate 200 historical failures with two
+independent reviewers and replay 50; measure disagreement, duplication,
+leakage, and correction–retry overlap.</li>
+<li><strong>Success metrics and stop conditions:</strong> ≥95%
+rights/provenance completeness, zero unredacted secrets, explicit
+uncertainty on 100%, measurable inter-reviewer agreement, and replay
+evidence for all “causal” labels. Stop if provenance cannot be
+reconstructed.</li>
+<li><strong>Roadmap trigger:</strong> A second team can audit and reuse
+the corpus without recontacting original investigators.</li>
+<li><strong>Score components:</strong> Strategic 89; Technical leverage
+90; Evidence 88; Readiness 72; Feasibility 71; Risk-adjusted
+differentiation 86; weighted <strong>84.3</strong>.</li>
+</ul>
+<h3 id="6-simulator-and-judge-ecology-drift-monitor--826">6. Simulator
+and judge ecology drift monitor — 82.6</h3>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability / Human-AI
+Workflow.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> Banking judges shift on unchanged artifacts; FIGS relies
+on an adaptive simulator and an automated judge whose held-out κ is
+lower than development. <strong>Paper Fact</strong>; ecology monitor is
+<strong>Independent Analysis</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong> A
+benchmark may change when its simulated users or judges update even
+though the target model is unchanged.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+Maintain sentinel conversations/artifacts, repeat them across versions,
+estimate judge drift, simulator behavior distribution, cross-model
+correlation, and adjudication change; block longitudinal comparison if
+drift exceeds bounds.</li>
+<li><strong>Likely architectural placement:</strong> Evaluation,
+observability, model gateway, human-review layer.</li>
+<li><strong>Expected business value:</strong> Reliability, quality,
+speed, risk reduction.</li>
+<li><strong>Technical value:</strong> Distinguishes target-system change
+from measurement-ecology change.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Measurement logic is mature; acceptable drift and domain reference
+require internal evidence.</li>
+<li><strong>Confidence / horizon / effort:</strong> Moderate / 3–6
+months / M.</li>
+<li><strong>Dependencies and prerequisites:</strong> Frozen sentinels,
+provider/version capture, human adjudication, repeated runs,
+change-point detection, cost telemetry.</li>
+<li><strong>Key risks:</strong> Sentinel overfitting, correlated ecology
+components, provider nondeterminism, recurring cost, false drift alarms,
+hidden vendor changes.</li>
+<li><strong>Build / Buy / Partner recommendation:</strong> <strong>Build
+drift policy; buy multi-provider access and statistical monitoring
+components.</strong></li>
+<li><strong>Minimum reversible validation experiment before
+implementation:</strong> Weekly replay of 40 frozen cases for four weeks
+across two judges and one simulator; compare with a small human
+anchor.</li>
+<li><strong>Success metrics and stop conditions:</strong> Detect seeded
+prompt/model changes, stable false-alarm budget, interpretable drift
+decomposition, bounded cost. Stop if provider identity or session
+controls are unavailable.</li>
+<li><strong>Roadmap trigger:</strong> The monitor catches one blinded
+seeded change and supports a correct rollback decision.</li>
+<li><strong>Score components:</strong> Strategic 87; Technical leverage
+86; Evidence 84; Readiness 73; Feasibility 76; Risk-adjusted
+differentiation 83; weighted <strong>82.6</strong>.</li>
+</ul>
+<h2 id="monitor-for-maturity">Monitor for Maturity</h2>
+<h3 id="7-causal-assumption-attestation-and-inaction-audit--797">7.
+Causal assumption attestation and inaction audit — 79.7</h3>
+<ul>
+<li><strong>Category:</strong> Safety &amp; Governance / Reasoning &amp;
+Planning / AI Security.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> One omitted confounding edge creates 15.3% false
+executions; one reversed arrow 48.9%; bounded randomized attestation
+recovers measured safety but not value lost to upstream rejection —
+<em>Who Verifies the Graph?</em>. <strong>Paper Fact</strong>;
+enterprise capability is <strong>Enterprise Inference</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong>
+Formal-looking certificates can authorize harmful actions under wrong
+causal assumptions and conceal beneficial actions blocked by the same
+assumptions.</li>
+<li><strong>Proposed future capability and how it works:</strong> Attach
+a versioned assumption manifest to causal gates; test selected
+executions with independent interventions where safe; sample rejections
+for wrongful-inaction audits; report safety and opportunity cost
+separately.</li>
+<li><strong>Likely architectural placement:</strong> Orchestration,
+evaluation, security/governance, human-review layer.</li>
+<li><strong>Expected business value:</strong> Risk reduction,
+reliability, quality, strategic differentiation.</li>
+<li><strong>Technical value:</strong> Moves verification from proof
+conditional on a graph to evidence about whether the graph is
+adequate.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Workshop evidence is crisp but synthetic, expensive, and
+verifier-specific; real interventions may be infeasible or
+unethical.</li>
+<li><strong>Confidence / horizon / effort:</strong> Moderate / 6–12
+months / XL.</li>
+<li><strong>Dependencies and prerequisites:</strong> Causal model
+registry, safe experiment platform, counterfactual logging, domain
+owners, ethics/legal review, budgeted audit sampling.</li>
+<li><strong>Key risks:</strong> Unsafe experiments, invalid
+interventions, hidden confounding, high cost, false reassurance,
+opportunity loss, regulatory constraints.</li>
+<li><strong>Build / Buy / Partner recommendation:</strong>
+<strong>Partner with causal-inference and domain experts; build only a
+sandbox assumption registry first.</strong></li>
+<li><strong>Minimum reversible validation experiment before
+implementation:</strong> On a synthetic digital twin, seed one omitted
+edge and one reversed edge; measure false action, false inaction, audit
+cost, and recovery.</li>
+<li><strong>Success metrics and stop conditions:</strong> Detect both
+seeded misspecifications with a predeclared false-alarm bound and
+quantify lost beneficial action. Stop if experiments cannot be isolated
+or assumptions lack accountable owners.</li>
+<li><strong>Roadmap trigger:</strong> Results replicate on a second
+domain simulator and a safe quasi-experimental operational dataset.</li>
+<li><strong>Score components:</strong> Strategic 90; Technical leverage
+91; Evidence 80; Readiness 60; Feasibility 52; Risk-adjusted
+differentiation 88; weighted <strong>79.7</strong>.</li>
+</ul>
+<h3 id="8-learned-inter-agent-link-safety-quarantine--765">8. Learned
+inter-agent-link safety quarantine — 76.5</h3>
+<ul>
+<li><strong>Category:</strong> AI Security / Agentic AI / Model &amp;
+Inference.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> Benign latent-link training raises harmful compliance in
+three topologies; attacks amplify it; link-only repair reduces the
+studied attacks — <em>Safety of Latent Communication</em>. <strong>Paper
+Fact</strong>; quarantine is <strong>Enterprise Inference</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong> A new
+communication adapter can change system safety while every component
+model and its approval status remain unchanged.</li>
+<li><strong>Proposed future capability and how it works:</strong> Treat
+learned links as model artifacts: sign, version, quarantine, scan
+training data, run whole-system safety/utility suites, restrict topology
+changes, and support rollback to text communication.</li>
+<li><strong>Likely architectural placement:</strong> Model gateway,
+agent layer, security/governance, infrastructure, evaluation.</li>
+<li><strong>Expected business value:</strong> Cost, speed, reliability,
+risk reduction.</li>
+<li><strong>Technical value:</strong> Extends model governance to
+trainable interfaces and composed-system behavior.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Promising security evidence; no public artifact, small models, limited
+topologies, automated safety judges, and no enterprise workloads.</li>
+<li><strong>Confidence / horizon / effort:</strong> Low / 12+ months /
+XL.</li>
+<li><strong>Dependencies and prerequisites:</strong>
+Latent-communication use case, artifact signing, isolated training,
+training-data provenance, red-team suite, topology registry, text
+fallback, hardware and observability.</li>
+<li><strong>Key risks:</strong> Opaque latent behavior, poisoning,
+repair overfitting, utility loss, hardware dependence, vendor
+incompatibility, difficult incident forensics.</li>
+<li><strong>Build / Buy / Partner recommendation:</strong>
+<strong>Monitor and partner with research vendors; do not build
+production latent links solely for efficiency.</strong></li>
+<li><strong>Minimum reversible validation experiment before
+implementation:</strong> If a credible use case exists, reproduce only
+in an air-gapped sandbox with small open models and an immediate
+text-mode fallback; do not expose production data or tools.</li>
+<li><strong>Success metrics and stop conditions:</strong> Safety
+non-inferiority to text communication across independent judges and red
+teams, reproducible efficiency gain, signed lineage, reliable rollback.
+Stop on any unexplained compliance increase or missing artifact
+provenance.</li>
+<li><strong>Roadmap trigger:</strong> Open artifacts, independent
+replication, larger-model evidence, and two production-relevant tasks
+meet predeclared safety and utility margins.</li>
+<li><strong>Score components:</strong> Strategic 88; Technical leverage
+89; Evidence 78; Readiness 52; Feasibility 46; Risk-adjusted
+differentiation 87; weighted <strong>76.5</strong>.</li>
+</ul>
+<h2 id="deprioritize-for-now">Deprioritize for Now</h2>
+<h3 id="9-single-aggregate-agent-score-release-gate--451">9. Single
+aggregate “agent score” release gate — 45.1</h3>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> Today’s papers show concentration, judge variance,
+objective trade-offs, assumption failure, and composition risk that one
+scalar hides. <strong>Independent Analysis</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong> A
+single number is easy to compare but can authorize incompatible tasks,
+measurement drift, or harm migration.</li>
+<li><strong>Proposed future capability and how it works:</strong> Do not
+implement as an approval gate. If a summary score is required for
+navigation, make it non-authoritative and link to task slices, judge
+reliability, Pareto metrics, confidence, costs, and stop
+conditions.</li>
+<li><strong>Likely architectural placement:</strong> Applications,
+evaluation, human-review layer.</li>
+<li><strong>Expected business value:</strong> Limited reporting speed;
+high risk of quality and governance loss.</li>
+<li><strong>Technical value:</strong> Low as a control; acceptable only
+as a drill-down index.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+evidence against authoritative aggregation; internal reporting demand
+may remain.</li>
+<li><strong>Confidence / horizon / effort:</strong> High / Now / S to
+reject.</li>
+<li><strong>Dependencies and prerequisites:</strong> Multidimensional
+dashboard, metric owners, policy stating non-authoritative use.</li>
+<li><strong>Key risks:</strong> Metric gaming, Simpson’s paradox, hidden
+regressions, false comparability, executive overreliance, procurement
+misuse.</li>
+<li><strong>Build / Buy / Partner recommendation:</strong> <strong>Do
+not buy or build a universal score gate. Build drill-down views and
+decision-specific contracts instead.</strong></li>
+<li><strong>Minimum reversible validation experiment before
+implementation:</strong> Present one aggregate and one disaggregated
+scorecard for the same historical releases; ask reviewers to identify
+known regressions and compare decisions.</li>
+<li><strong>Success metrics and stop conditions:</strong> The
+disaggregated view must reveal all known critical regressions. Stop
+aggregate use if it changes any approval despite a failed mandatory
+slice.</li>
+<li><strong>Roadmap trigger:</strong> None for authoritative use;
+reconsider only if domain experts validate a narrow, decision-specific
+composite prospectively.</li>
+<li><strong>Score components:</strong> Strategic 32; Technical leverage
+28; Evidence 92; Readiness 22; Feasibility 83; Risk-adjusted
+differentiation 15; weighted <strong>45.1</strong>.</li>
+</ul>
+<h1 id="enterprise-ai-architecture-implications">Enterprise AI
+Architecture Implications</h1>
+<p><strong>Independent Analysis.</strong> Over the next 12–24 months,
+these options would shift evaluation from a separate benchmark job into
+a versioned evidence plane spanning the agent lifecycle.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Shared foundation</th>
+<th>Near-term role</th>
+<th>Enhancements unlocked</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Trace and replay service</td>
+<td>Capture typed action, observation, state, version, cost, and
+checkpoint evidence</td>
+<td>1, 5</td>
+<td>Must minimize sensitive content and prevent durable replay
+effects</td>
+</tr>
+<tr class="even">
+<td>Evaluation contract registry</td>
+<td>Declare populations, metrics, judges, simulators, prompts, models,
+tools, licenses, and confidence methods</td>
+<td>2, 3, 4, 6</td>
+<td>Completeness must be audited; registry presence is not validity</td>
+</tr>
+<tr class="odd">
+<td>Judge/simulator gateway</td>
+<td>Pin versions, run repeats, measure drift, and route expert
+adjudication</td>
+<td>2, 3, 6</td>
+<td>Separate measurement services do not guarantee independence</td>
+</tr>
+<tr class="even">
+<td>Policy and objective layer</td>
+<td>Preserve mandatory slices, Pareto constraints, abstention, and stop
+conditions</td>
+<td>3, 9</td>
+<td>Business harm weights require internal governance</td>
+</tr>
+<tr class="odd">
+<td>Artifact and composition lineage</td>
+<td>Sign models, harnesses, links, graphs, datasets, and topology</td>
+<td>4, 7, 8</td>
+<td>Vendor opacity may limit end-to-end proof</td>
+</tr>
+<tr class="even">
+<td>Experiment infrastructure</td>
+<td>Execute matched replays, safe perturbations, causal attestations,
+and holdouts</td>
+<td>1, 5, 7, 8</td>
+<td>Isolation, privacy, and rollback are prerequisites</td>
+</tr>
+<tr class="odd">
+<td>Human-review control</td>
+<td>Calibrate expert references, adjudicate conflict, approve assumption
+changes</td>
+<td>2, 3, 7</td>
+<td>Human review must have capacity, expertise, and accountability</td>
+</tr>
+<tr class="even">
+<td>Cost and value telemetry</td>
+<td>Record latency, tokens, compute, review, false action, and false
+inaction</td>
+<td>all</td>
+<td>Optimization must not collapse safety and opportunity cost</td>
+</tr>
+</tbody>
+</table>
+<p>The target architecture is not a universal evaluation service that
+outputs one number. It is a <strong>federated contract system</strong>:
+common infrastructure enforces lineage and comparability, while
+domain-owned evaluation packs define task outcomes, judges, populations,
+objective trade-offs, and escalation. A model gateway should not approve
+a release because a score rose; it should confirm that the same contract
+ran, required slices passed, judge drift stayed bounded, and replay or
+human evidence exists for material changes.</p>
+<p>Additional internal context is required before implementation
+decisions: current agent runtimes and tool effects; data classification
+and retention; domain owners and expert capacity; regulated-decision
+scope; acceptable false-action and false-inaction costs; model/provider
+version controls; simulator and user populations; existing
+observability; incident history; safe replay/experiment environments;
+and procurement constraints.</p>
+<h1 id="implementation-priorities">Implementation priorities</h1>
+<h2 id="now">Now</h2>
+<ol type="1">
+<li>Define one typed trace schema for action, observation, state
+witness, model/harness version, cost, and checkpoint.</li>
+<li>Create a 30-artifact judge sentinel set and measure repeat stability
+before treating small score changes as real.</li>
+<li>Split at least one human-facing benchmark into two non-substitutable
+objectives and add multi-turn cases.</li>
+<li>Mark every current aggregate metric as authoritative, diagnostic, or
+navigational; remove navigational metrics from release gates.</li>
+</ol>
+<h2 id="next-36-months">Next 3–6 months</h2>
+<ol type="1">
+<li>Build an evaluation contract registry and enforce comparability
+checks in CI.</li>
+<li>Add matched retry baselines to failure replay and require evidence
+for “causal diagnosis” labels.</li>
+<li>Establish domain-expert anchors, judge drift thresholds, and a
+dispute/override process.</li>
+<li>Inventory composed-system artifacts—models, prompts, tools,
+adapters, links, graphs, simulators, and judges—with version
+lineage.</li>
+</ol>
+<h2 id="research-queue">Research queue</h2>
+<ol type="1">
+<li>Test whether error diagnoses transfer across harnesses after
+controlling for source concentration.</li>
+<li>Compare judge panels with blinded expert outcomes rather than
+inter-judge agreement alone.</li>
+<li>Measure whether multi-turn simulator findings replicate with
+consented real-user trajectories and subgroup analysis.</li>
+<li>Replicate causal-attestation economics outside the synthetic
+verifier benchmark.</li>
+<li>Reassess learned latent communication only after artifacts and
+independent safety replication appear.</li>
+</ol>
+<h1 id="knowledge-reinforcement">Knowledge reinforcement</h1>
+<h2 id="what-should-be-remembered">What should be remembered</h2>
+<ul>
+<li><strong>Generalize mechanics, localize semantics.</strong> Trace
+schemas and versioning can be shared; success definitions and thresholds
+cannot.</li>
+<li><strong>Agreement is not accuracy.</strong> Multiple judges can
+agree with one another and still be wrong about the domain.</li>
+<li><strong>Retry is a control, not a nuisance.</strong> A correction
+must beat matched re-execution from the same state before claiming
+diagnostic value.</li>
+<li><strong>One metric can hide harm migration.</strong> Improvement in
+factual firmness can coexist with worse calibrated support.</li>
+<li><strong>A certificate is conditional evidence.</strong> It is only
+as sound as the assumptions and graph under which it was generated.</li>
+<li><strong>Component approval does not imply system approval.</strong>
+Learned links or topology changes can alter safety without changing
+component models.</li>
+</ul>
+<h2 id="questions-for-the-next-design-review">Questions for the next
+design review</h2>
+<ol type="1">
+<li>Which parts of the current evaluation stack are shared
+infrastructure, and which contain domain meaning that must be owned
+locally?</li>
+<li>Can every material score be reproduced with the same task
+population, judge, simulator, prompt, model, tool, and harness
+versions?</li>
+<li>What is the minimum detectable improvement for each release gate,
+and how often do unchanged artifacts flip?</li>
+<li>Does every failure diagnosis distinguish “useful correction” from
+“causally verified explanation”?</li>
+<li>Which mandatory metrics must never be averaged away?</li>
+<li>What assumptions make each safety certificate valid, and who is
+accountable for testing them?</li>
+</ol>
+<h1 id="source-register-and-evidence-boundaries">Source register and
+evidence boundaries</h1>
+<h2 id="deep-papers">Deep papers</h2>
+<ol type="1">
+<li>Zhu, K., Ye, X., Li, Y., Qian, C., Li, B., &amp; Ji, H. (2026).
+<em>Agent Error Dataset: Scaling 50,000 Error–Diagnosis Pairs for
+Failure Analysis and Error-Aware Post-Training</em>. arXiv:2609.40111v1.
+Submitted September 30, 2026. <a
+href="https://arxiv.org/abs/2609.40111">Primary paper</a>.</li>
+<li>Gibert, L., Despujols, M., &amp; Rochet, A.-L. (2026). <em>Better
+Deck or Different Judge? Evaluating Agentic Harness Gains in Corporate
+and Investment Banking</em>. arXiv:2609.39958v1. Submitted September 30,
+2026. <a href="https://arxiv.org/abs/2609.39958">Primary paper</a>.</li>
+<li>Pulipaka, S., Binkyte, R., Sheth, I., &amp; Abdelnabi, S. (2026).
+<em>FIGS: Evaluating Multi-Turn Sycophancy Without Penalizing
+Empathy</em>. arXiv:2609.39863v1. Submitted September 30, 2026. <a
+href="https://arxiv.org/abs/2609.39863">Primary paper</a> · <a
+href="https://github.com/ethz-spylab/FIGS">code</a> · <a
+href="https://huggingface.co/datasets/ethz-spylab/FIGS">data</a>.</li>
+</ol>
+<h2 id="watchlist-1">Watchlist</h2>
+<ol start="4" type="1">
+<li>Rovai, F. (2026). <em>Who Verifies the Graph? Misspecification
+Attacks on Causal Action Verification for Language Agents</em>.
+arXiv:2609.40027v1. NeurIPS 2026 workshop poster. <a
+href="https://arxiv.org/abs/2609.40027">Primary paper</a>.</li>
+<li>Huzaifa, M., Mavali, S., &amp; Eisenhofer, T. (2026). <em>Safety of
+Latent Communication in Multi-Agent Systems</em>. arXiv:2609.39788v1. <a
+href="https://arxiv.org/abs/2609.39788">Primary paper</a>.</li>
+</ol>
+<h2 id="interpretation-boundary">Interpretation boundary</h2>
+<p>All deep selections are preprints. One Watchlist paper is
+workshop-accepted, not archival peer review. Reported model names,
+scores, costs, licenses, releases, and venues are limited to what was
+verified in the papers or first-party artifacts on October 1, 2026. The
+briefing does not infer present enterprise architecture, compliance
+obligations, model access, data rights, maturity, or risk tolerance.
+Every proposed experiment is isolated, reversible, measurable, and
+non-destructive by design; production implementation requires internal
+context, security/privacy review, legal review where applicable,
+accountable owners, and prospective validation.</p></main></div>
+<footer>AI Research Intelligence Brief · October 1, 2026 · Research options, not deployment approval.</footer>
+<div class="toolbar"><button onclick="window.print()" aria-label="Print report">Print</button><button id="top" aria-label="Back to top">↑ Top</button></div>
+<script>
+const p=document.getElementById('progress');addEventListener('scroll',()=>{const h=document.documentElement;p.style.width=((h.scrollTop/(h.scrollHeight-h.clientHeight))*100)+'%'});document.getElementById('top').onclick=()=>scrollTo({top:0,behavior:'smooth'});
+document.querySelectorAll('main h3').forEach(h=>{if(/^\d+\./.test(h.textContent))h.setAttribute('data-backlog','true')});
+</script>
+</body></html>
