@@ -3,12 +3,30 @@
     "title": "AI Research Intelligence",
     "url": "https://ygeszvain.github.io/ai-research-intelligence",
     "description": "Evidence-grounded daily AI and machine-learning research intelligence.",
-    "generated_at_utc": "2026-09-30T09:00:00.000Z",
-    "report_count": 52,
-    "latest_report": "2026-09-30",
-    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-09-30.html"
+    "generated_at_utc": "2026-10-01T09:00:00.000Z",
+    "report_count": 53,
+    "latest_report": "2026-10-01",
+    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-10-01.html"
   },
   "reports": [
+    {
+      "date": "2026-10-01",
+      "date_display": "October 1, 2026",
+      "title": "AI Research Intelligence Brief — October 1, 2026",
+      "excerpt": "Three deep papers show why evaluation mechanics can be shared while task success, judge reliability, simulator validity, and objective trade-offs must be re-qualified.",
+      "topics": [
+        "Agentic AI",
+        "Evaluation & Observability",
+        "Human-AI Workflow",
+        "Safety & Governance",
+        "AI Security",
+        "Data & Knowledge Infrastructure"
+      ],
+      "path": "reports/2026-10-01.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-10-01.html",
+      "size_bytes": 88498,
+      "sha256": "5dfa498805de7318d1de984c1c053934169bb6eb94d2af9acd611f9171564cb5"
+    },
     {
       "date": "2026-09-30",
       "date_display": "September 30, 2026",
