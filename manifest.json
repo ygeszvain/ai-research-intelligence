@@ -3,12 +3,30 @@
     "title": "AI Research Intelligence",
     "url": "https://ygeszvain.github.io/ai-research-intelligence",
     "description": "Evidence-grounded daily AI and machine-learning research intelligence.",
-    "generated_at_utc": "2026-10-01T09:00:00.000Z",
-    "report_count": 53,
-    "latest_report": "2026-10-01",
-    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-10-01.html"
+    "generated_at_utc": "2026-10-02T09:00:00.000Z",
+    "report_count": 54,
+    "latest_report": "2026-10-02",
+    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-10-02.html"
   },
   "reports": [
+    {
+      "date": "2026-10-02",
+      "date_display": "October 2, 2026",
+      "title": "AI Research Intelligence Brief — October 2, 2026",
+      "excerpt": "Three deep papers show why more agent autonomy must follow better task information, candidate coverage, repeated-run evidence, and executable process contracts.",
+      "topics": [
+        "Agentic AI",
+        "Evaluation & Observability",
+        "RAG & Knowledge",
+        "AI Software Engineering",
+        "Multimodal",
+        "Data & Knowledge Infrastructure"
+      ],
+      "path": "reports/2026-10-02.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-10-02.html",
+      "size_bytes": 87141,
+      "sha256": "0cf85dc0fe2b9af3b355dd443170d855227f00a24dbaf08850c3bd9cb16532ea"
+    },
     {
       "date": "2026-10-01",
       "date_display": "October 1, 2026",
