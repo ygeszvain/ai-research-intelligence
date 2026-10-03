@@ -3,12 +3,30 @@
     "title": "AI Research Intelligence",
     "url": "https://ygeszvain.github.io/ai-research-intelligence",
     "description": "Evidence-grounded daily AI and machine-learning research intelligence.",
-    "generated_at_utc": "2026-10-02T09:00:00.000Z",
-    "report_count": 54,
-    "latest_report": "2026-10-02",
-    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-10-02.html"
+    "generated_at_utc": "2026-10-03T09:00:00.000Z",
+    "report_count": 55,
+    "latest_report": "2026-10-03",
+    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-10-03.html"
   },
   "reports": [
+    {
+      "date": "2026-10-03",
+      "date_display": "October 3, 2026",
+      "title": "AI Research Intelligence Brief — October 3, 2026",
+      "excerpt": "Three deep papers show why reliable AI must identify causal memory effects, qualify the model-harness system, and route experience through reversible components.",
+      "topics": [
+        "Agentic AI",
+        "Memory & Context",
+        "Evaluation & Observability",
+        "MLOps & Platform",
+        "AI Security",
+        "Data & Knowledge Infrastructure"
+      ],
+      "path": "reports/2026-10-03.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-10-03.html",
+      "size_bytes": 86067,
+      "sha256": "1d6dc3da1ec2a54068708798508e313c0cb49b0c9da2266bcb301fcd11bee767"
+    },
     {
       "date": "2026-10-02",
       "date_display": "October 2, 2026",
