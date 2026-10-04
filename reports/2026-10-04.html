@@ -1,0 +1,1641 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Evidence-grounded AI Research Intelligence Brief for October 4, 2026: persistent evidence state, dependency-aware failure attribution, and two-sided artifact verification.">
+<meta name="report-date" content="2026-10-04">
+<meta name="research-window" content="2026-10-01T04:00:00-05:00/2026-10-04T04:00:00-05:00 America/Chicago">
+<meta name="deep-paper-count" content="3">
+<meta name="watchlist-count" content="2">
+<meta name="theme-color" content="#071321">
+<title>AI Research Intelligence Brief — October 4, 2026</title>
+<style>
+:root{--bg:#06111d;--panel:#0c1c2a;--panel2:#10283a;--text:#e9f2f8;--muted:#9fb6c6;--line:#2a465b;--cyan:#46dbc6;--gold:#f4c96b;--rose:#ff8f9b;--blue:#70adff;--max:1180px;color-scheme:dark}
+@media(prefers-color-scheme:light){:root{--bg:#f4f7f8;--panel:#fff;--panel2:#edf4f7;--text:#102131;--muted:#526979;--line:#cddbe2;--cyan:#087f73;--gold:#9b6300;--rose:#b92b45;--blue:#1661ad;color-scheme:light}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 90% 0,rgba(70,219,198,.12),transparent 30rem),var(--bg);color:var(--text);font:16px/1.67 ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}a{color:var(--cyan);text-underline-offset:3px}a:hover{text-decoration-thickness:2px}header{border-bottom:1px solid var(--line);background:linear-gradient(135deg,rgba(70,219,198,.09),rgba(112,173,255,.05));padding:54px 22px 34px}.hero{max-width:var(--max);margin:auto}.eyebrow{color:var(--cyan);text-transform:uppercase;letter-spacing:.15em;font-size:.76rem;font-weight:800}h1{font-size:clamp(2.2rem,6vw,4.7rem);line-height:.98;max-width:980px;margin:.35rem 0 1rem;letter-spacing:-.055em}header p{max-width:850px;color:var(--muted);font-size:1.09rem}.chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}.chip{border:1px solid var(--line);border-radius:999px;padding:6px 11px;background:var(--panel);font-size:.8rem}.topbets{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}.bet{border:1px solid var(--line);background:var(--panel);border-radius:14px;padding:15px}.bet b{display:block;color:var(--gold);font-size:1.15rem}.layout{max-width:var(--max);margin:auto;display:grid;grid-template-columns:250px minmax(0,1fr);gap:34px;padding:30px 22px 80px}nav{position:sticky;top:16px;align-self:start;max-height:calc(100vh - 32px);overflow:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:14px}nav strong{display:block;margin:2px 8px 10px;color:var(--gold)}nav ul{list-style:none;margin:0;padding:0}nav li{margin:0}nav a{display:block;color:var(--muted);text-decoration:none;padding:5px 8px;border-radius:7px;font-size:.83rem;line-height:1.25}nav a:hover{background:var(--panel2);color:var(--text)}main{min-width:0}main>h1{font-size:1.8rem;margin:2.6rem 0 1rem;padding-top:.7rem;border-top:1px solid var(--line);letter-spacing:-.02em}main>h1:first-child{margin-top:0}main h2{font-size:1.35rem;margin-top:2rem;color:var(--cyan)}main h3{font-size:1.08rem;color:var(--gold);margin-bottom:.45rem}p,li{max-width:88ch}blockquote{margin:1rem 0;padding:1rem 1.2rem;border-left:4px solid var(--gold);background:var(--panel);color:var(--muted)}pre{white-space:pre-wrap;overflow:auto;background:#07101a;border:1px solid var(--line);border-radius:14px;padding:18px;color:#dcecf2;font-size:.86rem;line-height:1.45}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}table{width:100%;border-collapse:collapse;margin:1.25rem 0;background:var(--panel);font-size:.86rem}th,td{padding:10px 12px;border:1px solid var(--line);text-align:left;vertical-align:top}th{color:var(--gold);background:var(--panel2)}hr{border:0;border-top:1px solid var(--line)}main h3+ul,main h2+ul{border:1px solid var(--line);background:linear-gradient(135deg,var(--panel),var(--panel2));border-radius:14px;padding:15px 22px 15px 34px}main h3+ul li,main h2+ul li{margin:.5rem 0}.progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--cyan),var(--gold));width:0;z-index:9}.toolbar{position:fixed;right:18px;bottom:18px;display:flex;gap:8px}.toolbar button{border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:999px;padding:9px 12px;cursor:pointer;box-shadow:0 8px 30px rgba(0,0,0,.2)}.label{font-size:.75rem;color:var(--muted)}footer{border-top:1px solid var(--line);padding:24px;text-align:center;color:var(--muted)}
+@media(max-width:850px){.topbets{grid-template-columns:1fr}.layout{grid-template-columns:1fr}nav{position:relative;top:0;max-height:none}nav ul{columns:2}h1{font-size:2.65rem}}
+@media(max-width:520px){header{padding-top:34px}.layout{padding:20px 14px 60px}nav ul{columns:1}table{display:block;overflow-x:auto}h1{font-size:2.25rem}}
+@media print{body{background:white;color:#111;font-size:11pt}header{padding:18px 0}.layout{display:block;padding:0}nav,.toolbar,.progress{display:none}a{color:#145c70}main>h1{break-before:page}main>h1:first-child{break-before:auto}table,pre{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<header><div class="hero">
+<div class="eyebrow">AI Research Intelligence · Evidence before enthusiasm</div>
+<h1>Preserve the evidence. Trace the failure. Challenge the consensus.</h1>
+<p>October 4, 2026 briefing. Three deep papers connect persistent verification state, dependency-guided failure attribution, and environment-grounded artifact checking to one operating rule: evidence must survive the workflow, explain the failure, and withstand adversarial verification.</p>
+<div class="chips"><span class="chip">3 deep papers</span><span class="chip">2 Watchlist</span><span class="chip">72-hour disclosed window</span><span class="chip">9 enterprise options</span><span class="chip">Primary sources + full-paper review</span></div>
+<div class="topbets"><div class="bet"><span class="label">TOP BET 1 · PROTOTYPE SOON</span><b>93.8 · Verification-state gate</b><span>Make claims, gates, evidence, and unresolved status durable and addressable.</span></div><div class="bet"><span class="label">TOP BET 2 · PROTOTYPE SOON</span><b>92.0 · Failure propagation graph</b><span>Trace origin, transmission, adoption, and symptom before recovery.</span></div><div class="bet"><span class="label">TOP BET 3 · PROTOTYPE SOON</span><b>91.2 · Two-sided verification</b><span>Resolve disagreement and separately try to falsify consensus.</span></div></div>
+</div></header>
+<div class="layout"><nav><strong>Navigate</strong><ul>
+<li><a href="#scope-window-and-evidence-policy"
+id="toc-scope-window-and-evidence-policy">Scope, window, and evidence
+policy</a></li>
+<li><a href="#executive-signal" id="toc-executive-signal">Executive
+signal</a></li>
+<li><a href="#top-3-future-bets" id="toc-top-3-future-bets">Top 3 Future
+Bets</a></li>
+<li><a
+href="#deep-paper-1--persistent-state-makes-evidence-an-executable-control-input"
+id="toc-deep-paper-1--persistent-state-makes-evidence-an-executable-control-input">Deep
+paper 1 — Persistent state makes evidence an executable control
+input</a>
+<ul>
+<li><a href="#contribution-and-quantitative-claim-trace"
+id="toc-contribution-and-quantitative-claim-trace">Contribution and
+quantitative claim trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison"
+id="toc-methodological-critique-and-prior-work-comparison">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#reproducibility-and-enterprise-readiness"
+id="toc-reproducibility-and-enterprise-readiness">Reproducibility and
+enterprise readiness</a></li>
+</ul></li>
+<li><a
+href="#deep-paper-2--diagnose-causal-propagation-not-the-nearest-visible-symptom"
+id="toc-deep-paper-2--diagnose-causal-propagation-not-the-nearest-visible-symptom">Deep
+paper 2 — Diagnose causal propagation, not the nearest visible
+symptom</a>
+<ul>
+<li><a href="#contribution-and-quantitative-claim-trace-1"
+id="toc-contribution-and-quantitative-claim-trace-1">Contribution and
+quantitative claim trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison-1"
+id="toc-methodological-critique-and-prior-work-comparison-1">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#reproducibility-and-enterprise-readiness-1"
+id="toc-reproducibility-and-enterprise-readiness-1">Reproducibility and
+enterprise readiness</a></li>
+</ul></li>
+<li><a
+href="#deep-paper-3--verification-must-attack-consensus-as-well-as-resolve-disagreement"
+id="toc-deep-paper-3--verification-must-attack-consensus-as-well-as-resolve-disagreement">Deep
+paper 3 — Verification must attack consensus as well as resolve
+disagreement</a>
+<ul>
+<li><a href="#contribution-and-quantitative-claim-trace-2"
+id="toc-contribution-and-quantitative-claim-trace-2">Contribution and
+quantitative claim trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison-2"
+id="toc-methodological-critique-and-prior-work-comparison-2">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#reproducibility-and-enterprise-readiness-2"
+id="toc-reproducibility-and-enterprise-readiness-2">Reproducibility and
+enterprise readiness</a></li>
+</ul></li>
+<li><a href="#watchlist" id="toc-watchlist">Watchlist</a>
+<ul>
+<li><a href="#verify-claims-not-scores"
+id="toc-verify-claims-not-scores">Verify Claims, Not Scores</a></li>
+<li><a href="#fastci" id="toc-fastci">FastCI</a></li>
+</ul></li>
+<li><a href="#cross-paper-synthesis--preserve-trace-challenge"
+id="toc-cross-paper-synthesis--preserve-trace-challenge">Cross-paper
+synthesis — preserve, trace, challenge</a></li>
+<li><a href="#enterprise-ai-enhancement-backlog"
+id="toc-enterprise-ai-enhancement-backlog">Enterprise AI Enhancement
+Backlog</a>
+<ul>
+<li><a href="#priority-method-and-uncertainty"
+id="toc-priority-method-and-uncertainty">Priority method and
+uncertainty</a></li>
+<li><a href="#prototype-soon" id="toc-prototype-soon">Prototype Soon</a>
+<ul>
+<li><a
+href="#1-persistent-verification-state-and-claim-evidence-gate--938"
+id="toc-1-persistent-verification-state-and-claim-evidence-gate--938">1.
+Persistent verification-state and claim-evidence gate — 93.8</a></li>
+<li><a
+href="#2-dependency-aware-failure-attribution-and-recovery-graph--920"
+id="toc-2-dependency-aware-failure-attribution-and-recovery-graph--920">2.
+Dependency-aware failure attribution and recovery graph — 92.0</a></li>
+<li><a href="#3-disagreement-resolver-plus-consensus-challenger--912"
+id="toc-3-disagreement-resolver-plus-consensus-challenger--912">3.
+Disagreement resolver plus consensus challenger — 91.2</a></li>
+</ul></li>
+<li><a href="#prepare-foundations" id="toc-prepare-foundations">Prepare
+Foundations</a>
+<ul>
+<li><a
+href="#4-independent-lifecycle-controller-and-bounded-recovery-policy--893"
+id="toc-4-independent-lifecycle-controller-and-bounded-recovery-policy--893">4.
+Independent lifecycle controller and bounded recovery policy —
+89.3</a></li>
+<li><a
+href="#5-unified-claim-evidence-trajectory-and-effect-ledger--892"
+id="toc-5-unified-claim-evidence-trajectory-and-effect-ledger--892">5.
+Unified claim, evidence, trajectory, and effect ledger — 89.2</a></li>
+<li><a href="#6-governed-verifier-skill-registry--838"
+id="toc-6-governed-verifier-skill-registry--838">6. Governed
+verifier-skill registry — 83.8</a></li>
+</ul></li>
+<li><a href="#monitor-for-maturity"
+id="toc-monitor-for-maturity">Monitor for Maturity</a>
+<ul>
+<li><a href="#7-risk-aware-gpu-ci-evidence-selector--834"
+id="toc-7-risk-aware-gpu-ci-evidence-selector--834">7. Risk-aware GPU CI
+evidence selector — 83.4</a></li>
+<li><a href="#8-perfect-component-claim-audit-harness--792"
+id="toc-8-perfect-component-claim-audit-harness--792">8.
+Perfect-component claim audit harness — 79.2</a></li>
+</ul></li>
+<li><a href="#deprioritize-for-now"
+id="toc-deprioritize-for-now">Deprioritize for Now</a>
+<ul>
+<li><a href="#9-majority-only-or-output-only-autonomous-acceptance--448"
+id="toc-9-majority-only-or-output-only-autonomous-acceptance--448">9.
+Majority-only or output-only autonomous acceptance — 44.8</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#enterprise-ai-architecture-implications"
+id="toc-enterprise-ai-architecture-implications">Enterprise AI
+Architecture Implications</a></li>
+<li><a href="#implementation-priorities"
+id="toc-implementation-priorities">Implementation priorities</a></li>
+<li><a href="#knowledge-reinforcement"
+id="toc-knowledge-reinforcement">Knowledge reinforcement</a></li>
+<li><a href="#evidence-register-and-final-boundary"
+id="toc-evidence-register-and-final-boundary">Evidence register and
+final boundary</a></li>
+</ul></nav><main><h1 id="scope-window-and-evidence-policy">Scope,
+window, and evidence policy</h1>
+<p><strong>Research window.</strong> The exact window was Saturday,
+October 3, 2026 at 4:00 AM CDT through Sunday, October 4, 2026 at 4:00
+AM CDT (America/Chicago; 09:00 UTC to 09:00 UTC). Because arXiv
+publishes no new weekend announcement batch, discovery expanded to 72
+hours, back to October 1 at 4:00 AM CDT. All five selected papers were
+submitted October 1 and announced October 2. Titles and identifiers were
+checked against the 55-report archive through October 3; none was
+previously covered.</p>
+<p><strong>Discovery.</strong> Screening covered current arXiv
+artificial-intelligence, machine-learning, language,
+information-retrieval, security, multi-agent,
+human-computer-interaction, software-engineering, and systems listings,
+plus ACL/EMNLP/AACL venues, Nature Portfolio, Science, OpenReview,
+first-party project pages, repositories, and dataset hosts. Selection
+favored explicit denominators, matched controls, component ablations,
+artifact-level evidence, inspectable failure mechanisms, released
+materials, and enterprise decision value. YouRA is accepted to
+AACL-IJCNLP 2026 Main; the other selected works are preprints. None
+supplies independent enterprise-production validation.</p>
+<p><strong>Anti-duplication.</strong> Yesterday's five
+papers—arXiv:2610.02070, 2610.02001, 2610.01787, 2610.01995, and
+2610.01539—were excluded, as were all earlier archive identifiers. Prior
+briefings already covered trajectory safety, claim ledgers, evaluation
+contracts, memory curation, harness qualification, and effect control.
+Today's incremental question is narrower: <em>how should a long-horizon
+AI system preserve evidence state, locate the decisive upstream failure,
+and challenge both disagreement and consensus before accepting a durable
+artifact?</em></p>
+<p><strong>Evidence labels.</strong> <strong>Paper Fact</strong> is
+directly reported in a paper or verified first-party artifact.
+<strong>Independent Analysis</strong> is this briefing's comparison,
+calculation, or methodological judgment. <strong>Enterprise
+Inference</strong> translates research evidence into a bounded future
+option. <strong>Uncertainty</strong> marks missing causal,
+external-validity, security, privacy, governance, economic, adoption,
+artifact, licensing, or replication evidence. Provider-scale experiments
+were not rerun. No benchmark result authorizes production
+deployment.</p>
+<h1 id="executive-signal">Executive signal</h1>
+<blockquote>
+<p><strong>Reliable enterprise AI needs evidence state before action,
+dependency-aware diagnosis after failure, and adversarial verification
+before acceptance.</strong> A fluent final artifact, a local anomaly, or
+majority agreement is not enough: the system must preserve what was
+claimed, trace how evidence and errors propagated, and test both
+contested and shared conclusions against the environment.</p>
+</blockquote>
+<p>The three deep papers triangulate that operating rule:</p>
+<ol type="1">
+<li><strong>YouRA</strong> externalizes hypotheses, gate outcomes,
+evidence pointers, failures, and recovery decisions in a persistent
+Verification State Architecture. Across a predefined ten-task MLR-Bench
+subset, it leads two end-to-end research-agent baselines on Overall for
+three matched execution backbones; component ablations mainly damage
+Soundness and Significance. The comparison is not tool-normalized and
+remains ML-domain-specific.</li>
+<li><strong>DeFA</strong> constructs an event dependency graph and a
+failure-propagation graph to identify the responsible agent and decisive
+error step. Across 184 Who&amp;When and 300 Who&amp;When Pro text
+trajectories, it leads seven baselines in exact-step and
+responsible-agent accuracy with three backbones; the downstream skill
+result is narrower, covering 100 spreadsheet-evolution and 100 test
+tasks.</li>
+<li><strong>VeriHarness</strong> gives a same-model verifier a
+workspace, evidence tools, and separate disagreement-resolution and
+consensus-challenge contexts. Using frozen pools of ten rollouts on five
+artifact-producing benchmarks, it improves the unweighted average over a
+single rollout by 6.2 points for Gemini 3.5 Flash and 6.4 for Claude
+Opus 4.8. The quality gain buys substantial generation and verification
+cost and latency.</li>
+</ol>
+<p>The Watchlist adds two boundaries. <strong>Verify Claims, Not
+Scores</strong> supplies a disciplined audit vocabulary—supported,
+unsupported, unresolved, or not evaluated—and uses perfect-component
+replacement and oracle policies, but applies it to one constrained
+synthetic portfolio agent. <strong>FastCI</strong> reports 77.5% lower
+CI latency and 63.9% lower GPU use in a deployed ByteDance
+training-framework pipeline, but without a verified public
+implementation or cross-organization replication.</p>
+<p><strong>Decision posture.</strong> Prototype persistent
+verification-state records, dependency-aware failure graphs, and a
+two-sided artifact-verification harness in isolated workflows. Prepare
+common claim/evidence identifiers, immutable trajectory lineage,
+evidence tools, policy-bound recovery, and verifier-cost telemetry.
+Monitor autonomous verifier-skill evolution, modular perfect-component
+audits, and runtime-evidence GPU CI until independence, security,
+economics, and generalization are clearer. Deprioritize majority-only
+acceptance and output-only approval.</p>
+<h1 id="top-3-future-bets">Top 3 Future Bets</h1>
+<ol type="1">
+<li><strong>Persistent verification-state and claim-evidence gate —
+93.8/100.</strong> Why it matters: later stages cannot reliably obey
+evidence they cannot identify, version, or revisit. Evidence that would
+change the recommendation: representative internal workflows show no
+reduction in unsupported claims or recovery time, or maintaining state
+creates unacceptable privacy, operational, or latency cost. Next
+reversible action: replay 25 completed workflows into an append-only
+shadow state record with hypothesis, requirement, gate, evidence, and
+decision IDs; do not alter live execution.</li>
+<li><strong>Dependency-aware failure attribution and recovery graph —
+92.0/100.</strong> Why it matters: visible symptoms can occur many steps
+after the decisive error, so local anomaly scoring can repair the wrong
+component or encode the wrong lesson. Evidence that would change the
+recommendation: independent annotation shows that simple full-trace
+review matches graph-guided attribution, or graph extraction is unstable
+across models and workflow types. Next reversible action: annotate 50
+historical failed trajectories, generate event and propagation graphs in
+shadow mode, and compare exact-step, responsible-component, analyst
+time, and repair success against the current diagnostic process.</li>
+<li><strong>Disagreement resolver plus consensus challenger —
+91.2/100.</strong> Why it matters: disagreement often contains a correct
+alternative while consensus can preserve a shared error; one selection
+rule cannot cover both. Evidence that would change the recommendation:
+representative tasks show no quality gain after controlling for equal
+rollout and tool budgets, or the cost/latency exceeds the value of
+avoided defects. Next reversible action: on 30 sanitized,
+artifact-scored tasks, freeze five candidate rollouts and compare
+majority, ordinary judge, environment-grounded disagreement resolution,
+and consensus challenge without releasing revised artifacts.</li>
+</ol>
+<h1
+id="deep-paper-1--persistent-state-makes-evidence-an-executable-control-input">Deep
+paper 1 — Persistent state makes evidence an executable control
+input</h1>
+<p><strong>Identity and status.</strong> <em>YouRA: A Persistent-State
+Architecture for Evidence-Traceable Autonomous Research Agents</em>;
+Yoonkyu Woo, Woojin Lee, and Jin-Xia Huang; arXiv:2610.01097v1;
+submitted October 1, 2026 at 05:40:21 UTC; accepted to AACL-IJCNLP 2026
+Main; 21 pages, 5 figures, 17 tables; CC BY-SA 4.0. The verified public
+repository contains source code, schemas, controller configurations,
+prompts, generated papers, state files, recovery snapshots, judge
+outputs, diagnostic outputs, and regeneration scripts. (<a
+href="https://arxiv.org/abs/2610.01097">paper</a> · <a
+href="https://github.com/PrayPrey/Your-Research-Agent">code</a>)</p>
+<h2 id="contribution-and-quantitative-claim-trace">Contribution and
+quantitative claim trace</h2>
+<p>YouRA combines a YAML-based Verification State Architecture (VSA), a
+controller context separated from task execution, and stateful
+reflection. The VSA records hypotheses, MUST_WORK gates, evidence
+pointers, routing decisions, failed hypotheses, checkpoints, and
+attributed mutations. Recovery is bounded into repair, hypothesis
+redesign, or problem reset. An evidence check and adversarial fact
+review connect executed results to the manuscript.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>Decision meaning</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>The full architecture leads matched baselines</td>
+<td style="text-align: right;">Overall on the ten-task subset: 4.20 vs
+3.10/3.62 at Sonnet 4.5; 4.45 vs 3.62/4.28 at Opus 4.5; 5.05 vs
+4.42/3.88 at Sonnet 4.6</td>
+<td>Persistent state and external control deserve qualification as a
+system pattern</td>
+<td>Ten ML-research tasks; four LLM judges; released configurations
+differ</td>
+</tr>
+<tr class="even">
+<td>Pairwise preference agrees with scalar results</td>
+<td style="text-align: right;">Against MLR-Agent: 72 wins, 33 ties, 15
+losses; against AI Scientist V2: 55/38/27 across 120 order-collapsed
+comparisons per baseline</td>
+<td>The advantage is not solely a holistic-score artifact</td>
+<td>Same judge family and tasks; not human peer review</td>
+</tr>
+<tr class="odd">
+<td>Core-state removals damage research validity</td>
+<td style="text-align: right;">Removing VSA yields Overall 2.88, 4.10,
+3.33; removing independent controller yields 2.38, 4.70, 3.25 across the
+three backbones, versus 4.20, 5.05, 4.45 full</td>
+<td>State and control separation affect evidence alignment more than
+prose quality</td>
+<td>Each ablation changes a bundle of behaviors</td>
+</tr>
+<tr class="even">
+<td>Every component contributes, but the study cannot rank them</td>
+<td style="text-align: right;">All four ablations significantly lower
+Overall across 30 matched backbone-task cells after Holm correction;
+pairwise drop-size comparisons have Holm p=1.000</td>
+<td>Do not turn the ablation into a precise component priority
+order</td>
+<td>Thirty cells; dependence and judge noise remain</td>
+</tr>
+<tr class="odd">
+<td>Hallucination diagnostics remain imperfect</td>
+<td style="text-align: right;">Four-judge union/intersection reporting;
+human validation estimates 75.2% precision on flagged instances</td>
+<td>Keep automated evidence diagnostics as triage, not truth</td>
+<td>Recall is not established; citation flags vary by backbone</td>
+</tr>
+<tr class="even">
+<td>The comparison is not tool-normalized</td>
+<td style="text-align: right;">MLR-Agent, AI Scientist V2, and YouRA run
+released configurations; YouRA uses an MCP stack and a fixed GPT-5.2
+controller</td>
+<td>Architecture and resource effects are entangled in cross-system
+scores</td>
+<td>Within-YouRA ablations are more probative than leaderboard gaps</td>
+</tr>
+</tbody>
+</table>
+<h2
+id="methodological-critique-and-prior-work-comparison">Methodological
+critique and prior-work comparison</h2>
+<p>Earlier end-to-end research agents automate ideation, experiments, or
+manuscript generation; Reflexion stores verbal lessons; debate systems
+refine hypotheses. YouRA's incremental contribution is not another role
+roster. It treats the trajectory as a durable, typed record that
+constrains continuation, recovery, and writing, and separates control
+from the conversation doing the work.</p>
+<p>The evidence is stronger than a single leaderboard: matched execution
+backbones, order-controlled pairwise judging, component ablations,
+artifact-aware judging, hallucination categories, data-provenance
+analysis, significance tests, and released raw materials. But the
+benchmark's execution-heavy subset has only ten tasks, and standard
+deviations are large. Four judges are still model judges, code/log
+inputs may be truncated, and the authors use a different judge
+configuration from the original MLR-Bench. Baselines run different tools
+and token budgets. The full design includes ten stages, multiple roles,
+MCP access, separate control, reflection, and fact review, so
+operational complexity and cost may be material. ML-research pipelines
+are not equivalent to financial, legal, customer-service, or physical
+workflows.</p>
+<p>The key enterprise lesson is narrower than “adopt YouRA”: make
+claims, gates, evidence, decisions, failures, and recovery boundaries
+durable and addressable. That pattern can be tested without giving an
+autonomous system control of research or production changes.</p>
+<h2 id="reproducibility-and-enterprise-readiness">Reproducibility and
+enterprise readiness</h2>
+<p>The release is unusually complete, but reproduction depends on
+Linux/WSL, specific Claude and Codex CLIs, authenticated model access,
+OpenRouter, optional MCP services, a TeX toolchain, conda environments,
+and changing provider models. The repository documents hard-coded paths,
+no-VSA and controller-off variants, runtime settings, and upstream
+licensing obligations. <strong>Enterprise readiness:</strong> high for
+state schemas, immutable mutation history, evidence pointers, and shadow
+replay; medium for bounded human-reviewed workflows; low for autonomous
+hypothesis-to-publication or unsupervised durable actions.
+<strong>Research Utility Score: 96/100</strong> (methodological rigor
+24/25; quantitative traceability 24/25; reproducibility/artifacts 20/20;
+enterprise relevance 14/15; prior-work advance 14/15).</p>
+<h1
+id="deep-paper-2--diagnose-causal-propagation-not-the-nearest-visible-symptom">Deep
+paper 2 — Diagnose causal propagation, not the nearest visible
+symptom</h1>
+<p><strong>Identity and status.</strong> <em>DeFA: Dependency-Guided
+Failure Attribution for LLM Agents</em>; Bo Deng and eight coauthors;
+arXiv:2610.01256v1; submitted October 1, 2026 at 07:50:22 UTC; preprint
+under arXiv's perpetual non-exclusive license. No public code or data
+repository was verified from the paper page. (<a
+href="https://arxiv.org/abs/2610.01256">paper</a>)</p>
+<h2 id="contribution-and-quantitative-claim-trace-1">Contribution and
+quantitative claim trace</h2>
+<p>DeFA segments long traces, recovers protocol and semantic relations
+into an event dependency graph, recalls suspicious events, and connects
+their upstream sources and downstream effects in a failure-propagation
+graph. Final adjudication uses step evidence and each event's
+propagation role to identify the decisive error, responsible agent, and
+failure category.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>Decision meaning</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Graph-guided attribution leads seven baselines</td>
+<td style="text-align: right;">On 184 Who&amp;When trajectories,
+exact-step accuracy is 52.7%, 48.9%, and 50.0% with GLM-5.2,
+DeepSeek-V4-Pro, and Qwen3.8-Max—7.6–9.8 points above the strongest
+baseline per backbone</td>
+<td>Dependency context helps separate origin from symptom</td>
+<td>Benchmark annotations define one or more acceptable decisive
+steps</td>
+</tr>
+<tr class="even">
+<td>Responsible-agent attribution also improves</td>
+<td style="text-align: right;">Agent accuracy is 72.3%, 68.5%, and 70.7%
+on Who&amp;When</td>
+<td>A repair system can target the responsible component instead of only
+the failing output</td>
+<td>Multi-agent benchmark composition may not match enterprise
+orchestration</td>
+</tr>
+<tr class="odd">
+<td>Gains persist on a newer controlled subset</td>
+<td style="text-align: right;">300 Pro text trajectories across eight
+frameworks; DeFA is highest in exact-step and responsible-agent accuracy
+for all three backbones and highest failure-mode accuracy among
+taxonomy-aligned methods</td>
+<td>The result is not confined to one corpus</td>
+<td>Pro uses controlled error injection and selected coverage
+constraints</td>
+</tr>
+<tr class="even">
+<td>Multimodal applicability is demonstrated, not production-proven</td>
+<td style="text-align: right;">On 100 image/video trajectories,
+exact-step accuracy improves 6.0–7.0 points across Qwen3.8-Max and
+Kimi-K3</td>
+<td>Preserve visual observations with their action steps</td>
+<td>Small sample; model-dependent visual interpretation</td>
+</tr>
+<tr class="odd">
+<td>Propagation edges matter beyond candidate recall</td>
+<td style="text-align: right;">With the adjudication set and 83.2%
+coverage held fixed, removing propagation edges drops exact-step
+accuracy from 52.7% to 40.2%</td>
+<td>Relations add adjudication value beyond simply surfacing
+candidates</td>
+<td>One backbone in ablation; no independent rerun</td>
+</tr>
+<tr class="even">
+<td>Diagnostic feedback can improve later work</td>
+<td style="text-align: right;">Replacing Trace2Skill's failed-trace
+analysis raises spreadsheet test accuracy by 6–15 points, average 9.0;
+largest arm 63%→78%</td>
+<td>Diagnoses may be reusable improvement signals</td>
+<td>Only 100 evolution and 100 test spreadsheet tasks, two models, two
+initial-skill types</td>
+</tr>
+</tbody>
+</table>
+<h2
+id="methodological-critique-and-prior-work-comparison-1">Methodological
+critique and prior-work comparison</h2>
+<p>Who&amp;When supplies global, sequential, and binary-search judges;
+AgentRx supplies validated constraint violations; DeepDebug investigates
+and cross-examines; ErrorProbe traces from symptoms; counterfactual
+approaches patch or rerun steps. DeFA's distinction is to make
+dependency recovery and failure propagation explicit before adjudication
+and to retain global context through segment summaries.</p>
+<p>The study uses common trajectories, three backbones at temperature
+zero, seven baselines, exact and tolerant step metrics, component
+ablations, multimodal extensions, and a downstream skill experiment. The
+ablation that removes propagation edges while holding candidates fixed
+is especially useful because it isolates relation use from recall.</p>
+<p>Important limits remain. Dependency recovery and propagation are
+model interpretations, not measured causal interventions. A missing edge
+can erase the true cause; a plausible but wrong edge can create a
+confident misattribution. Controlled injections and annotated decisive
+steps are cleaner than real incidents, where multiple interacting
+errors, ambiguous responsibility, missing telemetry, and organizational
+causes coexist. Exact-step accuracy peaks near 53% on Who&amp;When,
+leaving substantial error even in the best condition. The downstream
+benefit is confined to spreadsheets and could reflect benchmark-specific
+repair regularities. No verified release lowers reproducibility and
+auditability.</p>
+<h2 id="reproducibility-and-enterprise-readiness-1">Reproducibility and
+enterprise readiness</h2>
+<p>The paper provides benchmark names, sample sizes, models,
+temperature, metrics, ablations, and tables, but lacks a verified
+code/config/output release. External APIs and model versions may drift.
+<strong>Enterprise readiness:</strong> high for the idea of a typed
+event graph and analyst-facing evidence trail; medium for offline
+incident triage with human confirmation; low for autonomous blame
+assignment, personnel decisions, or self-modification. <strong>Research
+Utility Score: 91/100</strong> (methodological rigor 23/25; quantitative
+traceability 24/25; reproducibility/artifacts 14/20; enterprise
+relevance 15/15; prior-work advance 15/15).</p>
+<h1
+id="deep-paper-3--verification-must-attack-consensus-as-well-as-resolve-disagreement">Deep
+paper 3 — Verification must attack consensus as well as resolve
+disagreement</h1>
+<p><strong>Identity and status.</strong> <em>VeriHarness: Scaling
+Agentic Verification for Long-Horizon Tasks</em>; Caiqi Zhang, Rujun
+Han, Zifeng Wang, Zoey CuiZhu, Nigel Collier, Tomas Pfister, and Chen-Yu
+Lee; arXiv:2610.00972v1; submitted October 1, 2026 at 03:02:17 UTC;
+preprint; CC license. The verified Google Research repository, project
+site, and Hugging Face dataset expose the harness and approximately
+26,000 rollouts, which the authors report cost more than $100,000 to
+generate. (<a href="https://arxiv.org/abs/2610.00972">paper</a> · <a
+href="https://github.com/google-research/veriharness">code</a> · <a
+href="https://huggingface.co/datasets/caiqizh/veriharness">dataset</a> ·
+<a href="https://veriharness.com/">project</a>)</p>
+<h2 id="contribution-and-quantitative-claim-trace-2">Contribution and
+quantitative claim trace</h2>
+<p>The protocol runs separate model contexts for disagreement resolution
+and consensus challenge, then adjudicates and optionally revises. The
+same base model acts as generator and verifier. It has no reference
+answer or grading rubric at test time, but can inspect source files,
+data, application state, candidate artifacts, and action traces with
+native tools and artifact-specific skills.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>Decision meaning</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Consensus is not a safe acceptance rule</td>
+<td style="text-align: right;">In the APEX case study, roughly one-third
+of values agreed across ten Claude Opus 4.8 rollouts are judged
+incorrect</td>
+<td>Shared error needs an explicit challenge path</td>
+<td>Case study, claim extraction, and benchmark grades determine the
+estimate</td>
+</tr>
+<tr class="even">
+<td>Selection improves across a broad artifact set</td>
+<td style="text-align: right;">Five benchmarks total 1,166 tasks: 480
+APEX, 100 Workspace-Bench Lite, 200 WorkBuddy, 321 SpreadsheetBench 2,
+and 65 JobBench; VeriHarness has the best selection score among tested
+baselines on every benchmark/model pair</td>
+<td>Environment-grounded checking generalizes across reports, code,
+files, and workbooks</td>
+<td>Two frontier models; benchmark-native scores are averaged
+unweighted</td>
+</tr>
+<tr class="odd">
+<td>Revision adds value beyond selection</td>
+<td style="text-align: right;">Average gain over a single rollout
+reaches +6.2 for Gemini 3.5 Flash and +6.4 for Claude Opus 4.8</td>
+<td>Evidence records can guide corrective editing, not just ranking</td>
+<td>Each task starts with ten costly rollouts plus multi-turn
+verification</td>
+</tr>
+<tr class="even">
+<td>Protocol, not environment access alone, matters</td>
+<td style="text-align: right;">The agentic verifier with the same
+environment access but no protocol/skills recovers only about half the
+harness gain</td>
+<td>Tools without structured checking are insufficient</td>
+<td>Author implementation and prompt design remain bundled</td>
+</tr>
+<tr class="odd">
+<td>Verification skills can improve from failure feedback</td>
+<td style="text-align: right;">On held-out tasks, evolving from a human
+library adds +6.8 APEX and +3.7 SpreadsheetBench 2; evolving from empty
+adds +11.0 and +5.7 over empty</td>
+<td>A verifier can accumulate procedures without changing base
+weights</td>
+<td>Only two benchmarks and one model in self-evolution study</td>
+</tr>
+<tr class="even">
+<td>Evolved skills are mostly refinements or additions</td>
+<td style="text-align: right;">Of 95 evolved checks, 5 restate human
+checks, 48 operationalize them, and 42 are new</td>
+<td>Skill registries should preserve source, specificity, and
+validation</td>
+<td>Manual classification; feedback leakage remains a governance
+risk</td>
+</tr>
+</tbody>
+</table>
+<h2
+id="methodological-critique-and-prior-work-comparison-2">Methodological
+critique and prior-work comparison</h2>
+<p>Majority voting and self-consistency assume frequency tracks
+correctness; LLM judges rank candidates by reading them; agentic
+verifiers may have tools without a protocol for deciding what to test.
+VeriHarness separates two failure geometries: contested claims require
+evidence-based resolution, while shared claims require deliberate
+attempts to falsify or reveal omissions. A fresh adjudication context
+receives both records.</p>
+<p>The comparison is unusually controlled: every method receives the
+same frozen pool of ten rollouts, the same model, and the same evidence
+tools where applicable; benchmark graders are hidden; scores average
+three independent verifier runs. The artifact mix and CLI transfer tests
+broaden relevance, and the public rollout pool enables secondary
+analysis.</p>
+<p>But generation cost is not a footnote: 10 rollouts per task plus
+multi-turn investigation is far beyond many interactive workloads. The
+same-model restriction isolates protocol value but leaves open whether
+correlated blind spots dominate elsewhere. The harness produces
+claim-level verdicts, not a calibrated rollout score. Benchmark graders
+differ, so the unweighted average has no common business interpretation.
+Revision can introduce new defects, and the reported setup still trusts
+the verifier's choice of checks, evidence interpretation, and stopping
+point. Self-evolving skills are selected using development scores and
+grader feedback; production use would require feedback provenance,
+isolation, poisoning defenses, privacy controls, regression tests, and
+rollback.</p>
+<h2 id="reproducibility-and-enterprise-readiness-2">Reproducibility and
+enterprise readiness</h2>
+<p>Code, project documentation, skills, and rollout data are public; the
+paper specifies task pools, fixed N=10 rollouts, model roles, three
+verifier runs, and baseline families. Reproducing generation requires
+costly frontier APIs and potentially drifting services; some benchmarks
+or documents may have separate licenses. <strong>Enterprise
+readiness:</strong> high for offline artifact verification on valuable
+deliverables; medium for gated human-review workflows with strict
+budgets; low for latency-sensitive use, automatic release, or ungoverned
+skill evolution. <strong>Research Utility Score: 95/100</strong>
+(methodological rigor 24/25; quantitative traceability 24/25;
+reproducibility/artifacts 20/20; enterprise relevance 14/15; prior-work
+advance 13/15).</p>
+<h1 id="watchlist">Watchlist</h1>
+<h2 id="verify-claims-not-scores">Verify Claims, Not Scores</h2>
+<p><strong>Identity.</strong> <em>Verify Claims, Not Scores:
+Evidence-Based Verification of Modular Agents</em>; Ali Atiah Alzahrani;
+arXiv:2610.01348v1; submitted October 1, 2026 at 09:17:47 UTC; 32 pages,
+4 figures, 15 tables; CC license. (<a
+href="https://arxiv.org/abs/2610.01348">paper</a>)</p>
+<p>The paper proposes an audit that records each conclusion with
+evidence, a verdict—supported, unsupported, unresolved, or not
+evaluated—and its boundary. Oracle policies estimate attainable
+improvement under an explicit action set; perfect-component replacements
+locate lost value; null results remain unresolved when downstream
+components can mask improvement; and a separate identification test asks
+whether the verifier score bounds the quantity readers assume it
+does.</p>
+<p>Applied to one constrained portfolio-allocation agent in a synthetic
+market, the audit finds that the value of perfect regime information
+depends on the action set, a scenario generator discards most regime
+signal, better local fidelity does not improve decisions, and bypassing
+the runtime verifier produces no visible outcome change. <strong>Why
+Watchlist, not deep selection:</strong> the evidentiary distinctions are
+excellent, but empirical scope is one synthetic environment and one
+authored agent. No verified general artifact or multi-domain replication
+was established. Promote after independent implementations on at least
+two non-financial agents, preregistered claim boundaries, and evidence
+that perfect-component substitutions preserve all other relevant
+behavior.</p>
+<h2 id="fastci">FastCI</h2>
+<p><strong>Identity.</strong> <em>FastCI: Efficient GPU-Intensive CI for
+LLM Training Frameworks</em>; Tianshuo Qiao, Naiqian Zheng, Xiaopeng
+Liu, Shuguang Wang, Diandian Gu, Xuanzhe Liu, and Xin Jin;
+arXiv:2610.01967v1; submitted October 1, 2026 at 16:18:14 UTC; preprint
+under arXiv's perpetual non-exclusive license. (<a
+href="https://arxiv.org/abs/2610.01967">paper</a>)</p>
+<p>FastCI uses runtime evidence to select tests affected by changed
+code, prunes tests that execute changed code in equivalent contexts,
+prioritizes high-risk tests, and shrinks workload dimensions outside
+each test's intended validation scope. In the authors' ByteDance
+LLM-training-framework CI workload, it reports 77.5% lower latency,
+63.9% lower GPU resource use, and 3.2% higher retention of modified-code
+coverage relative to the deployed baseline; the framework is integrated
+into production CI.</p>
+<p><strong>Why Watchlist, not deep selection:</strong> production
+deployment is a strong signal, but the abstract does not establish
+cross-repository replication, fault-detection confidence intervals,
+release artifacts, or the security consequences of runtime-trace
+collection. A selector trained on past executions can miss novel
+interaction failures, and reduced tensor/model/data dimensions may erase
+bugs. Promote after public implementation or independent reproduction,
+mutation-testing evidence, novel-failure recall, and explicit
+stop/fallback rules for high-risk changes.</p>
+<h1 id="cross-paper-synthesis--preserve-trace-challenge">Cross-paper
+synthesis — preserve, trace, challenge</h1>
+<table>
+<thead>
+<tr class="header">
+<th>Control boundary</th>
+<th>Evidence today</th>
+<th>Failure if omitted</th>
+<th>Enterprise interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Persistent state</td>
+<td>VSA stores hypotheses, gates, evidence pointers, failures,
+mutations, and routing</td>
+<td>Later stages reconstruct truth from a drifting chat history</td>
+<td>Make evidence state addressable, immutable, and resume-safe</td>
+</tr>
+<tr class="even">
+<td>Control/execution separation</td>
+<td>YouRA's controller consumes compact state rather than sharing the
+task conversation</td>
+<td>The executor judges its own completion and relaxes gates after
+failure</td>
+<td>Keep continuation, escalation, and acceptance in an independent
+context</td>
+</tr>
+<tr class="odd">
+<td>Dependency propagation</td>
+<td>DeFA's graph and propagation edges improve decisive-step
+localization</td>
+<td>The closest visible anomaly is mistaken for the originating
+error</td>
+<td>Trace inputs, tools, handoffs, and derived claims through the
+trajectory</td>
+</tr>
+<tr class="even">
+<td>Candidate coverage</td>
+<td>DeFA reaches 83.2% annotated-step coverage in its best ablation
+setting</td>
+<td>A confident judge chooses only among incomplete candidates</td>
+<td>Surface coverage and unresolved causes; do not force
+attribution</td>
+</tr>
+<tr class="odd">
+<td>Disagreement</td>
+<td>Competing rollouts often contain a correct alternative</td>
+<td>Majority voting discards minority evidence</td>
+<td>Resolve contested claims against primary workspace evidence</td>
+</tr>
+<tr class="even">
+<td>Consensus</td>
+<td>Roughly one-third of agreed values in the cited case study are
+wrong</td>
+<td>Shared model priors become unchallenged system errors</td>
+<td>Assign a separate falsification pass to shared claims and
+omissions</td>
+</tr>
+<tr class="odd">
+<td>Feedback reuse</td>
+<td>DeFA feedback and evolved VeriHarness skills improve later test
+tasks</td>
+<td>Bad diagnoses or poisoned feedback become durable capability</td>
+<td>Quarantine, validate, version, expire, and rollback learned
+skills</td>
+</tr>
+<tr class="even">
+<td>Resource evidence</td>
+<td>VeriHarness uses ten rollouts; FastCI prunes GPU-intensive
+tests</td>
+<td>Quality and assurance policies become economically
+unsustainable</td>
+<td>Treat cost, latency, coverage, and defect escape as one
+qualification surface</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Independent Analysis.</strong> The papers describe three
+distinct evidence loops. The <strong>forward loop</strong> preserves
+requirements, gates, and evidence while work proceeds. The
+<strong>backward loop</strong> traces an observed failure through
+dependencies to the earliest decisive cause. The <strong>adversarial
+loop</strong> asks what all candidates may have missed or agreed on
+incorrectly before release. These loops should share identifiers and
+telemetry but not authority: the component that generated an artifact
+should not be the only component that defines success, attributes its
+own failure, or accepts the result.</p>
+<svg viewBox="0 0 980 250" role="img" aria-label="Evidence control architecture from persistent state through execution, dependency diagnosis, two-sided verification, and human acceptance" style="width:100%;height:auto;background:#0c1c2a;border:1px solid #2a465b;border-radius:14px;margin:1rem 0">
+  <defs><marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#46dbc6"/></marker></defs>
+  <g fill="#10283a" stroke="#70adff" stroke-width="2">
+    <rect x="25" y="70" width="160" height="105" rx="12"/><rect x="220" y="70" width="160" height="105" rx="12"/><rect x="415" y="70" width="160" height="105" rx="12"/><rect x="610" y="70" width="160" height="105" rx="12"/><rect x="805" y="70" width="150" height="105" rx="12"/>
+  </g>
+  <g fill="#e9f2f8" font-family="system-ui" font-size="16" text-anchor="middle"><text x="105" y="105">Persistent state</text><text x="105" y="132">claims · gates</text><text x="105" y="155">evidence IDs</text><text x="300" y="105">Bounded</text><text x="300" y="132">execution +</text><text x="300" y="155">effect ledger</text><text x="495" y="105">Dependency</text><text x="495" y="132">and failure</text><text x="495" y="155">propagation</text><text x="690" y="105">Disagreement +</text><text x="690" y="132">consensus</text><text x="690" y="155">verification</text><text x="880" y="105">Human/policy</text><text x="880" y="132">acceptance</text><text x="880" y="155">or rollback</text></g>
+  <g stroke="#46dbc6" stroke-width="3" marker-end="url(#arr)"><line x1="185" y1="122" x2="217" y2="122"/><line x1="380" y1="122" x2="412" y2="122"/><line x1="575" y1="122" x2="607" y2="122"/><line x1="770" y1="122" x2="802" y2="122"/></g>
+  <path d="M880 178 C880 225 105 225 105 178" fill="none" stroke="#f4c96b" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#arr)"/><text x="490" y="238" fill="#f4c96b" text-anchor="middle" font-family="system-ui" font-size="14">review findings and outcomes update the state only through governed mutations</text>
+</svg>
+
+<p>The synthesis does not establish that more agents, more rollouts, or
+more state always help. State can retain sensitive or stale material;
+graphs can hallucinate causality; verifier diversity can multiply cost;
+consensus challengers can over-edit correct work; and feedback libraries
+can learn benchmark quirks or malicious content. Each loop therefore
+needs its own abstention condition, budget, access policy, and rollback
+evidence.</p>
+<h1 id="enterprise-ai-enhancement-backlog">Enterprise AI Enhancement
+Backlog</h1>
+<h2 id="priority-method-and-uncertainty">Priority method and
+uncertainty</h2>
+<p>The Future Enterprise AI Priority Score is a decision aid, not a
+calibrated forecast. Components use 0–100 scales and the required
+weights: strategic/business value 25%, technical leverage 20%, evidence
+strength 20%, enterprise readiness 15%, feasibility 10%, and
+risk-adjusted differentiation 10%. Displayed decimals are arithmetic,
+not empirical precision. Missing internal workflow value, incident
+history, stack topology, data sensitivity, regulation, risk tolerance,
+staffing, model portfolio, acceptable latency, and cost can move an item
+by more than the displayed differences.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Rank</th>
+<th>Enhancement</th>
+<th>Decision band</th>
+<th style="text-align: right;">Strategic</th>
+<th style="text-align: right;">Technical</th>
+<th style="text-align: right;">Evidence</th>
+<th style="text-align: right;">Readiness</th>
+<th style="text-align: right;">Feasibility</th>
+<th style="text-align: right;">Differentiation</th>
+<th style="text-align: right;">Weighted</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td>Persistent verification-state and claim-evidence gate</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">97</td>
+<td style="text-align: right;">96</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;"><strong>93.8</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td>Dependency-aware failure attribution and recovery graph</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">96</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;"><strong>92.0</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td>Disagreement resolver plus consensus challenger</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">76</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;"><strong>91.2</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td>Independent lifecycle controller and bounded recovery policy</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">76</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;"><strong>89.3</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td>Unified claim, evidence, trajectory, and effect ledger</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;">96</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">72</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;"><strong>89.2</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td>Governed verifier-skill registry</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">68</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;"><strong>83.8</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td>Risk-aware GPU CI evidence selector</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">72</td>
+<td style="text-align: right;">71</td>
+<td style="text-align: right;">87</td>
+<td style="text-align: right;"><strong>83.4</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td>Perfect-component claim audit harness</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">89</td>
+<td style="text-align: right;">76</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">62</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;"><strong>79.2</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9</td>
+<td>Majority-only or output-only autonomous acceptance</td>
+<td>Deprioritize for Now</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">96</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;"><strong>44.8</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="prototype-soon">Prototype Soon</h2>
+<h3 id="1-persistent-verification-state-and-claim-evidence-gate--938">1.
+Persistent verification-state and claim-evidence gate — 93.8</h3>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability / Data
+&amp; Knowledge Infrastructure / Safety &amp; Governance.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> YouRA's persistent VSA, cross-backbone results, and
+ablations; VeriHarness's claim-check-evidence-verdict records.
+<strong>Paper Fact</strong>; enterprise gate is <strong>Enterprise
+Inference</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong>
+Requirements, assumptions, evidence, and stop decisions disappear into
+chat history or disconnected logs, allowing later stages to report
+unsupported work as complete.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+Maintain an append-only, typed workflow state containing requirement and
+claim IDs, MUST_WORK gates, evidence pointers, source hashes,
+actor/model/harness versions, decision rationale, failed hypotheses,
+unresolved issues, and authorized mutations. Downstream stages read the
+state; they cannot mark completion without required evidence or an
+explicit exception approved by policy/human review.</li>
+<li><strong>Likely architectural placement:</strong> orchestration,
+evaluation, observability, data platform, security/governance,
+human-review layer.</li>
+<li><strong>Expected business value:</strong> quality, reliability,
+speed of recovery, risk reduction, auditability, customer
+experience.</li>
+<li><strong>Technical value:</strong> Makes the trajectory resumable and
+permits deterministic joins from final claims to underlying artifacts
+and execution logs.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+paper evidence and public artifacts; external validity outside ML
+research and professional deliverables is unproven. Ready for shadow
+state capture, not autonomous gating of high-impact work.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>High</strong> / <strong>Now</strong> / <strong>M</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Stable
+workflow/claim/evidence IDs, schema registry, append-only storage,
+artifact hashing, identity, access policy, retention/deletion rules,
+representative replay set, human exception owner.</li>
+<li><strong>Key risks:</strong> Sensitive state retention, false gate
+completeness, schema ossification, evidence-link rot, unauthorized
+mutation, latency, teams gaming fields, excessive human burden.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build</strong> the
+canonical schema and policy because they encode internal controls; buy
+ledger/storage infrastructure only with open export and field-level
+access control.</li>
+<li><strong>Minimum reversible validation experiment:</strong>
+Reconstruct 25 historical workflows into a shadow ledger; compare
+unsupported-claim detection, resume accuracy, reviewer time, and
+missing-evidence discovery without changing execution.</li>
+<li><strong>Success metrics and stop conditions:</strong> ≥95%
+claim-to-evidence join completeness; ≥30% faster evidence review; no
+unauthorized mutation; zero sensitive-data policy breaches; higher
+detection of unsupported claims with acceptable false positives. Stop if
+reviewers cannot resolve records, privacy review rejects retention, or
+overhead exceeds 15% with no quality gain.</li>
+<li><strong>Roadmap trigger:</strong> Two representative workflows show
+repeatable defect prevention and recovery gains, with approved identity,
+retention, exception, and deletion controls.</li>
+</ul>
+<h3
+id="2-dependency-aware-failure-attribution-and-recovery-graph--920">2.
+Dependency-aware failure attribution and recovery graph — 92.0</h3>
+<ul>
+<li><strong>Category:</strong> Agentic AI / Evaluation &amp;
+Observability / AI Software Engineering.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> DeFA's event dependency and propagation graphs lead
+seven baselines; removing propagation edges at fixed coverage lowers
+exact-step accuracy 12.5 points. <strong>Paper Fact</strong>; enterprise
+recovery graph is <strong>Enterprise Inference</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong> Teams
+repair the last failing step rather than the earlier incorrect tool
+result, data transformation, authorization, or handoff that caused
+it.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+Instrument each trajectory event with parents, consumed evidence,
+produced artifacts, tool effects, and requirement links. A shadow
+diagnostic recovers missing semantic dependencies, proposes candidate
+causes, traces propagation, surfaces coverage, and abstains when
+evidence is incomplete. Humans approve root cause and recovery
+scope.</li>
+<li><strong>Likely architectural placement:</strong> agent layer,
+orchestration, evaluation, observability, developer platform,
+human-review layer.</li>
+<li><strong>Expected business value:</strong> reliability, faster
+incident resolution, quality, productivity, risk reduction.</li>
+<li><strong>Technical value:</strong> Distinguishes origin,
+transmission, adoption, and symptom; produces reusable incident evidence
+instead of an opaque blame score.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Multi-benchmark, multi-backbone, ablation, and multimodal evidence; no
+verified release and peak exact-step accuracy near 53%. Ready for
+analyst assistance only.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>High</strong> / <strong>Now</strong> / <strong>M</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Trace schema, event
+IDs, tool/effect ledger, artifact lineage, benchmarked human
+annotations, abstention states, role-based access, incident
+taxonomy.</li>
+<li><strong>Key risks:</strong> Hallucinated causality, incomplete
+telemetry, responsibility misuse, privacy exposure, graph explosion,
+false confidence, poisoned traces, human overreliance.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build</strong> the
+internal event/lineage graph; partner for graph analytics only after
+evidence export, uncertainty representation, and access controls are
+verified.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Fifty
+past failures with blinded double annotation; compare full-trace review,
+simple anomaly ranking, and graph-guided diagnosis on exact cause,
+component, time, coverage, and repair result.</li>
+<li><strong>Success metrics and stop conditions:</strong> ≥10-point
+exact-cause lift or ≥25% analyst-time reduction at non-inferior
+accuracy; calibrated unresolved rate; all paths cite trace evidence.
+Stop if disagreement with analysts rises, causes cannot be audited, or
+sensitive data crosses boundaries.</li>
+<li><strong>Roadmap trigger:</strong> Stable gains across two workflow
+families and two diagnostic models, with an explicit policy forbidding
+autonomous personnel attribution or unreviewed repair.</li>
+</ul>
+<h3 id="3-disagreement-resolver-plus-consensus-challenger--912">3.
+Disagreement resolver plus consensus challenger — 91.2</h3>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability /
+Reasoning &amp; Planning / Human-AI Workflow.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> VeriHarness separates contested and shared claims and
+improves all ten model-benchmark settings after revision; the APEX case
+study finds substantial consensus error. <strong>Paper Fact</strong>;
+enterprise verifier service is <strong>Enterprise
+Inference</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong>
+Majority voting ignores minority evidence; ordinary judging rarely
+attacks shared assumptions or omitted requirements.</li>
+<li><strong>Proposed future capability and how it works:</strong> For
+high-value artifacts, freeze a small candidate pool. One isolated
+context resolves divergent claims against source data; another assumes
+consensus may be wrong and searches for contradictory evidence or
+missing obligations. A fresh adjudicator merges evidence records, marks
+unresolved issues, and proposes—but cannot auto-release—revisions.</li>
+<li><strong>Likely architectural placement:</strong> applications, agent
+layer, orchestration, evaluation, human-review layer.</li>
+<li><strong>Expected business value:</strong> quality, reliability,
+customer experience, risk reduction, strategic differentiation.</li>
+<li><strong>Technical value:</strong> Covers two different error
+geometries and binds revisions to executed checks.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Broad
+artifact benchmarks, two models, three verifier runs, code/data release;
+expensive ten-rollout setup and no calibrated rollout score. Ready for
+narrow offline tests.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>High</strong> / <strong>Now</strong> / <strong>M</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Representative task
+pool, artifact-native evidence tools, source authority ordering, fixed
+candidate budget, adjudication policy, human release gate, cost/latency
+telemetry.</li>
+<li><strong>Key risks:</strong> Cost explosion, correlated model errors,
+malicious files, tool injection, over-editing correct artifacts,
+benchmark-specific skills, evidence exfiltration, reviewer fatigue.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Hybrid.</strong>
+Reuse the open protocol and artifact skills; build enterprise source
+authority, sandboxing, identity, budgets, evidence retention, and
+acceptance policy.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Thirty
+sanitized tasks, five frozen rollouts each, four arms—majority, judge,
+disagreement-only, dual-path—with no revisions released to users.</li>
+<li><strong>Success metrics and stop conditions:</strong>
+Material-defect recall, false-change rate, unresolved-rate calibration,
+cost per avoided defect, latency, reviewer agreement. Stop if dual-path
+quality is not better at equal budget, false edits exceed 5%, or
+sensitive data leaves the sandbox.</li>
+<li><strong>Roadmap trigger:</strong> Two artifact classes show
+reproducible net quality value and an approved budget, sandbox,
+evidence, and human-acceptance design.</li>
+</ul>
+<h2 id="prepare-foundations">Prepare Foundations</h2>
+<h3
+id="4-independent-lifecycle-controller-and-bounded-recovery-policy--893">4.
+Independent lifecycle controller and bounded recovery policy — 89.3</h3>
+<ul>
+<li><strong>Category:</strong> Agentic AI / Safety &amp; Governance /
+Reasoning &amp; Planning.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> YouRA's separate controller and repair/redesign/reset
+paths; controller ablation lowers Overall, especially on weaker
+backbones. <strong>Paper Fact</strong>; shared control plane is
+<strong>Enterprise Inference</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong> The
+executor decides whether its own work is complete, retries indefinitely,
+relaxes gates, or escalates without independent policy.</li>
+<li><strong>Proposed future capability and how it works:</strong> A
+compact controller reads verified state—not hidden reasoning—and selects
+continue, repair, redesign, reset, human escalation, or stop. Budgets,
+permissions, and maximum recovery depth are policy inputs; durable
+effects remain outside controller authority until accepted.</li>
+<li><strong>Likely architectural placement:</strong> orchestration,
+agent layer, security/governance, human-review layer.</li>
+<li><strong>Expected business value:</strong> reliability, cost control,
+speed, risk reduction.</li>
+<li><strong>Technical value:</strong> Separates task context from
+lifecycle authority and makes recovery finite, inspectable, and
+resumable.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+within-system ablation but architecture is complex and not
+tool-normalized. Foundation-ready for low-risk workflows.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>Moderate</strong> / <strong>3–6 months</strong> /
+<strong>L</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Verification state,
+policy engine, identity/authorization, budget service, effect ledger,
+escalation ownership, rollback, replay tests.</li>
+<li><strong>Key risks:</strong> Controller becomes a single point of
+failure, hidden privilege aggregation, policy drift, denial-of-service
+via retries, unsafe reset, incomplete summaries.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build</strong>
+policy and authority boundaries; buy generic orchestration only if every
+transition and effect is auditable and externally enforceable.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Shadow
+the controller on 40 completed workflows and compare its next-action
+choice with recorded expert decisions; no live control.</li>
+<li><strong>Success metrics and stop conditions:</strong> ≥85% agreement
+on safe boundaries, 100% budget enforcement in simulation, no
+unauthorized effects, lower mean recovery steps. Stop on any privilege
+bypass or unsafe stop/continue choice in critical cases.</li>
+<li><strong>Roadmap trigger:</strong> Independent red-team and replay
+tests show bounded behavior across failure, timeout, revocation, and
+stale-state scenarios.</li>
+</ul>
+<h3 id="5-unified-claim-evidence-trajectory-and-effect-ledger--892">5.
+Unified claim, evidence, trajectory, and effect ledger — 89.2</h3>
+<ul>
+<li><strong>Category:</strong> Data &amp; Knowledge Infrastructure /
+Evaluation &amp; Observability / Safety &amp; Governance.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> YouRA's evidence pointers and mutation history, DeFA's
+dependency records, and VeriHarness's check-evidence-verdict records
+require compatible identifiers. <strong>Independent Analysis</strong>
+grounded in all three deep papers.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong>
+Claims, source files, tool calls, model versions, checks, revisions, and
+durable effects live in separate telemetry systems.</li>
+<li><strong>Proposed future capability and how it works:</strong> An
+append-only ledger joins claim → source/evidence → consuming events →
+checks/verdicts → revision → accepted artifact/effect. It preserves
+negative evidence, unresolved status, authorization, cost, model/harness
+version, and retention scope.</li>
+<li><strong>Likely architectural placement:</strong> data platform,
+observability, evaluation, security/governance, human-review layer.</li>
+<li><strong>Expected business value:</strong> auditability, reliability,
+compliance, faster investigation, cost insight.</li>
+<li><strong>Technical value:</strong> Unlocks stateful gating,
+dependency analysis, adversarial verification, regression replay, and
+rollback with one identity plane.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> The
+need is strongly triangulated; schema, privacy, scale, and ownership are
+enterprise-specific. Build foundation before advanced automation.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>High</strong> / <strong>3–6 months</strong> /
+<strong>L</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Event/claim
+ontology, hashing, clock/version discipline, access control, tenant
+isolation, retention/deletion, evidence authority rules, cost
+telemetry.</li>
+<li><strong>Key risks:</strong> Centralized sensitive record, join
+errors, schema sprawl, storage cost, surveillance concerns, stale links,
+tampering, overcollection.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build</strong>
+semantics and governance; buy append-only storage and observability
+plumbing with verifiable export and deletion controls.</li>
+<li><strong>Minimum reversible validation experiment:</strong>
+Dual-write metadata for one non-sensitive offline workflow for two weeks
+and reconstruct ten artifacts end to end.</li>
+<li><strong>Success metrics and stop conditions:</strong> ≥95%
+deterministic joins, sampled replay reproducibility, 100% authorized
+access, acceptable storage/latency, successful deletion-policy test.
+Stop if the ledger cannot represent unresolved evidence or privacy
+review rejects the scope.</li>
+<li><strong>Roadmap trigger:</strong> The ledger answers at least two
+incident or evaluation questions unavailable from existing telemetry and
+passes security/privacy review.</li>
+</ul>
+<h3 id="6-governed-verifier-skill-registry--838">6. Governed
+verifier-skill registry — 83.8</h3>
+<ul>
+<li><strong>Category:</strong> MLOps &amp; Platform / Evaluation &amp;
+Observability / AI Security.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> VeriHarness evolves skills from failure feedback; DeFA
+diagnoses improve Trace2Skill outcomes. <strong>Paper Fact</strong>;
+governance registry is <strong>Enterprise Inference</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong>
+Verification procedures accumulate informally in prompts or agent
+memory, with no provenance, approval, scope, expiry, or rollback.</li>
+<li><strong>Proposed future capability and how it works:</strong> Store
+each check as a versioned package containing applicability, evidence
+authority, scripts, model/tool requirements, source failures, test
+cases, owner, privacy classification, signature, expiry, and rollback.
+New skills enter quarantine and must beat a frozen baseline without
+cross-task leakage.</li>
+<li><strong>Likely architectural placement:</strong> developer platform,
+evaluation, security/governance, agent layer.</li>
+<li><strong>Expected business value:</strong> quality, speed,
+reliability, reusable expertise, risk reduction.</li>
+<li><strong>Technical value:</strong> Converts experience into
+inspectable procedures while keeping training weights unchanged and
+reversible.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Held-out improvements exist, but only two verification benchmarks and
+one self-evolution model; poisoning and privacy are untested. Prepare
+registry and quarantine, not autonomous promotion.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>Moderate</strong> / <strong>6–12 months</strong> /
+<strong>L</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Signed packages,
+sandboxed scripts, provenance, held-out tests, feedback controls, code
+review, tenant boundaries, expiration, kill switch.</li>
+<li><strong>Key risks:</strong> Prompt/skill injection, grader leakage,
+benchmark overfitting, malicious scripts, sensitive feedback retention,
+skill conflicts, approval fatigue.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build</strong> trust
+and promotion policy; partner for generic package/signature tooling
+after sandbox and export validation.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Freeze 20
+existing verification procedures, let an offline process propose ten
+candidates from sanitized failures, and run them only on held-out
+historical tasks.</li>
+<li><strong>Success metrics and stop conditions:</strong> Net defect
+recall gain without false-change increase; zero sensitive leakage;
+reproducible provenance; one-click rollback. Stop on any executable
+escape, held-out leakage, or regression &gt;2 points.</li>
+<li><strong>Roadmap trigger:</strong> Three promotion cycles improve two
+artifact classes under independent review and adversarial feedback
+tests.</li>
+</ul>
+<h2 id="monitor-for-maturity">Monitor for Maturity</h2>
+<h3 id="7-risk-aware-gpu-ci-evidence-selector--834">7. Risk-aware GPU CI
+evidence selector — 83.4</h3>
+<ul>
+<li><strong>Category:</strong> AI Software Engineering / MLOps &amp;
+Platform / Evaluation &amp; Observability.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> FastCI reports 77.5% latency and 63.9% GPU-use
+reductions with 3.2% better modified-code coverage retention in a
+deployed ByteDance pipeline. <strong>Paper Fact</strong>;
+cross-enterprise opportunity is <strong>Enterprise
+Inference</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong> Full
+training/evaluation tests slow framework delivery and consume scarce
+accelerators; blunt pruning risks escaped defects.</li>
+<li><strong>Proposed future capability and how it works:</strong> Use
+runtime change-to-test evidence, execution-context equivalence,
+historical risk, and explicit validation scope to select, order, and
+shrink GPU tests. High-risk or out-of-distribution changes fall back to
+the full suite.</li>
+<li><strong>Likely architectural placement:</strong> developer platform,
+evaluation, infrastructure, observability.</li>
+<li><strong>Expected business value:</strong> cost, speed, productivity,
+reliability.</li>
+<li><strong>Technical value:</strong> Treats test selection,
+prioritization, and workload reduction as one evidence problem.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Deployed first-party evidence is valuable, but no verified release,
+cross-organization replication, or novel-defect recall analysis. Monitor
+while instrumenting prerequisites.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>Moderate</strong> / <strong>6–12 months</strong> /
+<strong>XL</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Stable CI
+telemetry, code-to-runtime maps, test ownership, GPU scheduler, mutation
+tests, risk taxonomy, full-suite fallback, cost attribution.</li>
+<li><strong>Key risks:</strong> Novel interaction misses, stale traces,
+adversarial or accidental gaming, coverage proxy failure, cross-hardware
+bugs, optimization bias, hidden maintenance cost.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Partner or internal
+build</strong> only where framework-specific traces justify it; generic
+purchasing is unlikely to capture repository semantics.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Replay
+six months of CI decisions offline; simulate selection against known
+failures and seeded mutations without skipping any live tests.</li>
+<li><strong>Success metrics and stop conditions:</strong> ≥50% projected
+GPU savings with ≥99% known-failure recall and non-inferior mutation
+score; explicit full-suite triggers. Stop if any critical seeded fault
+is missed or trace drift is not detected.</li>
+<li><strong>Roadmap trigger:</strong> Shadow selection survives two
+release cycles, independent red-team mutations, hardware variants, and a
+quantified escaped-defect risk bound.</li>
+</ul>
+<h3 id="8-perfect-component-claim-audit-harness--792">8.
+Perfect-component claim audit harness — 79.2</h3>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability /
+Reasoning &amp; Planning.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> Verify Claims, Not Scores combines explicit verdicts,
+oracle policies, perfect-component replacement, masking-aware nulls, and
+verifier-identification tests. <strong>Paper Fact</strong>; enterprise
+harness is <strong>Enterprise Inference</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong>
+Aggregate scores cannot show whether an improvement was attainable,
+where value was lost, or whether a verifier measures what stakeholders
+think it measures.</li>
+<li><strong>Proposed future capability and how it works:</strong> For
+modular offline agents, define auditable claims and boundaries,
+substitute oracle or perfect components one at a time, test downstream
+masking, and record supported/unsupported/unresolved/not-evaluated
+verdicts instead of forcing a scalar conclusion.</li>
+<li><strong>Likely architectural placement:</strong> evaluation, model
+gateway, orchestration, developer platform.</li>
+<li><strong>Expected business value:</strong> quality, speed of
+diagnosis, cost avoidance, risk reduction.</li>
+<li><strong>Technical value:</strong> Separates component potential,
+realized value, downstream masking, and verifier validity.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+protocol but one synthetic portfolio system, one author, and no broad
+artifact evidence. Monitor pending replication.</li>
+<li><strong>Confidence / horizon / effort:</strong> <strong>Low</strong>
+/ <strong>12+ months</strong> / <strong>L</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Modular
+substitution points, oracle definitions, counterfactual replay, claim
+registry, outcome metrics, statistical design, domain experts.</li>
+<li><strong>Key risks:</strong> Invalid oracle, substitution changes
+other behavior, masking misread, combinatorial tests, domain leakage,
+false precision.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Partner with
+evaluation researchers</strong> for initial design; build only after
+claims and oracles are independently reviewed.</li>
+<li><strong>Minimum reversible validation experiment:</strong> One
+sandboxed two-component agent, preregistered claims, two perfect
+replacements, and blinded analysis; no production changes.</li>
+<li><strong>Success metrics and stop conditions:</strong> Reproducible
+verdicts, agreement across auditors, clear unresolved states, and at
+least one actionable diagnosis beyond aggregate score. Stop if
+interventions are not isolated or claim boundaries shift after
+results.</li>
+<li><strong>Roadmap trigger:</strong> Independent teams reproduce the
+protocol in two domains and perfect-component effects predict real
+component improvements.</li>
+</ul>
+<h2 id="deprioritize-for-now">Deprioritize for Now</h2>
+<h3 id="9-majority-only-or-output-only-autonomous-acceptance--448">9.
+Majority-only or output-only autonomous acceptance — 44.8</h3>
+<ul>
+<li><strong>Category:</strong> Safety &amp; Governance / Evaluation
+&amp; Observability.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> VeriHarness documents consensus errors; YouRA shows
+fluent papers can diverge from execution; DeFA shows symptoms can be
+distant from causes. <strong>Paper Fact</strong>; deprioritization is
+<strong>Independent Analysis</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong> Simple
+voting or final-output scoring is attractive because it is cheap and
+easy to report.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+<strong>Do not build as an autonomous release gate.</strong> Retain
+majority or output scores only as low-cost triage signals alongside
+evidence checks, provenance, unresolved status, and human/policy
+acceptance.</li>
+<li><strong>Likely architectural placement:</strong> evaluation,
+human-review layer, security/governance.</li>
+<li><strong>Expected business value:</strong> avoids false assurance,
+downstream defects, and governance exposure.</li>
+<li><strong>Technical value:</strong> Prevents correlated errors and
+persuasive unsupported artifacts from becoming durable effects.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Evidence against sole reliance is strong; such signals remain useful for
+prioritization, not authority.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>High</strong> / <strong>Now</strong> / <strong>S</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Alternative
+evidence path, provenance, abstention, human escalation.</li>
+<li><strong>Key risks:</strong> Teams continue treating a convenient
+score as certification; added review may slow delivery.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Do not buy or build
+as sole gate.</strong> Build policy that constrains its role.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Audit 50
+previously accepted artifacts and compare majority/output scores with
+source-grounded material-defect findings.</li>
+<li><strong>Success metrics and stop conditions:</strong> Measure
+false-accept and false-reject rates. Stop any autonomous use immediately
+if one high-severity unsupported artifact passes.</li>
+<li><strong>Roadmap trigger:</strong> None for sole-gate use; only
+reconsider if independent evidence shows calibrated acceptance across
+representative high-impact tasks with enforceable provenance and
+abstention.</li>
+</ul>
+<h1 id="enterprise-ai-architecture-implications">Enterprise AI
+Architecture Implications</h1>
+<p><strong>Independent Analysis.</strong> Over the next 12–24 months,
+the recommended options imply a shift from a model-centered stack to an
+evidence-centered control architecture. No assumption is made about the
+current enterprise stack.</p>
+<ol type="1">
+<li><strong>State becomes a governed service, not prompt
+residue.</strong> A workflow-state service would own claim, requirement,
+gate, failure, evidence, and unresolved identifiers; context assembly
+would project only policy-approved slices into a model.</li>
+<li><strong>Orchestration separates execution from authority.</strong>
+The agent layer performs work, while a policy-bound controller chooses
+transitions and recovery within explicit budgets. Identity and
+authorization remain external to both.</li>
+<li><strong>The trajectory becomes a first-class graph.</strong> Tool
+calls, model turns, artifacts, data transformations, handoffs, and
+durable effects carry parent/child links. Observability can then support
+both forward evidence checks and backward incident attribution.</li>
+<li><strong>Verification becomes plural and artifact-native.</strong> A
+verifier gateway would route contested claims to resolution, shared
+claims to falsification, and unresolved findings to human review.
+Evidence tools would inspect spreadsheets, documents, PDFs, code, and
+file bundles in their native structures.</li>
+<li><strong>Acceptance remains outside generation.</strong> The
+human-review or governance layer would receive claim-level evidence,
+unresolved issues, cost, lineage, and effect diffs. Only this layer can
+authorize durable external writes for high-impact workflows.</li>
+<li><strong>Learning from failures becomes quarantined.</strong>
+Proposed skills, prompts, policies, and adapters enter a signed registry
+with held-out evaluation, scope, expiry, and rollback before any wider
+use.</li>
+<li><strong>Cost and coverage become safety telemetry.</strong> Model
+gateway and experiment infrastructure would track rollouts, tool calls,
+GPU/test budgets, latency, evidence coverage, unresolved rate, and
+escaped-defect cost so assurance is not silently removed under economic
+pressure.</li>
+</ol>
+<p>Shared enabling foundations unlock multiple enhancements:
+model/harness registry; workflow and claim IDs; context and memory
+service; evidence/tool sandbox; trajectory and effect ledger;
+artifact-native validators; evaluation datasets; observability; policy
+enforcement; identity/authorization; human-review controls; data
+provenance; cost telemetry; experiment allocation; skill/package
+signing; rollback; retention/deletion. Before any roadmap commitment,
+internal context is required on regulated data, workflow impact,
+existing IAM, model providers, storage and observability systems,
+incident taxonomy, acceptable latency/cost, artifact types, reviewer
+capacity, and release authority.</p>
+<h1 id="implementation-priorities">Implementation priorities</h1>
+<table>
+<thead>
+<tr class="header">
+<th>Horizon</th>
+<th>Reversible action</th>
+<th>Owner profile</th>
+<th>Exit evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0–30 days</td>
+<td>Define claim, evidence, gate, event, artifact, and unresolved
+schemas; reconstruct 25 historical workflows</td>
+<td>AI platform + risk + domain reviewers</td>
+<td>Join completeness, privacy approval, reviewer usability</td>
+</tr>
+<tr class="even">
+<td>30–60 days</td>
+<td>Run failure-graph and two-sided-verification shadow pilots on
+sanitized traces and artifacts</td>
+<td>Evaluation + observability + application teams</td>
+<td>Exact-cause lift, defect recall, false edits, cost, latency</td>
+</tr>
+<tr class="odd">
+<td>60–90 days</td>
+<td>Shadow an independent controller with fixed budgets and human
+escalation</td>
+<td>Orchestration + security + operations</td>
+<td>Safe-action agreement, budget enforcement, revocation and rollback
+tests</td>
+</tr>
+<tr class="even">
+<td>3–6 months</td>
+<td>Establish signed verifier-skill quarantine and regression
+replay</td>
+<td>Developer platform + security + domain owners</td>
+<td>Held-out gains, provenance, rollback, poisoning tests</td>
+</tr>
+<tr class="odd">
+<td>6–12 months</td>
+<td>Reassess GPU CI selector and perfect-component audits after
+independent evidence</td>
+<td>ML platform + assurance</td>
+<td>Mutation recall, cross-repo replication, isolated intervention
+validity</td>
+</tr>
+</tbody>
+</table>
+<h1 id="knowledge-reinforcement">Knowledge reinforcement</h1>
+<ol type="1">
+<li><strong>Why is persistent state different from a longer context
+window?</strong> A durable state record is typed, versioned,
+attributable, independently readable, and governed; a long prompt is a
+transient projection that can truncate, drift, or mix evidence with
+speculation.</li>
+<li><strong>Why can the nearest bad step be the wrong root
+cause?</strong> A step may merely consume an earlier corrupted value or
+follow a flawed plan. Dependency and propagation evidence distinguishes
+introduction, transmission, adoption, and symptom.</li>
+<li><strong>Why challenge consensus?</strong> Correlated models or
+repeated samples can share the same wrong assumption or omission.
+Agreement raises confidence only when the error processes are
+sufficiently independent and the claim has been checked against
+authoritative evidence.</li>
+<li><strong>Why not let the executor verify itself?</strong>
+Same-context verification inherits goals, omissions, and compressed
+history from execution. Separate contexts and authority reduce—but do
+not eliminate—correlated failure.</li>
+<li><strong>What does “unresolved” protect?</strong> It prevents missing
+candidates, ambiguous evidence, downstream masking, or insufficient
+coverage from being converted into false certainty.</li>
+<li><strong>What is the minimum safe learning loop?</strong>
+Provenance-bound feedback, quarantine, held-out tests, explicit scope,
+privacy review, signed promotion, regression monitoring, expiry, and
+reversible rollback.</li>
+</ol>
+<h1 id="evidence-register-and-final-boundary">Evidence register and
+final boundary</h1>
+<table>
+<thead>
+<tr class="header">
+<th>Work</th>
+<th>Status</th>
+<th>Primary evidence used</th>
+<th>Artifact check</th>
+<th>Enterprise readiness</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>YouRA · arXiv:2610.01097</td>
+<td>AACL-IJCNLP 2026 Main; v1</td>
+<td>Full paper, tables, ablations, limitations, repository</td>
+<td>Public repo verified; extensive materials listed; CC BY-SA
+paper</td>
+<td>High for shadow state/evidence schemas; low for autonomous research
+execution</td>
+</tr>
+<tr class="even">
+<td>DeFA · arXiv:2610.01256</td>
+<td>Preprint v1</td>
+<td>Full paper, 184 + 300 text traces, 100 multimodal traces, ablations,
+downstream study</td>
+<td>No public repo verified</td>
+<td>Medium for analyst-assist concept; low for autonomous
+attribution</td>
+</tr>
+<tr class="odd">
+<td>VeriHarness · arXiv:2610.00972</td>
+<td>Preprint v1</td>
+<td>Full paper, five benchmarks, two models, fixed 10-rollout pools,
+three verifier seeds</td>
+<td>Google Research code, project, and HF dataset verified</td>
+<td>High for isolated artifact verification; low for automatic release
+or skill promotion</td>
+</tr>
+<tr class="even">
+<td>Verify Claims, Not Scores · arXiv:2610.01348</td>
+<td>Preprint v1</td>
+<td>Full paper and one synthetic-agent audit</td>
+<td>No general multi-domain artifact verified</td>
+<td>Watchlist</td>
+</tr>
+<tr class="odd">
+<td>FastCI · arXiv:2610.01967</td>
+<td>Preprint v1; first-party production integration claim</td>
+<td>Full paper/abstract claims and arXiv metadata</td>
+<td>No public implementation verified</td>
+<td>Watchlist despite production signal</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Final boundary.</strong> The enhancement backlog is a set of
+evidence-grounded future options, not an approved roadmap. No production
+deployment is recommended from benchmark evidence alone. Every prototype
+must be isolated, reversible, measurable, non-destructive, and unable to
+create durable external effects without existing authorization and human
+review. Additional internal enterprise context is required before
+implementation decisions.</p></main></div>
+<footer>AI Research Intelligence Brief · October 4, 2026 · Research options, not deployment approval.</footer>
+<div class="toolbar"><button onclick="window.print()" aria-label="Print report">Print</button><button id="top" aria-label="Back to top">↑ Top</button></div>
+<script>
+const p=document.getElementById('progress');addEventListener('scroll',()=>{const h=document.documentElement;p.style.width=((h.scrollTop/(h.scrollHeight-h.clientHeight))*100)+'%'});document.getElementById('top').onclick=()=>scrollTo({top:0,behavior:'smooth'});
+document.querySelectorAll('main h3').forEach(h=>{if(/^\d+\./.test(h.textContent))h.setAttribute('data-backlog','true')});
+</script>
+</body></html>
