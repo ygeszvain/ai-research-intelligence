@@ -1,0 +1,1541 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Evidence-grounded AI Research Intelligence Brief for October 5, 2026: long-horizon constraint enforcement, bounded trajectory diagnostics, and memory lifecycle qualification.">
+<meta name="report-date" content="2026-10-05">
+<meta name="research-window" content="2026-10-02T04:00:00-05:00/2026-10-05T04:00:00-05:00 America/Chicago">
+<meta name="deep-paper-count" content="3">
+<meta name="watchlist-count" content="2">
+<meta name="theme-color" content="#071321">
+<title>AI Research Intelligence Brief — October 5, 2026</title>
+<style>
+:root{--bg:#06111d;--panel:#0c1c2a;--panel2:#10283a;--text:#e9f2f8;--muted:#9fb6c6;--line:#2a465b;--cyan:#46dbc6;--gold:#f4c96b;--rose:#ff8f9b;--blue:#70adff;--max:1180px;color-scheme:dark}
+@media(prefers-color-scheme:light){:root{--bg:#f4f7f8;--panel:#fff;--panel2:#edf4f7;--text:#102131;--muted:#526979;--line:#cddbe2;--cyan:#087f73;--gold:#9b6300;--rose:#b92b45;--blue:#1661ad;color-scheme:light}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 90% 0,rgba(70,219,198,.12),transparent 30rem),var(--bg);color:var(--text);font:16px/1.67 ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}a{color:var(--cyan);text-underline-offset:3px}a:hover{text-decoration-thickness:2px}header{border-bottom:1px solid var(--line);background:linear-gradient(135deg,rgba(70,219,198,.09),rgba(112,173,255,.05));padding:54px 22px 34px}.hero{max-width:var(--max);margin:auto}.eyebrow{color:var(--cyan);text-transform:uppercase;letter-spacing:.15em;font-size:.76rem;font-weight:800}h1{font-size:clamp(2.2rem,6vw,4.7rem);line-height:.98;max-width:980px;margin:.35rem 0 1rem;letter-spacing:-.055em}header p{max-width:850px;color:var(--muted);font-size:1.09rem}.chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}.chip{border:1px solid var(--line);border-radius:999px;padding:6px 11px;background:var(--panel);font-size:.8rem}.topbets{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}.bet{border:1px solid var(--line);background:var(--panel);border-radius:14px;padding:15px}.bet b{display:block;color:var(--gold);font-size:1.15rem}.layout{max-width:var(--max);margin:auto;display:grid;grid-template-columns:250px minmax(0,1fr);gap:34px;padding:30px 22px 80px}nav{position:sticky;top:16px;align-self:start;max-height:calc(100vh - 32px);overflow:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:14px}nav strong{display:block;margin:2px 8px 10px;color:var(--gold)}nav ul{list-style:none;margin:0;padding:0}nav li{margin:0}nav a{display:block;color:var(--muted);text-decoration:none;padding:5px 8px;border-radius:7px;font-size:.83rem;line-height:1.25}nav a:hover{background:var(--panel2);color:var(--text)}main{min-width:0}main>h1{font-size:1.8rem;margin:2.6rem 0 1rem;padding-top:.7rem;border-top:1px solid var(--line);letter-spacing:-.02em}main>h1:first-child{margin-top:0}main h2{font-size:1.35rem;margin-top:2rem;color:var(--cyan)}main h3{font-size:1.08rem;color:var(--gold);margin-bottom:.45rem}p,li{max-width:88ch}blockquote{margin:1rem 0;padding:1rem 1.2rem;border-left:4px solid var(--gold);background:var(--panel);color:var(--muted)}pre{white-space:pre-wrap;overflow:auto;background:#07101a;border:1px solid var(--line);border-radius:14px;padding:18px;color:#dcecf2;font-size:.86rem;line-height:1.45}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}table{width:100%;border-collapse:collapse;margin:1.25rem 0;background:var(--panel);font-size:.86rem}th,td{padding:10px 12px;border:1px solid var(--line);text-align:left;vertical-align:top}th{color:var(--gold);background:var(--panel2)}hr{border:0;border-top:1px solid var(--line)}main h3+ul,main h2+ul{border:1px solid var(--line);background:linear-gradient(135deg,var(--panel),var(--panel2));border-radius:14px;padding:15px 22px 15px 34px}main h3+ul li,main h2+ul li{margin:.5rem 0}.progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--cyan),var(--gold));width:0;z-index:9}.toolbar{position:fixed;right:18px;bottom:18px;display:flex;gap:8px}.toolbar button{border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:999px;padding:9px 12px;cursor:pointer;box-shadow:0 8px 30px rgba(0,0,0,.2)}.label{font-size:.75rem;color:var(--muted)}footer{border-top:1px solid var(--line);padding:24px;text-align:center;color:var(--muted)}
+@media(max-width:850px){.topbets{grid-template-columns:1fr}.layout{grid-template-columns:1fr}nav{position:relative;top:0;max-height:none}nav ul{columns:2}h1{font-size:2.65rem}}
+@media(max-width:520px){header{padding-top:34px}.layout{padding:20px 14px 60px}nav ul{columns:1}table{display:block;overflow-x:auto}h1{font-size:2.25rem}}
+@media print{body{background:white;color:#111;font-size:11pt}header{padding:18px 0}.layout{display:block;padding:0}nav,.toolbar,.progress{display:none}a{color:#145c70}main>h1{break-before:page}main>h1:first-child{break-before:auto}table,pre{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<header><div class="hero">
+<div class="eyebrow">AI Research Intelligence · Evidence before enthusiasm</div>
+<h1>Keep constraints alive. Bound the evidence. Govern the memory.</h1>
+<p>October 5, 2026 briefing. Three deep papers connect long-horizon safety-constraint enforcement, budget-bounded trajectory diagnostics, and lifecycle-based memory evaluation to one operating rule: control state must survive until the decision it is meant to govern.</p>
+<div class="chips"><span class="chip">3 deep papers</span><span class="chip">2 Watchlist</span><span class="chip">72-hour disclosed window</span><span class="chip">9 enterprise options</span><span class="chip">Primary sources + full-paper review</span></div>
+<div class="topbets"><div class="bet"><span class="label">TOP BET 1 · PROTOTYPE SOON</span><b>93.6 · Constraint + effect audit</b><span>Externalize historical rules and check proposed durable effects.</span></div><div class="bet"><span class="label">TOP BET 2 · PROTOTYPE SOON</span><b>91.1 · Bounded trajectory diagnosis</b><span>Retain decisive evidence under explicit cost and latency budgets.</span></div><div class="bet"><span class="label">TOP BET 3 · PROTOTYPE SOON</span><b>90.5 · Memory lifecycle gate</b><span>Score capture, update, recall, deletion, and use separately.</span></div></div>
+</div></header>
+<div class="layout"><nav><strong>Navigate</strong><ul>
+<li><a href="#scope-window-and-evidence-policy"
+id="toc-scope-window-and-evidence-policy">Scope, window, and evidence
+policy</a></li>
+<li><a href="#executive-signal" id="toc-executive-signal">Executive
+signal</a></li>
+<li><a href="#top-3-future-bets" id="toc-top-3-future-bets">Top 3 Future
+Bets</a></li>
+<li><a
+href="#deep-paper-1--constraint-availability-is-not-constraint-enforcement"
+id="toc-deep-paper-1--constraint-availability-is-not-constraint-enforcement">Deep
+paper 1 — Constraint availability is not constraint enforcement</a>
+<ul>
+<li><a href="#contribution-and-quantitative-claim-trace"
+id="toc-contribution-and-quantitative-claim-trace">Contribution and
+quantitative claim trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison"
+id="toc-methodological-critique-and-prior-work-comparison">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#reproducibility-and-enterprise-readiness"
+id="toc-reproducibility-and-enterprise-readiness">Reproducibility and
+enterprise readiness</a></li>
+</ul></li>
+<li><a
+href="#deep-paper-2--bounded-evidence-can-make-trajectory-review-operational"
+id="toc-deep-paper-2--bounded-evidence-can-make-trajectory-review-operational">Deep
+paper 2 — Bounded evidence can make trajectory review operational</a>
+<ul>
+<li><a href="#contribution-and-quantitative-claim-trace-1"
+id="toc-contribution-and-quantitative-claim-trace-1">Contribution and
+quantitative claim trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison-1"
+id="toc-methodological-critique-and-prior-work-comparison-1">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#reproducibility-and-enterprise-readiness-1"
+id="toc-reproducibility-and-enterprise-readiness-1">Reproducibility and
+enterprise readiness</a></li>
+</ul></li>
+<li><a href="#deep-paper-3--memory-quality-is-a-pipeline-property"
+id="toc-deep-paper-3--memory-quality-is-a-pipeline-property">Deep paper
+3 — Memory quality is a pipeline property</a>
+<ul>
+<li><a href="#contribution-and-quantitative-claim-trace-2"
+id="toc-contribution-and-quantitative-claim-trace-2">Contribution and
+quantitative claim trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison-2"
+id="toc-methodological-critique-and-prior-work-comparison-2">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#reproducibility-and-enterprise-readiness-2"
+id="toc-reproducibility-and-enterprise-readiness-2">Reproducibility and
+enterprise readiness</a></li>
+</ul></li>
+<li><a href="#watchlist" id="toc-watchlist">Watchlist</a>
+<ul>
+<li><a href="#dynamic-llm-routers-are-often-misguided"
+id="toc-dynamic-llm-routers-are-often-misguided">Dynamic LLM Routers are
+Often Misguided</a></li>
+<li><a
+href="#choosing-before-acting-comparative-value-estimation-for-long-horizon-tool-use-agents"
+id="toc-choosing-before-acting-comparative-value-estimation-for-long-horizon-tool-use-agents">Choosing
+Before Acting: Comparative Value Estimation for Long-Horizon Tool-Use
+Agents</a></li>
+</ul></li>
+<li><a
+href="#cross-paper-synthesis--preserve-control-state-at-three-boundaries"
+id="toc-cross-paper-synthesis--preserve-control-state-at-three-boundaries">Cross-paper
+synthesis — preserve control state at three boundaries</a></li>
+<li><a href="#enterprise-ai-enhancement-backlog"
+id="toc-enterprise-ai-enhancement-backlog">Enterprise AI Enhancement
+Backlog</a>
+<ul>
+<li><a href="#priority-method-and-uncertainty"
+id="toc-priority-method-and-uncertainty">Priority method and
+uncertainty</a></li>
+<li><a href="#prototype-soon" id="toc-prototype-soon">Prototype Soon</a>
+<ul>
+<li><a
+href="#1-historical-safety-constraint-registry-and-pre-effect-audit--936"
+id="toc-1-historical-safety-constraint-registry-and-pre-effect-audit--936">1.
+Historical safety-constraint registry and pre-effect audit —
+93.6</a></li>
+<li><a href="#2-budget-bounded-trajectory-diagnostic-layer--911"
+id="toc-2-budget-bounded-trajectory-diagnostic-layer--911">2.
+Budget-bounded trajectory diagnostic layer — 91.1</a></li>
+<li><a href="#3-dual-domain-memory-lifecycle-qualification-gate--905"
+id="toc-3-dual-domain-memory-lifecycle-qualification-gate--905">3.
+Dual-domain memory lifecycle qualification gate — 90.5</a></li>
+</ul></li>
+<li><a href="#prepare-foundations" id="toc-prepare-foundations">Prepare
+Foundations</a>
+<ul>
+<li><a
+href="#4-reversible-memory-update-ledger-and-deletion-quarantine--878"
+id="toc-4-reversible-memory-update-ledger-and-deletion-quarantine--878">4.
+Reversible memory-update ledger and deletion quarantine — 87.8</a></li>
+<li><a href="#5-failure-evidence-retention-serializer--876"
+id="toc-5-failure-evidence-retention-serializer--876">5.
+Failure-evidence retention serializer — 87.6</a></li>
+<li><a href="#6-judge-calibration-and-human-sampling-lane--835"
+id="toc-6-judge-calibration-and-human-sampling-lane--835">6. Judge
+calibration and human-sampling lane — 83.5</a></li>
+</ul></li>
+<li><a href="#monitor-for-maturity"
+id="toc-monitor-for-maturity">Monitor for Maturity</a>
+<ul>
+<li><a href="#7-router-baseline-and-payback-qualification--827"
+id="toc-7-router-baseline-and-payback-qualification--827">7. Router
+baseline and payback qualification — 82.7</a></li>
+<li><a href="#8-pre-action-comparative-tool-value-shadow-pilot--780"
+id="toc-8-pre-action-comparative-tool-value-shadow-pilot--780">8.
+Pre-action comparative tool-value shadow pilot — 78.0</a></li>
+</ul></li>
+<li><a href="#deprioritize-for-now"
+id="toc-deprioritize-for-now">Deprioritize for Now</a>
+<ul>
+<li><a
+href="#9-final-answer-only-or-majority-acceptance-of-memory-changes--430"
+id="toc-9-final-answer-only-or-majority-acceptance-of-memory-changes--430">9.
+Final-answer-only or majority acceptance of memory changes —
+43.0</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#enterprise-ai-architecture-implications"
+id="toc-enterprise-ai-architecture-implications">Enterprise AI
+Architecture Implications</a></li>
+<li><a href="#implementation-priorities"
+id="toc-implementation-priorities">Implementation priorities</a></li>
+<li><a href="#knowledge-reinforcement"
+id="toc-knowledge-reinforcement">Knowledge reinforcement</a></li>
+<li><a href="#source-and-artifact-register"
+id="toc-source-and-artifact-register">Source and artifact
+register</a></li>
+<li><a href="#decision-memo" id="toc-decision-memo">Decision
+memo</a></li>
+</ul></nav><main><h1 id="scope-window-and-evidence-policy">Scope,
+window, and evidence policy</h1>
+<p><strong>Research window.</strong> The exact window was Sunday,
+October 4, 2026 at 4:00 AM CDT through Monday, October 5, 2026 at 4:00
+AM CDT (America/Chicago; 09:00 UTC to 09:00 UTC). Because no weekend
+arXiv announcement batch was available, discovery expanded to 72 hours,
+back to Friday, October 2 at 4:00 AM CDT, and included the complete
+Monday announcement batch. The five selected works were submitted
+October 1–2 and announced October 5. Titles and identifiers were checked
+against the 56-report archive through October 4; none was previously
+covered.</p>
+<p><strong>Discovery.</strong> Screening covered current arXiv
+artificial-intelligence, machine-learning, computation-and-language,
+information-retrieval, security, human-computer-interaction,
+software-engineering, and systems listings; major conference and journal
+programs; and first-party paper, repository, project, and dataset pages.
+Selection favored matched controls, explicit denominators, component
+ablations, uncertainty reporting, inspectable mechanisms, artifact
+availability, and enterprise decision value. <em>Lightweight,
+Rubric-Guided Trajectory Evaluation for Production AI Agents</em> is
+listed in the ISSRE 2026 industry program; <em>Choosing Before
+Acting</em> is a NeurIPS 2026 poster; the other selected works are
+preprints or under review. None supplies independent
+enterprise-production validation.</p>
+<p><strong>Anti-duplication.</strong> Yesterday's five
+papers—arXiv:2610.01097, 2610.01256, 2610.00972, 2610.01377, and
+2610.01450—were excluded, as were all earlier archive identifiers. Prior
+briefings already covered long-horizon safety, stateful trajectory
+evaluation, memory curation, tool routing, effect ledgers, and
+claim-evidence gates. Today's incremental question is narrower:
+<em>which control state must survive across time, and where must an
+enterprise place independent checks before effects, after failures, and
+around memory changes?</em></p>
+<p><strong>Evidence labels.</strong> <strong>Paper Fact</strong> is
+directly reported in a paper or verified first-party artifact.
+<strong>Independent Analysis</strong> is this briefing's comparison,
+calculation, or methodological judgment. <strong>Enterprise
+Inference</strong> translates verified research into a bounded future
+option. <strong>Uncertainty</strong> marks missing causal,
+external-validity, security, privacy, governance, economic, adoption,
+artifact, licensing, or replication evidence. Provider-scale experiments
+were not rerun. A benchmark result never authorizes production
+deployment.</p>
+<h1 id="executive-signal">Executive signal</h1>
+<blockquote>
+<p><strong>Reliable enterprise AI must preserve the right control state
+across time: safety constraints must survive until execution,
+trajectories must remain diagnosable under a bounded evidence budget,
+and memory must be evaluated as a lifecycle—not merely by the final
+answer.</strong></p>
+</blockquote>
+<p>The three deep papers triangulate that rule:</p>
+<ol type="1">
+<li><strong>GHOST</strong> isolates attack-free loss of earlier safety
+constraints in long-horizon tool use. Across 103 executable base
+scenarios, seven models, four matched conditions, and five repetitions,
+strict GHOST rates range from 6.8% to 27.8%. STAR-Guard's external
+constraint restoration plus deterministic pre-execution audit reduces
+the reported rate to 0% for GPT-5.5 and 1.9% for Qwen3.5-4B, but online
+constraint capture and open artifacts are not demonstrated.</li>
+<li><strong>LiteTrajEval</strong> compresses agent traces using offline
+rules, anomaly-focused evidence selection, and a single rubric-guided
+judge. On 73 failed public trajectories, its GPT-5-mini configuration
+preserves high failure detection while improving conditional
+failure-group alignment and reducing reported evaluator cost from
+$2.4628 to $0.4155 and runtime from 15,990 to 1,840 seconds. The
+evaluation omits healthy trajectories and therefore does not establish
+false-positive behavior.</li>
+<li><strong>DyadMem</strong> decomposes long-term agent memory into
+capture, update, recall, and QA across 3,065 episodes, 50,961 sessions,
+and 61,210 questions. Gold-memory QA is high—90.61% open-model average
+and 91.22% proprietary average—while full-pipeline QA falls to 47.73%
+and 57.35%; unsafe deletion averages 84.1% and 78.1%. The linked dataset
+is currently empty and the repository is a placeholder, materially
+limiting reproducibility.</li>
+</ol>
+<p>The Watchlist adds two boundaries. <strong>Dynamic LLM Routers are
+Often Misguided</strong> finds that six commercial routers do not beat
+random routing between a carefully selected cheap/expensive pair at
+matched cost; even a difficulty oracle gains at most one point from
+rosters larger than two in its setting. <strong>Choosing Before
+Acting</strong> reports average gains of 7.55 Tool-F1 and 9.93
+task-success points across six benchmark/backbone settings using
+comparative pre-action value estimation, but it requires logged
+trajectories, tool graphs, simulator-generated pairs, training, and a
+model judge; dynamic production tools and safety-sensitive actions
+remain untested.</p>
+<p><strong>Decision posture.</strong> Prototype an external
+historical-constraint registry with a pre-effect audit, a bounded
+trajectory diagnostic layer, and a typed memory-lifecycle qualification
+harness in shadow mode. Prepare reversible memory updates, deletion
+quarantine, shared provenance, and judge-calibration infrastructure.
+Monitor router economics and comparative tool-value estimation.
+Deprioritize final-answer-only or majority approval of memory
+mutations.</p>
+<h1 id="top-3-future-bets">Top 3 Future Bets</h1>
+<ol type="1">
+<li><strong>Historical safety-constraint registry and pre-effect audit —
+93.6/100.</strong> Why it matters: a constraint can remain in context
+yet fail to govern the tool call that creates a durable effect. Evidence
+that would change the recommendation: representative internal tasks show
+no history-length interaction, deterministic predicates cannot cover
+material effects, or the registry causes unacceptable false blocks. Next
+reversible action: replay 50 completed tool trajectories with historical
+constraints through a shadow constraint extractor and deny-overrides
+auditor; do not block live actions.</li>
+<li><strong>Budget-bounded trajectory diagnostic layer —
+91.1/100.</strong> Why it matters: full traces can be too large and slow
+for routine operations, but naive truncation removes the evidence needed
+for root-cause analysis. Evidence that would change the recommendation:
+healthy-trajectory testing reveals high false alarms, or human reviewers
+lose critical evidence under compaction. Next reversible action:
+evaluate a single-call shadow judge on 50 failed and 50 successful
+internal traces at fixed token, latency, and cost budgets.</li>
+<li><strong>Dual-domain memory lifecycle qualification gate —
+90.5/100.</strong> Why it matters: high QA with a perfect memory bank
+hides failures in capture, update, retrieval, and unsafe deletion,
+including memories about the agent-user relationship. Evidence that
+would change the recommendation: internal workflows need no persistent
+relational state, or typed memory provides no lift after privacy and
+retention controls. Next reversible action: replay sanitized sessions
+through capture/update/recall stages, separately scoring user facts,
+agent commitments, shared events, deletion safety, and downstream
+QA.</li>
+</ol>
+<h1
+id="deep-paper-1--constraint-availability-is-not-constraint-enforcement">Deep
+paper 1 — Constraint availability is not constraint enforcement</h1>
+<p><strong>Identity and status.</strong> <em>A GHOST in Long-Horizon
+Agents: Governance Hazard from Overlooked Safety Constraints across
+Turns</em>; arXiv:2610.02664v1; submitted October 2, 2026; preprint; CC
+BY 4.0. No public code, benchmark, or output repository was verified
+from the paper. (<a
+href="https://arxiv.org/abs/2610.02664">paper</a>)</p>
+<h2 id="contribution-and-quantitative-claim-trace">Contribution and
+quantitative claim trace</h2>
+<p>GHOST is an attack-free failure mode: an agent complies when an
+earlier safety rule is restated near the action, but violates the same
+rule when it is available only in a long interaction history. SCARBench
+contains 103 executable base scenarios in six tool-use
+domains—device/calendar, finance, email, filesystem, network requests,
+and script execution. Each scenario appears in Short Explicit, Short
+Implicit, Long Explicit, and Long Implicit conditions. Long contexts
+contain 6,000–6,176 tokens and 56–160 turns. Seven models receive 412
+instances each, repeated five times; strict GHOST is computed over 515
+matched base-case/repetition pairs per model with case-clustered 95%
+confidence intervals.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>Decision meaning</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>The history effect is separable from generic long-context
+failure</td>
+<td style="text-align: right;">GPT-5.5 safe completion is 88.7% in Long
+Explicit and 76.3% in Long Implicit; unsafe completion rises from 1.0%
+to 12.4%</td>
+<td>Test rule application, not just rule presence or task success</td>
+<td>Constructed scenarios; one benchmark</td>
+</tr>
+<tr class="even">
+<td>Strict GHOST appears across all seven tested models</td>
+<td style="text-align: right;">6.8% Kimi-K2.6; 8.5% Llama3.1-8B; 8.7%
+DeepSeek-V4-Pro; 8.9% GLM-5.2; 9.1% Qwen-3.6; 11.5% GPT-5.5; 27.8%
+Qwen3.5-4B</td>
+<td>Model scale or capability does not eliminate the control-plane
+failure</td>
+<td>Model/API versions will drift; no independent replication</td>
+</tr>
+<tr class="odd">
+<td>STAR-Guard can sharply reduce the measured hazard</td>
+<td style="text-align: right;">GPT-5.5: safe completion 76.3→94.0%,
+unsafe 12.4→0%, GHOST 11.5→0%; Qwen3.5-4B: 47.0→81.2%, 31.1→1.9%,
+27.8→1.9%</td>
+<td>Externalized rules plus deterministic checks merit
+qualification</td>
+<td>Rules/predicates are benchmark-supplied; online capture
+untested</td>
+</tr>
+<tr class="even">
+<td>Both layers contribute</td>
+<td style="text-align: right;">Qwen3.5-4B restoration-only GHOST 3.7%;
+audit-only 1.7%; full 1.9%, versus 27.8% no defense</td>
+<td>Retrieval and effect checking cover partially different failure
+paths</td>
+<td>Full is not uniformly better than audit-only on the point
+estimate</td>
+</tr>
+<tr class="odd">
+<td>Long history creates a specific interaction effect</td>
+<td style="text-align: right;">Difference-in-differences is negative for
+every model, including −13.4 points GPT-5.5 and −36.7 Qwen3.5-4B</td>
+<td>Qualify historical constraints under matched explicit/implicit
+conditions</td>
+<td>Exact mechanism—retrieval, salience, or application—is not fully
+identified</td>
+</tr>
+</tbody>
+</table>
+<h2
+id="methodological-critique-and-prior-work-comparison">Methodological
+critique and prior-work comparison</h2>
+<p>Prompt-injection benchmarks test adversarial instructions;
+harmful-tool benchmarks test unsafe goals; long-context retrieval tests
+whether text can be found. GHOST instead holds the task and historical
+rule constant and varies whether the rule is restated at execution time.
+The four-condition design and strict matched-pair definition are the
+paper's main methodological advance: a generic failure in both long
+conditions does not count as GHOST.</p>
+<p>The repeated, executable evaluation is stronger than anecdotal
+demonstrations. The difference-in-differences analysis, case-clustered
+intervals, cross-model replication, and defense ablations improve
+interpretability. But the benchmark is synthetic/constructed, the long
+histories occupy a narrow 6K-token range, and the paper does not verify
+real user memory, organizational policies, conflicting rules, rule
+expiry, or malicious updates. STAR-Guard's online description is
+stronger than its evidence: the experiments start with known constraints
+and verification rules and do not test noisy extraction at the moment a
+user states a rule. A deterministic auditor is only as complete as its
+tool bindings and predicates; uncovered actions may pass, while broad
+rules may over-block. No public artifact currently supports independent
+rerun.</p>
+<h2 id="reproducibility-and-enterprise-readiness">Reproducibility and
+enterprise readiness</h2>
+<p>The paper specifies scenarios, conditions, prompts, scoring,
+repetitions, models, confidence intervals, and ablations, but without
+released cases, code, model outputs, or auditor library, reproduction is
+incomplete. <strong>Enterprise readiness:</strong> high for the
+architectural principle of externalized constraints and deny-overrides
+effect checks; medium for a shadow auditor over a bounded tool set; low
+for autonomous enforcement across heterogeneous, stateful enterprise
+actions. <strong>Research Utility Score: 92/100</strong> (methodological
+rigor 24/25; quantitative traceability 25/25; reproducibility/artifacts
+13/20; enterprise relevance 15/15; prior-work advance 15/15).</p>
+<h1
+id="deep-paper-2--bounded-evidence-can-make-trajectory-review-operational">Deep
+paper 2 — Bounded evidence can make trajectory review operational</h1>
+<p><strong>Identity and status.</strong> <em>Lightweight, Rubric-Guided
+Trajectory Evaluation for Production AI Agents</em>; Huawei authors in
+Ireland and China; arXiv:2610.03315v1; submitted October 2, 2026; listed
+in the ISSRE 2026 industry program; CC BY 4.0. No public implementation
+or labeled output release was verified. (<a
+href="https://arxiv.org/abs/2610.03315">paper</a> · <a
+href="https://issre.github.io/2026/program/">ISSRE program</a>)</p>
+<h2 id="contribution-and-quantitative-claim-trace-1">Contribution and
+quantitative claim trace</h2>
+<p>LiteTrajEval builds compact offline rule profiles from historical
+outputs, then performs one bounded online judge call. It canonicalizes
+volatile values, groups near-duplicates, assigns warning/error rules,
+identifies suspicious trace regions, compacts local tool outputs,
+removes cross-step redundancy, preserves severity-dependent evidence
+floors, and selects diverse evidence with maximal marginal relevance
+under a 50,000-character budget. The judge returns scores, failure
+steps, categories, root cause, and observations.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>Decision meaning</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Conditional failure localization improves</td>
+<td style="text-align: right;">On 44 failed Magentic-One-style samples,
+GPT-5-mini alignment @±1 rises 40.2→66.2% and @±3 45.4→83.1%; on 29
+failed τ-retail samples, 51.8→78.6% and 59.2→82.1%</td>
+<td>Rules and focused evidence can preserve useful root-cause
+signal</td>
+<td>Alignment is conditioned on detected failures and a single reference
+group</td>
+</tr>
+<tr class="even">
+<td>Failure detection stays high in the selected failed-only set</td>
+<td style="text-align: right;">GPT-5-mini: 97.7% on Magentic-One and
+89.6% on τ-retail; DeepSeek-v4-flash: 100% and 82.7%</td>
+<td>Cheap judges may be usable when evidence is curated</td>
+<td>No healthy trajectories, so specificity and false positives are
+unknown</td>
+</tr>
+<tr class="odd">
+<td>Cost falls materially</td>
+<td style="text-align: right;">Across all 73 samples: AgentRx/GPT-5-mini
+$2.4628; LiteTrajEval/GPT-5-mini $0.4155; LiteTrajEval/DeepSeek-v4-flash
+$0.1087</td>
+<td>Cost-bounded routine diagnostics are plausible</td>
+<td>Provider pricing and token accounting change; engineering costs
+omitted</td>
+</tr>
+<tr class="even">
+<td>Runtime falls materially</td>
+<td style="text-align: right;">Total 15,990→1,840 seconds; reported
+per-sample ranges 48–914 vs 12–63 seconds</td>
+<td>One-call evaluation can reduce operational latency</td>
+<td>Hardware, concurrency, retries, and service conditions are not
+normalized</td>
+</tr>
+<tr class="odd">
+<td>Deterministic rules alone are insufficient</td>
+<td style="text-align: right;">No-LLM detection is 56.8% and 31.0% on
+the two sets</td>
+<td>Use rules to focus evidence, not as the sole semantic judge</td>
+<td>LLM judge errors remain a single point of failure</td>
+</tr>
+<tr class="even">
+<td>A production integration exists</td>
+<td style="text-align: right;">Authors report hundreds of trajectories
+per day in an enterprise SRE workflow</td>
+<td>The pattern has operating relevance</td>
+<td>No independently verified production accuracy, defect-escape, or
+reviewer study</td>
+</tr>
+</tbody>
+</table>
+<h2
+id="methodological-critique-and-prior-work-comparison-1">Methodological
+critique and prior-work comparison</h2>
+<p>AgentRx performs iterative multi-call investigation; generic LLM
+judges ingest more of a trace; deterministic monitors detect known
+signatures. LiteTrajEval's incremental contribution is a deliberately
+bounded evidence pipeline: learn compact recurring patterns offline,
+preserve anomalous and severe evidence online, and perform one
+rubric-guided semantic judgment.</p>
+<p>The paper reports two distinct agent ecosystems, multiple judge
+models, token counts, costs, runtime, ablations, and a production
+narrative. Yet the public quantitative sample contains only 73 failed
+trajectories and 109 annotated failure groups. Detection on failed-only
+data cannot estimate the rate at which healthy production traces are
+escalated. Failure-group alignment is conditional, so it is not
+end-to-end localization accuracy. A ±3-step match may be insufficient
+when an upstream error manifests much later. The offline profile may
+drift as tools and agents change, and examples from historical outputs
+can normalize recurring but incorrect behavior. The judge is still
+model-based, and the paper does not report blinded human agreement,
+security tests for trace content, or independent reproduction.</p>
+<h2 id="reproducibility-and-enterprise-readiness-1">Reproducibility and
+enterprise readiness</h2>
+<p>The architecture, serialization logic, threshold examples, character
+budget, models, datasets, metrics, and aggregate costs are described,
+but no verified code, rule profile, labeled output, or production
+dataset is available. <strong>Enterprise readiness:</strong> high for
+deterministic compaction, evidence budgets, and cost telemetry; medium
+for shadow SRE triage with sampled human review; low for autonomous
+incident closure or compliance decisions. <strong>Research Utility
+Score: 88/100</strong> (methodological rigor 22/25; quantitative
+traceability 24/25; reproducibility/artifacts 12/20; enterprise
+relevance 15/15; prior-work advance 15/15).</p>
+<h1 id="deep-paper-3--memory-quality-is-a-pipeline-property">Deep paper
+3 — Memory quality is a pipeline property</h1>
+<p><strong>Identity and status.</strong> <em>DyadMem: A Long-Term Memory
+Benchmark of How Agents Work with Users</em>; arXiv:2610.03020v1;
+submitted October 2, 2026; preprint; CC BY 4.0. The paper links a <a
+href="https://github.com/RenaissanceT/DyadMem">repository</a>, <a
+href="https://huggingface.co/datasets/RenaissanceT/DyadMem">dataset</a>,
+and <a href="https://renaissancet.github.io/DyadMem/">project page</a>.
+At verification time, the repository README was a placeholder and the
+dataset page reported an empty dataset, so the advertised artifacts are
+not currently usable for reproduction. (<a
+href="https://arxiv.org/abs/2610.03020">paper</a>)</p>
+<h2 id="contribution-and-quantitative-claim-trace-2">Contribution and
+quantitative claim trace</h2>
+<p>DyadMem treats memory as a lifecycle with four independently scored
+tasks: Capture from the current session, Update against an existing
+bank, Recall of supporting memories, and QA with either gold or pipeline
+memory. Its six memory types separate user profile and facts from agent
+identity, agent method, agent knowledge, and shared episodic state. The
+benchmark contains 3,065 episodes, 50,961 sessions, and 61,210 QA pairs
+across five domains and 25 subdomains, and evaluates 16 open and four
+proprietary models.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>Decision meaning</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Final QA hides lifecycle failures</td>
+<td style="text-align: right;">Open-model average: Gold-Memory QA
+90.61%, Full-Pipeline QA 47.73%; proprietary average: 91.22% vs
+57.35%</td>
+<td>Evaluate capture, update, retrieval, and use separately</td>
+<td>Synthetic dialogue and questions; judge/model dependence</td>
+</tr>
+<tr class="even">
+<td>Capture is the first major bottleneck</td>
+<td style="text-align: right;">Average capture F1 is 23.41% open and
+28.05% proprietary; terminal bank median is 75 entries versus 323.6
+gold</td>
+<td>A sparse bank can look concise while omitting needed state</td>
+<td>Gold granularity may exceed production needs</td>
+</tr>
+<tr class="odd">
+<td>Update operations are unsafe</td>
+<td style="text-align: right;">Unsafe deletion averages 84.1% for open
+and 78.1% for proprietary models; even the lowest reported model rate is
+62.6%</td>
+<td>Deletion needs quarantine, evidence, and reversal</td>
+<td>Metric depends on synthetic gold update operations</td>
+</tr>
+<tr class="even">
+<td>Retrieval remains incomplete despite strong first hits</td>
+<td style="text-align: right;">Leading models rank at least one gold
+memory first 85–89% of the time, but Recall@n remains below 63%</td>
+<td>Top-1 success does not prove support-set completeness</td>
+<td>n and support sets are benchmark-defined</td>
+</tr>
+<tr class="odd">
+<td>Relational agent memory can matter</td>
+<td style="text-align: right;">In 500 controlled episodes with 1,735
+agent-memory-only questions, user-conditioned agent memory raises update
+quality for all 20 models and QA for 17/20; mean QA gain +3.2 open,
++3.67 proprietary</td>
+<td>Some workflows need memory of commitments, methods, and relationship
+context—not only user facts</td>
+<td>Three model point estimates are negative; privacy and
+appropriateness untested</td>
+</tr>
+<tr class="even">
+<td>Best end-to-end scores remain far from gold-memory potential</td>
+<td style="text-align: right;">GPT-5.6 Sol Gold 96.28% vs Full 70.35%;
+Kimi K3 Gold 94.99% vs Full 74.85%</td>
+<td>Better generation alone does not close pipeline gaps</td>
+<td>Proprietary models and synthetic benchmark; no production
+outcomes</td>
+</tr>
+</tbody>
+</table>
+<h2
+id="methodological-critique-and-prior-work-comparison-2">Methodological
+critique and prior-work comparison</h2>
+<p>LongMemEval and related benchmarks emphasize user facts, temporal
+reasoning, and final response quality. DyadMem adds memory about the
+agent and the evolving dyad, and exposes intermediate lifecycle tasks.
+That decomposition is decision-useful: a good final answer can conceal a
+wrong update, missing support, or destructive deletion.</p>
+<p>The scale, six-type schema, controlled user-conditioned versus
+agent-only study, 20-model sweep, bootstrap intervals, and separate
+gold/pipeline QA are strengths. Nine annotators reportedly performed
+quality control over two months, and the paper includes human
+calibration of the judge. Still, conversations, memories, and questions
+are generated within a synthetic pipeline; the ontology may reward
+explicit atomic memories more than real operating systems should retain.
+BGE-M3 matching, NLI checks, and GPT-5-mini judging introduce shared
+measurement assumptions. The paper does not test real privacy
+preferences, revocation, multi-tenant access, legal retention, poisoned
+memory, identity conflicts, or downstream harmful effects. Most
+importantly, the linked dataset is empty and the repository remains a
+placeholder, so the impressive benchmark cannot currently be
+independently inspected or rerun.</p>
+<h2 id="reproducibility-and-enterprise-readiness-2">Reproducibility and
+enterprise readiness</h2>
+<p>The paper is detailed, but absent usable data/code prevents practical
+reproduction. <strong>Enterprise readiness:</strong> high for
+lifecycle-separated evaluation and typed provenance; medium for
+sanitized offline replay with internal data; low for broad persistent
+relational memory or autonomous update/delete decisions.
+<strong>Research Utility Score: 87/100</strong> (methodological rigor
+24/25; quantitative traceability 24/25; reproducibility/artifacts 9/20;
+enterprise relevance 15/15; prior-work advance 15/15).</p>
+<h1 id="watchlist">Watchlist</h1>
+<h2 id="dynamic-llm-routers-are-often-misguided">Dynamic LLM Routers are
+Often Misguided</h2>
+<p><strong>Identity and status.</strong> <em>Dynamic LLM Routers are
+Often Misguided</em>; arXiv:2610.02762v1; submitted October 2, 2026;
+eight pages and 15 figures; under review at NAACL; CC BY 4.0. (<a
+href="https://arxiv.org/abs/2610.02762">paper</a>)</p>
+<p><strong>Signal.</strong> The study evaluates six commercial routers
+on 17 benchmarks across eight task categories and identifies four
+recurrent patterns: difficulty blindness, length reversal,
+semantic/source matching, and roster suboptimality. None beats random
+routing between Gemini 3.7 Flash and Claude Opus 5 (high) at matched
+cost; some are more than ten accuracy points worse. In a 26-model set,
+Gemini 3.7 Flash trails Opus 5 (high) by only 1.6 points at a reported
+96% discount. Even with perfect query-difficulty knowledge and
+evaluation-set roster/threshold selection, a two-model roster is never
+more than one point below the best roster size. The authors' revised
+methodology separates hard-band escalation, easy-band accuracy, and
+easy-band cost; their proof-of-concept improves escalation in
+distribution but remains within noise of random on accuracy.</p>
+<p><strong>Why Watchlist, not deep selection:</strong> the negative
+result is strategically important, but it concerns single-turn routing
+over public benchmarks. Model availability, provider pricing, caching,
+compliance, data residency, latency, and enterprise task distributions
+can change the frontier. There is no production A/B evidence or verified
+implementation. Promote after internal matched-cost random/standalone
+baselines, temporal holdouts, multi-turn switching costs, calibration,
+and a demonstrated payback region.</p>
+<h2
+id="choosing-before-acting-comparative-value-estimation-for-long-horizon-tool-use-agents">Choosing
+Before Acting: Comparative Value Estimation for Long-Horizon Tool-Use
+Agents</h2>
+<p><strong>Identity and status.</strong> <em>Choosing Before Acting:
+Comparative Value Estimation for Long-Horizon Tool-Use Agents</em>;
+arXiv:2610.02330v1; submitted October 1, 2026; NeurIPS 2026 poster;
+arXiv non-exclusive license. No public implementation was verified from
+the paper. (<a href="https://arxiv.org/abs/2610.02330">paper</a>)</p>
+<p><strong>Signal.</strong> CITA learns a Comparative Inference Model
+from real trajectories, a Bayesian tool-graph simulator, and LLM
+semantic comparisons, then scores candidate next-tool calls during
+training and inference. Across Toolathlon, TOUCAN, and TRAJECT-Bench
+with Qwen2.5-7B and Llama3.1-8B, it leads all tested methods in all six
+settings, with average gains of 7.55 Tool-F1 and 9.93 task-success
+points over the strongest prior method. Full-CIM direction accuracy is
+92.31%, 61.54%, and 79.49% on the three held-out paired sets. Removing
+sandbox comparison data lowers average Tool F1 from 60.47 to 51.78 and
+task success from 49.70 to 38.64. Reported 95% bootstrap intervals cover
+the main metrics.</p>
+<p><strong>Why Watchlist, not deep selection:</strong> the method
+requires offline paired-data construction, a tool graph, simulator
+assumptions, model training, multiple candidates, and GPT-4o
+task-success judging. The benchmarks use stable tool registries; the
+authors identify dynamic tool ecosystems as future work. Safety,
+destructive side effects, authorization, inference cost, dataset
+contamination, and out-of-distribution tool changes are not
+production-qualified. Promote after a released implementation and a
+shadow trial that measures net success, cost, latency, effect safety,
+and calibration against simple heuristics.</p>
+<h1
+id="cross-paper-synthesis--preserve-control-state-at-three-boundaries">Cross-paper
+synthesis — preserve control state at three boundaries</h1>
+<table>
+<thead>
+<tr class="header">
+<th>Boundary</th>
+<th>Strongest evidence</th>
+<th>What can fail</th>
+<th>Enterprise interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Before an effect</td>
+<td>GHOST's matched long-implicit condition and STAR-Guard
+ablations</td>
+<td>A valid historical rule is present but not applied to the tool
+call</td>
+<td>Externalize active constraints and audit the proposed effect with
+deny-overrides semantics</td>
+</tr>
+<tr class="even">
+<td>After a failure</td>
+<td>LiteTrajEval's bounded serialization and one-call judge</td>
+<td>Full traces are unaffordable; naive truncation removes causal
+evidence</td>
+<td>Preserve anomaly-adjacent, severe, diverse evidence under explicit
+budgets and sampled human review</td>
+</tr>
+<tr class="odd">
+<td>When memory changes</td>
+<td>DyadMem's capture/update/recall/QA decomposition and unsafe-deletion
+rates</td>
+<td>A fluent answer masks missing capture, incomplete recall, or
+destructive update</td>
+<td>Treat write, merge, supersede, delete, retrieve, and use as
+separately auditable operations</td>
+</tr>
+<tr class="even">
+<td>At model routing</td>
+<td>Router audit against random and standalone baselines</td>
+<td>A complex router appears efficient because cost accounting rewards
+length/source shortcuts</td>
+<td>Qualify the roster and objective before optimizing the router</td>
+</tr>
+<tr class="odd">
+<td>Before a tool choice</td>
+<td>CITA's paired comparative value estimates</td>
+<td>Locally plausible calls create downstream dead ends</td>
+<td>Shadow-score alternatives, but keep authorization and effect safety
+outside learned value estimates</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Independent Analysis.</strong> These papers suggest a
+two-plane architecture. The <strong>execution plane</strong> generates,
+retrieves, and proposes actions. The <strong>control-evidence
+plane</strong> owns active constraints, provenance, memory-operation
+records, trace compaction policies, evaluation contracts, cost
+telemetry, abstention, and human approval. The control plane should not
+infer that a high model score authorizes an effect; it should require
+evidence appropriate to the effect type. Likewise, a memory service
+should not infer that final-answer correctness makes an update or
+deletion safe.</p>
+<svg viewBox="0 0 980 310" role="img" aria-label="Enterprise AI architecture showing policy, execution, diagnostic, memory, and human-review layers" style="width:100%;height:auto;background:#0c1c2a;border:1px solid #2a465b;border-radius:14px;margin:1rem 0">
+  <defs><marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#46dbc6"/></marker></defs>
+  <g fill="#10283a" stroke="#70adff" stroke-width="2"><rect x="40" y="35" width="260" height="82" rx="12"/><rect x="360" y="35" width="260" height="82" rx="12"/><rect x="680" y="35" width="260" height="82" rx="12"/><rect x="40" y="190" width="260" height="82" rx="12"/><rect x="360" y="190" width="260" height="82" rx="12"/><rect x="680" y="190" width="260" height="82" rx="12"/></g>
+  <g fill="#e9f2f8" font-family="system-ui" font-size="16" text-anchor="middle"><text x="170" y="67">Constraint registry</text><text x="170" y="91">identity · scope · expiry</text><text x="490" y="67">Agent orchestration</text><text x="490" y="91">models · tools · candidates</text><text x="810" y="67">Pre-effect audit</text><text x="810" y="91">repair · block · allow</text><text x="170" y="222">Memory lifecycle</text><text x="170" y="246">capture · update · recall</text><text x="490" y="222">Trajectory diagnostics</text><text x="490" y="246">evidence budget · RCA</text><text x="810" y="222">Human/policy review</text><text x="810" y="246">accept · abstain · rollback</text></g>
+  <g stroke="#46dbc6" stroke-width="3" fill="none" marker-end="url(#arr)"><line x1="300" y1="76" x2="357" y2="76"/><line x1="620" y1="76" x2="677" y2="76"/><line x1="490" y1="117" x2="490" y2="187"/><line x1="300" y1="231" x2="357" y2="231"/><line x1="620" y1="231" x2="677" y2="231"/></g>
+  <path d="M810 117 C810 155 170 155 170 187" fill="none" stroke="#f4c96b" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#arr)"/><text x="490" y="165" fill="#f4c96b" text-anchor="middle" font-family="system-ui" font-size="14">effects and review outcomes become provenance-bearing lifecycle events</text>
+</svg>
+
+<p>The synthesis is not evidence that every enterprise needs persistent
+agent memory, learned routing, or comparative tool selection. Internal
+task economics, data classification, regulation, model portfolio, tool
+semantics, error costs, identity design, and human-review capacity are
+required before implementation decisions.</p>
+<h1 id="enterprise-ai-enhancement-backlog">Enterprise AI Enhancement
+Backlog</h1>
+<h2 id="priority-method-and-uncertainty">Priority method and
+uncertainty</h2>
+<p>The Future Enterprise AI Priority Score is a decision aid, not a
+calibrated forecast. Components use 0–100 scales and the required
+weights: strategic/business value 25%, technical leverage 20%, evidence
+strength 20%, enterprise readiness 15%, feasibility 10%, and
+risk-adjusted differentiation 10%. Displayed decimals are arithmetic,
+not empirical precision. Missing internal workflow value, incident
+history, stack topology, data sensitivity, regulatory duties, risk
+tolerance, staffing, model portfolio, acceptable latency, and cost can
+move items by more than the displayed differences.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Rank</th>
+<th>Enhancement</th>
+<th>Decision band</th>
+<th style="text-align: right;">Strategic</th>
+<th style="text-align: right;">Technical</th>
+<th style="text-align: right;">Evidence</th>
+<th style="text-align: right;">Readiness</th>
+<th style="text-align: right;">Feasibility</th>
+<th style="text-align: right;">Differentiation</th>
+<th style="text-align: right;">Weighted</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td>Historical safety-constraint registry and pre-effect audit</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">98</td>
+<td style="text-align: right;">97</td>
+<td style="text-align: right;">96</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;"><strong>93.6</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td>Budget-bounded trajectory diagnostic layer</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;"><strong>91.1</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td>Dual-domain memory lifecycle qualification gate</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">96</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">83</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;"><strong>90.5</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td>Reversible memory-update ledger and deletion quarantine</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">79</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;"><strong>87.8</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td>Failure-evidence retention serializer</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">89</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;"><strong>87.6</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td>Judge calibration and human-sampling lane</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;"><strong>83.5</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td>Router baseline and payback qualification</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">87</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">76</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;"><strong>82.7</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td>Pre-action comparative tool-value shadow pilot</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">87</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">58</td>
+<td style="text-align: right;">87</td>
+<td style="text-align: right;"><strong>78.0</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9</td>
+<td>Final-answer-only or majority acceptance of memory changes</td>
+<td>Deprioritize for Now</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;"><strong>43.0</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="prototype-soon">Prototype Soon</h2>
+<h3
+id="1-historical-safety-constraint-registry-and-pre-effect-audit--936">1.
+Historical safety-constraint registry and pre-effect audit — 93.6</h3>
+<ul>
+<li><strong>Category:</strong> Safety &amp; Governance / AI Security /
+Agentic AI.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> GHOST's seven-model matched study and STAR-Guard
+ablations. <strong>Paper Fact</strong>; enterprise service is
+<strong>Enterprise Inference</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong>
+Earlier user, policy, legal, or workflow constraints may be available in
+history yet fail to govern a later tool call.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+Extract candidate constraints into a typed, versioned registry with
+source, subject, scope, trigger, expiry, supersession, and confidence.
+Before a state-changing tool call, bind applicable constraints to the
+target and run deterministic predicates with deny-overrides precedence;
+ambiguous or uncovered effects abstain to review.</li>
+<li><strong>Likely architectural placement:</strong> orchestration,
+agent layer, model gateway, security/governance, human-review
+layer.</li>
+<li><strong>Expected business value:</strong> reliability, risk
+reduction, quality, customer trust, auditability.</li>
+<li><strong>Technical value:</strong> Separates remembering a rule from
+enforcing it at the effect boundary.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+benchmark/matched-control evidence; no public artifact, real policy
+corpus, or online-capture test. Ready only for shadow replay over
+bounded tools.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>High</strong> / <strong>Now</strong> / <strong>M</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Tool/effect
+taxonomy, stable identity, policy ownership, rule schema, provenance,
+versioning/expiry, deterministic predicate library, exception workflow,
+replay corpus.</li>
+<li><strong>Key risks:</strong> Incorrect extraction, stale/conflicting
+rules, over-blocking, incomplete coverage, privilege bypass, sensitive
+policy retention, denial of service, user confusion.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build</strong> the
+rule schema, precedence, and effect bindings because they encode
+enterprise authority; buy policy storage/evaluation only with exportable
+rules and full audit logs.</li>
+<li><strong>Minimum reversible validation experiment:</strong>
+Shadow-replay 50 completed trajectories across two bounded tool families
+with historical constraints; compare explicit/implicit and short/long
+conditions; do not block production.</li>
+<li><strong>Success metrics and stop conditions:</strong>
+Historical-constraint recall, unsafe-proposal catch rate, false-block
+rate, uncovered-effect rate, review latency, rule-conflict rate. Stop on
+any silent bypass, &gt;5% unjustified block rate, or unresolvable
+ownership/expiry gaps.</li>
+<li><strong>Roadmap trigger:</strong> Independent red-team replay shows
+≥90% material-constraint recall and zero high-severity misses across two
+tool families, with approved exception, retention, and rollback
+controls.</li>
+</ul>
+<h3 id="2-budget-bounded-trajectory-diagnostic-layer--911">2.
+Budget-bounded trajectory diagnostic layer — 91.1</h3>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability / MLOps
+&amp; Platform / Agentic AI.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> LiteTrajEval's alignment, cost, runtime, and ablation
+evidence. <strong>Paper Fact</strong>; enterprise layer is
+<strong>Enterprise Inference</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong>
+Full-trace analysis is costly and slow, while fixed truncation discards
+the outputs surrounding decisive failures.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+Normalize events, apply versioned offline signatures, mark suspicious
+regions, compact large outputs, remove duplicate evidence, preserve
+severity floors, and select diverse evidence under explicit
+token/character/cost budgets for a rubric-guided judge that must cite
+event IDs.</li>
+<li><strong>Likely architectural placement:</strong> evaluation,
+observability, orchestration, data platform, human-review layer.</li>
+<li><strong>Expected business value:</strong> lower diagnostic cost,
+faster incident triage, reliability, productivity, quality.</li>
+<li><strong>Technical value:</strong> Makes evidence selection
+deterministic and inspectable before semantic judgment.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Useful
+two-dataset evidence and reported production use; failed-only sample, no
+specificity study, no open implementation. Ready for shadow
+evaluation.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>High</strong> / <strong>Now</strong> / <strong>M</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Trace schema, event
+IDs, secure redaction, storage, rule lifecycle, evidence-budget policy,
+gold incident set, cost telemetry, human reviewers.</li>
+<li><strong>Key risks:</strong> False positives, compaction loss,
+prompt/tool-output injection, stale rules, judge drift, privacy leakage,
+misplaced certainty, silent budget overflow.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Hybrid.</strong>
+Build trace normalization, redaction, budgets, and evidence provenance;
+compare commodity judges behind a model gateway.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Fifty
+failed and fifty healthy sanitized traces; fixed-cost comparison of
+full-trace review, naive truncation, and bounded evidence; no automated
+remediation.</li>
+<li><strong>Success metrics and stop conditions:</strong> End-to-end
+failure detection, healthy specificity, exact/±3 localization, reviewer
+agreement, evidence completeness, cost, p95 latency. Stop if false
+alerts exceed the review budget, critical evidence is systematically
+dropped, or citations cannot be reconstructed.</li>
+<li><strong>Roadmap trigger:</strong> Non-inferior defect recall, ≥50%
+lower evaluation cost/latency, and acceptable healthy specificity across
+two workflow families for four consecutive evaluation cycles.</li>
+</ul>
+<h3 id="3-dual-domain-memory-lifecycle-qualification-gate--905">3.
+Dual-domain memory lifecycle qualification gate — 90.5</h3>
+<ul>
+<li><strong>Category:</strong> Memory &amp; Context / Evaluation &amp;
+Observability / Human-AI Workflow.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> DyadMem's lifecycle decomposition, gold/pipeline gaps,
+relational-memory study, and deletion metric. <strong>Paper
+Fact</strong>; qualification gate is <strong>Enterprise
+Inference</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong> Teams
+accept memory systems based on final-response quality without knowing
+whether relevant state was captured, updated safely, fully retrieved, or
+improperly deleted.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+Maintain separate evaluation suites for user facts/preferences and
+agent/dyad state such as commitments, methods, shared events, and prior
+disclosures. Score capture precision/recall, operation correctness,
+unsafe deletion, support-set recall, grounded QA, and unsupported-answer
+rate; block promotion when any lifecycle stage fails its risk-tier
+threshold.</li>
+<li><strong>Likely architectural placement:</strong> memory/context
+service, retrieval/knowledge, evaluation, security/governance,
+human-review layer.</li>
+<li><strong>Expected business value:</strong> customer experience,
+quality, reliability, productivity, risk reduction.</li>
+<li><strong>Technical value:</strong> Localizes whether memory failure
+originates in writing, updating, retrieving, or using state.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Large,
+detailed benchmark with 20 models; synthetic and currently unreleased
+artifacts. Ready for internal replay, not persistent production memory
+expansion.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>High</strong> / <strong>Now</strong> / <strong>M</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Approved memory
+taxonomy, user consent model, retention/deletion policy, typed
+operations, provenance, representative gold cases, revocation tests,
+data minimization.</li>
+<li><strong>Key risks:</strong> Privacy intrusion, identity confusion,
+stale commitments, sensitive inference, over-retention, benchmark
+ontology bias, evaluator bias, low user acceptance.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build</strong> the
+evaluation contract and risk thresholds; buy memory infrastructure only
+if it exposes typed operations, provenance, export, deletion evidence,
+and tenant isolation.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Sanitized
+offline replay of 30 multi-session cases with no durable writes; compare
+user-only versus dual-domain schemas and score every lifecycle
+stage.</li>
+<li><strong>Success metrics and stop conditions:</strong> Capture F1,
+correct update-operation F1, unsafe deletion, Recall@n, grounded QA,
+unsupported answers, privacy violations, user-review burden. Stop on any
+cross-user leakage, deletion without support, or no material QA lift
+after controls.</li>
+<li><strong>Roadmap trigger:</strong> Two representative workflows meet
+stage-specific thresholds and pass privacy, security, retention,
+revocation, and user-control review.</li>
+</ul>
+<h2 id="prepare-foundations">Prepare Foundations</h2>
+<h3
+id="4-reversible-memory-update-ledger-and-deletion-quarantine--878">4.
+Reversible memory-update ledger and deletion quarantine — 87.8</h3>
+<ul>
+<li><strong>Category:</strong> Memory &amp; Context / Data &amp;
+Knowledge Infrastructure / Safety &amp; Governance.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> DyadMem's 78.1–84.1% average unsafe-deletion rates.
+<strong>Paper Fact</strong>; ledger/quarantine is <strong>Enterprise
+Inference</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong> A
+model may overwrite or delete still-valid memory without durable
+evidence, approval, or rollback.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+Represent ADD, MERGE, SUPERSEDE, RETAIN, and DELETE as proposed events
+with source references and confidence. Apply writes append-only;
+quarantine deletion/tombstone proposals until policy or human
+acceptance; expose history and rollback.</li>
+<li><strong>Likely architectural placement:</strong> memory/context
+service, data platform, security/governance, human-review layer.</li>
+<li><strong>Expected business value:</strong> reliability, risk
+reduction, customer trust, auditability.</li>
+<li><strong>Technical value:</strong> Converts opaque bank mutation into
+deterministic, reversible state transitions.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+benchmark warning, no real privacy/retention validation.
+Foundation-ready after data-governance design.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>High</strong> / <strong>3–6 months</strong> /
+<strong>L</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Immutable IDs,
+provenance, tombstones, version store, user/admin controls, retention
+law mapping, conflict resolution, encryption and access control.</li>
+<li><strong>Key risks:</strong> Storage growth, retained sensitive data,
+mistaken merges, rollback inconsistency, legal deletion conflict, race
+conditions, insider access.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build</strong> the
+mutation protocol and policy semantics; buy storage only with auditable
+versioning, cryptographic deletion options, and portable logs.</li>
+<li><strong>Minimum reversible validation experiment:</strong>
+Shadow-log proposed mutations on sanitized histories; compare against
+double-reviewed gold without changing any live memory.</li>
+<li><strong>Success metrics and stop conditions:</strong> Operation F1,
+unsafe-delete rate, provenance completeness, rollback success, privacy
+violations, reviewer time. Stop on any irreversible unauthorized delete
+or inability to honor legal erasure.</li>
+<li><strong>Roadmap trigger:</strong> Unsafe deletion approaches zero on
+high-risk classes, rollback is deterministic, and privacy/legal owners
+approve retention and erasure semantics.</li>
+</ul>
+<h3 id="5-failure-evidence-retention-serializer--876">5.
+Failure-evidence retention serializer — 87.6</h3>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability / Data
+&amp; Knowledge Infrastructure / MLOps &amp; Platform.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> LiteTrajEval's severity floors, local compaction,
+deduplication, and MMR selection. <strong>Paper Fact</strong>; shared
+serializer is <strong>Independent Analysis</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong>
+Different evaluators receive inconsistent, truncated, or redundant views
+of the same trajectory, making scores incomparable and incidents
+unreplayable.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+Produce a content-addressed evidence bundle containing normalized
+events, selected raw excerpts, compaction transformations, omitted-byte
+counts, severity, redaction provenance, budget, serializer version, and
+source hashes. Judges consume the bundle; reviewers can expand any
+retained pointer.</li>
+<li><strong>Likely architectural placement:</strong> observability,
+evaluation, data platform, developer platform.</li>
+<li><strong>Expected business value:</strong> quality, reproducibility,
+speed, cost control, auditability.</li>
+<li><strong>Technical value:</strong> Makes trace compression a
+versioned evaluation contract rather than a hidden prompt-preparation
+step.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Mechanism is straightforward; value is inferred from one evaluator
+study. Foundation-ready.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>High</strong> / <strong>3–6 months</strong> /
+<strong>M</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Event schema,
+artifact store, hashes, redaction, retention, access control, serializer
+tests, expansion UI, cost telemetry.</li>
+<li><strong>Key risks:</strong> Sensitive data persistence, misleading
+summaries, hash/metadata mismatch, storage cost, opaque vendor
+compaction, schema drift.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build</strong> the
+canonical bundle and verification tests; use commodity
+storage/compression underneath.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Serialize
+the 100-trace diagnostic corpus at three budgets and have blinded
+reviewers compare evidence sufficiency and reconstruction.</li>
+<li><strong>Success metrics and stop conditions:</strong> Source-link
+validity, reconstruction rate, evidence-sufficiency agreement,
+bytes/tokens saved, critical-omission rate, review time. Stop if any
+severe root-cause evidence becomes unrecoverable.</li>
+<li><strong>Roadmap trigger:</strong> ≥70% token reduction with ≥95%
+reviewer-rated evidence sufficiency and zero unreconstructable
+high-severity events.</li>
+</ul>
+<h3 id="6-judge-calibration-and-human-sampling-lane--835">6. Judge
+calibration and human-sampling lane — 83.5</h3>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability / Human-AI
+Workflow / Safety &amp; Governance.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> LiteTrajEval uses model judges without healthy
+specificity evidence; DyadMem uses GPT-5-mini/NLI matching and reports
+human calibration; CITA uses GPT-4o for task success.
+<strong>Independent Analysis</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong> A
+single model judge silently becomes the truth source for failures,
+memory correctness, and task success.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+Version judge prompts/models, stratify sampled human review by severity
+and uncertainty, retain disagreements, estimate calibration and drift,
+and require independent evidence for high-impact decisions. Route
+uncertain or novel cases to humans.</li>
+<li><strong>Likely architectural placement:</strong> evaluation, model
+gateway, observability, human-review layer, security/governance.</li>
+<li><strong>Expected business value:</strong> quality, reliability, risk
+reduction, defensible assurance.</li>
+<li><strong>Technical value:</strong> Separates evaluator stability from
+system improvement and exposes measurement drift.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Cross-paper need is clear; optimal calibration design is
+context-specific. Foundation-ready.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>Moderate</strong> / <strong>3–6 months</strong> /
+<strong>M</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Sampling framework,
+annotation guide, blinded labels, adjudication, privacy-safe review,
+version registry, dashboards, budget owner.</li>
+<li><strong>Key risks:</strong> Reviewer inconsistency, sensitive
+exposure, automation bias, high cost, correlated model judges, metric
+gaming.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Hybrid.</strong>
+Build the evaluation contract and sampling policy; partner for
+annotation capacity under strict data controls.</li>
+<li><strong>Minimum reversible validation experiment:</strong>
+Double-review a stratified 10% sample from the 100-trace and
+30-memory-case pilots; compare two judge models and humans.</li>
+<li><strong>Success metrics and stop conditions:</strong> Agreement by
+class, calibration error, severe false-negative rate, drift, reviewer
+time, unresolved rate. Stop if severe error recall is inadequate or
+humans cannot reproduce the rubric.</li>
+<li><strong>Roadmap trigger:</strong> Stable calibration across two
+releases and an approved human escalation/SLA model for high-risk
+cases.</li>
+</ul>
+<h2 id="monitor-for-maturity">Monitor for Maturity</h2>
+<h3 id="7-router-baseline-and-payback-qualification--827">7. Router
+baseline and payback qualification — 82.7</h3>
+<ul>
+<li><strong>Category:</strong> Model &amp; Inference / Evaluation &amp;
+Observability / MLOps &amp; Platform.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> Router study's commercial-router audit, two-model
+oracle, and revised objective. <strong>Paper Fact</strong>; enterprise
+qualification harness is <strong>Enterprise Inference</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong>
+Routing complexity may add latency and failure modes without
+outperforming a good standalone model, random mixture, or simple
+two-model policy at matched cost.</li>
+<li><strong>Proposed future capability and how it works:</strong> Before
+deployment, compare every router against best standalone, random,
+source-only, and two-model difficulty baselines using per-model mean
+cost, hard-band escalation, easy-band accuracy/cost, temporal and source
+holdouts, multi-turn switching cost, and model-roster churn.</li>
+<li><strong>Likely architectural placement:</strong> model gateway,
+evaluation, observability, infrastructure.</li>
+<li><strong>Expected business value:</strong> cost, reliability, speed,
+procurement leverage.</li>
+<li><strong>Technical value:</strong> Prevents misleading Pareto gains
+caused by length/source shortcuts and poor rosters.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+negative benchmark analysis; no internal workload or multi-turn
+production evidence. Monitor until task economics are known.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>Moderate</strong> / <strong>6–12 months</strong> /
+<strong>M</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Representative
+prompts, model contracts/prices, outcome labels, temporal holdout,
+caching/switching telemetry, risk bands, routing observability.</li>
+<li><strong>Key risks:</strong> Provider drift, data leakage, delayed
+labels, policy noncompliance, tail latency, hidden retries, benchmark
+overfit, fragile thresholds.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build</strong>
+qualification and telemetry; buy a router only if it beats mandatory
+baselines on the enterprise workload with exportable decisions.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Offline
+replay and shadow routing with no user-visible model change across two
+workloads and one month of temporal holdout.</li>
+<li><strong>Success metrics and stop conditions:</strong> Quality at
+fixed cost, cost at fixed quality, hard-band escalation, tail latency,
+calibration, fallback rate, policy violations. Stop if gains disappear
+against the two-model/random baseline or after model-price changes.</li>
+<li><strong>Roadmap trigger:</strong> Statistically credible, persistent
+net value after latency, switching, governance, and operations costs on
+two representative workloads.</li>
+</ul>
+<h3 id="8-pre-action-comparative-tool-value-shadow-pilot--780">8.
+Pre-action comparative tool-value shadow pilot — 78.0</h3>
+<ul>
+<li><strong>Category:</strong> Reasoning &amp; Planning / Agentic AI /
+Model &amp; Inference.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> CITA's six-setting gains, value-gap metrics, and
+data-source ablations. <strong>Paper Fact</strong>; enterprise shadow
+pilot is <strong>Enterprise Inference</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong> Greedy
+tool calls create downstream dead ends, but full forward simulation is
+expensive and brittle.</li>
+<li><strong>Proposed future capability and how it works:</strong> For a
+bounded, read-only tool set, generate a small candidate set, score
+comparative long-horizon value and confidence, log the selected versus
+baseline action, and keep the learned score advisory. Authorization,
+policy, and effect validation remain external.</li>
+<li><strong>Likely architectural placement:</strong> agent layer,
+orchestration, model gateway, evaluation.</li>
+<li><strong>Expected business value:</strong> quality, reliability,
+productivity, strategic differentiation.</li>
+<li><strong>Technical value:</strong> Uses pairwise value gaps rather
+than absolute reward to choose among plausible actions.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Multi-benchmark evidence and ablations; high training/data
+prerequisites, model-judge dependence, no dynamic-tool or safety
+qualification. Watchlist only.</li>
+<li><strong>Confidence / horizon / effort:</strong> <strong>Low</strong>
+/ <strong>12+ months</strong> / <strong>XL</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Stable read-only
+tool graph, logged trajectories, simulator, counterfactual pairs,
+training capacity, candidate budget, outcome labels, policy firewall,
+drift detection.</li>
+<li><strong>Key risks:</strong> Simulator bias, unsafe exploration,
+reward hacking, stale tool graph, large compute cost, latency,
+authorization confusion, irreproducible judge labels.</li>
+<li><strong>Build / Buy / Partner:</strong>
+<strong>Partner/research</strong> until code and independent
+replications exist; build only a thin shadow evaluator around internal
+read-only tools.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Offline
+counterfactual scoring on one stable read-only workflow; compare to
+logged expert choices and a simple heuristic without training a
+production policy.</li>
+<li><strong>Success metrics and stop conditions:</strong> Direction
+accuracy, task success, calibration, cost/latency, policy violations,
+benefit over heuristic, performance after tool changes. Stop on any
+unsafe preference or no lift after full compute accounting.</li>
+<li><strong>Roadmap trigger:</strong> Independent reproduction plus
+internal shadow evidence of durable net value and calibrated safety
+under tool/version changes.</li>
+</ul>
+<h2 id="deprioritize-for-now">Deprioritize for Now</h2>
+<h3
+id="9-final-answer-only-or-majority-acceptance-of-memory-changes--430">9.
+Final-answer-only or majority acceptance of memory changes — 43.0</h3>
+<ul>
+<li><strong>Category:</strong> Memory &amp; Context / Safety &amp;
+Governance / Human-AI Workflow.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> DyadMem shows high gold-memory QA alongside large
+pipeline gaps and unsafe deletion; GHOST shows apparent completion can
+violate prior constraints. <strong>Paper Fact</strong>; deprioritization
+is <strong>Independent Analysis</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong> A team
+may approve memory writes/deletes because the final answer looks correct
+or most model samples agree.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+<strong>Do not implement this acceptance rule.</strong> Require
+typed-operation evidence, provenance, support-set completeness, policy
+checks, and reversible review instead.</li>
+<li><strong>Likely architectural placement:</strong> memory/context
+service, evaluation, human-review layer.</li>
+<li><strong>Expected business value:</strong> risk reduction by avoiding
+a weak shortcut.</li>
+<li><strong>Technical value:</strong> Prevents answer quality from
+laundering unsafe state mutation.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+evidence against the shortcut; no credible safe enterprise path as a
+sole gate.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>High</strong> / <strong>Now</strong> / <strong>S</strong> to
+prohibit.</li>
+<li><strong>Dependencies and prerequisites:</strong> Policy prohibition,
+lifecycle metrics, audit logs, human escalation.</li>
+<li><strong>Key risks:</strong> Hidden deletion, stale data, privacy
+harm, irreversible personalization errors, correlated consensus.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Do not buy or
+build</strong> as an approval mechanism; require vendors to expose
+operation-level evidence.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Audit a
+sample of historical memory changes and compare final-answer approval
+with operation-level review.</li>
+<li><strong>Success metrics and stop conditions:</strong> Treat any
+unsupported high-impact change accepted by the shortcut as a stop
+condition.</li>
+<li><strong>Roadmap trigger:</strong> None as a standalone acceptance
+gate; reconsider only if operation-level evidence is added, which makes
+it a different capability.</li>
+</ul>
+<h1 id="enterprise-ai-architecture-implications">Enterprise AI
+Architecture Implications</h1>
+<p><strong>Independent Analysis.</strong> Over the next 12–24 months,
+the strongest shared foundation is not a larger agent graph. It is an
+independently governed control-evidence plane spanning the model
+gateway, orchestration, memory service, tool/effect boundary,
+evaluation, observability, and human review.</p>
+<ol type="1">
+<li><strong>Model gateway and orchestration:</strong> Record model,
+prompt, tool-registry, router, and serializer versions; enforce
+cost/latency budgets; preserve alternative candidates only when risk
+justifies them.</li>
+<li><strong>Policy enforcement and identity:</strong> Bind rules to
+subjects, resources, operations, scopes, expiry, and authority. Evaluate
+proposed effects outside the model context and use deny-overrides for
+conflicting applicable prohibitions.</li>
+<li><strong>Context and memory services:</strong> Separate source events
+from derived memories; type user, agent, and shared state; represent
+updates as reversible operations; quarantine deletion; support user
+inspection, correction, revocation, and erasure.</li>
+<li><strong>Evaluation and observability:</strong> Standardize event IDs
+and evidence bundles; maintain healthy and failed cohorts; measure false
+positives, calibration, tail latency, cost per avoided defect, and
+artifact/trace lineage.</li>
+<li><strong>Knowledge and data infrastructure:</strong> Preserve
+immutable source hashes and access-controlled provenance while
+minimizing retained sensitive content; make compaction transformations
+reproducible.</li>
+<li><strong>Human-review controls:</strong> Route ambiguous constraint
+capture, destructive memory changes, high-impact effects, and unresolved
+diagnoses to accountable reviewers with explicit SLAs and rollback
+authority.</li>
+<li><strong>Experiment infrastructure:</strong> Support isolated replay,
+matched explicit/implicit variants, A/B shadowing, temporal holdouts,
+artifact snapshots, kill switches, and stop conditions before any
+production authority is granted.</li>
+</ol>
+<p>These foundations unlock several backlog items simultaneously, but
+implementation decisions require internal evidence: current agent/tool
+architecture, identity model, policy ownership, data classification,
+retention rules, incident patterns, evaluation labor, model contracts,
+latency SLOs, and acceptable residual risk.</p>
+<h1 id="implementation-priorities">Implementation priorities</h1>
+<p><strong>Next 30 days:</strong> define common constraint, event,
+evidence, memory-operation, and effect IDs; assemble a sanitized replay
+set with both successful and failed traces; inventory tool actions that
+can create durable effects; prohibit answer-only approval of memory
+mutations.</p>
+<p><strong>Days 31–90:</strong> run the three Top-Bet shadow
+experiments; add healthy controls to diagnostic evaluation; establish
+human calibration; test rule conflict, expiry, revocation, deletion
+rollback, trace redaction, and evidence reconstruction; publish
+scorecards including null results.</p>
+<p><strong>After evidence gates:</strong> move only capabilities that
+meet explicit thresholds into an implementation roadmap. Keep action
+enforcement, memory deletion, router selection, and learned tool-value
+policies in shadow mode until internal evidence, security review,
+privacy review, ownership, rollback, and operating economics are
+established.</p>
+<h1 id="knowledge-reinforcement">Knowledge reinforcement</h1>
+<ol type="1">
+<li><strong>Why is a long-context retrieval score insufficient for
+safety?</strong> Because a rule can be present or retrievable yet fail
+to govern the proposed effect; the matched GHOST condition tests
+application, not only availability.</li>
+<li><strong>Why can LiteTrajEval's high detection rate not establish
+production accuracy?</strong> Its public evaluation contains failed
+trajectories only, so healthy specificity and false-alert burden are
+unknown.</li>
+<li><strong>What does the DyadMem gold-to-pipeline gap isolate?</strong>
+The difference between answering with perfect memories and succeeding
+through capture, update, retrieval, and use; the gap locates
+system-level lifecycle loss.</li>
+<li><strong>Why is deletion a separate memory risk?</strong> A model can
+produce a good answer while removing still-valid state. Deletion
+requires evidence, policy, reversibility, and different metrics from
+QA.</li>
+<li><strong>What is the proper null baseline for a router?</strong> Best
+standalone models, random routing over the chosen roster, simple
+source/difficulty policies, and a small well-chosen roster at matched
+cost—not only another complex router.</li>
+<li><strong>Why must learned tool-value estimates remain advisory at
+first?</strong> They optimize expected benchmark success, not
+authorization, safety, privacy, or correctness of irreversible
+effects.</li>
+</ol>
+<h1 id="source-and-artifact-register">Source and artifact register</h1>
+<table>
+<thead>
+<tr class="header">
+<th>Work</th>
+<th>Primary paper</th>
+<th>Status/date</th>
+<th>Verified artifact posture</th>
+<th>License</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A GHOST in Long-Horizon Agents</td>
+<td><a href="https://arxiv.org/abs/2610.02664">arXiv:2610.02664</a></td>
+<td>Preprint; submitted Oct 2, announced Oct 5, 2026</td>
+<td>No public code/data/output artifact verified</td>
+<td>CC BY 4.0</td>
+</tr>
+<tr class="even">
+<td>Lightweight, Rubric-Guided Trajectory Evaluation</td>
+<td><a href="https://arxiv.org/abs/2610.03315">arXiv:2610.03315</a></td>
+<td>ISSRE 2026 industry paper; submitted Oct 2</td>
+<td>No public implementation or labeled outputs verified</td>
+<td>CC BY 4.0</td>
+</tr>
+<tr class="odd">
+<td>DyadMem</td>
+<td><a href="https://arxiv.org/abs/2610.03020">arXiv:2610.03020</a></td>
+<td>Preprint; submitted Oct 2</td>
+<td>Links exist, but dataset empty and repository placeholder at
+verification</td>
+<td>CC BY 4.0</td>
+</tr>
+<tr class="even">
+<td>Dynamic LLM Routers are Often Misguided</td>
+<td><a href="https://arxiv.org/abs/2610.02762">arXiv:2610.02762</a></td>
+<td>Under review NAACL; submitted Oct 2</td>
+<td>No public implementation verified</td>
+<td>CC BY 4.0</td>
+</tr>
+<tr class="odd">
+<td>Choosing Before Acting</td>
+<td><a href="https://arxiv.org/abs/2610.02330">arXiv:2610.02330</a></td>
+<td>NeurIPS 2026 poster; submitted Oct 1</td>
+<td>No public implementation verified</td>
+<td>arXiv non-exclusive license</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Verification note.</strong> Numerical claims were traced to
+the full paper PDFs, including tables, ablations, appendices,
+limitations, and first-page artifact links. Venue status was checked
+against the paper metadata and, for LiteTrajEval, the ISSRE program.
+Artifact links were inspected separately; their presence was not treated
+as evidence that code or data are usable. The report distinguishes
+paper-reported production claims from independently verified enterprise
+outcomes.</p>
+<h1 id="decision-memo">Decision memo</h1>
+<p>The actionable conclusion is narrow: <strong>make constraint
+application, diagnostic evidence selection, and memory mutation explicit
+control surfaces.</strong> The best immediate investments are reversible
+shadow instrumentation and evaluation contracts—not broader autonomous
+authority. Promote only after internal replay demonstrates material risk
+reduction or efficiency at acceptable false-positive, privacy, security,
+cost, and human-review levels.</p></main></div>
+<footer>AI Research Intelligence Brief · October 5, 2026 · Research options, not deployment approval.</footer>
+<div class="toolbar"><button onclick="window.print()" aria-label="Print report">Print</button><button id="top" aria-label="Back to top">↑ Top</button></div>
+<script>
+const p=document.getElementById('progress');addEventListener('scroll',()=>{const h=document.documentElement;p.style.width=((h.scrollTop/(h.scrollHeight-h.clientHeight))*100)+'%'});document.getElementById('top').onclick=()=>scrollTo({top:0,behavior:'smooth'});
+document.querySelectorAll('main h3').forEach(h=>{if(/^\d+\./.test(h.textContent))h.setAttribute('data-backlog','true')});
+</script>
+</body></html>
