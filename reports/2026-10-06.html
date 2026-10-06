@@ -13,7 +13,7 @@
 <style>
 :root{--bg:#06111d;--panel:#0c1c2a;--panel2:#10283a;--text:#e9f2f8;--muted:#9fb6c6;--line:#2a465b;--cyan:#46dbc6;--gold:#f4c96b;--rose:#ff8f9b;--blue:#70adff;--max:1180px;color-scheme:dark}
 @media(prefers-color-scheme:light){:root{--bg:#f4f7f8;--panel:#fff;--panel2:#edf4f7;--text:#102131;--muted:#526979;--line:#cddbe2;--cyan:#087f73;--gold:#9b6300;--rose:#b92b45;--blue:#1661ad;color-scheme:light}}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 90% 0,rgba(70,219,198,.12),transparent 30rem),var(--bg);color:var(--text);font:16px/1.67 ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}a{color:var(--cyan);text-underline-offset:3px}a:hover{text-decoration-thickness:2px}header{border-bottom:1px solid var(--line);background:linear-gradient(135deg,rgba(70,219,198,.09),rgba(112,173,255,.05));padding:54px 22px 34px}.hero{max-width:var(--max);margin:auto}.eyebrow{color:var(--cyan);text-transform:uppercase;letter-spacing:.15em;font-size:.76rem;font-weight:800}h1{font-size:clamp(2.2rem,6vw,4.7rem);line-height:.98;max-width:980px;margin:.35rem 0 1rem;letter-spacing:-.055em}header p{max-width:850px;color:var(--muted);font-size:1.09rem}.chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}.chip{border:1px solid var(--line);border-radius:999px;padding:6px 11px;background:var(--panel);font-size:.8rem}.topbets{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}.bet{border:1px solid var(--line);background:var(--panel);border-radius:14px;padding:15px}.bet b{display:block;color:var(--gold);font-size:1.15rem}.layout{max-width:var(--max);margin:auto;display:grid;grid-template-columns:250px minmax(0,1fr);gap:34px;padding:30px 22px 80px}nav{position:sticky;top:16px;align-self:start;max-height:calc(100vh - 32px);overflow:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:14px}nav strong{display:block;margin:2px 8px 10px;color:var(--gold)}nav ul{list-style:none;margin:0;padding:0}nav li{margin:0}nav a{display:block;color:var(--muted);text-decoration:none;padding:5px 8px;border-radius:7px;font-size:.83rem;line-height:1.25}nav a:hover{background:var(--panel2);color:var(--text)}main{min-width:0}main>h1{font-size:1.8rem;margin:2.6rem 0 1rem;padding-top:.7rem;border-top:1px solid var(--line);letter-spacing:-.02em}main>h1:first-child{margin-top:0}main h2{font-size:1.35rem;margin-top:2rem;color:var(--cyan)}main h3{font-size:1.08rem;color:var(--gold);margin-bottom:.45rem}p,li{max-width:88ch}blockquote{margin:1rem 0;padding:1rem 1.2rem;border-left:4px solid var(--gold);background:var(--panel);color:var(--muted)}pre{white-space:pre-wrap;overflow:auto;background:#07101a;border:1px solid var(--line);border-radius:14px;padding:18px;color:#dcecf2;font-size:.86rem;line-height:1.45}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}table{width:100%;border-collapse:collapse;margin:1.25rem 0;background:var(--panel);font-size:.86rem}th,td{padding:10px 12px;border:1px solid var(--line);text-align:left;vertical-align:top}th{color:var(--gold);background:var(--panel2)}hr{border:0;border-top:1px solid var(--line)}main h3+ul,main h2+ul{border:1px solid var(--line);background:linear-gradient(135deg,var(--panel),var(--panel2));border-radius:14px;padding:15px 22px 15px 34px}main h3+ul li,main h2+ul li{margin:.5rem 0}.progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--cyan),var(--gold));width:0;z-index:9}.toolbar{position:fixed;right:18px;bottom:18px;display:flex;gap:8px}.toolbar button{border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:999px;padding:9px 12px;cursor:pointer;box-shadow:0 8px 30px rgba(0,0,0,.2)}.label{font-size:.75rem;color:var(--muted)}footer{border-top:1px solid var(--line);padding:24px;text-align:center;color:var(--muted)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 90% 0,rgba(70,219,198,.12),transparent 30rem),var(--bg);color:var(--text);font:16px/1.67 ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;overflow-x:hidden}a{color:var(--cyan);text-underline-offset:3px;overflow-wrap:anywhere}a:hover{text-decoration-thickness:2px}header{border-bottom:1px solid var(--line);background:linear-gradient(135deg,rgba(70,219,198,.09),rgba(112,173,255,.05));padding:54px 22px 34px}.hero{max-width:var(--max);margin:auto}.eyebrow{color:var(--cyan);text-transform:uppercase;letter-spacing:.15em;font-size:.76rem;font-weight:800}h1{font-size:clamp(2.2rem,6vw,4.7rem);line-height:.98;max-width:980px;margin:.35rem 0 1rem;letter-spacing:-.055em}header p{max-width:850px;color:var(--muted);font-size:1.09rem}.chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}.chip{border:1px solid var(--line);border-radius:999px;padding:6px 11px;background:var(--panel);font-size:.8rem}.topbets{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}.bet{border:1px solid var(--line);background:var(--panel);border-radius:14px;padding:15px}.bet b{display:block;color:var(--gold);font-size:1.15rem}.layout{max-width:var(--max);margin:auto;display:grid;grid-template-columns:250px minmax(0,1fr);gap:34px;padding:30px 22px 80px}nav{position:sticky;top:16px;align-self:start;max-height:calc(100vh - 32px);overflow:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:14px}nav strong{display:block;margin:2px 8px 10px;color:var(--gold)}nav ul{list-style:none;margin:0;padding:0}nav li{margin:0}nav a{display:block;color:var(--muted);text-decoration:none;padding:5px 8px;border-radius:7px;font-size:.83rem;line-height:1.25}nav a:hover{background:var(--panel2);color:var(--text)}main{min-width:0;overflow-x:hidden}main>h1{font-size:1.8rem;margin:2.6rem 0 1rem;padding-top:.7rem;border-top:1px solid var(--line);letter-spacing:-.02em}main>h1:first-child{margin-top:0}main h2{font-size:1.35rem;margin-top:2rem;color:var(--cyan)}main h3{font-size:1.08rem;color:var(--gold);margin-bottom:.45rem}p,li{max-width:88ch}blockquote{margin:1rem 0;padding:1rem 1.2rem;border-left:4px solid var(--gold);background:var(--panel);color:var(--muted)}pre{white-space:pre-wrap;overflow:auto;background:#07101a;border:1px solid var(--line);border-radius:14px;padding:18px;color:#dcecf2;font-size:.86rem;line-height:1.45}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}table{display:block;width:100%;max-width:100%;overflow-x:auto;border-collapse:collapse;margin:1.25rem 0;background:var(--panel);font-size:.86rem}th,td{padding:10px 12px;border:1px solid var(--line);text-align:left;vertical-align:top}th{color:var(--gold);background:var(--panel2)}hr{border:0;border-top:1px solid var(--line)}main h3+ul,main h2+ul{border:1px solid var(--line);background:linear-gradient(135deg,var(--panel),var(--panel2));border-radius:14px;padding:15px 22px 15px 34px}main h3+ul li,main h2+ul li{margin:.5rem 0}.progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--cyan),var(--gold));width:0;z-index:9}.toolbar{position:fixed;right:18px;bottom:18px;display:flex;gap:8px}.toolbar button{border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:999px;padding:9px 12px;cursor:pointer;box-shadow:0 8px 30px rgba(0,0,0,.2)}.label{font-size:.75rem;color:var(--muted)}footer{border-top:1px solid var(--line);padding:24px;text-align:center;color:var(--muted)}
 @media(max-width:850px){.topbets{grid-template-columns:1fr}.layout{grid-template-columns:1fr}nav{position:relative;top:0;max-height:none}nav ul{columns:2}h1{font-size:2.65rem}}
 @media(max-width:520px){header{padding-top:34px}.layout{padding:20px 14px 60px}nav ul{columns:1}table{display:block;overflow-x:auto}h1{font-size:2.25rem}}
 @media print{body{background:white;color:#111;font-size:11pt}header{padding:18px 0}.layout{display:block;padding:0}nav,.toolbar,.progress{display:none}a{color:#145c70}main>h1{break-before:page}main>h1:first-child{break-before:auto}table,pre{break-inside:avoid}}
@@ -25,8 +25,8 @@
 <div class="eyebrow">AI Research Intelligence · Evidence before enthusiasm</div>
 <h1>Keep constraints alive. Bound the evidence. Govern the memory.</h1>
 <p>October 6, 2026 briefing. Three deep papers connect runtime privacy enforcement, evidence-grounded oversight, and source-linked context coherence to one operating rule: agent state must remain attributable, current, and policy-scoped until its effects are accepted.</p>
-<div class="chips"><span class="chip">3 deep papers</span><span class="chip">2 Watchlist</span><span class="chip">72-hour disclosed window</span><span class="chip">9 enterprise options</span><span class="chip">Primary sources + full-paper review</span></div>
-<div class="topbets"><div class="bet"><span class="label">TOP BET 1 · PROTOTYPE SOON</span><b>93.6 · Constraint + effect audit</b><span>Externalize historical rules and check proposed durable effects.</span></div><div class="bet"><span class="label">TOP BET 2 · PROTOTYPE SOON</span><b>91.1 · Bounded trajectory diagnosis</b><span>Retain decisive evidence under explicit cost and latency budgets.</span></div><div class="bet"><span class="label">TOP BET 3 · PROTOTYPE SOON</span><b>90.5 · Memory lifecycle gate</b><span>Score capture, update, recall, deletion, and use separately.</span></div></div>
+<div class="chips"><span class="chip">3 deep papers</span><span class="chip">2 Watchlist</span><span class="chip">24-hour exact window</span><span class="chip">9 enterprise options</span><span class="chip">Primary sources + full-paper review</span></div>
+<div class="topbets"><div class="bet"><span class="label">TOP BET 1 · PROTOTYPE SOON</span><b>93.3 · Runtime privacy information-flow audit</b><span>Audit reads, writes, retained state, and effects at execution boundaries.</span></div><div class="bet"><span class="label">TOP BET 2 · PROTOTYPE SOON</span><b>91.1 · Evidence-grounded decision review</b><span>Retain the decisive evidence behind consequential agent decisions.</span></div><div class="bet"><span class="label">TOP BET 3 · PROTOTYPE SOON</span><b>90.3 · Source-linked context freshness layer</b><span>Invalidate or reconcile agent context when mutable sources change.</span></div></div>
 </div></header>
 <div class="layout"><nav><strong>Navigate</strong><ul>
 <li><a href="#scope-window-and-evidence-policy"
@@ -36,8 +36,8 @@ policy</a></li>
 signal</a></li>
 <li><a href="#top-3-future-bets" id="toc-top-3-future-bets">Top 3 Future
 Bets</a></li>
-<li><a href="#deep-paper-1--privacy-policy-needs-an-execution-boundary"
-id="toc-deep-paper-1--privacy-policy-needs-an-execution-boundary">Deep
+<li><a href="#deep-paper-1-privacy-policy-needs-an-execution-boundary"
+id="toc-deep-paper-1-privacy-policy-needs-an-execution-boundary">Deep
 paper 1 — Privacy policy needs an execution boundary</a>
 <ul>
 <li><a href="#contribution-and-quantitative-claim-trace"
@@ -51,8 +51,8 @@ id="toc-reproducibility-and-enterprise-readiness">Reproducibility and
 enterprise readiness</a></li>
 </ul></li>
 <li><a
-href="#deep-paper-2--oversight-requires-evidence-organization-not-more-trace-text"
-id="toc-deep-paper-2--oversight-requires-evidence-organization-not-more-trace-text">Deep
+href="#deep-paper-2-oversight-requires-evidence-organization-not-more-trace-text"
+id="toc-deep-paper-2-oversight-requires-evidence-organization-not-more-trace-text">Deep
 paper 2 — Oversight requires evidence organization, not more trace
 text</a>
 <ul>
@@ -67,8 +67,8 @@ id="toc-reproducibility-and-enterprise-readiness-1">Reproducibility and
 enterprise readiness</a></li>
 </ul></li>
 <li><a
-href="#deep-paper-3--tool-observations-need-cache-coherence-semantics"
-id="toc-deep-paper-3--tool-observations-need-cache-coherence-semantics">Deep
+href="#deep-paper-3-tool-observations-need-cache-coherence-semantics"
+id="toc-deep-paper-3-tool-observations-need-cache-coherence-semantics">Deep
 paper 3 — Tool observations need cache-coherence semantics</a>
 <ul>
 <li><a href="#contribution-and-quantitative-claim-trace-2"
@@ -83,18 +83,18 @@ enterprise readiness</a></li>
 </ul></li>
 <li><a href="#watchlist" id="toc-watchlist">Watchlist</a>
 <ul>
-<li><a href="#memleak--ownership-is-not-a-similarity-score"
-id="toc-memleak--ownership-is-not-a-similarity-score">MemLeak —
-ownership is not a similarity score</a></li>
+<li><a href="#memleak-ownership-is-not-a-similarity-score"
+id="toc-memleak-ownership-is-not-a-similarity-score">MemLeak — ownership
+is not a similarity score</a></li>
 <li><a
-href="#mind-the-execution-gap--the-model-must-know-which-action-actually-happened"
-id="toc-mind-the-execution-gap--the-model-must-know-which-action-actually-happened">Mind
+href="#mind-the-execution-gap-the-model-must-know-which-action-actually-happened"
+id="toc-mind-the-execution-gap-the-model-must-know-which-action-actually-happened">Mind
 the Execution Gap — the model must know which action actually
 happened</a></li>
 </ul></li>
 <li><a
-href="#cross-paper-synthesis--state-needs-identity-evidence-time-and-authority"
-id="toc-cross-paper-synthesis--state-needs-identity-evidence-time-and-authority">Cross-paper
+href="#cross-paper-synthesis-state-needs-identity-evidence-time-and-authority"
+id="toc-cross-paper-synthesis-state-needs-identity-evidence-time-and-authority">Cross-paper
 synthesis — state needs identity, evidence, time, and authority</a></li>
 <li><a href="#enterprise-ai-enhancement-backlog"
 id="toc-enterprise-ai-enhancement-backlog">Enterprise AI Enhancement
@@ -105,45 +105,44 @@ id="toc-priority-method-and-uncertainty">Priority method and
 uncertainty</a></li>
 <li><a href="#prototype-soon" id="toc-prototype-soon">Prototype Soon</a>
 <ul>
-<li><a href="#1-runtime-privacy-information-flow-audit--933"
-id="toc-1-runtime-privacy-information-flow-audit--933">1. Runtime
-privacy information-flow audit — 93.3</a></li>
-<li><a href="#2-evidence-grounded-consequential-decision-review--911"
-id="toc-2-evidence-grounded-consequential-decision-review--911">2.
+<li><a href="#runtime-privacy-information-flow-audit-93.3"
+id="toc-runtime-privacy-information-flow-audit-93.3">1. Runtime privacy
+information-flow audit — 93.3</a></li>
+<li><a href="#evidence-grounded-consequential-decision-review-91.1"
+id="toc-evidence-grounded-consequential-decision-review-91.1">2.
 Evidence-grounded consequential-decision review — 91.1</a></li>
-<li><a href="#3-source-linked-context-freshness-layer--903"
-id="toc-3-source-linked-context-freshness-layer--903">3. Source-linked
+<li><a href="#source-linked-context-freshness-layer-90.3"
+id="toc-source-linked-context-freshness-layer-90.3">3. Source-linked
 context freshness layer — 90.3</a></li>
 </ul></li>
 <li><a href="#prepare-foundations" id="toc-prepare-foundations">Prepare
 Foundations</a>
 <ul>
-<li><a href="#4-tenant-scoped-memory-admissibility-gate--896"
-id="toc-4-tenant-scoped-memory-admissibility-gate--896">4. Tenant-scoped
+<li><a href="#tenant-scoped-memory-admissibility-gate-89.6"
+id="toc-tenant-scoped-memory-admissibility-gate-89.6">4. Tenant-scoped
 memory admissibility gate — 89.6</a></li>
-<li><a
-href="#5-provenance-bearing-observation-and-version-registry--888"
-id="toc-5-provenance-bearing-observation-and-version-registry--888">5.
+<li><a href="#provenance-bearing-observation-and-version-registry-88.8"
+id="toc-provenance-bearing-observation-and-version-registry-88.8">5.
 Provenance-bearing observation and version registry — 88.8</a></li>
-<li><a href="#6-effect-receipt-and-commandapplied-state-contract--848"
-id="toc-6-effect-receipt-and-commandapplied-state-contract--848">6.
-Effect receipt and command/applied-state contract — 84.8</a></li>
+<li><a href="#effect-receipt-and-commandapplied-state-contract-84.8"
+id="toc-effect-receipt-and-commandapplied-state-contract-84.8">6. Effect
+receipt and command/applied-state contract — 84.8</a></li>
 </ul></li>
 <li><a href="#monitor-for-maturity"
 id="toc-monitor-for-maturity">Monitor for Maturity</a>
 <ul>
-<li><a href="#7-cross-resource-context-coherence-adapters--768"
-id="toc-7-cross-resource-context-coherence-adapters--768">7.
+<li><a href="#cross-resource-context-coherence-adapters-76.8"
+id="toc-cross-resource-context-coherence-adapters-76.8">7.
 Cross-resource context-coherence adapters — 76.8</a></li>
-<li><a href="#8-heterogeneous-oversight-judge-qualification--767"
-id="toc-8-heterogeneous-oversight-judge-qualification--767">8.
+<li><a href="#heterogeneous-oversight-judge-qualification-76.7"
+id="toc-heterogeneous-oversight-judge-qualification-76.7">8.
 Heterogeneous oversight-judge qualification — 76.7</a></li>
 </ul></li>
 <li><a href="#deprioritize-for-now"
 id="toc-deprioritize-for-now">Deprioritize for Now</a>
 <ul>
-<li><a href="#9-prompt-only-privacy-and-unscoped-pooled-memory--394"
-id="toc-9-prompt-only-privacy-and-unscoped-pooled-memory--394">9.
+<li><a href="#prompt-only-privacy-and-unscoped-pooled-memory-39.4"
+id="toc-prompt-only-privacy-and-unscoped-pooled-memory-39.4">9.
 Prompt-only privacy and unscoped pooled memory — 39.4</a></li>
 </ul></li>
 </ul></li>
@@ -186,18 +185,18 @@ Stale</em> reports acceptance to the AgenticOS Workshop at SOSP 2026.
 <em>MemLeak</em> reports NeurIPS-PALM 2026. The other selected works are
 preprints or under review. None supplies independent
 enterprise-production validation.</p>
-<p><strong>Anti-duplication.</strong> Yesterday's five
+<p><strong>Anti-duplication.</strong> Yesterday’s five
 papers—arXiv:2610.02664, 2610.03315, 2610.03020, 2610.02762, and
 2610.02330—were excluded, as were all earlier archive identifiers. Prior
 reports already covered stateful trajectory safety, claim-evidence
 ledgers, transactional tool contracts, memory lifecycle evaluation,
-tenant authorization, and effect verification. Today's incremental
+tenant authorization, and effect verification. Today’s incremental
 question is narrower: <em>can the system prove which information an
 agent saw, whether it remains current and authorized, and which evidence
 supports a consequential decision?</em></p>
 <p><strong>Evidence labels.</strong> <strong>Paper Fact</strong> is
 directly reported in a paper or verified first-party artifact.
-<strong>Independent Analysis</strong> is this briefing's comparison,
+<strong>Independent Analysis</strong> is this briefing’s comparison,
 calculation, or methodological judgment. <strong>Enterprise
 Inference</strong> translates verified research into a bounded future
 option. <strong>Uncertainty</strong> marks missing causal,
@@ -226,7 +225,7 @@ code and trajectory evidence into behaviors, scopes, and relations.
 Across eight models and three 100-example benchmark components, EBG
 improves most decision-identification and evidence-localization metrics.
 But substantial errors remain even when the required evidence is
-visible; in the authors' failure attribution, judgment errors account
+visible; in the authors’ failure attribution, judgment errors account
 for 69.4–81.2% of repository-task failures and 100% of FeedbackTrace
 failures for three analyzed monitors.</li>
 <li><strong>Concord</strong> links tool observations to mutable sources
@@ -276,7 +275,7 @@ measure evidence localization, reviewer agreement, and missed
 consequential decisions.</li>
 <li><strong>Source-linked context freshness layer — 90.3/100.</strong>
 Why it matters: tool observations are snapshots, not live truth; mutable
-sources can invalidate the model's private context without any visible
+sources can invalidate the model’s private context without any visible
 event. Evidence that would change the recommendation: internal tasks are
 effectively immutable, invalidation cannot be observed reliably, or
 refresh overhead and false invalidation exceed the cost of explicit
@@ -284,7 +283,7 @@ re-reads. Next reversible action: inject controlled file and record
 changes into 40 sandboxed traces and compare naive history, alert-only,
 forced re-read, and source-linked reconciliation.</li>
 </ol>
-<h1 id="deep-paper-1--privacy-policy-needs-an-execution-boundary">Deep
+<h1 id="deep-paper-1-privacy-policy-needs-an-execution-boundary">Deep
 paper 1 — Privacy policy needs an execution boundary</h1>
 <p><strong>Identity and status.</strong> <em>AgentPrivArena: Evaluating
 and Auditing Real-world AI Agent Privacy</em>; Shouju Wang and Haopeng
@@ -307,7 +306,13 @@ information flows after reads, then evaluates proposed transmissions
 before writes under PII, data-minimization, or contextual-integrity
 policies. PASS permits, ABSTRACT requests generalization, and BLOCK
 rejects.</p>
-<table>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 23%" />
+<col style="width: 30%" />
+<col style="width: 23%" />
+<col style="width: 23%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th>Claim</th>
@@ -377,7 +382,7 @@ id="methodological-critique-and-prior-work-comparison">Methodological
 critique and prior-work comparison</h2>
 <p>PrivacyLens, CI-Work, AgentDAM, PrivacyPeek, and related work
 evaluate contextual norms, data minimization, or sensitive-record
-access, often using supplied or simulated trajectories. AgentPrivArena's
+access, often using supplied or simulated trajectories. AgentPrivArena’s
 incremental advance is an executable, containerized environment where
 agents discover synthetic sensitive records through authentic service
 APIs, plus metrics that follow protected items through exposure,
@@ -412,7 +417,7 @@ workloads. <strong>Research Utility Score: 94/100</strong>
 reproducibility/artifacts 18/20; enterprise relevance 15/15; prior-work
 advance 12/15).</p>
 <h1
-id="deep-paper-2--oversight-requires-evidence-organization-not-more-trace-text">Deep
+id="deep-paper-2-oversight-requires-evidence-organization-not-more-trace-text">Deep
 paper 2 — Oversight requires evidence organization, not more trace
 text</h1>
 <p><strong>Identity and status.</strong> <em>What Did the Agent Actually
@@ -436,7 +441,13 @@ corrections, failures, requirement changes, or rejections create
 verification points. EBG groups exact source-linked evidence into
 behaviors, behavioral scopes, and explicit relations, then renders
 task-oriented views.</p>
-<table>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 23%" />
+<col style="width: 30%" />
+<col style="width: 23%" />
+<col style="width: 23%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th>Claim</th>
@@ -541,7 +552,7 @@ Utility Score: 92/100</strong> (methodological rigor 24/25; quantitative
 traceability 24/25; reproducibility/artifacts 19/20; enterprise
 relevance 14/15; prior-work advance 11/15).</p>
 <h1
-id="deep-paper-3--tool-observations-need-cache-coherence-semantics">Deep
+id="deep-paper-3-tool-observations-need-cache-coherence-semantics">Deep
 paper 3 — Tool observations need cache-coherence semantics</h1>
 <p><strong>Identity and status.</strong> <em>When Agent Context Goes
 Stale: Incoherence in Volatile Agent Context</em>; Yingying Liu, Junzhou
@@ -559,7 +570,13 @@ invalid block, or require a re-read. ConcordBench-Pioneer turns 40
 HotpotQA tasks into local-file workspaces, mutates a supporting fact
 before the agent reads it, then restores the source after the stale
 observation enters the trajectory.</p>
-<table>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 23%" />
+<col style="width: 30%" />
+<col style="width: 23%" />
+<col style="width: 23%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th>Claim</th>
@@ -629,7 +646,7 @@ remaining authoritative-looking. The cache-coherence analogy is
 technically useful because it requires source identity, versioning,
 invalidation, and reconciliation rather than another reminder
 prompt.</p>
-<p>The benchmark's race controller isolates the stale-context mechanism,
+<p>The benchmark’s race controller isolates the stale-context mechanism,
 compares four baselines plus a no-race oracle, reports recovery, steps,
 and tokens, and provides trace-level analysis. Yet the scope is
 deliberately narrow: 40 HotpotQA-derived tasks, local files, a single
@@ -654,8 +671,8 @@ context. <strong>Research Utility Score: 85/100</strong> (methodological
 rigor 22/25; quantitative traceability 23/25; reproducibility/artifacts
 10/20; enterprise relevance 15/15; prior-work advance 15/15).</p>
 <h1 id="watchlist">Watchlist</h1>
-<h2 id="memleak--ownership-is-not-a-similarity-score">MemLeak —
-ownership is not a similarity score</h2>
+<h2 id="memleak-ownership-is-not-a-similarity-score">MemLeak — ownership
+is not a similarity score</h2>
 <p><strong>Identity.</strong> <em>MemLeak: Cross-User Semantic Leakage
 in Multi-Tenant AI Agent Memory</em>; Priyanka Mudgal et al.;
 arXiv:2610.04195v1; submitted October 3, 2026; NeurIPS-PALM 2026; CC
@@ -682,7 +699,7 @@ Promote after an open artifact and a multi-tenant evaluation that
 separates owner, subject, purpose, authorized group, retention,
 revocation, and legitimate sharing.</p>
 <h2
-id="mind-the-execution-gap--the-model-must-know-which-action-actually-happened">Mind
+id="mind-the-execution-gap-the-model-must-know-which-action-actually-happened">Mind
 the Execution Gap — the model must know which action actually
 happened</h2>
 <p><strong>Identity.</strong> <em>Mind the Execution Gap:
@@ -702,7 +719,7 @@ world models unchanged. For TD-MPC2, normalized aggregate return under
 Single-Action falls to 0.215–0.358 across asynchronous conditions, while
 the privileged future-action oracle reaches 0.682–0.892; the deployable
 Future-Sequence method improves over standard single actions and fixed
-chunks in the authors' domains. Execution receipts recover the exact
+chunks in the authors’ domains. Execution receipts recover the exact
 applied action across 30,000 tested transitions.</p>
 <p><strong>Why Watchlist, not deep selection.</strong> The diagnosis is
 rigorous for asynchronous world-model control, but the enterprise
@@ -713,9 +730,15 @@ when the same commanded/applied/effect distinction is validated on
 tool-using software agents with side-effect receipts, duplicate
 suppression, latency, authorization, and rollback.</p>
 <h1
-id="cross-paper-synthesis--state-needs-identity-evidence-time-and-authority">Cross-paper
+id="cross-paper-synthesis-state-needs-identity-evidence-time-and-authority">Cross-paper
 synthesis — state needs identity, evidence, time, and authority</h1>
 <table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th>State question</th>
@@ -775,13 +798,25 @@ own policy decision and receipt. Evidence views can then project only
 the authorized, current, task-relevant subset while preserving
 reconstructability for evaluation and human review.</p>
 <svg viewBox="0 0 980 360" role="img" aria-label="Enterprise AI state custody architecture" style="width:100%;height:auto;background:#0c1c2a;border:1px solid #2a465b;border-radius:14px;margin:1rem 0">
-  <defs><marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#46dbc6"/></marker></defs>
-  <g fill="#10283a" stroke="#70adff" stroke-width="2"><rect x="35" y="34" width="260" height="88" rx="12"/><rect x="360" y="34" width="260" height="88" rx="12"/><rect x="685" y="34" width="260" height="88" rx="12"/><rect x="35" y="224" width="260" height="88" rx="12"/><rect x="360" y="224" width="260" height="88" rx="12"/><rect x="685" y="224" width="260" height="88" rx="12"/></g>
-  <g fill="#e9f2f8" font-family="system-ui" font-size="16" text-anchor="middle"><text x="165" y="67">Source &amp; identity</text><text x="165" y="92">owner · purpose · version</text><text x="490" y="67">Agent orchestration</text><text x="490" y="92">plan · retrieve · propose</text><text x="815" y="67">Flow &amp; effect gate</text><text x="815" y="92">policy · receipt · rollback</text><text x="165" y="257">Context custody</text><text x="165" y="282">freshness · admissibility</text><text x="490" y="257">Evidence graph</text><text x="490" y="282">behavior · scope · relation</text><text x="815" y="257">Evaluation &amp; review</text><text x="815" y="282">cite · abstain · accept</text></g>
-  <g stroke="#46dbc6" stroke-width="3" fill="none" marker-end="url(#arr)"><line x1="295" y1="78" x2="357" y2="78"/><line x1="620" y1="78" x2="682" y2="78"/><line x1="490" y1="122" x2="490" y2="221"/><line x1="295" y1="268" x2="357" y2="268"/><line x1="620" y1="268" x2="682" y2="268"/></g>
-  <path d="M815 122 C815 173 165 173 165 221" fill="none" stroke="#f4c96b" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#arr)"/><text x="490" y="181" fill="#f4c96b" text-anchor="middle" font-family="system-ui" font-size="14">accepted effects become versioned evidence, never implicit transcript state</text>
+<defs><marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#46dbc6"/></marker></defs>
+<g fill="#10283a" stroke="#70adff" stroke-width="2"><rect x="35" y="34" width="260" height="88" rx="12"/><rect x="360" y="34" width="260" height="88" rx="12"/><rect x="685" y="34" width="260" height="88" rx="12"/><rect x="35" y="224" width="260" height="88" rx="12"/><rect x="360" y="224" width="260" height="88" rx="12"/><rect x="685" y="224" width="260" height="88" rx="12"/></g>
+<g fill="#e9f2f8" font-family="system-ui" font-size="16" text-anchor="middle"><text x="165" y="67">Source
+&amp; identity</text><text x="165" y="92">owner · purpose ·
+version</text><text x="490" y="67">Agent
+orchestration</text><text x="490" y="92">plan · retrieve ·
+propose</text><text x="815" y="67">Flow &amp; effect
+gate</text><text x="815" y="92">policy · receipt ·
+rollback</text><text x="165" y="257">Context
+custody</text><text x="165" y="282">freshness ·
+admissibility</text><text x="490" y="257">Evidence
+graph</text><text x="490" y="282">behavior · scope ·
+relation</text><text x="815" y="257">Evaluation &amp;
+review</text><text x="815" y="282">cite · abstain · accept</text></g>
+<g stroke="#46dbc6" stroke-width="3" fill="none" marker-end="url(#arr)"><line x1="295" y1="78" x2="357" y2="78"/><line x1="620" y1="78" x2="682" y2="78"/><line x1="490" y1="122" x2="490" y2="221"/><line x1="295" y1="268" x2="357" y2="268"/><line x1="620" y1="268" x2="682" y2="268"/></g>
+<path d="M815 122 C815 173 165 173 165 221" fill="none" stroke="#f4c96b" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#arr)"/><text x="490" y="181" fill="#f4c96b" text-anchor="middle" font-family="system-ui" font-size="14">accepted
+effects become versioned evidence, never implicit transcript
+state</text>
 </svg>
-
 <p>This architecture is <strong>Independent Analysis</strong>, not a
 claim that any enterprise already has these layers or should buy a
 specific vendor. Internal data classes, tool semantics, tenancy,
@@ -802,6 +837,18 @@ regulated-data exposure, tenant model, architecture, staffing, review
 capacity, latency/cost budgets, and acceptable failure rates can move
 items by more than the displayed differences.</p>
 <table>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th style="text-align: right;">Rank</th>
@@ -928,13 +975,13 @@ items by more than the displayed differences.</p>
 </tbody>
 </table>
 <h2 id="prototype-soon">Prototype Soon</h2>
-<h3 id="1-runtime-privacy-information-flow-audit--933">1. Runtime
-privacy information-flow audit — 93.3</h3>
+<h3 id="runtime-privacy-information-flow-audit-93.3">1. Runtime privacy
+information-flow audit — 93.3</h3>
 <ul>
 <li><strong>Category:</strong> Safety &amp; Governance / AI Security /
 Agentic AI.</li>
 <li><strong>Research signal and supporting paper(s) · Evidence
-label:</strong> AgentPrivArena's 389-task, five-executor comparison of
+label:</strong> AgentPrivArena’s 389-task, five-executor comparison of
 prompting and runtime auditing. <strong>Paper Fact</strong>; enterprise
 integration is <strong>Enterprise Inference</strong>.</li>
 <li><strong>Enterprise problem or opportunity addressed:</strong> Agents
@@ -986,18 +1033,18 @@ inability to protect audit logs.</li>
 flows, acceptable precision and utility, successful adversarial tests,
 and security/privacy approval across two representative workflows.</li>
 </ul>
-<h3 id="2-evidence-grounded-consequential-decision-review--911">2.
+<h3 id="evidence-grounded-consequential-decision-review-91.1">2.
 Evidence-grounded consequential-decision review — 91.1</h3>
 <ul>
 <li><strong>Category:</strong> Evaluation &amp; Observability / Human-AI
 Workflow / AI Software Engineering.</li>
 <li><strong>Research signal and supporting paper(s) · Evidence
-label:</strong> AgentMonBench and EBG's cross-model gains, component
+label:</strong> AgentMonBench and EBG’s cross-model gains, component
 ablations, and failure attribution. <strong>Paper Fact</strong>;
 enterprise reviewer is <strong>Enterprise Inference</strong>.</li>
 <li><strong>Enterprise problem or opportunity addressed:</strong>
 Reviewers cannot reconstruct which requirements, code paths, tool
-results, and changes support an agent's consequential conclusion.</li>
+results, and changes support an agent’s consequential conclusion.</li>
 <li><strong>Proposed future capability and how it works:</strong>
 Normalize exact evidence units, group them into behaviors and scopes,
 link relations, then render a task-oriented view. A monitor must
@@ -1041,13 +1088,13 @@ over-trust unsupported findings.</li>
 faster review, reconstructable citations for every accepted finding, and
 no high-severity evidence loss in two workflows.</li>
 </ul>
-<h3 id="3-source-linked-context-freshness-layer--903">3. Source-linked
+<h3 id="source-linked-context-freshness-layer-90.3">3. Source-linked
 context freshness layer — 90.3</h3>
 <ul>
 <li><strong>Category:</strong> Memory &amp; Context / MLOps &amp;
 Platform / Data &amp; Knowledge Infrastructure.</li>
 <li><strong>Research signal and supporting paper(s) · Evidence
-label:</strong> Concord's 40-task, three-model comparison of naive,
+label:</strong> Concord’s 40-task, three-model comparison of naive,
 alert, diff, oracle, and runtime reconciliation. <strong>Paper
 Fact</strong>; generalized service is <strong>Enterprise
 Inference</strong>.</li>
@@ -1099,13 +1146,13 @@ reuse, bounded overhead, reliable mutation capture, and independent
 trace reconstruction across two resource types.</li>
 </ul>
 <h2 id="prepare-foundations">Prepare Foundations</h2>
-<h3 id="4-tenant-scoped-memory-admissibility-gate--896">4. Tenant-scoped
+<h3 id="tenant-scoped-memory-admissibility-gate-89.6">4. Tenant-scoped
 memory admissibility gate — 89.6</h3>
 <ul>
 <li><strong>Category:</strong> Memory &amp; Context / AI Security /
 Safety &amp; Governance.</li>
 <li><strong>Research signal and supporting paper(s) · Evidence
-label:</strong> MemLeak's pooled-vs-partitioned retrieval, crafted
+label:</strong> MemLeak’s pooled-vs-partitioned retrieval, crafted
 placement, contamination, and hard-gate results. <strong>Paper
 Fact</strong>; production design is <strong>Enterprise
 Inference</strong>.</li>
@@ -1157,14 +1204,14 @@ cross-tenant content exposure or undocumented bypass.</li>
 red-team cases, no material loss on authorized sharing, verified
 revocation, and security/privacy approval.</li>
 </ul>
-<h3 id="5-provenance-bearing-observation-and-version-registry--888">5.
+<h3 id="provenance-bearing-observation-and-version-registry-88.8">5.
 Provenance-bearing observation and version registry — 88.8</h3>
 <ul>
 <li><strong>Category:</strong> Data &amp; Knowledge Infrastructure /
 Memory &amp; Context / Evaluation &amp; Observability.</li>
 <li><strong>Research signal and supporting paper(s) · Evidence
-label:</strong> Concord's source-linked blocks, EBG's exact evidence
-anchors, and AgentPrivArena's information-flow inventory.
+label:</strong> Concord’s source-linked blocks, EBG’s exact evidence
+anchors, and AgentPrivArena’s information-flow inventory.
 <strong>Independent Analysis</strong> grounded in all three deep
 papers.</li>
 <li><strong>Enterprise problem or opportunity addressed:</strong> Tool
@@ -1213,8 +1260,8 @@ cannot be deleted or access-controlled consistently.</li>
 deterministic reconstruction, successful redaction/erasure, and reusable
 value demonstrated for at least three control consumers.</li>
 </ul>
-<h3 id="6-effect-receipt-and-commandapplied-state-contract--848">6.
-Effect receipt and command/applied-state contract — 84.8</h3>
+<h3 id="effect-receipt-and-commandapplied-state-contract-84.8">6. Effect
+receipt and command/applied-state contract — 84.8</h3>
 <ul>
 <li><strong>Category:</strong> Agentic AI / MLOps &amp; Platform / AI
 Software Engineering.</li>
@@ -1267,13 +1314,13 @@ idempotent recovery under injected faults for two tool families, with
 approved audit and rollback semantics.</li>
 </ul>
 <h2 id="monitor-for-maturity">Monitor for Maturity</h2>
-<h3 id="7-cross-resource-context-coherence-adapters--768">7.
+<h3 id="cross-resource-context-coherence-adapters-76.8">7.
 Cross-resource context-coherence adapters — 76.8</h3>
 <ul>
 <li><strong>Category:</strong> Memory &amp; Context / MLOps &amp;
 Platform / Data &amp; Knowledge Infrastructure.</li>
 <li><strong>Research signal and supporting paper(s) · Evidence
-label:</strong> Concord's resource-adapter abstraction and acknowledged
+label:</strong> Concord’s resource-adapter abstraction and acknowledged
 extension path beyond files. <strong>Paper Fact</strong> for design;
 effectiveness beyond files is <strong>Uncertainty</strong>.</li>
 <li><strong>Enterprise problem or opportunity addressed:</strong>
@@ -1315,14 +1362,14 @@ cannot be stated or tested per source.</li>
 explicit consistency and access-recheck SLAs under fault injection and
 realistic load.</li>
 </ul>
-<h3 id="8-heterogeneous-oversight-judge-qualification--767">8.
+<h3 id="heterogeneous-oversight-judge-qualification-76.7">8.
 Heterogeneous oversight-judge qualification — 76.7</h3>
 <ul>
 <li><strong>Category:</strong> Evaluation &amp; Observability / Human-AI
 Workflow / Safety &amp; Governance.</li>
 <li><strong>Research signal and supporting paper(s) · Evidence
-label:</strong> EBG's two-judge agreement analysis and
-judgment-dominated failures; AgentPrivArena's lower agreement on the
+label:</strong> EBG’s two-judge agreement analysis and
+judgment-dominated failures; AgentPrivArena’s lower agreement on the
 recommended audited condition. <strong>Paper Fact</strong>;
 qualification system is <strong>Enterprise Inference</strong>.</li>
 <li><strong>Enterprise problem or opportunity addressed:</strong> A
@@ -1367,14 +1414,14 @@ updates and task strata with zero severe misses in two consecutive
 blinded evaluations.</li>
 </ul>
 <h2 id="deprioritize-for-now">Deprioritize for Now</h2>
-<h3 id="9-prompt-only-privacy-and-unscoped-pooled-memory--394">9.
+<h3 id="prompt-only-privacy-and-unscoped-pooled-memory-39.4">9.
 Prompt-only privacy and unscoped pooled memory — 39.4</h3>
 <ul>
 <li><strong>Category:</strong> Safety &amp; Governance / Memory &amp;
 Context / AI Security.</li>
 <li><strong>Research signal and supporting paper(s) · Evidence
-label:</strong> AgentPrivArena's 46.8→43.0% prompt-only change versus
-17.8% contextual-integrity audit, plus MemLeak's pooled leakage and
+label:</strong> AgentPrivArena’s 46.8→43.0% prompt-only change versus
+17.8% contextual-integrity audit, plus MemLeak’s pooled leakage and
 ownership-gate contrast. <strong>Paper Fact</strong>; deprioritization
 is <strong>Independent Analysis</strong>.</li>
 <li><strong>Enterprise problem or opportunity addressed:</strong> Cheap
@@ -1480,7 +1527,7 @@ privacy, and rollback thresholds are met.</p>
 privacy?</strong> The agent may have unnecessarily accessed protected
 information; AgentPrivArena measured 79.2% protected-item exposure while
 46.8% of tasks leaked in final actions.</li>
-<li><strong>What is EBG's main advantage over a flat trace or repository
+<li><strong>What is EBG’s main advantage over a flat trace or repository
 graph?</strong> It groups exact source evidence into behaviors and
 scopes, links relations, and renders task-oriented views for
 consequential-decision monitoring.</li>
@@ -1489,17 +1536,17 @@ available?</strong> Model judgment; 69.4–81.2% of analyzed
 repository-task failures and all analyzed FeedbackTrace failures were
 attributed after reference evidence was visible.</li>
 <li><strong>Why is an alert weaker than context reconciliation?</strong>
-The model may not re-read; in Concord's GLM traces, alerts followed by a
+The model may not re-read; in Concord’s GLM traces, alerts followed by a
 later read were correct in 17/18 cases, while alert-only paths remained
 unreliable.</li>
 <li><strong>Why is vector similarity not authorization?</strong> Pooled
-retrieval can return another user's semantically adjacent memory through
+retrieval can return another user’s semantically adjacent memory through
 normal nearest-neighbor search; admissibility must be deterministic and
 identity/purpose aware.</li>
 <li><strong>What is the command/applied distinction?</strong> A
 requested action may differ from the action actually executed;
 downstream state should be updated from an effect receipt, not the
-model's intention.</li>
+model’s intention.</li>
 </ul>
 <h2 id="decision-checklist">Decision checklist</h2>
 <ol type="1">
