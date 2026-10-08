@@ -3,12 +3,30 @@
     "title": "AI Research Intelligence",
     "url": "https://ygeszvain.github.io/ai-research-intelligence",
     "description": "Evidence-grounded daily AI and machine-learning research intelligence.",
-    "generated_at_utc": "2026-10-07T09:00:00.000Z",
-    "report_count": 59,
-    "latest_report": "2026-10-07",
-    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-10-07.html"
+    "generated_at_utc": "2026-10-08T09:00:00.000Z",
+    "report_count": 60,
+    "latest_report": "2026-10-08",
+    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-10-08.html"
   },
   "reports": [
+    {
+      "date": "2026-10-08",
+      "date_display": "October 8, 2026",
+      "title": "AI Research Intelligence Brief — October 8, 2026",
+      "excerpt": "Three deep papers show why reliable agents need precommitted untrusted-influence contracts, productive time-budget qualification, and paired executable skill admission.",
+      "topics": [
+        "Agentic AI",
+        "AI Security",
+        "Evaluation & Observability",
+        "AI Software Engineering",
+        "MLOps & Platform",
+        "Safety & Governance"
+      ],
+      "path": "reports/2026-10-08.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-10-08.html",
+      "size_bytes": 89191,
+      "sha256": "17d3377031772837ef097c52c5452c1f4c880243e11c6431ac6cbb2ac271b5bc"
+    },
     {
       "date": "2026-10-07",
       "date_display": "October 7, 2026",
