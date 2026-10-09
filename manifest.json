@@ -3,12 +3,30 @@
     "title": "AI Research Intelligence",
     "url": "https://ygeszvain.github.io/ai-research-intelligence",
     "description": "Evidence-grounded daily AI and machine-learning research intelligence.",
-    "generated_at_utc": "2026-10-08T09:00:00.000Z",
-    "report_count": 60,
-    "latest_report": "2026-10-08",
-    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-10-08.html"
+    "generated_at_utc": "2026-10-09T09:00:00.000Z",
+    "report_count": 61,
+    "latest_report": "2026-10-09",
+    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-10-09.html"
   },
   "reports": [
+    {
+      "date": "2026-10-09",
+      "date_display": "October 9, 2026",
+      "title": "AI Research Intelligence Brief — October 9, 2026",
+      "excerpt": "Three deep papers show why reliable agents must retain unfinished obligations, preserve unresolved evidence conflicts, and isolate authorization from attacker-controlled representations.",
+      "topics": [
+        "Agentic AI",
+        "AI Security",
+        "Evaluation & Observability",
+        "RAG & Knowledge",
+        "Safety & Governance",
+        "Human-AI Workflow"
+      ],
+      "path": "reports/2026-10-09.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-10-09.html",
+      "size_bytes": 85657,
+      "sha256": "9a0bcededdcb9f41e6688a2ee24f187da00a8c21afa93976099d1b17fd0f7f45"
+    },
     {
       "date": "2026-10-08",
       "date_display": "October 8, 2026",
