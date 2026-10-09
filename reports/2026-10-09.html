@@ -1,0 +1,1481 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Evidence-grounded AI Research Intelligence Brief for October 9, 2026: obligation completion, uncertainty persistence, and isolated authorization.">
+<meta name="report-date" content="2026-10-09">
+<meta name="research-window" content="2026-10-08T04:00:00-05:00/2026-10-09T04:00:00-05:00 America/Chicago">
+<meta name="deep-paper-count" content="3">
+<meta name="watchlist-count" content="2">
+<meta name="theme-color" content="#071321">
+<title>AI Research Intelligence Brief — October 9, 2026</title>
+<style>
+:root{--bg:#06111d;--panel:#0c1c2a;--panel2:#10283a;--text:#e9f2f8;--muted:#9fb6c6;--line:#2a465b;--cyan:#46dbc6;--gold:#f4c96b;--rose:#ff8f9b;--blue:#70adff;--max:1180px;color-scheme:dark}
+@media(prefers-color-scheme:light){:root{--bg:#f4f7f8;--panel:#fff;--panel2:#edf4f7;--text:#102131;--muted:#526979;--line:#cddbe2;--cyan:#087f73;--gold:#9b6300;--rose:#b92b45;--blue:#1661ad;color-scheme:light}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 90% 0,rgba(70,219,198,.12),transparent 30rem),var(--bg);color:var(--text);font:16px/1.67 ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;overflow-x:hidden}a{color:var(--cyan);text-underline-offset:3px;overflow-wrap:anywhere}a:hover{text-decoration-thickness:2px}header{border-bottom:1px solid var(--line);background:linear-gradient(135deg,rgba(70,219,198,.09),rgba(112,173,255,.05));padding:54px 22px 34px}.hero{max-width:var(--max);margin:auto}.eyebrow{color:var(--cyan);text-transform:uppercase;letter-spacing:.15em;font-size:.76rem;font-weight:800}h1{font-size:clamp(2.2rem,6vw,4.7rem);line-height:.98;max-width:1000px;margin:.35rem 0 1rem;letter-spacing:-.055em}header p{max-width:900px;color:var(--muted);font-size:1.09rem}.chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}.chip{border:1px solid var(--line);border-radius:999px;padding:6px 11px;background:var(--panel);font-size:.8rem}.topbets{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}.bet{border:1px solid var(--line);background:var(--panel);border-radius:14px;padding:15px}.bet b{display:block;color:var(--gold);font-size:1.15rem}.layout{max-width:var(--max);margin:auto;display:grid;grid-template-columns:250px minmax(0,1fr);gap:34px;padding:30px 22px 80px}nav{position:sticky;top:16px;align-self:start;max-height:calc(100vh - 32px);overflow:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:14px}nav strong{display:block;margin:2px 8px 10px;color:var(--gold)}nav ul{list-style:none;margin:0;padding:0}nav li{margin:0}nav a{display:block;color:var(--muted);text-decoration:none;padding:5px 8px;border-radius:7px;font-size:.83rem;line-height:1.25}nav a:hover{background:var(--panel2);color:var(--text)}main{min-width:0;overflow-x:hidden}main>h1{font-size:1.8rem;margin:2.6rem 0 1rem;padding-top:.7rem;border-top:1px solid var(--line);letter-spacing:-.02em}main>h1:first-child{margin-top:0}main h2{font-size:1.35rem;margin-top:2rem;color:var(--cyan)}main h3{font-size:1.08rem;color:var(--gold);margin-bottom:.45rem}p,li{max-width:88ch}blockquote{margin:1rem 0;padding:1rem 1.2rem;border-left:4px solid var(--gold);background:var(--panel);color:var(--muted)}pre{white-space:pre-wrap;overflow:auto;background:#07101a;border:1px solid var(--line);border-radius:14px;padding:18px;color:#dcecf2;font-size:.86rem;line-height:1.45}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}table{display:block;width:100%;max-width:100%;overflow-x:auto;border-collapse:collapse;margin:1.25rem 0;background:var(--panel);font-size:.86rem}th,td{padding:10px 12px;border:1px solid var(--line);text-align:left;vertical-align:top}th{color:var(--gold);background:var(--panel2)}hr{border:0;border-top:1px solid var(--line)}main h3+ul,main h2+ul{border:1px solid var(--line);background:linear-gradient(135deg,var(--panel),var(--panel2));border-radius:14px;padding:15px 22px 15px 34px}main h3+ul li,main h2+ul li{margin:.5rem 0}.progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--cyan),var(--gold));width:0;z-index:9}.toolbar{position:fixed;right:18px;bottom:18px;display:flex;gap:8px}.toolbar button{border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:999px;padding:9px 12px;cursor:pointer;box-shadow:0 8px 30px rgba(0,0,0,.2)}.label{font-size:.75rem;color:var(--muted)}footer{border-top:1px solid var(--line);padding:24px;text-align:center;color:var(--muted)}
+@media(max-width:850px){.topbets{grid-template-columns:1fr}.layout{grid-template-columns:1fr}nav{position:relative;top:0;max-height:none}nav ul{columns:2}h1{font-size:2.65rem}}
+@media(max-width:520px){header{padding-top:34px}.layout{padding:20px 14px 60px}nav ul{columns:1}table{display:block;overflow-x:auto}h1{font-size:2.25rem}}
+@media print{body{background:white;color:#111;font-size:11pt}header{padding:18px 0}.layout{display:block;padding:0}nav,.toolbar,.progress{display:none}a{color:#145c70}main>h1{break-before:page}main>h1:first-child{break-before:auto}table,pre,svg{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<header><div class="hero">
+<div class="eyebrow">AI Research Intelligence · Control evidence that survives</div>
+<h1>Do not let the trajectory forget what still matters.</h1>
+<p>October 9, 2026 briefing. Three deep papers show that reliable agents must retain unfinished obligations, preserve unresolved evidence conflicts, and isolate authorization from attacker-controlled representations.</p>
+<div class="chips"><span class="chip">3 deep papers</span><span class="chip">2 Watchlist</span><span class="chip">24-hour exact window</span><span class="chip">9 enterprise options</span><span class="chip">Primary sources + full-paper review</span></div>
+<div class="topbets"><div class="bet"><span class="label">TOP BET 1 · PROTOTYPE SOON</span><b>92.4 · Obligation completion gate</b><span>Block safe-looking termination when required cleanup or verification remains open.</span></div><div class="bet"><span class="label">TOP BET 2 · PROTOTYPE SOON</span><b>89.2 · Uncertainty-conflict ledger</b><span>Keep unresolved evidence conflict visible across tools, context compression, and final answers.</span></div><div class="bet"><span class="label">TOP BET 3 · PREPARE FOUNDATIONS</span><b>84.4 · Asymmetric guard qualification</b><span>Measure fail-open separately and keep final authorization outside the model.</span></div></div>
+</div></header>
+<div class="layout"><nav><strong>Navigate</strong><ul>
+<li><a href="#scope-window-and-evidence-policy"
+id="toc-scope-window-and-evidence-policy">Scope, window, and evidence
+policy</a></li>
+<li><a href="#executive-signal" id="toc-executive-signal">Executive
+signal</a></li>
+<li><a href="#top-3-future-bets" id="toc-top-3-future-bets">Top 3 Future
+Bets</a></li>
+<li><a href="#deep-paper-1--safety-includes-what-the-agent-failed-to-do"
+id="toc-deep-paper-1--safety-includes-what-the-agent-failed-to-do">Deep
+paper 1 — Safety includes what the agent failed to do</a>
+<ul>
+<li><a href="#contribution-and-quantitative-claim-trace"
+id="toc-contribution-and-quantitative-claim-trace">Contribution and
+quantitative claim trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison"
+id="toc-methodological-critique-and-prior-work-comparison">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#reproducibility-and-enterprise-readiness"
+id="toc-reproducibility-and-enterprise-readiness">Reproducibility and
+enterprise readiness</a></li>
+</ul></li>
+<li><a
+href="#deep-paper-2--conflict-recognition-is-not-conflict-persistence"
+id="toc-deep-paper-2--conflict-recognition-is-not-conflict-persistence">Deep
+paper 2 — Conflict recognition is not conflict persistence</a>
+<ul>
+<li><a href="#contribution-and-quantitative-claim-trace-1"
+id="toc-contribution-and-quantitative-claim-trace-1">Contribution and
+quantitative claim trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison-1"
+id="toc-methodological-critique-and-prior-work-comparison-1">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#reproducibility-and-enterprise-readiness-1"
+id="toc-reproducibility-and-enterprise-readiness-1">Reproducibility and
+enterprise readiness</a></li>
+</ul></li>
+<li><a
+href="#deep-paper-3--a-security-gate-can-be-opened-through-its-answer-vocabulary"
+id="toc-deep-paper-3--a-security-gate-can-be-opened-through-its-answer-vocabulary">Deep
+paper 3 — A security gate can be opened through its answer
+vocabulary</a>
+<ul>
+<li><a href="#contribution-and-quantitative-claim-trace-2"
+id="toc-contribution-and-quantitative-claim-trace-2">Contribution and
+quantitative claim trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison-2"
+id="toc-methodological-critique-and-prior-work-comparison-2">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#reproducibility-and-enterprise-readiness-2"
+id="toc-reproducibility-and-enterprise-readiness-2">Reproducibility and
+enterprise readiness</a></li>
+</ul></li>
+<li><a href="#watchlist" id="toc-watchlist">Watchlist</a>
+<ul>
+<li><a href="#1-capability-anchors-need-construct-validity-diagnostics"
+id="toc-1-capability-anchors-need-construct-validity-diagnostics">1.
+Capability anchors need construct-validity diagnostics</a></li>
+<li><a
+href="#2-streaming-process-monitors-are-promising-but-abort-policies-remain-calibration-sensitive"
+id="toc-2-streaming-process-monitors-are-promising-but-abort-policies-remain-calibration-sensitive">2.
+Streaming process monitors are promising, but abort policies remain
+calibration-sensitive</a></li>
+</ul></li>
+<li><a href="#cross-paper-synthesis"
+id="toc-cross-paper-synthesis">Cross-paper synthesis</a></li>
+<li><a href="#enterprise-ai-architecture-implications"
+id="toc-enterprise-ai-architecture-implications">Enterprise AI
+Architecture Implications</a></li>
+<li><a href="#enterprise-ai-enhancement-backlog"
+id="toc-enterprise-ai-enhancement-backlog">Enterprise AI Enhancement
+Backlog</a>
+<ul>
+<li><a href="#priority-method-and-uncertainty"
+id="toc-priority-method-and-uncertainty">Priority method and
+uncertainty</a></li>
+<li><a href="#prototype-soon" id="toc-prototype-soon">Prototype Soon</a>
+<ul>
+<li><a href="#1-obligation-completion-and-termination-gate--924"
+id="toc-1-obligation-completion-and-termination-gate--924">1. Obligation
+completion and termination gate — 92.4</a></li>
+<li><a href="#2-uncertainty-conflict-state-ledger--892"
+id="toc-2-uncertainty-conflict-state-ledger--892">2.
+Uncertainty-conflict state ledger — 89.2</a></li>
+<li><a href="#3-capability-measurement-contract-and-diagnostics--876"
+id="toc-3-capability-measurement-contract-and-diagnostics--876">3.
+Capability measurement contract and diagnostics — 87.6</a></li>
+</ul></li>
+<li><a href="#prepare-foundations" id="toc-prepare-foundations">Prepare
+Foundations</a>
+<ul>
+<li><a href="#4-conflict-aware-escalation-and-abstention-path--848"
+id="toc-4-conflict-aware-escalation-and-abstention-path--848">4.
+Conflict-aware escalation and abstention path — 84.8</a></li>
+<li><a
+href="#5-asymmetric-guardrail-qualification-and-decision-isolation--844"
+id="toc-5-asymmetric-guardrail-qualification-and-decision-isolation--844">5.
+Asymmetric guardrail qualification and decision isolation —
+84.4</a></li>
+<li><a href="#6-measurement-provenance-and-version-registry--833"
+id="toc-6-measurement-provenance-and-version-registry--833">6.
+Measurement provenance and version registry — 83.3</a></li>
+</ul></li>
+<li><a href="#monitor-for-maturity"
+id="toc-monitor-for-maturity">Monitor for Maturity</a>
+<ul>
+<li><a href="#7-option-channel-and-caller-input-fuzzing--792"
+id="toc-7-option-channel-and-caller-input-fuzzing--792">7.
+Option-channel and caller-input fuzzing — 79.2</a></li>
+<li><a href="#8-streaming-trajectory-anomaly-shadow-monitor--772"
+id="toc-8-streaming-trajectory-anomaly-shadow-monitor--772">8. Streaming
+trajectory anomaly shadow monitor — 77.2</a></li>
+</ul></li>
+<li><a href="#deprioritize-for-now"
+id="toc-deprioritize-for-now">Deprioritize for Now</a>
+<ul>
+<li><a href="#9-typed-model-as-final-authorization-gate--485"
+id="toc-9-typed-model-as-final-authorization-gate--485">9. Typed model
+as final authorization gate — 48.5</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#implementation-priorities"
+id="toc-implementation-priorities">Implementation priorities</a></li>
+<li><a href="#knowledge-reinforcement"
+id="toc-knowledge-reinforcement">Knowledge reinforcement</a></li>
+<li><a href="#source-ledger-and-publication-caveats"
+id="toc-source-ledger-and-publication-caveats">Source ledger and
+publication caveats</a></li>
+</ul></nav><main><h1 id="scope-window-and-evidence-policy">Scope,
+window, and evidence policy</h1>
+<p><strong>Research window.</strong> The exact window was Thursday,
+October 8, 2026 at 4:00 AM CDT through Friday, October 9, 2026 at 4:00
+AM CDT (America/Chicago; 09:00 UTC to 09:00 UTC). Discovery covered the
+complete Friday arXiv artificial-intelligence announcement batch and
+relevant cross-lists, then followed primary papers, repositories, data
+releases, and license pages. All five selected papers were submitted on
+October 8 and were absent from the 60-report archive through October
+8.</p>
+<p><strong>Selection.</strong> The screen emphasized direct enterprise
+relevance, trajectory-level measurement, asymmetric safety errors,
+controlled counterfactuals, explicit negative results, artifact
+availability, and reversible experiments. Three papers cleared deep
+review: <em>Safe Actions Alone Do Not Ensure Safe Agents</em>,
+<em>Accurate but Not Humble</em>, and <em>One Word Opens the Gate</em>.
+<em>On the estimation and validity of AI time horizons</em> and
+<em>OnTrack</em> enter the Watchlist because their signals are valuable
+but narrower or less deployment-ready: no linked replication artifact
+was verified for the time-horizon analysis, while OnTrack's showcased
+abort threshold was selected after a sweep and stops 13–21% of
+well-behaved traces across reported mixes.</p>
+<p><strong>Anti-duplication.</strong> Yesterday's five
+selections—arXiv:2610.09469, 2610.09944, 2610.10088, 2610.10507, and
+2610.09872—were excluded, as were all prior archive identifiers. Earlier
+briefs covered action ledgers, revocation, stateful trajectories,
+uncertainty-preserving task state, and prompt injection. Today's
+incremental question is narrower: <em>what evidence must survive until
+an agent is allowed to terminate, decide confidently, or authorize an
+effect?</em></p>
+<p><strong>Evidence labels.</strong> <strong>Paper Fact</strong> means
+directly reported in a reviewed paper or verified first-party artifact.
+<strong>Independent Analysis</strong> means this briefing's comparison,
+calculation, or critique. <strong>Enterprise Inference</strong>
+translates research into a bounded future option.
+<strong>Uncertainty</strong> marks missing causal, adversarial,
+external-validity, artifact, security, privacy, governance, economic, or
+production evidence. Benchmark performance never authorizes production
+deployment.</p>
+<h1 id="executive-signal">Executive signal</h1>
+<blockquote>
+<p><strong>Reliable enterprise agents need control evidence that
+survives the whole trajectory: required actions must remain open until
+fulfilled, unresolved conflicts must remain visible in the final answer,
+and untrusted text or option labels must never become the authority that
+opens a security gate.</strong></p>
+</blockquote>
+<p>The three deep papers support complementary parts of that rule:</p>
+<ol type="1">
+<li><strong>ObligationGuard</strong> shows that action-only safety
+checks miss required-but-unperformed work. In 240 expert-validated
+trajectories, the best evaluated existing model reached only 48.97%
+obligation recall and 10.00% exact match. ObligationGuard reached 57.52%
+recall and 21.67% exact match; in a 186-task SusVibes intervention,
+secure pass rate rose from 6.5% without guidance to 15.1% with one
+obligation-guidance turn. The absolute safe-completion rate remains low,
+the intervention uses one coding domain, and the public repository has
+no visible license file.</li>
+<li><strong>Epistemic Humility</strong> operationalizes conflict
+handling as Identify, Solve, and Escalate across four agent harnesses
+and five fixed harness–backbone configurations. Some agents notice
+conflicts early but fail to preserve or communicate them. A prompt can
+raise escalation sharply—on MoNaCo, GPT-5 escalation rose from 1.6% to
+60.7%—while task accuracy fell from 30.1% to 23.2%. The paper is EMNLP
+2026 camera-ready, but the claimed public repository contained only an
+Apache-2.0 license at verification time, not the promised code or
+trajectories.</li>
+<li><strong>Option-Channel Attack</strong> treats typed decision models
+as security controls and reports fail-open separately from fail-closed.
+Across public screening tasks, clean accuracy spans 36–72%. On synthetic
+GuardBench, renaming only the permissive option drives fail-open to
+93–100% on four label-sensitive models; benign log text can raise one
+gate from 0% to 63% fail-open. An MIT repository includes code and
+cached outputs, but the benchmark is synthetic and commercial typed
+models were not tested.</li>
+</ol>
+<p><strong>Decision posture.</strong> Prototype obligation-state
+tracking, conflict persistence, and asymmetric guardrail qualification
+in shadow environments. Prepare shared provenance, evaluation, and
+escalation foundations. Keep model-based authorization, automatic abort,
+and confidence-only triage out of production decision paths until
+internal adversarial evidence, calibration, latency, privacy, and
+reviewer-capacity constraints are measured.</p>
+<h1 id="top-3-future-bets">Top 3 Future Bets</h1>
+<ol type="1">
+<li><strong>Obligation completion and termination gate —
+92.4/100.</strong> Why it matters: an agent can avoid prohibited actions
+and still leave credentials, sessions, approvals, cleanup, or
+verification obligations unresolved. Evidence that would change the
+recommendation: internal trajectories show low obligation prevalence,
+low annotation agreement, or no improvement over a structured checklist.
+Next reversible action: label obligations in 40 completed non-production
+workflows, run the gate only at attempted termination, and compare
+shadow findings with two human reviewers.</li>
+<li><strong>Uncertainty-conflict state ledger — 89.2/100.</strong> Why
+it matters: evidence conflicts often appear early and disappear before
+the final answer, so users see unsupported confidence rather than
+actionable uncertainty. Evidence that would change the recommendation:
+internal paired conflict/control tests show stable conflict resolution
+without extra state, or ledger persistence creates material accuracy and
+latency loss. Next reversible action: inject 30 benign evidence
+conflicts into sandbox research tasks and require open conflict state to
+be resolved or explicitly escalated before completion.</li>
+<li><strong>Asymmetric guardrail qualification and decision isolation —
+84.4/100.</strong> Why it matters: aggregate accuracy hides whether a
+security gate fails open or fails closed, and untrusted labels or text
+can steer the gate itself. Evidence that would change the
+recommendation: internal typed gates remain robust under option
+renaming, suffix search, structured-field attacks, and matched-cost
+thresholds across independent red teams. Next reversible action: replay
+500 logged proposals offline, report fail-open/fail-closed separately,
+fuzz every caller-controlled label, and compare the model with a
+deterministic policy over the same parsed fields.</li>
+</ol>
+<h1 id="deep-paper-1--safety-includes-what-the-agent-failed-to-do">Deep
+paper 1 — Safety includes what the agent failed to do</h1>
+<p><strong>Identity and status.</strong> <em>Safe Actions Alone Do Not
+Ensure Safe Agents: Identifying Unfulfilled Obligations with Guard
+Models</em>; Youwei Feng, Yitong Zhang, Yuetong Liu, and Jia Li;
+arXiv:2610.11773v1; submitted October 8, 2026; preprint. The verified
+public repository contains benchmark records, 40,000/2,000
+training/validation examples, configs, tests, prompts, checksums, and
+scripts, but no visible license file was present, so reuse rights are
+unresolved. (<a href="https://arxiv.org/abs/2610.11773">paper</a> · <a
+href="https://github.com/THU-Agent/ObligationGuard">artifact</a>)</p>
+<h2 id="contribution-and-quantitative-claim-trace">Contribution and
+quantitative claim trace</h2>
+<p>The paper distinguishes <strong>forbidden actions</strong> from
+<strong>obligations</strong>: safety-critical actions required because
+of earlier choices but still unperformed at termination. An authorized
+use of a secret, for example, can create an obligation to remove it. The
+benchmark is explicitly trajectory-level because a missing action cannot
+be judged from one proposed step.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>Decision meaning</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Omission risk is common in the sampled coding setting</td>
+<td style="text-align: right;">In a preliminary SusVibes study, 56.92%
+of GLM-5.3 trajectories contain unfulfilled obligations versus 30.00%
+containing forbidden actions</td>
+<td>Prohibition-only filters do not cover termination safety</td>
+<td>The prevalence is model-, benchmark-, and domain-specific</td>
+</tr>
+<tr class="even">
+<td>Existing models miss complete obligation sets</td>
+<td style="text-align: right;">240 expert-validated instances; 120
+positive, 120 hard negatives; best existing recall 48.97%, best existing
+exact match 10.00%</td>
+<td>A termination gate needs set completeness, not just any warning</td>
+<td>Semantic matching uses an LLM judge; positives average 2.83
+obligations</td>
+</tr>
+<tr class="odd">
+<td>Specialized training improves identification</td>
+<td style="text-align: right;">Qwen3-8B backbone: 15.34% recall, 0.83%
+exact match; ObligationGuard: 57.52% recall, 21.67% exact match</td>
+<td>Scenario-first synthesis can teach omission detection</td>
+<td>21.67% exact match still means most positive cases are
+incomplete</td>
+</tr>
+<tr class="even">
+<td>Guidance can repair already functional but unsafe outputs</td>
+<td style="text-align: right;">On 186 SusVibes tasks, SecPass rises 6.5%
+→ 15.1%; FuncPass changes 27.4% → 26.9%; 16 of 39 initially
+correct-unsafe solutions become correct-safe</td>
+<td>Intervene at attempted termination, after functional work
+exists</td>
+<td>One agent, one benchmark, one feedback turn, no repeated-run
+uncertainty</td>
+</tr>
+<tr class="odd">
+<td>Benchmark performance relates to intervention value</td>
+<td style="text-align: right;">Across six guards, ObligationBench recall
+correlates with SecPass gain: Spearman ρ=.94, Pearson r=.97</td>
+<td>Offline recall may be a useful admission signal</td>
+<td>Six points are too few for a stable causal claim; common model
+factors may confound</td>
+</tr>
+<tr class="even">
+<td>Annotation and judgment received checks</td>
+<td style="text-align: right;">Two experienced engineers independently
+review; 82.2% pre-adjudication complete-set agreement; LLM semantic
+judge gets 95% agreement on a balanced 400-pair review</td>
+<td>The paper exposes annotation uncertainty instead of treating labels
+as objective</td>
+<td>Adjudicated consensus is not external validation; balanced judge
+audit does not estimate field prevalence</td>
+</tr>
+</tbody>
+</table>
+<svg viewBox="0 0 980 360" role="img" aria-label="Obligation identification and secure completion results" style="width:100%;height:auto;background:#0c1c2a;border:1px solid #2a465b;border-radius:14px;margin:1rem 0">
+  <text x="34" y="38" fill="#f4c96b" font-family="system-ui" font-size="18">Obligation detection improves, but complete coverage remains low</text>
+  <g fill="#9fb6c6" font-family="system-ui" font-size="14"><text x="34" y="96">Recall</text><text x="34" y="193">Exact match</text><text x="34" y="290">Secure pass</text></g>
+  <g fill="#70adff"><rect x="170" y="68" width="294" height="28" rx="6"/><rect x="170" y="108" width="345" height="28" rx="6"/></g>
+  <g fill="#46dbc6"><rect x="170" y="165" width="60" height="28" rx="6"/><rect x="170" y="205" width="130" height="28" rx="6"/></g>
+  <g fill="#f4c96b"><rect x="170" y="262" width="39" height="28" rx="6"/><rect x="170" y="302" width="91" height="28" rx="6"/></g>
+  <g fill="#e9f2f8" font-family="system-ui" font-size="13"><text x="474" y="87">best existing 48.97%</text><text x="525" y="127">ObligationGuard 57.52%</text><text x="240" y="184">best existing 10.00%</text><text x="310" y="224">ObligationGuard 21.67%</text><text x="219" y="281">no guidance 6.5%</text><text x="310" y="321">ObligationGuard 15.1%</text></g>
+</svg>
+
+<h2
+id="methodological-critique-and-prior-work-comparison">Methodological
+critique and prior-work comparison</h2>
+<p>Prior guard models primarily classify a present action or message as
+allowed, unsafe, toxic, injected, or policy-violating. ObligationBench
+changes the unit of analysis: the task plus the <em>complete</em>
+trajectory and the set of safety-critical actions still missing at
+termination. Compared with self-reminders and generic guards, it
+therefore asks a different counterfactual question—what must still
+happen before the system can safely stop?</p>
+<p>The benchmark construction is comparatively strong. It samples real
+executions from established software-agent benchmarks, balances positive
+and hard-negative cases, spans issue resolution, feature development,
+and terminal operations, uses two independent expert reviews, discards
+ambiguous cases, and reports creation-distance and concurrency effects.
+The intervention reuses the same execution state across conditions, and
+the repository exposes checksums, split IDs, seed
+<code>4258302180</code>, prompts, configs, and cached data.</p>
+<p>The core limitation is absolute performance. A 21.67% exact-match
+rate cannot support autonomous approval. Synthetic scenario planning may
+encode the generator's view of safety into both training labels and
+model behavior. The RQ4 comparison uses 186 tasks and one agent
+configuration; no confidence intervals or repeated seeds are reported
+for the 6.5%→15.1% change. The six-model correlation is descriptive, not
+causal. Obligations are also domain- and policy-dependent: enterprise
+workflows require authoritative policy owners, temporal semantics,
+identity context, and side-effect evidence that software benchmark
+trajectories may not contain.</p>
+<h2 id="reproducibility-and-enterprise-readiness">Reproducibility and
+enterprise readiness</h2>
+<p>The repository is unusually complete at first release: benchmark
+JSONL, positive/negative partitions, synthetic data, manifests,
+checksums, training and inference configs, prompt sources, tests,
+commands, and supplementary material. It documents BF16, ZeRO-3,
+FlashAttention, full-parameter SFT, and validation checkpoint selection.
+However, a trained checkpoint is not bundled, model endpoints and
+substantial compute are required, and no license file was visible.
+<strong>Enterprise readiness:</strong> high for a shadow
+termination-check design; medium for internal benchmark construction;
+low for automated authorization. <strong>Research Utility Score:
+94/100</strong> (methodological rigor 24/25; quantitative traceability
+24/25; reproducibility/artifacts 19/20; enterprise relevance 15/15;
+prior-work advance 12/15).</p>
+<h1
+id="deep-paper-2--conflict-recognition-is-not-conflict-persistence">Deep
+paper 2 — Conflict recognition is not conflict persistence</h1>
+<p><strong>Identity and status.</strong> <em>Accurate but Not Humble:
+Evaluating Epistemic Humility in LLM Agents under Knowledge
+Conflict</em>; Kaiser Sun, Bernal Jiménez Gutiérrez, Hongjun Liu, Jingyu
+Zhang, Jie Gao, Mark Dredze, and Daniel Khashabi; arXiv:2610.12360v1;
+submitted October 8, 2026; EMNLP 2026 camera-ready. The paper promises
+code and trajectories, but the verified repository contained one commit
+and only an Apache-2.0 license file; therefore the claimed artifact is
+not yet usable. (<a href="https://arxiv.org/abs/2610.12360">paper</a> ·
+<a
+href="https://github.com/KaiserWhoLearns/EpistemicHumilityLLMAgents">repository
+state</a>)</p>
+<h2 id="contribution-and-quantitative-claim-trace-1">Contribution and
+quantitative claim trace</h2>
+<p>The paper operationalizes epistemic humility as three trajectory
+behaviors: <strong>Identify</strong> a conflict or knowledge gap,
+<strong>Solve</strong> it through bounded tool use, and
+<strong>Escalate</strong> unresolved uncertainty in the final response.
+It constructs controlled conflicts from ConflictQA and WikiContradict
+and naturally occurring conflicts in GAIA, MoNaCo, and BrowseComp,
+paired with no-conflict controls where possible.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>Decision meaning</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Knowledge conflict can sharply reduce correctness</td>
+<td style="text-align: right;">On controlled TMD, all reported
+configurations lose more than 30 accuracy points versus matched
+controls; e.g., OpenHands/GPT-5 3.2% vs 58.4%</td>
+<td>Retrieval conflict needs its own evaluation contract</td>
+<td>TMD tasks are factual and supplied conflicts; enterprise evidence
+conflicts are more heterogeneous</td>
+</tr>
+<tr class="even">
+<td>Accuracy and humility are distinct</td>
+<td style="text-align: right;">Across agent–dataset cells, fitted Solve
+and Escalate decline as task accuracy rises; Identify shows no clear
+monotone relation</td>
+<td>Outcome metrics should not proxy for uncertainty handling</td>
+<td>Cell-level logistic fits are descriptive and configurations are not
+exchangeable</td>
+</tr>
+<tr class="odd">
+<td>Conflicts are often noticed early but dropped</td>
+<td style="text-align: right;">Conflict-relevant mentions peak in the
+first 10% of the trajectory</td>
+<td>Preserve uncertainty as explicit state, not transient text</td>
+<td>Mention timing is not proof that a durable state variable would
+improve outcomes</td>
+</tr>
+<tr class="even">
+<td>Prompting can recover escalation but trade off accuracy</td>
+<td style="text-align: right;">MoNaCo GPT-5 Escalate 1.6%→60.7%,
+accuracy 30.1%→23.2%; Claude Code 13.9%→60.8%; Qwen-Agent-9B
+16.7%→44.9%</td>
+<td>Rewarding disclosure alone can induce over-escalation</td>
+<td>The paper says significance tests compare conflict/control, not
+default/prompted runs</td>
+</tr>
+<tr class="odd">
+<td>Judge-model agreement is strong but human agreement is lower</td>
+<td style="text-align: right;">Cross-model AC1=.82–.92 for
+Identify/Escalate and .93–.97 for correctness; human annotators agree
+76.0% on Identify and 85.3% on Escalate</td>
+<td>Track judge uncertainty and retain human adjudication</td>
+<td>Human validation covers 50 Identify turns and 50 final answers,
+oversampling positives</td>
+</tr>
+<tr class="even">
+<td>Broad configuration coverage is still incomplete</td>
+<td style="text-align: right;">Five fixed harness–backbone
+configurations across four harnesses; &gt;$3,000 and &gt;1,000 GPU
+hours</td>
+<td>Agent humility is a system property, not a model-only property</td>
+<td>No full factorial backbone×harness design; model, harness, and
+environment effects remain coupled</td>
+</tr>
+</tbody>
+</table>
+<h2
+id="methodological-critique-and-prior-work-comparison-1">Methodological
+critique and prior-work comparison</h2>
+<p>Prior conflict work mainly studies a single LLM forward pass: whether
+a model follows parametric memory or contextual evidence, verbalizes
+confidence, abstains, or revises after correction. This paper moves the
+construct into multi-step agent trajectories and pairs conflict cases
+with controls so that generic hedging does not earn Identify credit.
+Solve is process-based, requiring a post-recognition tool call, no
+exact-duplicate calls, and clean termination. Escalate is scored from
+the final answer, reflecting what a user can actually see.</p>
+<p>The design's strengths are paired controlled tasks, multiple
+natural-workflow benchmarks, five system configurations, bootstrap
+intervals, official task metrics, full-trajectory judging, multiple
+judge families, and explicit human validation. It also publishes
+uncomfortable negative results: high accuracy can coexist with low
+escalation, and a one-line prompt shifts behavior without consistently
+improving the task.</p>
+<p>The construct remains narrow. ISE covers evidence conflict, not tool
+insufficiency, ambiguous goals, inherently unknowable questions, or
+calibrated numeric uncertainty. Solve measures bounded follow-up
+behavior, not whether the follow-up resolves the conflict. Naturally
+occurring conflict and control splits sometimes contain different
+questions and may differ in difficulty. Human agreement for Identify is
+moderate, and the configuration matrix cannot separate backbone from
+harness causally. Most importantly, the promised public artifact was not
+present beyond a license file, blocking independent verification of
+trajectories, sample construction, and judge prompts.</p>
+<h2 id="reproducibility-and-enterprise-readiness-1">Reproducibility and
+enterprise readiness</h2>
+<p>The paper includes definitions, detailed appendices, data funnels,
+sample sizes, judge prompts, confidence intervals, and per-configuration
+tables. However, the externally linked repository did not yet contain
+code or data. <strong>Enterprise readiness:</strong> high for the idea
+of a conflict-state ledger and matched conflict/control tests; medium
+for a human-visible escalation path; low for auto-escalation thresholds
+or model comparison without internal validation. <strong>Research
+Utility Score: 85/100</strong> (methodological rigor 24/25; quantitative
+traceability 23/25; reproducibility/artifacts 8/20; enterprise relevance
+15/15; prior-work advance 15/15).</p>
+<h1
+id="deep-paper-3--a-security-gate-can-be-opened-through-its-answer-vocabulary">Deep
+paper 3 — A security gate can be opened through its answer
+vocabulary</h1>
+<p><strong>Identity and status.</strong> <em>One Word Opens the Gate:
+The Option-Channel Attack on Typed Decision Models as Agent
+Guardrails</em>; Seyedarmin Azizi, Erfan Baghaei Potraghloo, and Massoud
+Pedram; arXiv:2610.12292v1; submitted October 8, 2026; preprint. The
+verified MIT repository contains benchmark generation, attack and
+defense code, cached run artifacts, figure/table regeneration, and
+instructions for reproducing with one GPU. (<a
+href="https://arxiv.org/abs/2610.12292">paper</a> · <a
+href="https://github.com/ArminAzizi98/option-channel-attack">code and
+cached results</a>)</p>
+<h2 id="contribution-and-quantitative-claim-trace-2">Contribution and
+quantitative claim trace</h2>
+<p>Typed decision models receive a state plus caller-defined option
+labels and definitions, then return probabilities without generating
+text. The paper evaluates them as <em>security controls</em>: a
+fail-open allows a prohibited effect, whereas a fail-closed blocks a
+legitimate one. This asymmetry is obscured by aggregate accuracy.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>Decision meaning</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Clean accuracy hides directional failure</td>
+<td style="text-align: right;">Six open-weight readouts score 36–72% on
+three balanced public screening tasks; e.g., Qwen2.5-1.5B injection
+fail-open .7% but fail-closed 100%</td>
+<td>Always report fail-open and fail-closed separately</td>
+<td>These are screening datasets, not production tool-authorization
+logs</td>
+</tr>
+<tr class="even">
+<td>Benign attacker-controlled text can open the gate</td>
+<td style="text-align: right;">Six lines of policy-irrelevant server
+logs raise one gate from 0% to 63% fail-open</td>
+<td>Semantic harmlessness is not model-input harmlessness</td>
+<td>One synthetic policy/model cell anchors the headline example</td>
+</tr>
+<tr class="odd">
+<td>Option names form an attack channel</td>
+<td style="text-align: right;">Renaming only the permissive label
+reaches 93–100% fail-open on four models that encode labels; 198-label
+sweep, with transfer across models</td>
+<td>Keep caller-controlled labels out of model input; canonicalize at
+the call site</td>
+<td>Two model families that exclude labels are invariant, so the
+vulnerability is interface-dependent</td>
+</tr>
+<tr class="even">
+<td>Confidence triage does not catch reversals</td>
+<td style="text-align: right;">Across 1,410 reversed decisions,
+median/mean reported margins are essentially unchanged; 53% become more
+confident</td>
+<td>Do not use model probability alone to escalate security
+decisions</td>
+<td>The result is specific to these attacks and probability
+interfaces</td>
+</tr>
+<tr class="odd">
+<td>Structured fields help but do not create a security boundary</td>
+<td style="text-align: right;">Field injection falls to 0% after
+parsing, but confusing legitimate values still produce 20.3–50.0%
+fail-open across models</td>
+<td>Parsing reduces attack surface; deterministic policy should decide
+when semantics are expressible</td>
+<td>GuardBench is generated from explicit attributes and therefore
+favors rules</td>
+</tr>
+<tr class="even">
+<td>Deterministic policy dominates on the synthetic suite</td>
+<td style="text-align: right;">Rules over the same parsed values achieve
+100% accuracy and 0 fail-open on all six policies under both
+attacks</td>
+<td>Use models for triage, not final authorization, when the policy is
+computable</td>
+<td>Public screening tasks lack equally clear structured rules</td>
+</tr>
+</tbody>
+</table>
+<h2
+id="methodological-critique-and-prior-work-comparison-2">Methodological
+critique and prior-work comparison</h2>
+<p>Earlier papers reported attacks on typed decision models but did not
+consistently separate unsafe allow errors from costly block errors or
+evaluate adaptive defenses at matched refusal cost. This paper
+contributes that security-control framing, scores attacks only on
+cleanly correct block decisions, uses percentile bootstrap intervals,
+tests seven open-weight models, includes public-data checks, sweeps 198
+labels, compares defenses to thresholds with matched clean fail-closed
+rate, and mounts adaptive attacks against surviving defenses.</p>
+<p>The paper is unusually candid about negative results. Canonical
+labels close the option channel but not text attacks. Field structuring
+wins 16 of 18 matched cells and ties two, yet an attacker targeting
+retained fields reaches up to 100% on four of five typed models.
+Instructional defenses merely raise the query budget. Rival defenses can
+shift the cost curve but do not establish a robust authorization
+boundary.</p>
+<p>External validity is limited. GuardBench is templated, exactly
+balanced, and generated from six explicit attributes; this gives exact
+labels but makes deterministic evaluation natural. The public tasks test
+prompt injection, jailbreak, and toxicity rather than enterprise
+authorization semantics. Only open-weight models were studied, and the
+attacks use a fixed suffix pool and label vocabulary. That makes
+reported rates lower bounds for the studied systems, but it does not
+establish failure rates for commercial products or different interfaces.
+Reproducibility is strong: cached JSON/NPZ outputs regenerate every
+table and figure offline, the code is MIT-licensed, and the benchmark
+generator is present.</p>
+<h2 id="reproducibility-and-enterprise-readiness-2">Reproducibility and
+enterprise readiness</h2>
+<p>The repository has code, cached results, a pinned requirements file,
+attack/defense runners, generated benchmark logic, scripts, and an
+explicit third-party data policy. Independent numerical regeneration is
+feasible without a GPU; re-running models requires weights and
+compatible CUDA dependencies. <strong>Enterprise readiness:</strong>
+high for asymmetric security evaluation and label canonicalization; high
+for deterministic policy where fields are parseable; medium for
+model-assisted triage; very low for a model as the final allow/block
+authority. <strong>Research Utility Score: 96/100</strong>
+(methodological rigor 25/25; quantitative traceability 25/25;
+reproducibility/artifacts 20/20; enterprise relevance 15/15; prior-work
+advance 11/15).</p>
+<h1 id="watchlist">Watchlist</h1>
+<h2 id="1-capability-anchors-need-construct-validity-diagnostics">1.
+Capability anchors need construct-validity diagnostics</h2>
+<p><strong>Paper.</strong> <em>On the estimation and validity of AI time
+horizons—a statistical look at the METR plot</em>; Drew T. Nguyen and
+William Fithian; arXiv:2610.12466v1; October 8, 2026. (<a
+href="https://arxiv.org/abs/2610.12466">paper</a>)</p>
+<p><strong>Paper Fact.</strong> On METR's public data—228 software
+tasks, 79 task families, and 26 AIs—the authors replace log-linear time
+difficulty with a shared monotone spline and an explanatory
+item-response model. Five-fold cross-validation across task families and
+12 proper-scoring-rule/weighting combinations favors both proposed point
+estimators over the shared-slope baseline. The fitted time-to-difficulty
+mapping is nearly flat from 2–30 minutes, so a 3→30 minute horizon
+change is not comparable to 30 minutes→5 hours despite both being 10×.
+Model-2 Rasch abilities align closely with METR's headline estimates
+after rescaling (R²=.996), while Model-2's own 50% horizons disagree
+most in the 2–30 minute band.</p>
+<p><strong>Why Watchlist.</strong> The statistical argument is strong
+and directly relevant to enterprise benchmarking, but it assumes rather
+than resolves whether tasks represent desired capability, whether human
+time is the right annotation, and whether a one-dimensional ability is
+sufficient. Twenty-nine percent of task human times use expert values
+because direct measurements were unavailable or invalid. No linked code
+or packaged reproduction artifact was verified. <strong>Enterprise
+trigger:</strong> an internal capability benchmark uses human duration,
+ticket size, or another intuitive anchor and decision-makers compare
+multiplicative gains across ranges. At that point, add held-out proper
+scoring rules, time-to-difficulty diagnostics, family-level
+cross-validation, and annotation uncertainty before using the metric for
+roadmap decisions.</p>
+<h2
+id="2-streaming-process-monitors-are-promising-but-abort-policies-remain-calibration-sensitive">2.
+Streaming process monitors are promising, but abort policies remain
+calibration-sensitive</h2>
+<p><strong>Paper.</strong> <em>OnTrack: Real-Time Monitoring and
+Intervention in LLM Agent Trajectories via Streaming Structure-Aware
+Optimal Transport</em>; Babak Barazandeh, Connor Swanson, Chinmay
+Kulkarni, and Nikhil Mungel; arXiv:2610.12375v1; October 8, 2026. (<a
+href="https://arxiv.org/abs/2610.12375">paper</a>)</p>
+<p><strong>Paper Fact.</strong> OnTrack incrementally aligns an agent's
+growing dependency graph with reference runs. It reports about one
+millisecond per step, controlled-fault tests, and replay of 2,294
+SWE-agent trajectories. At step 8, the primary held-out protocol
+improves AUROC by .057 over cosine similarity, with an
+instance-bootstrap 95% interval [.033,.080]. A flag-density abort rule
+at threshold .60 stops 23.3% of unresolved traces, saves 17.9% of
+failed-run compute, and has a 20.7% balanced false-stop rate; an
+independent profile draw reports 17.0% savings and 12.7% false
+stops.</p>
+<p><strong>Why Watchlist.</strong> The paper itself states that .60 was
+selected after a threshold sweep, not pre-registered or held out. Rival
+step, budget, cosine, and hybrid policies can match or exceed the
+savings frontier at comparable false-stop cost. Resolved-vs-unresolved
+outcome AUROC is weak (.581) and collapses toward chance after length
+matching (.526); in-distribution splices are also near chance. False
+stops range from 13–21%, reference quality and dependency extraction
+bind performance, and λ must be recalibrated when embeddings change.
+<strong>Enterprise trigger:</strong> a non-production workflow has many
+expensive looping/stall failures, stable tool schemas, historical
+references, and a clear utility price for premature termination. Start
+in advisory mode, compare against step/budget baselines, calibrate on
+separate traffic, and require rollback.</p>
+<h1 id="cross-paper-synthesis">Cross-paper synthesis</h1>
+<table>
+<thead>
+<tr class="header">
+<th>Decision question</th>
+<th>Strongest signal</th>
+<th>Failure if ignored</th>
+<th>Architectural response</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Is anything safety-critical still unfinished?</td>
+<td>ObligationGuard finds missing actions that prohibition filters do
+not</td>
+<td>The agent terminates with exposed secrets, stale sessions,
+incomplete cleanup, or unverified effects</td>
+<td>Obligation ledger, policy-derived completion conditions, termination
+gate, effect receipt</td>
+</tr>
+<tr class="even">
+<td>Did uncertainty survive to the user-visible answer?</td>
+<td>Epistemic Humility shows conflicts noticed early but often
+dropped</td>
+<td>The final answer is confident despite unresolved or contradictory
+evidence</td>
+<td>Conflict-state object, bounded resolution budget, visible
+escalation, uncertainty-aware scoring</td>
+</tr>
+<tr class="odd">
+<td>Does the guard fail in the dangerous direction?</td>
+<td>Option-Channel Attack separates fail-open from fail-closed</td>
+<td>Aggregate accuracy hides permissive failure or blanket blocking</td>
+<td>Asymmetric evaluation, canonical labels, typed parsing,
+deterministic authorization</td>
+</tr>
+<tr class="even">
+<td>Does the capability metric measure comparable progress?</td>
+<td>Time-horizon analysis exposes a 2–30 minute flat region</td>
+<td>A 10× headline improvement can mean very different capability
+gains</td>
+<td>Measurement contract, item-response diagnostics, held-out proper
+scores, anchor lineage</td>
+</tr>
+<tr class="odd">
+<td>Can an online anomaly signal safely stop work?</td>
+<td>OnTrack reports useful early signals and substantial false-stop
+sensitivity</td>
+<td>A cost saver becomes a kill-everything switch or destroys valuable
+work</td>
+<td>Shadow monitoring, separate calibration traffic, baseline
+comparison, human escalation</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Independent Analysis.</strong> The shared pattern is a
+<strong>durable-control-state architecture</strong>. Policies,
+conflicts, and obligations should not be expressed only as text that can
+be forgotten or overwritten. Security decisions should not be delegated
+to the same untrusted representation they protect. Evaluation should
+preserve the direction and cost of errors, and capability metrics should
+retain the conditions that make their numbers comparable.</p>
+<svg viewBox="0 0 1040 470" role="img" aria-label="Durable control state enterprise AI architecture" style="width:100%;height:auto;background:#0c1c2a;border:1px solid #2a465b;border-radius:14px;margin:1rem 0">
+  <defs><marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#46dbc6"/></marker></defs>
+  <g fill="#10283a" stroke="#70adff" stroke-width="2"><rect x="50" y="35" width="270" height="92" rx="12"/><rect x="385" y="35" width="270" height="92" rx="12"/><rect x="720" y="35" width="270" height="92" rx="12"/><rect x="50" y="315" width="270" height="100" rx="12"/><rect x="385" y="315" width="270" height="100" rx="12"/><rect x="720" y="315" width="270" height="100" rx="12"/></g>
+  <g fill="#e9f2f8" font-family="system-ui" font-size="16" text-anchor="middle"><text x="185" y="68">Evidence &amp; policy</text><text x="185" y="95">sources · permissions · duties</text><text x="520" y="68">Durable control state</text><text x="520" y="95">conflicts · obligations · owners</text><text x="855" y="68">Agent execution</text><text x="855" y="95">reason · retrieve · propose</text><text x="185" y="350">Decision isolation</text><text x="185" y="377">typed fields · deterministic rules</text><text x="520" y="350">Evaluation &amp; telemetry</text><text x="520" y="377">direction · cost · calibration</text><text x="855" y="350">Completion authority</text><text x="855" y="377">fulfill · abstain · escalate</text></g>
+  <g stroke="#46dbc6" stroke-width="3" fill="none" marker-end="url(#arr)"><line x1="320" y1="81" x2="382" y2="81"/><line x1="655" y1="81" x2="717" y2="81"/><line x1="855" y1="127" x2="855" y2="312"/><line x1="720" y1="365" x2="658" y2="365"/><line x1="385" y1="365" x2="323" y2="365"/></g>
+  <path d="M185 127 C185 225 520 225 520 312" fill="none" stroke="#f4c96b" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#arr)"/><text x="520" y="224" fill="#f4c96b" text-anchor="middle" font-family="system-ui" font-size="14">control evidence survives until the effect is accepted or the task stops</text>
+</svg>
+
+<h1 id="enterprise-ai-architecture-implications">Enterprise AI
+Architecture Implications</h1>
+<p><strong>Independent Analysis.</strong> Over the next 12–24 months,
+the recommended options would turn safety and uncertainty into explicit
+platform state rather than prompt conventions:</p>
+<ul>
+<li><strong>Durable task-control service.</strong> Store obligations,
+conflicts, evidence IDs, owners, creation step, resolution evidence,
+expiry, and escalation target independently of the model context. A task
+cannot declare completion while policy-required items remain open.</li>
+<li><strong>Effect and authorization plane.</strong> Parse proposed
+actions into typed fields; resolve identity and resource context outside
+the model; apply deterministic policy wherever feasible; keep model
+judgments advisory; record allow, deny, abstain, and human override
+receipts.</li>
+<li><strong>Evaluation and observability layer.</strong> Report
+fail-open/fail-closed separately, preserve paired conflict/control
+tests, record model/harness/prompt versions, price false stops, validate
+judges, and calibrate on held-out internal traffic.</li>
+<li><strong>Evidence and knowledge plane.</strong> Preserve source
+provenance and contradiction relationships through retrieval, reasoning,
+and final response. Conflict resolution should cite the evidence that
+closed it; unresolved conflict should remain user-visible.</li>
+<li><strong>Human-review controls.</strong> Route unresolved high-impact
+obligations and conflicts to named reviewers with bounded context,
+reversible actions, and audit trails. Reviewer capacity and response
+latency become explicit architectural constraints.</li>
+<li><strong>Measurement registry.</strong> Treat every capability metric
+as a versioned contract: task population, annotation meaning, family
+structure, scoring rule, confidence interval, range where the anchor is
+predictive, and known comparability breaks.</li>
+</ul>
+<p>Shared foundations are model gateways; identity and authorization;
+policy enforcement; typed action schemas; immutable source/effect
+provenance; context and memory services; agent orchestration; evaluation
+infrastructure; observability; cost telemetry; experiment registries;
+human-review queues; and reversible feature flags. No particular
+enterprise stack is assumed. Implementation decisions require internal
+task criticality, policy ownership, identity model, action taxonomy,
+acceptable fail-open/fail-closed costs, reviewer capacity, data
+retention rules, model/version inventory, latency budgets, and
+historical trajectory availability.</p>
+<h1 id="enterprise-ai-enhancement-backlog">Enterprise AI Enhancement
+Backlog</h1>
+<h2 id="priority-method-and-uncertainty">Priority method and
+uncertainty</h2>
+<p>The Future Enterprise AI Priority Score is a decision aid, not a
+calibrated forecast. Components use 0–100 scales and the required
+weights: strategic/business value 25%, technical leverage 20%, evidence
+strength 20%, enterprise readiness 15%, feasibility 10%, and
+risk-adjusted differentiation 10%. Displayed decimals are arithmetic,
+not empirical precision. Missing internal context can move rankings by
+more than the visible differences.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Rank</th>
+<th>Enhancement</th>
+<th>Decision band</th>
+<th style="text-align: right;">Strategic</th>
+<th style="text-align: right;">Technical</th>
+<th style="text-align: right;">Evidence</th>
+<th style="text-align: right;">Readiness</th>
+<th style="text-align: right;">Feasibility</th>
+<th style="text-align: right;">Differentiation</th>
+<th style="text-align: right;">Weighted</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td>Obligation completion and termination gate</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">97</td>
+<td style="text-align: right;">96</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">81</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;"><strong>92.4</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td>Uncertainty-conflict state ledger</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;"><strong>89.2</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td>Capability measurement contract and diagnostics</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;">83</td>
+<td style="text-align: right;"><strong>87.6</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td>Conflict-aware escalation and abstention path</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;">72</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;"><strong>84.8</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td>Asymmetric guardrail qualification and decision isolation</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">89</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">83</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;"><strong>84.4</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td>Measurement provenance and version registry</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">87</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">72</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;"><strong>83.3</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td>Option-channel and caller-input fuzzing</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">65</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;"><strong>79.2</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td>Streaming trajectory anomaly shadow monitor</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">58</td>
+<td style="text-align: right;">67</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;"><strong>77.2</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9</td>
+<td>Typed model as final authorization gate</td>
+<td>Deprioritize for Now</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;"><strong>48.5</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="prototype-soon">Prototype Soon</h2>
+<h3 id="1-obligation-completion-and-termination-gate--924">1. Obligation
+completion and termination gate — 92.4</h3>
+<ul>
+<li><strong>Category:</strong> Safety &amp; Governance / Agentic AI /
+Evaluation &amp; Observability.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> ObligationBench's 240 expert-validated trajectories and
+SusVibes termination intervention. <strong>Paper Fact</strong>; platform
+design is <strong>Enterprise Inference</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong> Agents
+can complete functional work while leaving cleanup, verification,
+consent, revocation, data-handling, or rollback obligations open.</li>
+<li><strong>Proposed future capability and how it works:</strong> At
+task creation and after risk-bearing actions, policy generates explicit
+obligation objects. Each has owner, evidence, deadline, scope, and
+acceptable closure proof. At attempted termination, a shadow guard
+compares task plus trajectory against open obligations and routes
+unresolved items to the agent or a reviewer.</li>
+<li><strong>Likely architectural placement:</strong> orchestration,
+agent layer, security/governance, evaluation, human-review layer.</li>
+<li><strong>Expected business value:</strong> reliability, quality, risk
+reduction, customer trust, auditability.</li>
+<li><strong>Technical value:</strong> Adds omission safety and
+set-completeness measurement to action filters.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+benchmark/artifact; one-domain intervention; safe shadow experiment. No
+basis for autonomous approval.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>High</strong> / <strong>Now</strong> / <strong>M</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Authoritative
+policy owners, task/effect schema, immutable trajectory, obligation
+taxonomy, human annotation guide, effect receipts, reviewer
+escalation.</li>
+<li><strong>Key risks:</strong> Over-generation blocks completion;
+under-generation creates false assurance; sensitive traces; disputed
+policy semantics; reviewer load; model/version drift.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build</strong> the
+organization-specific obligation schema and termination integration;
+reuse research benchmark patterns; consider external red-team
+partnership.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Forty
+sandbox workflows, balanced safe/unsafe completions, two independent
+reviewers, gate output hidden from the executor.</li>
+<li><strong>Success metrics and stop conditions:</strong> Obligation
+recall, exact-set match, false-block rate, reviewer agreement, added
+latency, percentage of repaired correct-unsafe outcomes. Stop if recall
+&lt;70%, false blocks &gt;10%, κ&lt;.7, or no repaired outcomes.</li>
+<li><strong>Roadmap trigger:</strong> ≥80% recall on high-severity
+obligations, ≤5% false termination blocks, reproducible gains across two
+task families and two models, and named policy ownership.</li>
+</ul>
+<h3 id="2-uncertainty-conflict-state-ledger--892">2.
+Uncertainty-conflict state ledger — 89.2</h3>
+<ul>
+<li><strong>Category:</strong> Memory &amp; Context / RAG &amp;
+Knowledge / Safety &amp; Governance.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> Epistemic Humility's Identify/Solve/Escalate
+trajectories and early-conflict timing. <strong>Paper Fact</strong>;
+ledger is <strong>Enterprise Inference</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong>
+Evidence contradictions and knowledge gaps are noticed transiently, then
+overwritten by later reasoning or hidden from the final answer.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+Retrieval and reasoning can open a typed conflict object linking claims,
+sources, parametric belief, confidence, and resolver. The orchestrator
+keeps it outside the prompt, reinjects a compact view, and requires
+closure evidence or explicit escalation before finalization.</li>
+<li><strong>Likely architectural placement:</strong> context/memory
+service, retrieval/knowledge, orchestration, applications, human-review
+layer.</li>
+<li><strong>Expected business value:</strong> quality, reliability, risk
+reduction, customer experience, auditability.</li>
+<li><strong>Technical value:</strong> Makes uncertainty durable across
+context compression, model swaps, and long workflows.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+measurement paper, peer-reviewed status; promised artifact absent; no
+causal ledger experiment yet.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>Moderate</strong> / <strong>Now</strong> /
+<strong>M</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Claim/source IDs,
+provenance graph, conflict detector, lifecycle states, final-answer
+renderer, privacy controls, reviewer policy.</li>
+<li><strong>Key risks:</strong> Generic hedging, conflict explosion,
+poisoned evidence, stale state, disclosure of sensitive sources,
+accuracy/latency tradeoff.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build</strong> the
+ledger and lifecycle close to enterprise knowledge systems; buy
+extraction components only if provenance and export are complete.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Thirty
+paired conflict/control research tasks; ledger enabled only in shadow;
+blinded review of conflict preservation and user-visible
+disclosure.</li>
+<li><strong>Success metrics and stop conditions:</strong> Conflict
+recall/precision, closure evidence quality, final unresolved-disclosure
+rate, accuracy, tool calls, latency. Stop if accuracy drops &gt;5
+points, false conflict rate &gt;10%, or disclosure exposes restricted
+data.</li>
+<li><strong>Roadmap trigger:</strong> Higher correct resolution or
+appropriate abstention without material task loss across two knowledge
+domains and a validated redaction policy.</li>
+</ul>
+<h3 id="3-capability-measurement-contract-and-diagnostics--876">3.
+Capability measurement contract and diagnostics — 87.6</h3>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability / MLOps
+&amp; Platform.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> Time-horizon paper's 228-task, 79-family, 26-AI
+reanalysis with held-out proper scoring rules and nonlinear
+time-to-difficulty conversion. <strong>Paper Fact</strong>; enterprise
+registry is <strong>Enterprise Inference</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong>
+Leaders may interpret intuitive benchmark anchors—minutes, ticket size,
+complexity—as linearly comparable when they are locally
+uninformative.</li>
+<li><strong>Proposed future capability and how it works:</strong> Every
+headline capability measure ships with a versioned population,
+annotation meaning, family grouping, held-out score, uncertainty,
+conversion-to-difficulty plot, and valid comparison range. Dashboards
+suppress ratios outside validated ranges.</li>
+<li><strong>Likely architectural placement:</strong> evaluation,
+observability, developer platform, governance.</li>
+<li><strong>Expected business value:</strong> strategic differentiation,
+investment quality, risk reduction, cost control.</li>
+<li><strong>Technical value:</strong> Separates score estimation from
+construct validity and exposes nonlinear comparability.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Statistically mature methods; no packaged artifact verified; internal
+application is low-risk.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>High</strong> / <strong>Now</strong> / <strong>S</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Task-family
+metadata, repeated outcomes, stable annotations, statistical review,
+benchmark versioning, held-out data.</li>
+<li><strong>Key risks:</strong> False sophistication, unstable spline
+regions, sparse long tasks, governance misuse, benchmark
+overfitting.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build</strong> the
+measurement contract; partner with statisticians for design review; buy
+dashboards only if raw predictions remain exportable.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Refit one
+existing internal benchmark with family-fold cross-validation and
+monotone conversion diagnostics; compare decisions with the current
+headline score.</li>
+<li><strong>Success metrics and stop conditions:</strong> Held-out
+log/Brier score, calibration, annotation predictiveness,
+ratio-comparability bands, decision reversals. Stop if data are too
+sparse for stable family-level validation.</li>
+<li><strong>Roadmap trigger:</strong> A material roadmap or vendor
+choice changes under a better-held-out model and stakeholders accept
+versioned validity limits.</li>
+</ul>
+<h2 id="prepare-foundations">Prepare Foundations</h2>
+<h3 id="4-conflict-aware-escalation-and-abstention-path--848">4.
+Conflict-aware escalation and abstention path — 84.8</h3>
+<ul>
+<li><strong>Category:</strong> Human-AI Workflow / Safety &amp;
+Governance.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> Prompting raises Escalate but often lowers accuracy in
+the Epistemic Humility study. <strong>Paper Fact</strong>; first-class
+escalation is <strong>Enterprise Inference</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong> Agents
+face unresolved conflicts but are rewarded for committing; users cannot
+distinguish a confident answer from a forced guess.</li>
+<li><strong>Proposed future capability and how it works:</strong> Add
+explicit resolve, abstain, request-evidence, and escalate actions with
+impact-based routing, bounded tool budgets, redacted evidence packets,
+and reviewer SLAs.</li>
+<li><strong>Likely architectural placement:</strong> applications, agent
+layer, orchestration, human-review layer.</li>
+<li><strong>Expected business value:</strong> risk reduction, quality,
+customer trust, operational reliability.</li>
+<li><strong>Technical value:</strong> Prevents uncertainty from being
+represented only as prose and enables measurable handoffs.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Behavioral evidence strong; accuracy tradeoff and reviewer economics
+unresolved.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>Moderate</strong> / <strong>3–6 months</strong> /
+<strong>M</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Conflict ledger,
+severity policy, reviewer identity/authorization, redaction, queue
+metrics, feedback loop.</li>
+<li><strong>Key risks:</strong> Over-escalation, queue saturation,
+automation bias, inconsistent reviewers, sensitive evidence
+disclosure.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build</strong>
+workflow and policy; buy ticketing/queue primitives; partner with domain
+reviewers.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Route
+only high-impact unresolved shadow conflicts from 50 sandbox tasks to a
+two-person review queue.</li>
+<li><strong>Success metrics and stop conditions:</strong> Appropriate
+escalation precision, resolution time, reviewer agreement, avoided
+confident errors, queue volume. Stop if &gt;15% of tasks escalate
+without quality gain or SLA breaches exceed 10%.</li>
+<li><strong>Roadmap trigger:</strong> Reviewers resolve ≥70% of
+escalations within SLA and corrected outcomes exceed workflow cost.</li>
+</ul>
+<h3
+id="5-asymmetric-guardrail-qualification-and-decision-isolation--844">5.
+Asymmetric guardrail qualification and decision isolation — 84.4</h3>
+<ul>
+<li><strong>Category:</strong> AI Security / Evaluation &amp;
+Observability.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> Option-Channel Attack's fail-open/fail-closed
+evaluation, matched refusal-cost comparison, and deterministic-policy
+result. <strong>Paper Fact</strong>; enterprise harness is
+<strong>Enterprise Inference</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong>
+Aggregate accuracy can reward a gate that allows prohibited actions or
+blocks nearly everything; model inputs may include caller-controlled
+labels.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+Offline replay reports both error directions, fuzzes labels and
+attacker-controlled text, canonicalizes schemas, compares thresholds at
+matched legitimate-block cost, and isolates final authorization in
+deterministic policy or human approval.</li>
+<li><strong>Likely architectural placement:</strong> model gateway,
+security/governance, evaluation, orchestration.</li>
+<li><strong>Expected business value:</strong> risk reduction,
+reliability, compliance, customer trust.</li>
+<li><strong>Technical value:</strong> Aligns evaluation with security
+consequences and removes model self-authorization.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+artifact and adversarial methodology; internal policy distributions
+untested.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>High</strong> / <strong>3–6 months</strong> /
+<strong>M</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Logged
+proposals/outcomes, typed action schema, ground-truth policy labels,
+red-team corpus, deterministic rule engine, identity context.</li>
+<li><strong>Key risks:</strong> Replay mismatch, adversarial blind
+spots, false-block cost, policy gaps, benchmark leakage.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build</strong> the
+qualification contract and final policy boundary; buy model triage only
+behind that boundary; partner for independent red-team attacks.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Replay
+500 proposals with no live effects, balanced by severity, and run
+option-label/suffix/field attacks.</li>
+<li><strong>Success metrics and stop conditions:</strong> High-severity
+fail-open, fail-closed, attack success on clean-correct blocks,
+cost/latency, deterministic-policy coverage. Stop if any critical class
+fails open above approved tolerance.</li>
+<li><strong>Roadmap trigger:</strong> Deterministic policy covers all
+high-impact actions; model only reduces review load; independent attack
+testing meets explicit thresholds.</li>
+</ul>
+<h3 id="6-measurement-provenance-and-version-registry--833">6.
+Measurement provenance and version registry — 83.3</h3>
+<ul>
+<li><strong>Category:</strong> Data &amp; Knowledge Infrastructure /
+MLOps &amp; Platform / Safety &amp; Governance.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> All five reviewed papers show strong dependence on
+benchmark construction, model/harness pair, thresholds, annotations, and
+artifact state. <strong>Independent Analysis</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong> Scores
+outlive the data, prompts, policies, thresholds, or models that made
+them valid.</li>
+<li><strong>Proposed future capability and how it works:</strong> Store
+each metric with dataset hash, task population, split seed,
+model/harness/prompt versions, judge, error direction, calibration
+range, confidence interval, artifact license, owner, and expiry.</li>
+<li><strong>Likely architectural placement:</strong> evaluation,
+observability, data platform, developer platform, governance.</li>
+<li><strong>Expected business value:</strong> reliability, auditability,
+risk reduction, speed of requalification.</li>
+<li><strong>Technical value:</strong> Makes score lineage executable and
+prevents silent comparison across incompatible evaluations.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Widely
+implementable; value depends on governance adoption.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>High</strong> / <strong>3–6 months</strong> /
+<strong>M</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Experiment IDs,
+artifact store, version capture, schemas, retention, ownership
+policy.</li>
+<li><strong>Key risks:</strong> Metadata burden, false completeness,
+retention cost, sensitive logs, stale ownership.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build</strong>
+schema and enforcement; integrate with existing experiment/observability
+systems; buy storage if exportable.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Backfill
+20 recent evaluations and attempt exact reconstruction by an uninvolved
+engineer.</li>
+<li><strong>Success metrics and stop conditions:</strong> Reconstruction
+rate, missing-field rate, time to requalify, expired-score usage. Stop
+if capture adds &gt;5% workflow time without automated reuse.</li>
+<li><strong>Roadmap trigger:</strong> ≥90% reconstruction success and at
+least one prevented invalid comparison in a decision review.</li>
+</ul>
+<h2 id="monitor-for-maturity">Monitor for Maturity</h2>
+<h3 id="7-option-channel-and-caller-input-fuzzing--792">7.
+Option-channel and caller-input fuzzing — 79.2</h3>
+<ul>
+<li><strong>Category:</strong> AI Security / AI Software
+Engineering.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> 198-label sweeps, benign suffix attacks, cross-model
+transfer, and adaptive defense attacks in <em>One Word Opens the
+Gate</em>. <strong>Paper Fact</strong>; generalized CI service is
+<strong>Enterprise Inference</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong>
+Labels, field annotations, tool output, and schema text that seem
+non-semantic can steer decision models.</li>
+<li><strong>Proposed future capability and how it works:</strong> CI
+discovers every string crossing into a decision model, mutates option
+labels, ordering, definitions, benign logs, Unicode, structured fields,
+and attacker spans, and reports directional regressions.</li>
+<li><strong>Likely architectural placement:</strong> developer platform,
+model gateway, security/governance, evaluation.</li>
+<li><strong>Expected business value:</strong> risk reduction, quality,
+faster security regression detection.</li>
+<li><strong>Technical value:</strong> Treats interface construction as
+an attack surface, not only prompt content.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+for typed open-weight models; generality to other APIs and production
+policies is uncertain.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>Moderate</strong> / <strong>6–12 months</strong> /
+<strong>M</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Interface
+inventory, attack corpora, policy ground truth, reproducible model
+versions, secrets-safe test environment.</li>
+<li><strong>Key risks:</strong> Combinatorial tests, model
+nondeterminism, false assurance, vendor updates, sensitive
+fixtures.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build</strong> CI
+adapters; partner for periodic adversarial review; do not rely on vendor
+claims alone.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Add
+option-label and suffix mutations to one non-production guardrail test
+suite.</li>
+<li><strong>Success metrics and stop conditions:</strong> Attack
+coverage, reproducibility, critical fail-open regressions, runtime. Stop
+if production-equivalent inference cannot be version-pinned.</li>
+<li><strong>Roadmap trigger:</strong> Repeatedly catches interface
+vulnerabilities missed by standard evals and stays within CI cost
+budget.</li>
+</ul>
+<h3 id="8-streaming-trajectory-anomaly-shadow-monitor--772">8. Streaming
+trajectory anomaly shadow monitor — 77.2</h3>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability / Agentic
+AI / MLOps &amp; Platform.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> OnTrack's 2,294-trajectory replay, step-8 AUROC delta,
+flag-density abort study, and explicit negative results. <strong>Paper
+Fact</strong>; enterprise deployment is <strong>Enterprise
+Inference</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong>
+Long-running agents burn cost in loops, stalls, causal inversions, and
+repeated calls before post-hoc evaluation notices.</li>
+<li><strong>Proposed future capability and how it works:</strong> Build
+a live dependency graph, compare to approved reference patterns, emit
+interpretable advisory flags, and recommend replan/escalate actions
+without terminating the run.</li>
+<li><strong>Likely architectural placement:</strong> observability,
+orchestration, agent layer, infrastructure.</li>
+<li><strong>Expected business value:</strong> cost, speed, reliability,
+operator visibility.</li>
+<li><strong>Technical value:</strong> Adds structural online signals
+without an LLM call on every step.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Promising but calibration-, reference-, encoder-, and
+workflow-dependent; false stops too high for default automation.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>Moderate</strong> / <strong>6–12 months</strong> /
+<strong>L</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Stable event
+schema, dependency IDs, reference traces, held-out calibration, baseline
+policies, effect/cost telemetry.</li>
+<li><strong>Key risks:</strong> False stops, length confounds, missed
+semantic errors, reference drift, privacy, calibration changes.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Partner</strong> for
+method exploration; <strong>build</strong> domain-specific event
+extraction and utility model.</li>
+<li><strong>Minimum reversible validation experiment:</strong>
+Advisory-only replay plus 100 live sandbox runs; compare flags with step
+and budget baselines.</li>
+<li><strong>Success metrics and stop conditions:</strong> Early
+loop/stall recall, false alerts, cost saved in simulation, lead time,
+operator usefulness. Stop if it does not beat a step/budget baseline at
+matched false-alert cost.</li>
+<li><strong>Roadmap trigger:</strong> Stable calibration across two
+periods, &lt;5% harmful false interventions in simulation, and positive
+expected utility with rollback.</li>
+</ul>
+<h2 id="deprioritize-for-now">Deprioritize for Now</h2>
+<h3 id="9-typed-model-as-final-authorization-gate--485">9. Typed model
+as final authorization gate — 48.5</h3>
+<ul>
+<li><strong>Category:</strong> AI Security / Safety &amp;
+Governance.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> Every studied typed-model defense is defeated;
+deterministic policy over parsed GuardBench fields reaches 100% while
+models remain vulnerable. <strong>Paper Fact</strong> for studied
+systems; broader vendors are <strong>Uncertainty</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong> The
+apparent opportunity is low-latency semantic authorization without a
+rule engine or reviewer.</li>
+<li><strong>Proposed future capability and how it works:</strong> A
+typed model would directly allow or block high-impact agent effects.
+<strong>Recommendation: do not build this as the final
+authority.</strong> Restrict any model to triage, explanation, or
+reviewer prioritization behind deterministic and human controls.</li>
+<li><strong>Likely architectural placement:</strong> model gateway,
+security/governance.</li>
+<li><strong>Expected business value:</strong> possible speed and
+review-cost reduction, outweighed by fail-open risk.</li>
+<li><strong>Technical value:</strong> Flexible semantics, but no
+verified security boundary.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Evidence against the studied architecture is strong; production
+readiness is low.</li>
+<li><strong>Confidence / horizon / effort:</strong> <strong>High
+confidence to defer</strong> / <strong>12+ months</strong> /
+<strong>L</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Formal policy,
+independent enforcement, adversarial testing, fallback reviewer, effect
+ledger, incident response.</li>
+<li><strong>Key risks:</strong> Fail-open authorization, option/text
+injection, confidence miscalibration, vendor drift, audit failure.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Neither</strong> for
+final authorization; build deterministic policy and human review. Buy
+only advisory classification with exportable evidence.</li>
+<li><strong>Minimum reversible validation experiment:</strong> If
+reconsidered, an offline red-team bakeoff against deterministic rules
+with zero live effects.</li>
+<li><strong>Success metrics and stop conditions:</strong> Zero critical
+fail-open across independent adaptive attacks, bounded fail-closed,
+version stability. Stop on any unmitigated critical fail-open.</li>
+<li><strong>Roadmap trigger:</strong> Only independent replicated
+evidence across production-equivalent policies and vendors, plus formal
+containment, could reopen consideration.</li>
+</ul>
+<h1 id="implementation-priorities">Implementation priorities</h1>
+<ol type="1">
+<li><strong>Now:</strong> instrument immutable task, source, tool,
+action, effect, model, and policy IDs. Without these, obligations and
+conflicts cannot be traced or closed.</li>
+<li><strong>Next 30 days:</strong> create one internal paired
+conflict/control set, one obligation-labeled termination set, and one
+asymmetric guardrail replay set. Keep all interventions
+shadow-only.</li>
+<li><strong>30–90 days:</strong> build conflict and obligation objects,
+reviewer workflows, typed action schemas, and deterministic policy
+coverage for high-impact effects.</li>
+<li><strong>After evidence gates:</strong> test advisory streaming
+monitoring and caller-input fuzzing. Promote only when each has held-out
+calibration, cost, privacy, false-positive, and rollback evidence.</li>
+</ol>
+<h1 id="knowledge-reinforcement">Knowledge reinforcement</h1>
+<ul>
+<li><strong>Recall:</strong> A forbidden-action detector asks, “Did the
+agent do something disallowed?” An obligation detector asks, “What
+safety-critical action is still required before the agent may
+stop?”</li>
+<li><strong>Transfer:</strong> When a retrieved document contradicts
+model memory, the system should open a conflict object, gather bounded
+evidence, and either close the conflict with provenance or expose it in
+the final answer.</li>
+<li><strong>Security check:</strong> For any guardrail, ask separately:
+“How often does it allow a prohibited effect?” and “How often does it
+block a permitted effect?” Accuracy alone is insufficient.</li>
+<li><strong>Interface check:</strong> If an option label, schema field,
+tool output, or retrieved string is caller-controlled and enters the
+security model, treat it as an attack channel.</li>
+<li><strong>Measurement check:</strong> Before comparing a 10× increase
+in an intuitive benchmark anchor, verify that equal changes correspond
+to comparable latent difficulty across that range.</li>
+<li><strong>Operational check:</strong> An online monitor's threshold
+must be fixed on separate calibration traffic and compared with simpler
+step/budget baselines before it can influence execution.</li>
+</ul>
+<h1 id="source-ledger-and-publication-caveats">Source ledger and
+publication caveats</h1>
+<p>Primary evidence was the five full papers, their arXiv records, and
+the three linked repositories inspected above. Quantitative claims were
+traced to paper tables, figures, methods, appendices, or first-party
+repository documentation. Repository state is time-sensitive:
+ObligationGuard had no visible license; the Epistemic Humility
+repository contained only a license; the Option-Channel repository
+contained code and cached runs. No claim of independent numerical
+reproduction is made. No selected paper is treated as production
+approval. Internal enterprise context is required before any roadmap
+commitment.</p></main></div>
+<footer>AI Research Intelligence Brief · October 9, 2026 · Research options, not deployment approval.</footer>
+<div class="toolbar"><button onclick="window.print()" aria-label="Print report">Print</button><button id="top" aria-label="Back to top">↑ Top</button></div>
+<script>
+const p=document.getElementById('progress');addEventListener('scroll',()=>{const h=document.documentElement;p.style.width=((h.scrollTop/(h.scrollHeight-h.clientHeight))*100)+'%'});document.getElementById('top').onclick=()=>scrollTo({top:0,behavior:'smooth'});
+document.querySelectorAll('main h3').forEach(h=>{if(/^\d+\./.test(h.textContent))h.setAttribute('data-backlog','true')});
+</script>
+</body></html>
