@@ -1,0 +1,1512 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Evidence-grounded AI Research Intelligence Brief for October 10, 2026: rule and source dependence, held-out evaluation, champion retention, and reversible learning.">
+<meta name="report-date" content="2026-10-10">
+<meta name="research-window" content="2026-10-07T04:00:00-05:00/2026-10-10T04:00:00-05:00 America/Chicago; exact window 2026-10-09T04:00:00-05:00/2026-10-10T04:00:00-05:00">
+<meta name="deep-paper-count" content="3">
+<meta name="watchlist-count" content="2">
+<meta name="theme-color" content="#071321">
+<title>AI Research Intelligence Brief — October 10, 2026</title>
+<style>
+:root{--bg:#06111d;--panel:#0c1c2a;--panel2:#10283a;--text:#e9f2f8;--muted:#9fb6c6;--line:#2a465b;--cyan:#46dbc6;--gold:#f4c96b;--rose:#ff8f9b;--blue:#70adff;--max:1180px;color-scheme:dark}
+@media(prefers-color-scheme:light){:root{--bg:#f4f7f8;--panel:#fff;--panel2:#edf4f7;--text:#102131;--muted:#526979;--line:#cddbe2;--cyan:#087f73;--gold:#9b6300;--rose:#b92b45;--blue:#1661ad;color-scheme:light}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 90% 0,rgba(70,219,198,.12),transparent 30rem),var(--bg);color:var(--text);font:16px/1.67 ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;overflow-x:hidden}a{color:var(--cyan);text-underline-offset:3px;overflow-wrap:anywhere}a:hover{text-decoration-thickness:2px}header{border-bottom:1px solid var(--line);background:linear-gradient(135deg,rgba(70,219,198,.09),rgba(112,173,255,.05));padding:54px 22px 34px}.hero{max-width:var(--max);margin:auto}.eyebrow{color:var(--cyan);text-transform:uppercase;letter-spacing:.15em;font-size:.76rem;font-weight:800}h1{font-size:clamp(2.2rem,6vw,4.7rem);line-height:.98;max-width:1000px;margin:.35rem 0 1rem;letter-spacing:-.055em}header p{max-width:900px;color:var(--muted);font-size:1.09rem}.chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}.chip{border:1px solid var(--line);border-radius:999px;padding:6px 11px;background:var(--panel);font-size:.8rem}.topbets{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}.bet{border:1px solid var(--line);background:var(--panel);border-radius:14px;padding:15px}.bet b{display:block;color:var(--gold);font-size:1.15rem}.layout{max-width:var(--max);margin:auto;display:grid;grid-template-columns:250px minmax(0,1fr);gap:34px;padding:30px 22px 80px}nav{position:sticky;top:16px;align-self:start;max-height:calc(100vh - 32px);overflow:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:14px}nav strong{display:block;margin:2px 8px 10px;color:var(--gold)}nav ul{list-style:none;margin:0;padding:0}nav li{margin:0}nav a{display:block;color:var(--muted);text-decoration:none;padding:5px 8px;border-radius:7px;font-size:.83rem;line-height:1.25}nav a:hover{background:var(--panel2);color:var(--text)}main{min-width:0;overflow-x:hidden}main>h1{font-size:1.8rem;margin:2.6rem 0 1rem;padding-top:.7rem;border-top:1px solid var(--line);letter-spacing:-.02em}main>h1:first-child{margin-top:0}main h2{font-size:1.35rem;margin-top:2rem;color:var(--cyan)}main h3{font-size:1.08rem;color:var(--gold);margin-bottom:.45rem}p,li{max-width:88ch}blockquote{margin:1rem 0;padding:1rem 1.2rem;border-left:4px solid var(--gold);background:var(--panel);color:var(--muted)}pre{white-space:pre-wrap;overflow:auto;background:#07101a;border:1px solid var(--line);border-radius:14px;padding:18px;color:#dcecf2;font-size:.86rem;line-height:1.45}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}table{display:block;width:100%;max-width:100%;overflow-x:auto;border-collapse:collapse;margin:1.25rem 0;background:var(--panel);font-size:.86rem}th,td{padding:10px 12px;border:1px solid var(--line);text-align:left;vertical-align:top}th{color:var(--gold);background:var(--panel2)}hr{border:0;border-top:1px solid var(--line)}main h3+ul,main h2+ul{border:1px solid var(--line);background:linear-gradient(135deg,var(--panel),var(--panel2));border-radius:14px;padding:15px 22px 15px 34px}main h3+ul li,main h2+ul li{margin:.5rem 0}.progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--cyan),var(--gold));width:0;z-index:9}.toolbar{position:fixed;right:18px;bottom:18px;display:flex;gap:8px}.toolbar button{border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:999px;padding:9px 12px;cursor:pointer;box-shadow:0 8px 30px rgba(0,0,0,.2)}.label{font-size:.75rem;color:var(--muted)}footer{border-top:1px solid var(--line);padding:24px;text-align:center;color:var(--muted)}
+@media(max-width:850px){.topbets{grid-template-columns:1fr}.layout{grid-template-columns:1fr}nav{position:relative;top:0;max-height:none}nav ul{columns:2}h1{font-size:2.65rem}}
+@media(max-width:520px){header{padding-top:34px}.layout{padding:20px 14px 60px}nav ul{columns:1}table{display:block;overflow-x:auto}h1{font-size:2.25rem}}
+@media print{body{background:white;color:#111;font-size:11pt}header{padding:18px 0}.layout{display:block;padding:0}nav,.toolbar,.progress{display:none}a{color:#145c70}main>h1{break-before:page}main>h1:first-child{break-before:auto}table,pre,svg{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<header><div class="hero">
+<div class="eyebrow">AI Research Intelligence · Dependency before confidence</div>
+<h1>Trace the dependency, not just the answer.</h1>
+<p>October 10, 2026 briefing. Three deep papers show why a correct verdict must react to its governing rule, a cited conclusion must react to its authority, and a learned policy must retain externally verified gains.</p>
+<div class="chips"><span class="chip">3 deep papers</span><span class="chip">2 Watchlist</span><span class="chip">72-hour disclosed weekend window</span><span class="chip">9 enterprise options</span><span class="chip">Primary sources + full-paper review</span></div>
+<div class="topbets"><div class="bet"><span class="label">TOP BET 1 · PROTOTYPE SOON</span><b>93.0 · Rule-dependence gate</b><span>Qualify whether decisions change when their governing rule changes.</span></div><div class="bet"><span class="label">TOP BET 2 · PROTOTYPE SOON</span><b>91.1 · Evidence-dependence audit</b><span>Detect citations that decorate rather than causally support a conclusion.</span></div><div class="bet"><span class="label">TOP BET 3 · PROTOTYPE SOON</span><b>89.5 · Champion-retaining sandbox</b><span>Keep policy revisions provisional until held-out evaluation confirms improvement.</span></div></div>
+</div></header>
+<div class="layout"><nav><strong>Navigate</strong><ul>
+<li><a href="#scope-window-and-evidence-policy"
+id="toc-scope-window-and-evidence-policy">Scope, window, and evidence
+policy</a></li>
+<li><a href="#executive-signal" id="toc-executive-signal">Executive
+signal</a></li>
+<li><a href="#top-3-future-bets" id="toc-top-3-future-bets">Top 3 Future
+Bets</a></li>
+<li><a
+href="#deep-paper-1--high-accuracy-can-coexist-with-rule-independence"
+id="toc-deep-paper-1--high-accuracy-can-coexist-with-rule-independence">Deep
+paper 1 — High accuracy can coexist with rule independence</a>
+<ul>
+<li><a href="#contribution-and-quantitative-claim-trace"
+id="toc-contribution-and-quantitative-claim-trace">Contribution and
+quantitative claim trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison"
+id="toc-methodological-critique-and-prior-work-comparison">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#reproducibility-and-enterprise-readiness"
+id="toc-reproducibility-and-enterprise-readiness">Reproducibility and
+enterprise readiness</a></li>
+</ul></li>
+<li><a
+href="#deep-paper-2--citation-presence-is-not-citation-dependence"
+id="toc-deep-paper-2--citation-presence-is-not-citation-dependence">Deep
+paper 2 — Citation presence is not citation dependence</a>
+<ul>
+<li><a href="#contribution-and-quantitative-claim-trace-1"
+id="toc-contribution-and-quantitative-claim-trace-1">Contribution and
+quantitative claim trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison-1"
+id="toc-methodological-critique-and-prior-work-comparison-1">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#reproducibility-and-enterprise-readiness-1"
+id="toc-reproducibility-and-enterprise-readiness-1">Reproducibility and
+enterprise readiness</a></li>
+</ul></li>
+<li><a
+href="#deep-paper-3--long-running-learning-needs-a-retained-champion-and-an-external-ladder"
+id="toc-deep-paper-3--long-running-learning-needs-a-retained-champion-and-an-external-ladder">Deep
+paper 3 — Long-running learning needs a retained champion and an
+external ladder</a>
+<ul>
+<li><a href="#contribution-and-quantitative-claim-trace-2"
+id="toc-contribution-and-quantitative-claim-trace-2">Contribution and
+quantitative claim trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison-2"
+id="toc-methodological-critique-and-prior-work-comparison-2">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#reproducibility-and-enterprise-readiness-2"
+id="toc-reproducibility-and-enterprise-readiness-2">Reproducibility and
+enterprise readiness</a></li>
+</ul></li>
+<li><a href="#watchlist" id="toc-watchlist">Watchlist</a>
+<ul>
+<li><a
+href="#recursive-self-improvement-through-multi-agent-self-supervision"
+id="toc-recursive-self-improvement-through-multi-agent-self-supervision">Recursive
+Self-Improvement through Multi-Agent Self-Supervision</a></li>
+<li><a
+href="#memento-3-model-based-recursive-self-improvement-through-reflective-rulebooks"
+id="toc-memento-3-model-based-recursive-self-improvement-through-reflective-rulebooks">Memento
+3: Model-Based Recursive Self-Improvement through Reflective
+Rulebooks</a></li>
+</ul></li>
+<li><a href="#cross-paper-synthesis"
+id="toc-cross-paper-synthesis">Cross-paper synthesis</a></li>
+<li><a href="#enterprise-ai-architecture-implications"
+id="toc-enterprise-ai-architecture-implications">Enterprise AI
+Architecture Implications</a></li>
+<li><a href="#enterprise-ai-enhancement-backlog"
+id="toc-enterprise-ai-enhancement-backlog">Enterprise AI Enhancement
+Backlog</a>
+<ul>
+<li><a href="#priority-method-and-uncertainty"
+id="toc-priority-method-and-uncertainty">Priority method and
+uncertainty</a></li>
+<li><a href="#prototype-soon" id="toc-prototype-soon">Prototype
+Soon</a></li>
+<li><a href="#prepare-foundations" id="toc-prepare-foundations">Prepare
+Foundations</a></li>
+<li><a href="#monitor-for-maturity"
+id="toc-monitor-for-maturity">Monitor for Maturity</a></li>
+<li><a href="#deprioritize-for-now"
+id="toc-deprioritize-for-now">Deprioritize for Now</a></li>
+</ul></li>
+<li><a href="#implementation-priorities"
+id="toc-implementation-priorities">Implementation priorities</a>
+<ul>
+<li><a href="#next-30-days" id="toc-next-30-days">Next 30 days</a></li>
+<li><a href="#next-90-days" id="toc-next-90-days">Next 90 days</a></li>
+<li><a href="#before-any-production-decision"
+id="toc-before-any-production-decision">Before any production
+decision</a></li>
+</ul></li>
+<li><a href="#knowledge-reinforcement"
+id="toc-knowledge-reinforcement">Knowledge reinforcement</a></li>
+<li><a href="#source-register-and-boundary"
+id="toc-source-register-and-boundary">Source register and
+boundary</a></li>
+</ul></nav><main><h1 id="scope-window-and-evidence-policy">Scope,
+window, and evidence policy</h1>
+<p><strong>Research window.</strong> The exact window was Friday,
+October 9, 2026 at 4:00 AM CDT through Saturday, October 10, 2026 at
+4:00 AM CDT (America/Chicago; 09:00 UTC to 09:00 UTC). No new Saturday
+arXiv announcement batch was available, so discovery expanded to the
+prior 72 hours and screened the complete Friday artificial-intelligence
+batch plus relevant cross-lists, primary papers, repositories, data
+releases, and license pages. All five selections were submitted October
+8, were announced Friday, and were absent from the 61-report archive
+through October 9.</p>
+<p><strong>Selection.</strong> The screen emphasized controlled
+counterfactuals, causal dependence on rules or evidence, long-running
+learning under fixed budgets, negative and null results, artifact
+availability, and reversible enterprise experiments. Three papers
+cleared deep review: <em>Verdict Without the Rule</em>, <em>Cited but
+Not Consulted</em>, and <em>Can AI Agents Learn Their Way to the
+Top?</em> <em>Recursive Self-Improvement through Multi-Agent
+Self-Supervision</em> and <em>Memento 3</em> enter the Watchlist because
+both show meaningful learning signals but remain too coupled to
+self-judgment, narrow tasks, or incomplete external validation for an
+implementation recommendation.</p>
+<p><strong>Anti-duplication.</strong> Yesterday's six
+identifiers—arXiv:2610.09469, 2610.11773, 2610.12292, 2610.12360,
+2610.12375, and 2610.12466—were excluded, as were all identifiers in the
+full archive. Earlier briefs covered evaluation contracts, executable
+claim ledgers, persistent task state, agent-harness qualification,
+rollback, and outcome verification. Today's incremental question is
+narrower: <em>does the decision actually depend on the rule, citation,
+evidence, or learned policy that the system claims to use?</em></p>
+<p><strong>Evidence labels.</strong> <strong>Paper Fact</strong> means
+directly reported in a reviewed paper or verified first-party artifact.
+<strong>Independent Analysis</strong> means this briefing's comparison,
+calculation, or critique. <strong>Enterprise Inference</strong>
+translates research into a bounded future option.
+<strong>Uncertainty</strong> marks missing causal, adversarial,
+external-validity, artifact, security, privacy, governance, economic, or
+production evidence. Benchmark performance never authorizes production
+deployment.</p>
+<h1 id="executive-signal">Executive signal</h1>
+<blockquote>
+<p><strong>Reliable enterprise AI must prove dependency, not merely
+produce a correct answer or a plausible explanation. A verdict should
+change when its governing rule changes; a cited conclusion should react
+when its authority changes; and a learned policy should retain verified
+gains on held-out evaluation with a recoverable champion.</strong></p>
+</blockquote>
+<p>The three deep papers support complementary parts of that rule:</p>
+<ol type="1">
+<li><strong>Verdict Without the Rule</strong> evaluates five open models
+across 20 compliance domains and 64,485 case-condition generations.
+Aggregate output-change sensitivity is only .013–.094 despite roughly
+90–92% baseline accuracy for the general models. Deleting the rule
+changes verdicts only 5.3% of the time in pooled results, while a
+rule-necessity control yields .73–1.00 sensitivity on cases constructed
+so the rule must determine the answer. Accuracy and rule dependence are
+therefore distinct.</li>
+<li><strong>Cited but Not Consulted</strong> requires seven open-weight
+models to name legal authority, then swaps that authority while holding
+the fact pattern fixed as closely as possible. Correct authority naming
+reaches 66.7–100%, but ECHR verdict-swap sensitivity is only 31.0–58.6%;
+CaseHOLD holdings change in 0–21.7% of detected citation cases. The
+paper also reports substantial uncertainty and several confounds, so its
+strongest contribution is the audit design—not a universal prevalence
+estimate.</li>
+<li><strong>AAArena</strong> evaluates seven model–harness
+configurations on 12 authentic adversarial games and 1,920 archived
+human programs. The strongest configuration earns six rank-1 finishes;
+no configuration tops the other six ladders. Tripling interaction budget
+on four hard games yields no new rank-1 result, while opponent
+selection, dense replay feedback, and retained-champion rollback matter.
+The public repository is substantial, but full-pool evaluation remains
+hosted and authenticated.</li>
+</ol>
+<p><strong>Decision posture.</strong> Prototype counterfactual
+rule/evidence audits and champion-retaining improvement loops in
+isolated shadow environments. Prepare shared decision-dependency,
+evaluator-separation, replay, and rollback foundations. Monitor
+recursive self-training and population world models. Do not use
+model-generated citations, explanations, or self-evaluation as
+authorization evidence without independent behavioral tests.</p>
+<h1 id="top-3-future-bets">Top 3 Future Bets</h1>
+<ol type="1">
+<li><strong>Rule-dependence qualification gate — 93.0/100.</strong> Why
+it matters: accuracy can remain high even when verdicts barely respond
+to the rule that supposedly governs them. Evidence that would change the
+recommendation: internal rule-necessity cases show high output-change
+sensitivity without harming accuracy, or low sensitivity is explained by
+demonstrably redundant evidence. Next reversible action: create 40
+paired internal cases with deletion, swap, negation, and rule-necessity
+controls; run the gate offline against current systems.</li>
+<li><strong>Evidence-dependence and citation counterfactual audit —
+91.1/100.</strong> Why it matters: a correct citation can decorate a
+conclusion that was reached independently of the cited authority.
+Evidence that would change the recommendation: source substitutions
+reliably produce semantically appropriate changes across models and
+domains, with low paraphrase instability and human-confirmed
+counterfactual validity. Next reversible action: swap one material
+source at a time in 30 low-risk research or policy cases and compare
+verdict, cited rationale, and uncertainty state under blinded
+review.</li>
+<li><strong>Champion-retaining policy-improvement sandbox —
+89.5/100.</strong> Why it matters: long-running agents can regress after
+promising revisions, and extra interaction alone does not reliably
+recover. Evidence that would change the recommendation: held-out
+internal tasks show no stable gain over a fixed baseline, rollback
+rarely prevents regression, or costs exceed the value of recovered
+performance. Next reversible action: give an isolated agent a frozen
+simulator, a 20-evaluation budget, immutable experiment records, and
+automatic restoration of the best externally scored policy.</li>
+</ol>
+<h1
+id="deep-paper-1--high-accuracy-can-coexist-with-rule-independence">Deep
+paper 1 — High accuracy can coexist with rule independence</h1>
+<p><strong>Identity and status.</strong> <em>Verdict Without the Rule:
+Diagnosing and Auditing Regulatory Rule Sensitivity in LLM Compliance
+Systems</em>; Saisab Sadhu, Aadit Sengupta, Vinay Kumar Sankarapu, and
+Pratinav Seth; arXiv:2610.12313v1; submitted October 8, 2026; preprint.
+The paper uses the arXiv non-exclusive distribution license. No verified
+public code repository was linked at review time. (<a
+href="https://arxiv.org/abs/2610.12313">paper</a>)</p>
+<h2 id="contribution-and-quantitative-claim-trace">Contribution and
+quantitative claim trace</h2>
+<p>The paper introduces <strong>Output Change Sensitivity
+(OCS)</strong>, a black-box measure of whether a compliance verdict
+changes after the supplied rule is deleted, swapped for a rule from
+another domain, or negated. It pairs OCS with an activation-space
+<strong>Internal Change Score (ICS-Δ)</strong> for general models. OCS
+does not measure correctness; it measures behavioral dependence on a
+perturbation.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>Decision meaning</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Baseline compliance accuracy can hide weak rule use</td>
+<td style="text-align: right;">General models score roughly 90–92% at
+baseline, while aggregate OCS across 100 model-domain cells ranges
+.013–.094, mean .069</td>
+<td>Accuracy is not evidence that policy text causally governs the
+answer</td>
+<td>OmniCompliance may contain scenario-side label signals; LlamaGuard
+adaptation scores about 51%</td>
+</tr>
+<tr class="even">
+<td>Removing the rule often changes almost nothing</td>
+<td style="text-align: right;">Pooled OCS-delete .053, OCS-negate .070,
+OCS-swap .082</td>
+<td>Deletion is a direct diagnostic for scenario-only decisions</td>
+<td>Standard prompt truncates the rule at 300 characters, possibly
+omitting operative text</td>
+</tr>
+<tr class="odd">
+<td>Low OCS is not inevitable</td>
+<td style="text-align: right;">On deletion-critical rule-necessity
+controls, OCS-swap is .73–1.00</td>
+<td>Pair easy cases with cases where the rule must determine the
+outcome</td>
+<td>The control is constructed and may not reflect field prevalence</td>
+</tr>
+<tr class="even">
+<td>Internal and behavioral sensitivity are not interchangeable</td>
+<td style="text-align: right;">ICS-Δ changes only 12.8–22.9% of baseline
+activation magnitude; OCS/ICS rank correlations range ρ=-.032 to .338,
+p=.145–.895</td>
+<td>Activation movement cannot stand in for decision dependence</td>
+<td>ICS uses selected layers and a held-out layer-validation protocol,
+but representation choice still matters</td>
+</tr>
+<tr class="odd">
+<td>Simple prompting does not reliably fix the issue</td>
+<td style="text-align: right;">Rule-grounded prompting shows no
+significant improvement across ten cells; one low-OCS Qwen cell worsens
+by 2.8 points, p&lt;.0001</td>
+<td>“Quote the rule first” is not an acceptance control</td>
+<td>Prompt intervention changes both instructions and rule
+presentation</td>
+</tr>
+<tr class="even">
+<td>Activation steering is not an established remedy</td>
+<td style="text-align: right;">No steering setting significantly beats
+baseline after correction; several settings show nominal harm</td>
+<td>Treat steering as research, not remediation</td>
+<td>Limited models, directions, and operating points</td>
+</tr>
+</tbody>
+</table>
+<svg viewBox="0 0 1020 365" role="img" aria-label="Compliance accuracy and rule sensitivity compared" style="width:100%;height:auto;background:#0c1c2a;border:1px solid #2a465b;border-radius:14px;margin:1rem 0">
+  <text x="34" y="38" fill="#f4c96b" font-family="system-ui" font-size="18">A correct verdict may not depend on the supplied rule</text>
+  <g fill="#9fb6c6" font-family="system-ui" font-size="14"><text x="34" y="98">General-model baseline accuracy</text><text x="34" y="176">Aggregate OCS range</text><text x="34" y="254">Pooled OCS-delete</text><text x="34" y="332">Rule-necessity OCS-swap</text></g>
+  <rect x="300" y="74" width="560" height="26" rx="6" fill="#70adff"/><text x="875" y="93" fill="#e9f2f8" font-family="system-ui" font-size="13">~90–92%</text>
+  <rect x="300" y="152" width="57" height="26" rx="6" fill="#f4c96b"/><text x="370" y="171" fill="#e9f2f8" font-family="system-ui" font-size="13">1.3–9.4%</text>
+  <rect x="300" y="230" width="32" height="26" rx="6" fill="#f4c96b"/><text x="345" y="249" fill="#e9f2f8" font-family="system-ui" font-size="13">5.3%</text>
+  <rect x="300" y="308" width="445" height="26" rx="6" fill="#46dbc6"/><text x="758" y="327" fill="#e9f2f8" font-family="system-ui" font-size="13">73–100%</text>
+</svg>
+
+<h2
+id="methodological-critique-and-prior-work-comparison">Methodological
+critique and prior-work comparison</h2>
+<p>Prior compliance evaluation largely asks whether a classifier matches
+a label or follows a policy in the observed input. OCS instead asks
+whether the same system's answer reacts to a controlled change in the
+purported governing rule. That distinguishes <em>getting the answer
+right</em> from <em>using the intended basis</em>. ICS-Δ adds a
+representation-level comparison but, importantly, the paper does not
+treat it as a substitute for behavioral evidence.</p>
+<p>The design is strong in scale, perturbation diversity, per-domain
+reporting, held-out layer selection, multiple-comparison correction, and
+inclusion of a rule-necessity control. It evaluates five models over 20
+domains, samples 200 cases per domain and model, uses a fixed seed, and
+reports 12,897 generations per model—64,485 total—with more than 99.5%
+parseability.</p>
+<p>The causal claim remains bounded. Rule deletion and cross-domain swap
+can produce unnatural prompts; negation applies only when mandatory
+modals are present, with domain coverage from 0% to 60.7%. The
+300-character truncation can remove decisive clauses. OmniCompliance's
+scenarios may leak the label, while the rule-necessity control is
+intentionally constructed to do the opposite. Transfer to LegalBench and
+ContractNLI yields OCS three to four times higher, demonstrating that
+the metric is task-distribution sensitive rather than a universal model
+trait. No deployment-time latency, security, privacy, or
+policy-governance evaluation is provided.</p>
+<h2 id="reproducibility-and-enterprise-readiness">Reproducibility and
+enterprise readiness</h2>
+<p>The paper specifies models, domains, sample sizes, seed, prompts,
+parsing, interventions, statistical tests, and layer selection. No
+verified repository or exact runnable artifact was found, limiting
+replication. <strong>Enterprise readiness:</strong> high for a small
+offline qualification suite; medium for use in model/prompt admission;
+low for runtime enforcement or automated policy approval.
+<strong>Research Utility Score: 90/100</strong> (methodological rigor
+24/25; quantitative traceability 24/25; reproducibility/artifacts 12/20;
+enterprise relevance 15/15; prior-work advance 15/15).</p>
+<h1 id="deep-paper-2--citation-presence-is-not-citation-dependence">Deep
+paper 2 — Citation presence is not citation dependence</h1>
+<p><strong>Identity and status.</strong> <em>Cited but Not Consulted: A
+Counterfactual Audit of Legal Chain-of-Thought Faithfulness</em>; Saisab
+Sadhu, Shreeyans Arora, and Pratinav Seth; arXiv:2610.12361v1; submitted
+October 8, 2026; preprint. The paper uses the arXiv non-exclusive
+distribution license. No verified public code repository was linked at
+review time. (<a href="https://arxiv.org/abs/2610.12361">paper</a>)</p>
+<h2 id="contribution-and-quantitative-claim-trace-1">Contribution and
+quantitative claim trace</h2>
+<p>The audit forces a model to identify a legal authority, records
+whether it commits to a verdict before or after naming that authority,
+then replaces the authority while preserving the surrounding fact
+pattern. It covers ECHR, SCOTUS, CaseHOLD, and ContractNLI with seven
+open-weight models from 8B to 70B parameters.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>Decision meaning</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Models often name the expected authority</td>
+<td style="text-align: right;">Correct authority naming spans 66.7–100%
+across settings</td>
+<td>Citation presence is easy to observe</td>
+<td>A named source is not proof of causal use</td>
+</tr>
+<tr class="even">
+<td>Verdicts are much less sensitive than citation accuracy
+suggests</td>
+<td style="text-align: right;">ECHR Pair A verdict-swap sensitivity
+ranges 31.0–58.6% while baseline accuracy spans 48.1–88.9%</td>
+<td>Audit reliance with counterfactual source changes</td>
+<td>Confidence intervals often span 20+ points; n=30 per model/pair</td>
+</tr>
+<tr class="odd">
+<td>Surface engagement can coexist with weak post-commitment
+revision</td>
+<td style="text-align: right;">Surface engagement is 80–100%;
+post-commitment re-engagement is 20–70%</td>
+<td>Trace whether new evidence changes the conclusion, not just whether
+it is mentioned</td>
+<td>Every model names authority before first verdict in these runs;
+temporal order still does not prove dependence</td>
+</tr>
+<tr class="even">
+<td>Instruction-following and conclusion change are distinct</td>
+<td style="text-align: right;">Injection compliance is 73.3–96.4%;
+stricter baseline-verdict change is 18.5–41.4%</td>
+<td>Define the security metric before interpreting an attack</td>
+<td>The paper correctly anchors exploitability on compliance, not the
+stricter change rate</td>
+</tr>
+<tr class="odd">
+<td>Some citation swaps barely affect holdings</td>
+<td style="text-align: right;">CaseHOLD holding changes in 0–21.7% of
+detected citation cases</td>
+<td>Correct source names may be decorative</td>
+<td>Redundant facts or interchangeable precedent can also explain
+invariance</td>
+</tr>
+<tr class="even">
+<td>Small confound controls help but do not settle the issue</td>
+<td style="text-align: right;">ContractNLI sensitivity 43.3–50.0%;
+confound-free subset 50–66.7% with n=10–12</td>
+<td>Use minimal-pair, human-validated substitutions</td>
+<td>The subset is too small for stable ranking</td>
+</tr>
+<tr class="odd">
+<td>Wording itself causes nontrivial variation</td>
+<td style="text-align: right;">Paraphrase instability is 13.8–23.3%</td>
+<td>A swap effect must exceed ordinary prompt instability</td>
+<td>One paraphrase family cannot characterize all linguistic noise</td>
+</tr>
+</tbody>
+</table>
+<h2
+id="methodological-critique-and-prior-work-comparison-1">Methodological
+critique and prior-work comparison</h2>
+<p>Prior legal-LLM work emphasizes citation correctness, hallucinated
+authorities, outcome accuracy, or whether a rationale entails an answer.
+This paper instead tests <strong>behavioral dependence</strong>: if the
+cited authority is load-bearing, substituting it should alter the
+holding, reasoning, or uncertainty in a legally coherent direction.
+Internal commitment tracking and injection tests add process evidence
+without treating chain-of-thought as ground truth.</p>
+<p>Strengths include two structurally independent authority pairs for
+ECHR and SCOTUS, balanced sampling, a fixed seed, multiple model
+families, bootstrap confidence intervals from 1,000 resamples,
+paraphrase controls, a null condition, and explicit reporting of weaker
+interpretations. The authors distinguish injection compliance from
+verdict change and acknowledge that an unchanged answer can sometimes be
+correct when facts independently determine the outcome.</p>
+<p>Limitations are material. Each model–pair cell uses 30 cases, so rank
+differences are usually not significant. The swap can change both
+authority and the legal question, weakening causal isolation. CaseHOLD
+substitutions may leave redundant cues. ContractNLI's clean subset has
+only 10–12 examples. Legal-Delta-14B is a best-effort LoRA reproduction
+rather than a verified original checkpoint. The study evaluates open
+models and benchmark legal tasks, not governed enterprise policy systems
+or licensed legal advice. No public runnable artifact was verified.</p>
+<h2 id="reproducibility-and-enterprise-readiness-1">Reproducibility and
+enterprise readiness</h2>
+<p>The paper reports model list, prompts, benchmark construction, seeds,
+sample counts, matching rules, and resampling protocol. Missing code and
+processed counterfactual pairs constrain independent replication.
+<strong>Enterprise readiness:</strong> high for designing a
+source-dependence test set; medium for low-risk knowledge and policy
+qualification; low for automated legal approval or live source
+injection. <strong>Research Utility Score: 88/100</strong>
+(methodological rigor 23/25; quantitative traceability 23/25;
+reproducibility/artifacts 12/20; enterprise relevance 15/15; prior-work
+advance 15/15).</p>
+<h1
+id="deep-paper-3--long-running-learning-needs-a-retained-champion-and-an-external-ladder">Deep
+paper 3 — Long-running learning needs a retained champion and an
+external ladder</h1>
+<p><strong>Identity and status.</strong> <em>Can AI Agents Learn Their
+Way to the Top? Evaluating Heuristic Learning in a Long-Running Game
+Agent Competition</em>; Kaisen Yang and 26 coauthors; Tsinghua
+University; arXiv:2610.12341v1; submitted October 8, 2026; preprint
+under CC BY 4.0. The verified public AAArena repository is MIT-licensed
+and includes environments, configs, results, tests, validation, runners,
+and 909 filtered player packages; full-pool evaluation requires hosted
+credentials and game resources retain their individual licenses. (<a
+href="https://arxiv.org/abs/2610.12341">paper</a> · <a
+href="https://github.com/THU-CST-SAST/AAArena">artifact</a>)</p>
+<h2 id="contribution-and-quantitative-claim-trace-2">Contribution and
+quantitative claim trace</h2>
+<p>AAArena formalizes <strong>Adversarial Heuristic Learning</strong>: a
+fixed-weight language model revises executable game policies from match
+experience, replay analysis, and opponent selection. The benchmark uses
+12 authentic adversarial games, 1,920 archived human programs, and
+rank/Elo evaluation under fixed interaction budgets.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>Decision meaning</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Current systems improve but do not dominate</td>
+<td style="text-align: right;">Gold medals across 12 games:
+Opus5.5/Claude Code 6; GPT6-sol 4; GLM5.3 4; Qwen3.8 3; KimiK3 2;
+DeepSeek V4 Pro 2; LongCat2 1</td>
+<td>Treat learning ability as system-level and task-dependent</td>
+<td>Opus alone uses Claude Code; model and harness are confounded</td>
+</tr>
+<tr class="even">
+<td>More interaction does not guarantee escape</td>
+<td style="text-align: right;">Tripling GLM5.3 budget on four hard games
+leaves Generals rank 17 and LOTA rank 22 unchanged; Miracle 26→19;
+AntWar2 9→6; no rank 1</td>
+<td>Budget is not a substitute for information strategy</td>
+<td>Four games and one configuration; improvement may need larger or
+different budgets</td>
+</tr>
+<tr class="odd">
+<td>Retaining the best verified policy matters</td>
+<td style="text-align: right;">Dorado revisions regress to ranks 46 and
+43; restoring the retained best eventually reaches rank 2</td>
+<td>Make rollback and champion retention first-class</td>
+<td>Narrative trajectory, not a controlled rollback ablation</td>
+</tr>
+<tr class="even">
+<td>Opponent selection changes learning efficiency</td>
+<td style="text-align: right;">Agent-selected and curriculum/ladder
+policies outperform random or top-4 policies depending on game; top-4 is
+worst in all three ablation games</td>
+<td>Evaluation sampling is part of the learning algorithm</td>
+<td>No single selection policy dominates all games</td>
+</tr>
+<tr class="odd">
+<td>Dense feedback helps</td>
+<td style="text-align: right;">Dense replay feedback produces higher
+retained Elo than binary feedback in all three representative games</td>
+<td>Preserve structured failure evidence</td>
+<td>Only three games; richer feedback increases processing and attack
+surface</td>
+</tr>
+<tr class="even">
+<td>Off-policy experience is conditional</td>
+<td style="text-align: right;">Miracle rank 26 on-policy vs 15
+off-policy; Pacman both rank 1; AntWar rank 5 on-policy vs 19
+off-policy</td>
+<td>Mix own failures and external exemplars only after
+qualification</td>
+<td>Rank comparisons are game-specific and can reverse</td>
+</tr>
+</tbody>
+</table>
+<svg viewBox="0 0 1040 390" role="img" aria-label="AAArena gold medals and budget scaling results" style="width:100%;height:auto;background:#0c1c2a;border:1px solid #2a465b;border-radius:14px;margin:1rem 0">
+  <text x="34" y="40" fill="#f4c96b" font-family="system-ui" font-size="18">Long-running learning improves policies, but no configuration clears the full ladder</text>
+  <g fill="#9fb6c6" font-family="system-ui" font-size="14"><text x="34" y="92">Opus5.5 + Claude Code</text><text x="34" y="138">GPT6-sol + Codex</text><text x="34" y="184">GLM5.3 + Codex</text><text x="34" y="230">Qwen3.8 + Codex</text><text x="34" y="300">Hard-game budget expansion</text></g>
+  <g fill="#70adff"><rect x="260" y="70" width="420" height="24" rx="5"/><rect x="260" y="116" width="280" height="24" rx="5"/><rect x="260" y="162" width="280" height="24" rx="5"/><rect x="260" y="208" width="210" height="24" rx="5"/></g>
+  <g fill="#e9f2f8" font-family="system-ui" font-size="13"><text x="690" y="88">6 / 12 rank-1 finishes</text><text x="550" y="134">4</text><text x="550" y="180">4</text><text x="480" y="226">3</text></g>
+  <rect x="260" y="278" width="560" height="28" rx="6" fill="#f4c96b"/><text x="835" y="297" fill="#e9f2f8" font-family="system-ui" font-size="13">3× interactions · 0 new rank-1 finishes</text>
+  <text x="260" y="345" fill="#46dbc6" font-family="system-ui" font-size="14">Retain the externally scored champion; treat every revision as provisional.</text>
+</svg>
+
+<h2
+id="methodological-critique-and-prior-work-comparison-2">Methodological
+critique and prior-work comparison</h2>
+<p>Classic game benchmarks often evaluate a frozen policy, a fixed
+training algorithm, or self-play under simulator access. AAArena makes
+the language-model agent the learning engine: it reads rules, selects
+opponents, analyzes replays, modifies source code, and keeps an
+experiment record. Compared with software-agent benchmarks, the output
+is not merely a patch that passes tests; it is a policy whose value
+depends on performance against a large, rated population.</p>
+<p>The benchmark's strongest design choices are fixed small/full
+evaluation budgets, real archived opponents, per-game ranking, repeat
+runs with the median best retained policy, dense trajectory disclosure,
+and ablations for feedback and opponent selection. Rule descriptions
+span 1,127–6,368 AST nodes and 219–1,008 extracted rule atoms, but these
+are representation-dependent description sizes—not state-space or
+optimal-play complexity.</p>
+<p>The key validity gap is evaluator reuse. Full-pool evaluation
+feedback participates in optimization, so final rank is not an
+unseen-opponent generalization estimate. Only 909 filtered player
+packages are public; the complete 1,920-program pool and hosted
+evaluator require tokens. Human ratings are treated as the ladder
+without an independent revalidation study. Model and harness effects are
+entangled. Gold medals are maxima across games and do not quantify cost,
+variance, or safety. Authentic games improve ecological richness but do
+not establish transfer to enterprise workflows with privacy,
+authorization, side effects, or human review.</p>
+<h2 id="reproducibility-and-enterprise-readiness-2">Reproducibility and
+enterprise readiness</h2>
+<p>The repository exposes 57 commits at verification, source,
+environments, configs, docs, results, scripts, tests, validation, an MIT
+license, model/harness runners, and sandbox guidance. Full replication
+still depends on hosted pool access, provider APIs, and separately
+licensed game resources. <strong>Enterprise readiness:</strong> high for
+champion retention, experiment ledgers, rollback, and held-out
+evaluation design; medium for isolated policy-optimization sandboxes;
+low for autonomous online self-modification. <strong>Research Utility
+Score: 93/100</strong> (methodological rigor 23/25; quantitative
+traceability 24/25; reproducibility/artifacts 20/20; enterprise
+relevance 13/15; prior-work advance 13/15).</p>
+<h1 id="watchlist">Watchlist</h1>
+<h2
+id="recursive-self-improvement-through-multi-agent-self-supervision">Recursive
+Self-Improvement through Multi-Agent Self-Supervision</h2>
+<p><strong>Identity.</strong> Hyunin Lee, Jinglue Xu, Jeffrey Seely,
+Donghyun Lee, Somayeh Sojoudi, Matei Zaharia, and Yujin Tang;
+arXiv:2610.12176v1; October 8, 2026; CC BY 4.0. A verified public
+repository contains 14 commits, workflow search, post-training, tasks,
+configs, evaluation adapters, tests, and documentation, but no visible
+top-level license file; the repository also states that several
+public-benchmark adapters and paper ablations are absent and that the
+released search driver differs from Algorithm 1. (<a
+href="https://arxiv.org/abs/2610.12176">paper</a> · <a
+href="https://github.com/SakanaAI/mass">artifact</a>)</p>
+<p><strong>Paper Fact.</strong> MASS alternates evolutionary multi-agent
+workflow search with SFT on self-generated trajectories using
+Qwen3.6-27B. After two cycles, the paper reports 1.2–1.6× higher score
+per output token on four research benchmarks, test-task win rate rising
+from 53.9% for generation 1 over base to 69.9% for generation 2 over
+base, and external-reference evaluator agreement rising .73→.91→.93. Yet
+Terminal-Bench falls from 37.5%±2.2 to 35.2%±1.7 and SWE-bench Verified
+from 62.6%±1.4 to 61.1%±0.6. On MLR-Bench, aggregate gains accompany
+more delivered papers, while the mean score among delivered papers falls
+3.07→2.88; paired exact sign tests across tasks are not significant.</p>
+<p><strong>Why Watchlist.</strong> The executor, optimizer, and in-loop
+evaluator share one model family, creating correlated error and
+self-confirmation risk. The best workflow is self-judged and explicitly
+not a certified global optimum. Gains depend on aggregation unit and do
+not transfer uniformly to coding or terminal tasks. The artifact is
+strong but not protocol-identical. <strong>Enterprise trigger:</strong>
+independently judged held-out tasks show repeatable gains across at
+least two internal task families, adverse transfer is bounded, evaluator
+disagreement is audited, data rights permit self-training, and rollback
+to the pre-cycle model is proven.</p>
+<h2
+id="memento-3-model-based-recursive-self-improvement-through-reflective-rulebooks">Memento
+3: Model-Based Recursive Self-Improvement through Reflective
+Rulebooks</h2>
+<p><strong>Identity.</strong> Haoyu Zhao, Zhengxu Yu, Zhiyuan He, Meng
+Fang, Rasul Tutunov, Haitham Bou-Ammar, Weilin Luo, and Jun Wang;
+arXiv:2610.11794v1; October 8, 2026; CC BY 4.0. No verified public
+implementation repository was linked in the paper. (<a
+href="https://arxiv.org/abs/2610.11794">paper</a>)</p>
+<p><strong>Paper Fact.</strong> A frozen LLM maintains a
+natural-language rulebook and executable world model, accepts revisions
+only after semantic-fidelity judgment and exact replay against observed
+transitions, and can keep multiple hypotheses in parallel. On the 25
+public ARC-AGI-3 games, the single-model agent clears every level,
+reports mean RHAE 100, and uses 7,518 actions—44% of the 17,135 human
+action count. In Pong, its learned controller wins 21:0 in each of three
+evaluated episodes with different openings and no additional LLM calls
+during execution.</p>
+<p><strong>Why Watchlist.</strong> Exact replay proves consistency with
+observed transitions, not correctness on unseen states. The paper
+explicitly notes that several hypotheses can fit the same history and
+that committing to one can steer exploration away from falsifying
+evidence. ARC-AGI-3's 25 public games and three Pong episodes are
+narrow; the semantic-fidelity judge is itself model-based; no code,
+hidden-game evaluation, cost accounting, adversarial testing, or
+enterprise controls were verified. <strong>Enterprise trigger:</strong>
+a released implementation and hidden-environment replication show that a
+hypothesis population improves unseen prediction and task success over
+single-model and no-rulebook baselines, with bounded cost, deterministic
+rollback, provenance, and security review.</p>
+<h1 id="cross-paper-synthesis">Cross-paper synthesis</h1>
+<table>
+<thead>
+<tr class="header">
+<th>Decision question</th>
+<th>Strongest signal</th>
+<th>Failure if ignored</th>
+<th>Architectural response</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Does the verdict depend on the governing rule?</td>
+<td>OCS stays low despite high baseline accuracy, but rises on
+rule-necessity controls</td>
+<td>A policy-aware interface masks a scenario-only classifier</td>
+<td>Counterfactual rule suite, necessity controls, versioned rule
+provenance</td>
+</tr>
+<tr class="even">
+<td>Does the answer depend on the cited authority?</td>
+<td>Correct citation names coexist with weak verdict-swap
+sensitivity</td>
+<td>Citations decorate rather than support decisions</td>
+<td>Source substitution tests, commitment tracking, claim–source
+dependency graph</td>
+</tr>
+<tr class="odd">
+<td>Did a revision actually improve the policy?</td>
+<td>AAArena shows regressions, conditional feedback value, and no
+guarantee from 3× interaction</td>
+<td>Online self-modification forgets the best known state</td>
+<td>External evaluator, immutable champion, rollback, held-out
+opponent/task partition</td>
+</tr>
+<tr class="even">
+<td>Can self-supervision generalize beyond its training loop?</td>
+<td>MASS improves some research aggregates while coding/terminal scores
+stagnate or fall</td>
+<td>Self-evaluation amplifies correlated blind spots</td>
+<td>Independent judges, cross-domain holdouts, adverse-transfer
+gates</td>
+</tr>
+<tr class="odd">
+<td>Is the learned world model correct beyond replayed history?</td>
+<td>Memento 3 preserves multiple replay-consistent hypotheses</td>
+<td>One plausible model monopolizes exploration and hides
+uncertainty</td>
+<td>Hypothesis population, falsification budget, out-of-history
+validation</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Independent Analysis.</strong> These papers converge on a
+<strong>decision-dependency architecture</strong>. Enterprise systems
+should preserve the claimed basis for a decision as inspectable state,
+then test whether changing that basis changes the behavior in the
+expected direction. Learning systems need the same discipline: every
+revision remains provisional until an external evaluator confirms
+improvement on traffic withheld from the optimizer.</p>
+<svg viewBox="0 0 1040 485" role="img" aria-label="Decision dependency and policy improvement architecture" style="width:100%;height:auto;background:#0c1c2a;border:1px solid #2a465b;border-radius:14px;margin:1rem 0">
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#46dbc6"/></marker></defs>
+  <g fill="#10283a" stroke="#70adff" stroke-width="2"><rect x="60" y="40" width="260" height="92" rx="12"/><rect x="390" y="40" width="260" height="92" rx="12"/><rect x="720" y="40" width="260" height="92" rx="12"/><rect x="60" y="330" width="260" height="100" rx="12"/><rect x="390" y="330" width="260" height="100" rx="12"/><rect x="720" y="330" width="260" height="100" rx="12"/></g>
+  <g fill="#e9f2f8" font-family="system-ui" font-size="16" text-anchor="middle"><text x="190" y="72">Rule &amp; evidence plane</text><text x="190" y="101">versions · sources · ownership</text><text x="520" y="72">Decision dependency</text><text x="520" y="101">claims · commitments · changes</text><text x="850" y="72">Agent / application</text><text x="850" y="101">reason · retrieve · propose</text><text x="190" y="366">Counterfactual evaluator</text><text x="190" y="395">delete · swap · negate</text><text x="520" y="366">Champion registry</text><text x="520" y="395">score · compare · restore</text><text x="850" y="366">Effect authority</text><text x="850" y="395">approve · abstain · escalate</text></g>
+  <g stroke="#46dbc6" stroke-width="3" fill="none" marker-end="url(#arrow)"><line x1="320" y1="86" x2="387" y2="86"/><line x1="650" y1="86" x2="717" y2="86"/><line x1="850" y1="132" x2="850" y2="327"/><line x1="720" y1="380" x2="653" y2="380"/><line x1="390" y1="380" x2="323" y2="380"/></g>
+  <path d="M190 132 C190 225 520 225 520 327" fill="none" stroke="#f4c96b" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#arrow)"/><text x="520" y="230" fill="#f4c96b" text-anchor="middle" font-family="system-ui" font-size="14">only externally verified dependencies and improvements cross the acceptance boundary</text>
+</svg>
+
+<h1 id="enterprise-ai-architecture-implications">Enterprise AI
+Architecture Implications</h1>
+<p><strong>Independent Analysis.</strong> Over the next 12–24 months,
+the recommended options would shift enterprise AI from
+explanation-centric governance to testable decision dependencies:</p>
+<ul>
+<li><strong>Rule and evidence provenance plane.</strong> Assign
+immutable IDs and versions to rules, sources, retrieved passages,
+model/harness configurations, and policy owners. Final claims refer to
+those IDs, not only rendered text.</li>
+<li><strong>Decision-dependency service.</strong> Record which rules and
+sources were available, cited, and used; preserve pre-evidence
+commitments; generate authorized delete/swap/negate counterfactuals;
+compare semantic changes; and retain reviewer judgments.</li>
+<li><strong>Independent evaluation layer.</strong> Separate optimizer
+from evaluator; reserve task, source, opponent, and environment
+partitions; validate judge agreement; report uncertainty and
+adverse-transfer metrics; prevent evaluation traffic from silently
+becoming training data.</li>
+<li><strong>Champion registry and rollback.</strong> Treat every learned
+workflow, memory, rulebook, prompt, model, or executable policy as a
+versioned candidate. Promote only after held-out improvement and
+security checks; retain the last accepted champion and one-click
+restoration.</li>
+<li><strong>Agent orchestration and model gateway.</strong> Route by
+qualification metadata—domain, model, harness, prompt, evidence
+contract, cost, and safety limits—not by a global leaderboard. Gate
+self-modification behind experiment identities and bounded budgets.</li>
+<li><strong>Human-review and policy controls.</strong> Route unresolved
+high-impact dependencies, counterfactual disagreements, and regression
+cases to named reviewers. Store override reasons and require
+policy-owner approval before a research score affects production
+authority.</li>
+<li><strong>Observability and cost telemetry.</strong> Capture
+decisions, source changes, replay outcomes, evaluator disagreements,
+revision lineage, compute, latency, and rollback frequency so that
+apparent improvement cannot hide rising cost or risk.</li>
+</ul>
+<p>Shared foundations are model gateways; context and memory services;
+identity and authorization; policy enforcement; data provenance;
+knowledge systems; agent orchestration; evaluation infrastructure;
+experiment registries; immutable traces; cost telemetry; human-review
+queues; and reversible feature flags. No particular enterprise stack is
+assumed. Implementation decisions require internal domain criticality,
+policy ownership, source licensing, acceptable false-change and
+false-stability costs, reviewer capacity, model/version inventory,
+data-retention rules, evaluation independence, latency budgets, and
+representative historical cases.</p>
+<h1 id="enterprise-ai-enhancement-backlog">Enterprise AI Enhancement
+Backlog</h1>
+<h2 id="priority-method-and-uncertainty">Priority method and
+uncertainty</h2>
+<p>The Future Enterprise AI Priority Score is a decision aid, not a
+calibrated forecast. Components use 0–100 scales and the required
+weights: strategic/business value 25%, technical leverage 20%, evidence
+strength 20%, enterprise readiness 15%, feasibility 10%, and
+risk-adjusted differentiation 10%. Displayed decimals are arithmetic,
+not empirical precision. Missing internal context can move rankings by
+more than the visible differences.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Rank</th>
+<th>Enhancement</th>
+<th>Decision band</th>
+<th style="text-align: right;">Strategic</th>
+<th style="text-align: right;">Technical</th>
+<th style="text-align: right;">Evidence</th>
+<th style="text-align: right;">Readiness</th>
+<th style="text-align: right;">Feasibility</th>
+<th style="text-align: right;">Differentiation</th>
+<th style="text-align: right;">Weighted</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td>Rule-dependence qualification gate</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">96</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">89</td>
+<td style="text-align: right;"><strong>93.0</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td>Evidence-dependence and citation counterfactual audit</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;"><strong>91.1</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td>Champion-retaining policy-improvement sandbox</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">79</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;"><strong>89.5</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td>Rule/evidence provenance and decision-dependency ledger</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">77</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">89</td>
+<td style="text-align: right;"><strong>87.9</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td>Revision rollback and experiment lineage</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">89</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">79</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;"><strong>87.5</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td>Held-out evaluator and task-partition service</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">76</td>
+<td style="text-align: right;">77</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;"><strong>86.9</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td>Multi-agent self-supervision shadow trainer</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">77</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;"><strong>76.8</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td>Population world-model and falsification service</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">83</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">46</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">87</td>
+<td style="text-align: right;"><strong>73.4</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9</td>
+<td>Self-judged recursive improvement as an approval path</td>
+<td>Deprioritize for Now</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">68</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;"><strong>54.6</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="prototype-soon">Prototype Soon</h2>
+<h3 id="1-rule-dependence-qualification-gate--930">1. Rule-dependence
+qualification gate — 93.0</h3>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability / Safety
+&amp; Governance.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> OCS is .013–.094 across model-domain cells despite high
+baseline accuracy, but .73–1.00 on rule-necessity controls in
+<em>Verdict Without the Rule</em>. <strong>Paper Fact</strong>; gate
+design is <strong>Enterprise Inference</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong>
+Policy-aware systems can output the expected verdict while relying on
+scenario cues, memorized priors, or formatting rather than the current
+governing rule.</li>
+<li><strong>Proposed future capability and how it works:</strong> Build
+paired tests for rule deletion, cross-policy swap, operative-clause
+negation, paraphrase, and rule necessity. Admission reports accuracy,
+sensitivity by perturbation, uncertainty, and false-change cost for each
+model/harness/prompt version.</li>
+<li><strong>Likely architectural placement:</strong> evaluation, model
+gateway, security/governance, developer platform.</li>
+<li><strong>Expected business value:</strong> quality, reliability, risk
+reduction, auditability, strategic differentiation.</li>
+<li><strong>Technical value:</strong> Converts grounding from a
+text-generation claim into observable behavioral dependence.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+multi-model diagnostic and controls; no public code; safe offline
+experiment. Not a runtime authorization control.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>High</strong> / <strong>Now</strong> / <strong>M</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Authoritative
+rules, version lineage, domain experts, controlled counterfactual
+generator, semantic-change judge, model/harness registry.</li>
+<li><strong>Key risks:</strong> Invalid swaps, redundant evidence,
+omitted operative text, overreactive models, judge bias, sensitive
+policy exposure, test leakage.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build</strong>
+because rules and acceptability criteria are organization-specific;
+partner with policy/legal experts for counterfactual validity.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Forty
+non-production cases across two domains; create deletion, swap,
+negation, paraphrase, and necessity variants; blind reviewers to system
+identity.</li>
+<li><strong>Success metrics and stop conditions:</strong> Accuracy, OCS
+by condition, necessity sensitivity, paraphrase instability, reviewer
+agreement, latency/cost. Stop if counterfactual validity agreement
+&lt;.8, paraphrase instability &gt;15%, or sensitivity gains require
+&gt;5-point accuracy loss.</li>
+<li><strong>Roadmap trigger:</strong> High necessity sensitivity,
+bounded false changes, reproducible results across two model families,
+and policy-owner acceptance of the test contract.</li>
+</ul>
+<h3 id="2-evidence-dependence-and-citation-counterfactual-audit--911">2.
+Evidence-dependence and citation counterfactual audit — 91.1</h3>
+<ul>
+<li><strong>Category:</strong> RAG &amp; Knowledge / Evaluation &amp;
+Observability / Safety &amp; Governance.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> Correct source naming coexists with 31.0–58.6% ECHR
+verdict-swap sensitivity and 0–21.7% CaseHOLD holding change in
+<em>Cited but Not Consulted</em>. <strong>Paper Fact</strong>;
+enterprise audit is <strong>Enterprise Inference</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong>
+Citations can look trustworthy while the answer is insensitive to the
+cited evidence.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+Capture pre-source commitments; substitute one material source or
+passage at a time; re-run the same workflow; compare decision,
+rationale, confidence, and unresolved-conflict state against a
+human-specified expected change.</li>
+<li><strong>Likely architectural placement:</strong>
+retrieval/knowledge, evaluation, observability, human-review layer.</li>
+<li><strong>Expected business value:</strong> quality, customer trust,
+reliability, risk reduction.</li>
+<li><strong>Technical value:</strong> Tests source causality, detects
+decorative citations, and separates retrieval success from evidence
+use.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+audit concept with multiple controls; moderate sample sizes and
+unresolved confounds; no verified code.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>High</strong> / <strong>Now</strong> / <strong>M</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Source IDs,
+licensed substitution corpus, claim extraction, commitment logging,
+domain reviewers, redaction and access controls.</li>
+<li><strong>Key risks:</strong> Legally or semantically invalid
+substitutions, privacy leakage, prompt instability, source redundancy,
+reviewer disagreement, excessive inference cost.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build</strong> the
+provenance and audit harness; partner for regulated-domain source
+validation; buy only components with exportable traces.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Thirty
+low-risk research or policy cases, each with original, valid
+counterfactual, null, and paraphrase variants; outputs hidden from
+users.</li>
+<li><strong>Success metrics and stop conditions:</strong>
+Material-change recall/precision, citation correctness, paraphrase
+instability, conflict disclosure, reviewer agreement, cost. Stop if
+substitutions are valid in &lt;90% of cases or false-change rate exceeds
+10%.</li>
+<li><strong>Roadmap trigger:</strong> Stable dependence results across
+two domains and two models, low wording sensitivity, and demonstrable
+detection of failures missed by citation-accuracy metrics.</li>
+</ul>
+<h3 id="3-champion-retaining-policy-improvement-sandbox--895">3.
+Champion-retaining policy-improvement sandbox — 89.5</h3>
+<ul>
+<li><strong>Category:</strong> Agentic AI / AI Software Engineering /
+MLOps &amp; Platform.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> AAArena shows policy regressions, successful restoration
+of a retained best, conditional opponent/feedback benefits, and zero new
+gold medals from 3× interaction on four hard games. <strong>Paper
+Fact</strong>; sandbox translation is <strong>Enterprise
+Inference</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong>
+Iterative agents overwrite better policies, chase noisy feedback, or
+spend more without improving.</li>
+<li><strong>Proposed future capability and how it works:</strong> Freeze
+the environment and authority boundary; let the agent revise a candidate
+policy under a budget; score each version with an external evaluator;
+retain an immutable champion; restore automatically after regression;
+expose the full lineage to reviewers.</li>
+<li><strong>Likely architectural placement:</strong> developer platform,
+orchestration, evaluation, infrastructure, security/governance.</li>
+<li><strong>Expected business value:</strong> productivity, quality,
+speed, reliability, cost control, differentiation.</li>
+<li><strong>Technical value:</strong> Makes self-improvement monotone
+relative to an explicit external score and recoverable state.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+artifact and authentic tasks; evaluation pool participates in
+optimization; full replication is server-gated. Suitable only for
+isolated sandboxes.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>Moderate</strong> / <strong>Now</strong> /
+<strong>L</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Simulator,
+deterministic packaging, held-out evaluator, artifact registry, budget
+controller, rollback, security scan, effect isolation.</li>
+<li><strong>Key risks:</strong> Evaluator overfitting, reward hacking,
+source-code compromise, data leakage, nondeterminism, escalating
+compute, false confidence from one benchmark.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build</strong> the
+champion/rollback and policy boundary; buy sandbox infrastructure if
+provenance and isolation are verifiable.</li>
+<li><strong>Minimum reversible validation experiment:</strong> One
+non-production workflow with a frozen simulator, 20 full evaluations,
+three seeds, and a fixed baseline; prohibit external effects.</li>
+<li><strong>Success metrics and stop conditions:</strong> Held-out score
+gain, regression frequency, rollback success, cost per retained gain,
+security violations, variance. Stop on any sandbox escape, unrecoverable
+state change, no gain across three seeds, or &gt;2× cost for &lt;5%
+improvement.</li>
+<li><strong>Roadmap trigger:</strong> Reproducible held-out gains, zero
+unauthorized effects, deterministic restoration, and favorable cost
+across two task families.</li>
+</ul>
+<h2 id="prepare-foundations">Prepare Foundations</h2>
+<h3
+id="4-ruleevidence-provenance-and-decision-dependency-ledger--879">4.
+Rule/evidence provenance and decision-dependency ledger — 87.9</h3>
+<ul>
+<li><strong>Category:</strong> Data &amp; Knowledge Infrastructure / RAG
+&amp; Knowledge / Safety &amp; Governance.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> Both counterfactual papers require exact authority/rule
+identity, perturbation lineage, and commitment timing.
+<strong>Independent Analysis</strong> grounded in <em>Verdict Without
+the Rule</em> and <em>Cited but Not Consulted</em>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong>
+Rendered prompts and final citations lose which version, clause,
+passage, and decision stage actually shaped an answer.</li>
+<li><strong>Proposed future capability and how it works:</strong> Store
+immutable IDs for rules, clauses, sources, retrieved spans, commitments,
+counterfactuals, outputs, and reviewer outcomes; link every accepted
+claim to its dependency test.</li>
+<li><strong>Likely architectural placement:</strong> data platform,
+retrieval/knowledge, observability, security/governance.</li>
+<li><strong>Expected business value:</strong> auditability, quality,
+reliability, risk reduction, speed of incident analysis.</li>
+<li><strong>Technical value:</strong> Enables reproducible
+counterfactuals across model, prompt, and corpus revisions.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Supporting need is strong; schema and scale are
+enterprise-specific.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>High</strong> / <strong>3–6 months</strong> /
+<strong>L</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Source registry,
+policy owners, retention rules, access control, lineage schema, stable
+model/harness IDs.</li>
+<li><strong>Key risks:</strong> Sensitive-policy concentration, lineage
+gaps, storage growth, stale links, ownership disputes, privacy and
+discovery exposure.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build</strong> the
+semantic schema and controls; consider buying underlying lineage storage
+only with fine-grained authorization and export.</li>
+<li><strong>Minimum reversible validation experiment:</strong>
+Instrument one sandbox pipeline for 100 cases; compare reconstruction
+success and reviewer time with existing logs.</li>
+<li><strong>Success metrics and stop conditions:</strong> ≥95%
+dependency reconstruction, zero unauthorized access, reviewer time,
+missing-link rate, storage cost. Stop if source visibility cannot be
+segregated or reconstruction remains &lt;90%.</li>
+<li><strong>Roadmap trigger:</strong> Reliable reconstruction across two
+pipelines and approved retention/access model.</li>
+</ul>
+<h3 id="5-revision-rollback-and-experiment-lineage--875">5. Revision
+rollback and experiment lineage — 87.5</h3>
+<ul>
+<li><strong>Category:</strong> MLOps &amp; Platform / AI Software
+Engineering / Agentic AI.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> AAArena retains the best policy after regressions;
+Memento 3 uses Git memory; MASS separates workflow search, trajectory
+selection, checkpoints, and export. <strong>Paper Fact</strong>; unified
+platform is <strong>Enterprise Inference</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong>
+Agent-created prompts, workflows, memories, code, and rulebooks change
+faster than reviewers can reconstruct or undo.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+Version every candidate and dependency; attach evaluator results, cost,
+data lineage, and security findings; support atomic promotion and
+restoration to a signed champion.</li>
+<li><strong>Likely architectural placement:</strong> developer platform,
+infrastructure, observability, security/governance.</li>
+<li><strong>Expected business value:</strong> reliability, speed, risk
+reduction, cost, developer productivity.</li>
+<li><strong>Technical value:</strong> Separates experimentation from
+promotion and makes regression recovery deterministic.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Mature
+software pattern with fresh agent-learning evidence; cross-artifact
+rollback semantics need design.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>High</strong> / <strong>3–6 months</strong> /
+<strong>M</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Artifact identity,
+immutable storage, environment snapshots, evaluator versioning, signing,
+deployment controls.</li>
+<li><strong>Key risks:</strong> Partial rollback, hidden external state,
+incompatible dependencies, secret capture, lineage tampering, storage
+cost.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Hybrid</strong>—use
+established artifact/version infrastructure; build agent-specific
+manifests and promotion policy.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Version
+20 agent-generated revisions in a disposable environment; inject five
+regressions and restore the prior champion.</li>
+<li><strong>Success metrics and stop conditions:</strong> 100% lineage
+completeness, restore success, time-to-recovery, external-state
+reconciliation, secret-scan findings. Stop if any durable effect
+survives rollback without an explicit receipt.</li>
+<li><strong>Roadmap trigger:</strong> Deterministic restore across
+prompts, code, memory, and configuration with approved security
+controls.</li>
+</ul>
+<h3 id="6-held-out-evaluator-and-task-partition-service--869">6.
+Held-out evaluator and task-partition service — 86.9</h3>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability / MLOps
+&amp; Platform.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> AAArena reuses full-pool feedback during optimization;
+MASS shows aggregation-dependent gains and adverse transfer; Memento 3
+validates exact replay but not unseen states. <strong>Independent
+Analysis</strong> based on all three learning papers.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong>
+Optimizers overfit the judge, benchmark, opponent pool, or replay
+history while appearing to improve.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+Maintain sealed train/search, validation, and final-acceptance
+partitions with separate identities and access paths; use independent
+judges; audit contamination; reserve final evaluation for promotion
+only.</li>
+<li><strong>Likely architectural placement:</strong> evaluation,
+security/governance, data platform, infrastructure.</li>
+<li><strong>Expected business value:</strong> reliability, quality,
+strategic decision accuracy, risk reduction.</li>
+<li><strong>Technical value:</strong> Makes learning claims falsifiable
+and separates optimization feedback from acceptance evidence.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+methodological need; representative internal holdouts and human labels
+are costly.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>High</strong> / <strong>3–6 months</strong> /
+<strong>L</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Task taxonomy,
+sealed data, access policy, independent evaluator, contamination
+scanner, cost budget.</li>
+<li><strong>Key risks:</strong> Leakage, stale holdouts, evaluator bias,
+insufficient sample size, high label cost, domain drift.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build</strong>
+governance and partitions; partner for domain labels or external
+red-team evaluation.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Re-score
+one improvement project on a sealed 20-case partition and compare
+conclusions with its development evaluator.</li>
+<li><strong>Success metrics and stop conditions:</strong> Contamination
+rate, judge agreement, rank reversals, confidence intervals,
+adverse-transfer rate, cost. Stop if independence cannot be enforced or
+the holdout is not representative.</li>
+<li><strong>Roadmap trigger:</strong> Repeated detection of material
+evaluation bias and stable independent scoring across two projects.</li>
+</ul>
+<h2 id="monitor-for-maturity">Monitor for Maturity</h2>
+<h3 id="7-multi-agent-self-supervision-shadow-trainer--768">7.
+Multi-agent self-supervision shadow trainer — 76.8</h3>
+<ul>
+<li><strong>Category:</strong> Model &amp; Inference / Agentic AI /
+MLOps &amp; Platform.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> MASS reports research-task and token-efficiency gains
+but declining Terminal-Bench/SWE-bench scores and aggregation-sensitive
+significance. <strong>Paper Fact</strong>; enterprise option is
+<strong>Uncertainty</strong> plus <strong>Enterprise
+Inference</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong>
+High-quality expert traces are scarce, while workflow structure may
+provide useful supervision.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+Generate multi-agent traces in a sealed research environment, rank them
+with independent evaluators, train a disposable adapter, and compare it
+with the unchanged base model on cross-domain holdouts.</li>
+<li><strong>Likely architectural placement:</strong> infrastructure,
+model gateway, evaluation, developer platform.</li>
+<li><strong>Expected business value:</strong> productivity, cost
+efficiency, speed, differentiation.</li>
+<li><strong>Technical value:</strong> Tests whether collaboration
+patterns can be internalized without production exposure.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Public
+pipeline exists, but protocol differences and adverse transfer are
+substantial; licensing of the repo is unresolved.</li>
+<li><strong>Confidence / horizon / effort:</strong> <strong>Low</strong>
+/ <strong>6–12 months</strong> / <strong>XL</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Training rights,
+GPU capacity, sealed data, independent judges, adapters, safety suite,
+rollback, model-weight governance.</li>
+<li><strong>Key risks:</strong> Self-confirmation, data contamination,
+capability regression, privacy leakage, IP/licensing issues, compute
+cost, unclear accountability.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Partner</strong> for
+research replication; do not build production infrastructure until
+independent gains are shown.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Train one
+small disposable adapter on synthetic tasks only; prohibit production
+data; test on two unrelated holdouts and safety suites.</li>
+<li><strong>Success metrics and stop conditions:</strong> Held-out gain,
+adverse-transfer rate, evaluator agreement, safety delta, cost per gain.
+Stop on any safety regression, no cross-domain gain, or unresolved data
+rights.</li>
+<li><strong>Roadmap trigger:</strong> Independent replication with
+significant gains across task-level paired tests and no material adverse
+transfer.</li>
+</ul>
+<h3 id="8-population-world-model-and-falsification-service--734">8.
+Population world-model and falsification service — 73.4</h3>
+<ul>
+<li><strong>Category:</strong> Reasoning &amp; Planning / Memory &amp;
+Context / Agentic AI.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> Memento 3 maintains replay-consistent
+rulebook/executable hypotheses and reports complete public ARC-AGI-3
+performance, while acknowledging survivor ambiguity. <strong>Paper
+Fact</strong>; enterprise translation is
+<strong>Uncertainty</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong> Agents
+prematurely commit to one causal model of an unfamiliar process, then
+gather evidence that confirms it.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+Maintain several explicit hypotheses, compile each into a sandbox
+predictor, replay known evidence, select information-seeking actions
+that distinguish survivors, and retain unresolved alternatives for
+review.</li>
+<li><strong>Likely architectural placement:</strong> agent layer,
+context/memory, orchestration, evaluation.</li>
+<li><strong>Expected business value:</strong> quality, reliability,
+strategic differentiation, faster diagnosis.</li>
+<li><strong>Technical value:</strong> Makes uncertainty over environment
+rules explicit and testable.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+public-game result; no verified code; narrow deterministic settings; no
+enterprise security or cost study.</li>
+<li><strong>Confidence / horizon / effort:</strong> <strong>Low</strong>
+/ <strong>12+ months</strong> / <strong>XL</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Safe simulator,
+executable model schema, replay store, hypothesis scorer, falsification
+budget, human domain expert.</li>
+<li><strong>Key risks:</strong> Malicious/generated code, combinatorial
+hypothesis growth, false replay confidence, unsafe experiments,
+hidden-state mismatch, cost.</li>
+<li><strong>Build / Buy / Partner:</strong>
+<strong>Partner/Research</strong>; avoid production build until
+hidden-environment replication and secure execution are available.</li>
+<li><strong>Minimum reversible validation experiment:</strong> A
+deterministic toy process with hidden rules, known simulator, five
+seeds, and a single-vs-population comparison; no live system
+actions.</li>
+<li><strong>Success metrics and stop conditions:</strong> Unseen
+transition accuracy, task success, hypothesis diversity, falsification
+efficiency, compute, security violations. Stop if population adds cost
+without better unseen prediction or generates unsafe code.</li>
+<li><strong>Roadmap trigger:</strong> Public implementation plus
+hidden-task replication showing better unseen prediction and task
+outcomes under bounded cost and secure execution.</li>
+</ul>
+<h2 id="deprioritize-for-now">Deprioritize for Now</h2>
+<h3 id="9-self-judged-recursive-improvement-as-an-approval-path--546">9.
+Self-judged recursive improvement as an approval path — 54.6</h3>
+<ul>
+<li><strong>Category:</strong> Safety &amp; Governance / Model &amp;
+Inference.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> MASS's best workflow is self-judged, gains vary by
+aggregation unit, and coding benchmarks regress; Memento 3 relies on
+model judgment for rulebook fidelity; counterfactual audits show
+plausible explanations may not be causal. <strong>Paper Fact</strong>
+plus <strong>Independent Analysis</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong>
+Organizations may be tempted to let the improving system also certify
+its own correctness and deployment readiness.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+<strong>Do not create this approval path.</strong> Keep self-evaluation
+as one research signal; require independent held-out evaluation,
+deterministic checks, security review, and human authority for
+promotion.</li>
+<li><strong>Likely architectural placement:</strong>
+security/governance, evaluation, human-review layer.</li>
+<li><strong>Expected business value:</strong> risk reduction by
+preventing premature autonomous promotion.</li>
+<li><strong>Technical value:</strong> Preserves evaluator independence
+and limits correlated error amplification.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Evidence supports caution; no credible production approval path
+exists.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>High</strong> / <strong>12+ months</strong> /
+<strong>XL</strong> for any reconsideration.</li>
+<li><strong>Dependencies and prerequisites:</strong> Independent
+evaluators, sealed holdouts, adversarial testing, audit trails,
+rollback, policy owner.</li>
+<li><strong>Key risks:</strong> Reward hacking, evaluator collusion,
+silent regression, data poisoning, unsafe capability gain,
+accountability failure.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Neither;
+deprioritize.</strong> Invest in independent evaluation and governance
+instead.</li>
+<li><strong>Minimum reversible validation experiment:</strong> If
+researched, use synthetic sandbox tasks where the self-judge score is
+compared with blinded external judges; never allow promotion or real
+effects.</li>
+<li><strong>Success metrics and stop conditions:</strong> Calibration to
+independent judges, disagreement detection, safety invariance,
+containment. Stop immediately on unreported regression, evaluator
+manipulation, or sandbox escape.</li>
+<li><strong>Roadmap trigger:</strong> Only independent multi-domain
+evidence that self-judgment predicts external outcomes, resists
+adversarial optimization, preserves safety, and remains subordinate to
+external authority.</li>
+</ul>
+<h1 id="implementation-priorities">Implementation priorities</h1>
+<h2 id="next-30-days">Next 30 days</h2>
+<ol type="1">
+<li>Assemble 40 rule-dependent and 30 source-dependent internal cases
+with domain-owner validation.</li>
+<li>Version every rule, source, model, prompt, harness, and evaluator
+used in those tests.</li>
+<li>Add a shadow-only counterfactual runner with deletion, swap,
+negation, null, and paraphrase controls.</li>
+<li>Define semantic-change scoring, confidence intervals, reviewer
+agreement, false-change cost, and explicit stop conditions before
+observing results.</li>
+</ol>
+<h2 id="next-90-days">Next 90 days</h2>
+<ol type="1">
+<li>Build a minimal dependency ledger and sealed acceptance
+partition.</li>
+<li>Pilot champion retention and rollback in one frozen simulator with
+no external effects.</li>
+<li>Compare independent human, deterministic, and model judges; keep
+disagreement visible.</li>
+<li>Red-team source substitution, prompt injection, data leakage, policy
+truncation, and evaluator contamination.</li>
+</ol>
+<h2 id="before-any-production-decision">Before any production
+decision</h2>
+<p>Require representative internal evidence across at least two
+model/harness families and two task domains; domain-owner validation of
+counterfactuals; bounded accuracy and latency cost; source licensing and
+privacy review; identity/authorization controls; evaluator independence;
+rollback of every mutable artifact; monitoring for drift; and a named
+human authority. None of today's papers establishes those
+conditions.</p>
+<h1 id="knowledge-reinforcement">Knowledge reinforcement</h1>
+<ol type="1">
+<li><strong>Question:</strong> Why is high compliance accuracy
+insufficient evidence of rule grounding?<br />
+<strong>Answer:</strong> A system can infer labels from scenario cues or
+prior knowledge. <em>Verdict Without the Rule</em> shows high baseline
+accuracy with very low output-change sensitivity when the rule is
+deleted, swapped, or negated.</li>
+<li><strong>Question:</strong> What distinguishes citation correctness
+from citation dependence?<br />
+<strong>Answer:</strong> Correctness asks whether the named source is
+appropriate. Dependence asks whether changing that source changes the
+conclusion or reasoning in the expected direction.</li>
+<li><strong>Question:</strong> Why is OCS not a correctness
+metric?<br />
+<strong>Answer:</strong> It measures whether output changes under a
+perturbation. A change can be wrong, and no change can be justified when
+other evidence is sufficient.</li>
+<li><strong>Question:</strong> What does AAArena add beyond a one-shot
+software benchmark?<br />
+<strong>Answer:</strong> It evaluates long-running policy revision
+against a rated opponent population under fixed interaction budgets,
+with replays, opponent selection, experiment records, and retained
+champions.</li>
+<li><strong>Question:</strong> What is the safest reusable pattern
+across today's learning papers?<br />
+<strong>Answer:</strong> Keep every revision provisional, score it with
+an evaluator separated from the optimizer, retain the last accepted
+champion, and make rollback deterministic.</li>
+<li><strong>Question:</strong> Why are MASS and Memento 3 on the
+Watchlist rather than implementation priorities?<br />
+<strong>Answer:</strong> MASS has self-judgment and adverse-transfer
+concerns; Memento 3 has narrow public-game evidence, no verified
+implementation, and replay consistency that does not prove unseen-state
+correctness.</li>
+<li><strong>Question:</strong> What internal context is required before
+implementation?<br />
+<strong>Answer:</strong> Domain criticality, authoritative rules and
+sources, policy ownership, false-change costs, source rights,
+representative cases, model/harness inventory, reviewer capacity,
+identity and authorization, retention rules, latency budgets, and
+independent evaluation capacity.</li>
+</ol>
+<h1 id="source-register-and-boundary">Source register and boundary</h1>
+<ul>
+<li>Sadhu, Sengupta, Sankarapu, and Seth, <em>Verdict Without the
+Rule</em>, arXiv:2610.12313v1, October 8, 2026 — <a
+href="https://arxiv.org/abs/2610.12313">abstract</a> · <a
+href="https://arxiv.org/html/2610.12313v1">full HTML</a></li>
+<li>Sadhu, Arora, and Seth, <em>Cited but Not Consulted</em>,
+arXiv:2610.12361v1, October 8, 2026 — <a
+href="https://arxiv.org/abs/2610.12361">abstract</a> · <a
+href="https://arxiv.org/html/2610.12361v1">full HTML</a></li>
+<li>Yang et al., <em>Can AI Agents Learn Their Way to the Top?</em>,
+arXiv:2610.12341v1, October 8, 2026 — <a
+href="https://arxiv.org/abs/2610.12341">abstract</a> · <a
+href="https://arxiv.org/html/2610.12341v1">full HTML</a> · <a
+href="https://github.com/THU-CST-SAST/AAArena">code</a></li>
+<li>Lee et al., <em>Recursive Self-Improvement through Multi-Agent
+Self-Supervision</em>, arXiv:2610.12176v1, October 8, 2026 — <a
+href="https://arxiv.org/abs/2610.12176">abstract</a> · <a
+href="https://arxiv.org/html/2610.12176v1">full HTML</a> · <a
+href="https://github.com/SakanaAI/mass">code</a></li>
+<li>Zhao et al., <em>Memento 3</em>, arXiv:2610.11794v1, October 8, 2026
+— <a href="https://arxiv.org/abs/2610.11794">abstract</a> · <a
+href="https://arxiv.org/html/2610.11794v1">full HTML</a></li>
+</ul>
+<p><strong>Boundary.</strong> All selected works are preprints. Reported
+metrics remain benchmark-, model-, harness-, prompt-, corpus-,
+evaluator-, and budget-specific. Paper facts do not establish enterprise
+safety, compliance, privacy, security, usability, economics, or
+production readiness. Proposed enhancements are future options, not
+approved roadmap commitments. Every experiment above is isolated,
+reversible, measurable, and non-destructive; internal implementation
+decisions require the organization-specific context listed in the
+architecture section.</p></main></div>
+<footer>AI Research Intelligence Brief · October 10, 2026 · Research options, not deployment approval.</footer>
+<div class="toolbar"><button onclick="window.print()" aria-label="Print report">Print</button><button id="top" aria-label="Back to top">↑ Top</button></div>
+<script>
+const p=document.getElementById('progress');addEventListener('scroll',()=>{const h=document.documentElement;p.style.width=((h.scrollTop/(h.scrollHeight-h.clientHeight))*100)+'%'});document.getElementById('top').onclick=()=>scrollTo({top:0,behavior:'smooth'});
+document.querySelectorAll('main h3').forEach(h=>{if(/^\d+\./.test(h.textContent))h.setAttribute('data-backlog','true')});
+</script>
+</body></html>
