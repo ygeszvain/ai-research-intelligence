@@ -3,12 +3,30 @@
     "title": "AI Research Intelligence",
     "url": "https://ygeszvain.github.io/ai-research-intelligence",
     "description": "Evidence-grounded daily AI and machine-learning research intelligence.",
-    "generated_at_utc": "2026-10-10T09:00:00.000Z",
-    "report_count": 62,
-    "latest_report": "2026-10-10",
-    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-10-10.html"
+    "generated_at_utc": "2026-10-11T09:00:00.000Z",
+    "report_count": 63,
+    "latest_report": "2026-10-11",
+    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-10-11.html"
   },
   "reports": [
+    {
+      "date": "2026-10-11",
+      "date_display": "October 11, 2026",
+      "title": "AI Research Intelligence Brief — October 11, 2026",
+      "excerpt": "Three deep papers show why enterprise AI must qualify structured-output contracts, validate what aggregate scores measure, and evaluate model positions across repeated samples.",
+      "topics": [
+        "Evaluation & Observability",
+        "Safety & Governance",
+        "Model & Inference",
+        "Memory & Context",
+        "MLOps & Platform",
+        "AI Software Engineering"
+      ],
+      "path": "reports/2026-10-11.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-10-11.html",
+      "size_bytes": 87970,
+      "sha256": "24238ba6568abf28bff81978aec0f36e5bcedac76e92426ab824426e55778dcb"
+    },
     {
       "date": "2026-10-10",
       "date_display": "October 10, 2026",
