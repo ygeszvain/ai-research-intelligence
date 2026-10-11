@@ -1,0 +1,1554 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Evidence-grounded AI Research Intelligence Brief for October 11, 2026: structured-output contracts, construct-valid safety scores, cross-sample coherence, and reversible evaluation architecture.">
+<meta name="report-date" content="2026-10-11">
+<meta name="research-window" content="2026-10-08T04:00:00-05:00/2026-10-11T04:00:00-05:00 America/Chicago; exact window 2026-10-10T04:00:00-05:00/2026-10-11T04:00:00-05:00">
+<meta name="deep-paper-count" content="3">
+<meta name="watchlist-count" content="2">
+<meta name="theme-color" content="#071321">
+<title>AI Research Intelligence Brief — October 11, 2026</title>
+<style>
+:root{--bg:#06111d;--panel:#0c1c2a;--panel2:#10283a;--text:#e9f2f8;--muted:#9fb6c6;--line:#2a465b;--cyan:#46dbc6;--gold:#f4c96b;--rose:#ff8f9b;--blue:#70adff;--max:1180px;color-scheme:dark}
+@media(prefers-color-scheme:light){:root{--bg:#f4f7f8;--panel:#fff;--panel2:#edf4f7;--text:#102131;--muted:#526979;--line:#cddbe2;--cyan:#087f73;--gold:#9b6300;--rose:#b92b45;--blue:#1661ad;color-scheme:light}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 90% 0,rgba(70,219,198,.12),transparent 30rem),var(--bg);color:var(--text);font:16px/1.67 ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;overflow-x:hidden}a{color:var(--cyan);text-underline-offset:3px;overflow-wrap:anywhere}a:hover{text-decoration-thickness:2px}header{border-bottom:1px solid var(--line);background:linear-gradient(135deg,rgba(70,219,198,.09),rgba(112,173,255,.05));padding:54px 22px 34px}.hero{max-width:var(--max);margin:auto}.eyebrow{color:var(--cyan);text-transform:uppercase;letter-spacing:.15em;font-size:.76rem;font-weight:800}h1{font-size:clamp(2.2rem,6vw,4.7rem);line-height:.98;max-width:1000px;margin:.35rem 0 1rem;letter-spacing:-.055em}header p{max-width:900px;color:var(--muted);font-size:1.09rem}.chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}.chip{border:1px solid var(--line);border-radius:999px;padding:6px 11px;background:var(--panel);font-size:.8rem}.topbets{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}.bet{border:1px solid var(--line);background:var(--panel);border-radius:14px;padding:15px}.bet b{display:block;color:var(--gold);font-size:1.15rem}.layout{max-width:var(--max);margin:auto;display:grid;grid-template-columns:250px minmax(0,1fr);gap:34px;padding:30px 22px 80px}nav{position:sticky;top:16px;align-self:start;max-height:calc(100vh - 32px);overflow:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:14px}nav strong{display:block;margin:2px 8px 10px;color:var(--gold)}nav ul{list-style:none;margin:0;padding:0}nav li{margin:0}nav a{display:block;color:var(--muted);text-decoration:none;padding:5px 8px;border-radius:7px;font-size:.83rem;line-height:1.25}nav a:hover{background:var(--panel2);color:var(--text)}main{min-width:0;overflow-x:hidden}main>h1{font-size:1.8rem;margin:2.6rem 0 1rem;padding-top:.7rem;border-top:1px solid var(--line);letter-spacing:-.02em}main>h1:first-child{margin-top:0}main h2{font-size:1.35rem;margin-top:2rem;color:var(--cyan)}main h3{font-size:1.08rem;color:var(--gold);margin-bottom:.45rem}p,li{max-width:88ch}blockquote{margin:1rem 0;padding:1rem 1.2rem;border-left:4px solid var(--gold);background:var(--panel);color:var(--muted)}pre{white-space:pre-wrap;overflow:auto;background:#07101a;border:1px solid var(--line);border-radius:14px;padding:18px;color:#dcecf2;font-size:.86rem;line-height:1.45}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}table{display:block;width:100%;max-width:100%;overflow-x:auto;border-collapse:collapse;margin:1.25rem 0;background:var(--panel);font-size:.86rem}th,td{padding:10px 12px;border:1px solid var(--line);text-align:left;vertical-align:top}th{color:var(--gold);background:var(--panel2)}hr{border:0;border-top:1px solid var(--line)}main h3+ul,main h2+ul{border:1px solid var(--line);background:linear-gradient(135deg,var(--panel),var(--panel2));border-radius:14px;padding:15px 22px 15px 34px}main h3+ul li,main h2+ul li{margin:.5rem 0}.progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--cyan),var(--gold));width:0;z-index:9}.toolbar{position:fixed;right:18px;bottom:18px;display:flex;gap:8px}.toolbar button{border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:999px;padding:9px 12px;cursor:pointer;box-shadow:0 8px 30px rgba(0,0,0,.2)}.label{font-size:.75rem;color:var(--muted)}footer{border-top:1px solid var(--line);padding:24px;text-align:center;color:var(--muted)}
+@media(max-width:850px){.topbets{grid-template-columns:1fr}.layout{grid-template-columns:1fr}nav{position:relative;top:0;max-height:none}nav ul{columns:2}h1{font-size:2.65rem}}
+@media(max-width:520px){header{padding-top:34px}.layout{padding:20px 14px 60px}nav ul{columns:1}table{display:block;overflow-x:auto}h1{font-size:2.25rem}}
+@media print{body{background:white;color:#111;font-size:11pt}header{padding:18px 0}.layout{display:block;padding:0}nav,.toolbar,.progress{display:none}a{color:#145c70}main>h1{break-before:page}main>h1:first-child{break-before:auto}table,pre,svg{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<header><div class="hero">
+<div class="eyebrow">AI Research Intelligence · Measurement contracts before metrics</div>
+<h1>Qualify the interface, the score, and the distribution.</h1>
+<p>October 11, 2026 briefing. Three deep papers show how field order changes reasoning, aggregate safety scores can erase their construct, and one sampled answer can conceal incompatible model positions.</p>
+<div class="chips"><span class="chip">3 deep papers</span><span class="chip">2 Watchlist</span><span class="chip">72-hour disclosed weekend window</span><span class="chip">9 enterprise options</span><span class="chip">Primary sources + full-paper review</span></div>
+<div class="topbets"><div class="bet"><span class="label">TOP BET 1 · PROTOTYPE SOON</span><b>92.7 · Output-contract qualification</b><span>Test field order, schema, parser, calibration, and task performance as one versioned contract.</span></div><div class="bet"><span class="label">TOP BET 2 · PROTOTYPE SOON</span><b>91.3 · Construct-valid scorecards</b><span>Require a score to earn its attribute claim before it governs selection.</span></div><div class="bet"><span class="label">TOP BET 3 · PROTOTYPE SOON</span><b>89.5 · Cross-sample coherence gate</b><span>Evaluate model positions across repeated samples, not one favorable answer.</span></div></div>
+</div></header>
+<div class="layout"><nav><strong>Navigate</strong><ul>
+<li><a href="#scope-window-and-evidence-policy"
+id="toc-scope-window-and-evidence-policy">Scope, window, and evidence
+policy</a></li>
+<li><a href="#executive-signal" id="toc-executive-signal">Executive
+signal</a></li>
+<li><a href="#top-3-future-bets" id="toc-top-3-future-bets">Top 3 Future
+Bets</a></li>
+<li><a
+href="#deep-paper-1--structured-output-is-an-intervention-not-neutral-plumbing"
+id="toc-deep-paper-1--structured-output-is-an-intervention-not-neutral-plumbing">Deep
+paper 1 — Structured output is an intervention, not neutral plumbing</a>
+<ul>
+<li><a href="#contribution-and-quantitative-claim-trace"
+id="toc-contribution-and-quantitative-claim-trace">Contribution and
+quantitative claim trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison"
+id="toc-methodological-critique-and-prior-work-comparison">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#reproducibility-and-enterprise-readiness"
+id="toc-reproducibility-and-enterprise-readiness">Reproducibility and
+enterprise readiness</a></li>
+</ul></li>
+<li><a href="#deep-paper-2--a-safety-score-must-earn-its-construct"
+id="toc-deep-paper-2--a-safety-score-must-earn-its-construct">Deep paper
+2 — A safety score must earn its construct</a>
+<ul>
+<li><a href="#contribution-and-quantitative-claim-trace-1"
+id="toc-contribution-and-quantitative-claim-trace-1">Contribution and
+quantitative claim trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison-1"
+id="toc-methodological-critique-and-prior-work-comparison-1">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#reproducibility-and-enterprise-readiness-1"
+id="toc-reproducibility-and-enterprise-readiness-1">Reproducibility and
+enterprise readiness</a></li>
+</ul></li>
+<li><a
+href="#deep-paper-3--one-answer-cannot-establish-a-stable-model-position"
+id="toc-deep-paper-3--one-answer-cannot-establish-a-stable-model-position">Deep
+paper 3 — One answer cannot establish a stable model position</a>
+<ul>
+<li><a href="#contribution-and-quantitative-claim-trace-2"
+id="toc-contribution-and-quantitative-claim-trace-2">Contribution and
+quantitative claim trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison-2"
+id="toc-methodological-critique-and-prior-work-comparison-2">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#reproducibility-and-enterprise-readiness-2"
+id="toc-reproducibility-and-enterprise-readiness-2">Reproducibility and
+enterprise readiness</a></li>
+</ul></li>
+<li><a href="#watchlist" id="toc-watchlist">Watchlist</a>
+<ul>
+<li><a href="#use-and-disuse-intent-structured-experience-consolidation"
+id="toc-use-and-disuse-intent-structured-experience-consolidation">Use
+and Disuse: Intent-Structured Experience Consolidation</a></li>
+<li><a
+href="#when-should-agents-think-adaptive-reasoning-via-cross-turn-estimation"
+id="toc-when-should-agents-think-adaptive-reasoning-via-cross-turn-estimation">When
+Should Agents Think? Adaptive Reasoning via Cross-Turn
+Estimation</a></li>
+</ul></li>
+<li><a href="#cross-paper-synthesis"
+id="toc-cross-paper-synthesis">Cross-paper synthesis</a></li>
+<li><a href="#enterprise-ai-architecture-implications"
+id="toc-enterprise-ai-architecture-implications">Enterprise AI
+Architecture Implications</a></li>
+<li><a href="#enterprise-ai-enhancement-backlog"
+id="toc-enterprise-ai-enhancement-backlog">Enterprise AI Enhancement
+Backlog</a>
+<ul>
+<li><a href="#priority-method-and-uncertainty"
+id="toc-priority-method-and-uncertainty">Priority method and
+uncertainty</a></li>
+<li><a href="#prototype-soon" id="toc-prototype-soon">Prototype Soon</a>
+<ul>
+<li><a href="#1-structured-output-contract-qualification--927"
+id="toc-1-structured-output-contract-qualification--927">1.
+Structured-output contract qualification — 92.7</a></li>
+<li><a
+href="#2-construct-validity-and-multidimensional-scorecard-registry--913"
+id="toc-2-construct-validity-and-multidimensional-scorecard-registry--913">2.
+Construct-validity and multidimensional scorecard registry —
+91.3</a></li>
+<li><a href="#3-cross-sample-coherence-qualification-gate--895"
+id="toc-3-cross-sample-coherence-qualification-gate--895">3.
+Cross-sample coherence qualification gate — 89.5</a></li>
+</ul></li>
+<li><a href="#prepare-foundations" id="toc-prepare-foundations">Prepare
+Foundations</a>
+<ul>
+<li><a href="#4-evaluation-contract-and-artifact-lineage-plane--889"
+id="toc-4-evaluation-contract-and-artifact-lineage-plane--889">4.
+Evaluation-contract and artifact-lineage plane — 88.9</a></li>
+<li><a href="#5-item-level-response-and-judge-evidence-store--876"
+id="toc-5-item-level-response-and-judge-evidence-store--876">5.
+Item-level response and judge-evidence store — 87.6</a></li>
+<li><a href="#6-task-conditioned-safety-admission-policy--867"
+id="toc-6-task-conditioned-safety-admission-policy--867">6.
+Task-conditioned safety admission policy — 86.7</a></li>
+</ul></li>
+<li><a href="#monitor-for-maturity"
+id="toc-monitor-for-maturity">Monitor for Maturity</a>
+<ul>
+<li><a href="#7-adaptive-cross-turn-reasoning-shadow-controller--779"
+id="toc-7-adaptive-cross-turn-reasoning-shadow-controller--779">7.
+Adaptive cross-turn reasoning shadow controller — 77.9</a></li>
+<li><a href="#8-intent-structured-memory-shadow-service--770"
+id="toc-8-intent-structured-memory-shadow-service--770">8.
+Intent-structured memory shadow service — 77.0</a></li>
+</ul></li>
+<li><a href="#deprioritize-for-now"
+id="toc-deprioritize-for-now">Deprioritize for Now</a>
+<ul>
+<li><a href="#9-single-aggregate-score-as-an-approval-gate--434"
+id="toc-9-single-aggregate-score-as-an-approval-gate--434">9. Single
+aggregate score as an approval gate — 43.4</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#implementation-priorities"
+id="toc-implementation-priorities">Implementation priorities</a>
+<ul>
+<li><a href="#next-30-days" id="toc-next-30-days">Next 30 days</a></li>
+<li><a href="#days-3190" id="toc-days-3190">Days 31–90</a></li>
+<li><a href="#do-not-do-yet" id="toc-do-not-do-yet">Do not do
+yet</a></li>
+</ul></li>
+<li><a href="#knowledge-reinforcement"
+id="toc-knowledge-reinforcement">Knowledge reinforcement</a></li>
+<li><a href="#evidence-register-and-boundaries"
+id="toc-evidence-register-and-boundaries">Evidence register and
+boundaries</a></li>
+<li><a href="#sources" id="toc-sources">Sources</a></li>
+</ul></nav><main><h1 id="scope-window-and-evidence-policy">Scope,
+window, and evidence policy</h1>
+<p><strong>Research window.</strong> The exact window was Saturday,
+October 10, 2026 at 4:00 AM CDT through Sunday, October 11, 2026 at 4:00
+AM CDT (America/Chicago; 09:00 UTC to 09:00 UTC). No new weekend arXiv
+announcement batch was available, so discovery expanded to the prior 72
+hours and re-screened the complete Friday artificial-intelligence batch,
+relevant cross-lists, primary papers, and verified artifacts. All five
+selections were submitted October 8, announced Friday, and absent from
+the 62-report archive through October 10.</p>
+<p><strong>Selection.</strong> Three papers cleared deep review:
+<em>Structure Tax</em>, <em>Searching for “Harmful Refusal”</em>, and
+<em>An Investigation of Model Coherence</em>. <em>Use and Disuse</em>
+and <em>When Should Agents Think?</em> enter the Watchlist because both
+contain decision-relevant signals but need broader external validation
+before implementation guidance. The review favored controlled
+comparisons, construct validity, robustness checks, disclosed
+limitations, and reversible enterprise experiments.</p>
+<p><strong>Anti-duplication.</strong> Every identifier in the 62-report
+archive was excluded, including the six highlighted in the October 10
+brief: arXiv:2610.09469, 2610.11773, 2610.12292, 2610.12360, 2610.12375,
+and 2610.12466. All five selections are newly covered. Earlier briefs
+addressed evaluation contracts, claim ledgers, uncertainty state,
+workflow qualification, provenance, and rollback. Today’s incremental
+question is narrower: <em>what does an output field, safety score, or
+repeated response actually measure?</em></p>
+<p><strong>Evidence labels.</strong> <strong>Paper Fact</strong> means
+directly reported in a reviewed paper or verified first-party artifact.
+<strong>Independent Analysis</strong> means this briefing’s comparison,
+calculation, or critique. <strong>Enterprise Inference</strong>
+translates research into a bounded future option.
+<strong>Uncertainty</strong> marks missing causal, adversarial,
+external-validity, artifact, security, privacy, governance, economic, or
+production evidence. Benchmark performance never authorizes production
+deployment.</p>
+<h1 id="executive-signal">Executive signal</h1>
+<blockquote>
+<p><strong>Enterprise AI interfaces are measurement instruments. Field
+order can alter reasoning, score aggregation can erase the construct
+being measured, and one sampled answer can conceal contradictions.
+Reliability therefore requires qualifying the interface, the score, and
+the response distribution—not only the underlying model.</strong></p>
+</blockquote>
+<p>The three deep papers support complementary parts of that rule:</p>
+<ol type="1">
+<li><strong>Structure Tax</strong> evaluates five models, four datasets,
+two serialization families, and answer-first versus reasoning-first
+field order. Reasoning-first structured outputs match or exceed
+free-form performance, while answer-first schemas can produce large
+collapses. In the robustness study, the smallest reasoning-first
+advantage across 24 model/format/variant cells is 37 percentage points;
+on GSM8K one condition falls from .92 to .55 when the answer precedes
+the reasoning.</li>
+<li><strong>Searching for “Harmful Refusal”</strong> audits HELM Safety
+v1.17.0. Three candidate refusal datasets are saturated; the remaining
+HarmBench matrix contains 398 retained items across 81 models. A
+one-dimensional 2PL model has held-out log-loss .470 versus about .28
+for exploratory multidimensional models. Developer-linked
+differential-item flags collapse when standard, contextual, and
+copyright behaviors are modeled separately. A single HarmBench score
+therefore does not isolate one refusal attribute.</li>
+<li><strong>An Investigation of Model Coherence</strong> asks 175
+high-stakes or clear-cut questions 20 times each and groups mutually
+incompatible positions. Frontier models average 0.06 nats of
+answer-spread entropy, while narrow finetunes add 0.10–0.85 nats. Some
+finetunes also lose capability, but others do not; repeated-sample
+contradictions therefore expose a failure that single-run accuracy
+misses.</li>
+</ol>
+<p><strong>Decision posture.</strong> Prototype schema-order
+qualification, multidimensional benchmark scorecards, and cross-sample
+coherence testing in isolated evaluation environments. Prepare shared
+evaluation-contract, artifact-lineage, and stochastic-test
+infrastructure. Monitor adaptive reasoning and time-horizon metrics. Do
+not treat one aggregate score, one generated rationale, or one response
+sample as production authorization evidence.</p>
+<h1 id="top-3-future-bets">Top 3 Future Bets</h1>
+<ol type="1">
+<li><strong>Structured-output contract qualification —
+92.7/100.</strong> Why it matters: a schema that places the answer
+before the reasoning can change both accuracy and calibration without
+changing the model. Evidence that would change the recommendation:
+representative internal tasks show no material field-order effect across
+supported models, or constrained-decoding tooling makes the compared
+conditions non-equivalent. Next reversible action: replay 100 low-risk
+tasks under free-form, reasoning-first JSON/XML, and answer-first
+JSON/XML while logging parseability, accuracy, calibration, latency, and
+cost.</li>
+<li><strong>Construct-validity and multidimensional scorecard registry —
+91.3/100.</strong> Why it matters: a top-line safety score can combine
+behaviors that do not move together and therefore cannot support
+attribute-specific claims. Evidence that would change the
+recommendation: item-level internal data fit a pre-registered one-factor
+model with stable calibration across model families and operating
+conditions. Next reversible action: decompose one existing aggregate
+evaluation into item-level response-process scopes and run
+dimensionality plus differential-item diagnostics.</li>
+<li><strong>Cross-sample coherence qualification gate —
+89.5/100.</strong> Why it matters: a model or finetune can look
+acceptable on one run while adopting mutually incompatible positions
+across repeats. Evidence that would change the recommendation: repeated
+internal sampling shows stable positions after controlling ambiguity and
+indifference, with judge and embedding agreement. Next reversible
+action: run 20 samples on 40 high-impact, unambiguous prompts and
+independently review every detected contradiction before any admission
+decision.</li>
+</ol>
+<h1
+id="deep-paper-1--structured-output-is-an-intervention-not-neutral-plumbing">Deep
+paper 1 — Structured output is an intervention, not neutral
+plumbing</h1>
+<p><strong>Identity and status.</strong> <em>Structure Tax: How
+Structured Output affects LLMs Performance</em>; Vineet Kumar, Kanishka,
+and Bhuvanesh Mandora; arXiv:2610.12056v1; submitted October 8, 2026;
+accepted to AACL-IJCNLP 2026 Main. No public implementation artifact was
+verified from the paper page at review time. (<a
+href="https://arxiv.org/abs/2610.12056">paper</a>)</p>
+<h2 id="contribution-and-quantitative-claim-trace">Contribution and
+quantitative claim trace</h2>
+<p>The paper compares free-form output with JSON and XML in two field
+orders: answer-first then reasoning (A,R), and reasoning-first then
+answer (R,A). It tests GPT-4o, Gemini-Flash-2.0, Claude-Sonnet-4.5,
+Llama-3.1-8B, and Gemma3-4B on GSM8K, MMLU, LogicBench, and Spider,
+using five independent runs per model–dataset–format cell.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>Decision meaning</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Structure itself is not the main penalty</td>
+<td style="text-align: right;">R,A structured formats consistently match
+or exceed free-form; A,R conditions drive the large losses</td>
+<td>Treat schema design as part of the model configuration</td>
+<td>Four benchmarks and five models do not cover all tool schemas or
+constrained decoders</td>
+</tr>
+<tr class="even">
+<td>Field order can dominate surface prompt wording</td>
+<td style="text-align: right;">Across 24 GSM8K robustness cells, the
+smallest R,A advantage is +37 points; Llama XML gaps span +70.5 to +76.0
+and GPT-4o XML +39.0 to +45.0</td>
+<td>Version and qualify field order, not just schema syntax</td>
+<td>Robustness study uses two models and three perturbation
+families</td>
+</tr>
+<tr class="odd">
+<td>Answer-first can cause premature commitment</td>
+<td style="text-align: right;">One GSM8K comparison falls from .92 under
+R,A to .55 under JSON A,R while reasoning length stays 108–127
+words</td>
+<td>Reasoning volume is not evidence that reasoning governed the
+answer</td>
+<td>Exact condition is one task/model slice, not a universal causal
+magnitude</td>
+</tr>
+<tr class="even">
+<td>Answer-first can cause post-hoc compression</td>
+<td style="text-align: right;">On MMLU, JSON A,R produces 33 reasoning
+words versus 121 under XML R,A</td>
+<td>Monitor both rationale length and semantic dependence</td>
+<td>Word count is a proxy for effort, not a process guarantee</td>
+</tr>
+<tr class="odd">
+<td>Calibration moves with the interface</td>
+<td style="text-align: right;">XML R,A reduces ECE on most task/model
+cells; GPT-4o MMLU and some Spider cells are exceptions</td>
+<td>Calibration must be qualified per schema and task</td>
+<td>Confidence–accuracy correlation remains low, so per-example
+discrimination is weak</td>
+</tr>
+<tr class="even">
+<td>Hidden-state analyses align with behavior</td>
+<td style="text-align: right;">R,A linear probes peak at balanced
+accuracy .64 on MMLU and .70 on LogicBench; CKA direction predicts the
+accuracy direction across all four tasks</td>
+<td>Representation analysis can support, but not replace, behavioral
+testing</td>
+<td>CKA is interpretation-sensitive and probes are on open-weight
+models</td>
+</tr>
+</tbody>
+</table>
+<svg viewBox="0 0 1020 390" role="img" aria-label="Structured-output field order changes performance" style="width:100%;height:auto;background:#0c1c2a;border:1px solid #2a465b;border-radius:14px;margin:1rem 0">
+  <text x="35" y="40" fill="#f4c96b" font-family="system-ui" font-size="18">The schema is part of the inference policy</text>
+  <g fill="#10283a" stroke="#70adff" stroke-width="2"><rect x="50" y="80" width="270" height="90" rx="12"/><rect x="375" y="80" width="270" height="90" rx="12"/><rect x="700" y="80" width="270" height="90" rx="12"/></g>
+  <g fill="#e9f2f8" font-family="system-ui" text-anchor="middle"><text x="185" y="115" font-size="17">Reasoning → Answer</text><text x="185" y="145" font-size="14">deliberation before commitment</text><text x="510" y="115" font-size="17">Answer → Reasoning</text><text x="510" y="145" font-size="14">commitment before justification</text><text x="835" y="115" font-size="17">Free form</text><text x="835" y="145" font-size="14">unconstrained ordering</text></g>
+  <line x1="185" y1="170" x2="185" y2="245" stroke="#46dbc6" stroke-width="5"/><line x1="510" y1="170" x2="510" y2="305" stroke="#ff8f9b" stroke-width="5"/><line x1="835" y1="170" x2="835" y2="265" stroke="#70adff" stroke-width="5"/>
+  <g fill="#9fb6c6" font-family="system-ui" text-anchor="middle"><text x="185" y="275">usually best or tied</text><text x="510" y="335">largest accuracy collapses</text><text x="835" y="295">baseline, not neutral truth</text></g>
+  <text x="510" y="375" fill="#46dbc6" font-family="system-ui" font-size="14" text-anchor="middle">Qualification unit: model × task × schema × field order × decoding path</text>
+</svg>
+
+<h2
+id="methodological-critique-and-prior-work-comparison">Methodological
+critique and prior-work comparison</h2>
+<p>Prior work often treats structured generation as a binary constraint
+and attributes any loss to a generic “structure tax.” This study
+isolates serialization family from causal field order and triangulates
+across accuracy, calibration, CKA, probes, and reasoning length. Holding
+task prompts constant and perturbing wording, casing, and whitespace is
+a useful robustness step. The inverse-structure gradient—larger effects
+on externally unstructured tasks and smaller or reversed effects on
+SQL—offers a coherent explanatory pattern rather than a single benchmark
+win.</p>
+<p>The central causal explanation still exceeds what the design proves.
+JSON A,R and XML R,A differ in both order and syntax in some headline
+examples; full factorial comparisons help, but constrained-decoding
+implementations, tool-call APIs, provider-side schema enforcement, and
+hidden system prompts may behave differently. Temperature zero plus five
+runs does not eliminate provider nondeterminism, yet the paper does not
+model clustered API variation. ECE is aggregate and bin-sensitive.
+Hidden-state results use two open-weight models and cannot transfer
+automatically to proprietary systems. The paper reports no latency,
+token-cost, malformed-output, adversarial-injection, or downstream
+parser-risk analysis.</p>
+<h2 id="reproducibility-and-enterprise-readiness">Reproducibility and
+enterprise readiness</h2>
+<p>The paper discloses datasets, models, schemas, prompts, metrics,
+field orders, five-run reporting, representation methods, and
+perturbation protocol. No public code or response-level artifact was
+verified, limiting exact replication. <strong>Enterprise
+readiness:</strong> high for offline schema qualification; medium for
+model-gateway admission after internal replay; low for automatic
+production schema rewrites without application validation.
+<strong>Research Utility Score: 92/100</strong> (methodological rigor
+24/25; quantitative traceability 24/25; reproducibility/artifacts 14/20;
+enterprise relevance 15/15; prior-work advance 15/15).</p>
+<h1 id="deep-paper-2--a-safety-score-must-earn-its-construct">Deep paper
+2 — A safety score must earn its construct</h1>
+<p><strong>Identity and status.</strong> <em>Searching for “Harmful
+Refusal”: A Psychometric Audit of an AI Safety Benchmark</em>;
+Christopher M. Stewart, Preston Botter, Natalie Sarabosing, Muye Zhang,
+Rachel Phinnemore, Shalini Ghosh, Hong Shen, and Hoda Heidari;
+arXiv:2610.12409v1; submitted October 8, 2026; COLM 2026 AI for
+Measurement Science workshop paper. No public replication artifact was
+verified from the paper page. (<a
+href="https://arxiv.org/abs/2610.12409">paper</a>)</p>
+<h2 id="contribution-and-quantitative-claim-trace-1">Contribution and
+quantitative claim trace</h2>
+<p>The study treats a benchmark score as a measurement claim. It audits
+HELM Safety v1.17.0, accessed June 21, 2026, and asks whether HarmBench
+measures one latent attribute called harmful refusal. Item scores from
+two LLM judges are binarized at a unanimous perfect score. Two of 400
+HarmBench items are removed, leaving 398 items across a convenience
+sample of 81 models.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>Decision meaning</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Three candidate refusal datasets no longer discriminate</td>
+<td style="text-align: right;">Pass rates are .92–.94; HarmBench remains
+at .67</td>
+<td>Saturated tests cannot support model selection even if historically
+useful</td>
+<td>Saturation is snapshot- and model-pool-specific</td>
+</tr>
+<tr class="even">
+<td>HarmBench is not one-dimensional</td>
+<td style="text-align: right;">1D 2PL held-out log-loss .470 (SD .003);
+exploratory 2D–10D models cluster near .28</td>
+<td>Do not read one total as one causal ability</td>
+<td>Better fit does not uniquely identify the extra constructs</td>
+</tr>
+<tr class="odd">
+<td>A stronger 1D model still underperforms</td>
+<td style="text-align: right;">1D 3PL log-loss .322 and Brier .096
+versus exploratory 2D log-loss .287 and Brier .087</td>
+<td>The result is not merely a weak 1D parameterization</td>
+<td>More parameters and flexible models increase overfit risk; authors
+use holdouts and parsimony checks</td>
+</tr>
+<tr class="even">
+<td>Response process explains much of developer-linked variation</td>
+<td style="text-align: right;">OpenAI-vs-Anthropic flags fall from 13 MH
+/ 17 logistic under one score to 1 MH / 2 logistic when standard,
+contextual, and copyright scopes are separated</td>
+<td>Compare models within behavior scopes, not only totals</td>
+<td>Small developer groups, clustered model lineages, and
+non-independent examinees</td>
+</tr>
+<tr class="odd">
+<td>Raw group differences are not causal</td>
+<td style="text-align: right;">Raw means: OpenAI .866, Anthropic .889,
+closed/API .776, open-weight-like .507</td>
+<td>Match on relevant ability before interpreting item differences</td>
+<td>Convenience sample: 21 OpenAI, 11 Anthropic, 48 closed/API, 33
+open-weight-like</td>
+</tr>
+<tr class="even">
+<td>Content taxonomies do not fully resolve the construct</td>
+<td style="text-align: right;">Seven-domain modeling confirms
+multidimensionality but adds little over the three response-process
+factors</td>
+<td>Prefer the simplest validated decomposition</td>
+<td>Domain labels remain hypotheses about process, not proof</td>
+</tr>
+</tbody>
+</table>
+<h2
+id="methodological-critique-and-prior-work-comparison-1">Methodological
+critique and prior-work comparison</h2>
+<p>Most benchmark audits examine contamination, label quality, judge
+reliability, prompt sensitivity, or correlations with other scores. This
+paper imports construct-validity logic and item-response methods: a
+score may rank systems, but attribute-specific language is warranted
+only if a latent attribute plausibly generates the response pattern. The
+use of Bernoulli-null eigenvalue checks, exploratory and confirmatory
+MIRT, five repeated 80/20 splits, held-out log-loss, Brier score,
+AIC/BIC, two differential-item methods, and 5,000 null bootstraps is
+unusually strong for an AI leaderboard audit.</p>
+<p>The conclusions are narrower than “HarmBench is invalid.” The paper
+audits HELM’s operationalization, not the original HarmBench pipeline;
+it binarizes a five-point judge score at 1.0 and loses ordinal
+information. Models are not independent observations, developer samples
+are small, and shared training pipelines may inflate group structure.
+The confirmatory three-factor mapping is substantively plausible but not
+causally identified. The paper shows that a single-score interpretation
+is unsupported in this snapshot; it does not show which
+organization-specific safety decisions each factor should govern.</p>
+<h2 id="reproducibility-and-enterprise-readiness-1">Reproducibility and
+enterprise readiness</h2>
+<p>The paper gives the HELM release, access date, binarization rule,
+item counts, model counts, factor mappings, split strategy, restart
+selection, fit criteria, DIF groups, and bootstrap thresholding. No
+runnable repository or frozen response matrix was verified.
+<strong>Enterprise readiness:</strong> high for evaluation-governance
+practice and offline score decomposition; medium for procurement
+scorecards after item-level access and domain validation; low for
+replacing policy-owner judgment with psychometric factors.
+<strong>Research Utility Score: 93/100</strong> (methodological rigor
+25/25; quantitative traceability 24/25; reproducibility/artifacts 14/20;
+enterprise relevance 15/15; prior-work advance 15/15).</p>
+<h1
+id="deep-paper-3--one-answer-cannot-establish-a-stable-model-position">Deep
+paper 3 — One answer cannot establish a stable model position</h1>
+<p><strong>Identity and status.</strong> <em>An Investigation of Model
+Coherence: Narrow Finetunes Contradict Themselves Under Resampling</em>;
+Robert Graham, Yariv Barsheshat, Phil Blandfort, and Sabri Alouache;
+arXiv:2610.12129v1; submitted October 8, 2026; preprint under CC BY 4.0.
+The verified TwoMinds repository is public, MIT-licensed, has 24
+commits, pinned dependencies, tests, frozen paper rosters, dry-run cost
+estimates, and a v0.3.0 release with judged analysis artifacts. (<a
+href="https://arxiv.org/abs/2610.12129">paper</a> · <a
+href="https://github.com/themachinefan/twominds">artifact</a>)</p>
+<h2 id="contribution-and-quantitative-claim-trace-2">Contribution and
+quantitative claim trace</h2>
+<p>The authors define two responses as incompatible when no single agent
+could sincerely stand behind both. They sample each evaluated model 20
+times on 175 questions chosen to reduce ambiguity and indifference, then
+ask a cross-sample judge to partition responses into mutually compatible
+positions. Shannon entropy of the partition is the primary spread
+measure.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>Decision meaning</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>The test is intentionally high-specificity</td>
+<td style="text-align: right;">Frontier models average H=.06 nats, about
+1.06 effective positions per question; 71–94% of questions are
+single-position across all 20 samples</td>
+<td>A detected contradiction is intended to be serious, not ordinary
+wording variance</td>
+<td>Low spread does not certify coherence outside the selected
+questions</td>
+</tr>
+<tr class="even">
+<td>Narrow finetunes can destabilize positions</td>
+<td style="text-align: right;">Finetunes add .10–.85 nats over frontier
+baselines</td>
+<td>Qualify a finetune as a distribution, not one completion</td>
+<td>All evaluated finetunes use gpt-4.1 as base; generalization is
+unknown</td>
+</tr>
+<tr class="odd">
+<td>More explicit reasoning only partly repairs the failure</td>
+<td style="text-align: right;">Reasoning-enhanced variants improve by
+.27, .16, and .33 nats yet remain below baseline coherence</td>
+<td>Rationale prompting is not a sufficient remediation</td>
+<td>Few finetunes and no broad causal ablation</td>
+</tr>
+<tr class="even">
+<td>Capability loss is not the whole explanation</td>
+<td style="text-align: right;">Reward-hacks and insecure-code variants
+lose 20 and 16 GSM8K points, but several incoherent finetunes show no
+measured loss</td>
+<td>Track coherence separately from task accuracy</td>
+<td>GSM8K is a narrow capability proxy</td>
+</tr>
+<tr class="odd">
+<td>The judge was stress-tested</td>
+<td style="text-align: right;">Three shuffled passes, a second judge,
+synthetic ground truth, and embedding clustering support stability;
+artifact reports 5,075 sets with ARI .90 and 92% agreement</td>
+<td>Judge robustness can be measured and versioned</td>
+<td>The primary judge remains one model family and normative grouping
+remains judgment-based</td>
+</tr>
+<tr class="even">
+<td>Sampling still leaves tail risk</td>
+<td style="text-align: right;">20 samples per question</td>
+<td>Repeat testing exposes common contradictions, not rare-event
+bounds</td>
+<td>No confidence bound on very rare incompatible modes</td>
+</tr>
+</tbody>
+</table>
+<h2
+id="methodological-critique-and-prior-work-comparison-2">Methodological
+critique and prior-work comparison</h2>
+<p>Consistency research often measures lexical variance, answer flips
+under paraphrase, preference instability, semantic entropy, or task
+error decompositions. TwoMinds removes two alternative
+explanations—ambiguous prompts and questions about which a model may be
+indifferent—and judges all samples jointly. That improves specificity
+and makes the unit of analysis a set of possible responses rather than
+one output. The public artifact’s frozen rosters, cached raw traces,
+multiple judge passes, synthetic stress test, embedding cross-check, and
+cost-aware dry runs materially strengthen reproducibility.</p>
+<p>Question selection remains value-laden, and “no single agent could
+sincerely stand behind both” is a normative criterion. Frontier
+questions may align with post-training conventions, biasing the test
+toward base models. Twenty samples are insufficient for rare modes. The
+LLM judge sees all responses together and can inherit provider or style
+biases despite the checks. All narrow finetunes share one base model,
+and capability is assessed mainly with GSM8K. Enterprise systems also
+add retrieval, tools, memory, and deterministic post-processing that can
+either amplify or suppress response diversity.</p>
+<h2 id="reproducibility-and-enterprise-readiness-2">Reproducibility and
+enterprise readiness</h2>
+<p>The repository provides code, tests, frozen paper rosters, exact
+paper commands, pinned dependencies, raw judged artifacts, release
+metadata, and an MIT license. Replication still needs provider access
+and the original private fine-tune identifiers; stochastic generations
+will not match exactly. <strong>Enterprise readiness:</strong> high for
+offline repeated-sample qualification and artifact reuse; medium for
+finetune admission after domain-specific prompt design; low for runtime
+blocking on a single entropy threshold. <strong>Research Utility Score:
+91/100</strong> (methodological rigor 23/25; quantitative traceability
+23/25; reproducibility/artifacts 20/20; enterprise relevance 13/15;
+prior-work advance 12/15).</p>
+<h1 id="watchlist">Watchlist</h1>
+<h2 id="use-and-disuse-intent-structured-experience-consolidation">Use
+and Disuse: Intent-Structured Experience Consolidation</h2>
+<p><strong>Identity.</strong> Xiangyi Zeng, Baihang Liu, Xutong Wang, Ze
+Jin, Yunpeng Li, and Qixu Liu; arXiv:2610.12124v1; October 8, 2026;
+arXiv non-exclusive distribution license. (<a
+href="https://arxiv.org/abs/2610.12124">paper</a>)</p>
+<p><strong>Paper Fact.</strong> Hippocam organizes working context as
+nested intents, consolidates completed spans, recursively abstracts
+older prefixes, and preserves original messages in a tree for
+progressive recall. With DeepSeek-V4.1-Flash as the common backbone, it
+ties the best ALFWorld score at 97.8%, reaches 81.7% mean StreamBench
+accuracy over the first 150 tasks per stream and 85.8% over 300, and
+leads or ties seven of eight reported measures. In two sequential
+cross-domain tests, source-initialized versus fresh memory improves by
++19.2 and +6.0 points; the FEVER gain shrinks from six to two points
+under an alternative extraction. Later 150-task intervals improve
+accuracy while mean cost per task falls about 10%, but prefix
+consolidation plus the next calls account for substantial cost shares
+and savings depend on provider cache pricing.</p>
+<p><strong>Why Watchlist.</strong> The evaluation uses one 1M-context
+backbone, adapted baselines, benchmark-specific scoring, and several
+sequential comparisons where later tasks differ from earlier tasks. The
+architecture adds three auxiliary LLM components, so security, privacy,
+provenance, failure recovery, and operational cost require independent
+testing. No public implementation artifact was verified.
+<strong>Enterprise trigger:</strong> an auditable implementation on
+representative internal tasks beats simpler retrieval and summarization
+baselines under identical models and budgets, preserves immutable source
+traces, recovers conflicting details accurately, and shows stable cost
+under the organization’s actual cache economics.</p>
+<h2
+id="when-should-agents-think-adaptive-reasoning-via-cross-turn-estimation">When
+Should Agents Think? Adaptive Reasoning via Cross-Turn Estimation</h2>
+<p><strong>Identity.</strong> Yiruo Cheng, Shen Huang, Xiaoshuai Song,
+Jiejun Tan, Guanting Dong, Pengjun Xie, Ji-Rong Wen, and Zhicheng Dou;
+arXiv:2610.12061v1; October 8, 2026. (<a
+href="https://arxiv.org/abs/2610.12061">paper</a>)</p>
+<p><strong>Paper Fact.</strong> RACE uses likelihood changes after
+removing a reasoning turn to estimate whether earlier reasoning still
+supports current and subsequent reference actions. LoGiC progressively
+labels removable reasoning turns, and those signals train supervised and
+reinforcement-learning policies to decide when to reason. The paper
+reports reduced reasoning cost with maintained or improved task
+performance across four agent benchmarks.</p>
+<p><strong>Why Watchlist.</strong> The signal depends on reference
+actions, offline removal, and training-time likelihood access; it is not
+yet a production-time proof that skipped reasoning was safe. Aggregate
+task success can conceal rare high-impact failures, and reasoning-token
+reduction may shift work into hidden state, retrieval, or retries. No
+cross-provider enterprise replication or security analysis was verified
+in this review. <strong>Enterprise trigger:</strong> a shadow controller
+reduces end-to-end cost and latency on representative multi-turn tasks
+without worsening tail failures, recovery rate, calibration, tool
+misuse, or human escalation, with an immediate fallback to always-reason
+behavior.</p>
+<h1 id="cross-paper-synthesis">Cross-paper synthesis</h1>
+<table>
+<thead>
+<tr class="header">
+<th>Decision question</th>
+<th>Strongest signal</th>
+<th>Failure if ignored</th>
+<th>Architectural response</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Does the output contract preserve decision quality?</td>
+<td>R,A beats A,R across models, tasks, and prompt perturbations</td>
+<td>Parser-friendly schemas silently cause premature commitment or
+rationalization</td>
+<td>Version schema, field order, decoder, model, and task as one
+qualification unit</td>
+</tr>
+<tr class="even">
+<td>Does a score measure one attribute?</td>
+<td>HarmBench needs multiple dimensions and scope-specific matching</td>
+<td>Aggregate safety ranks are used for claims they cannot support</td>
+<td>Item-level response store, construct registry, multidimensional
+scorecard</td>
+</tr>
+<tr class="odd">
+<td>Is the model’s position stable across runs?</td>
+<td>Narrow finetunes show incompatible positions under repeated
+sampling</td>
+<td>One lucky answer admits an unstable model</td>
+<td>Cross-sample suites, judge diversity, contradiction review</td>
+</tr>
+<tr class="even">
+<td>Does memory preserve the evidence behind compression?</td>
+<td>Hippocam keeps original messages beneath recursive consolidations
+and recalls progressively</td>
+<td>Summaries become irreversible state and hide conflicting source
+details</td>
+<td>Immutable source tree, intent-aware consolidation, bounded
+progressive recall</td>
+</tr>
+<tr class="odd">
+<td>Can reasoning safely be skipped?</td>
+<td>Removal-derived likelihood signals can label redundant turns</td>
+<td>Token savings hide degraded recovery or tail reliability</td>
+<td>Shadow routing, always-reason fallback, tail and effect metrics</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Independent Analysis.</strong> The common failure is
+<strong>semantic compression without a preserved measurement
+contract</strong>. Structured output compresses deliberation into
+fields; a leaderboard compresses item responses into a number; a single
+generation compresses a response distribution into one answer; a time
+horizon compresses a success curve into one point. Every compression
+needs a declared construct, transformation, uncertainty, and reversal
+path.</p>
+<svg viewBox="0 0 1040 500" role="img" aria-label="Measurement contract architecture" style="width:100%;height:auto;background:#0c1c2a;border:1px solid #2a465b;border-radius:14px;margin:1rem 0">
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#46dbc6"/></marker></defs>
+  <g fill="#10283a" stroke="#70adff" stroke-width="2"><rect x="60" y="45" width="260" height="95" rx="12"/><rect x="390" y="45" width="260" height="95" rx="12"/><rect x="720" y="45" width="260" height="95" rx="12"/><rect x="60" y="340" width="260" height="105" rx="12"/><rect x="390" y="340" width="260" height="105" rx="12"/><rect x="720" y="340" width="260" height="105" rx="12"/></g>
+  <g fill="#e9f2f8" font-family="system-ui" text-anchor="middle"><text x="190" y="80" font-size="17">Task &amp; policy contract</text><text x="190" y="110" font-size="14">construct · scope · owner</text><text x="520" y="80" font-size="17">Model gateway</text><text x="520" y="110" font-size="14">model · prompt · schema · order</text><text x="850" y="80" font-size="17">Application / agent</text><text x="850" y="110" font-size="14">response · tool · effect</text><text x="190" y="380" font-size="17">Item &amp; sample store</text><text x="190" y="410" font-size="14">raw outcomes · repeated runs</text><text x="520" y="380" font-size="17">Evaluation service</text><text x="520" y="410" font-size="14">dimensions · calibration · tails</text><text x="850" y="380" font-size="17">Human acceptance</text><text x="850" y="410" font-size="14">review · abstain · rollback</text></g>
+  <g stroke="#46dbc6" stroke-width="3" fill="none" marker-end="url(#arrow)"><line x1="320" y1="92" x2="387" y2="92"/><line x1="650" y1="92" x2="717" y2="92"/><line x1="850" y1="140" x2="850" y2="337"/><line x1="720" y1="392" x2="653" y2="392"/><line x1="390" y1="392" x2="323" y2="392"/></g>
+  <path d="M190 140 C190 245 520 245 520 337" fill="none" stroke="#f4c96b" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+  <text x="520" y="255" fill="#f4c96b" font-family="system-ui" font-size="14" text-anchor="middle">No aggregate or schema crosses the gate without its measurement contract</text>
+</svg>
+
+<h1 id="enterprise-ai-architecture-implications">Enterprise AI
+Architecture Implications</h1>
+<p><strong>Independent Analysis.</strong> Over the next 12–24 months,
+the reviewed evidence supports an enterprise architecture in which
+evaluation contracts become first-class, versioned system objects:</p>
+<ul>
+<li><strong>Model gateway as configuration registry.</strong> Bind
+model, provider version, system prompt, decoding policy, schema, field
+order, tool contract, and parser version. A schema change triggers
+requalification rather than being treated as presentation-only.</li>
+<li><strong>Item- and sample-level evidence store.</strong> Preserve raw
+per-item judgments, repeated generations, judge outputs, embeddings, and
+model/harness metadata. Aggregates remain reproducible and can be
+recomputed under new constructs.</li>
+<li><strong>Construct and metric registry.</strong> Every score declares
+its intended attribute, item population, aggregation, threshold,
+confidence method, known saturation, dimensionality evidence, and
+prohibited interpretations.</li>
+<li><strong>Evaluation service.</strong> Support factorial schema
+replay, multidimensional modeling, differential-item tests, cross-sample
+contradiction grouping, judge-agreement audits, calibration, tail
+metrics, and cost/latency telemetry.</li>
+<li><strong>Policy enforcement and admission.</strong> Promotion rules
+operate on task- and risk-specific vectors rather than one global score.
+Any failed construct, coherence, or schema test routes to abstention or
+human review.</li>
+<li><strong>Observability and lineage.</strong> Production traces
+capture schema version, field order, parsing failures, confidence,
+retries, tool effects, and evaluator drift. Lineage connects each
+decision to the qualification evidence that admitted its
+configuration.</li>
+<li><strong>Human-review controls.</strong> Domain owners approve
+constructs and counterfactuals; reviewers inspect flagged contradictions
+and score decompositions. Overrides are reasoned, time-bounded, and
+auditable.</li>
+<li><strong>Experiment infrastructure.</strong> Shadow traffic,
+reversible flags, representative replay sets, holdouts, and automatic
+fallback permit safe testing of adaptive reasoning and new metrics
+without durable effects.</li>
+</ul>
+<p>Shared foundations are model gateways; evaluation infrastructure;
+observability; policy enforcement; identity and authorization; knowledge
+provenance; context and memory services; agent orchestration;
+human-review queues; data retention controls; cost telemetry; experiment
+registries; and rollback. No particular current stack is assumed.
+Implementation decisions require internal task criticality, schema/tool
+inventory, available ground truth, score ownership, model/version
+inventory, privacy and retention rules, acceptable false-pass/false-fail
+costs, latency budgets, reviewer capacity, and representative item-level
+history.</p>
+<h1 id="enterprise-ai-enhancement-backlog">Enterprise AI Enhancement
+Backlog</h1>
+<h2 id="priority-method-and-uncertainty">Priority method and
+uncertainty</h2>
+<p>The Future Enterprise AI Priority Score is a decision aid, not a
+calibrated forecast. Components use 0–100 scales and the required
+weights: strategic/business value 25%, technical leverage 20%, evidence
+strength 20%, enterprise readiness 15%, feasibility 10%, and
+risk-adjusted differentiation 10%. Displayed decimals are arithmetic,
+not empirical precision. Scores assume only that an enterprise operates
+or evaluates AI systems; unknown internal criticality, data access,
+architecture, regulation, and operating maturity can move rankings
+substantially.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Rank</th>
+<th>Enhancement</th>
+<th>Decision band</th>
+<th style="text-align: right;">Strategic</th>
+<th style="text-align: right;">Technical</th>
+<th style="text-align: right;">Evidence</th>
+<th style="text-align: right;">Readiness</th>
+<th style="text-align: right;">Feasibility</th>
+<th style="text-align: right;">Differentiation</th>
+<th style="text-align: right;">Weighted</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td>Structured-output contract qualification</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;"><strong>92.7</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td>Construct-validity and multidimensional scorecard registry</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">87</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;"><strong>91.3</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td>Cross-sample coherence qualification gate</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">89</td>
+<td style="text-align: right;"><strong>89.5</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td>Evaluation-contract and artifact-lineage plane</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">79</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;"><strong>88.9</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td>Item-level response and judge-evidence store</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;">89</td>
+<td style="text-align: right;">81</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">87</td>
+<td style="text-align: right;"><strong>87.6</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td>Task-conditioned safety admission policy</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">89</td>
+<td style="text-align: right;"><strong>86.7</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td>Adaptive cross-turn reasoning shadow controller</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">87</td>
+<td style="text-align: right;">89</td>
+<td style="text-align: right;">77</td>
+<td style="text-align: right;">57</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;"><strong>77.9</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td>Intent-structured memory shadow service</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">57</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;"><strong>77.0</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9</td>
+<td>Single aggregate score as an approval gate</td>
+<td>Deprioritize for Now</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">38</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">65</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;"><strong>43.4</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="prototype-soon">Prototype Soon</h2>
+<h3 id="1-structured-output-contract-qualification--927">1.
+Structured-output contract qualification — 92.7</h3>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability / AI
+Software Engineering.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> R,A schemas consistently beat A,R across the tested
+models and tasks; the smallest gap in 24 robustness cells is +37 points
+in <em>Structure Tax</em>. <strong>Paper Fact</strong>; qualification
+service is <strong>Enterprise Inference</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong> Output
+schemas are often changed for integration convenience without re-testing
+model behavior.</li>
+<li><strong>Proposed future capability and how it works:</strong> Replay
+representative tasks across free-form, reasoning-first, and answer-first
+schemas; bind results to model, prompt, decoder, parser, and application
+versions; block schema promotion when accuracy, calibration,
+parseability, latency, or cost crosses a defined threshold.</li>
+<li><strong>Likely architectural placement:</strong> model gateway,
+evaluation, developer platform, applications.</li>
+<li><strong>Expected business value:</strong> quality, reliability,
+speed, cost control, risk reduction.</li>
+<li><strong>Technical value:</strong> Makes interface-induced behavior
+measurable and prevents silent regressions.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+factorial paper evidence and safe replay design; external scope remains
+four benchmarks and five models.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>High</strong> / <strong>Now</strong> / <strong>M</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Versioned prompts
+and schemas, representative replay set, parsers, ground truth,
+calibration and latency telemetry.</li>
+<li><strong>Key risks:</strong> Test leakage, hidden provider changes,
+non-equivalent constrained decoding, storage of sensitive prompts,
+overfitting to the replay set.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build</strong> the
+contract and replay layer because application schemas and acceptance
+thresholds are internal; buy commodity tracing where useful.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Shadow
+100 historical low-risk tasks under five output contracts with no
+downstream effects.</li>
+<li><strong>Success metrics and stop conditions:</strong> Improve or
+preserve task success and parseability within predeclared bounds; stop
+if any high-severity task regresses, calibration worsens materially, or
+cost/latency exceeds budget.</li>
+<li><strong>Roadmap trigger:</strong> Stable gains across at least two
+model families and two internal task families, plus rollback and
+parser-security review.</li>
+<li><strong>Internal context required:</strong> Supported tool schemas,
+critical workflows, provider capabilities, parser failure costs, latency
+SLOs, and change-control owners.</li>
+</ul>
+<h3
+id="2-construct-validity-and-multidimensional-scorecard-registry--913">2.
+Construct-validity and multidimensional scorecard registry — 91.3</h3>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability / Safety
+&amp; Governance.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> HarmBench’s 1D 2PL log-loss is .470 versus about .28 for
+multidimensional models, while developer-linked DIF flags largely
+disappear under response-process scopes in <em>Searching for “Harmful
+Refusal”</em>. <strong>Paper Fact</strong>; registry design is
+<strong>Enterprise Inference</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong>
+Composite scores are used to make attribute-specific procurement or
+deployment claims they may not support.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+Register each construct, item population, response process, aggregation,
+confidence method, saturation state, dimensionality results, allowed
+interpretation, and owner; display score vectors and uncertainty before
+any total.</li>
+<li><strong>Likely architectural placement:</strong> evaluation,
+observability, security/governance, human-review layer.</li>
+<li><strong>Expected business value:</strong> quality, reliability, risk
+reduction, procurement clarity, strategic differentiation.</li>
+<li><strong>Technical value:</strong> Preserves the inferential boundary
+between raw item evidence and executive summaries.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Mature
+statistical methods; application to AI safety is emerging and requires
+item-level data.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>High</strong> / <strong>Now</strong> / <strong>M</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Item-level
+outcomes, metric owners, domain taxonomy, statistical expertise,
+versioned model metadata.</li>
+<li><strong>Key risks:</strong> Small samples, correlated model
+lineages, reification of fitted factors, privacy or vendor limits on
+item data, stakeholder resistance to less-simple reporting.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build +
+Partner</strong>; build the registry and scorecard, partner with
+measurement/domain experts for construct validation.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Decompose
+one current aggregate benchmark, fit pre-registered one- and
+multi-factor models, and present both views to the existing decision
+panel without changing approvals.</li>
+<li><strong>Success metrics and stop conditions:</strong> Better
+held-out fit, interpretable factors, stable thresholds, and changed
+decisions only where item evidence supports them; stop if factors are
+unstable or cannot be connected to owned policies.</li>
+<li><strong>Roadmap trigger:</strong> Two evaluation cycles reproduce
+the decomposition and decision owners adopt explicit allowed/prohibited
+score interpretations.</li>
+<li><strong>Internal context required:</strong> Current score consumers,
+item ownership and licenses, decision consequences, model sample size,
+and acceptable uncertainty.</li>
+</ul>
+<h3 id="3-cross-sample-coherence-qualification-gate--895">3.
+Cross-sample coherence qualification gate — 89.5</h3>
+<ul>
+<li><strong>Category:</strong> Safety &amp; Governance / Evaluation
+&amp; Observability.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> Twenty samples over 175 questions reveal .10–.85
+additional entropy for narrow finetunes; TwoMinds includes judge and
+embedding checks. <strong>Paper Fact</strong>; enterprise gate is
+<strong>Enterprise Inference</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong> A
+single evaluation completion can admit a model whose positions vary
+materially across stochastic runs.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+Resample high-impact prompts, jointly cluster incompatible positions,
+verify with multiple judges and embeddings, and route contradictions to
+human review. Store the distribution and its lineage with the model
+candidate.</li>
+<li><strong>Likely architectural placement:</strong> evaluation, model
+gateway, observability, human-review layer.</li>
+<li><strong>Expected business value:</strong> reliability, quality, risk
+reduction, customer experience.</li>
+<li><strong>Technical value:</strong> Adds distributional behavior to
+admission without pretending that one scalar certifies coherence.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Reusable MIT artifact and strong judge checks; question construction and
+thresholds remain domain-specific.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>Moderate–High</strong> / <strong>Now</strong> /
+<strong>M</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> High-impact prompt
+set, sampling budget, judge diversity, human rubric, model/version
+registry.</li>
+<li><strong>Key risks:</strong> API cost, correlated judges, ambiguous
+internal prompts, sensitive-output retention, false alarms, missed rare
+modes.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build on open
+artifact</strong>; reuse TwoMinds patterns while owning question
+selection, thresholds, and review.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Sample 40
+unambiguous internal prompts 20 times on two candidate models; blindly
+review all disagreements.</li>
+<li><strong>Success metrics and stop conditions:</strong>
+Reviewer-confirmed contradiction rate, judge agreement, cost per
+qualified model, and predictive value for later incidents; stop if
+ambiguity explains most flags or judge agreement is inadequate.</li>
+<li><strong>Roadmap trigger:</strong> Contradiction signals are stable
+across reruns and materially improve model-selection or
+finetune-debugging decisions.</li>
+<li><strong>Internal context required:</strong> Risk taxonomy,
+acceptable stochastic variance, sampling budget, privacy rules, and
+model change cadence.</li>
+</ul>
+<h2 id="prepare-foundations">Prepare Foundations</h2>
+<h3 id="4-evaluation-contract-and-artifact-lineage-plane--889">4.
+Evaluation-contract and artifact-lineage plane — 88.9</h3>
+<ul>
+<li><strong>Category:</strong> MLOps &amp; Platform / Evaluation &amp;
+Observability.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> All three deep papers show that results depend on schema
+order, item aggregation, sampling, judge, and model version.
+<strong>Independent Analysis</strong> grounded in all three.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong> Scores
+and approvals detach from the exact configuration and raw evidence that
+produced them.</li>
+<li><strong>Proposed future capability and how it works:</strong> Issue
+immutable IDs for model, prompt, schema/order, decoder, parser, dataset,
+item version, judge, sample count, metric code, and acceptance rule;
+link every report and approval to those IDs.</li>
+<li><strong>Likely architectural placement:</strong> developer platform,
+evaluation, observability, security/governance.</li>
+<li><strong>Expected business value:</strong> reliability, speed,
+auditability, risk reduction.</li>
+<li><strong>Technical value:</strong> Makes results reproducible and
+invalidates stale approvals automatically after material changes.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Standard lineage patterns are mature; the specific contract schema
+requires local design.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>High</strong> / <strong>3–6 months</strong> /
+<strong>L</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Asset inventory,
+ownership model, artifact store, CI/CD hooks, policy change
+process.</li>
+<li><strong>Key risks:</strong> Metadata drift, incomplete adoption,
+false equivalence between versions, retention cost,
+over-centralization.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Buy platform
+primitives, build policy model</strong> because commercial lineage can
+store artifacts but not define enterprise acceptance semantics.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Track one
+model-serving path and one benchmark end to end without blocking
+releases.</li>
+<li><strong>Success metrics and stop conditions:</strong> Complete
+lineage on ≥95% of pilot runs, reproducible score rebuilds, and
+automatic stale-approval detection; stop if manual burden exceeds
+automation value.</li>
+<li><strong>Roadmap trigger:</strong> A model, schema, or metric change
+can be traced and requalified automatically within the pilot SLO.</li>
+<li><strong>Internal context required:</strong> CI/CD systems, model
+gateway, data catalog, retention, audit, and ownership structure.</li>
+</ul>
+<h3 id="5-item-level-response-and-judge-evidence-store--876">5.
+Item-level response and judge-evidence store — 87.6</h3>
+<ul>
+<li><strong>Category:</strong> Data &amp; Knowledge Infrastructure /
+Evaluation &amp; Observability.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> HarmBench conclusions require item-level matrices;
+TwoMinds conclusions require all repeated responses and judge
+partitions. <strong>Paper Fact</strong>; shared store is
+<strong>Enterprise Inference</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong> Only
+aggregate scores survive, preventing re-analysis, bias audits, and
+threshold changes.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+Persist raw responses, item metadata, repeated samples, judge rationales
+or labels, embeddings, costs, and provenance under controlled retention;
+permit recomputation without re-running generation when allowed.</li>
+<li><strong>Likely architectural placement:</strong> data platform,
+evaluation, observability, security/governance.</li>
+<li><strong>Expected business value:</strong> speed, cost reduction,
+quality, auditability, risk reduction.</li>
+<li><strong>Technical value:</strong> Supports dimensionality tests,
+judge audits, drift analysis, and new metrics from the same
+evidence.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Storage
+patterns are mature; privacy, licensing, and scale controls are
+decisive.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>High</strong> / <strong>3–6 months</strong> /
+<strong>L</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Data
+classification, encryption, access control, retention policy, schema
+registry, de-identification.</li>
+<li><strong>Key risks:</strong> Sensitive prompt retention, IP/license
+violations, re-identification, storage growth, misleading reuse after
+task drift.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Buy secure storage,
+build evaluation schema and policy enforcement.</strong></li>
+<li><strong>Minimum reversible validation experiment:</strong> Store one
+de-identified evaluation suite for 30 days and reproduce its dashboard
+from raw records.</li>
+<li><strong>Success metrics and stop conditions:</strong> Exact
+aggregate reconstruction, access-policy compliance, acceptable cost, and
+no prohibited data; stop on unresolved rights or privacy findings.</li>
+<li><strong>Roadmap trigger:</strong> Re-analysis answers at least two
+material questions without new model calls and passes security
+review.</li>
+<li><strong>Internal context required:</strong> Data sensitivity,
+licenses, regional retention, access roles, and expected evaluation
+volume.</li>
+</ul>
+<h3 id="6-task-conditioned-safety-admission-policy--867">6.
+Task-conditioned safety admission policy — 86.7</h3>
+<ul>
+<li><strong>Category:</strong> Safety &amp; Governance / Model &amp;
+Inference.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> Safety behaviors are multidimensional, schema effects
+vary by intrinsic task structure, and coherence differs by question
+category. <strong>Independent Analysis</strong> from all three deep
+papers.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong> One
+global model rank or threshold governs dissimilar workflows.</li>
+<li><strong>Proposed future capability and how it works:</strong> Map
+each application to task, harm, schema, sampling, tool, and human-review
+requirements; admit only configurations qualified for that vector and
+route others to abstention or review.</li>
+<li><strong>Likely architectural placement:</strong> model gateway,
+security/governance, orchestration, human-review layer.</li>
+<li><strong>Expected business value:</strong> reliability, risk
+reduction, quality, cost control.</li>
+<li><strong>Technical value:</strong> Converts evaluation from global
+ranking to capability- and risk-scoped routing.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+conceptual evidence; local thresholds and operating data are
+missing.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>Moderate–High</strong> / <strong>6–12 months</strong> /
+<strong>L</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Application
+inventory, risk taxonomy, evaluation contracts, model gateway, human
+escalation paths.</li>
+<li><strong>Key risks:</strong> Policy explosion, routing errors, stale
+qualifications, vendor drift, operational complexity, uneven user
+experience.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build</strong> the
+admission logic; partner for domain validation and use vendor metadata
+only as input.</li>
+<li><strong>Minimum reversible validation experiment:</strong>
+Shadow-route one low-risk and one high-risk workflow without changing
+user-visible outcomes.</li>
+<li><strong>Success metrics and stop conditions:</strong> Higher
+qualified-task success, lower severe-error rate, bounded latency/cost,
+and explainable routes; stop if classification uncertainty or
+operational burden dominates.</li>
+<li><strong>Roadmap trigger:</strong> Shadow decisions outperform the
+current global policy and policy owners approve the risk mapping.</li>
+<li><strong>Internal context required:</strong> Application criticality,
+regulatory obligations, model inventory, escalation staffing, and
+SLOs.</li>
+</ul>
+<h2 id="monitor-for-maturity">Monitor for Maturity</h2>
+<h3 id="7-adaptive-cross-turn-reasoning-shadow-controller--779">7.
+Adaptive cross-turn reasoning shadow controller — 77.9</h3>
+<ul>
+<li><strong>Category:</strong> Reasoning &amp; Planning / Model &amp;
+Inference.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> RACE uses cross-turn likelihood changes to label when
+reasoning can be removed and reports lower reasoning cost across four
+benchmarks. <strong>Paper Fact</strong>; enterprise controller is
+<strong>Enterprise Inference</strong> with <strong>Uncertainty</strong>
+on tail safety.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong> Agents
+spend tokens and latency re-deriving reasoning that may still be valid
+from prior turns.</li>
+<li><strong>Proposed future capability and how it works:</strong> A
+shadow policy predicts whether to reuse prior reasoning or invoke a new
+reasoning step, while the production path continues to always reason;
+compare outcomes and maintain immediate fallback.</li>
+<li><strong>Likely architectural placement:</strong> agent layer,
+orchestration, model gateway, observability.</li>
+<li><strong>Expected business value:</strong> cost, speed,
+productivity.</li>
+<li><strong>Technical value:</strong> Turns reasoning frequency into a
+learned, measured control variable.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Promising benchmark evidence; training-time signal may not transfer to
+closed APIs or high-impact workflows.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>Moderate</strong> / <strong>6–12 months</strong> /
+<strong>L</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Multi-turn traces,
+reference actions or outcome labels, cost telemetry, fallback, tail-risk
+evaluation.</li>
+<li><strong>Key risks:</strong> Rare missed reasoning, hidden error
+accumulation, gaming cost metrics, data leakage, provider
+incompatibility.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Partner or research
+build</strong> until provider/runtime support and independent
+replications mature.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Shadow
+500 historical trajectories and compare every skipped-turn proposal with
+the always-reason baseline.</li>
+<li><strong>Success metrics and stop conditions:</strong> Token and
+latency reduction with non-inferior task success, recovery, tool safety,
+and escalation; stop on any increase in severe failures.</li>
+<li><strong>Roadmap trigger:</strong> Prospective shadow traffic
+confirms savings across two task families with stable tail metrics and
+audited fallback.</li>
+<li><strong>Internal context required:</strong> Token economics, latency
+SLOs, trace access, failure severity, and supported model APIs.</li>
+</ul>
+<h3 id="8-intent-structured-memory-shadow-service--770">8.
+Intent-structured memory shadow service — 77.0</h3>
+<ul>
+<li><strong>Category:</strong> Memory &amp; Context / RAG &amp;
+Knowledge.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> Hippocam recursively consolidates intent-bounded context
+while preserving original message trees for progressive recall; it
+reaches 85.8% mean StreamBench accuracy at 300 tasks. <strong>Paper
+Fact</strong>; enterprise memory service is <strong>Enterprise
+Inference</strong> with <strong>Uncertainty</strong> on generalization
+and governance.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong>
+Long-running agents either overflow context or replace evidence with
+irreversible summaries that lose conflicts and provenance.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+Maintain nested task intents, create versioned summaries when intents
+close, preserve immutable children, and let a shadow agent progressively
+reopen only the evidence needed for the current task.</li>
+<li><strong>Likely architectural placement:</strong> context/memory
+services, retrieval/knowledge, agent layer, data platform.</li>
+<li><strong>Expected business value:</strong> productivity, quality,
+speed, cost, reliability.</li>
+<li><strong>Technical value:</strong> Couples compression with
+reversible provenance and task-conditioned recall.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Broad
+benchmark suite and cost accounting, but one backbone, adapted
+baselines, no verified implementation artifact, and no enterprise
+security evaluation.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>Moderate</strong> / <strong>6–12 months</strong> /
+<strong>XL</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Immutable trace
+store, intent schema, access control, retention, recall evaluator,
+conflict handling, cost telemetry.</li>
+<li><strong>Key risks:</strong> Summary corruption, stale or poisoned
+memory, sensitive-data persistence, authorization leakage through
+recall, compounding auxiliary-model errors, cache-price dependence.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Partner or research
+build</strong>; the provenance and authorization layer should remain
+enterprise-controlled.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Replay 50
+long support or research cases in a read-only sandbox against
+fixed-window, retrieval-only, and simple-summary baselines.</li>
+<li><strong>Success metrics and stop conditions:</strong> Task success,
+fact recovery, contradiction handling, provenance completeness, token
+cost, latency, and privacy incidents; stop on any unauthorized recall or
+irreversible source loss.</li>
+<li><strong>Roadmap trigger:</strong> The shadow service improves
+long-horizon outcomes across two internal task families under equal
+models and budgets, with reliable source recovery and passed security
+review.</li>
+<li><strong>Internal context required:</strong> Data classification,
+authorization model, retention rules, task boundaries, long-horizon
+failure costs, and provider cache economics.</li>
+</ul>
+<h2 id="deprioritize-for-now">Deprioritize for Now</h2>
+<h3 id="9-single-aggregate-score-as-an-approval-gate--434">9. Single
+aggregate score as an approval gate — 43.4</h3>
+<ul>
+<li><strong>Category:</strong> Safety &amp; Governance / Other.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> HarmBench’s total does not isolate one construct; schema
+and sampling effects show that a scalar can hide configuration
+dependence. <strong>Independent Analysis</strong> supported by all three
+deep papers.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong>
+Executives want a simple approval number, but simplicity can erase
+material risk dimensions.</li>
+<li><strong>Proposed future capability and how it works:</strong> No new
+capability recommended. Retain totals only as navigation summaries with
+mandatory drill-down; prohibit them as sole authorization evidence.</li>
+<li><strong>Likely architectural placement:</strong>
+security/governance, evaluation, human-review layer.</li>
+<li><strong>Expected business value:</strong> risk reduction by avoiding
+false assurance.</li>
+<li><strong>Technical value:</strong> Prevents lossy aggregation from
+becoming a control plane.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Evidence against sole reliance is strong; a safe implementation path is
+simply not to grant authority to the scalar.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>High</strong> / <strong>Now</strong> / <strong>S</strong> for
+the prohibition.</li>
+<li><strong>Dependencies and prerequisites:</strong> Governance policy,
+score registry, multidimensional alternatives, decision-owner
+education.</li>
+<li><strong>Key risks:</strong> Shadow use of the scalar, dashboard
+pressure, metric gaming, inconsistent exceptions.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Do not build or
+buy</strong> a single-number approval gate; build the decomposed
+evidence path instead.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Review
+the last ten model decisions with and without the aggregate; document
+which material distinctions the total hides.</li>
+<li><strong>Success metrics and stop conditions:</strong> Zero approvals
+based solely on the scalar and complete dimension-level rationale; stop
+the review if raw item data are unavailable because the result would be
+unauditable.</li>
+<li><strong>Roadmap trigger:</strong> None under current evidence.
+Reconsider only if a pre-registered construct is demonstrably
+one-dimensional, stable across model families, calibrated to the exact
+enterprise decision, and independently replicated.</li>
+<li><strong>Internal context required:</strong> Current approval
+process, score consumers, audit requirements, and exception
+authority.</li>
+</ul>
+<h1 id="implementation-priorities">Implementation priorities</h1>
+<h2 id="next-30-days">Next 30 days</h2>
+<ol type="1">
+<li>Inventory production and evaluation schemas, including field order,
+constrained-decoding path, parser version, and downstream effects.</li>
+<li>Select one aggregate benchmark with item-level data and document
+exactly which claims decision makers currently infer from it.</li>
+<li>Create 40 high-impact prompts that are clear, consequential, and
+allow uncertainty; pre-register what counts as a contradiction.</li>
+<li>Stand up a non-blocking experiment ledger linking model, prompt,
+schema, dataset, judge, metric, cost, and result.</li>
+</ol>
+<h2 id="days-3190">Days 31–90</h2>
+<ol type="1">
+<li>Run the five-contract schema replay and publish task-, model-, and
+parser-specific deltas with uncertainty.</li>
+<li>Fit one-dimensional and scoped multidimensional models to the
+selected benchmark; review factors with domain and policy owners.</li>
+<li>Run repeated-sample coherence evaluation with two judge passes,
+embedding cross-check, and blinded human adjudication.</li>
+<li>Define admission rules that keep every experiment reversible and
+route unresolved cases to human review.</li>
+</ol>
+<h2 id="do-not-do-yet">Do not do yet</h2>
+<ul>
+<li>Do not rewrite all schemas to reasoning-first without testing
+application semantics, privacy, and tool contracts.</li>
+<li>Do not convert fitted psychometric factors into production
+thresholds without owned constructs and stable replication.</li>
+<li>Do not use an LLM judge’s contradiction label as an automated block
+without review and judge-agreement evidence.</li>
+<li>Do not deploy adaptive reasoning skips on high-impact traffic until
+tail failures, recovery, and fallback are proven.</li>
+<li>Do not treat time-horizon multipliers as linear business-value
+forecasts.</li>
+</ul>
+<h1 id="knowledge-reinforcement">Knowledge reinforcement</h1>
+<ol type="1">
+<li><strong>Why can a structured output reduce accuracy even if every
+requested field is present?</strong> Because autoregressive field order
+determines whether the model can deliberate before committing; an
+answer-first schema may force post-hoc rationalization.</li>
+<li><strong>What is construct validity in this context?</strong>
+Evidence that the attribute named by a score exists as a coherent latent
+property and plausibly drives the item responses the score
+aggregates.</li>
+<li><strong>Why is one correct answer insufficient for
+coherence?</strong> A stochastic model may produce mutually incompatible
+positions under the same unambiguous prompt; one sample observes only
+one mode.</li>
+<li><strong>What does a multidimensional fit prove?</strong> That one
+dimension is inadequate for prediction; it does not by itself name or
+causally identify the additional constructs.</li>
+<li><strong>Why preserve item-level, sample-level, and source-level
+evidence?</strong> Because new dimensions, judge audits, memory
+conflicts, thresholds, and drift analyses cannot be reconstructed from a
+scalar or summary alone.</li>
+<li><strong>What is the reversible first move?</strong> Shadow replay:
+compare contracts, decompositions, and repeated samples without changing
+user-visible decisions or durable effects.</li>
+</ol>
+<h1 id="evidence-register-and-boundaries">Evidence register and
+boundaries</h1>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Verified status</th>
+<th>Artifact / license evidence</th>
+<th>Enterprise boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Structure Tax</td>
+<td>AACL-IJCNLP 2026 Main; full HTML reviewed</td>
+<td>No public code verified from paper page</td>
+<td>Schema qualification evidence, not permission to rewrite production
+interfaces</td>
+</tr>
+<tr class="even">
+<td>Searching for “Harmful Refusal”</td>
+<td>COLM 2026 AIMS workshop; full HTML reviewed</td>
+<td>No public replication artifact verified</td>
+<td>Audit of HELM’s HarmBench operationalization, not a universal claim
+about safety or developers</td>
+</tr>
+<tr class="odd">
+<td>Model Coherence / TwoMinds</td>
+<td>Preprint; full HTML and public repository reviewed</td>
+<td>CC BY 4.0 paper; MIT repository; tests, pinned environment, release
+artifacts</td>
+<td>Offline distributional qualification, not a universal coherence
+certificate</td>
+</tr>
+<tr class="even">
+<td>Hippocam / Use and Disuse</td>
+<td>Preprint; full HTML reviewed</td>
+<td>No public implementation artifact verified</td>
+<td>Promising reversible-memory design, not approval for autonomous
+long-term memory</td>
+</tr>
+<tr class="odd">
+<td>RACE</td>
+<td>Preprint; abstract and available paper metadata reviewed</td>
+<td>No artifact claim relied on</td>
+<td>Watchlist only; no production skip policy recommended</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Uncertainty.</strong> All five papers are recent. Two deep
+papers lack verified runnable artifacts. Provider and model names, API
+behavior, hidden system prompts, and benchmark populations can change.
+The studies do not establish security, privacy, governance, latency,
+cost, accessibility, regional compliance, or human-factors readiness for
+any enterprise. Internal implementation requires representative data,
+policy ownership, architecture review, threat modeling, privacy review,
+and explicit stop conditions.</p>
+<h1 id="sources">Sources</h1>
+<ul>
+<li>Kumar, Kanishka, and Mandora. <em>Structure Tax: How Structured
+Output affects LLMs Performance</em>. arXiv:2610.12056v1, October 8,
+2026. <a href="https://arxiv.org/abs/2610.12056">Primary paper</a></li>
+<li>Stewart et al. <em>Searching for “Harmful Refusal”: A Psychometric
+Audit of an AI Safety Benchmark</em>. arXiv:2610.12409v1, October 8,
+2026. <a href="https://arxiv.org/abs/2610.12409">Primary paper</a></li>
+<li>Graham et al. <em>An Investigation of Model Coherence: Narrow
+Finetunes Contradict Themselves Under Resampling</em>.
+arXiv:2610.12129v1, October 8, 2026. <a
+href="https://arxiv.org/abs/2610.12129">Primary paper</a></li>
+<li>TwoMinds. Public reproducibility repository. <a
+href="https://github.com/themachinefan/twominds">Verified
+artifact</a></li>
+<li>Zeng et al. <em>Use and Disuse: Intent-Structured Experience
+Consolidation for Memory and Learning in LLM Agents</em>.
+arXiv:2610.12124v1, October 8, 2026. <a
+href="https://arxiv.org/abs/2610.12124">Primary paper</a></li>
+<li>Cheng et al. <em>When Should Agents Think? Adaptive Reasoning via
+Cross-Turn Estimation</em>. arXiv:2610.12061v1, October 8, 2026. <a
+href="https://arxiv.org/abs/2610.12061">Primary paper</a></li>
+</ul></main></div>
+<footer>AI Research Intelligence Brief · October 11, 2026 · Research options, not deployment approval.</footer>
+<div class="toolbar"><button onclick="window.print()" aria-label="Print report">Print</button><button id="top" aria-label="Back to top">↑ Top</button></div>
+<script>
+const p=document.getElementById('progress');addEventListener('scroll',()=>{const h=document.documentElement;p.style.width=((h.scrollTop/(h.scrollHeight-h.clientHeight))*100)+'%'});document.getElementById('top').onclick=()=>scrollTo({top:0,behavior:'smooth'});
+document.querySelectorAll('main h3').forEach(h=>{if(/^\d+\./.test(h.textContent))h.setAttribute('data-backlog','true')});
+</script>
+</body></html>
