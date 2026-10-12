@@ -3,12 +3,30 @@
     "title": "AI Research Intelligence",
     "url": "https://ygeszvain.github.io/ai-research-intelligence",
     "description": "Evidence-grounded daily AI and machine-learning research intelligence.",
-    "generated_at_utc": "2026-10-11T09:00:00.000Z",
-    "report_count": 63,
-    "latest_report": "2026-10-11",
-    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-10-11.html"
+    "generated_at_utc": "2026-10-12T09:00:00.000Z",
+    "report_count": 64,
+    "latest_report": "2026-10-12",
+    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-10-12.html"
   },
   "reports": [
+    {
+      "date": "2026-10-12",
+      "date_display": "October 12, 2026",
+      "title": "AI Research Intelligence Brief — October 12, 2026",
+      "excerpt": "Three deep papers show why reliable enterprise AI must close the loop from semantic tool selection to execution, from generated red-team scenarios to structural coverage, and from judge consensus to human-grounded validity.",
+      "topics": [
+        "Evaluation & Observability",
+        "Safety & Governance",
+        "Agentic AI",
+        "AI Security",
+        "MLOps & Platform",
+        "AI Software Engineering"
+      ],
+      "path": "reports/2026-10-12.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-10-12.html",
+      "size_bytes": 83014,
+      "sha256": "f015e0dcfbbf2bda80b0ceccfce240aad4d8564df5f5014cde5d01fb186dfa7b"
+    },
     {
       "date": "2026-10-11",
       "date_display": "October 11, 2026",
