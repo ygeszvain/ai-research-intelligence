@@ -3,12 +3,31 @@
     "title": "AI Research Intelligence",
     "url": "https://ygeszvain.github.io/ai-research-intelligence",
     "description": "Evidence-grounded daily AI and machine-learning research intelligence.",
-    "generated_at_utc": "2026-10-13T09:00:00.000Z",
-    "report_count": 65,
-    "latest_report": "2026-10-13",
-    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-10-13.html"
+    "generated_at_utc": "2026-10-14T09:00:00.000Z",
+    "report_count": 66,
+    "latest_report": "2026-10-14",
+    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-10-14.html"
   },
   "reports": [
+    {
+      "date": "2026-10-14",
+      "date_display": "October 14, 2026",
+      "title": "AI Research Intelligence Brief — October 14, 2026",
+      "excerpt": "Three deep papers show why consequential effects, memory records, and ordinary actions require policy-relevant state reconstruction before they gain enterprise authority.",
+      "topics": [
+        "Evaluation & Observability",
+        "Safety & Governance",
+        "Agentic AI",
+        "AI Security",
+        "Memory & Context",
+        "RAG & Knowledge",
+        "AI Software Engineering"
+      ],
+      "path": "reports/2026-10-14.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-10-14.html",
+      "size_bytes": 85850,
+      "sha256": "d02d1116fc2461dead1d6e08bd118ac2d54b6211d1590d0ffa3e8be7534726bf"
+    },
     {
       "date": "2026-10-13",
       "date_display": "October 13, 2026",
