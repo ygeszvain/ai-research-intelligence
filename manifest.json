@@ -3,12 +3,32 @@
     "title": "AI Research Intelligence",
     "url": "https://ygeszvain.github.io/ai-research-intelligence",
     "description": "Evidence-grounded daily AI and machine-learning research intelligence.",
-    "generated_at_utc": "2026-10-14T09:00:00.000Z",
-    "report_count": 66,
-    "latest_report": "2026-10-14",
-    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-10-14.html"
+    "generated_at_utc": "2026-10-15T09:05:10.000Z",
+    "report_count": 67,
+    "latest_report": "2026-10-15",
+    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-10-15.html"
   },
   "reports": [
+    {
+      "date": "2026-10-15",
+      "date_display": "October 15, 2026",
+      "title": "AI Research Intelligence Brief — October 15, 2026",
+      "excerpt": "Three deep papers show why generated patches, cross-principal handoffs, and rendered multimodal instructions need independent acceptance before they gain durable enterprise authority.",
+      "topics": [
+        "AI Security",
+        "Agentic AI",
+        "Evaluation & Observability",
+        "Safety & Governance",
+        "Multimodal",
+        "AI Software Engineering",
+        "Memory & Context",
+        "Data & Knowledge Infrastructure"
+      ],
+      "path": "reports/2026-10-15.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-10-15.html",
+      "size_bytes": 94665,
+      "sha256": "0f4bb2bd96061281aa9619082679425593aa63e12bc0b9c8f4d9c49c0f46632c"
+    },
     {
       "date": "2026-10-14",
       "date_display": "October 14, 2026",

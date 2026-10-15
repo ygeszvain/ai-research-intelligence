@@ -1,0 +1,1682 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Evidence-grounded AI Research Intelligence Brief for October 15, 2026: independent acceptance for generated patches, private-state agent handoffs, multimodal instructions, and reversible enterprise experiments.">
+<meta name="report-date" content="2026-10-15">
+<meta name="research-window" content="2026-10-14T04:00:00-05:00/2026-10-15T04:00:00-05:00 America/Chicago">
+<meta name="deep-paper-count" content="3">
+<meta name="watchlist-count" content="2">
+<meta name="theme-color" content="#071321">
+<title>AI Research Intelligence Brief — October 15, 2026</title>
+<style>
+:root{--bg:#06111d;--panel:#0c1c2a;--panel2:#10283a;--text:#e9f2f8;--muted:#9fb6c6;--line:#2a465b;--cyan:#46dbc6;--gold:#f4c96b;--rose:#ff8f9b;--blue:#70adff;--max:1180px;color-scheme:dark}
+@media(prefers-color-scheme:light){:root{--bg:#f4f7f8;--panel:#fff;--panel2:#edf4f7;--text:#102131;--muted:#526979;--line:#cddbe2;--cyan:#087f73;--gold:#9b6300;--rose:#b92b45;--blue:#1661ad;color-scheme:light}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 90% 0,rgba(70,219,198,.12),transparent 30rem),var(--bg);color:var(--text);font:16px/1.67 ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;overflow-x:hidden}a{color:var(--cyan);text-underline-offset:3px;overflow-wrap:anywhere}a:hover{text-decoration-thickness:2px}header{border-bottom:1px solid var(--line);background:linear-gradient(135deg,rgba(70,219,198,.09),rgba(112,173,255,.05));padding:54px 22px 34px}.hero{max-width:var(--max);margin:auto}.eyebrow{color:var(--cyan);text-transform:uppercase;letter-spacing:.15em;font-size:.76rem;font-weight:800}h1{font-size:clamp(2.2rem,6vw,4.7rem);line-height:.98;max-width:1000px;margin:.35rem 0 1rem;letter-spacing:-.055em}header p{max-width:900px;color:var(--muted);font-size:1.09rem}.chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}.chip{border:1px solid var(--line);border-radius:999px;padding:6px 11px;background:var(--panel);font-size:.8rem}.topbets{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}.bet{border:1px solid var(--line);background:var(--panel);border-radius:14px;padding:15px}.bet b{display:block;color:var(--gold);font-size:1.15rem}.layout{max-width:var(--max);margin:auto;display:grid;grid-template-columns:250px minmax(0,1fr);gap:34px;padding:30px 22px 80px}nav{position:sticky;top:16px;align-self:start;max-height:calc(100vh - 32px);overflow:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:14px}nav strong{display:block;margin:2px 8px 10px;color:var(--gold)}nav ul{list-style:none;margin:0;padding:0}nav li{margin:0}nav a{display:block;color:var(--muted);text-decoration:none;padding:5px 8px;border-radius:7px;font-size:.83rem;line-height:1.25}nav a:hover{background:var(--panel2);color:var(--text)}main{min-width:0;overflow-x:hidden}main>h1{font-size:1.8rem;margin:2.6rem 0 1rem;padding-top:.7rem;border-top:1px solid var(--line);letter-spacing:-.02em}main>h1:first-child{margin-top:0}main h2{font-size:1.35rem;margin-top:2rem;color:var(--cyan)}main h3{font-size:1.08rem;color:var(--gold);margin-bottom:.45rem}p,li{max-width:88ch}blockquote{margin:1rem 0;padding:1rem 1.2rem;border-left:4px solid var(--gold);background:var(--panel);color:var(--muted)}pre{white-space:pre-wrap;overflow:auto;background:#07101a;border:1px solid var(--line);border-radius:14px;padding:18px;color:#dcecf2;font-size:.86rem;line-height:1.45}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}table{display:block;width:100%;max-width:100%;overflow-x:auto;border-collapse:collapse;margin:1.25rem 0;background:var(--panel);font-size:.86rem}th,td{padding:10px 12px;border:1px solid var(--line);text-align:left;vertical-align:top}th{color:var(--gold);background:var(--panel2)}hr{border:0;border-top:1px solid var(--line)}main h3+ul,main h2+ul{border:1px solid var(--line);background:linear-gradient(135deg,var(--panel),var(--panel2));border-radius:14px;padding:15px 22px 15px 34px}main h3+ul li,main h2+ul li{margin:.5rem 0}.progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--cyan),var(--gold));width:0;z-index:9}.toolbar{position:fixed;right:18px;bottom:18px;display:flex;gap:8px}.toolbar button{border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:999px;padding:9px 12px;cursor:pointer;box-shadow:0 8px 30px rgba(0,0,0,.2)}.label{font-size:.75rem;color:var(--muted)}footer{border-top:1px solid var(--line);padding:24px;text-align:center;color:var(--muted)}
+@media(max-width:850px){.topbets{grid-template-columns:1fr}.layout{grid-template-columns:1fr}nav{position:relative;top:0;max-height:none}nav ul{columns:2}h1{font-size:2.65rem}}
+@media(max-width:520px){header{padding-top:34px}.layout{padding:20px 14px 60px}nav ul{columns:1}table{display:block;overflow-x:auto}h1{font-size:2.25rem}}
+@media print{body{background:white;color:#111;font-size:11pt}header{padding:18px 0}.layout{display:block;padding:0}nav,.toolbar,.progress{display:none}a{color:#145c70}main>h1{break-before:page}main>h1:first-child{break-before:auto}table,pre,svg{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<header><div class="hero">
+<div class="eyebrow">AI Research Intelligence · Independent acceptance at every authority boundary</div>
+<h1>Do not let the producer certify itself.</h1>
+<p>October 15, 2026 briefing. Three deep papers show why generated patches, cross-principal handoffs, and rendered multimodal instructions need independent acceptance before they gain durable authority.</p>
+<div class="chips"><span class="chip">3 deep papers</span><span class="chip">2 Watchlist</span><span class="chip">24-hour exact window</span><span class="chip">9 enterprise options</span><span class="chip">Primary sources + full-paper review</span></div>
+<div class="topbets"><div class="bet"><span class="label">TOP BET 1 · PROTOTYPE SOON</span><b>92.5 · Independent security oracle</b><span>Keep repair construction separate from held-out adversarial acceptance.</span></div><div class="bet"><span class="label">TOP BET 2 · PROTOTYPE SOON</span><b>91.2 · Principal-scoped handoff gate</b><span>Validate identity, authority, evidence, disclosure, and obligations per principal.</span></div><div class="bet"><span class="label">TOP BET 3 · PROTOTYPE SOON</span><b>89.7 · Visual provenance gate</b><span>Authenticate origin and confirm high-risk effects outside the rendered content.</span></div></div>
+</div></header>
+<div class="layout"><nav><strong>Navigate</strong><ul>
+<li><a href="#scope-window-and-evidence-policy"
+id="toc-scope-window-and-evidence-policy">Scope, window, and evidence
+policy</a></li>
+<li><a href="#executive-signal" id="toc-executive-signal">Executive
+signal</a></li>
+<li><a href="#top-3-future-bets" id="toc-top-3-future-bets">Top 3 Future
+Bets</a></li>
+<li><a
+href="#deep-paper-1--a-patch-needs-an-adversary-that-did-not-help-write-it"
+id="toc-deep-paper-1--a-patch-needs-an-adversary-that-did-not-help-write-it">Deep
+paper 1 — A patch needs an adversary that did not help write it</a>
+<ul>
+<li><a href="#contribution-and-quantitative-claim-trace"
+id="toc-contribution-and-quantitative-claim-trace">Contribution and
+quantitative claim trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison"
+id="toc-methodological-critique-and-prior-work-comparison">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#reproducibility-and-enterprise-readiness"
+id="toc-reproducibility-and-enterprise-readiness">Reproducibility and
+enterprise readiness</a></li>
+</ul></li>
+<li><a
+href="#deep-paper-2--a-team-result-does-not-certify-every-principal"
+id="toc-deep-paper-2--a-team-result-does-not-certify-every-principal">Deep
+paper 2 — A team result does not certify every principal</a>
+<ul>
+<li><a href="#contribution-and-quantitative-claim-trace-1"
+id="toc-contribution-and-quantitative-claim-trace-1">Contribution and
+quantitative claim trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison-1"
+id="toc-methodological-critique-and-prior-work-comparison-1">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#reproducibility-and-enterprise-readiness-1"
+id="toc-reproducibility-and-enterprise-readiness-1">Reproducibility and
+enterprise readiness</a></li>
+</ul></li>
+<li><a
+href="#deep-paper-3--a-rendered-instruction-is-not-authenticated-authority"
+id="toc-deep-paper-3--a-rendered-instruction-is-not-authenticated-authority">Deep
+paper 3 — A rendered instruction is not authenticated authority</a>
+<ul>
+<li><a href="#contribution-and-quantitative-claim-trace-2"
+id="toc-contribution-and-quantitative-claim-trace-2">Contribution and
+quantitative claim trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison-2"
+id="toc-methodological-critique-and-prior-work-comparison-2">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#reproducibility-and-enterprise-readiness-2"
+id="toc-reproducibility-and-enterprise-readiness-2">Reproducibility and
+enterprise readiness</a></li>
+</ul></li>
+<li><a href="#watchlist" id="toc-watchlist">Watchlist</a>
+<ul>
+<li><a href="#egcforest--structured-memory-for-enterprise-group-chats"
+id="toc-egcforest--structured-memory-for-enterprise-group-chats">EGCForest
+— structured memory for enterprise group chats</a></li>
+<li><a
+href="#beyond-retrieval--event-ledgers-for-deterministic-aggregation"
+id="toc-beyond-retrieval--event-ledgers-for-deterministic-aggregation">Beyond
+Retrieval — event ledgers for deterministic aggregation</a></li>
+</ul></li>
+<li><a href="#cross-paper-synthesis"
+id="toc-cross-paper-synthesis">Cross-paper synthesis</a></li>
+<li><a href="#enterprise-ai-architecture-implications"
+id="toc-enterprise-ai-architecture-implications">Enterprise AI
+Architecture Implications</a></li>
+<li><a href="#enterprise-ai-enhancement-backlog"
+id="toc-enterprise-ai-enhancement-backlog">Enterprise AI Enhancement
+Backlog</a>
+<ul>
+<li><a href="#prototype-soon" id="toc-prototype-soon">Prototype
+Soon</a></li>
+<li><a href="#prepare-foundations" id="toc-prepare-foundations">Prepare
+Foundations</a></li>
+<li><a href="#monitor-for-maturity"
+id="toc-monitor-for-maturity">Monitor for Maturity</a></li>
+<li><a href="#deprioritize-for-now"
+id="toc-deprioritize-for-now">Deprioritize for Now</a></li>
+</ul></li>
+<li><a href="#implementation-priorities"
+id="toc-implementation-priorities">Implementation priorities</a></li>
+<li><a href="#knowledge-reinforcement"
+id="toc-knowledge-reinforcement">Knowledge reinforcement</a></li>
+<li><a href="#source-and-artifact-register"
+id="toc-source-and-artifact-register">Source and artifact
+register</a></li>
+<li><a href="#final-boundary" id="toc-final-boundary">Final
+boundary</a></li>
+</ul></nav><main><section id="scope-window-and-evidence-policy"
+class="level1">
+<h1>Scope, window, and evidence policy</h1>
+<p><strong>Research window.</strong> The exact window was Wednesday,
+October 14, 2026 at 4:00 AM CDT through Thursday, October 15, 2026 at
+4:00 AM CDT (America/Chicago; 09:00 UTC to 09:00 UTC). An arXiv API
+snapshot refreshed at 09:05 UTC screened 1,000 of the newest records
+across artificial intelligence, machine learning, computation and
+language, cryptography and security, software engineering, information
+retrieval, multi-agent systems, and statistics. It contained 462 records
+with an October 14 announcement date and 538 from October 13. Discovery
+also checked first-party repositories, datasets, licenses, paper-linked
+artifacts, and the complete 66-report archive through October 14.</p>
+<p><strong>Selection.</strong> Three papers cleared deep review:
+<em>P2Patch: Exploit-Guided Vulnerability Repair</em>, <em>Why Do Agent
+Teams Fail Across Boundaries?</em>, and <em>MMA-SafetyBench</em>.
+<em>EGCForest</em> and <em>Beyond Retrieval</em> enter the Watchlist.
+Selection favored complete papers, construction–evaluation separation,
+traceable denominators, matched or layered evaluation, useful ablations,
+explicit limitations, artifact evidence, and future enterprise
+experiments that can remain isolated and reversible.</p>
+<p><strong>Anti-duplication.</strong> Today's
+identifiers—arXiv:2610.20245, 2610.19342, 2610.19384, 2610.19836, and
+2610.19474—are absent from the archive. Earlier briefs covered
+transaction receipts, independent verifiers, multi-agent disagreement,
+memory provenance, trajectory safety, tool contracts, deterministic
+skills, and visual or prompt injection. Today's incremental question is
+narrower: <em>who or what is allowed to certify an artifact, a
+cross-principal handoff, or a rendered instruction at the moment it
+gains authority?</em> Candidates such as Doc2Harness and MCAIR were not
+selected because their central signals overlapped earlier
+native-artifact acceptance and execution-report consistency coverage,
+while the five selected papers added stronger boundary-specific
+evidence.</p>
+<p><strong>Evidence labels.</strong> <strong>Paper Fact</strong> is
+directly reported by a reviewed paper or verified first-party artifact.
+<strong>Independent Analysis</strong> is this briefing's calculation,
+comparison, or critique. <strong>Enterprise Inference</strong>
+translates evidence into a bounded future option.
+<strong>Uncertainty</strong> marks missing causal, external-validity,
+security, privacy, governance, economic, licensing, or production
+evidence. Benchmark success does not authorize production
+deployment.</p>
+</section>
+<section id="executive-signal" class="level1">
+<h1>Executive signal</h1>
+<blockquote>
+<p><strong>Do not let the producer certify the patch, the lead agent
+certify the team, or the interface certify its own authority. Reliable
+enterprise AI needs an independent acceptance path at every boundary
+where generated artifacts, private principal state, or rendered
+multimodal instructions can create durable effects.</strong></p>
+</blockquote>
+<p>The three deep papers support complementary parts of that rule:</p>
+<ol type="1">
+<li><strong>P2Patch</strong> separates patch construction from held-out
+acceptance. Across 101 real CVE subjects, an adversarial post-patch loop
+raises fix-closed coverage from 0.781 to 0.847 and residual-path
+coverage from 0.421 to 0.625. In 41% of runs, the exploiter finds a
+confirmed bypass after the initial patch—evidence that a patch author's
+own proof-of-vulnerability and regression suite are not sufficient
+acceptance criteria.</li>
+<li><strong>A2-Failures</strong> separates aggregate group outcome from
+per-principal correctness and conduct. More than 2,500 multi-agent runs
+over 488 scenarios expose 20 failure modes across discovery, delegation,
+grounding, verification, and fidelity. No reviewed trace contained an
+agent independently re-fetching or re-querying to verify a peer factual
+claim; a nominally successful contract can still violate one principal's
+disclosure obligation.</li>
+<li><strong>MMA-SafetyBench</strong> separates visual appearance from
+authenticated authority. Across 1,083 adversarial trajectories in five
+domains and nine victim models, mean attack success reaches 63.69% for
+GUI and 69.17% for video. A safety-priority prompt lowers macro attack
+success from 55.20% to 19.54%, but material residual vulnerability
+remains and prompting does not authenticate the rendered
+instruction.</li>
+</ol>
+<p><strong>Decision posture.</strong> Prototype independent patch
+acceptance, principal-scoped handoff gates, and visual provenance checks
+only in replay, synthetic, or shadow environments. Prepare held-out
+adversarial corpora, obligation/evidence ledgers, and trust-zone
+metadata as shared foundations. Monitor structured group-chat memory and
+deterministic event ledgers until artifacts and external validity
+improve. Deprioritize prompt-only visual defense, producer-authored
+acceptance suites, and outcome-only multi-agent evaluation as sole
+controls.</p>
+</section>
+<section id="top-3-future-bets" class="level1">
+<h1>Top 3 Future Bets</h1>
+<ol type="1">
+<li><strong>Independent construction–acceptance security oracle —
+92.5/100.</strong> Why it matters: a generated patch can pass the
+evidence used to construct it while a held-out adversary still finds a
+bypass. Evidence that would change the recommendation: internally
+representative vulnerabilities show no incremental bypass discovery,
+acceptance oracles are too incomplete or costly, or isolated testing
+cannot prevent exploit escape. Next reversible action: replay 20
+historical fixes inside disposable sandboxes, keep the patcher blind to
+held-out tests, and compare single-pass versus one adversarial repair
+loop.</li>
+<li><strong>Principal-scoped cross-boundary handoff gate —
+91.2/100.</strong> Why it matters: team completion and a valid shared
+artifact do not prove that every principal's facts, authority,
+confidentiality, or obligations were respected. Evidence that would
+change the recommendation: internal two- and four-agent workflows show
+no boundary-specific failures, explicit contracts add no measurable
+protection, or reviewer burden exceeds the avoided error cost. Next
+reversible action: replay 50 synthetic handoffs with private documents
+and seeded conflicting obligations; record decisions without blocking
+live work.</li>
+<li><strong>Visual provenance and high-risk action confirmation gate —
+89.7/100.</strong> Why it matters: rendered alerts, buttons, and
+instructions can look authoritative while remaining unauthenticated.
+Evidence that would change the recommendation: signed UI metadata does
+not lower attack success at fixed clean-task completion, users or agents
+routinely bypass confirmation, or provenance cannot survive
+capture/rendering pipelines. Next reversible action: add signed origin
+labels to 100 inert GUI and document tasks and compare action-level
+attacks with and without a trusted confirmation surface.</li>
+</ol>
+</section>
+<section
+id="deep-paper-1--a-patch-needs-an-adversary-that-did-not-help-write-it"
+class="level1">
+<h1>Deep paper 1 — A patch needs an adversary that did not help write
+it</h1>
+<p><strong>Identity and status.</strong> <em>P2Patch: Exploit-Guided
+Vulnerability Repair</em>; Mohsen Iranmanesh, Sina Moradi Sabet, Sina
+Marefat, Ali Javidi Ghasr, Maxime Newman Nereyabagabo, Kousha Amouzesh,
+Jaivir Malhi, Vinci Velasco, Alex Chung, and Mohammad A. Tayebi;
+arXiv:2610.20245v1; submitted October 14, 2026. The first-party <a
+href="https://arxiv.org/abs/2610.20245">paper</a> and MIT-licensed <a
+href="https://github.com/P2Patch/P2patch">artifact</a> were verified.
+The repository contains the orchestrator, prompt templates, benchmark
+metadata, Docker subject configurations, held-out suites, baselines,
+dashboard code, tests, and documentation. The authors distribute 505
+runs separately and responsibly withhold some exploit suites.</p>
+<section id="contribution-and-quantitative-claim-trace" class="level2">
+<h2>Contribution and quantitative claim trace</h2>
+<p>P2Patch gives a repair agent a live proof of vulnerability, applies
+its patch, then activates an adversarial exploiter against the patched
+program. A confirmed bypass becomes new evidence for another repair
+round. Construction evidence and acceptance evidence remain separated:
+the agent does not receive the CVE identifier, upstream patch, advisory
+exploit text, held-out oracles, or web access.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>Decision meaning</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>The adversarial loop improves held-out acceptance</td>
+<td style="text-align: right;">Fix-closed coverage: 0.781 single-pass →
+0.847 P2Patch (+0.065); residual coverage: 0.421 → 0.625 (+0.204); both
+survive Holm adjustment</td>
+<td>A producer-authored patch and its visible test are not an acceptance
+certificate</td>
+<td>101 subjects have fix-closed suites; only 40 have residual
+suites</td>
+</tr>
+<tr class="even">
+<td>Post-patch bypasses are common in this benchmark</td>
+<td style="text-align: right;">The exploiter finds a distinct confirmed
+bypass after the initial patch in 41% of runs, 68 bypasses total</td>
+<td>One exploit path does not define the vulnerability boundary</td>
+<td>A bounded agent is not proof that no other bypass exists</td>
+</tr>
+<tr class="odd">
+<td>Path-level gains are larger where alternate paths exist</td>
+<td style="text-align: right;">324 fix-closed paths: 0.710 → 0.781; 66
+residual paths: 0.409 → 0.712</td>
+<td>Validation must measure paths, not only a binary subject
+outcome</td>
+<td>Residual suites are human-authored and incomplete</td>
+</tr>
+<tr class="even">
+<td>More subjects reach complete held-out coverage</td>
+<td style="text-align: right;">Perfect fix-closed coverage: 65 → 76
+subjects; residual: 15 → 24</td>
+<td>The loop changes the acceptance distribution, not just the mean</td>
+<td>“Perfect” means complete only against the released suite</td>
+</tr>
+<tr class="odd">
+<td>The adversarial loop, not just live execution, carries the gain</td>
+<td style="text-align: right;">Live proof alone: +0.027 fix-closed
+(p=.2944), +0.050 residual (p=.5); adversarial loop: +0.038 (p=.0020),
++0.154 (p=.0156)</td>
+<td>A construction-time exploit is useful, but post-construction
+challenge is load-bearing</td>
+<td>Ablation depends on the chosen agent, budgets, and subjects</td>
+</tr>
+<tr class="even">
+<td>Security gain costs more inference and time</td>
+<td style="text-align: right;">Mean cost per subject: $0.45 single-pass
+versus $2.09 P2Patch; Claude Haiku 4.5 median 25.8 minutes</td>
+<td>Acceptance depth needs explicit budget and latency controls</td>
+<td>Prices and hosted model behavior can change</td>
+</tr>
+<tr class="odd">
+<td>Results vary materially by model</td>
+<td style="text-align: right;">GLM 5.2: 0.921/0.795 fix/residual at
+$2.43; DeepSeek V4 Flash: 0.821/0.608 at $0.54; GPT-5.6-luna:
+0.594/0.400 at $0.16</td>
+<td>Model, harness, and budget form one evaluated configuration</td>
+<td>Accepted-patch counts differ: 100, 94, and 66</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="methodological-critique-and-prior-work-comparison"
+class="level2">
+<h2>Methodological critique and prior-work comparison</h2>
+<p>Automated vulnerability repair often validates against the triggering
+proof-of-concept and regression tests available during construction.
+That can reward a narrow patch that blocks the observed path while
+leaving the vulnerability family open. P2Patch advances beyond
+single-pass LLM repair by giving the acceptance side an active search
+budget after the patch exists. It also distinguishes fix-closed tests
+derived from upstream patches from residual tests that exercise
+alternative paths, preventing one headline success rate from hiding
+which oracle performed the work.</p>
+<p>The strongest design choice is strict separation. The repair agent is
+blind to held-out suites and upstream fixes; the exploiter receives the
+patched target but not the hidden oracles. The paper reports subject-,
+path-, and perfect-coverage metrics, uses paired tests with Holm
+correction, includes a staged ablation, publishes model/cost/time
+sweeps, and explicitly avoids universal rankings against prior systems
+that use different evidence and budgets. The adversarial loop produced
+no held-out oracle regressions in the reported study.</p>
+<p>The result remains an empirical search claim, not a proof of repair.
+A bounded exploiter may fail to find a surviving path. CVE details could
+appear in model pretraining even when not included in the prompt.
+Held-out suites are incomplete and human-authored; 18 of 40 residual
+suites and 4 of 101 fix-closed suites are withheld, limiting external
+audit. Some newly discovered residual paths were later confirmed as
+fixed upstream, but not every bypass has that corroboration. Model
+families, budgets, orchestration, subject buildability, and acceptance
+thresholds all condition the estimates. Live exploit generation also
+creates operational risk: a reproduction environment must isolate
+network, credentials, artifacts, and outputs.</p>
+</section>
+<section id="reproducibility-and-enterprise-readiness" class="level2">
+<h2>Reproducibility and enterprise readiness</h2>
+<p>The artifact is unusually complete for this domain: orchestration,
+configurations, benchmark definitions, released tests, baselines,
+visualization, and an MIT license are present. Exact replication still
+depends on hosted models, separate run bundles, unreleased exploit
+suites, and responsibly isolated vulnerable software. <strong>Enterprise
+readiness:</strong> high for an offline red-team benchmark using
+historical vulnerabilities; medium for a gated security-engineering
+pilot after legal, exploit-handling, build, and reviewer controls; low
+for autonomous production patch acceptance. <strong>Research Utility
+Score: 95/100</strong> (methodological rigor 25/25; quantitative
+traceability 24/25; reproducibility/artifacts 19/20; enterprise
+relevance 15/15; prior-work advance 12/15).</p>
+</section>
+</section>
+<section
+id="deep-paper-2--a-team-result-does-not-certify-every-principal"
+class="level1">
+<h1>Deep paper 2 — A team result does not certify every principal</h1>
+<p><strong>Identity and status.</strong> <em>Why Do Agent Teams Fail
+Across Boundaries? A Failure Taxonomy for Agent-to-Agent Systems with
+Private States</em>; Sarath Shekkizhar, Prathyusha Jwalapuram, Zixuan
+Ke, Vaidehi Patil, Jiayu Wang, Srijan Bansal, Trong Huy Nguyen, Dingfeng
+Jiang, Dongqi Liu, Ruochen Zhao, Wei Lu, Giuseppe Carenini, Mohit
+Bansal, and Shafiq Joty; arXiv:2610.19342v1; submitted October 14, 2026.
+The <a href="https://arxiv.org/abs/2610.19342">paper</a> and public
+Apache-2.0 <a
+href="https://huggingface.co/datasets/a2a-salesforce/a2-failures">run-log
+dataset</a> were verified. The dataset exposes scenario definitions,
+per-role trajectories, relay events and hops, prompts, final outputs,
+evaluations, and redacted logs.</p>
+<section id="contribution-and-quantitative-claim-trace-1"
+class="level2">
+<h2>Contribution and quantitative claim trace</h2>
+<p>The paper studies agent-to-agent systems in which each agent runs in
+an isolated container, holds private documents and credentials for a
+distinct principal, and communicates through a relay or protocol. It
+analyzes more than 2,500 runs across 488 scenarios, eight scenario
+families, three coding-agent harnesses, and several model families.
+Failures are organized into 20 modes across Discovery/Delegation,
+Grounding/Consistency, Verification, and Conduct/Fidelity.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>Decision meaning</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Directory visibility does not reliably create discovery</td>
+<td style="text-align: right;">Agents contact peers mainly when prompts
+explicitly name who holds needed information, not merely because a
+directory is available</td>
+<td>Registries need task-conditioned discovery and obligation
+semantics</td>
+<td>Occurrence is shown; population rates by deployment are not
+estimated</td>
+</tr>
+<tr class="even">
+<td>Peer claims are effectively trusted by default</td>
+<td style="text-align: right;">In the reviewed traces, no agent
+independently re-fetched or re-queried to test a peer factual claim;
+automated protocol gates were the only verification source</td>
+<td>A2A messages need evidence references or independent verification
+paths</td>
+<td>The taxonomy may miss verification performed outside visible
+traces</td>
+</tr>
+<tr class="odd">
+<td>Aggregate success hides principal-level failures</td>
+<td style="text-align: right;">A $24k SLA agreement passed all ten
+outcome checks while the vendor received 4/10 for disclosing
+confidential incident attribution</td>
+<td>Shared-artifact acceptance and each principal's conduct are
+different judgments</td>
+<td>Scenario obligations are authored and may not cover enterprise
+policy complexity</td>
+</tr>
+<tr class="even">
+<td>Negotiation can succeed yet leave value unrealized</td>
+<td style="text-align: right;">73 of 175 valid contract agreements
+matched but remained Pareto-suboptimal</td>
+<td>Agreement validity does not prove quality or stakeholder
+utility</td>
+<td>Contract utility functions are benchmark-defined</td>
+</tr>
+<tr class="odd">
+<td>More agents can reduce closed-loop quality</td>
+<td style="text-align: right;">Across 180 runs, four-agent teams scored
+below two-agent teams in both crossed model orders</td>
+<td>Fan-out and topology require qualification, not optimism</td>
+<td>Harness and model effects are partially confounded</td>
+</tr>
+<tr class="even">
+<td>Transport alone is not the main determinant</td>
+<td style="text-align: right;">Protocol binding versus direct relay did
+not systematically change outcomes; message content and role behavior
+did</td>
+<td>Semantic contracts and evidence matter more than transport
+branding</td>
+<td>Other protocols, authentication stacks, and real networks remain
+untested</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="methodological-critique-and-prior-work-comparison-1"
+class="level2">
+<h2>Methodological critique and prior-work comparison</h2>
+<p>Many multi-agent benchmarks score a final answer, task completion, or
+shared environment state. A2-Failures treats every agent as an
+accountable principal with private state and potentially conflicting
+obligations. Its three evaluation layers—L0 environment state, L1 final
+artifact correctness, and L2 principal alignment and conduct—make
+visible failures that a single group score collapses. That is the
+paper's central contribution: not a new coordination algorithm, but a
+failure ontology and evidence base for where an intervention
+belongs.</p>
+<p>The scale is useful, and the published logs are unusually detailed.
+Crossed agent assignments help separate some leader/follower effects.
+Scenario families span resource exchange, contract negotiation, travel,
+planning, delegation, and information-sensitive work. The 20-mode
+taxonomy distinguishes not discovering the right peer, grounding on
+inconsistent facts, accepting an unverified claim, leaking private
+information, misrepresenting authority, or completing a shared artifact
+that violates one principal's goal.</p>
+<p>The design is diagnostic rather than causal. Failure-mode tagging is
+produced by automated analysis agents with a human validation sample;
+subtle or correlated failures can be missed. The study often binds a
+model family to a particular harness, making harness-versus-model
+effects hard to separate. Counts show that a failure occurred, but do
+not establish prevalence in production organizations. Scenario-authored
+principals have cleaner boundaries than employees, services, vendors,
+and regulators with overlapping roles. A released dataset README lists
+fewer top-level families than the paper's eight-family description and
+ends with an inconsistent sentence calling the public dataset private;
+the API and files are public, but the documentation discrepancy should
+be corrected. Redaction reduces risk but does not by itself prove that
+all potentially sensitive content is absent.</p>
+</section>
+<section id="reproducibility-and-enterprise-readiness-1" class="level2">
+<h2>Reproducibility and enterprise readiness</h2>
+<p>The artifact provides enough structure to independently inspect runs
+and rebuild alternative taxonomies: conversation histories, per-role
+trajectories, relay events, evaluation outputs, scenario inputs, and an
+Apache-2.0 license are present. Re-running all configurations requires
+the named harnesses, models, credentials, and orchestration.
+<strong>Enterprise readiness:</strong> high for an offline
+handoff-evaluation dataset patterned on internal workflows; medium for
+shadow per-principal acceptance and observability after identity,
+policy, evidence, and confidentiality semantics exist; low for automated
+personnel attribution or autonomous cross-organization negotiation.
+<strong>Research Utility Score: 93/100</strong> (methodological rigor
+24/25; quantitative traceability 22/25; reproducibility/artifacts 20/20;
+enterprise relevance 15/15; prior-work advance 12/15).</p>
+</section>
+</section>
+<section
+id="deep-paper-3--a-rendered-instruction-is-not-authenticated-authority"
+class="level1">
+<h1>Deep paper 3 — A rendered instruction is not authenticated
+authority</h1>
+<p><strong>Identity and status.</strong> <em>MMA-SafetyBench: A
+Benchmark for Multimodal Agent Safety Evaluation</em>; Yuke Wang, Benlei
+Cui, Shen Pang, Xuemei Dong, Longtao Huang, Hui Xue, Yuwen Zhai, Junjie
+Li, Jingqun Tang, and Haiwen Hong; arXiv:2610.19384v1; submitted October
+14, 2026; described by the authors as a NeurIPS 2026 Evaluations and
+Datasets Track poster. The <a
+href="https://arxiv.org/abs/2610.19384">paper</a>, first-party <a
+href="https://github.com/Alibaba-VELLDEPTH/MMA-SafetyBench">repository</a>,
+and <a
+href="https://huggingface.co/datasets/Alibaba-YuFeng/MMA-SafetyBench">dataset
+page</a> were verified. No repository-wide license was found; the README
+explicitly says no license should be inferred.</p>
+<section id="contribution-and-quantitative-claim-trace-2"
+class="level2">
+<h2>Contribution and quantitative claim trace</h2>
+<p>MMA-SafetyBench evaluates Visual Semantic Hijacking: forged alerts,
+buttons, prompts, and task instructions embedded in websites, documents,
+GUIs, mobile screens, and videos. The benchmark contains 1,083
+adversarial trajectories across five domains and evaluates nine victim
+models. Attack success rate (ASR) measures target action hits; semantic
+compromise rate (SCR) additionally captures behavior aligned with the
+malicious intent even when the exact target action differs.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>Decision meaning</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Visual semantic hijacking is broadly effective in the benchmark</td>
+<td style="text-align: right;">Mean ASR: Web 43.00%, Document 48.89%,
+GUI 63.69%, Mobile 51.24%, Video 69.17%; maximum 87.96% for GLM-4.6V on
+Video</td>
+<td>Rendered pixels and layout cannot confer authority</td>
+<td>Fixed attacks and injection points do not estimate real-world
+incidence</td>
+</tr>
+<tr class="even">
+<td>High clean performance coexists with unsafe action selection</td>
+<td style="text-align: right;">Clean task success averages 84.03% across
+models, with a 62.19–94.00% range</td>
+<td>Capability and visual trust safety are separate qualification
+axes</td>
+<td>Tasks predict clicks/content rather than execute durable
+effects</td>
+</tr>
+<tr class="odd">
+<td>Frontier performance does not eliminate the issue</td>
+<td style="text-align: right;">GPT-5 ASR: Web 44.00%, Document 51.50%,
+GUI 75.12%, Mobile 48.06%, Video 70.16%</td>
+<td>Model tier is not a provenance control</td>
+<td>Closed hosted models can drift after publication</td>
+</tr>
+<tr class="even">
+<td>Generic neutrality prompting has limited effect</td>
+<td style="text-align: right;">Macro ASR 55.20% → 50.60%; five
+model-domain pairs become worse</td>
+<td>Vague caution is not a dependable safety boundary</td>
+<td>Prompt wording and inference settings condition the result</td>
+</tr>
+<tr class="odd">
+<td>Safety-priority prompting helps but leaves material residual
+risk</td>
+<td style="text-align: right;">Macro ASR 55.20% → 19.54, a 35.65-point
+or 64.59% relative reduction; residuals include GLM GUI 46.89% and Video
+45.03%</td>
+<td>Prompt defense is useful defense-in-depth, not authentication</td>
+<td>Adaptive attackers and instruction conflicts are not explored</td>
+</tr>
+<tr class="even">
+<td>Exact target metrics can understate compromise</td>
+<td style="text-align: right;">SCR exceeds ASR by 36.37 points for
+Claude on GUI and 28.98 for Qwen on Mobile</td>
+<td>Acceptance should inspect semantic effect, not only exact
+action</td>
+<td>SCR uses an LLM judge and boundary cases remain subjective</td>
+</tr>
+<tr class="odd">
+<td>Judge agreement was separately sampled</td>
+<td style="text-align: right;">GPT-5 judgment matched three security
+researchers on 290 of 300 sampled cases (96.67%)</td>
+<td>LLM evaluation can be audited rather than assumed</td>
+<td>Ten disagreements remain, and sample composition matters</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="methodological-critique-and-prior-work-comparison-2"
+class="level2">
+<h2>Methodological critique and prior-work comparison</h2>
+<p>Earlier multimodal safety benchmarks often ask whether a model
+produces harmful text from a malicious image or query. MMA-SafetyBench
+moves closer to agent operation: the attack competes with a benign task
+inside an interface and tries to redirect an action. It spans static and
+temporal media, reports clean-task success beside attack success,
+evaluates exact and semantic compromise, and tests two prompt defenses
+across nine models.</p>
+<p>The strongest analytical lesson is the gap between appearance and
+provenance. A visual banner that says “security alert,” a button that
+says “continue,” or a subtitle that presents an instruction can be
+semantically persuasive without being authorized by the task owner or
+application. A prompt can remind the model to privilege user intent, but
+it cannot cryptographically or structurally attest who created a
+rendered element, whether it is inside a trusted application surface, or
+whether the requested effect is permitted.</p>
+<p>External validity is constrained. The agent predicts an action or
+response; it does not execute into a system where downstream harm,
+rollback, credentials, and human review can be measured. Attacks and
+injection locations are fixed, not generated adaptively against each
+defense. The benchmark does not estimate how frequently such conditions
+occur in enterprise interfaces. Safety-priority prompts may trade off
+utility outside the reported clean tasks. The repository documents that
+its cleanup does not rerun the paper's experiments and that the original
+video renderer is unavailable upstream; protocol differences matter.
+Absence of an explicit license is a reuse blocker.</p>
+</section>
+<section id="reproducibility-and-enterprise-readiness-2" class="level2">
+<h2>Reproducibility and enterprise readiness</h2>
+<p>The public repository contains benchmark data, evaluation code,
+tests, and documentation, while the dataset page provides an independent
+distribution surface. Exact result reproduction is limited by missing
+original rendering components, closed model drift, and the repository's
+stated post-paper cleanup differences. <strong>Enterprise
+readiness:</strong> high for an internally recreated inert multimodal
+red-team suite; medium for provenance-aware confirmation experiments on
+a narrow interface; low for production blocking based solely on prompts
+or a benchmark classifier. <strong>Research Utility Score:
+90/100</strong> (methodological rigor 23/25; quantitative traceability
+24/25; reproducibility/artifacts 15/20; enterprise relevance 15/15;
+prior-work advance 13/15).</p>
+</section>
+</section>
+<section id="watchlist" class="level1">
+<h1>Watchlist</h1>
+<section id="egcforest--structured-memory-for-enterprise-group-chats"
+class="level2">
+<h2>EGCForest — structured memory for enterprise group chats</h2>
+<p><em>EGCForest: Structured Agent Memory Organization for Enterprise
+Group Chats</em>; Lingxi Cui, Jinhao Ruan, Wenqing Wei, Guo Yi, Li Rao,
+Ke Chen, and Lidan Shou; arXiv:2610.19836v1; submitted October 14, 2026.
+(<a href="https://arxiv.org/abs/2610.19836">paper</a>)</p>
+<p><strong>Paper Fact.</strong> EGCForest preserves an immutable message
+log, organizes evidence into Channel, Actor, and Artifact forests, maps
+each message to placements, and uses sparse bridges across views. At a
+3,000-token retrieval budget, accuracy exceeds the strongest reported
+baseline by 4.77, 8.59, and 12.61 points on EverMemBench, GroupMemBench,
+and an internal Company dataset. On the Company split, multi-hop
+accuracy is 65.38 versus 53.85 for BM25+Dense, and temporal accuracy is
+61.90 versus 44.44. A staged ablation rises from 45.4 after the first
+stage to 53.3 with all four stages. Reported query latency is 65 ms,
+memory 206 MB, and offline construction 1,842 seconds.</p>
+<p><strong>Why Watchlist.</strong> Multiple addressable views and
+immutable source traces fit the principal-boundary signal, but the
+evidence is question answering rather than broader agent work. The full
+build appears batch-oriented, text-only, and tested partly on an
+internal corpus. The paper's anonymous artifact endpoint returned HTTP
+401 from this environment, so repository content and license could not
+be independently verified. Promote after accessible artifacts,
+incremental-update and deletion tests, permission-aware retrieval,
+external group-chat replication, and measurement of provenance errors
+under enterprise access control.</p>
+</section>
+<section
+id="beyond-retrieval--event-ledgers-for-deterministic-aggregation"
+class="level2">
+<h2>Beyond Retrieval — event ledgers for deterministic aggregation</h2>
+<p><em>Beyond Retrieval: Evidence Access and Event Aggregation in Agent
+Memory</em>; Zerui Yang, Quan Xue, Chaorui Zhang, Xueyan Niu, Xuanyu
+Zheng, Xiyuan Wang, Haolin Ruan, Guangcheng Song, Weixi Zhang, Wei Han,
+and Bo Bai; arXiv:2610.19474v1; submitted October 14, 2026. (<a
+href="https://arxiv.org/abs/2610.19474">paper</a>)</p>
+<p><strong>Paper Fact.</strong> The paper compares source-preserving
+trajectory memory with TallyMem, an event ledger that uses a model to
+write event specifications and a deterministic executor to aggregate
+them. On MINTEval's 776 questions over 99 held-out repositories,
+Qwen3-32B rises from 35.2 with trajectory memory to 49.0 with TallyMem,
+a 13.8-point gain; gains are 12.8–13.9 across three readers. A
+controlled probe rises from 82.8 to 93.8. On the broader AMA-Bench, the
+gain is smaller: 69.8 to 71.1. Above 100 events, trajectory memory
+collapses in some conditions while the event ledger remains stronger. Of
+51 inspected errors, 36 come from event selection/specification; the
+deterministic executor makes no arithmetic errors in the reported
+analysis.</p>
+<p><strong>Why Watchlist.</strong> The split between model-authored
+event selection and deterministic aggregation is architecturally useful,
+but the largest gains are benchmark- and reader-dependent, some routing
+analysis is post hoc, and the executor supports narrow literal filters
+rather than joins, free-form code, or arithmetic over values. No public
+artifact link was found in the full paper. Promote after a released
+implementation, independent replication, online update and correction
+tests, permission-aware source linking, adversarial event-specification
+tests, and comparison against databases or stream processors with
+equivalent schemas.</p>
+</section>
+</section>
+<section id="cross-paper-synthesis" class="level1">
+<h1>Cross-paper synthesis</h1>
+<table>
+<thead>
+<tr class="header">
+<th>Decision question</th>
+<th>Evidence from today</th>
+<th>Failure if ignored</th>
+<th>Architecture response</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Is this generated patch actually complete?</td>
+<td>P2Patch: 41% of runs expose a confirmed bypass after the first
+patch; held-out residual coverage improves 20.4 points</td>
+<td>The producer overfits the visible proof or its own regression
+suite</td>
+<td>Separate construction from held-out adversarial acceptance; keep
+exploit artifacts isolated</td>
+</tr>
+<tr class="even">
+<td>Did every principal authorize and benefit from the handoff?</td>
+<td>A2-Failures: shared outcomes can pass while confidentiality,
+verification, or Pareto value fail</td>
+<td>Group success masks disclosure, delegation, and conduct
+failures</td>
+<td>Evaluate per-principal facts, permissions, obligations, and
+acceptance receipts</td>
+</tr>
+<tr class="odd">
+<td>Is a rendered instruction authoritative?</td>
+<td>MMA-SafetyBench: visual hijacks succeed across all five domains;
+prompt defenses leave residual attack success</td>
+<td>Appearance, layout, or model confidence substitutes for origin and
+policy</td>
+<td>Carry signed origin/trust metadata outside pixels; confirm
+consequential actions on a trusted surface</td>
+</tr>
+<tr class="even">
+<td>Can a team retrieve evidence without flattening its source?</td>
+<td>EGCForest: channel/actor/artifact forests improve multi-hop and
+temporal QA</td>
+<td>One vector index obscures speaker, artifact, channel, and access
+boundaries</td>
+<td>Preserve an immutable source log and permission-aware addressable
+views</td>
+</tr>
+<tr class="odd">
+<td>Should aggregation be generative?</td>
+<td>Beyond Retrieval: deterministic execution is reliable once the right
+event specification exists</td>
+<td>A model performs avoidable arithmetic or count operations while
+losing traceability</td>
+<td>Let models select/normalize events; use typed deterministic
+operators for aggregation</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Independent Analysis.</strong> The shared rule is
+<strong>acceptance authority must remain outside the producer and retain
+the boundary that matters</strong>. For code, the boundary is hidden
+behavior after construction. For agent teams, it is principal-specific
+knowledge, authority, and obligation. For multimodal agents, it is the
+origin of the rendered instruction and the effect it requests. Memory
+systems extend the same pattern: preserve source-addressable evidence
+and use deterministic operations when the query does not require
+generation.</p>
+<svg viewBox="0 0 1040 500" role="img" aria-label="Independent acceptance boundaries for artifacts, agent handoffs, and visual instructions" style="width:100%;height:auto;background:#0c1c2a;border:1px solid #2a465b;border-radius:14px;margin:1rem 0">
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#46dbc6"/></marker></defs>
+  <g fill="#10283a" stroke="#70adff" stroke-width="2"><rect x="55" y="45" width="260" height="92" rx="12"/><rect x="390" y="45" width="260" height="92" rx="12"/><rect x="725" y="45" width="260" height="92" rx="12"/><rect x="55" y="215" width="260" height="92" rx="12"/><rect x="390" y="215" width="260" height="92" rx="12"/><rect x="725" y="215" width="260" height="92" rx="12"/><rect x="340" y="390" width="360" height="70" rx="12"/></g>
+  <g fill="#e9f2f8" font-family="system-ui" text-anchor="middle"><text x="185" y="80" font-size="17">Patch producer</text><text x="185" y="109" font-size="14">visible exploit · proposed fix</text><text x="520" y="80" font-size="17">Agent team</text><text x="520" y="109" font-size="14">private state · shared artifact</text><text x="855" y="80" font-size="17">Rendered interface</text><text x="855" y="109" font-size="14">pixels · button · instruction</text><text x="185" y="251" font-size="17">Held-out adversary</text><text x="185" y="280" font-size="14">fix-closed + residual paths</text><text x="520" y="251" font-size="17">Principal-scoped gate</text><text x="520" y="280" font-size="14">facts · authority · obligations</text><text x="855" y="251" font-size="17">Trusted confirmation</text><text x="855" y="280" font-size="14">origin · policy · requested effect</text><text x="520" y="418" font-size="17">Independent acceptance receipt</text><text x="520" y="443" font-size="14">evidence · policy · decision · rollback</text></g>
+  <g stroke="#46dbc6" stroke-width="3" fill="none" marker-end="url(#arrow)"><line x1="185" y1="142" x2="185" y2="208"/><line x1="520" y1="142" x2="520" y2="208"/><line x1="855" y1="142" x2="855" y2="208"/><line x1="185" y1="312" x2="420" y2="383"/><line x1="520" y1="312" x2="520" y2="383"/><line x1="855" y1="312" x2="620" y2="383"/></g>
+</svg>
+
+</section>
+<section id="enterprise-ai-architecture-implications" class="level1">
+<h1>Enterprise AI Architecture Implications</h1>
+<p><strong>Independent Analysis.</strong> Over the next 12–24 months,
+today's evidence supports a layered architecture in which producers
+propose and bounded acceptance services authorize:</p>
+<ul>
+<li><strong>Independent evaluation plane.</strong> Generated code,
+plans, memory updates, and tool arguments are replayed against held-out
+tests, adversarial cases, principal obligations, and semantic-effect
+checks that were unavailable during construction. Evaluation contracts
+are versioned and cannot be modified by the evaluated agent.</li>
+<li><strong>Principal and authorization service.</strong> Every agent,
+tool, application, human, and organization is represented as a principal
+with scoped identity, authority, data visibility, confidentiality
+duties, and acceptance rights. Agent-to-agent messages carry sender,
+intended recipient, task, evidence references, disclosure scope, and
+expiry.</li>
+<li><strong>Multimodal provenance plane.</strong> Instructions and
+controls carry origin, application surface, content signer,
+capture/render transformations, trust zone, requested effect class, and
+policy state outside the image or video. Unauthenticated visual content
+cannot silently become a high-risk command.</li>
+<li><strong>Held-out corpus and experiment infrastructure.</strong>
+Security suites, benign twins, residual paths, visual hijacks, and
+cross-principal scenarios live in a governed registry with
+separation-of-duties, access controls, reproducible environments,
+leakage tracking, and cost telemetry.</li>
+<li><strong>Evidence and obligation ledger.</strong> Observability links
+each proposal to source evidence, peer claims, verification actions,
+permissions, policy decisions, reviewer outcomes, durable effects, and
+rollback. Group-level dashboards retain per-principal outcomes and
+unresolved obligations.</li>
+<li><strong>Source-preserving knowledge services.</strong> Immutable
+logs, channel/actor/artifact views, event ledgers, and permission-aware
+indexes preserve where evidence came from. Models select or normalize
+evidence; deterministic systems perform counts, filters, and policy
+checks when possible.</li>
+<li><strong>Model gateway and policy enforcement.</strong> The model
+gateway records model/harness/version and routes by risk, but cannot
+grant authority. Deterministic deny rules, effect sandboxes, human
+review, and external acceptance gates remain outside the producing
+agent.</li>
+</ul>
+<p>Shared enabling foundations are identity and authorization, versioned
+evaluation contracts, artifact and data provenance, controlled
+sandboxes, experiment registries, policy-as-data, event and effect
+telemetry, cost/latency accounting, human-review controls, reversible
+deployment mechanisms, and retention/deletion governance. These
+recommendations assume no particular current vendor or stack.
+Implementation decisions require internal workflow, system-of-record,
+risk, access, licensing, and economics evidence.</p>
+</section>
+<section id="enterprise-ai-enhancement-backlog" class="level1">
+<h1>Enterprise AI Enhancement Backlog</h1>
+<p>The <strong>Future Enterprise AI Priority Score</strong> is
+directional, not a forecast: Strategic/business value 25%, Technical
+leverage 20%, Evidence strength 20%, Enterprise readiness 15%,
+Feasibility 10%, and Risk-adjusted differentiation 10%. Each component
+is scored 0–100, then weighted. A one-point difference is not
+decision-significant; evidence gaps, risk gates, and prerequisite
+sequencing can place a lower-scoring item ahead of a higher-scoring one.
+Decision bands are governance judgments, not numeric cutoffs.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Rank</th>
+<th>Enhancement</th>
+<th>Decision band</th>
+<th style="text-align: right;">Strategic value</th>
+<th style="text-align: right;">Technical leverage</th>
+<th style="text-align: right;">Evidence strength</th>
+<th style="text-align: right;">Enterprise readiness</th>
+<th style="text-align: right;">Feasibility</th>
+<th style="text-align: right;">Risk-adjusted differentiation</th>
+<th style="text-align: right;">Weighted total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td>Independent construction–acceptance security oracle</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">96</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">96</td>
+<td style="text-align: right;">87</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;"><strong>92.5</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td>Principal-scoped cross-boundary handoff gate</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;"><strong>91.2</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td>Visual provenance and high-risk action confirmation</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">79</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;"><strong>89.7</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td>Held-out adversarial regression corpus registry</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">74</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;"><strong>88.9</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td>A2A obligation, provenance, and disclosure ledger</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;"><strong>85.6</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td>Multimodal trust-zone policy plane</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">89</td>
+<td style="text-align: right;">89</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">67</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;"><strong>84.4</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td>Deterministic event-ledger memory</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">69</td>
+<td style="text-align: right;">72</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;"><strong>80.3</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td>Source-addressable group-chat memory</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">87</td>
+<td style="text-align: right;">77</td>
+<td style="text-align: right;">62</td>
+<td style="text-align: right;">68</td>
+<td style="text-align: right;">83</td>
+<td style="text-align: right;"><strong>79.2</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9</td>
+<td>Producer-, prompt-, or outcome-only acceptance as sole control</td>
+<td>Deprioritize for Now</td>
+<td style="text-align: right;">42</td>
+<td style="text-align: right;">38</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;"><strong>53.9</strong></td>
+</tr>
+</tbody>
+</table>
+<section id="prototype-soon" class="level2">
+<h2>Prototype Soon</h2>
+<section id="1-independent-constructionacceptance-security-oracle--925"
+class="level3">
+<h3>1. Independent construction–acceptance security oracle — 92.5</h3>
+<ul>
+<li><strong>Category:</strong> AI Software Engineering / AI Security /
+Evaluation &amp; Observability.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> P2Patch reports a 41% post-patch confirmed-bypass rate
+and statistically supported held-out coverage gains from an adversarial
+loop. <strong>Paper Fact</strong>; applying the separation pattern to
+enterprise-generated changes is <strong>Enterprise
+Inference</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong> A
+coding agent can overfit the proof, tests, examples, and rationale it
+saw while producing a change.</li>
+<li><strong>Proposed future capability and how it works:</strong> Freeze
+the proposed change, move it into an isolated acceptance environment,
+and run held-out security, regression, invariants, exploit search, and
+policy checks controlled by a separate identity. The producing agent
+cannot read or modify the acceptance suite; failures return bounded
+evidence for another repair round.</li>
+<li><strong>Likely architectural placement:</strong> developer platform,
+evaluation, security/governance, infrastructure.</li>
+<li><strong>Expected business value:</strong> quality, reliability, risk
+reduction, engineering speed, reduced remediation cost.</li>
+<li><strong>Technical value:</strong> Reduces correlated
+construction/verification error and turns newly found counterexamples
+into regression assets.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+paired benchmark, artifact, ablation, and model sweep; enterprise
+codebases, languages, secrets, and oracle completeness remain
+untested.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>High</strong> / <strong>Now</strong> / <strong>M</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Disposable build
+sandboxes, artifact immutability, held-out suite ownership,
+network/credential isolation, vulnerability-data handling, acceptance
+budgets, human security review.</li>
+<li><strong>Key risks:</strong> Exploit escape, incomplete or leaked
+oracles, false confidence, flaky builds, cost/latency, licensing,
+generated harmful artifacts, agents learning hidden tests over
+time.</li>
+<li><strong>Build / Buy / Partner recommendation:</strong> <strong>Build
+the acceptance contract and isolation; Buy/Partner for scanners,
+fuzzers, and exploit expertise.</strong> Internal invariants and
+separation-of-duties are organization-specific.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Replay 20
+closed historical vulnerabilities; compare single-pass repair with one
+adversarial loop, with no repository write access and no outbound
+network.</li>
+<li><strong>Success metrics and stop conditions:</strong> Incremental
+confirmed bypasses, held-out path coverage, regression rate, cost, time,
+reviewer hours; stop on any sandbox escape, credential access, artifact
+leakage, or no material coverage gain at acceptable cost.</li>
+<li><strong>Roadmap trigger:</strong> Repeated improvement on two
+internal vulnerability classes with zero containment violations and a
+security-approved operational model.</li>
+<li><strong>Internal context required:</strong> Languages/build systems,
+historical vulnerabilities, test ownership, security review capacity,
+exploit-retention policy, CI isolation, acceptable cost and
+latency.</li>
+</ul>
+</section>
+<section id="2-principal-scoped-cross-boundary-handoff-gate--912"
+class="level3">
+<h3>2. Principal-scoped cross-boundary handoff gate — 91.2</h3>
+<ul>
+<li><strong>Category:</strong> Agentic AI / Safety &amp; Governance /
+Human-AI Workflow.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> A2-Failures shows that aggregate success can hide
+confidential disclosure, unverified peer claims, poor delegation, and
+principal misalignment. <strong>Paper Fact</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong> An
+orchestrator may accept a shared result without proving that each
+participant had authority, respected private state, verified claims, and
+met its own obligations.</li>
+<li><strong>Proposed future capability and how it works:</strong> Before
+accepting an A2A handoff, validate sender identity, claimed authority,
+permitted disclosures, evidence references, requested recipient,
+obligation state, and expected acknowledgment. Store a per-principal
+receipt and require independent verification for consequential factual
+claims.</li>
+<li><strong>Likely architectural placement:</strong> agent layer,
+orchestration, security/governance, human-review layer.</li>
+<li><strong>Expected business value:</strong> reliability, quality,
+customer trust, risk reduction, faster incident diagnosis.</li>
+<li><strong>Technical value:</strong> Prevents group outcome metrics
+from erasing principal-specific constraints and creates
+machine-checkable coordination contracts.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Large
+released trace set and useful taxonomy; production prevalence and causal
+intervention effects are not established.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>High</strong> / <strong>Now</strong> / <strong>M</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Workload identity,
+task-scoped authorization, A2A message schema, policy owners, evidence
+identifiers, disclosure labels, obligation lifecycle, immutable
+logs.</li>
+<li><strong>Key risks:</strong> Policy complexity, excessive handoff
+friction, incorrect identity mapping, hidden side channels, privacy
+exposure in logs, blame misuse, partial adoption.</li>
+<li><strong>Build / Buy / Partner recommendation:</strong> <strong>Build
+the semantic contract; Buy/Partner for identity, policy engines, and
+secure messaging.</strong> Transport products cannot infer internal
+principal obligations.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Replay 50
+synthetic two- and four-agent scenarios with seeded private documents
+and conflicting obligations; shadow-score without blocking.</li>
+<li><strong>Success metrics and stop conditions:</strong> Per-principal
+correctness, unauthorized disclosure, independent verification rate,
+task completion, latency, reviewer burden; stop if logging expands
+sensitive exposure or false refusals materially reduce completion.</li>
+<li><strong>Roadmap trigger:</strong> Significant reduction in
+high-severity conduct failures across two workflow families at an agreed
+utility and review budget.</li>
+<li><strong>Internal context required:</strong> Principal definitions,
+agent and human identities, cross-team authority, confidentiality rules,
+current A2A protocols, system-of-record owners, accountability
+policy.</li>
+</ul>
+</section>
+<section
+id="3-visual-provenance-and-high-risk-action-confirmation-gate--897"
+class="level3">
+<h3>3. Visual provenance and high-risk action confirmation gate —
+89.7</h3>
+<ul>
+<li><strong>Category:</strong> Multimodal / AI Security / Safety &amp;
+Governance.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> MMA-SafetyBench reports high visual-hijack attack
+success across web, documents, GUI, mobile, and video; safety prompting
+reduces but does not eliminate attacks. <strong>Paper Fact</strong>;
+authenticated provenance and confirmation are <strong>Enterprise
+Inference</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong> Agents
+treat visually persuasive content as authoritative even when its origin,
+application surface, or permission is unknown.</li>
+<li><strong>Proposed future capability and how it works:</strong> Carry
+origin and trust metadata outside pixels; map requested actions to risk
+classes; block unauthenticated visual instructions from directly
+authorizing high-impact actions; require confirmation in a trusted,
+non-overlaid surface showing origin, destination, and effect.</li>
+<li><strong>Likely architectural placement:</strong> applications, agent
+layer, model gateway, security/governance, human-review layer.</li>
+<li><strong>Expected business value:</strong> risk reduction,
+reliability, customer experience, reduced fraud and accidental
+action.</li>
+<li><strong>Technical value:</strong> Converts visual authority from an
+appearance heuristic into an attestable input to policy.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Broad
+benchmark and cross-model signal; no executed effects, adaptive
+attacker, deployment prevalence, or signed-origin intervention
+study.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>Moderate</strong> / <strong>3–6 months</strong> /
+<strong>M</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> UI element
+identity, application signing/attestation, capture/render provenance,
+action-risk taxonomy, confirmation UX, agent effect gateway,
+accessibility review.</li>
+<li><strong>Key risks:</strong> Metadata spoofing or loss, overlay
+attacks, habituation, confirmation fatigue, inaccessible UX, false trust
+in signed but compromised sources, legacy interfaces.</li>
+<li><strong>Build / Buy / Partner recommendation:</strong> <strong>Build
+policy integration and confirmation semantics; Partner</strong> with
+browser, endpoint, document, and signing providers.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Run 100
+inert visual tasks with seeded hijacks; compare baseline, safety prompt,
+origin labels, and trusted confirmation while measuring clean-task
+utility.</li>
+<li><strong>Success metrics and stop conditions:</strong> ASR, SCR,
+clean task success, false confirmation, bypass rate, user time,
+provenance loss; stop if the trusted surface can be imitated or attack
+reduction is not robust at fixed utility.</li>
+<li><strong>Roadmap trigger:</strong> Material attack reduction across
+two interface classes and two model families, with independent red-team
+bypass testing and approved UX.</li>
+<li><strong>Internal context required:</strong> Supported interfaces,
+action risk, current rendering pipelines, identity/signing capability,
+human-review availability, fraud and accessibility constraints.</li>
+</ul>
+</section>
+</section>
+<section id="prepare-foundations" class="level2">
+<h2>Prepare Foundations</h2>
+<section id="4-held-out-adversarial-regression-corpus-registry--889"
+class="level3">
+<h3>4. Held-out adversarial regression corpus registry — 88.9</h3>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability / AI
+Software Engineering / MLOps &amp; Platform.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> P2Patch's construction/acceptance separation and
+MMA-SafetyBench's domain-specific attacks show that visible development
+examples cannot be the entire qualification set. <strong>Paper
+Fact</strong> and <strong>Independent Analysis</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong> Teams
+reuse benchmark cases during design, gradually leaking acceptance
+evidence into prompts, examples, and agent memory.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+Maintain versioned, access-controlled suites for residual exploit paths,
+benign twins, visual hijacks, peer-handoff failures, and semantic
+effects. Track who has seen each case, freeze environment/model/harness
+versions, and separate development from release gates.</li>
+<li><strong>Likely architectural placement:</strong> evaluation,
+developer platform, security/governance, infrastructure.</li>
+<li><strong>Expected business value:</strong> quality, reliability,
+faster safe iteration, risk reduction.</li>
+<li><strong>Technical value:</strong> Makes leakage, coverage, failure
+recurrence, and cross-version comparison explicit.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+methodological support; corpus governance and domain-specific coverage
+are internal engineering work.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>High</strong> / <strong>Now</strong> / <strong>L</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Evaluation
+ownership, data classification, scenario authoring, environment capture,
+access controls, version lineage, secure result storage, budget
+telemetry.</li>
+<li><strong>Key risks:</strong> Benchmark gaming, stale cases, hidden
+bias, sensitive exploit retention, license limits, overfitting to a
+registry, costly environment maintenance.</li>
+<li><strong>Build / Buy / Partner recommendation:</strong> <strong>Build
+governance and internal cases; Buy/Partner</strong> for benchmark
+infrastructure and specialist red-team content.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Create a
+30-case registry spanning one code and one multimodal workflow; run
+blinded qualification on two agent configurations.</li>
+<li><strong>Success metrics and stop conditions:</strong> Novel failure
+yield, leakage rate, coverage diversity, reproducibility, environment
+drift, cost; stop if case access cannot be controlled or sensitive
+artifacts escape.</li>
+<li><strong>Roadmap trigger:</strong> The registry predicts at least one
+meaningful pre-release failure not found by development tests across two
+successive releases.</li>
+<li><strong>Internal context required:</strong> Current eval assets,
+incident history, release process, legal retention, exploit-handling
+rules, red-team capacity, artifact licenses.</li>
+</ul>
+</section>
+<section id="5-a2a-obligation-provenance-and-disclosure-ledger--856"
+class="level3">
+<h3>5. A2A obligation, provenance, and disclosure ledger — 85.6</h3>
+<ul>
+<li><strong>Category:</strong> Data &amp; Knowledge Infrastructure /
+Agentic AI / Safety &amp; Governance.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> A2-Failures shows that peer discovery, factual
+grounding, confidentiality, and principal alignment require evidence
+beyond the final shared artifact. <strong>Paper Fact</strong>; a common
+ledger is <strong>Enterprise Inference</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong>
+Cross-agent messages lose who asserted a fact, under what authority, for
+which principal, with what disclosure scope, and whether the recipient
+verified it.</li>
+<li><strong>Proposed future capability and how it works:</strong> Record
+message origin, source evidence, task, principal, permissions,
+obligations, verification status, disclosure policy, recipient, expiry,
+and downstream uses as linked events. Preserve raw content under access
+control; expose policy-minimized receipts to evaluators.</li>
+<li><strong>Likely architectural placement:</strong> orchestration,
+observability, data platform, security/governance.</li>
+<li><strong>Expected business value:</strong> auditability, incident
+speed, quality, reliability, risk reduction.</li>
+<li><strong>Technical value:</strong> Enables per-principal evaluation,
+dependency tracing, revocation, and policy checks without collapsing
+state into one transcript.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> The
+failure taxonomy is strong; no evaluated enterprise ledger intervention
+or interoperability standard is established.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>Moderate</strong> / <strong>3–6 months</strong> /
+<strong>L</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Stable principal
+IDs, message envelopes, provenance IDs, policy schema, data
+minimization, tamper evidence, retention/deletion, observability
+integration.</li>
+<li><strong>Key risks:</strong> Sensitive-log concentration, mistaken
+causal attribution, schema rigidity, storage growth, cross-jurisdiction
+retention, incomplete instrumentation, surveillance concerns.</li>
+<li><strong>Build / Buy / Partner recommendation:</strong> <strong>Build
+the semantic model; Buy</strong> durable event and policy infrastructure
+where mature.</li>
+<li><strong>Minimum reversible validation experiment:</strong>
+Instrument one synthetic multi-agent workflow and replay known failures;
+store only non-sensitive or redacted test data.</li>
+<li><strong>Success metrics and stop conditions:</strong> Trace
+completeness, policy-query accuracy, verification coverage, diagnosis
+time, privacy exposure, storage cost; stop if ledger access control is
+weaker than source systems.</li>
+<li><strong>Roadmap trigger:</strong> The ledger materially improves
+detection or diagnosis of at least two failure classes without
+increasing disclosure risk.</li>
+<li><strong>Internal context required:</strong> Data-flow maps,
+messaging stack, principals and roles, privacy rules, retention,
+incident response, labor governance.</li>
+</ul>
+</section>
+<section id="6-multimodal-trust-zone-policy-plane--844" class="level3">
+<h3>6. Multimodal trust-zone policy plane — 84.4</h3>
+<ul>
+<li><strong>Category:</strong> Multimodal / Safety &amp; Governance / AI
+Security.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> MMA-SafetyBench demonstrates cross-domain visual
+semantic hijacking and residual risk after prompt defenses.
+<strong>Paper Fact</strong>; trust zones are <strong>Enterprise
+Inference</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong> Models
+receive screenshots, documents, frames, captions, OCR, and native
+controls as one flattened context, losing origin and privilege
+distinctions.</li>
+<li><strong>Proposed future capability and how it works:</strong> Tag
+regions and extracted text with application, origin, signer, user
+ownership, capture method, transformation history, trust zone, and
+allowed effect classes. A policy engine limits how untrusted zones can
+influence planning or execution.</li>
+<li><strong>Likely architectural placement:</strong> applications, model
+gateway, security/governance, observability.</li>
+<li><strong>Expected business value:</strong> risk reduction,
+reliability, quality, strategic differentiation.</li>
+<li><strong>Technical value:</strong> Preserves security boundaries
+through multimodal preprocessing instead of relying on a flat
+prompt.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+evidence that flattening is unsafe; little evidence for portable
+metadata standards or robustness through real rendering stacks.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>Moderate</strong> / <strong>6–12 months</strong> /
+<strong>XL</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Instrumented
+capture, OCR/layout provenance, application trust anchors, schema
+standards, policy engine, model interface support, telemetry, legacy
+adapters.</li>
+<li><strong>Key risks:</strong> Tag loss, confused-deputy bugs, signer
+compromise, incorrect zoning, vendor incompatibility, latency,
+inaccessible content, metadata becoming a false assurance.</li>
+<li><strong>Build / Buy / Partner recommendation:</strong>
+<strong>Partner for platform attestation and capture; Build</strong>
+enterprise policy and risk semantics.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Annotate
+one internal document and one browser workflow in an offline harness;
+compare flat versus zoned context under seeded attacks.</li>
+<li><strong>Success metrics and stop conditions:</strong> ASR/SCR,
+provenance retention, clean utility, policy correctness, latency,
+adapter failures; stop if transformations silently strip trust
+metadata.</li>
+<li><strong>Roadmap trigger:</strong> Stable provenance across two
+rendering pipelines and sustained attack reduction under adaptive
+red-team testing.</li>
+<li><strong>Internal context required:</strong>
+Endpoint/browser/document stack, supported models, trust anchors, action
+taxonomy, accessibility and UX constraints, vendor roadmaps.</li>
+</ul>
+</section>
+</section>
+<section id="monitor-for-maturity" class="level2">
+<h2>Monitor for Maturity</h2>
+<section id="7-deterministic-event-ledger-memory--803" class="level3">
+<h3>7. Deterministic event-ledger memory — 80.3</h3>
+<ul>
+<li><strong>Category:</strong> Memory &amp; Context / Data &amp;
+Knowledge Infrastructure / RAG &amp; Knowledge.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> Beyond Retrieval reports 12.8–13.9-point MINTEval gains
+across three readers from model-authored event specifications plus
+deterministic execution; most residual errors come from event selection,
+not arithmetic. <strong>Paper Fact</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong> Long
+trajectories are difficult to retrieve from, while generative
+aggregation can lose evidence or make avoidable counting and filtering
+errors.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+Normalize selected observations into typed, source-linked events;
+execute approved filters and aggregations deterministically; return the
+result with source addresses and specification traces.</li>
+<li><strong>Likely architectural placement:</strong>
+retrieval/knowledge, data platform, agent layer.</li>
+<li><strong>Expected business value:</strong> quality, reliability,
+speed, cost, auditability.</li>
+<li><strong>Technical value:</strong> Separates semantic event selection
+from deterministic computation and retains evidence paths.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Promising benchmark results; no verified implementation, limited
+operator language, and smaller gains on the broader benchmark.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>Moderate</strong> / <strong>6–12 months</strong> /
+<strong>L</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Event schema,
+source IDs, incremental updates, correction semantics, access control,
+deterministic executor, query planner, lineage.</li>
+<li><strong>Key risks:</strong> Incorrect event specification, schema
+brittleness, stale events, silent omissions, permission leakage,
+post-hoc routing, duplicated source evidence.</li>
+<li><strong>Build / Buy / Partner recommendation:</strong>
+<strong>Monitor/Partner.</strong> Prefer mature databases or stream
+processors until a released method shows added value.</li>
+<li><strong>Minimum reversible validation experiment:</strong>
+Reconstruct 200 non-sensitive historical trajectories in an offline
+ledger and compare retrieval, human summaries, and deterministic
+queries.</li>
+<li><strong>Success metrics and stop conditions:</strong> Answer
+accuracy, source recall, event-specification error, aggregation error,
+update latency, cost; stop if schema omissions dominate or evidence
+links cannot be preserved.</li>
+<li><strong>Roadmap trigger:</strong> Independent replication plus gains
+over an equivalently structured database across two internal query
+families.</li>
+<li><strong>Internal context required:</strong> Event sources, query
+types, update frequency, correction/deletion rules, data permissions,
+existing database capabilities.</li>
+</ul>
+</section>
+<section id="8-source-addressable-group-chat-memory--792"
+class="level3">
+<h3>8. Source-addressable group-chat memory — 79.2</h3>
+<ul>
+<li><strong>Category:</strong> Memory &amp; Context / RAG &amp;
+Knowledge / Human-AI Workflow.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> EGCForest reports gains from immutable logs and
+channel/actor/artifact forests, especially on multi-hop and temporal
+Company questions. <strong>Paper Fact</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong> Flat
+retrieval mixes speakers, artifacts, channels, and time, obscuring
+provenance and permission boundaries in collaborative work.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+Preserve the raw message log, incrementally build permission-aware
+actor/channel/artifact views, retrieve from multiple views, and return
+source addresses with every synthesized answer.</li>
+<li><strong>Likely architectural placement:</strong>
+retrieval/knowledge, data platform, applications.</li>
+<li><strong>Expected business value:</strong> productivity, quality,
+search speed, knowledge continuity, customer/internal user
+experience.</li>
+<li><strong>Technical value:</strong> Improves structured access without
+replacing raw evidence and provides a substrate for principal-aware
+verification.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Positive results on two public and one internal QA benchmark;
+inaccessible artifact, no verified license, batch-build questions, and
+no deletion/access-control evaluation.</li>
+<li><strong>Confidence / horizon / effort:</strong> <strong>Low</strong>
+/ <strong>6–12 months</strong> / <strong>L</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Messaging APIs,
+stable IDs, artifact resolution, incremental indexer, ACL propagation,
+deletion/legal hold, multilingual support, provenance UI.</li>
+<li><strong>Key risks:</strong> Permission leakage, stale membership,
+privacy invasion, artifact mislinking, costly rebuilds, employee
+adoption, inaccessible evidence, licensing.</li>
+<li><strong>Build / Buy / Partner recommendation:</strong>
+<strong>Monitor/Partner.</strong> Do not reproduce from the paper until
+the artifact and license are accessible.</li>
+<li><strong>Minimum reversible validation experiment:</strong> After
+artifact access, test on a synthetic permissioned chat corpus with
+membership changes, deletions, and adversarial misattribution.</li>
+<li><strong>Success metrics and stop conditions:</strong>
+Multi-hop/temporal accuracy, source precision, ACL violations, update
+latency, deletion completion, memory cost; stop on any cross-boundary
+retrieval.</li>
+<li><strong>Roadmap trigger:</strong> Accessible licensed artifact,
+external replication, incremental updates, and zero access-control
+failures in a red-team suite.</li>
+<li><strong>Internal context required:</strong> Collaboration platform,
+ACL model, retention/legal hold, employee consent and policy, corpus
+languages, search pain points.</li>
+</ul>
+</section>
+</section>
+<section id="deprioritize-for-now" class="level2">
+<h2>Deprioritize for Now</h2>
+<section
+id="9-producer--prompt--or-outcome-only-acceptance-as-sole-control--539"
+class="level3">
+<h3>9. Producer-, prompt-, or outcome-only acceptance as sole control —
+53.9</h3>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability / Safety
+&amp; Governance / AI Security.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> P2Patch finds bypasses after producer-visible
+validation; A2-Failures finds conduct failures despite valid outcomes;
+MMA-SafetyBench finds material residual risk after safety prompting.
+<strong>Paper Fact</strong> and <strong>Independent
+Analysis</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong>
+Low-cost controls let the patch author define success, let group
+completion certify every participant, or ask the same prompted model to
+distinguish trusted from forged visual authority.</li>
+<li><strong>Proposed future capability and how it works:</strong> No
+standalone capability is recommended. Retain producer tests, prompts,
+and aggregate metrics only as fast signals feeding an independent
+acceptance process.</li>
+<li><strong>Likely architectural placement:</strong> developer platform,
+model gateway, evaluation, security/governance.</li>
+<li><strong>Expected business value:</strong> limited speed and cost
+value, outweighed by false assurance if treated as authoritative.</li>
+<li><strong>Technical value:</strong> Useful baselines and
+defense-in-depth features, not acceptance boundaries.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Easy to
+deploy; strong evidence that each construct is insufficient in the
+reviewed regimes.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>High</strong> / <strong>Now</strong> / <strong>S</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Clear
+non-authoritative labeling, escalation path, independent checks, and
+documentation of blind spots.</li>
+<li><strong>Key risks:</strong> False assurance, benchmark gaming,
+correlated verifier error, privacy/conduct blind spots, missed semantic
+compromise, overblocking from blunt prompts.</li>
+<li><strong>Build / Buy / Partner recommendation:</strong> <strong>Reuse
+only as components.</strong> Do not buy or build them as the sole
+release, coordination, or safety gate.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Compare
+current simple controls against held-out exploits, per-principal
+scenarios, and visual hijacks; do not alter production decisions.</li>
+<li><strong>Success metrics and stop conditions:</strong> Incremental
+signal value at fixed false-positive and utility budgets; stop any claim
+of sufficiency when independent evaluation finds material blind
+spots.</li>
+<li><strong>Roadmap trigger:</strong> None as a sole control; reconsider
+only as a cheap ensemble feature with explicit downstream
+acceptance.</li>
+<li><strong>Internal context required:</strong> Current control claims,
+release gates, risk appetite, incident history, and downstream
+reviewers.</li>
+</ul>
+<svg viewBox="0 0 1040 520" role="img" aria-label="Future Enterprise AI Priority Scores" style="width:100%;height:auto;background:#0c1c2a;border:1px solid #2a465b;border-radius:14px;margin:1rem 0">
+  <g font-family="system-ui" font-size="14" fill="#e9f2f8"><text x="35" y="42" font-size="20" fill="#f4c96b">Future Enterprise AI Priority Score</text><text x="35" y="85">Independent security oracle</text><text x="35" y="130">Principal-scoped handoff gate</text><text x="35" y="175">Visual provenance gate</text><text x="35" y="220">Adversarial corpus registry</text><text x="35" y="265">A2A obligation ledger</text><text x="35" y="310">Multimodal trust plane</text><text x="35" y="355">Deterministic event ledger</text><text x="35" y="400">Group-chat memory</text><text x="35" y="445">Sole simple control</text></g>
+  <g fill="#46dbc6"><rect x="315" y="67" width="647" height="24" rx="5"/><rect x="315" y="112" width="638" height="24" rx="5"/><rect x="315" y="157" width="628" height="24" rx="5"/><rect x="315" y="202" width="622" height="24" rx="5"/><rect x="315" y="247" width="599" height="24" rx="5"/><rect x="315" y="292" width="591" height="24" rx="5"/></g><g fill="#70adff"><rect x="315" y="337" width="562" height="24" rx="5"/><rect x="315" y="382" width="554" height="24" rx="5"/></g><rect x="315" y="427" width="377" height="24" rx="5" fill="#ff8f9b"/>
+  <g font-family="system-ui" font-size="14" fill="#071321" font-weight="700" text-anchor="end"><text x="954" y="84">92.5</text><text x="945" y="129">91.2</text><text x="935" y="174">89.7</text><text x="929" y="219">88.9</text><text x="906" y="264">85.6</text><text x="898" y="309">84.4</text><text x="869" y="354">80.3</text><text x="861" y="399">79.2</text><text x="684" y="444">53.9</text></g>
+  <g stroke="#2a465b" stroke-width="1"><line x1="315" y1="475" x2="990" y2="475"/><line x1="653" y1="60" x2="653" y2="475" stroke-dasharray="4 6"/></g><g fill="#9fb6c6" font-family="system-ui" font-size="12"><text x="310" y="495">0</text><text x="648" y="495">50</text><text x="976" y="495">100</text></g>
+</svg>
+
+</section>
+</section>
+</section>
+<section id="implementation-priorities" class="level1">
+<h1>Implementation priorities</h1>
+<ol type="1">
+<li><strong>Define acceptance authorities before adding more
+agents.</strong> Name who owns held-out tests, principal obligations,
+visual provenance, and final effect approval. A producer must not be
+able to rewrite its own gate.</li>
+<li><strong>Instrument identity, evidence, and effect lineage.</strong>
+Stable principal IDs, source addresses, evaluation-contract versions,
+requested effects, and durable outcomes are prerequisites for every top
+bet.</li>
+<li><strong>Build matched internal evaluations.</strong> Use the same
+patch with hidden alternate paths, the same group artifact with
+different principal conduct, and the same rendered instruction with
+different authenticated origins.</li>
+<li><strong>Keep experiments inert and reversible.</strong> Historical
+code in disposable sandboxes, synthetic private data, no live
+credentials, no external effects, and shadow scoring before
+blocking.</li>
+<li><strong>Measure utility with protection.</strong> Track clean
+completion, false refusal, latency, cost, reviewer time, and adoption
+alongside bypass, disclosure, ASR, SCR, and per-principal
+correctness.</li>
+<li><strong>Preserve raw evidence and explicit uncertainty.</strong> A
+failed adversarial search is not proof of safety; a missing peer
+verification is not automatically false; a signed surface can still be
+compromised.</li>
+<li><strong>Stop on boundary failure.</strong> Any exploit escape,
+cross-principal disclosure, provenance stripping, inaccessible
+confirmation, or unreviewed high-risk effect ends the experiment.</li>
+</ol>
+</section>
+<section id="knowledge-reinforcement" class="level1">
+<h1>Knowledge reinforcement</h1>
+<p><strong>What should be remembered:</strong></p>
+<ul>
+<li>Construction evidence and acceptance evidence must be separated when
+the producer can overfit the visible test.</li>
+<li>One successful group artifact can coexist with confidentiality,
+verification, delegation, or fairness failures for individual
+principals.</li>
+<li>A visual instruction is content, not authority. Prompting can change
+behavior but cannot authenticate origin.</li>
+<li>More agents increase boundary crossings and obligations; they do not
+automatically increase closed-loop performance.</li>
+<li>Source-preserving memory and deterministic aggregation are
+complementary: preserve evidence first, compute mechanically where
+possible.</li>
+<li>Held-out tests, policy state, identity, provenance, and rollback are
+architecture, not documentation extras.</li>
+</ul>
+<p><strong>Questions to ask in design review:</strong></p>
+<ol type="1">
+<li>Did the producer see or influence the evidence that will accept its
+output?</li>
+<li>Which independent tests exercise alternate paths, semantic effects,
+and benign twins?</li>
+<li>Who is the principal for each agent, message, credential, and
+artifact?</li>
+<li>What facts were independently verified rather than repeated by a
+peer?</li>
+<li>What disclosure or conduct obligation can fail even when the group
+output is correct?</li>
+<li>How is the origin of a visual instruction represented outside the
+pixels?</li>
+<li>Which consequential actions require a trusted confirmation
+surface?</li>
+<li>Can every accepted result be traced to evidence, policy, identity,
+and a reversible experiment?</li>
+</ol>
+</section>
+<section id="source-and-artifact-register" class="level1">
+<h1>Source and artifact register</h1>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Primary source</th>
+<th>Verified artifact</th>
+<th>Artifact/license note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>P2Patch</td>
+<td><a href="https://arxiv.org/abs/2610.20245">arXiv:2610.20245</a></td>
+<td><a
+href="https://github.com/P2Patch/P2patch">P2Patch/P2patch</a></td>
+<td>Orchestrator, benchmark, suites, tests, docs; MIT; some exploit
+suites responsibly withheld</td>
+</tr>
+<tr class="even">
+<td>A2-Failures</td>
+<td><a href="https://arxiv.org/abs/2610.19342">arXiv:2610.19342</a></td>
+<td><a
+href="https://huggingface.co/datasets/a2a-salesforce/a2-failures">a2a-salesforce/a2-failures</a></td>
+<td>Public redacted run logs, traces, events, evaluations; Apache-2.0;
+README wording inconsistency noted</td>
+</tr>
+<tr class="odd">
+<td>MMA-SafetyBench</td>
+<td><a href="https://arxiv.org/abs/2610.19384">arXiv:2610.19384</a></td>
+<td><a
+href="https://github.com/Alibaba-VELLDEPTH/MMA-SafetyBench">Alibaba-VELLDEPTH/MMA-SafetyBench</a>
+· <a
+href="https://huggingface.co/datasets/Alibaba-YuFeng/MMA-SafetyBench">dataset</a></td>
+<td>Code/data/docs verified; no license may be inferred; original video
+renderer unavailable</td>
+</tr>
+<tr class="even">
+<td>EGCForest</td>
+<td><a href="https://arxiv.org/abs/2610.19836">arXiv:2610.19836</a></td>
+<td>Paper-linked anonymous repository returned HTTP 401</td>
+<td>Watchlist; repository content and license not verified</td>
+</tr>
+<tr class="odd">
+<td>Beyond Retrieval</td>
+<td><a href="https://arxiv.org/abs/2610.19474">arXiv:2610.19474</a></td>
+<td>None verified</td>
+<td>Watchlist; no public artifact link found in full paper</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="final-boundary" class="level1">
+<h1>Final boundary</h1>
+<p>These are evidence-grounded future options, not approved roadmap
+commitments. None of the papers establishes production safety,
+enterprise prevalence, cross-domain economics, regulatory compliance, or
+fit with an unknown architecture. Before implementation, obtain internal
+workflow and system-of-record maps, source-code and vulnerability
+handling requirements, principal and identity models, data
+classification, disclosure rules, supported interface/rendering paths,
+model and tool inventories, incident history, reviewer capacity,
+acceptable false-allow/refuse costs, latency budgets, artifact license
+review, and rollback requirements. Keep every first experiment isolated,
+reversible, measurable, non-destructive, and unable to affect real
+users, credentials, repositories, or external systems.</p>
+</section></main></div>
+<footer>AI Research Intelligence Brief · October 15, 2026 · Research options, not deployment approval.</footer>
+<div class="toolbar"><button onclick="window.print()" aria-label="Print report">Print</button><button id="top" aria-label="Back to top">↑ Top</button></div>
+<script>
+const p=document.getElementById('progress');addEventListener('scroll',()=>{const h=document.documentElement;p.style.width=((h.scrollTop/(h.scrollHeight-h.clientHeight))*100)+'%'});document.getElementById('top').onclick=()=>scrollTo({top:0,behavior:'smooth'});
+document.querySelectorAll('main h3').forEach(h=>{if(/^\d+\./.test(h.textContent))h.setAttribute('data-backlog','true')});
+</script>
+</body></html>
