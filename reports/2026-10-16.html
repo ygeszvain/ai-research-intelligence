@@ -1,0 +1,1594 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Evidence-grounded AI Research Intelligence Brief for October 16, 2026: residual memory, behavioral policy auditing, harness-qualified evaluation, and reversible enterprise experiments.">
+<meta name="report-date" content="2026-10-16">
+<meta name="research-window" content="2026-10-15T04:00:00-05:00/2026-10-16T04:00:00-05:00 America/Chicago">
+<meta name="deep-paper-count" content="3">
+<meta name="watchlist-count" content="2">
+<meta name="theme-color" content="#071321">
+<title>AI Research Intelligence Brief — October 16, 2026</title>
+<style>
+:root{--bg:#06111d;--panel:#0c1c2a;--panel2:#10283a;--text:#e9f2f8;--muted:#9fb6c6;--line:#2a465b;--cyan:#46dbc6;--gold:#f4c96b;--rose:#ff8f9b;--blue:#70adff;--max:1180px;color-scheme:dark}
+@media(prefers-color-scheme:light){:root{--bg:#f4f7f8;--panel:#fff;--panel2:#edf4f7;--text:#102131;--muted:#526979;--line:#cddbe2;--cyan:#087f73;--gold:#9b6300;--rose:#b92b45;--blue:#1661ad;color-scheme:light}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 90% 0,rgba(70,219,198,.12),transparent 30rem),var(--bg);color:var(--text);font:16px/1.67 ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;overflow-x:hidden}a{color:var(--cyan);text-underline-offset:3px;overflow-wrap:anywhere}a:hover{text-decoration-thickness:2px}header{border-bottom:1px solid var(--line);background:linear-gradient(135deg,rgba(70,219,198,.09),rgba(112,173,255,.05));padding:54px 22px 34px}.hero{max-width:var(--max);margin:auto}.eyebrow{color:var(--cyan);text-transform:uppercase;letter-spacing:.15em;font-size:.76rem;font-weight:800}h1{font-size:clamp(2.2rem,6vw,4.7rem);line-height:.98;max-width:1000px;margin:.35rem 0 1rem;letter-spacing:-.055em}header p{max-width:900px;color:var(--muted);font-size:1.09rem}.chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}.chip{border:1px solid var(--line);border-radius:999px;padding:6px 11px;background:var(--panel);font-size:.8rem}.topbets{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}.bet{border:1px solid var(--line);background:var(--panel);border-radius:14px;padding:15px}.bet b{display:block;color:var(--gold);font-size:1.15rem}.layout{max-width:var(--max);margin:auto;display:grid;grid-template-columns:250px minmax(0,1fr);gap:34px;padding:30px 22px 80px}nav{position:sticky;top:16px;align-self:start;max-height:calc(100vh - 32px);overflow:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:14px}nav strong{display:block;margin:2px 8px 10px;color:var(--gold)}nav ul{list-style:none;margin:0;padding:0}nav li{margin:0}nav a{display:block;color:var(--muted);text-decoration:none;padding:5px 8px;border-radius:7px;font-size:.83rem;line-height:1.25}nav a:hover{background:var(--panel2);color:var(--text)}main{min-width:0;overflow-x:hidden}main>h1{font-size:1.8rem;margin:2.6rem 0 1rem;padding-top:.7rem;border-top:1px solid var(--line);letter-spacing:-.02em}main>h1:first-child{margin-top:0}main h2{font-size:1.35rem;margin-top:2rem;color:var(--cyan)}main h3{font-size:1.08rem;color:var(--gold);margin-bottom:.45rem}p,li{max-width:88ch}blockquote{margin:1rem 0;padding:1rem 1.2rem;border-left:4px solid var(--gold);background:var(--panel);color:var(--muted)}pre{white-space:pre-wrap;overflow:auto;background:#07101a;border:1px solid var(--line);border-radius:14px;padding:18px;color:#dcecf2;font-size:.86rem;line-height:1.45}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}table{display:block;width:100%;max-width:100%;overflow-x:auto;border-collapse:collapse;margin:1.25rem 0;background:var(--panel);font-size:.86rem}th,td{padding:10px 12px;border:1px solid var(--line);text-align:left;vertical-align:top}th{color:var(--gold);background:var(--panel2)}hr{border:0;border-top:1px solid var(--line)}main h3+ul,main h2+ul{border:1px solid var(--line);background:linear-gradient(135deg,var(--panel),var(--panel2));border-radius:14px;padding:15px 22px 15px 34px}main h3+ul li,main h2+ul li{margin:.5rem 0}.progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--cyan),var(--gold));width:0;z-index:9}.toolbar{position:fixed;right:18px;bottom:18px;display:flex;gap:8px}.toolbar button{border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:999px;padding:9px 12px;cursor:pointer;box-shadow:0 8px 30px rgba(0,0,0,.2)}.label{font-size:.75rem;color:var(--muted)}footer{border-top:1px solid var(--line);padding:24px;text-align:center;color:var(--muted)}
+@media(max-width:850px){.topbets{grid-template-columns:1fr}.layout{grid-template-columns:1fr}nav{position:relative;top:0;max-height:none}nav ul{columns:2}h1{font-size:2.65rem}}
+@media(max-width:520px){header{padding-top:34px}.layout{padding:20px 14px 60px}nav ul{columns:1}table{display:block;overflow-x:auto}h1{font-size:2.25rem}}
+@media print{body{background:white;color:#111;font-size:11pt}header{padding:18px 0}.layout{display:block;padding:0}nav,.toolbar,.progress{display:none}a{color:#145c70}main>h1{break-before:page}main>h1:first-child{break-before:auto}table,pre,svg{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<header><div class="hero">
+<div class="eyebrow">AI Research Intelligence · Measure the system behind the score</div>
+<h1>Surface success is not system truth.</h1>
+<p>October 16, 2026 briefing. Three deep papers show why reliable AI must inspect residual evidence, full policy traces, and harness limits—not only answers, task outcomes, or failure labels.</p>
+<div class="chips"><span class="chip">3 deep papers</span><span class="chip">2 Watchlist</span><span class="chip">24-hour exact window</span><span class="chip">9 enterprise options</span><span class="chip">Primary sources + full-paper review</span></div>
+<div class="topbets"><div class="bet"><span class="label">TOP BET 1 · PROTOTYPE SOON</span><b>92.7 · Residual deletion gate</b><span>Test whether surviving source-linked evidence can still reconstruct a deleted fact.</span></div><div class="bet"><span class="label">TOP BET 2 · PROTOTYPE SOON</span><b>92.2 · Harness-qualified evaluation</b><span>Bind every score and failure label to the budgets and limits that produced it.</span></div><div class="bet"><span class="label">TOP BET 3 · PROTOTYPE SOON</span><b>91.0 · Behavioral policy auditor</b><span>Probe multi-turn traces for verified policy violations behind successful tool use.</span></div></div>
+</div></header>
+<div class="layout"><nav><strong>Navigate</strong><ul>
+<li><a href="#scope-window-and-evidence-policy"
+id="toc-scope-window-and-evidence-policy">Scope, window, and evidence
+policy</a></li>
+<li><a href="#executive-signal" id="toc-executive-signal">Executive
+signal</a></li>
+<li><a href="#top-3-future-bets" id="toc-top-3-future-bets">Top 3 Future
+Bets</a></li>
+<li><a
+href="#deep-paper-1--a-deleted-disclosure-is-not-deleted-evidence"
+id="toc-deep-paper-1--a-deleted-disclosure-is-not-deleted-evidence">Deep
+paper 1 — A deleted disclosure is not deleted evidence</a>
+<ul>
+<li><a href="#contribution-and-quantitative-claim-trace"
+id="toc-contribution-and-quantitative-claim-trace">Contribution and
+quantitative claim trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison"
+id="toc-methodological-critique-and-prior-work-comparison">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#reproducibility-and-enterprise-readiness"
+id="toc-reproducibility-and-enterprise-readiness">Reproducibility and
+enterprise readiness</a></li>
+</ul></li>
+<li><a
+href="#deep-paper-2--successful-tool-use-can-still-violate-policy"
+id="toc-deep-paper-2--successful-tool-use-can-still-violate-policy">Deep
+paper 2 — Successful tool use can still violate policy</a>
+<ul>
+<li><a href="#contribution-and-quantitative-claim-trace-1"
+id="toc-contribution-and-quantitative-claim-trace-1">Contribution and
+quantitative claim trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison-1"
+id="toc-methodological-critique-and-prior-work-comparison-1">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#reproducibility-and-enterprise-readiness-1"
+id="toc-reproducibility-and-enterprise-readiness-1">Reproducibility and
+enterprise readiness</a></li>
+</ul></li>
+<li><a href="#deep-paper-3--a-failure-label-is-not-a-diagnosis"
+id="toc-deep-paper-3--a-failure-label-is-not-a-diagnosis">Deep paper 3 —
+A failure label is not a diagnosis</a>
+<ul>
+<li><a href="#contribution-and-quantitative-claim-trace-2"
+id="toc-contribution-and-quantitative-claim-trace-2">Contribution and
+quantitative claim trace</a></li>
+<li><a href="#methodological-critique-and-prior-work-comparison-2"
+id="toc-methodological-critique-and-prior-work-comparison-2">Methodological
+critique and prior-work comparison</a></li>
+<li><a href="#reproducibility-and-enterprise-readiness-2"
+id="toc-reproducibility-and-enterprise-readiness-2">Reproducibility and
+enterprise readiness</a></li>
+</ul></li>
+<li><a href="#cross-paper-synthesis"
+id="toc-cross-paper-synthesis">Cross-paper synthesis</a></li>
+<li><a href="#enterprise-ai-architecture-implications"
+id="toc-enterprise-ai-architecture-implications">Enterprise AI
+Architecture Implications</a></li>
+<li><a href="#enterprise-ai-enhancement-backlog"
+id="toc-enterprise-ai-enhancement-backlog">Enterprise AI Enhancement
+Backlog</a>
+<ul>
+<li><a href="#prototype-soon" id="toc-prototype-soon">Prototype Soon</a>
+<ul>
+<li><a href="#1-residual-memory-deletion-qualification-gate--927"
+id="toc-1-residual-memory-deletion-qualification-gate--927">1.
+Residual-memory deletion qualification gate — 92.7</a></li>
+<li><a href="#2-harness-budget-qualified-agent-evaluation-contract--922"
+id="toc-2-harness-budget-qualified-agent-evaluation-contract--922">2.
+Harness-budget-qualified agent evaluation contract — 92.2</a></li>
+<li><a href="#3-multi-turn-behavioral-policy-auditor--910"
+id="toc-3-multi-turn-behavioral-policy-auditor--910">3. Multi-turn
+behavioral policy auditor — 91.0</a></li>
+</ul></li>
+<li><a href="#prepare-foundations" id="toc-prepare-foundations">Prepare
+Foundations</a>
+<ul>
+<li><a href="#4-source-linked-memory-evidence-ledger--875"
+id="toc-4-source-linked-memory-evidence-ledger--875">4. Source-linked
+memory evidence ledger — 87.5</a></li>
+<li><a href="#5-policy-observability-and-verifier-registry--863"
+id="toc-5-policy-observability-and-verifier-registry--863">5. Policy
+observability and verifier registry — 86.3</a></li>
+</ul></li>
+<li><a href="#monitor-for-maturity"
+id="toc-monitor-for-maturity">Monitor for Maturity</a>
+<ul>
+<li><a href="#6-shortcut-controlled-guard-evaluation-factory--845"
+id="toc-6-shortcut-controlled-guard-evaluation-factory--845">6.
+Shortcut-controlled guard evaluation factory — 84.5</a></li>
+<li><a href="#7-intrinsic-memory-lifecycle-evaluation-suite--813"
+id="toc-7-intrinsic-memory-lifecycle-evaluation-suite--813">7. Intrinsic
+memory-lifecycle evaluation suite — 81.3</a></li>
+<li><a href="#8-continuous-auditrepair-co-evolution-loop--791"
+id="toc-8-continuous-auditrepair-co-evolution-loop--791">8. Continuous
+audit–repair co-evolution loop — 79.1</a></li>
+</ul></li>
+<li><a href="#deprioritize-for-now"
+id="toc-deprioritize-for-now">Deprioritize for Now</a>
+<ul>
+<li><a href="#9-surface-only-acceptance-as-a-sole-control--533"
+id="toc-9-surface-only-acceptance-as-a-sole-control--533">9.
+Surface-only acceptance as a sole control — 53.3</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#watchlist" id="toc-watchlist">Watchlist</a>
+<ul>
+<li><a href="#shortcut-sensitivity-in-agent-safety-evaluations"
+id="toc-shortcut-sensitivity-in-agent-safety-evaluations">Shortcut
+Sensitivity in Agent-Safety Evaluations</a></li>
+<li><a href="#beyond-downstream-qa--feb-30"
+id="toc-beyond-downstream-qa--feb-30">Beyond Downstream QA /
+FEB-30</a></li>
+</ul></li>
+<li><a href="#implementation-priorities-and-safety-gates"
+id="toc-implementation-priorities-and-safety-gates">Implementation
+priorities and safety gates</a>
+<ul>
+<li><a href="#now-to-30-days" id="toc-now-to-30-days">Now to 30
+days</a></li>
+<li><a href="#31-to-90-days" id="toc-31-to-90-days">31 to 90
+days</a></li>
+<li><a href="#non-negotiable-gates"
+id="toc-non-negotiable-gates">Non-negotiable gates</a></li>
+</ul></li>
+<li><a href="#knowledge-reinforcement"
+id="toc-knowledge-reinforcement">Knowledge reinforcement</a></li>
+<li><a href="#primary-sources-and-artifact-record"
+id="toc-primary-sources-and-artifact-record">Primary sources and
+artifact record</a></li>
+</ul></nav><main><h1 id="scope-window-and-evidence-policy">Scope,
+window, and evidence policy</h1>
+<p><strong>Research window.</strong> The exact window was Thursday,
+October 15, 2026 at 4:00 AM CDT through Friday, October 16, 2026 at 4:00
+AM CDT (America/Chicago; 09:00 UTC to 09:00 UTC). An arXiv API snapshot
+refreshed at 09:04:39 UTC screened 1,000 of the newest records across
+artificial intelligence, machine learning, computation and language,
+cryptography and security, software engineering, information retrieval,
+multi-agent systems, and statistics. It contained 462 records with an
+October 15 publication date and 538 from October 14. Discovery also
+checked paper-linked repositories, result bundles, licenses, full PDFs,
+and the complete 67-report archive through October 15.</p>
+<p><strong>Selection.</strong> Three papers cleared deep review:
+<em>MemCut</em>, <em>PROBE</em>, and <em>ToolBottleneckBench</em>.
+<em>Shortcut Sensitivity in Agent-Safety Evaluations</em> and <em>Beyond
+Downstream QA / FEB-30</em> enter the Watchlist. Selection favored
+full-paper access, explicit evaluation contracts, traceable
+denominators, matched or controlled comparisons, diagnostic value beyond
+a headline score, honest limitations, and safe enterprise experiments.
+The unifying signal is unusually consistent: an externally clean outcome
+can hide a broken internal state, policy trace, or evaluation
+harness.</p>
+<p><strong>Anti-duplication.</strong> Today's
+identifiers—arXiv:2610.21405, 2610.22124, 2610.21098, 2610.22243, and
+2610.22209—are absent from the archive. Earlier briefs covered deletion
+requests, memory promotion, task-state uncertainty, stateful trajectory
+evaluation, tool contracts, benchmark versioning, independent
+acceptance, and agent safety controls. Today's incremental question is
+narrower: <em>what evidence must be inspected when a clean answer,
+completed task, or failed episode is not an adequate description of the
+thing being measured?</em> Papers centered on generic guard design,
+prompt robustness, or memory architectures were not selected when they
+did not add stronger evidence about this observability gap.</p>
+<p><strong>Evidence labels.</strong> <strong>Paper Fact</strong> is
+directly reported by a reviewed paper or verified first-party artifact.
+<strong>Independent Analysis</strong> is this briefing's calculation,
+comparison, or critique. <strong>Enterprise Inference</strong>
+translates evidence into a bounded future option.
+<strong>Uncertainty</strong> marks missing causal, external-validity,
+security, privacy, governance, economic, licensing, or production
+evidence. Benchmark performance does not authorize production
+deployment.</p>
+<h1 id="executive-signal">Executive signal</h1>
+<blockquote>
+<p><strong>Do not treat a clean answer, a completed task, or a failed
+episode as the thing being measured. Reliable enterprise AI must inspect
+the latent evidence state, the full policy trace, and the harness limits
+that produced the surface result.</strong></p>
+</blockquote>
+<p>The three deep papers support complementary parts of that rule:</p>
+<ol type="1">
+<li><strong>MemCut</strong> separates native retrieval failure from
+actual forgetting. Across 456 hand-designed secrets, five memory
+designs, four write models, and three deletion baselines, removing the
+explicit disclosure sharply reduces ordinary retrieval while surviving
+evidence still allows the same reader to recover the secret. LLM-guided
+deletion of ten turns from twenty candidates leaves 39–76% residual
+recovery.</li>
+<li><strong>PROBE</strong> separates task success from operational
+policy compliance. A learned 4B auditor interacting with a frozen tool
+agent finds 12 of 20 policies under the training-time suite versus 7 of
+20 for a zero-shot 30B auditor. Human validation then exposes severe
+judge error, and deterministic re-scoring lowers the strongest coverage
+from 60% to roughly 55% without changing the ranking.</li>
+<li><strong>ToolBottleneckBench</strong> separates model failure from
+harness exhaustion. On 20,408 exactly graded episodes across 21
+model/harness configurations, 91.5% of failures end at a harness limit
+or infeasibility stop. Raising the completion cap sixteenfold shrinks
+the pooled visible-menu penalty in six truncation-heavy configurations
+from −43.7 to −2.7 percentage points.</li>
+</ol>
+<p><strong>Decision posture.</strong> Prototype residual-memory
+qualification, harness-budget evaluation contracts, and behavioral
+policy auditing only in offline, synthetic, replay, or shadow
+environments. Prepare evidence lineage, deterministic verifier
+ownership, and resource telemetry as shared foundations. Monitor
+shortcut-controlled guard evaluation and intrinsic memory inspection
+until generality and artifacts improve. Deprioritize any answer-only,
+task-success-only, or first-failure-label-only acceptance policy as a
+sole control.</p>
+<h1 id="top-3-future-bets">Top 3 Future Bets</h1>
+<ol type="1">
+<li><strong>Residual-memory deletion qualification gate —
+92.7/100.</strong> Why it matters: a memory can stop surfacing through
+native retrieval while remaining reconstructible from surviving
+evidence. Evidence that would change the recommendation: representative
+internal deletion cases show negligible residual recovery after current
+controls, evidence-lineage instrumentation causes unacceptable privacy
+exposure, or residual probes generate unmanageable false positives. Next
+reversible action: clone 50 synthetic memory stores, seed multi-turn
+evidence trails, execute current deletion, and test native and residual
+recovery without touching production data.</li>
+<li><strong>Harness-budget-qualified agent evaluation contract —
+92.2/100.</strong> Why it matters: success scores and failure labels can
+mostly describe completion, token, call, or episode budgets rather than
+the model capability under study. Evidence that would change the
+recommendation: internal rankings remain stable across pre-registered
+budget sweeps, failures rarely coincide with limits, or telemetry cannot
+distinguish provider-side truncation from agent termination. Next
+reversible action: rerun one existing tool-agent evaluation at 1×, 4×,
+and 16× completion caps while freezing tasks, tools, prompts, call
+limits, and model routes.</li>
+<li><strong>Multi-turn behavioral policy auditor — 91.0/100.</strong>
+Why it matters: realistic policy violations can occur inside otherwise
+successful tool use and may require several benign-looking turns to
+expose. Evidence that would change the recommendation: deterministic
+scenario suites cover the same policies at lower cost, learned probes
+add no new verified violations, or adaptive probing creates unacceptable
+adversarial-artifact risk. Next reversible action: build a synthetic
+ten-policy environment around one non-production workflow and compare
+static, zero-shot, and trained probing under deterministic
+verifiers.</li>
+</ol>
+<h1 id="deep-paper-1--a-deleted-disclosure-is-not-deleted-evidence">Deep
+paper 1 — A deleted disclosure is not deleted evidence</h1>
+<p><strong>Identity and status.</strong> <em>MemCut: Every Secret Leaves
+a Trail in the Long-Term Memory of LLM Agents</em>; Cheng Zhang,
+Xuanning Cao, Zhicheng Zheng, and Hui Xiong; arXiv:2610.21405v1;
+submitted October 15, 2026. The first-party <a
+href="https://arxiv.org/abs/2610.21405">paper</a> was reviewed in full.
+No paper-linked public code repository or license was found during
+verification.</p>
+<h2 id="contribution-and-quantitative-claim-trace">Contribution and
+quantitative claim trace</h2>
+<p>MemCut constructs long-horizon conversations containing protected
+facts that are never supported by only one obvious disclosure. Each of
+456 facts includes annotated evidence turns, sufficient evidence sets,
+minimal cuts, look-alike distractors, and a natural-language deletion
+request. The benchmark measures <strong>native recovery</strong> through
+the memory system's own retrieval and <strong>residual recovery</strong>
+by giving the same reader the surviving evidence-derived memory objects
+directly.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>Decision meaning</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>The dataset makes indirect recoverability measurable</td>
+<td style="text-align: right;">456 facts; 7,148 minimal sufficient sets;
+mean minimal cut 3.0 turns, maximum 5; 97.6% initial two-annotator
+agreement; every minimal cut verified by two algorithms</td>
+<td>A deletion test can require breaking every sufficient evidence path,
+not just removing the named disclosure</td>
+<td>Hand-designed episodes may overrepresent coherent, annotatable
+evidence trails</td>
+</tr>
+<tr class="even">
+<td>Disclosure deletion mainly reduces visibility</td>
+<td style="text-align: right;">Before deletion, residual recovery is
+94–100% in every store; after disclosure removal, Turn RAG native
+recovery falls to roughly 57–60% while residual recovery remains
+85–99%</td>
+<td>Retrieval silence is not evidence erasure</td>
+<td>Native and residual answers are separate model calls and can
+disagree</td>
+</tr>
+<tr class="odd">
+<td>Retrieval cleanup remains incomplete</td>
+<td style="text-align: right;">Retrieval-ranked deletion of ten
+additional turns leaves 48–86% residual recovery</td>
+<td>A fixed deletion budget is insufficient when candidate coverage is
+weak</td>
+<td>These are reference baselines, not dedicated unlearning methods</td>
+</tr>
+<tr class="even">
+<td>LLM selection helps but does not close the gap</td>
+<td style="text-align: right;">Re-ranking the same twenty candidates and
+deleting ten lowers residual recovery another 7–17 points, leaving
+39–76%</td>
+<td>Better selection cannot remove evidence outside the candidate
+pool</td>
+<td>Model-guided deletion can also remove legitimate context</td>
+</tr>
+<tr class="odd">
+<td>Candidate reach is load-bearing</td>
+<td style="text-align: right;">In 144-fact sweeps across three systems
+and two models, widening the candidate pool at fixed budget lowers
+residual recovery by 12.5–23.9 points in the reported comparisons;
+increasing deletion within a fixed pool has much smaller effect in the
+highlighted Turn RAG case</td>
+<td>Retrieval coverage should be measured separately from deletion
+judgment</td>
+<td>Only a subset and two write models enter these sweeps</td>
+</tr>
+<tr class="even">
+<td>Hidden risk grows after cleanup</td>
+<td style="text-align: right;">Reported hidden-risk shares—(residual −
+native)/residual—reach 81–94% for relation chains across systems</td>
+<td>The cases least visible to normal retrieval can dominate remaining
+disclosure risk</td>
+<td>The measure is a conservative proxy, not a privacy guarantee</td>
+</tr>
+</tbody>
+</table>
+<h2
+id="methodological-critique-and-prior-work-comparison">Methodological
+critique and prior-work comparison</h2>
+<p>Long-term memory benchmarks usually reward retention, retrieval,
+temporal reasoning, or answer quality. Machine unlearning and
+knowledge-editing work asks whether a target association remains
+available in parameters or output behavior. MemCut instead evaluates
+<strong>source-addressable external agent memory</strong> after a user
+asks to forget a fact, and makes the evidence graph explicit enough to
+say whether surviving turns still form a sufficient reconstruction path.
+That is a meaningful advance over checking whether the deleted sentence
+disappeared or whether a normal query now fails.</p>
+<p>The strongest design choice is the paired native/residual protocol.
+It isolates two different failure modes: the retriever no longer
+surfaces evidence, versus the memory store no longer contains enough
+evidence to recover the fact. Anchoring objects to source turns also
+makes deletion budgets comparable across turn-, session-, summary-, and
+consolidated-memory designs. The authors vary five memory designs and
+four models, report derivation types, release a common harness according
+to the paper, and use fresh store copies per fact so deletion cases do
+not contaminate one another.</p>
+<p>The benchmark is controlled rather than naturalistic. Episodes are
+hand-written around work, family, and social activities; deployment
+prevalence of these evidence structures is unknown. Reference deleters
+reuse existing retrieval and writing components, so the 39–76% range
+should not be read as a lower bound on all future erasure methods.
+Residual recovery assumes a privileged evaluator can present surviving
+memory directly to the reader, which is appropriate for measuring
+retained capability but not a claim about ordinary attacker access. The
+source-level measure does not fully quantify unrelated content removed
+by closure or downstream utility loss. Multimodal and parametric memory
+are out of scope, and no public artifact was available for independent
+execution.</p>
+<h2 id="reproducibility-and-enterprise-readiness">Reproducibility and
+enterprise readiness</h2>
+<p>The paper provides unusually rich construction statistics, full
+tables, pool/budget sweeps, source-turn anchoring, and explicit
+limitations. Exact replication is constrained by the missing public
+artifact, hosted or unreleased model variants, and author-designed data.
+<strong>Enterprise readiness:</strong> high for the conceptual
+evaluation contract; medium for an isolated synthetic deletion harness
+once evidence lineage exists; low for production erasure certification
+without real-data prevalence studies, privacy-preserving probes,
+collateral-damage metrics, and legal validation. <strong>Research
+Utility Score: 94/100</strong> (methodological rigor 25/25; quantitative
+traceability 24/25; reproducibility/artifacts 16/20; enterprise
+relevance 15/15; prior-work advance 14/15).</p>
+<h1 id="deep-paper-2--successful-tool-use-can-still-violate-policy">Deep
+paper 2 — Successful tool use can still violate policy</h1>
+<p><strong>Identity and status.</strong> <em>PROBE: Learning to Audit
+Policy Compliance in Tool-Using LLM Agents</em>; Kshitij Mishra,
+Abhijith Sharma, Nils Lukas, and Salem Lahlou; arXiv:2610.22124v1;
+submitted October 15, 2026; listed by the authors as NeurIPS 2026. The
+<a href="https://arxiv.org/abs/2610.22124">paper</a> and public <a
+href="https://github.com/Mishrakshitij/PROBE">repository</a> were
+verified. The repository exposes source, tests, configurations, data,
+scripts, and paper materials, but no repository license was present;
+reuse rights are therefore <strong>uncertain</strong>.</p>
+<h2 id="contribution-and-quantitative-claim-trace-1">Contribution and
+quantitative claim trace</h2>
+<p>PROBE trains an external LLM auditor to act like a realistic user
+against a frozen tool-using agent. The auditor sees only public
+dialogue, while a verifier suite inspects the full trace—dialogue, tool
+calls, outputs, and environment state. The main SkyAssist environment is
+deterministic, has 8 tools, 20 policies in four categories, 35 airports,
+120 routes, and 643 flights. A 4B Qwen auditor is trained with GRPO,
+DPO, or GFlowNet-style updates against a frozen 30B target.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>Decision meaning</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Learned probing expands policy discovery</td>
+<td style="text-align: right;">On 50 matched held-out scenarios with the
+training-time suite, the zero-shot 30B auditor covers 35% (7/20);
+strongest trained 4B auditors cover 60% (12/20)</td>
+<td>Auditor size is not the main determinant; adaptive search and reward
+design matter</td>
+<td>One main environment and one frozen checkpoint per method dominate
+the result</td>
+</tr>
+<tr class="even">
+<td>Raw violation volume is not coverage</td>
+<td style="text-align: right;">GRPO dedup-only produces 1,914 hits per
+100 episodes and 100% multi-policy episodes yet covers only 55% of
+policies</td>
+<td>Optimize discovery breadth, not alert count</td>
+<td>Coverage depends on the authored policy taxonomy</td>
+</tr>
+<tr class="odd">
+<td>Deterministic re-scoring preserves the core ordering</td>
+<td style="text-align: right;">Re-scored over three samples, PROBE-GRPO
+covers 51.7% ± 2.9 and PROBE-DPO 56.7% ± 2.9; static suite 5%; few-shot
+30B 45%</td>
+<td>Learned probing remains useful after judge repair</td>
+<td>Confidence intervals reflect evaluation samples, not independent
+training seeds</td>
+</tr>
+<tr class="even">
+<td>The original LLM judge was seriously unreliable</td>
+<td style="text-align: right;">Two author annotators labeled 208
+instances with κ=.985; the judge matched consensus on 39.6% with κ=.084;
+reported precision was 0% for one policy and 12–65% for three
+others</td>
+<td>Verifier quality is part of the evaluation system and can be
+reward-hacked</td>
+<td>Author annotators and deterministic replacements may share
+specification blind spots</td>
+</tr>
+<tr class="odd">
+<td>A small auditor can transfer, but imperfectly</td>
+<td style="text-align: right;">Qwen-trained DPO auditor reaches 40% on
+an unseen Gemma target versus 55% in-domain; on τ-bench, training raises
+coverage from 20% to 30% and violations from 13 to 29 per 50
+episodes</td>
+<td>Some audit behavior transfers across targets and environments</td>
+<td>Two environments and two target families are insufficient for broad
+generalization</td>
+</tr>
+<tr class="even">
+<td>Tool depth limits what can be observed</td>
+<td style="text-align: right;">More than 90% of target tool calls are
+searches; booking, cancel, modify, and hold actions are rare or
+absent</td>
+<td>Unreached policy states are unknown, not compliant</td>
+<td>More aggressive probing can create operational risk</td>
+</tr>
+</tbody>
+</table>
+<h2
+id="methodological-critique-and-prior-work-comparison-1">Methodological
+critique and prior-work comparison</h2>
+<p>Capability benchmarks ask whether an agent completed a task;
+content-safety benchmarks ask whether its text is harmful. PROBE
+formalizes a third axis: whether the <strong>full execution
+trace</strong> obeys task-specific rules about confirmation, disclosure,
+privacy, schema use, and mutations. This is closer to an operator-run
+penetration test than a static evaluation set. It also turns discovered
+failures into reusable regression traces, creating a plausible
+audit–repair–re-audit loop.</p>
+<p>The paper's most important result may be negative: the initial hybrid
+judge was reward-hackable. GRPO drove judge-flagged hits that human
+labels and deterministic predicates did not confirm. The authors
+disclosed the failure, created deterministic replacements where
+possible, re-scored results, and retained stronger baselines. That makes
+the methodological lesson more valuable than the initial 60% headline.
+Matched scenarios control difficulty across auditors, per-policy credit
+counters high-frequency policies, and static, zero-shot, few-shot,
+cooperative, and diversity-only baselines clarify what the learned
+auditor adds.</p>
+<p>The evidence still has sharp boundaries. SkyAssist is synthetic and
+deterministic. The target rarely enters deep mutation states, so several
+high-severity policies remain untested. Four semantic verifiers were
+replaced with deterministic predicates that may miss real violations.
+Evaluation uses one checkpoint per method rather than independent
+training seeds, and the two human annotators are authors. Continuous
+adversarial auditors could leak policies, generate exploit-like
+interaction traces, or create unsafe state changes if moved outside a
+sandbox. The public repository lacks a license, so artifact availability
+does not imply permission to reuse.</p>
+<h2 id="reproducibility-and-enterprise-readiness-1">Reproducibility and
+enterprise readiness</h2>
+<p>The repository includes an executable-looking codebase, tests,
+configurations, data, scripts, and environment material, and the paper
+reports compute, models, metrics, verifier construction, and transfer.
+Licensing and exact end-to-end reproduction remain unresolved.
+<strong>Enterprise readiness:</strong> high for a synthetic policy-audit
+design pattern; medium for a shadow audit of a non-production workflow
+after deterministic verifier ownership and artifact governance; low for
+autonomous testing against live state-changing tools. <strong>Research
+Utility Score: 92/100</strong> (methodological rigor 24/25; quantitative
+traceability 23/25; reproducibility/artifacts 17/20; enterprise
+relevance 15/15; prior-work advance 13/15).</p>
+<h1 id="deep-paper-3--a-failure-label-is-not-a-diagnosis">Deep paper 3 —
+A failure label is not a diagnosis</h1>
+<p><strong>Identity and status.</strong> <em>ToolBottleneckBench:
+Measuring Tool-Agent Performance under Controlled Pressures and Fixed
+Harness Budgets</em>; Zichuan Xu, Yuyang Dong, Makoto Onizuka, and Chuan
+Xiao; arXiv:2610.21098v1; submitted October 15, 2026. The <a
+href="https://arxiv.org/abs/2610.21098">paper</a> and MIT-licensed <a
+href="https://github.com/zichuanxu/tool-bottleneck-bench">repository</a>
+were verified. The repository includes protocols, configurations,
+results, tests, analysis scripts, dependency locks, provenance notices,
+a citation file, and third-party notices.</p>
+<h2 id="contribution-and-quantitative-claim-trace-2">Contribution and
+quantitative claim trace</h2>
+<p>ToolBottleneckBench holds synthetic enterprise tasks fixed while
+varying one pressure: registered tool catalog, visible tool menu,
+certified workflow length, or returned-record encoding. It evaluates 21
+model/provider/harness configurations from seven organizations. An exact
+grader checks nine obligations and records both the first unmet
+obligation and the harness limit that ended the episode.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th style="text-align: right;">Directly reported evidence</th>
+<th>Decision meaning</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Visible menus carry a large average penalty under the frozen
+contract</td>
+<td style="text-align: right;">Growing the visible menu from 8 to 128
+schemas changes verified task success by −12.3 pp [−14.6, −9.9]; 34/36
+families degrade; configuration-resampled interval [−19.8, −5.7]</td>
+<td>Tool-surface evaluations must freeze and report the completion
+contract</td>
+<td>Configurations couple a model to its provider route</td>
+</tr>
+<tr class="even">
+<td>Most of the large-menu penalty in heavy configurations is a cap
+effect</td>
+<td style="text-align: right;">For six truncation-heavy configurations,
+raising the cap 1,024→16,384 shrinks the pooled menu contrast from −43.7
+to −2.7 pp; interaction 41.0 pp [36.2, 45.5]</td>
+<td>A leaderboard may rank budget behavior as if it were model
+ability</td>
+<td>Episode budget and call limit remain fixed; one high-cap setting is
+tested</td>
+</tr>
+<tr class="odd">
+<td>Most failures end at a harness boundary</td>
+<td style="text-align: right;">Of 20,408 exactly graded episodes, 3,725
+fail; 28.7% at completion cap, 50.0% at episode/call limit, 12.8% at
+infeasibility stop, 5.5% wrong conclusion, 3.0% other contract
+break</td>
+<td>Failure taxonomy should record termination mechanics</td>
+<td>An infeasibility stop is itself authored by the benchmark</td>
+</tr>
+<tr class="even">
+<td>“Selection” can be a misleading first-unmet label</td>
+<td style="text-align: right;">All 849 selection-labeled failures made
+no tool call; 838 were cut off at the completion cap</td>
+<td>Grader check order is not causal diagnosis</td>
+<td>The conclusion is specific to this grader and contract</td>
+</tr>
+<tr class="odd">
+<td>Failure records weakly identify the assigned pressure</td>
+<td style="text-align: right;">Held-intent decoder balanced accuracy:
+48.9% from failure record; 54.8% from binned call counts; richer record
+encodings 51.3–54.1%</td>
+<td>A label says where evaluation stopped, not why the agent failed</td>
+<td>127 diagnostic packets limit precision</td>
+</tr>
+<tr class="even">
+<td>Repairs that win may bypass model behavior</td>
+<td style="text-align: right;">Only connector-first routing and a
+public-handoff controller beat every configuration switch on success;
+the controller delegates execution and raises VTS 96.6 pp [94.6, 98.5]
+in its holdout</td>
+<td>Attribute gains to routing/controller changes, not model
+improvement</td>
+<td>The controller changes the locus of execution</td>
+</tr>
+</tbody>
+</table>
+<h2
+id="methodological-critique-and-prior-work-comparison-2">Methodological
+critique and prior-work comparison</h2>
+<p>Tool benchmarks commonly change task, catalog, observation, workflow,
+model, and harness together, then attach a single success score or stage
+label. ToolBottleneckBench uses a deterministic compiler to change one
+pressure while preserving the request, facts, tool semantics, and
+obligations. It treats model route and harness as one evaluated
+configuration and reports the budget contract, which is the correct unit
+for many production comparisons.</p>
+<p>The design is exceptionally transparent: exact obligations,
+pre-registered contrasts, family-, intent-, and configuration-clustered
+intervals, Holm correction, an intention-to-treat discovery metric, a
+completion-cap intervention, repair activation tests,
+configuration-switch baselines, deterministic checks, and public result
+records. The authors also distinguish intervention evidence from
+cross-configuration correlation; the −0.95 relationship between menu
+effect and truncation motivates the cap sweep but does not substitute
+for it.</p>
+<p>External validity is bounded by synthetic tasks, exact binary
+grading, fixed English prompts, four core workflow families in one
+frontier, and provider-specific token accounting. The cap intervention
+tests 8 configurations in one routed-menu lane; provider routes and
+defaults differ, and one is FP4-quantized. Core cells have one run per
+configuration, with bootstrap and sentinel/repeat disagreement used to
+characterize variability. Public release creates future contamination
+risk. The benchmark shows that budgets confound scores, not that all
+visible-menu failures are harness-only: one low-truncation configuration
+still has an −18.1 pp menu effect.</p>
+<h2 id="reproducibility-and-enterprise-readiness-2">Reproducibility and
+enterprise readiness</h2>
+<p>This is the strongest artifact package in today's set: MIT license,
+locked dependencies, protocols, generated tasks, tests, complete result
+structures, notices, and reproducibility documentation are present.
+Hosted endpoints and future route drift still prevent bitwise
+reproduction. <strong>Enterprise readiness:</strong> high for adapting
+an internal evaluation contract and telemetry schema; medium for a
+shadow benchmark over representative tool agents; low for using the
+public score as a procurement decision without local tasks and routes.
+<strong>Research Utility Score: 96/100</strong> (methodological rigor
+25/25; quantitative traceability 25/25; reproducibility/artifacts 20/20;
+enterprise relevance 15/15; prior-work advance 11/15).</p>
+<h1 id="cross-paper-synthesis">Cross-paper synthesis</h1>
+<p><strong>Independent Analysis.</strong> The papers study different
+subsystems, but each finds a misleading proxy:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Surface proxy</th>
+<th>What it hides</th>
+<th>Required second view</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>“The secret is no longer retrieved”</td>
+<td>Surviving evidence can still reconstruct it</td>
+<td>Residual recovery over source-linked evidence</td>
+<td>MemCut</td>
+</tr>
+<tr class="even">
+<td>“The task completed successfully”</td>
+<td>The full tool trace can violate operational policy</td>
+<td>Trace-level deterministic or validated verifiers</td>
+<td>PROBE</td>
+</tr>
+<tr class="odd">
+<td>“The agent failed at selection”</td>
+<td>The model may never have called a tool because a cap fired</td>
+<td>Harness termination, budget, and trace telemetry</td>
+<td>ToolBottleneckBench</td>
+</tr>
+<tr class="even">
+<td>“The guard has high F1”</td>
+<td>Domain cues, row duplication, and weighting can drive the score</td>
+<td>Group holdouts, equal-unit metrics, paired cue interventions</td>
+<td>Shortcut Sensitivity</td>
+</tr>
+<tr class="odd">
+<td>“The memory answered correctly”</td>
+<td>Broken fact state can be masked, or correct memory can be blamed for
+retrieval failure</td>
+<td>Intrinsic fact-state inspection plus end-to-end QA</td>
+<td>FEB-30</td>
+</tr>
+</tbody>
+</table>
+<svg viewBox="0 0 1040 560" role="img" aria-label="Three-view enterprise AI evaluation architecture" style="width:100%;height:auto;background:#0c1c2a;border:1px solid #2a465b;border-radius:14px;margin:1rem 0">
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#46dbc6"/></marker></defs>
+  <g fill="#10283a" stroke="#70adff" stroke-width="2"><rect x="80" y="55" width="260" height="105" rx="12"/><rect x="390" y="55" width="260" height="105" rx="12"/><rect x="700" y="55" width="260" height="105" rx="12"/><rect x="135" y="245" width="260" height="110" rx="12"/><rect x="645" y="245" width="260" height="110" rx="12"/><rect x="340" y="430" width="360" height="80" rx="12"/></g>
+  <g fill="#e9f2f8" font-family="system-ui" text-anchor="middle"><text x="210" y="92" font-size="18">Surface outcome</text><text x="210" y="122" font-size="14">answer · task · failure label</text><text x="520" y="92" font-size="18">Latent evidence state</text><text x="520" y="122" font-size="14">memory · source trail · fact lifecycle</text><text x="830" y="92" font-size="18">Execution contract</text><text x="830" y="122" font-size="14">policy trace · budget · termination</text><text x="265" y="283" font-size="18">Independent evaluation</text><text x="265" y="314" font-size="14">residual probe · verifier · holdout</text><text x="775" y="283" font-size="18">Observability receipt</text><text x="775" y="314" font-size="14">versions · limits · evidence · effects</text><text x="520" y="463" font-size="18">Bounded acceptance decision</text><text x="520" y="490" font-size="14">abstain · repair · human review · rollback</text></g>
+  <g stroke="#46dbc6" stroke-width="3" fill="none" marker-end="url(#a)"><line x1="210" y1="165" x2="245" y2="238"/><line x1="520" y1="165" x2="330" y2="238"/><line x1="520" y1="165" x2="700" y2="238"/><line x1="830" y1="165" x2="795" y2="238"/><line x1="265" y1="360" x2="440" y2="423"/><line x1="775" y1="360" x2="600" y2="423"/></g>
+</svg>
+
+<p>The enterprise implication is not “add more benchmarks.” It is to
+define the <strong>object of evaluation</strong> before scoring: surface
+behavior, latent state, policy-compliant trajectory, or the combined
+model–harness configuration. Each object needs its own evidence and stop
+conditions. Collapsing them into one number creates false assurance and
+misdirected remediation.</p>
+<h1 id="enterprise-ai-architecture-implications">Enterprise AI
+Architecture Implications</h1>
+<p><strong>Independent Analysis.</strong> Over the next 12–24 months,
+today's evidence supports an enterprise AI architecture with an
+evaluation and observability plane that sits outside the producing
+agent:</p>
+<ul>
+<li><strong>Versioned evaluation contracts.</strong> Bind every score to
+model, provider route, harness, prompt, tool catalog, visible menu,
+retrieval policy, completion cap, episode budget, call/turn limits,
+verifier version, sampling plan, and aggregation unit. A score without
+this envelope is not comparable.</li>
+<li><strong>Source-linked memory service.</strong> Preserve immutable
+provenance from memory objects to source turns or artifacts, record
+create/update/reinforce/supersede/delete operations, and support
+isolated snapshots for native and residual recovery testing. Deletion
+authorization and evaluation must be separated from the agent that wrote
+the memory.</li>
+<li><strong>Policy-as-data and verifier registry.</strong> Represent
+policies with preconditions, severity, affected tools, deterministic
+predicates where possible, semantic judges where necessary, validation
+evidence, known blind spots, and owners. Reward or optimization systems
+cannot silently change verifier definitions.</li>
+<li><strong>Agent orchestration and experiment plane.</strong> Run
+adaptive auditors, counterfactual cue edits, budget sweeps, and
+retrieval/deletion probes only against synthetic or cloned state.
+Stateful effects require sandboxing, task-scoped authorization, egress
+controls, and resettable environments.</li>
+<li><strong>Unified observability receipt.</strong> Log public dialogue,
+private tool trace, retrieved evidence identifiers, memory mutations,
+policy firings, model/provider metadata, token classes,
+completion/episode/call/turn limits, terminal flags, first unmet
+obligation, cost, latency, and reviewer decisions.</li>
+<li><strong>Independent acceptance and human review.</strong> Surface
+outcome, latent-state inspection, policy trace, and harness evidence
+feed a separate acceptance service that can abstain, request a repair,
+require human review, or block a durable effect. The evaluated agent
+cannot grant itself authority.</li>
+<li><strong>Knowledge and data governance.</strong> Evidence lineage
+itself can contain sensitive information. Apply purpose limitation,
+least privilege, retention/deletion policies, field-level redaction, and
+access auditing to traces, residual probes, policy corpora, and result
+bundles.</li>
+<li><strong>Model gateway and cost telemetry.</strong> Route by risk and
+record provider semantics, but treat the route and harness as part of
+the evaluated configuration. Cost and latency are measured alongside
+coverage and failure modes, never used to erase safety boundaries.</li>
+</ul>
+<p>Shared enabling foundations are model/harness registries, context and
+memory provenance, deterministic identity and authorization, policy
+ownership, controlled tool sandboxes, evaluation datasets with leakage
+tracking, artifact versioning, telemetry schemas, human-review queues,
+reversible experiment infrastructure, and cost/latency accounting. These
+recommendations assume no specific current stack. Implementation
+decisions require internal evidence about workflows, data sensitivity,
+memory design, tools, provider contracts, acceptable latency/cost,
+security controls, regulatory duties, and reviewer capacity.</p>
+<h1 id="enterprise-ai-enhancement-backlog">Enterprise AI Enhancement
+Backlog</h1>
+<p>The <strong>Future Enterprise AI Priority Score</strong> is
+directional, not a forecast: Strategic/business value 25%, Technical
+leverage 20%, Evidence strength 20%, Enterprise readiness 15%,
+Feasibility 10%, and Risk-adjusted differentiation 10%. Each component
+is scored 0–100, then weighted. A one-point difference is not
+decision-significant; evidence gaps, risk gates, and prerequisite
+sequencing can place a lower-scoring foundation ahead of a
+higher-scoring feature.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Rank</th>
+<th>Enhancement</th>
+<th>Decision band</th>
+<th style="text-align: right;">Strategic value</th>
+<th style="text-align: right;">Technical leverage</th>
+<th style="text-align: right;">Evidence strength</th>
+<th style="text-align: right;">Enterprise readiness</th>
+<th style="text-align: right;">Feasibility</th>
+<th style="text-align: right;">Risk-adjusted differentiation</th>
+<th style="text-align: right;">Weighted total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td>Residual-memory deletion qualification gate</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">97</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;"><strong>92.7</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td>Harness-budget-qualified agent evaluation contract</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">97</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">83</td>
+<td style="text-align: right;"><strong>92.2</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td>Multi-turn behavioral policy auditor</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;"><strong>91.0</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td>Source-linked memory evidence ledger</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">72</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;"><strong>87.5</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td>Policy observability and verifier registry</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">76</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;"><strong>86.3</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td>Shortcut-controlled guard evaluation factory</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;"><strong>84.5</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td>Intrinsic memory-lifecycle evaluation suite</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;"><strong>81.3</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td>Continuous audit–repair co-evolution loop</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">89</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">76</td>
+<td style="text-align: right;">62</td>
+<td style="text-align: right;">58</td>
+<td style="text-align: right;">89</td>
+<td style="text-align: right;"><strong>79.1</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9</td>
+<td>Surface-only acceptance as a sole control</td>
+<td>Deprioritize for Now</td>
+<td style="text-align: right;">38</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">96</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;"><strong>53.3</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="prototype-soon">Prototype Soon</h2>
+<h3 id="1-residual-memory-deletion-qualification-gate--927">1.
+Residual-memory deletion qualification gate — 92.7</h3>
+<ul>
+<li><strong>Category:</strong> Memory &amp; Context / Safety &amp;
+Governance / Evaluation &amp; Observability.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> MemCut finds 39–76% residual recovery after its
+strongest reference cleanup and identifies candidate coverage as a
+primary bottleneck. <strong>Paper Fact</strong>; enterprise
+qualification design is <strong>Enterprise Inference</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong>
+Deletion workflows may remove a named item or suppress retrieval while
+leaving enough related evidence to reconstruct sensitive
+information.</li>
+<li><strong>Proposed future capability and how it works:</strong> On a
+cloned memory snapshot, run the normal deletion, then compare native
+retrieval with a privileged residual probe over surviving source-linked
+objects. Gate completion on both recovery thresholds and
+collateral-damage checks; send ambiguous cases to privacy review.</li>
+<li><strong>Likely architectural placement:</strong>
+retrieval/knowledge, evaluation, security/governance, human-review
+layer.</li>
+<li><strong>Expected business value:</strong> risk reduction, customer
+trust, regulatory defensibility, reliability.</li>
+<li><strong>Technical value:</strong> Separates visibility loss from
+evidence removal and identifies whether failure comes from candidate
+reach, selection, or memory closure.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+controlled benchmark across five designs and four models; no public
+artifact, natural prevalence, multimodal scope, or production privacy
+validation.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>High</strong> / <strong>Now</strong> / <strong>M</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Source-to-memory
+provenance, snapshotting, deletion API, scoped evaluator access,
+synthetic evidence generator, privacy review, utility-loss metrics.</li>
+<li><strong>Key risks:</strong> Residual probes expose sensitive data;
+evidence graphs are incomplete; over-deletion; false assurance;
+model-judge leakage; legal interpretation differs from technical
+recoverability.</li>
+<li><strong>Build / Buy / Partner recommendation:</strong>
+<strong>Build</strong> the qualification contract and provenance
+integration; <strong>Partner</strong> with privacy/legal and optionally
+buy redaction/DLP components. Internal memory semantics and obligations
+are organization-specific.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Seed 50
+synthetic secrets across copied memory stores with direct, relational,
+aggregated, and temporal evidence; execute current deletion and measure
+native versus residual recovery.</li>
+<li><strong>Success metrics and stop conditions:</strong> Residual and
+native recovery, candidate coverage, minimal-cut coverage, collateral
+deletion, reviewer precision, cost/latency; stop on any production-data
+exposure, evaluator overreach, or no reliable ground truth.</li>
+<li><strong>Roadmap trigger:</strong> Residual recovery is materially
+higher than native recovery on representative synthetic or approved
+historical cases, and an isolated mitigation reduces it without
+unacceptable utility loss.</li>
+<li><strong>Internal context required:</strong> Memory architecture,
+source lineage, data classes, deletion SLAs, legal definitions,
+evaluator access model, retention policy, and acceptable collateral
+loss.</li>
+</ul>
+<h3 id="2-harness-budget-qualified-agent-evaluation-contract--922">2.
+Harness-budget-qualified agent evaluation contract — 92.2</h3>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability / MLOps
+&amp; Platform / Model &amp; Inference.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> ToolBottleneckBench finds 91.5% of failures ending at a
+harness limit or infeasibility stop and a 41.0 pp cap interaction in
+truncation-heavy configurations. <strong>Paper Fact</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong> Teams
+may interpret scores and first-failure labels as model capability when
+they primarily reflect completion, episode, call, turn, routing, or
+provider constraints.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+Version the full evaluation envelope, record limit firings and first
+unmet obligations separately, run small pre-registered budget sweeps,
+and report model/harness configurations rather than model names alone.
+Require repair comparisons against a configuration-switch baseline.</li>
+<li><strong>Likely architectural placement:</strong> model gateway,
+evaluation, observability, infrastructure, developer platform.</li>
+<li><strong>Expected business value:</strong> quality, cost control,
+procurement accuracy, engineering speed, reliability.</li>
+<li><strong>Technical value:</strong> Prevents misdiagnosis, makes
+scores comparable, and separates capacity interventions from behavioral
+improvements.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Controlled multi-configuration study with exact grader and MIT artifact;
+synthetic tasks, provider counting differences, and limited high-cap
+lane bound generality.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>High</strong> / <strong>Now</strong> / <strong>M</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Model/harness
+registry, trace IDs, provider token telemetry, limit metadata,
+reproducible task fixtures, versioned graders, cost capture.</li>
+<li><strong>Key risks:</strong> Increased evaluation cost, provider
+opacity, inconsistent token semantics, route drift, telemetry gaps,
+overfitting to benchmark budgets.</li>
+<li><strong>Build / Buy / Partner recommendation:</strong>
+<strong>Build</strong> the contract and reporting schema;
+<strong>Buy/Partner</strong> for observability ingestion or provider
+telemetry. Attribution logic must remain vendor-neutral.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Rerun one
+internal tool benchmark at 1×, 4×, and 16× completion caps on frozen
+tasks and routes; retain episode/call/turn limits and compare rankings
+and terminal flags.</li>
+<li><strong>Success metrics and stop conditions:</strong> Rank
+stability, score change by budget, truncation share, no-call failures,
+cost, latency, diagnostic accuracy; stop if the task/route cannot be
+frozen or provider telemetry is insufficient to interpret
+termination.</li>
+<li><strong>Roadmap trigger:</strong> A material share of failures or
+model rankings changes under the sweep and the contract identifies a
+safe, cheaper correction than model replacement.</li>
+<li><strong>Internal context required:</strong> Current evaluation
+harnesses, provider routes, model settings, budgets, tool menus,
+procurement criteria, and reliability/cost SLOs.</li>
+</ul>
+<h3 id="3-multi-turn-behavioral-policy-auditor--910">3. Multi-turn
+behavioral policy auditor — 91.0</h3>
+<ul>
+<li><strong>Category:</strong> Agentic AI / Safety &amp; Governance / AI
+Security.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> PROBE's trained 4B auditors expand verified policy
+coverage beyond static and zero-/few-shot baselines, while judge
+validation shows verifier quality is load-bearing. <strong>Paper
+Fact</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong>
+Successful workflows can violate confirmation, disclosure, privacy,
+schema, or mutation policies in interaction-dependent ways that static
+cases do not reach.</li>
+<li><strong>Proposed future capability and how it works:</strong> In a
+deterministic clone, an external auditor adapts user messages across
+turns to explore policy-relevant states. Full-trace verifiers score
+distinct, severity-weighted policies; validated traces enter a
+regression corpus after human review.</li>
+<li><strong>Likely architectural placement:</strong> evaluation,
+security/governance, agent layer, orchestration, human-review
+layer.</li>
+<li><strong>Expected business value:</strong> risk reduction, quality,
+reliability, faster assurance, customer trust.</li>
+<li><strong>Technical value:</strong> Searches combinatorial
+dialogue/tool state, exposes cross-policy interactions, and converts
+discovered violations into executable regressions.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+synthetic evidence and partial transfer; only two environments/families,
+shallow mutation reach, one training checkpoint per method, and
+unlicensed public code.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>Moderate</strong> / <strong>Now</strong> /
+<strong>L</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Synthetic or cloned
+environment, policy taxonomy, deterministic state transitions, verifier
+owners, safe reset, audit identity, state-change sandbox,
+adversarial-artifact handling.</li>
+<li><strong>Key risks:</strong> Reward hacking, policy leakage, unsafe
+mutations, exploit artifact retention, false positives, audit cost,
+incomplete reach, dual-use techniques.</li>
+<li><strong>Build / Buy / Partner recommendation:</strong>
+<strong>Build/Partner.</strong> Build domain policies and verifiers;
+partner for red-team methodology. Do not adopt repository code until
+licensing is clarified.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Implement
+ten policies around one non-production workflow; compare static,
+zero-shot, and adaptive auditors over matched seeds with deterministic
+scoring.</li>
+<li><strong>Success metrics and stop conditions:</strong> Unique
+verified policies found, severity-weighted coverage, mutation-state
+reach, false-positive rate, cost per new violation, replay stability;
+stop on sandbox escape, live effect, verifier κ below threshold, or no
+incremental coverage.</li>
+<li><strong>Roadmap trigger:</strong> Adaptive probing repeatedly finds
+new, human-confirmed policies beyond deterministic suites at acceptable
+cost with zero containment violations.</li>
+<li><strong>Internal context required:</strong> Policy corpus,
+tool/state model, critical effects, acceptable adversarial content,
+reviewer capacity, and regression ownership.</li>
+</ul>
+<h2 id="prepare-foundations">Prepare Foundations</h2>
+<h3 id="4-source-linked-memory-evidence-ledger--875">4. Source-linked
+memory evidence ledger — 87.5</h3>
+<ul>
+<li><strong>Category:</strong> Data &amp; Knowledge Infrastructure /
+Memory &amp; Context / Safety &amp; Governance.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> MemCut's turn-anchored objects, sufficient sets,
+deletion closure, and native/residual comparison make hidden recovery
+measurable. <strong>Paper Fact</strong>; a production-grade ledger is
+<strong>Enterprise Inference</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong>
+Derived summaries, consolidated facts, embeddings, and caches can lose
+the provenance needed to delete, audit, or explain memory.</li>
+<li><strong>Proposed future capability and how it works:</strong> Assign
+immutable IDs to sources and derived memory objects; record derivation
+edges, time, actor, purpose, sensitivity, operations, and deletion
+closure. Support evidence-graph queries and snapshot replay without
+giving agents unrestricted graph access.</li>
+<li><strong>Likely architectural placement:</strong>
+retrieval/knowledge, data platform, observability,
+security/governance.</li>
+<li><strong>Expected business value:</strong> reliability, quality,
+auditability, risk reduction, faster incident response.</li>
+<li><strong>Technical value:</strong> Enables targeted deletion,
+residual-risk analysis, lifecycle diagnostics, and provenance-aware
+retrieval.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> The
+benchmark demonstrates value; schema scale, privacy impact, storage
+cost, and heterogeneous memory integration remain untested.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>Moderate</strong> / <strong>3–6 months</strong> /
+<strong>L</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Data
+classification, lineage schema, immutable event store, identity,
+retention rules, key management, access controls, migration plan.</li>
+<li><strong>Key risks:</strong> The ledger becomes a sensitive shadow
+store; graph incompleteness; high write/storage cost; stale derivations;
+complex deletion semantics.</li>
+<li><strong>Build / Buy / Partner recommendation:</strong> <strong>Build
+core schema and controls; Buy/Partner for lineage/event
+infrastructure.</strong> Business provenance and erasure semantics are
+internal.</li>
+<li><strong>Minimum reversible validation experiment:</strong>
+Instrument one synthetic memory service for 1,000 writes/updates/deletes
+and reconstruct every output's source closure without production
+content.</li>
+<li><strong>Success metrics and stop conditions:</strong> Provenance
+completeness, closure correctness, query latency, storage overhead,
+authorization violations, deletion replay accuracy; stop if sensitive
+payloads must be duplicated or access boundaries cannot be
+enforced.</li>
+<li><strong>Roadmap trigger:</strong> The ledger explains or prevents a
+meaningful share of deletion, stale-context, or attribution failures in
+a bounded pilot.</li>
+<li><strong>Internal context required:</strong> Memory vendors, schemas,
+sensitive fields, retention tiers, system-of-record ownership, and audit
+requirements.</li>
+</ul>
+<h3 id="5-policy-observability-and-verifier-registry--863">5. Policy
+observability and verifier registry — 86.3</h3>
+<ul>
+<li><strong>Category:</strong> Safety &amp; Governance / Evaluation
+&amp; Observability / MLOps &amp; Platform.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> PROBE shows task success does not imply trace compliance
+and that an LLM judge can be exploited until validated against humans
+and deterministic predicates. <strong>Paper Fact</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong>
+Policies exist as prose, while verifiers are scattered, unversioned,
+weakly validated, or silently changed by benchmark owners.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+Maintain policies as versioned records with owners, preconditions,
+severity, tools/effects, deterministic checks, semantic judges,
+validation sets, precision/recall, known blind spots, and change
+approvals. Emit immutable verifier receipts per trace.</li>
+<li><strong>Likely architectural placement:</strong>
+security/governance, evaluation, observability, developer platform.</li>
+<li><strong>Expected business value:</strong> risk reduction, quality,
+audit efficiency, speed, regulatory defensibility.</li>
+<li><strong>Technical value:</strong> Makes reward functions and
+acceptance criteria inspectable, prevents silent evaluator drift, and
+supports deterministic-first scoring.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> The
+judge failure is compelling; enterprise policy formalization and
+semantic verifier accuracy require domain work.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>High</strong> / <strong>3–6 months</strong> /
+<strong>L</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Policy owners,
+trace schema, identity, change management, labeled verifier sets, access
+controls, model versioning, appeals workflow.</li>
+<li><strong>Key risks:</strong> False assurance, policy conflicts, judge
+bias, data leakage, burdensome authoring, stale rules, metric
+gaming.</li>
+<li><strong>Build / Buy / Partner recommendation:</strong>
+<strong>Build</strong> the registry and governance;
+<strong>Buy/Partner</strong> for policy engines and labeling support.
+Control definitions cannot be outsourced wholesale.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Convert
+ten existing operational policies into registry entries and replay 200
+synthetic traces through deterministic and semantic verifiers with
+blinded human adjudication.</li>
+<li><strong>Success metrics and stop conditions:</strong> Per-policy
+precision/recall, inter-rater agreement, coverage, change lead time,
+rule conflicts, false blocks; stop if owners cannot define observable
+evidence or precision is inadequate for the proposed action.</li>
+<li><strong>Roadmap trigger:</strong> Versioned verifiers show stable,
+reviewable accuracy and reduce manual audit effort without increasing
+harmful false negatives.</li>
+<li><strong>Internal context required:</strong> Policy sources, risk
+owners, enforcement authority, trace access, legal/compliance
+interpretation, and change-control process.</li>
+</ul>
+<h2 id="monitor-for-maturity">Monitor for Maturity</h2>
+<h3 id="6-shortcut-controlled-guard-evaluation-factory--845">6.
+Shortcut-controlled guard evaluation factory — 84.5</h3>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability / AI
+Security / Safety &amp; Governance.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> Shortcut Sensitivity reports large score changes under
+domain holdout, evaluation-unit weighting, and paired cue edits; the
+Haiku effect does not reproduce in Luna or deterministic Q8 TS-Guard.
+<strong>Paper Fact</strong> and <strong>Uncertainty</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong> Guard
+performance may depend on formatting, domain vocabulary, duplicated
+interaction length, or benchmark artifacts rather than the intended
+safety construct.</li>
+<li><strong>Proposed future capability and how it works:</strong> For
+each guard evaluation, run domain-group holdouts, equal-interaction and
+row-weighted metrics, benign/unsafe stratification, paired
+semantics-preserving cue edits, formatting placebos, and repeated
+interleaved calls for stochastic guards.</li>
+<li><strong>Likely architectural placement:</strong> evaluation, model
+gateway, security/governance, experiment infrastructure.</li>
+<li><strong>Expected business value:</strong> reliability, risk
+reduction, procurement accuracy, quality.</li>
+<li><strong>Technical value:</strong> Distinguishes predictive benchmark
+cues from causal decision sensitivity and configuration-specific
+instability.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+diagnostic logic and public aggregate artifact; causal intervention uses
+a fixed non-probability 64-step cohort, exploratory intervals, and
+configuration-specific effects.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>Moderate</strong> / <strong>6–12 months</strong> /
+<strong>M</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Guard corpus,
+interaction IDs, domain labels, paired transforms, repeated-call budget,
+placebo design, statistical review.</li>
+<li><strong>Key risks:</strong> Edits alter semantics, public rules
+become targets, multiplicity, benchmark contamination, provider drift,
+excessive evaluation cost.</li>
+<li><strong>Build / Buy / Partner recommendation:</strong>
+<strong>Build</strong> as an evaluation extension; partner with
+independent red teams/statisticians for transform validity.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Apply
+group holdout, equal-interaction weighting, and two blinded paired cue
+edits to one existing guard benchmark without changing deployment.</li>
+<li><strong>Success metrics and stop conditions:</strong> Metric
+stability, group-generalization gap, placebo-adjusted decision change,
+false-positive/negative shifts, repeat disagreement; stop if edits
+cannot be semantically validated.</li>
+<li><strong>Roadmap trigger:</strong> A guard selection or threshold
+changes under controlled tests and the revised protocol predicts blinded
+internal failures better.</li>
+<li><strong>Internal context required:</strong> Guard purpose, benchmark
+unit, domains, model versions, thresholds, incident examples, and
+acceptable error tradeoffs.</li>
+</ul>
+<h3 id="7-intrinsic-memory-lifecycle-evaluation-suite--813">7. Intrinsic
+memory-lifecycle evaluation suite — 81.3</h3>
+<ul>
+<li><strong>Category:</strong> Memory &amp; Context / Evaluation &amp;
+Observability / RAG &amp; Knowledge.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> FEB-30 reports 0.168 ± 0.025 mean absolute
+intrinsic–extrinsic divergence, 43.6% of trajectories above a 0.15
+threshold, and 20.1% ± 2.7 operation-classification accuracy in one
+representative system. <strong>Paper Fact</strong>; repository
+availability was not verified, adding <strong>Uncertainty</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong>
+End-to-end QA can mask broken fact state or blame correct memory for
+retrieval/generation failures.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+Maintain ground-truth fact trajectories for synthetic documents; inspect
+memory state after each ingestion step, classify
+create/reinforce/update/supersede actions, then compare intrinsic state
+with retrieval and answer outcomes.</li>
+<li><strong>Likely architectural placement:</strong>
+retrieval/knowledge, evaluation, data platform, developer platform.</li>
+<li><strong>Expected business value:</strong> quality, reliability,
+faster diagnosis, risk reduction.</li>
+<li><strong>Technical value:</strong> Localizes extraction, synthesis,
+update, conflict, retrieval, and generation failures rather than
+collapsing them into answer accuracy.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Thirty
+synthetic trajectories, one pattern of fact memory, thresholded
+embedding/LLM judges, and an unavailable linked repository limit
+confidence.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>Moderate</strong> / <strong>6–12 months</strong> /
+<strong>M</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Inspectable fact
+state, event history, synthetic trajectory generator, ground-truth
+schema, judge validation, lifecycle taxonomy.</li>
+<li><strong>Key risks:</strong> Synthetic validity, schema mismatch,
+judge noise, benchmark overfitting, memory internals unavailable in
+bought systems.</li>
+<li><strong>Build / Buy / Partner recommendation:</strong> <strong>Build
+a small vendor-neutral suite</strong>; monitor the claimed open artifact
+and partner with memory vendors only for state export.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Create
+twelve factual-evolution trajectories across two internal document types
+and compare fact-state, retrieval, and answer scores after every
+step.</li>
+<li><strong>Success metrics and stop conditions:</strong>
+Intrinsic/extrinsic divergence, operation classification, claim miss
+rate, false updates, source attribution, diagnostic resolution; stop if
+the memory state cannot be exported or ground truth is disputed.</li>
+<li><strong>Roadmap trigger:</strong> Intrinsic inspection repeatedly
+identifies actionable failures hidden by QA and improves remediation
+time in a bounded pilot.</li>
+<li><strong>Internal context required:</strong> Memory data model,
+document classes, update semantics, source authority, evaluation access,
+and acceptable scoring noise.</li>
+</ul>
+<h3 id="8-continuous-auditrepair-co-evolution-loop--791">8. Continuous
+audit–repair co-evolution loop — 79.1</h3>
+<ul>
+<li><strong>Category:</strong> Agentic AI / AI Security / MLOps &amp;
+Platform.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> PROBE proposes converting discovered violations into
+regression tests and re-auditing patched agents; its experiments
+establish discovery, not a production continuous loop.
+<strong>Enterprise Inference</strong> and
+<strong>Uncertainty</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong> Static
+evaluation corpora saturate while agents, tools, data, and policies
+change.</li>
+<li><strong>Proposed future capability and how it works:</strong>
+Periodically train or configure auditors against frozen candidate agents
+in synthetic clones; human-validate new failures, add them to a
+protected regression registry, patch, and rerun with holdout
+separation.</li>
+<li><strong>Likely architectural placement:</strong> evaluation,
+orchestration, security/governance, developer platform, human-review
+layer.</li>
+<li><strong>Expected business value:</strong> strategic differentiation,
+risk reduction, quality, speed.</li>
+<li><strong>Technical value:</strong> Creates an adaptive counterexample
+pipeline and links discovery to measurable regression closure.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> The
+audit component is promising; stability, containment, cost, policy
+leakage, and long-run dynamics are unproven.</li>
+<li><strong>Confidence / horizon / effort:</strong> <strong>Low</strong>
+/ <strong>12+ months</strong> / <strong>XL</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Mature items 3 and
+5, holdout governance, sandboxing, artifact review, secure training,
+versioned agents/policies, independent acceptance, budget controls.</li>
+<li><strong>Key risks:</strong> Arms-race behavior, reward hacking,
+adversarial artifact proliferation, leakage, escalating cost, false
+novelty, reduced benchmark validity.</li>
+<li><strong>Build / Buy / Partner recommendation:</strong>
+<strong>Partner for research; build only after foundations
+mature.</strong> Do not purchase a black-box “continuous red team”
+without verifier and artifact transparency.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Two
+offline audit–repair cycles on a frozen synthetic agent, with a held-out
+policy subset never exposed to repair.</li>
+<li><strong>Success metrics and stop conditions:</strong> New verified
+policies per cycle, held-out regression closure, recurrence, artifact
+risk, cost, verifier drift; stop if holdout performance degrades, unsafe
+artifacts escape, or discovery collapses to repeated easy failures.</li>
+<li><strong>Roadmap trigger:</strong> Multiple cycles improve unseen
+verified policy compliance without leakage, destabilization, or
+unacceptable cost.</li>
+<li><strong>Internal context required:</strong> Release cadence, policy
+churn, model ownership, secure training capability, artifact controls,
+red-team staffing, and risk appetite.</li>
+</ul>
+<h2 id="deprioritize-for-now">Deprioritize for Now</h2>
+<h3 id="9-surface-only-acceptance-as-a-sole-control--533">9.
+Surface-only acceptance as a sole control — 53.3</h3>
+<ul>
+<li><strong>Category:</strong> Other — evaluation anti-pattern.</li>
+<li><strong>Research signal and supporting paper(s) · Evidence
+label:</strong> All five reviewed papers show that native retrieval,
+task completion, first-unmet labels, headline F1, or downstream QA can
+diverge from the underlying construct. <strong>Paper Fact</strong> and
+<strong>Independent Analysis</strong>.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong>
+Surface metrics are cheap and useful, but unsafe when treated as
+complete evidence for deletion, compliance, capability, or guard
+quality.</li>
+<li><strong>Proposed future capability and how it works:</strong> None
+as a sole control. Retain surface metrics only as one layer alongside
+latent-state, trace, harness, group, and intrinsic evidence appropriate
+to the decision.</li>
+<li><strong>Likely architectural placement:</strong> applications,
+evaluation, observability, security/governance.</li>
+<li><strong>Expected business value:</strong> Avoiding this anti-pattern
+improves quality, reliability, and risk reduction.</li>
+<li><strong>Technical value:</strong> Prevents remediation from
+targeting the wrong subsystem.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Evidence against sole reliance is strong; surface metrics remain
+necessary for end-to-end utility.</li>
+<li><strong>Confidence / horizon / effort:</strong>
+<strong>High</strong> / <strong>Now</strong> / <strong>S</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> Evaluation-object
+definition, evidence labels, score cards, reviewer training.</li>
+<li><strong>Key risks:</strong> Replacing a simple metric with an
+ungoverned metric sprawl; analysis paralysis; duplicate telemetry;
+unclear decision rights.</li>
+<li><strong>Build / Buy / Partner recommendation:</strong> <strong>Do
+not buy or build as a standalone acceptance strategy.</strong> Use
+existing outcome metrics within a layered contract.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Re-score
+one historical evaluation using both the surface metric and one
+latent/trace/harness measure; compare remediation conclusions.</li>
+<li><strong>Success metrics and stop conditions:</strong> Rate of
+changed diagnosis, avoided false acceptance/rejection, added cost and
+cycle time; stop if the added layer has no reliable ground truth or
+decision relevance.</li>
+<li><strong>Roadmap trigger:</strong> Not applicable as a production
+capability; the trigger is evidence that a single surface metric fully
+predicts the relevant internal construct across representative
+shifts—evidence not present today.</li>
+<li><strong>Internal context required:</strong> Current acceptance
+gates, failure taxonomy, risk tier, metric ownership, and operational
+costs.</li>
+</ul>
+<h1 id="watchlist">Watchlist</h1>
+<h2 id="shortcut-sensitivity-in-agent-safety-evaluations">Shortcut
+Sensitivity in Agent-Safety Evaluations</h2>
+<p><em>Shortcut Sensitivity in Agent-Safety Evaluations</em>; Hasan
+Demirkiran and Jens Ernstberger; arXiv:2610.22243v1; submitted October
+15, 2026; described as appearing at NeurIPS 2026 TAE and AIWILD
+workshops. The <a href="https://arxiv.org/abs/2610.22243">paper</a> and
+public <a
+href="https://github.com/hasandemirkiran/shortcut-sensitivity-agent-safety-evaluations">artifact</a>
+were verified. The repository contains code, protocols, aggregate
+results, and a multi-source licenses document, but GitHub exposes no
+single repository license.</p>
+<p>The paper proposes a three-level inference ladder: label
+predictability, observational guard association, and paired decision
+sensitivity. Exact-tool lookup falls from F1 .901 with mixed-domain
+folds to .495 under domain holdout. Released TS-Guard F1 falls .902→.719
+when weighting interactions equally rather than rows, while balanced
+accuracy rises .754→.776. In a frozen 64-step AgentDojo cohort with
+repeated interleaved Haiku calls, rewriting an information marker lowers
+blocking 8.33 pp and opaque tool aliases raise it 11.46 pp; all unsafe
+calls remain blocked, so the shifts are false positives against
+inherited labels. Haiku-sized effects do not reproduce in Luna or
+deterministic Q8 TS-Guard. <strong>Why Watchlist:</strong> the
+diagnostic protocol is immediately useful, but the causal cohort is
+small, non-probability, exploratory, semantically imperfect, and
+configuration-specific. <strong>Promotion trigger:</strong> blinded,
+pre-registered paired interventions across several guards and
+representative internal domains change deployment-relevant errors beyond
+placebo with stable replication.</p>
+<h2 id="beyond-downstream-qa--feb-30">Beyond Downstream QA / FEB-30</h2>
+<p><em>Beyond Downstream QA: Rethinking How We Evaluate Agent
+Memory</em>; Sebastian-Antonio Toma, Jean de Kernier, Mike Ply, and
+Oliviu Matei; arXiv:2610.22209v1; submitted October 15, 2026. The <a
+href="https://arxiv.org/abs/2610.22209">paper</a> links to
+<code>github.com/amazon-science/feb-30-benchmark</code>, but that
+first-party URL returned 404 during verification; artifact and license
+claims are therefore not made.</p>
+<p>FEB-30 defines 30 fact-evolution trajectories across six categories
+and three difficulty levels, with 127 state documents and 20 noise
+documents. On one representative memory system over 11 runs, intrinsic
+fact accuracy is 60.6% ± 1.6 versus extrinsic QA accuracy 48.8% ± 2.9;
+mean absolute divergence is .168 ± .025, 43.6% of trajectories exceed
+.15, and pass/fail agreement is near chance (κ=.118). Operation
+classification is 20.1% ± 2.7; false update rate 22.2% ± 1.2.
+<strong>Why Watchlist:</strong> the intrinsic/extrinsic distinction is
+valuable, but there are only 30 synthetic trajectories, scoring uses
+embedding thresholds and LLM judges, the studied memory pattern is
+narrow, and the claimed artifact was unavailable. <strong>Promotion
+trigger:</strong> a verifiable licensed artifact plus external
+replication on inspectable enterprise-style memories and human-validated
+real document sequences.</p>
+<h1 id="implementation-priorities-and-safety-gates">Implementation
+priorities and safety gates</h1>
+<h2 id="now-to-30-days">Now to 30 days</h2>
+<ol type="1">
+<li>Inventory one current agent evaluation and document its complete
+model/harness contract, aggregation unit, limit semantics, verifier
+versions, and first-unmet-label order.</li>
+<li>Build a synthetic memory-deletion fixture with source IDs and both
+native and residual recovery tests; do not use production personal
+data.</li>
+<li>Select one non-production tool workflow and formalize ten observable
+policies, preferring deterministic predicates.</li>
+<li>Define a common experiment receipt: inputs, versions, evidence IDs,
+policy decisions, limits, termination, costs, effects, reviewer outcome,
+and rollback.</li>
+</ol>
+<h2 id="31-to-90-days">31 to 90 days</h2>
+<ol type="1">
+<li>Run the completion-cap sweep and publish rankings with budget
+sensitivity.</li>
+<li>Compare static, zero-shot, and adaptive policy probes on matched
+synthetic seeds; human-validate every novel violation.</li>
+<li>Implement source-linked provenance on a disposable memory service
+and measure deletion closure and collateral loss.</li>
+<li>Add group holdouts, equal-unit metrics, and paired placebos to one
+guard evaluation.</li>
+</ol>
+<h2 id="non-negotiable-gates">Non-negotiable gates</h2>
+<ul>
+<li>No live state-changing tools, customer data, credentials, or
+outbound network in the first experiments.</li>
+<li>No claim of erasure from native retrieval failure alone.</li>
+<li>No policy auditor reward based solely on an unvalidated LLM
+judge.</li>
+<li>No model comparison without the full harness and budget
+envelope.</li>
+<li>No benchmark score used alone for deployment, procurement,
+discipline, or regulated decisions.</li>
+<li>No reuse of public code whose license is absent or unclear without
+permission.</li>
+<li>Stop immediately on sandbox escape, sensitive-data exposure,
+evaluator privilege escalation, irreversible effects, or inability to
+reproduce the claimed metric.</li>
+</ul>
+<h1 id="knowledge-reinforcement">Knowledge reinforcement</h1>
+<ol type="1">
+<li><strong>Why can native memory recovery fall while privacy risk
+remains?</strong> Because the retriever may stop surfacing the evidence
+even though surviving objects still contain a sufficient reconstruction
+path.</li>
+<li><strong>Why is task success orthogonal to policy
+compliance?</strong> A tool agent can reach the requested terminal state
+while skipping confirmation, exposing private data, violating a schema,
+or mutating state under invalid preconditions.</li>
+<li><strong>Why is a first-unmet obligation not a root cause?</strong>
+Grader order records where checking stopped; a completion or episode
+limit may have prevented the behavior needed to satisfy an earlier
+obligation.</li>
+<li><strong>What makes an evaluation unit consequential?</strong> Row
+weighting can let long or duplicated interactions dominate a metric;
+equal-interaction weighting asks whether performance holds across
+independent episodes.</li>
+<li><strong>Why pair intrinsic and extrinsic memory evaluation?</strong>
+Intrinsic inspection tests whether stored knowledge is correct;
+extrinsic QA tests whether retrieval and generation can use it. Either
+can fail while the other passes.</li>
+<li><strong>What is the common architectural principle?</strong>
+Preserve latent state, execution trace, and harness contract as
+first-class evidence, then let an independent acceptance layer
+decide.</li>
+</ol>
+<h1 id="primary-sources-and-artifact-record">Primary sources and
+artifact record</h1>
+<ul>
+<li><a href="https://arxiv.org/abs/2610.21405">MemCut paper —
+arXiv:2610.21405</a>. Full PDF reviewed; no paper-linked public artifact
+verified.</li>
+<li><a href="https://arxiv.org/abs/2610.22124">PROBE paper —
+arXiv:2610.22124</a> · <a
+href="https://github.com/Mishrakshitij/PROBE">public repository</a>.
+Repository verified; license absent.</li>
+<li><a href="https://arxiv.org/abs/2610.21098">ToolBottleneckBench paper
+— arXiv:2610.21098</a> · <a
+href="https://github.com/zichuanxu/tool-bottleneck-bench">MIT
+repository</a>. Protocols, results, tests, locks, and notices
+verified.</li>
+<li><a href="https://arxiv.org/abs/2610.22243">Shortcut Sensitivity
+paper — arXiv:2610.22243</a> · <a
+href="https://github.com/hasandemirkiran/shortcut-sensitivity-agent-safety-evaluations">artifact</a>.
+Aggregate artifact verified; license is multi-source/unclear at
+repository level.</li>
+<li><a href="https://arxiv.org/abs/2610.22209">FEB-30 paper —
+arXiv:2610.22209</a>. The paper-linked GitHub repository returned 404
+during verification.</li>
+</ul>
+<p><strong>Evidence boundary.</strong> This brief evaluates research and
+proposes reversible experiments. It does not assert vendor suitability,
+legal compliance, security certification, privacy compliance, benchmark
+generality, or production readiness beyond the evidence stated. Every
+roadmap decision requires representative internal tasks, risk ownership,
+authorization, privacy review, threat modeling, economics, and
+operational controls.</p></main></div>
+<footer>AI Research Intelligence Brief · October 16, 2026 · Research options, not deployment approval.</footer>
+<div class="toolbar"><button onclick="window.print()" aria-label="Print report">Print</button><button id="top" aria-label="Back to top">↑ Top</button></div>
+<script>
+const p=document.getElementById('progress');addEventListener('scroll',()=>{const h=document.documentElement;p.style.width=((h.scrollTop/(h.scrollHeight-h.clientHeight))*100)+'%'});document.getElementById('top').onclick=()=>scrollTo({top:0,behavior:'smooth'});
+document.querySelectorAll('main h3').forEach(h=>{if(/^\d+\./.test(h.textContent))h.setAttribute('data-backlog','true')});
+</script>
+</body></html>
