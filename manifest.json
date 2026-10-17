@@ -3,12 +3,32 @@
     "title": "AI Research Intelligence",
     "url": "https://ygeszvain.github.io/ai-research-intelligence",
     "description": "Evidence-grounded daily AI and machine-learning research intelligence.",
-    "generated_at_utc": "2026-10-16T09:04:39.000Z",
-    "report_count": 68,
-    "latest_report": "2026-10-16",
-    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-10-16.html"
+    "generated_at_utc": "2026-10-17T09:20:00.000Z",
+    "report_count": 69,
+    "latest_report": "2026-10-17",
+    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-10-17.html"
   },
   "reports": [
+    {
+      "date": "2026-10-17",
+      "date_display": "October 17, 2026",
+      "title": "AI Research Intelligence Brief — October 17, 2026",
+      "excerpt": "Three deep papers examine premise validity, memory gains beyond compute, and evidence-structure difficulty beyond context length.",
+      "topics": [
+        "Evaluation & Observability",
+        "Memory & Context",
+        "Agentic AI",
+        "Safety & Governance",
+        "MLOps & Platform",
+        "AI Security",
+        "RAG & Knowledge",
+        "Data & Knowledge Infrastructure"
+      ],
+      "path": "reports/2026-10-17.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-10-17.html",
+      "size_bytes": 96978,
+      "sha256": "cb80f9407d0a6e5e0f3aa5b9a766016cdb2e3eb6b6be866c8a35efbe4392fc2f"
+    },
     {
       "date": "2026-10-16",
       "date_display": "October 16, 2026",
