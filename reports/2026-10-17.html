@@ -867,15 +867,13 @@ why leakage matters: ignoring grouping can produce AUROC .997. Realized
 escalation rates span roughly 43–64% despite a nominal 50% target. This
 makes task-disjoint calibration and drift monitoring essential before
 any routing recommendation.</p>
-<p>The ablations report Manager-only 41.15%/<span
-class="math inline">0.1372, <em>e</em><em>s</em><em>c</em><em>a</em><em>l</em><em>a</em><em>t</em><em>i</em><em>o</em><em>n</em>67.94</span>0.4050,
-and the complete system 73.66%/<span
-class="math inline">0.4117.<em>Y</em><em>e</em><em>t</em><em>r</em><em>u</em><em>n</em><em>t</em><em>i</em><em>m</em><em>e</em> − <em>o</em><em>n</em><em>l</em><em>y</em><em>r</em><em>e</em><em>a</em><em>c</em><em>h</em><em>e</em><em>s</em>71.65</span>0.4169,
-so an added initial gate does not have established incremental benefit
-in that comparison. The limitations acknowledge that post-handoff shadow
-effects are not fully causally isolated. “Zero extra forward passes”
-applies to the runtime signal, not to every initial probe and shadow
-operation.</p>
+<p>The ablations report Manager-only 41.15%/$0.1372, escalation
+67.94%/$0.4050, and the complete system 73.66%/$0.4117. Yet runtime-only
+reaches 71.65%/$0.4169, so an added initial gate does not have
+established incremental benefit in that comparison. The limitations
+acknowledge that post-handoff shadow effects are not fully causally
+isolated. “Zero extra forward passes” applies to the runtime signal, not
+to every initial probe and shadow operation.</p>
 <p><strong>Safety distinction.</strong> Discarding a pending
 stronger-model action before execution and asking for reflection is not
 rolling back an already durable external effect. The theoretical
