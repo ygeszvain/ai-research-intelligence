@@ -3,12 +3,31 @@
     "title": "AI Research Intelligence",
     "url": "https://ygeszvain.github.io/ai-research-intelligence",
     "description": "Evidence-grounded daily AI and machine-learning research intelligence.",
-    "generated_at_utc": "2026-10-18T09:20:20.756958Z",
-    "report_count": 70,
-    "latest_report": "2026-10-18",
-    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-10-18.html"
+    "generated_at_utc": "2026-10-19T09:15:59.788570Z",
+    "report_count": 71,
+    "latest_report": "2026-10-19",
+    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-10-19.html"
   },
   "reports": [
+    {
+      "date": "2026-10-19",
+      "date_display": "October 19, 2026",
+      "title": "AI Research Intelligence Brief — October 19, 2026",
+      "excerpt": "Three deep analyses and two Watchlist papers examine decision-field privacy, MCP gateways, MLOps contracts, joint attack-task outcomes, and discovery economics; eight enterprise options prioritize reversible evaluation.",
+      "topics": [
+        "Evaluation & Observability",
+        "AI Software Engineering",
+        "Agentic AI",
+        "Safety & Governance",
+        "MLOps & Platform",
+        "AI Security",
+        "Human-AI Workflow"
+      ],
+      "path": "reports/2026-10-19.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-10-19.html",
+      "size_bytes": 95906,
+      "sha256": "f97c94debe43718d9d7f811c97ecdbddbf93483c2a17dea200488e5422568760"
+    },
     {
       "date": "2026-10-18",
       "date_display": "October 18, 2026",
