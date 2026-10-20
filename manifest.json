@@ -3,12 +3,31 @@
     "title": "AI Research Intelligence",
     "url": "https://ygeszvain.github.io/ai-research-intelligence",
     "description": "Evidence-grounded daily AI and machine-learning research intelligence.",
-    "generated_at_utc": "2026-10-19T09:15:59.788570Z",
-    "report_count": 71,
-    "latest_report": "2026-10-19",
-    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-10-19.html"
+    "generated_at_utc": "2026-10-20T09:18:49.959403Z",
+    "report_count": 72,
+    "latest_report": "2026-10-20",
+    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-10-20.html"
   },
   "reports": [
+    {
+      "date": "2026-10-20",
+      "date_display": "October 20, 2026",
+      "title": "AI Research Intelligence Brief — October 20, 2026",
+      "excerpt": "Three deep analyses and one Watchlist paper examine PRD acceptance, outcome/process qualification, memory-diagnostic confounding, and multi-metric compression; seven enterprise options prioritize reversible evaluation.",
+      "topics": [
+        "Evaluation & Observability",
+        "AI Software Engineering",
+        "Agentic AI",
+        "Safety & Governance",
+        "MLOps & Platform",
+        "Memory & Context",
+        "Human-AI Workflow"
+      ],
+      "path": "reports/2026-10-20.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-10-20.html",
+      "size_bytes": 85096,
+      "sha256": "02d3411e60c64c37f026bd3cf8c8c920a86a60c6d40be530d1a0c5386c2d5673"
+    },
     {
       "date": "2026-10-19",
       "date_display": "October 19, 2026",
