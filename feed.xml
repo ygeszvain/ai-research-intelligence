@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
-  <channel>
-    <title>AI Research Intelligence</title>
-    <link>https://ygeszvain.github.io/ai-research-intelligence/</link>
-    <description>Evidence-grounded daily AI and machine-learning research intelligence.</description>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 20 Oct 2026 09:18:49 GMT</lastBuildDate>
+<rss version="2.0"><channel>
+<title>AI Research Intelligence</title>
+<link>https://ygeszvain.github.io/ai-research-intelligence/</link>
+<description>Evidence-grounded daily AI and machine-learning research intelligence.</description>
+<language>en-us</language>
+<lastBuildDate>Wed, 21 Oct 2026 09:10:59 GMT</lastBuildDate>
+    <item>
+      <title>AI Research Intelligence Brief — October 21, 2026</title>
+      <link>https://ygeszvain.github.io/ai-research-intelligence/reports/2026-10-21.html</link>
+      <guid isPermaLink="true">https://ygeszvain.github.io/ai-research-intelligence/reports/2026-10-21.html</guid>
+      <pubDate>Wed, 21 Oct 2026 09:00:00 GMT</pubDate>
+      <description>Three deep analyses and two Watchlist papers examine evolving multimodal records, agent-designed interfaces, tool-market distortion, recovery, and formal commitments; seven enterprise options prioritize evidence-bound capability admission.</description>
+    </item>
     <item>
       <title>AI Research Intelligence Brief — October 20, 2026</title>
       <link>https://ygeszvain.github.io/ai-research-intelligence/reports/2026-10-20.html</link>
@@ -510,5 +516,4 @@
       <pubDate>Wed, 05 Aug 2026 09:00:00 GMT</pubDate>
       <description>AI Research Intelligence Brief for August 5, 2026 — visual executive dashboard based on newly submitted arXiv papers.</description>
     </item>
-  </channel>
-</rss>
+</channel></rss>
