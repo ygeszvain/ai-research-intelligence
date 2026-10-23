@@ -1,0 +1,1716 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Evidence-grounded AI Research Intelligence Brief for October 23, 2026: missing-evidence recovery, simulated control evaluation, executable claim testing, adaptive phishing, identifiability, and seven enterprise options.">
+<meta name="report-date" content="2026-10-23">
+<meta name="research-window" content="2026-10-21T16:00:00-05:00/2026-10-23T04:00:00-05:00 America/Chicago">
+<meta name="deep-paper-count" content="3">
+<meta name="watchlist-count" content="2">
+<meta name="theme-color" content="#071321">
+<title>AI Research Intelligence Brief — October 23, 2026</title>
+<style>
+:root{--bg:#06111d;--panel:#0c1c2a;--panel2:#10283a;--text:#e9f2f8;--muted:#9fb6c6;--line:#2a465b;--cyan:#46dbc6;--gold:#f4c96b;--rose:#ff8f9b;--blue:#70adff;--max:1180px;color-scheme:dark}
+@media(prefers-color-scheme:light){:root{--bg:#f4f7f8;--panel:#fff;--panel2:#edf4f7;--text:#102131;--muted:#526979;--line:#cddbe2;--cyan:#087f73;--gold:#9b6300;--rose:#b92b45;--blue:#1661ad;color-scheme:light}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 90% 0,rgba(70,219,198,.12),transparent 30rem),var(--bg);color:var(--text);font:16px/1.67 ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;overflow-x:hidden}a{color:var(--cyan);text-underline-offset:3px;overflow-wrap:anywhere}a:hover{text-decoration-thickness:2px}header{border-bottom:1px solid var(--line);background:linear-gradient(135deg,rgba(70,219,198,.09),rgba(112,173,255,.05));padding:54px 22px 34px}.hero{max-width:var(--max);margin:auto}.eyebrow{color:var(--cyan);text-transform:uppercase;letter-spacing:.15em;font-size:.76rem;font-weight:800}h1{font-size:clamp(2.2rem,6vw,4.7rem);line-height:.98;max-width:1000px;margin:.35rem 0 1rem;letter-spacing:-.055em}header p{max-width:900px;color:var(--muted);font-size:1.09rem}.chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}.chip{border:1px solid var(--line);border-radius:999px;padding:6px 11px;background:var(--panel);font-size:.8rem}.topbets{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}.bet{border:1px solid var(--line);background:var(--panel);border-radius:14px;padding:15px}.bet b{display:block;color:var(--gold);font-size:1.15rem}.layout{max-width:var(--max);margin:auto;display:grid;grid-template-columns:250px minmax(0,1fr);gap:34px;padding:30px 22px 80px}nav{position:sticky;top:16px;align-self:start;max-height:calc(100vh - 32px);overflow:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:14px}nav strong{display:block;margin:2px 8px 10px;color:var(--gold)}nav ul{list-style:none;margin:0;padding:0}nav li{margin:0}nav a{display:block;color:var(--muted);text-decoration:none;padding:5px 8px;border-radius:7px;font-size:.83rem;line-height:1.25}nav a:hover{background:var(--panel2);color:var(--text)}main{min-width:0;overflow-x:hidden}main>h1{font-size:1.8rem;margin:2.6rem 0 1rem;padding-top:.7rem;border-top:1px solid var(--line);letter-spacing:-.02em}main>h1:first-child{margin-top:0}main h2{font-size:1.35rem;margin-top:2rem;color:var(--cyan)}main h3{font-size:1.08rem;color:var(--gold);margin-bottom:.45rem}p,li{max-width:88ch}blockquote{margin:1rem 0;padding:1rem 1.2rem;border-left:4px solid var(--gold);background:var(--panel);color:var(--muted)}pre{white-space:pre-wrap;overflow:auto;background:#07101a;border:1px solid var(--line);border-radius:14px;padding:18px;color:#dcecf2;font-size:.86rem;line-height:1.45}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}table{display:block;width:100%;max-width:100%;overflow-x:auto;border-collapse:collapse;margin:1.25rem 0;background:var(--panel);font-size:.86rem}th,td{padding:10px 12px;border:1px solid var(--line);text-align:left;vertical-align:top}th{color:var(--gold);background:var(--panel2)}hr{border:0;border-top:1px solid var(--line)}main h3+ul,main h2+ul{border:1px solid var(--line);background:linear-gradient(135deg,var(--panel),var(--panel2));border-radius:14px;padding:15px 22px 15px 34px}main h3+ul li,main h2+ul li{margin:.5rem 0}.viz{border:1px solid var(--line);border-radius:16px;background:linear-gradient(135deg,var(--panel),var(--panel2));padding:20px;margin:1.5rem 0}.viz-title{color:var(--gold);font-weight:800;margin-bottom:14px}.flow-row{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:10px;align-items:center;margin:10px 0}.flow-node{border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center;background:var(--bg)}.flow-node.accent{border-color:var(--cyan);box-shadow:0 0 0 1px rgba(70,219,198,.12) inset}.flow-arrow{color:var(--cyan);font-weight:900}.flow-note{color:var(--muted);font-size:.9rem;margin-top:12px}.progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--cyan),var(--gold));width:0;z-index:9}.toolbar{position:fixed;right:18px;bottom:18px;display:flex;gap:8px}.toolbar button{border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:999px;padding:9px 12px;cursor:pointer;box-shadow:0 8px 30px rgba(0,0,0,.2)}.label{font-size:.75rem;color:var(--muted)}footer{border-top:1px solid var(--line);padding:24px;text-align:center;color:var(--muted)}
+@media(max-width:850px){.topbets{grid-template-columns:1fr}.layout{grid-template-columns:1fr}nav{position:relative;top:0;max-height:none}nav ul{columns:2}h1{font-size:2.65rem}.flow-row{grid-template-columns:1fr}.flow-arrow{transform:rotate(90deg);text-align:center}}
+@media(max-width:520px){header{padding-top:34px}.layout{padding:20px 14px 60px}nav ul{columns:1}table{display:block;overflow-x:auto}h1{font-size:2.25rem}}
+@media print{body{background:white;color:#111;font-size:11pt}header{padding:18px 0}.layout{display:block;padding:0}nav,.toolbar,.progress{display:none}a{color:#145c70}main>h1{break-before:page}main>h1:first-child{break-before:auto}table,pre,.viz{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<header><div class="hero">
+<div class="eyebrow">AI Research Intelligence · Evidence before effect</div>
+<h1>Can the evidence support the action?</h1>
+<p>October 23, 2026 briefing. Three deep papers examine missing-evidence recovery, deployment-grounded control simulation, and executable claim testing. Two Watchlist papers cover adaptive phishing and offline identifiability limits.</p>
+<div class="chips"><span class="chip">3 deep papers</span><span class="chip">2 Watchlist</span><span class="chip">36-hour research window</span><span class="chip">7 enterprise options</span><span class="chip">Research options, not deployment approval</span></div>
+<div class="topbets"><div class="bet"><span class="label">TOP BET 1 · PROTOTYPE SOON</span><b>89.0 · Evidence gate</b><span>Verify decisive facts before consequential tool calls.</span></div><div class="bet"><span class="label">TOP BET 2 · PROTOTYPE SOON</span><b>85.0 · Claim contracts</b><span>Freeze scope and check quantitative claims deterministically.</span></div><div class="bet"><span class="label">TOP BET 3 · PREPARE FOUNDATIONS</span><b>84.8 · Replay ledger</b><span>Reconstruct evidence, policy, model, tool, and verdict state.</span></div></div>
+</div></header>
+<div class="layout"><nav><strong>Navigate</strong><ul>
+<li><a href="#executive-decision" id="toc-executive-decision">Executive
+decision</a>
+<ul>
+<li><a href="#top-3-future-bets" id="toc-top-3-future-bets">Top 3 Future
+Bets</a></li>
+</ul></li>
+<li><a href="#research-scope-and-evidence-contract"
+id="toc-research-scope-and-evidence-contract">Research scope and
+evidence contract</a>
+<ul>
+<li><a href="#window-discovery-and-anti-duplication"
+id="toc-window-discovery-and-anti-duplication">Window, discovery, and
+anti-duplication</a></li>
+<li><a href="#labels-review-depth-and-scoring"
+id="toc-labels-review-depth-and-scoring">Labels, review depth, and
+scoring</a></li>
+</ul></li>
+<li><a href="#deep-paper-1--episem-bench"
+id="toc-deep-paper-1--episem-bench">Deep paper 1 — EpiSEM-Bench</a>
+<ul>
+<li><a href="#research-question-and-method"
+id="toc-research-question-and-method">Research question and
+method</a></li>
+<li><a href="#quantitative-claim-trace"
+id="toc-quantitative-claim-trace">Quantitative claim trace</a></li>
+<li><a href="#what-the-evidence-supports"
+id="toc-what-the-evidence-supports">What the evidence supports</a></li>
+<li><a href="#methodological-critique"
+id="toc-methodological-critique">Methodological critique</a></li>
+<li><a href="#reproducibility-and-readiness"
+id="toc-reproducibility-and-readiness">Reproducibility and
+readiness</a></li>
+</ul></li>
+<li><a href="#deep-paper-2--simulated-control-evals"
+id="toc-deep-paper-2--simulated-control-evals">Deep paper 2 — Simulated
+Control Evals</a>
+<ul>
+<li><a href="#research-question-and-method-1"
+id="toc-research-question-and-method-1">Research question and
+method</a></li>
+<li><a href="#quantitative-claim-trace-1"
+id="toc-quantitative-claim-trace-1">Quantitative claim trace</a></li>
+<li><a href="#what-the-evidence-supports-1"
+id="toc-what-the-evidence-supports-1">What the evidence
+supports</a></li>
+<li><a href="#methodological-critique-1"
+id="toc-methodological-critique-1">Methodological critique</a></li>
+<li><a href="#reproducibility-and-readiness-1"
+id="toc-reproducibility-and-readiness-1">Reproducibility and
+readiness</a></li>
+</ul></li>
+<li><a href="#deep-paper-3--aratest" id="toc-deep-paper-3--aratest">Deep
+paper 3 — ARATest</a>
+<ul>
+<li><a href="#research-question-and-method-2"
+id="toc-research-question-and-method-2">Research question and
+method</a></li>
+<li><a href="#quantitative-claim-trace-2"
+id="toc-quantitative-claim-trace-2">Quantitative claim trace</a></li>
+<li><a href="#what-the-evidence-supports-2"
+id="toc-what-the-evidence-supports-2">What the evidence
+supports</a></li>
+<li><a href="#methodological-critique-2"
+id="toc-methodological-critique-2">Methodological critique</a></li>
+<li><a href="#reproducibility-and-readiness-2"
+id="toc-reproducibility-and-readiness-2">Reproducibility and
+readiness</a></li>
+</ul></li>
+<li><a href="#watchlist" id="toc-watchlist">Watchlist</a>
+<ul>
+<li><a href="#w1--agentphishing" id="toc-w1--agentphishing">W1 —
+AgentPhishing</a></li>
+<li><a href="#w2--post-audit-mirage" id="toc-w2--post-audit-mirage">W2 —
+Post-Audit Mirage</a></li>
+</ul></li>
+<li><a href="#cross-paper-synthesis"
+id="toc-cross-paper-synthesis">Cross-paper synthesis</a></li>
+<li><a href="#enterprise-ai-enhancement-backlog"
+id="toc-enterprise-ai-enhancement-backlog">Enterprise AI Enhancement
+Backlog</a>
+<ul>
+<li><a href="#priority-model-and-assumptions"
+id="toc-priority-model-and-assumptions">Priority model and
+assumptions</a></li>
+<li><a href="#prototype-soon" id="toc-prototype-soon">Prototype
+Soon</a></li>
+<li><a href="#prepare-foundations" id="toc-prepare-foundations">Prepare
+Foundations</a></li>
+<li><a href="#monitor-for-maturity"
+id="toc-monitor-for-maturity">Monitor for Maturity</a></li>
+<li><a href="#deprioritize-for-now"
+id="toc-deprioritize-for-now">Deprioritize for Now</a></li>
+</ul></li>
+<li><a href="#enterprise-ai-architecture-implications"
+id="toc-enterprise-ai-architecture-implications">Enterprise AI
+Architecture Implications</a></li>
+<li><a href="#implementation-priorities"
+id="toc-implementation-priorities">Implementation priorities</a>
+<ul>
+<li><a href="#next-30-days" id="toc-next-30-days">Next 30 days</a></li>
+<li><a href="#days-3160" id="toc-days-3160">Days 31–60</a></li>
+<li><a href="#days-6190" id="toc-days-6190">Days 61–90</a></li>
+</ul></li>
+<li><a href="#knowledge-reinforcement"
+id="toc-knowledge-reinforcement">Knowledge reinforcement</a>
+<ul>
+<li><a href="#five-questions-a-review-board-should-ask"
+id="toc-five-questions-a-review-board-should-ask">Five questions a
+review board should ask</a></li>
+<li><a href="#decision-rules-to-retain"
+id="toc-decision-rules-to-retain">Decision rules to retain</a></li>
+</ul></li>
+<li><a href="#source-and-artifact-register"
+id="toc-source-and-artifact-register">Source and artifact register</a>
+<ul>
+<li><a href="#evidence-boundaries" id="toc-evidence-boundaries">Evidence
+boundaries</a></li>
+</ul></li>
+</ul></nav><main><h1 id="executive-decision">Executive decision</h1>
+<p><strong>October 23, 2026 · Three deep papers · Two Watchlist papers ·
+Seven enterprise options</strong></p>
+<p><strong>Central signal: safe enterprise agents need to prove that the
+evidence available actually identifies the action they are about to
+take.</strong> This briefing's strongest papers attack that problem from
+three sides. EpiSEM-Bench shows that completing permitted work and
+resisting prohibited work can separate sharply when one safety-critical
+fact is absent. Simulated Control Evals shows that deployment-specific
+simulation can predict control behavior more accurately than transfer
+from a different executable environment—within one validated arena.
+ARATest shows that a typed, executable claim contract can catch
+contradictions that prose-reading judges miss, but only for the minority
+of claims that can be faithfully bound.</p>
+<p>The decision is to prototype three isolated controls: an
+evidence-sufficiency gate before consequential actions, typed executable
+checks for high-value quantitative claims, and a replay/provenance
+ledger that makes both evaluations inspectable. Simulated control
+evaluation, adaptive phishing tests, and fail-closed statistical
+monitoring are promising but need additional transfer, tooling, or
+operating evidence. None of these is a production approval.</p>
+<p><strong>Decision boundary:</strong> “Now” means a read-only,
+synthetic, shadow, or disposable-environment experiment. The papers are
+new preprints or workshop work; their results are author-reported and
+were not independently replicated here. Production decisions require
+internal workflow, data, threat, identity, policy, cost, privacy, and
+accountability context.</p>
+<h2 id="top-3-future-bets">Top 3 Future Bets</h2>
+<ol type="1">
+<li><strong>Pre-commit evidence-sufficiency gate — 89.0/100.</strong>
+Why it matters: EpiSEM reports that recovery access lowered unsafe
+execution for all ten tested models, yet high legal completion could
+still occur without verification; GPT-6-Luna's paired useful recovery
+was 30.5%, while DeepSeek-V4.1-Flash reached 58.4%. What would change
+the recommendation: internal tasks show no material gap between evidence
+availability and actual evidence use, or the gate creates unacceptable
+false refusal and latency. Next reversible action: suppress one
+policy-critical fact in 100 synthetic action pairs and require an
+independent evidence fetch before the action can commit.</li>
+<li><strong>Typed executable claim contracts — 85.0/100.</strong> Why it
+matters: ARATest deterministically exposed all 553 seeded table faults,
+versus 342 and 319 for two LLM-judge variants, and traced two
+author-confirmed paper errors. What would change the recommendation:
+internal claims cannot be faithfully bound at useful coverage, or human
+review finds the declarations omit decision-critical scope. Next
+reversible action: encode 25 recurring quantitative claims as typed
+properties and replay them against frozen evidence without changing any
+production output.</li>
+<li><strong>Evaluation provenance and replay ledger — 84.8/100.</strong>
+Why it matters: all three deep papers depend on aligned tasks, fixed
+evidence boundaries, retained traces, and repeatable decisions;
+Post-Audit Mirage additionally demonstrates that a byte-identical public
+record can conceal opposite deployment truth. What would change the
+recommendation: existing observability already reproduces evidence,
+state, model, policy, tool, and decision versions end-to-end without
+sensitive over-retention. Next reversible action: capture a minimal
+evidence-and-effect envelope for 200 public or synthetic agent runs and
+verify exact replay and access isolation.</li>
+</ol>
+<p>Score differences of a few points are planning ties, not measured
+superiority. The inputs encode this briefing's evidence and assumptions;
+they are not statistical estimates.</p>
+<h1 id="research-scope-and-evidence-contract">Research scope and
+evidence contract</h1>
+<h2 id="window-discovery-and-anti-duplication">Window, discovery, and
+anti-duplication</h2>
+<p>Research window: <strong>October 21, 2026, 4:00 p.m. CDT through
+October 23, 4:00 a.m. CDT</strong>, equivalent to October 21, 21:00 UTC
+through October 23, 09:00 UTC. The 36-hour window captures papers
+announced in the October 23 batch, including one submitted shortly
+before the window.</p>
+<p>Discovery covered the October 23 recent lists for cs.AI, cs.LG,
+cs.CL, cs.SE, cs.CR, cs.IR, and stat.ML; major-lab research pages;
+primary paper records; linked repositories; and workshop records. The
+seven category pages yielded 1,235 unique recent records after
+deduplication; the visible cs.AI page contained 229 entries. Titles,
+abstracts, methods, result tables, limitations, source links, and
+license evidence were inspected for the selected slate. Exact
+identifiers and normalized titles were checked against all 74 prior
+report sources through October 22; none had appeared.</p>
+<p>The screen favored falsifiable results, quantitative traceability,
+methodological transparency, decision usefulness, and artifact evidence.
+An external report on frontier-model monitoring was screened but not
+selected because the detailed underlying report was not publicly
+inspectable at cutoff. Publication volume is not evidence quality, so
+only five papers are published here.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Funnel stage</th>
+<th style="text-align: right;">Count</th>
+<th>Decision rule</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Unique recent records across seven category pages</td>
+<td style="text-align: right;">1,235</td>
+<td>Broad discovery universe; not all manually reviewed</td>
+</tr>
+<tr class="even">
+<td>Visible recent cs.AI entries</td>
+<td style="text-align: right;">229</td>
+<td>Titles and abstracts screened for evidence density and enterprise
+relevance</td>
+</tr>
+<tr class="odd">
+<td>Full PDFs downloaded and inspected</td>
+<td style="text-align: right;">5</td>
+<td>Methods, tables, appendices, limitations, and artifact statements
+available</td>
+</tr>
+<tr class="even">
+<td>Deep papers</td>
+<td style="text-align: right;">3</td>
+<td>Best combination of traceable evidence, methodological scrutiny, and
+enterprise decision value</td>
+</tr>
+<tr class="odd">
+<td>Watchlist papers</td>
+<td style="text-align: right;">2</td>
+<td>High-value signal with important transfer, artifact, or
+production-readiness gaps</td>
+</tr>
+</tbody>
+</table>
+<h2 id="labels-review-depth-and-scoring">Labels, review depth, and
+scoring</h2>
+<ul>
+<li><strong>Paper Fact:</strong> reported by the paper or verified
+primary artifact; not independent replication.</li>
+<li><strong>Independent Analysis:</strong> critique, arithmetic,
+synthesis, scoring, or experiment design performed for this
+briefing.</li>
+<li><strong>Enterprise Inference:</strong> a possible enterprise
+application beyond the demonstrated setting.</li>
+<li><strong>Uncertainty:</strong> unresolved validity, transfer,
+economics, licensing, security, or implementation evidence.</li>
+</ul>
+<p>All three deep papers were read in full: EpiSEM-Bench (29 pages),
+Simulated Control Evals (22 pages), and ARATest (31 pages). The two
+Watchlist papers, AgentPhishing (28 pages) and Post-Audit Mirage (17
+pages), received bounded full-paper review including appendices and
+reproducibility statements. PDFs were locally inspected. Public
+repositories were inspected where linked; code and models were not
+executed, and no enterprise system was tested.</p>
+<p><strong>Research Utility Score:</strong> rigor /25 + quantitative
+traceability /25 + reproducibility /20 + enterprise relevance /15 +
+prior-work advance /15. It measures usefulness for this briefing, not
+truth or production readiness.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Paper</th>
+<th style="text-align: right;">Rigor /25</th>
+<th style="text-align: right;">Trace /25</th>
+<th style="text-align: right;">Repro /20</th>
+<th style="text-align: right;">Relevance /15</th>
+<th style="text-align: right;">Advance /15</th>
+<th style="text-align: right;">Total</th>
+<th>Main reservation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>P1 EpiSEM-Bench</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;"><strong>83</strong></td>
+<td>Synthetic paired worlds; one rollout per condition; no public
+artifact link found</td>
+</tr>
+<tr class="even">
+<td>P2 Simulated Control Evals</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;"><strong>87</strong></td>
+<td>Transfer validated chiefly on LinuxArena; no public implementation
+link found</td>
+</tr>
+<tr class="odd">
+<td>P3 ARATest</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;"><strong>95</strong></td>
+<td>Coverage developed on the evaluation corpus; declarations and most
+review were AI-generated</td>
+</tr>
+<tr class="even">
+<td>W1 AgentPhishing</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;"><strong>81</strong></td>
+<td>Synthetic single-message actions; release is described but not
+publicly linked</td>
+</tr>
+<tr class="odd">
+<td>W2 Post-Audit Mirage</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;"><strong>90</strong></td>
+<td>Synthetic benchmark operationalizes a standard theorem; monitoring
+assumptions are strong</td>
+</tr>
+</tbody>
+</table>
+<h1 id="deep-paper-1--episem-bench">Deep paper 1 — EpiSEM-Bench</h1>
+<p><strong>P1 · EpiSEM-Bench: Evaluating Safety and Evidence Recovery in
+LLM Agents under Missing Evidence.</strong> Hengzhou Chen, Jianfeng Chi,
+Shuo Liu, Jingxiang Deng, Tongya Zheng, Shouling Ji.
+<strong>arXiv:2610.31650v1 · submitted October 22, 2026, 17:57:40
+UTC.</strong> <a href="https://arxiv.org/abs/2610.31650v1">Record</a> ·
+<a href="https://arxiv.org/pdf/2610.31650v1">Paper</a>.</p>
+<h2 id="research-question-and-method">Research question and method</h2>
+<p><strong>Paper Fact.</strong> EpiSEM-Bench contains 300 matched
+prohibited/permitted task pairs across six domains: cloud operations,
+code publication, document/data access, finance, travel reservation, and
+another tool-use domain. Each pair keeps the requested operation and
+tool interface fixed while one or more evidence atoms change whether the
+action is allowed. The benchmark distinguishes critical atoms from
+irrelevant atoms and suppresses every ordinary-tool exposure of a chosen
+atom throughout the rollout.</p>
+<p>Ten models face 6,052 fixed conditions each: 600 full-evidence
+unsafe/safe baselines and 5,452 single-atom omissions covering 1,363
+atoms across both worlds and suppressed/recoverable settings. Additional
+critical subsets are tested adaptively in increasing cardinality until
+an unsafe witness appears or coverage is exhausted. Suppressed Evidence
+keeps facts unavailable; Recoverable Evidence adds an independent audit
+tool that returns all omitted facts after a valid query. Runs use
+temperature zero, a 12-step budget, and one rollout per condition.</p>
+<p>The six headline metrics must be read jointly: Full Safe-World
+Success (SWS), Full Unsafe Commit Rate (UCR), Critical UCR, Safety
+Boundary Margin (SBM), Recovery UCR, and Paired Useful Recovery (PUR).
+PUR requires the agent to restore evidence, withhold the prohibited
+action, and complete the permitted twin under the same omission.</p>
+<h2 id="quantitative-claim-trace">Quantitative claim trace</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Location</th>
+<th>Author-reported result</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Table 1</td>
+<td>GPT-6-Luna: 51.0% Full SWS, 3.0% Full UCR, 21.0% Critical UCR, 3.0%
+Recovery UCR, 84.8% SBM, 30.5% PUR</td>
+<td>Task-level UCR counts any failure once; one deterministic rollout
+per condition understates sampling variability</td>
+</tr>
+<tr class="even">
+<td>Table 1</td>
+<td>DeepSeek-V4.1-Flash: 66.3%, 4.0%, 45.7%, 9.3%, 68.4%, 58.4% on the
+same metrics</td>
+<td>Highest PUR in the table does not imply best full-evidence safety or
+production fitness</td>
+</tr>
+<tr class="odd">
+<td>Table 1</td>
+<td>Qwen3-14B: 92.0% Full SWS but 77.3% Full UCR, 97.3% Critical UCR,
+94.0% Recovery UCR, and 3.8% PUR</td>
+<td>High permitted-world completion can coexist with broad prohibited
+execution</td>
+</tr>
+<tr class="even">
+<td>Figure 2 / Table 9</td>
+<td>Recovery access reduces UCR for all ten models; nine improve SWS,
+while MiMo-V2.5-Pro decreases 0.6 points</td>
+<td>Aggregate gains coexist with tasks that become unsafe only with
+recovery access</td>
+</tr>
+<tr class="odd">
+<td>Figure 2d</td>
+<td>Qwen3-14B safe RE completion averages 94.7%, but strict safe
+recovery is 15.4%</td>
+<td>Completion often occurs without retrieving the missing fact</td>
+</tr>
+<tr class="even">
+<td>Appendix D.5</td>
+<td>GPT-6-Luna averages 2,647 tokens/4.68 requests in SE versus
+3,922/5.93 in RE; DeepSeek-V4.1-Flash 9,261/5.43 versus 12,635/6.56</td>
+<td>Recovery adds interaction cost; pricing and latency are provider-
+and harness-specific</td>
+</tr>
+</tbody>
+</table>
+<h2 id="what-the-evidence-supports">What the evidence supports</h2>
+<p><strong>Independent Analysis.</strong> Evidence availability,
+evidence acquisition, correct action, and useful task completion are
+distinct stages. A model can appear safe by refusing everything, appear
+capable by acting without checking permission, or call the audit tool
+and still misuse what it learns. Enterprise evaluation should therefore
+pair a prohibited and permitted version of the same action and demand
+both restraint and successful completion.</p>
+<p>Compared with policy-violation benchmarks, EpiSEM manipulates the
+information needed to apply the policy. Compared with
+missing-observation robustness tests, it retains a complete-world oracle
+and separately measures active recovery. Compared with a single refusal
+metric, PUR penalizes both unsafe action and false abstention.</p>
+<p>The paper does not establish production incident prevalence,
+adversarial robustness, multi-user authorization semantics, or safe
+behavior under stochastic sampling. The audit tool is unusually clean:
+one valid call returns all omitted facts. Enterprise evidence is
+fragmented, access-controlled, stale, and sometimes contradictory.</p>
+<h2 id="methodological-critique">Methodological critique</h2>
+<ol type="1">
+<li><strong>Single deterministic rollouts hide behavioral
+variance.</strong> Temperature zero does not make hosted models
+immutable. Repeated runs, model-version pinning, and confidence
+intervals are needed for model comparisons.</li>
+<li><strong>Synthetic matched worlds trade realism for
+identification.</strong> The design cleanly isolates evidence
+dependence, but production workflows include ambiguous policy,
+incomplete ground truth, conflicting sources, and state changes during
+deliberation.</li>
+<li><strong>Recovery is easier than real retrieval.</strong> The
+independent audit returns every omitted fact. Real systems must choose a
+source, authenticate, retrieve, reconcile, and decide whether the
+evidence is current and sufficient.</li>
+<li><strong>Adaptive subset testing produces unequal condition
+sets.</strong> The paper documents coverage and aligns matched
+comparisons, but cross-model boundary metrics still summarize different
+explored subsets.</li>
+<li><strong>Task-level “any failure” is sensitive.</strong> Critical UCR
+captures breadth, while the condition-level failure rate captures
+recurrence. Reporting one without the other can exaggerate or conceal
+risk.</li>
+<li><strong>Fast variants limit family conclusions.</strong> The authors
+explicitly chose GPT-6-Luna and Claude-Haiku-5.5 for cost/latency;
+results may not transfer to larger variants.</li>
+<li><strong>Artifact verification is incomplete.</strong> No public code
+or data repository was linked in the record or paper at review. The
+paper license is arXiv's non-exclusive distribution license, not a
+software reuse grant.</li>
+</ol>
+<h2 id="reproducibility-and-readiness">Reproducibility and
+readiness</h2>
+<p><strong>Verified artifact observation.</strong> The paper documents
+schemas, metrics, boundary search, per-model configuration, coverage
+counts, and detailed examples. It does not link a public code/data
+artifact. The arXiv record uses the non-exclusive distribution
+license.</p>
+<p><strong>Enterprise readiness:</strong> High for recreating the
+paired-test pattern with synthetic tasks; Moderate for a shadow evidence
+gate on non-sensitive tools; Low for production authorization. Promotion
+requires identity-aware evidence sources, explicit sufficiency rules,
+policy ownership, uncertainty handling, source freshness, latency/cost
+evidence, and human escalation.</p>
+<h1 id="deep-paper-2--simulated-control-evals">Deep paper 2 — Simulated
+Control Evals</h1>
+<p><strong>P2 · Simulated Control Evals.</strong> Jeffrey Olmo, David
+Zhang, Tyler Tracy. Redwood Research. <strong>arXiv:2610.31593v1 ·
+submitted October 22, 2026, 17:26:18 UTC.</strong> <a
+href="https://arxiv.org/abs/2610.31593v1">Record</a> · <a
+href="https://arxiv.org/pdf/2610.31593v1">Paper</a>.</p>
+<h2 id="research-question-and-method-1">Research question and
+method</h2>
+<p><strong>Paper Fact.</strong> The study asks whether a model can
+simulate tool responses for attacks on deployment-specific tasks,
+avoiding execution of the harmful action while preserving
+control-relevant behavior. An attack policy (gpt-5.6-sol, medium
+reasoning) pursues a main task and harmful side task. A gpt-6-astra
+simulator receives the interaction, one honest reference trajectory, and
+read access to a codebase snapshot; gpt-5.6-sol is a fallback for
+refused/invalid responses. The attack policy's actions never
+execute.</p>
+<p>A separate gpt-5.6-sol high-reasoning judge, with codebase and
+scoring-logic access, estimates simulated attack success. Five
+full-trajectory monitors score suspicion three times each. The primary
+dataset has 1,000 LinuxArena main-task/side-task pairs balanced across
+ten environments, with two simulated runs, two independent executed
+runs, and one honest reference trajectory per pair. Evaluation and
+deployment task sets are independently sampled with replacement. A
+separate 1,000 executed BashArena attacks provide the transfer
+baseline.</p>
+<h2 id="quantitative-claim-trace-1">Quantitative claim trace</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Location</th>
+<th>Author-reported result</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Abstract / Figure 8</td>
+<td>At a 5% audit budget, safety RMSE is 3.6 percentage points for
+simulation versus 10.1 for BashArena</td>
+<td>LinuxArena execution is the deployment proxy; errors include task
+sampling and run variance</td>
+</tr>
+<tr class="even">
+<td>Figure 8</td>
+<td>SCEs explain 78% of between-environment safety variance; RMS bias
+4.6 points versus environment SD 20.2</td>
+<td>“Explained” is derived from relative squared error, not a causal
+R²</td>
+</tr>
+<tr class="odd">
+<td>Figure 7</td>
+<td>Monitor-score total RMSE is 0.259 on a 0–10 scale versus 2.821 for
+BashArena; environment RMS bias 0.247 versus SD 0.634, described as 85%
+explained</td>
+<td>Scores come from five related frontier monitors; external monitor
+families are untested</td>
+</tr>
+<tr class="even">
+<td>§3.2</td>
+<td>Attack-success judge AUROC is 0.980 but overestimates average
+success by 3.7 points; simulated average 25.4% versus executed
+25.5%</td>
+<td>Aggregate agreement can hide environment-specific error; success
+combines simulator and judge error</td>
+</tr>
+<tr class="odd">
+<td>Figure 4</td>
+<td>Monitor-reasoning forward KL is 0.0058 bits for simulation versus
+2.767 bits for BashArena</td>
+<td>Representation, embedding, and clustering are model-mediated; KL is
+conditional on that pipeline</td>
+</tr>
+<tr class="even">
+<td>Figure 9</td>
+<td>Safety RMSE falls below the full BashArena reference at 4.6% of
+deployment task-set size and reaches 3.57 points at full size</td>
+<td>Repeated draws may select the same pair; percentage is sample
+efficiency in this fixed corpus</td>
+</tr>
+<tr class="odd">
+<td>Figure 10</td>
+<td>Strategy briefing AUROC is 0.841 from simulated strategies versus
+0.767 from BashArena; paired gain 0.074 [0.060, 0.088]</td>
+<td>One gpt-5.4-nano monitor and one briefing method; not an optimized
+defense</td>
+</tr>
+</tbody>
+</table>
+<h2 id="what-the-evidence-supports-1">What the evidence supports</h2>
+<p><strong>Independent Analysis.</strong> A control evaluation can fail
+through distribution mismatch even when its attacks are real.
+Deployment-grounded simulation offers a different trade: no harmful
+execution, but stronger dependence on simulator fidelity and trust. The
+paper's most decision-useful result is not that simulation is
+universally safe; it is that fidelity must be tested on control metrics,
+behaviors, and held-out executed attacks—not on superficial realism
+alone.</p>
+<p>Relative to a separate control environment, SCEs use the target task,
+codebase, and honest trace. Relative to a digital twin, they synthesize
+tool outputs rather than run a complete environment. Relative to
+text-only red teaming, they preserve the multi-step feedback loop
+between attacker actions and observations.</p>
+<p>The evidence does not justify simulator-only certification. Transfer
+is validated principally on LinuxArena, simulated trajectories remain
+somewhat distinguishable, and an untrusted simulator could collude with
+an attack policy or conceal success.</p>
+<h2 id="methodological-critique-1">Methodological critique</h2>
+<ol type="1">
+<li><strong>One deployment proxy dominates the evidence.</strong>
+LinuxArena is diverse, but generalization to enterprise infrastructure,
+permissions, external services, long horizons, and non-code workflows is
+unresolved.</li>
+<li><strong>The simulator and success judge create coupled
+error.</strong> High AUROC is encouraging, but the judge already shows
+average bias. Error can concentrate exactly where rare
+successful-and-evasive attacks matter.</li>
+<li><strong>Realism is not fidelity.</strong> The authors found that
+self-critique made trajectories harder to distinguish while worsening
+control metrics. Visual plausibility or discriminator performance cannot
+substitute for outcome transfer.</li>
+<li><strong>Trusted simulation is a strong threat-model
+assumption.</strong> Collusion, strategic deception, or shared
+model-family blind spots could inflate estimated safety. The paper
+states reliable SCEs under an untrusted simulator are unsolved.</li>
+<li><strong>Optimization may exploit the model of the world.</strong>
+Longer red-team/blue-team iteration can select attacks or defenses that
+work only in simulation. Held-out execution under iterative optimization
+is required.</li>
+<li><strong>Behavioral KL depends on learned representations.</strong>
+Cluster counts, descriptions, embeddings, and observers are choices. Low
+divergence shows agreement in the measured representation, not
+exhaustive behavioral equivalence.</li>
+<li><strong>No public implementation was linked.</strong> The paper is
+CC BY 4.0, but reproducibility currently rests on extensive
+methodological detail rather than an inspectable code release.</li>
+</ol>
+<h2 id="reproducibility-and-readiness-1">Reproducibility and
+readiness</h2>
+<p><strong>Verified artifact observation.</strong> The paper supplies
+methods, estimator details, bootstrap procedures, representations,
+prompts, and appendices, but no public code/data link was found. The
+arXiv paper is CC BY 4.0.</p>
+<p><strong>Enterprise readiness:</strong> Moderate for an offline
+research prototype using public/synthetic tasks; Low for safety
+certification or production approval. Promotion requires
+execution-ground-truth calibration, independent simulator/monitor
+families, collusion tests, optimization stress tests, and strict
+segregation from production secrets and write authority.</p>
+<h1 id="deep-paper-3--aratest">Deep paper 3 — ARATest</h1>
+<p><strong>P3 · From Prose to Properties: Testing Research Claims with
+ARATest for Agent-Native Science.</strong> Yifeng He, Jiachen Liu, Hao
+Chen. ARA Lab. <strong>arXiv:2610.30495v1 · submitted October 21, 2026,
+22:20:06 UTC.</strong> <a
+href="https://arxiv.org/abs/2610.30495v1">Record</a> · <a
+href="https://arxiv.org/pdf/2610.30495v1">Paper</a> · <a
+href="https://github.com/ARA-Labs/aratest">Code</a>.</p>
+<h2 id="research-question-and-method-2">Research question and
+method</h2>
+<p><strong>Paper Fact.</strong> ARATest turns a prose claim into a typed
+declaration that fixes the relation, operands, comparison cohort, scope,
+aggregation, numeric policy, evidence bindings, and provenance. A
+deterministic checker evaluates the property over stored evidence; a
+DissClaimer plugin can generate scope-preserving tests on author code.
+Verdicts are holds, violated, or inconclusive, with a replayable
+witness.</p>
+<p>RQ1 studies 243 claims in 33 ARA-PaperBench artifacts. An agent
+proposes declarations or skip reasons; fresh-context AI reviewers
+inspect fidelity. RQ2 creates 553 mechanically validated
+comparative-table faults across SEMA and CFG, pairs them with originals
+and 18 narrower controls, and collapses 1,124 records to 504 unique
+packets: 485 violated and 19 held. The deterministic checker is compared
+with direct and calculator-assisted gpt-6-luna judges. RQ3 executes six
+property-based tests on two qualifying author-code artifacts and runs a
+small continuous-testing campaign.</p>
+<h2 id="quantitative-claim-trace-2">Quantitative claim trace</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Location</th>
+<th>Author-reported result</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Table 6</td>
+<td>55/243 claims receive faithful declarations; 54 bind fully (22.2%);
+40 are decided (16.5%): 32 hold, 8 violate, 14 remain inconclusive</td>
+<td>Catalog/readers were developed on the same 243 claims; coverage may
+overstate new-paper reach</td>
+</tr>
+<tr class="even">
+<td>Table 7</td>
+<td>Two numerical contradictions between prose and tables were confirmed
+by the source authors; two other violations trace to source-paper
+mismatches and four to compilation/declaration</td>
+<td>Confirmation covers those numbers, not the papers' broader
+conclusions</td>
+</tr>
+<tr class="odd">
+<td>Table 8</td>
+<td>Checker detects 553/553 seeded faults; direct judge 342/553 (61.8%);
+calculator-assisted judge 319/553 (57.7%)</td>
+<td>All faults come from two artifacts and four mutation operators;
+faithful declarations are assumed</td>
+</tr>
+<tr class="even">
+<td>Table 8</td>
+<td>No method false-alarms on 19 controls; checker 1.66s/attempt versus
+15.11s and 16.81s for judges</td>
+<td>N=19 gives weak specificity evidence; 485/504 packets violate, so
+accuracy is imbalanced</td>
+</tr>
+<tr class="odd">
+<td>Table 8</td>
+<td>Packet verdicts: 504/504 checker, 458/504 direct, 385/504
+calculator; calculator has 53 operational failures</td>
+<td>Input/output limits stop many calculator continuations; model alias
+is mutable</td>
+</tr>
+<tr class="even">
+<td>§5.4</td>
+<td>Continuous campaign schedules 60 runs, but only 7 return complete
+reports, yielding 11 checks: 6 hold and 5 are inconclusive</td>
+<td>Operational failure dominates; no violation is found and agent
+instructions change seven times</td>
+</tr>
+</tbody>
+</table>
+<h2 id="what-the-evidence-supports-2">What the evidence supports</h2>
+<p><strong>Independent Analysis.</strong> The declaration is the main
+enterprise primitive: it freezes what a claim means before the data are
+checked. This prevents a judge from silently changing scope, comparison,
+tolerance, or denominator after seeing results. Deterministic checking
+is especially valuable for recurring KPI, model-evaluation, financial,
+operational, and compliance claims whose arithmetic can be made
+explicit.</p>
+<p>Compared with LLM-as-judge, ARATest separates natural-language
+specification from deterministic verdict. Compared with ordinary unit
+tests, it binds scientific/business scope and evidence provenance.
+Compared with static table checking, it can reuse the property on fresh
+executions—when author code, licenses, compute, and a valid generator
+exist.</p>
+<p>The work does not show universal claim verification. Only 22.2% of
+corpus claims fully bind, construction and review are mostly
+AI-mediated, and a passing declaration can omit a hard case. Passing is
+evidence for the declared property, not certification of the surrounding
+claim or decision.</p>
+<h2 id="methodological-critique-2">Methodological critique</h2>
+<ol type="1">
+<li><strong>Development exposure inflates apparent coverage.</strong>
+The relation catalog and readers were designed on the 243-claim corpus.
+The paper explicitly says RQ1 bounds current reach and does not estimate
+coverage on new papers.</li>
+<li><strong>Perfect seeded-fault detection is conditional.</strong> The
+checker receives a faithful property and structured evidence. It does
+not measure whether a model writes the right declaration, selects every
+required case, or binds the correct source.</li>
+<li><strong>Specificity evidence is small.</strong> Zero false alarms on
+19 valid packets is promising but weak. The recorded-packet distribution
+is overwhelmingly violated.</li>
+<li><strong>Mutation diversity is narrow.</strong> Four table mutations
+from two artifacts cover comparative/consistency claims, not wrong
+denominators, cross-table contradictions, data leakage, statistical
+misuse, or causal overreach.</li>
+<li><strong>Human review is minimal.</strong> Source-author confirmation
+of two errors is the only human review of findings. AI reviewers inspect
+declarations, designs, mutants, source tracing, and campaign output; no
+inter-reviewer agreement is reported.</li>
+<li><strong>Fresh-execution evidence is fragile.</strong> Only two of
+six artifacts qualify for reviewed RQ3 tests; in the end-to-end
+campaign, 53 of 60 scheduled runs fail, cancel, or miss the window.</li>
+<li><strong>A fixed declaration can still be wrong.</strong> Provenance
+makes omissions inspectable but does not guarantee reviewers notice
+them. Independent domain review remains necessary for material
+claims.</li>
+</ol>
+<h2 id="reproducibility-and-readiness-2">Reproducibility and
+readiness</h2>
+<p><strong>Verified artifact observation.</strong> The public GitHub
+repository contains the Python package, schemas, tests, examples, docs,
+plugins, and workflows; Python 3.12+ is specified. The repository and
+paper are MIT and CC BY 4.0 respectively.</p>
+<p><strong>Enterprise readiness:</strong> High for a narrow offline
+checker over frozen, non-sensitive quantitative evidence; Moderate for
+CI on recurring analytical claims; Low for autonomous approval of
+high-impact decisions. Internal adoption needs claim owners, typed
+evidence schemas, reviewer separation, version pinning, deterministic
+arithmetic, escalation for inconclusive cases, and audit-retention
+rules.</p>
+<h1 id="watchlist">Watchlist</h1>
+<h2 id="w1--agentphishing">W1 — AgentPhishing</h2>
+<p><strong>AgentPhishing: A Benchmark of LLM Email Agents Under Adaptive
+Attack.</strong> <strong>arXiv:2610.31404v1 · submitted October 22,
+2026, 15:07:02 UTC.</strong> <a
+href="https://arxiv.org/abs/2610.31404v1">Record</a> · <a
+href="https://arxiv.org/pdf/2610.31404v1">Paper</a> · <a
+href="https://openreview.net/pdf?id=YS2xR3MZhs">OpenReview
+paper</a>.</p>
+<p><strong>Paper Fact.</strong> PhishOpt evolves reusable
+email-generation instructions against six target agents under locked
+fictional-entity, placeholder-secret, label-balance, JSON, and realism
+constraints. The target receives an email and chooses an action/draft;
+no external action executes. The objective weights detection failure
+0.5, malicious-request compliance 0.3, and F1 loss 0.2. Cross-agent
+evaluation covers six optimized targets and nine additional agents, with
+20 emails per held-out cell.</p>
+<p>All six initial agents detect every public-corpus phishing email and
+comply with none, yet adaptive attacks raise susceptibility for four. In
+the 6×6 transfer table, one target detects 0% and complies 83.3% on its
+own optimized skill, while another detects every attack and never
+complies across all six skills. A universal skill produces detection
+below 10% and compliance above 45% for four of nine additional agents.
+The persuasion analysis contains 180 email-outcome pairs, 51 detection
+failures, and 21 compliance cases; Commitment/Consistency correlates
+with detection failure at φ=.2407 and compliance at φ=.1391. These are
+associations, not causal effects.</p>
+<p><strong>Independent Analysis.</strong> Static corpora can create
+false confidence when an attacker adapts to the deployed agent.
+Enterprise email agents should be assessed on both recognition and
+behavior, with safe, synthetic, non-delivery tests. However, the study
+is single-message, model/version-dependent, uses LLM realism and
+annotation, and evaluates drafted/selected actions rather than completed
+harm. The paper describes a release of pipeline, skills, metrics,
+analysis code, and aggregates while withholding raw phishing corpora; no
+public repository link was found at cutoff.</p>
+<p><strong>Promotion trigger:</strong> public licensed artifacts;
+repeated batches and independent annotation; multi-turn and
+tool-execution simulation in a closed sandbox; defense comparisons;
+stable results across model versions; and a red-team process that
+prevents generated content from reaching real recipients.</p>
+<h2 id="w2--post-audit-mirage">W2 — Post-Audit Mirage</h2>
+<p><strong>Post-Audit Mirage: Identifiability Limits of Offline Agent
+Verification.</strong> Aman Behera, Payal Payal. Workshop on Who
+Verifies the Agents?, NeurIPS 2026. <strong>arXiv:2610.31130v1 ·
+submitted October 22, 2026, 11:50:21 UTC.</strong> <a
+href="https://arxiv.org/abs/2610.31130v1">Record</a> · <a
+href="https://arxiv.org/pdf/2610.31130v1">Paper</a> · <a
+href="https://github.com/beingamanforever/Post-Audit-Mirage">Code</a>.</p>
+<p><strong>Paper Fact.</strong> The work operationalizes a standard
+observational-equivalence result: if safe and harmful worlds expose the
+same offline record, any offline decision rule has the same output
+distribution in both. With abstention probability r, at least one
+matched-world wrong-action probability is at least (1-r)/2. The
+contribution is the executable audit boundary, not a new theorem.</p>
+<p>The benchmark creates 272 safe/harmful lifecycle pairs over AuthGate,
+ConstraintPlan, and BatchTriage, each with 50 update rounds. All 13,600
+paired public inputs are byte-identical, protected truth reverses, and
+nine offline procedures return identical paired sequences.
+IdentifiedRangeMonitor then consumes fresh group-labelled harm outcomes
+and returns deploy, hold, cannot_determine, or unsupported. On the fixed
+synthetic panel, all 272 safe and 272 harmful lifecycles meet a 16-of-20
+descriptive rule by 20,000 attempted observations, with 0/272 harmful
+lifecycles deployed as safe at the final look. In an 18-cell controlled
+grid, only 4/18 settings qualify by 20,000; small gaps, 2% rare groups,
+and 50% retention frequently remain undecided.</p>
+<p><strong>Independent Analysis.</strong> The paper is a useful
+governance warning: better calculation cannot recover deployment
+information that was never observed. A fail-closed monitor can make
+uncertainty explicit, but only under independent fixed-rate Bernoulli
+outcomes, a prespecified group list, outcome-independent missingness,
+and a stable target. The benchmark is synthetic, does not estimate
+production prevalence, and the fixed-panel zero count is not zero risk.
+The public MIT repository includes source, independent JavaScript
+scorers, frozen records, integrity tests, configurations, generated
+results, and exact reproduction commands; the paper is CC BY 4.0.</p>
+<p><strong>Promotion trigger:</strong> independent reproduction;
+production-like selection bias and target-shift tests;
+privacy-preserving group labels; declared handling for unseen groups and
+missing-not-at-random outcomes; and prospective monitoring showing
+useful decisions without unsafe approval or indefinite operational
+paralysis.</p>
+<h1 id="cross-paper-synthesis">Cross-paper synthesis</h1>
+<p><strong>Independent Analysis.</strong> The papers converge on a
+layered evidence contract:</p>
+<ol type="1">
+<li><strong>Observation boundary:</strong> specify which facts, traces,
+identities, and outcomes the agent/evaluator may see.</li>
+<li><strong>Identification boundary:</strong> determine whether those
+observations can answer the decision at all; abstain or request evidence
+when they cannot.</li>
+<li><strong>Declaration boundary:</strong> freeze the property, scope,
+comparison, tolerance, and evidence bindings before checking.</li>
+<li><strong>Action boundary:</strong> require the agent to acquire and
+use decisive evidence before a consequential commit.</li>
+<li><strong>Validation boundary:</strong> compare simulation or
+monitoring with held-out executed outcomes, not realism alone.</li>
+</ol>
+<p>EpiSEM localizes failures between availability, acquisition, and
+action. ARATest localizes failures between prose, declaration, evidence,
+and deterministic checking. Simulated Control Evals localizes the gap
+between a control setting and deployment-specific behavior. The
+Watchlist papers extend the picture: adversaries adapt to agent
+behavior, and no offline audit can infer unobserved deployment
+truth.</p>
+<div class="viz" role="img" aria-label="Evidence identification and action control loop">
+  <div class="viz-title">Evidence before effect</div>
+  <div class="flow-row"><span class="flow-node">Declared decision + policy</span><span class="flow-arrow">→</span><span class="flow-node accent">Evidence sufficiency / identifiability</span><span class="flow-arrow">→</span><span class="flow-node">Retrieve or abstain</span></div>
+  <div class="flow-row"><span class="flow-node">Bound evidence + replay record</span><span class="flow-arrow">→</span><span class="flow-node accent">Deterministic / monitored check</span><span class="flow-arrow">→</span><span class="flow-node">Commit, hold, or human review</span></div>
+  <div class="flow-note">Simulation informs the loop only after calibration against held-out execution; it does not authorize production action by itself.</div>
+</div>
+
+<h1 id="enterprise-ai-enhancement-backlog">Enterprise AI Enhancement
+Backlog</h1>
+<h2 id="priority-model-and-assumptions">Priority model and
+assumptions</h2>
+<p><strong>Independent Analysis.</strong> Future Enterprise AI Priority
+Score = <strong>.25B + .20T + .20E + .15R + .10F + .10D</strong>.
+Components are 0–100: strategic/business value, technical leverage,
+evidence strength, enterprise readiness, feasibility, and risk-adjusted
+differentiation. Readiness means readiness for the proposed reversible
+experiment, not production. Decimals expose weighted arithmetic; they do
+not imply precision beyond the underlying evidence.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Enhancement</th>
+<th>Decision band</th>
+<th style="text-align: right;">B 25%</th>
+<th style="text-align: right;">T 20%</th>
+<th style="text-align: right;">E 20%</th>
+<th style="text-align: right;">R 15%</th>
+<th style="text-align: right;">F 10%</th>
+<th style="text-align: right;">D 10%</th>
+<th style="text-align: right;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1. Pre-commit evidence-sufficiency gate</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;"><strong>89.0</strong></td>
+</tr>
+<tr class="even">
+<td>2. Typed executable claim contracts</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">74</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;"><strong>85.0</strong></td>
+</tr>
+<tr class="odd">
+<td>3. Evaluation provenance and replay ledger</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">76</td>
+<td style="text-align: right;">72</td>
+<td style="text-align: right;">79</td>
+<td style="text-align: right;"><strong>84.8</strong></td>
+</tr>
+<tr class="even">
+<td>4. Deployment-grounded simulated control-eval lab</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">51</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;"><strong>80.7</strong></td>
+</tr>
+<tr class="odd">
+<td>5. Adaptive behavior-based social-engineering suite</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">83</td>
+<td style="text-align: right;">77</td>
+<td style="text-align: right;">58</td>
+<td style="text-align: right;">62</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;"><strong>76.9</strong></td>
+</tr>
+<tr class="even">
+<td>6. Fail-closed identified-range monitor</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;">87</td>
+<td style="text-align: right;">83</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;"><strong>76.5</strong></td>
+</tr>
+<tr class="odd">
+<td>7. Simulator-only approval for consequential changes</td>
+<td>Deprioritize for Now</td>
+<td style="text-align: right;">65</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;"><strong>49.5</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Effort: S = analytical spike; M = cross-functional prototype; L =
+several services/teams; XL = major program. Horizons indicate when
+validation could begin after prerequisites. Internal incident history,
+tool surfaces, data classes, business value, existing controls, and risk
+appetite could materially reorder the list.</p>
+<h2 id="prototype-soon">Prototype Soon</h2>
+<h3 id="1-pre-commit-evidence-sufficiency-gate">1. Pre-commit
+evidence-sufficiency gate</h3>
+<ul>
+<li><strong>Category:</strong> Safety &amp; Governance; Agentic AI;
+Reasoning &amp; Planning.</li>
+<li><strong>Research signal and supporting paper(s):</strong> P1 shows
+full-evidence safety, omission resistance, and useful recovery are
+distinct; recovery access reduces unsafe execution for all ten models,
+yet high completion often occurs without verification. W2 shows that
+unobserved deployment truth cannot be reconstructed from the same
+offline record.</li>
+<li><strong>Evidence label:</strong> Paper Fact for results; Enterprise
+Inference for the gate; experiment thresholds are Independent
+Analysis.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong> agents
+may act when permission-critical, policy-critical, or state-critical
+evidence is missing, stale, or unverified.</li>
+<li><strong>Proposed future capability and how it would work at a high
+level:</strong> every consequential tool call declares required
+evidence; a model-independent pre-commit hook verifies identity,
+provenance, freshness, completeness, and policy fit; missing evidence
+triggers retrieval, abstention, or human escalation; permitted twins
+test that the gate does not collapse into blanket refusal.</li>
+<li><strong>Likely architectural placement:</strong> orchestration,
+model gateway, security/governance, retrieval/knowledge, and
+human-review layer.</li>
+<li><strong>Expected business value:</strong> risk reduction,
+reliability, quality, customer trust, and safer automation speed.</li>
+<li><strong>Technical value:</strong> separates task reasoning from
+permission evidence and makes evidence use observable at the actual
+action boundary.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> strong
+controlled benchmark signal but synthetic tasks, one rollout per
+condition, and no public implementation. Ready only for an isolated
+prototype.</li>
+<li><strong>Confidence:</strong> High for the need; Moderate for
+generalizable thresholds.</li>
+<li><strong>Estimated implementation horizon:</strong> Now.</li>
+<li><strong>Estimated effort:</strong> M.</li>
+<li><strong>Dependencies and prerequisites:</strong> typed tool effects;
+identity propagation; policy ownership; authoritative evidence registry;
+source freshness; evidence provenance; escalation workflow; synthetic
+paired tasks.</li>
+<li><strong>Key technical, security, governance, privacy, operational,
+and adoption risks:</strong> false refusal; stale or poisoned sources;
+evidence leakage; race conditions after checking; latency; conflicting
+policy; reviewer overload; users assuming a passed gate guarantees
+safety.</li>
+<li><strong>Build / Buy / Partner recommendation:</strong> Build the
+enterprise evidence contract and paired evaluator; buy retrieval
+components only after matched tests; partner with identity, security,
+and domain-policy owners.</li>
+<li><strong>Minimum reversible validation experiment before
+implementation:</strong> 100 synthetic prohibited/permitted task pairs
+across three disposable tool classes; suppress one decisive fact, expose
+it through a read-only audit source, and block all real endpoints.</li>
+<li><strong>Success metrics and stop conditions:</strong> ≥95%
+prohibited-action block after critical omission, ≥90% permitted
+completion after verified recovery, 100% provenance capture, and bounded
+p95 latency. Stop on any real write, identity bypass, cross-tenant
+evidence exposure, or material blanket-refusal behavior.</li>
+<li><strong>Trigger that would justify moving the enhancement from
+research/watchlist into an implementation roadmap:</strong> independent
+internal reproduction across three workflows, an approved
+evidence/policy owner model, stable model-version results, and measured
+incremental risk reduction over existing authorization checks.</li>
+<li><strong>Additional internal enterprise context required:</strong>
+consequential actions, authoritative sources, data classifications,
+identity model, error-cost asymmetry, latency SLA, and human escalation
+capacity.</li>
+</ul>
+<h3 id="2-typed-executable-claim-contracts">2. Typed executable claim
+contracts</h3>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability; Data
+&amp; Knowledge Infrastructure; AI Software Engineering.</li>
+<li><strong>Research signal and supporting paper(s):</strong> P3 binds
+claim semantics before checking; the deterministic checker exposes
+553/553 seeded faults and two author-confirmed numerical errors, while
+full binding reaches only 54/243 claims.</li>
+<li><strong>Evidence label:</strong> Paper Fact for results; Enterprise
+Inference for enterprise analytical claims.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong> KPI,
+model-evaluation, cost, quality, and compliance claims can change scope
+or tolerance during review, and prose judges may miss straightforward
+contradictions.</li>
+<li><strong>Proposed future capability and how it would work at a high
+level:</strong> claim owners choose a typed relation, scope, cohort,
+aggregation, numeric policy, and evidence bindings; a deterministic
+checker returns holds, violated, or inconclusive with a replayable
+witness; unbindable claims stay explicitly unverified.</li>
+<li><strong>Likely architectural placement:</strong> evaluation, data
+platform, developer platform, observability, and human-review
+layer.</li>
+<li><strong>Expected business value:</strong> quality, reliability,
+auditability, faster review, reduced rework, and risk reduction.</li>
+<li><strong>Technical value:</strong> freezes the question before seeing
+the answer and separates semantic declaration from arithmetic
+execution.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> public
+MIT code and strong seeded-fault evidence; limited new-domain coverage
+and minimal human review. Ready for narrow offline use.</li>
+<li><strong>Confidence:</strong> High for arithmetic/comparative claims;
+Low for universal claim verification.</li>
+<li><strong>Estimated implementation horizon:</strong> Now.</li>
+<li><strong>Estimated effort:</strong> M.</li>
+<li><strong>Dependencies and prerequisites:</strong> typed metrics;
+versioned evidence; deterministic arithmetic; claim ownership; reviewer
+independence; tolerance policy; provenance storage; inconclusive
+handling.</li>
+<li><strong>Key technical, security, governance, privacy, operational,
+and adoption risks:</strong> omitted scope; specification gaming; stale
+evidence; false confidence from a passing property; schema burden;
+reviewer correlation; leakage of sensitive analytics.</li>
+<li><strong>Build / Buy / Partner recommendation:</strong> Evaluate the
+MIT library as a reference; build domain declarations and evidence
+adapters; partner with analytics, audit, finance, risk, or science
+owners for faithful scope.</li>
+<li><strong>Minimum reversible validation experiment before
+implementation:</strong> encode 25 recurring non-sensitive claims with
+at least five seeded scope/arithmetic defects and replay against frozen
+evidence; do not alter reports or decisions.</li>
+<li><strong>Success metrics and stop conditions:</strong> 100% detection
+of seeded critical defects, ≥80% reviewer agreement on declarations,
+zero silent widening of tolerance, explicit inconclusive status, and
+complete replay. Stop if domain reviewers cannot agree on scope or
+binding coverage is too low to affect decisions.</li>
+<li><strong>Trigger that would justify moving the enhancement from
+research/watchlist into an implementation roadmap:</strong> prospective
+detection of material defects beyond existing review, repeatable
+declarations on untouched claims, acceptable authoring cost, and
+accountable claim owners.</li>
+<li><strong>Additional internal enterprise context required:</strong>
+recurring decision claims, evidence systems, materiality thresholds,
+approval workflow, retention policy, and acceptable
+false-alarm/inconclusive rates.</li>
+</ul>
+<h2 id="prepare-foundations">Prepare Foundations</h2>
+<h3 id="3-evaluation-provenance-and-replay-ledger">3. Evaluation
+provenance and replay ledger</h3>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability; Data
+&amp; Knowledge Infrastructure; MLOps &amp; Platform.</li>
+<li><strong>Research signal and supporting paper(s):</strong> P1 aligns
+worlds, evidence masks, and actions; P2 aligns simulated/executed task
+pairs and model roles; P3 replays declarations, evidence, and witnesses;
+W2 demonstrates opposite truth behind identical public records.</li>
+<li><strong>Evidence label:</strong> Enterprise Inference grounded in
+all five reviewed papers.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong>
+evaluation results cannot be diagnosed when model aliases, prompts,
+evidence, policies, tools, identities, environments, and judges
+change.</li>
+<li><strong>Proposed future capability and how it would work at a high
+level:</strong> store a tamper-evident envelope containing task/evidence
+hashes, identity and policy context, model/prompt/tool versions,
+simulator/judge roles, randomness, proposed effects, verdicts, and
+unresolved information; replay deterministic parts and flag
+irreproducible components.</li>
+<li><strong>Likely architectural placement:</strong> observability,
+evaluation, model gateway, orchestration, data platform, and
+security/governance.</li>
+<li><strong>Expected business value:</strong> reliability, faster
+incident analysis, auditability, cost control, and evaluation
+velocity.</li>
+<li><strong>Technical value:</strong> separates evidence drift, model
+drift, judge drift, simulator error, and policy change.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> lineage
+and immutable logging are mature patterns; the exact agent-evaluation
+envelope is not standardized. Foundation design can begin now.</li>
+<li><strong>Confidence:</strong> High.</li>
+<li><strong>Estimated implementation horizon:</strong> 3–6 months.</li>
+<li><strong>Estimated effort:</strong> L.</li>
+<li><strong>Dependencies and prerequisites:</strong> event schema;
+content hashing; identity-aware access; model/prompt registry;
+tool/effect schema; secure retention; deletion policy; replay runner;
+cost telemetry.</li>
+<li><strong>Key technical, security, governance, privacy, operational,
+and adoption risks:</strong> sensitive over-retention; secrets in
+traces; residency conflicts; replay under changed permissions; storage
+cost; false assumption that replayed computation reproduces external
+state.</li>
+<li><strong>Build / Buy / Partner recommendation:</strong> Build the
+minimal cross-vendor envelope and replay contract; buy compatible
+storage/observability components; partner with privacy, records,
+identity, and security owners.</li>
+<li><strong>Minimum reversible validation experiment before
+implementation:</strong> record and replay 200 public/synthetic runs
+across retrieval, tool use, simulation, and deterministic checks; redact
+secret-like fields before persistence.</li>
+<li><strong>Success metrics and stop conditions:</strong> ≥99%
+required-field completeness, exact deterministic replay, explicit
+non-replayable state, zero unauthorized trace access, and bounded
+storage. Stop on deletion/residency conflict, credential capture, or
+ambiguous principal ownership.</li>
+<li><strong>Trigger that would justify moving the enhancement from
+research/watchlist into an implementation roadmap:</strong> repeated
+eval/incident disagreements become attributable only with the ledger,
+and governance approves field-level collection, retention, and
+access.</li>
+<li><strong>Additional internal enterprise context required:</strong>
+existing tracing stack, identity boundaries, regulated data, model
+inventory, retention/deletion obligations, incident process, and audit
+needs.</li>
+</ul>
+<h3 id="5-adaptive-behavior-based-social-engineering-suite">5. Adaptive
+behavior-based social-engineering suite</h3>
+<ul>
+<li><strong>Category:</strong> AI Security; Agentic AI; Human-AI
+Workflow.</li>
+<li><strong>Research signal and supporting paper(s):</strong> W1 finds
+public-corpus safety can coexist with detection below 10% and compliance
+above 45% under a universal adaptive skill for four of nine additional
+agents; P2 supports evaluation against task-specific adversarial
+strategies rather than a mismatched control setting.</li>
+<li><strong>Evidence label:</strong> Paper Fact for study results;
+Enterprise Inference for the proposed internal suite; dual-use
+Uncertainty applies.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong> email
+and communication agents may pass static phishing corpora yet comply
+with attacks adapted to their action interface and workflow
+language.</li>
+<li><strong>Proposed future capability and how it would work at a high
+level:</strong> generate fictional, non-deliverable messages under
+locked constraints; evaluate both detection and proposed behavior; vary
+workflow-continuation, authority, and urgency cues; keep generation,
+target agent, evaluator, and outbound network isolated.</li>
+<li><strong>Likely architectural placement:</strong> evaluation, AI
+security, agent layer, human-review layer, and developer platform.</li>
+<li><strong>Expected business value:</strong> risk reduction, customer
+trust, security assurance, and safer product differentiation.</li>
+<li><strong>Technical value:</strong> tests adaptive cross-agent
+transfer and distinguishes missed detection from unsafe compliance.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+informative preprint with described but unlinked release; synthetic
+single-message results and model-mediated labels. Foundation and policy
+work only.</li>
+<li><strong>Confidence:</strong> Moderate.</li>
+<li><strong>Estimated implementation horizon:</strong> 3–6 months.</li>
+<li><strong>Estimated effort:</strong> L.</li>
+<li><strong>Dependencies and prerequisites:</strong> isolated mail
+sandbox; fictional identities/domains; placeholder-secret enforcement;
+no-send controls; red-team authorization; content handling policy;
+behavioral scorer; incident escalation.</li>
+<li><strong>Key technical, security, governance, privacy, operational,
+and adoption risks:</strong> dual-use leakage; accidental delivery;
+real-brand impersonation; evaluator error; overfitting;
+psychological-content governance; model-provider policy conflicts.</li>
+<li><strong>Build / Buy / Partner recommendation:</strong> Partner with
+the security red team and communications owners; build only a
+constrained defensive harness after artifact/licensing review; do not
+publish generated attack corpora.</li>
+<li><strong>Minimum reversible validation experiment before
+implementation:</strong> 50 synthetic messages in a network-isolated
+inbox simulator, using only fictional entities and nonfunctional
+placeholders; score proposed actions, not external execution.</li>
+<li><strong>Success metrics and stop conditions:</strong> zero outbound
+delivery, zero real credentials/brands, repeatable behavior across three
+batches, detection and compliance reported separately, and human audit
+of unsafe cases. Stop on content escape, unsafe reuse, or inability to
+distinguish compliance from harmless drafting.</li>
+<li><strong>Trigger that would justify moving the enhancement from
+research/watchlist into an implementation roadmap:</strong> public
+artifacts validate, independent internal batches reproduce
+static-versus-adaptive gaps, and a security owner approves operating
+controls and remediation paths.</li>
+<li><strong>Additional internal enterprise context required:</strong>
+communication-agent scope, outbound permissions, threat model,
+acceptable content, red-team policy, customer impact, and incident
+response.</li>
+</ul>
+<h2 id="monitor-for-maturity">Monitor for Maturity</h2>
+<h3 id="4-deployment-grounded-simulated-control-eval-lab">4.
+Deployment-grounded simulated control-eval lab</h3>
+<ul>
+<li><strong>Category:</strong> AI Security; Evaluation &amp;
+Observability; Agentic AI.</li>
+<li><strong>Research signal and supporting paper(s):</strong> P2 reports
+3.6-point safety RMSE versus 10.1 from BashArena at 5% audit and
+improved held-out monitor briefing, but validates chiefly on LinuxArena
+and assumes a trusted simulator.</li>
+<li><strong>Evidence label:</strong> Paper Fact for results; Enterprise
+Inference for an internal lab; substantial Uncertainty for deployment
+transfer.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong>
+executing adversarial behavior in production is unsafe, while a separate
+control environment may not match deployment tasks, permissions, or
+attack opportunities.</li>
+<li><strong>Proposed future capability and how it would work at a high
+level:</strong> simulate tool responses from read-only code/state
+snapshots and honest traces; keep attacker actions non-executable;
+compare simulation to held-out sandbox execution; use discrepancies to
+calibrate risk and improve monitors, never to self-authorize
+deployment.</li>
+<li><strong>Likely architectural placement:</strong> evaluation,
+security/governance, orchestration, observability, and
+infrastructure.</li>
+<li><strong>Expected business value:</strong> safer red teaming, risk
+reduction, better monitor design, and strategic differentiation.</li>
+<li><strong>Technical value:</strong> measures deployment-specific
+attack strategies without performing harmful actions in the target
+environment.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> strong
+single-arena evidence, no public implementation, open trust and
+optimization risks. Monitor rather than roadmap.</li>
+<li><strong>Confidence:</strong> Moderate for research value; Low for
+certification.</li>
+<li><strong>Estimated implementation horizon:</strong> 6–12 months.</li>
+<li><strong>Estimated effort:</strong> XL.</li>
+<li><strong>Dependencies and prerequisites:</strong> isolated
+environment snapshots; reference traces; red-team policy;
+simulator/attacker/judge separation; execution-ground-truth sandbox;
+success scorers; collusion tests; secret redaction; cost controls.</li>
+<li><strong>Key technical, security, governance, privacy, operational,
+and adoption risks:</strong> secret exposure; simulation-only exploits;
+concealed attacks; collusion; shared blind spots; inaccurate success
+judge; snapshot staleness; false safety assurance.</li>
+<li><strong>Build / Buy / Partner recommendation:</strong> Partner with
+specialized control-evaluation researchers; build only a small
+independent validation cell after internal sandbox ground truth
+exists.</li>
+<li><strong>Minimum reversible validation experiment before
+implementation:</strong> 20 public/synthetic task pairs with two
+simulated and two executed sandbox runs each; prohibit production
+credentials, networks, and write paths.</li>
+<li><strong>Success metrics and stop conditions:</strong> pre-registered
+RMSE/behavioral-transfer thresholds, no harmful execution outside
+sandbox, stable calibration across unseen tasks, and
+simulator-discrepancy reporting. Stop if simulation underestimates any
+seeded critical attack family or optimization widens transfer
+error.</li>
+<li><strong>Trigger that would justify moving the enhancement from
+research/watchlist into an implementation roadmap:</strong> independent
+multi-domain validation, public artifact reproduction, trusted-simulator
+safeguards, held-out optimization transfer, and clear incremental value
+over a conventional sandbox.</li>
+<li><strong>Additional internal enterprise context required:</strong>
+deployable task distributions, critical side effects, snapshot
+permissions, red-team maturity, model separation, success definitions,
+and risk tolerance.</li>
+</ul>
+<h3 id="6-fail-closed-identified-range-monitor">6. Fail-closed
+identified-range monitor</h3>
+<ul>
+<li><strong>Category:</strong> Safety &amp; Governance; Evaluation &amp;
+Observability; Human-AI Workflow.</li>
+<li><strong>Research signal and supporting paper(s):</strong> W2 proves
+identical offline evidence cannot identify opposite deployment outcomes
+and shows fresh group-labelled monitoring can decide favorable synthetic
+settings while 14/18 controlled settings remain unresolved by 20,000
+observations.</li>
+<li><strong>Evidence label:</strong> Paper Fact for theorem
+instantiation and synthetic experiments; Enterprise Inference for
+monitoring; Uncertainty for production assumptions.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong>
+approval processes may force a yes/no answer even when evidence supports
+both safe and harmful outcomes, especially for rare groups or missing
+outcomes.</li>
+<li><strong>Proposed future capability and how it would work at a high
+level:</strong> represent a compatible outcome range; return deploy only
+when every declared group's upper harm bound is safe, hold when any
+lower bound is harmful, cannot_determine while intervals cross the
+threshold, and unsupported on declared bias/shift.</li>
+<li><strong>Likely architectural placement:</strong> evaluation,
+observability, security/governance, data platform, and human-review
+layer.</li>
+<li><strong>Expected business value:</strong> risk reduction, more
+honest governance, protected-group visibility, and reduced false
+approval.</li>
+<li><strong>Technical value:</strong> makes identifiability and missing
+information explicit instead of hiding them in a point estimate.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> public
+reproducible synthetic benchmark and standard statistical machinery;
+assumptions are too strong for direct production reuse.</li>
+<li><strong>Confidence:</strong> High for the impossibility boundary;
+Low for a universal monitor.</li>
+<li><strong>Estimated implementation horizon:</strong> 6–12 months.</li>
+<li><strong>Estimated effort:</strong> L.</li>
+<li><strong>Dependencies and prerequisites:</strong> declared
+groups/outcomes; privacy-preserving labels; stable sampling model;
+missingness analysis; shift detection; threshold ownership; human
+decision process; benefit/harm tradeoff.</li>
+<li><strong>Key technical, security, governance, privacy, operational,
+and adoption risks:</strong> sensitive-group handling;
+missing-not-at-random data; group omission; target shift; indefinite
+abstention; delayed benefits; gaming of thresholds; misreading a
+group-harm check as complete safety.</li>
+<li><strong>Build / Buy / Partner recommendation:</strong> Partner with
+statistics, risk, privacy, and domain governance; reproduce the MIT
+benchmark, but build new monitors only for explicitly justified sampling
+models.</li>
+<li><strong>Minimum reversible validation experiment before
+implementation:</strong> replay one historical or synthetic decision
+with prespecified groups and injected missingness/shift; produce
+advisory statuses only.</li>
+<li><strong>Success metrics and stop conditions:</strong> zero seeded
+harmful approvals, correct unsupported status on declared bias/shift,
+calibrated interval coverage in simulation, and explicit non-coverage.
+Stop if assumptions cannot be audited or group labels create
+unacceptable privacy risk.</li>
+<li><strong>Trigger that would justify moving the enhancement from
+research/watchlist into an implementation roadmap:</strong> prospective
+data validate sampling assumptions, outcomes arrive soon enough to guide
+decisions, and governance accepts cannot_determine without unsafe
+override.</li>
+<li><strong>Additional internal enterprise context required:</strong>
+regulated groups, consent and privacy basis, outcome latency, decision
+thresholds, missingness mechanisms, business benefit, and accountable
+override authority.</li>
+</ul>
+<h2 id="deprioritize-for-now">Deprioritize for Now</h2>
+<h3 id="7-simulator-only-approval-for-consequential-changes">7.
+Simulator-only approval for consequential changes</h3>
+<ul>
+<li><strong>Category:</strong> Safety &amp; Governance; AI Security;
+Other.</li>
+<li><strong>Research signal and supporting paper(s):</strong> P2 shows
+useful simulation transfer but explicitly assumes a trusted simulator
+and lacks robustness under long optimization; W2 shows unobserved
+deployment truth cannot be inferred from an unchanged offline
+record.</li>
+<li><strong>Evidence label:</strong> Independent Analysis based on Paper
+Facts and Uncertainty.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong>
+pressure to replace costly executed validation and human governance with
+a fast simulated safety score.</li>
+<li><strong>Proposed future capability and how it would work at a high
+level:</strong> a simulator would unilaterally approve high-impact agent
+or policy changes without held-out execution, fresh outcomes, or
+accountable review.</li>
+<li><strong>Likely architectural placement:</strong> security/governance
+and evaluation.</li>
+<li><strong>Expected business value:</strong> apparent speed and lower
+test cost.</li>
+<li><strong>Technical value:</strong> single automated gate, but with no
+credible assurance boundary under current evidence.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Low. No
+reviewed paper supports simulator-only production authorization.</li>
+<li><strong>Confidence:</strong> High that it should be
+deprioritized.</li>
+<li><strong>Estimated implementation horizon:</strong> 12+ months.</li>
+<li><strong>Estimated effort:</strong> XL.</li>
+<li><strong>Dependencies and prerequisites:</strong> multi-domain
+calibrated simulation; independent execution evidence;
+untrusted-simulator controls; shift detection; accountable human
+authority; incident rollback.</li>
+<li><strong>Key technical, security, governance, privacy, operational,
+and adoption risks:</strong> false safety, collusion, model monoculture,
+hidden state, simulation overfitting, regulatory non-compliance,
+catastrophic approval error.</li>
+<li><strong>Build / Buy / Partner recommendation:</strong> Do not build
+or buy as an approval authority. Use simulation only as advisory
+evidence inside a broader assurance case.</li>
+<li><strong>Minimum reversible validation experiment before
+implementation:</strong> none in production; compare simulator advice
+with sandbox execution and fresh monitoring only.</li>
+<li><strong>Success metrics and stop conditions:</strong> promotion
+would require stable multi-domain held-out transfer under adversarial
+optimization and zero critical underestimation in pre-registered tests.
+Stop immediately on any simulator-approved seeded critical failure.</li>
+<li><strong>Trigger that would justify moving the enhancement from
+research/watchlist into an implementation roadmap:</strong> a body of
+independent evidence establishes reliable transfer, non-collusion, shift
+handling, and accountable approval across the enterprise's actual risk
+domains.</li>
+<li><strong>Additional internal enterprise context required:</strong>
+full risk taxonomy, approval authority, regulatory duties, deployment
+environments, incident tolerance, and independent validation
+capacity.</li>
+</ul>
+<h1 id="enterprise-ai-architecture-implications">Enterprise AI
+Architecture Implications</h1>
+<p><strong>Independent Analysis.</strong> Over 12–24 months, the
+recommended options imply a shift from a model-centric agent stack to an
+<strong>evidence-identification-and-effects control plane</strong>. The
+model proposes; separate services determine whether the decision is
+identifiable, bind evidence and policy, simulate or test when
+appropriate, authorize the effect, and retain a replayable record.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Shared foundation</th>
+<th>Unlocks</th>
+<th>Architectural implication</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Model/tool gateway with typed effects</td>
+<td>1, 4, 5, 7</td>
+<td>Every action declares reads, writes, external effects, principal,
+required evidence, risk tier, and reversibility</td>
+</tr>
+<tr class="even">
+<td>Context/evidence service</td>
+<td>1, 2, 3, 6</td>
+<td>Evidence objects carry authority, valid time, provenance, access
+policy, hashes, and scope</td>
+</tr>
+<tr class="odd">
+<td>Evaluation infrastructure</td>
+<td>1, 2, 4, 5, 6</td>
+<td>Paired tasks, held-out execution, seeded faults, adaptive attacks,
+and abstention are first-class test modes</td>
+</tr>
+<tr class="even">
+<td>Observability and cost telemetry</td>
+<td>1–6</td>
+<td>Capture evidence acquisition, simulator/judge roles, tool decisions,
+uncertainty, latency, tokens, and review outcomes</td>
+</tr>
+<tr class="odd">
+<td>Policy enforcement and identity</td>
+<td>1, 3, 5, 6</td>
+<td>Principal and authorization context propagate through retrieval,
+simulation, checking, monitoring, and human escalation</td>
+</tr>
+<tr class="even">
+<td>Data provenance and replay</td>
+<td>1–6</td>
+<td>A decision can be reconstructed without assuming current models,
+prompts, indexes, or policies are unchanged</td>
+</tr>
+<tr class="odd">
+<td>Agent orchestration with pre/post hooks</td>
+<td>1, 4, 5</td>
+<td>Pre-commit evidence gates and post-action verification remain
+model-independent and composable</td>
+</tr>
+<tr class="even">
+<td>Human-review controls</td>
+<td>1, 2, 5, 6, 7</td>
+<td>Reviewers see the declaration, evidence boundary, proposed effect,
+uncertainty, and machine witness—not just fluent prose</td>
+</tr>
+<tr class="odd">
+<td>Experiment infrastructure</td>
+<td>all</td>
+<td>Public/synthetic, shadow, sandbox, canary, holdback, replay, and
+rollback modes keep research validation reversible</td>
+</tr>
+</tbody>
+</table>
+<p>The shared foundation should precede sophisticated guards. Without
+identity, provenance, evidence contracts, and replay, a simulator or
+judge can add confidence without adding knowledge. A practical sequence
+is: define trace/effect schemas; build read-only paired and declarative
+evaluators; establish sandbox ground truth; then test narrow controls
+against existing baselines.</p>
+<p>No paper verifies the enterprise's current architecture, vendor
+stack, data platform, security posture, governance maturity, or
+staffing. Those facts are required before any implementation
+decision.</p>
+<h1 id="implementation-priorities">Implementation priorities</h1>
+<h2 id="next-30-days">Next 30 days</h2>
+<ol type="1">
+<li>Inventory consequential agent actions and annotate the evidence and
+principal required before commit.</li>
+<li>Select 25 recurring quantitative claims and identify which can be
+represented as typed properties.</li>
+<li>Define a minimal replay envelope: task/evidence hashes, identity,
+policy, model/prompt/tool versions, randomness, proposed effect,
+verdict, and unresolved information.</li>
+<li>Build 100 synthetic prohibited/permitted action pairs and five
+seeded claim defects; no production write authority.</li>
+</ol>
+<h2 id="days-3160">Days 31–60</h2>
+<ol type="1">
+<li>Run the evidence-sufficiency gate and measure unsafe commits,
+permitted completion, recovery, latency, and refusal.</li>
+<li>Run claim contracts in shadow mode and double-review declarations
+before comparing verdicts.</li>
+<li>Replay 200 synthetic/public traces and test field-level access,
+redaction, retention, and deletion.</li>
+<li>Keep simulated attacks and phishing content in disposable,
+non-networked environments under security ownership.</li>
+</ol>
+<h2 id="days-6190">Days 61–90</h2>
+<ol type="1">
+<li>Compare new controls with current authorization, code review,
+analytical review, and sandbox testing—not with a no-control straw
+man.</li>
+<li>Quantify incremental critical defects caught, false refusals,
+inconclusive cases, review time, p95 latency, and cost.</li>
+<li>Decide whether provenance/replay should become a shared platform
+foundation.</li>
+<li>Do not put simulator-only approval, adaptive phishing generation, or
+a group-harm monitor on a production roadmap until their explicit
+triggers are met.</li>
+</ol>
+<h1 id="knowledge-reinforcement">Knowledge reinforcement</h1>
+<h2 id="five-questions-a-review-board-should-ask">Five questions a
+review board should ask</h2>
+<ol type="1">
+<li><strong>Does the evidence available identify the decision, or are
+both safe and harmful outcomes still compatible with it?</strong></li>
+<li><strong>Did the agent retrieve the decisive fact and use it before
+the consequential action?</strong></li>
+<li><strong>Was the claim's scope, comparison, tolerance, and evidence
+binding fixed before the verdict?</strong></li>
+<li><strong>Was a simulation calibrated against held-out execution on
+the relevant distribution and under optimization?</strong></li>
+<li><strong>What must remain inconclusive or unsupported, and who is
+allowed to override that state?</strong></li>
+</ol>
+<h2 id="decision-rules-to-retain">Decision rules to retain</h2>
+<ul>
+<li>Evidence access is not evidence use.</li>
+<li>High permitted-task completion can reward action without
+verification.</li>
+<li>A deterministic checker is only as faithful as its declaration and
+evidence binding.</li>
+<li>A realistic simulation is not necessarily a control-faithful
+simulation.</li>
+<li>An offline audit cannot recover deployment truth that is absent from
+its observation boundary.</li>
+<li>Zero observed failures on a fixed synthetic panel is not zero
+risk.</li>
+<li>New controls advance only through isolated, reversible, measurable
+experiments with explicit stop conditions.</li>
+</ul>
+<h1 id="source-and-artifact-register">Source and artifact register</h1>
+<table>
+<thead>
+<tr class="header">
+<th>ID</th>
+<th>Primary paper</th>
+<th>Artifact status at review</th>
+<th>License evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>P1</td>
+<td><a
+href="https://arxiv.org/abs/2610.31650v1">arXiv:2610.31650v1</a></td>
+<td>No public code/data link found in paper or record</td>
+<td>arXiv non-exclusive distribution license</td>
+</tr>
+<tr class="even">
+<td>P2</td>
+<td><a
+href="https://arxiv.org/abs/2610.31593v1">arXiv:2610.31593v1</a></td>
+<td>No public code/data link found in paper or record</td>
+<td>Paper CC BY 4.0</td>
+</tr>
+<tr class="odd">
+<td>P3</td>
+<td><a
+href="https://arxiv.org/abs/2610.30495v1">arXiv:2610.30495v1</a></td>
+<td>Public code, schemas, tests, docs, plugins, and workflows</td>
+<td>Repository MIT; paper CC BY 4.0</td>
+</tr>
+<tr class="even">
+<td>W1</td>
+<td><a
+href="https://arxiv.org/abs/2610.31404v1">arXiv:2610.31404v1</a></td>
+<td>Release described; no public repository link found; raw phishing
+corpora intentionally withheld</td>
+<td>Paper CC BY 4.0; future artifact license unverified</td>
+</tr>
+<tr class="odd">
+<td>W2</td>
+<td><a
+href="https://arxiv.org/abs/2610.31130v1">arXiv:2610.31130v1</a></td>
+<td>Public source, scorers, data, configs, tests, results, and
+reproduction commands</td>
+<td>Repository/dataset MIT; paper CC BY 4.0</td>
+</tr>
+</tbody>
+</table>
+<h2 id="evidence-boundaries">Evidence boundaries</h2>
+<p>All paper metrics are <strong>Paper Facts</strong>—author-reported
+and not independently replicated here. Artifact observations describe
+what was visible at review. “Available,” “released,” “licensed,”
+“accepted,” and model/version names are stated only where primary
+evidence supported them. Enterprise recommendations are inference or
+independent analysis and require internal validation. No benchmark
+result, preprint, workshop acceptance, repository, or priority score is
+a production deployment recommendation.</p></main></div>
+<footer>AI Research Intelligence Brief · October 23, 2026 · Research options, not deployment approval.</footer>
+<div class="toolbar"><button onclick="window.print()" aria-label="Print report">Print</button><button id="top" aria-label="Back to top">↑ Top</button></div>
+<script>
+const p=document.getElementById('progress');addEventListener('scroll',()=>{const h=document.documentElement;p.style.width=((h.scrollTop/(h.scrollHeight-h.clientHeight))*100)+'%'});document.getElementById('top').onclick=()=>scrollTo({top:0,behavior:'smooth'});
+document.querySelectorAll('main h3').forEach(h=>{if(/^\d+\./.test(h.textContent))h.setAttribute('data-backlog','true')});
+</script>
+</body></html>
