@@ -3,12 +3,32 @@
     "title": "AI Research Intelligence",
     "url": "https://ygeszvain.github.io/ai-research-intelligence",
     "description": "Evidence-grounded daily AI and machine-learning research intelligence.",
-    "generated_at_utc": "2026-10-24T09:02:29.880675Z",
-    "report_count": 76,
-    "latest_report": "2026-10-24",
-    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-10-24.html"
+    "generated_at_utc": "2026-10-25T09:10:17.751453Z",
+    "report_count": 77,
+    "latest_report": "2026-10-25",
+    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-10-25.html"
   },
   "reports": [
+    {
+      "date": "2026-10-25",
+      "date_display": "October 25, 2026",
+      "title": "AI Research Intelligence Brief — October 25, 2026",
+      "excerpt": "Three deep papers and two Watchlist papers examine certified agent execution, cost-aware abstention, memory-governance failures, contestable data decisions, and the evidence behind recursive self-improvement claims.",
+      "topics": [
+        "Agentic AI",
+        "Reasoning & Planning",
+        "Memory & Context",
+        "Evaluation & Observability",
+        "Safety & Governance",
+        "MLOps & Platform",
+        "Data & Knowledge Infrastructure",
+        "Human-AI Workflow"
+      ],
+      "path": "reports/2026-10-25.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-10-25.html",
+      "size_bytes": 86654,
+      "sha256": "17bb5766fdf0fcae037a9a2b6b291eab38f64848763f20f56c1b4cd9f74ae205"
+    },
     {
       "date": "2026-10-24",
       "date_display": "October 24, 2026",
