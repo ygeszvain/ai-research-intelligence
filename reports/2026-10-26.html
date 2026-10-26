@@ -1,0 +1,1557 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Evidence-grounded AI Research Intelligence Brief for October 26, 2026: model–harness interactions, near-target prompt injection, evidence-gated reasoning, asynchronous agents, composed-skill security, and nine enterprise options.">
+<meta name="report-date" content="2026-10-26">
+<meta name="research-window" content="2026-10-23T04:05:00-05:00/2026-10-26T04:05:00-05:00 America/Chicago">
+<meta name="deep-paper-count" content="3">
+<meta name="watchlist-count" content="2">
+<meta name="theme-color" content="#071321">
+<title>AI Research Intelligence Brief — October 26, 2026</title>
+<style>
+:root{--bg:#06111d;--panel:#0c1c2a;--panel2:#10283a;--text:#e9f2f8;--muted:#9fb6c6;--line:#2a465b;--cyan:#46dbc6;--gold:#f4c96b;--rose:#ff8f9b;--max:1180px;color-scheme:dark}
+@media(prefers-color-scheme:light){:root{--bg:#f4f7f8;--panel:#fff;--panel2:#edf4f7;--text:#102131;--muted:#526979;--line:#cddbe2;--cyan:#087f73;--gold:#9b6300;--rose:#b92b45;color-scheme:light}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 90% 0,rgba(70,219,198,.12),transparent 30rem),var(--bg);color:var(--text);font:16px/1.67 ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;overflow-x:hidden}a{color:var(--cyan);text-underline-offset:3px;overflow-wrap:anywhere}header{border-bottom:1px solid var(--line);background:linear-gradient(135deg,rgba(70,219,198,.09),rgba(244,201,107,.04));padding:54px 22px 34px}.hero{max-width:var(--max);margin:auto}.eyebrow{color:var(--cyan);text-transform:uppercase;letter-spacing:.15em;font-size:.76rem;font-weight:800}h1{font-size:clamp(2.2rem,6vw,4.7rem);line-height:.98;max-width:1000px;margin:.35rem 0 1rem;letter-spacing:-.055em}header p{max-width:900px;color:var(--muted);font-size:1.09rem}.chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}.chip{border:1px solid var(--line);border-radius:999px;padding:6px 11px;background:var(--panel);font-size:.8rem}.topbets{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}.bet{border:1px solid var(--line);background:var(--panel);border-radius:14px;padding:15px}.bet b{display:block;color:var(--gold);font-size:1.15rem}.layout{max-width:var(--max);margin:auto;display:grid;grid-template-columns:250px minmax(0,1fr);gap:34px;padding:30px 22px 80px}nav{position:sticky;top:16px;align-self:start;max-height:calc(100vh - 32px);overflow:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:14px}nav strong{display:block;margin:2px 8px 10px;color:var(--gold)}nav ul{list-style:none;margin:0;padding:0}nav a{display:block;color:var(--muted);text-decoration:none;padding:5px 8px;border-radius:7px;font-size:.83rem;line-height:1.25}nav a:hover{background:var(--panel2);color:var(--text)}main{min-width:0;overflow-x:hidden}main>h1{font-size:1.8rem;margin:2.6rem 0 1rem;padding-top:.7rem;border-top:1px solid var(--line);letter-spacing:-.02em}main>h1:first-child{margin-top:0}main h2{font-size:1.35rem;margin-top:2rem;color:var(--cyan)}main h3{font-size:1.08rem;color:var(--gold);margin-bottom:.45rem}p,li{max-width:88ch}blockquote{margin:1rem 0;padding:1rem 1.2rem;border-left:4px solid var(--gold);background:var(--panel);color:var(--muted)}table{display:block;width:100%;max-width:100%;overflow-x:auto;border-collapse:collapse;margin:1.25rem 0;background:var(--panel);font-size:.86rem}th,td{padding:10px 12px;border:1px solid var(--line);text-align:left;vertical-align:top}th{color:var(--gold);background:var(--panel2)}hr{border:0;border-top:1px solid var(--line)}main h3+ul,main h2+ul{border:1px solid var(--line);background:linear-gradient(135deg,var(--panel),var(--panel2));border-radius:14px;padding:15px 22px 15px 34px}main h3+ul li,main h2+ul li{margin:.5rem 0}.viz{border:1px solid var(--line);border-radius:16px;background:linear-gradient(135deg,var(--panel),var(--panel2));padding:20px;margin:1.5rem 0}.viz-title{color:var(--gold);font-weight:800;margin-bottom:14px}.flow-row{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:10px;align-items:center;margin:10px 0}.flow-node{border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center;background:var(--bg)}.flow-node.accent{border-color:var(--cyan);box-shadow:0 0 0 1px rgba(70,219,198,.12) inset}.flow-arrow{color:var(--cyan);font-weight:900}.flow-note{color:var(--muted);font-size:.9rem;margin-top:12px}.progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--cyan),var(--gold));width:0;z-index:9}.toolbar{position:fixed;right:18px;bottom:18px;display:flex;gap:8px}.toolbar button{border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:999px;padding:9px 12px;cursor:pointer;box-shadow:0 8px 30px rgba(0,0,0,.2)}.label{font-size:.75rem;color:var(--muted)}footer{border-top:1px solid var(--line);padding:24px;text-align:center;color:var(--muted)}
+@media(max-width:850px){.topbets{grid-template-columns:1fr}.layout{grid-template-columns:1fr}nav{position:relative;top:0;max-height:none}nav ul{columns:2}h1{font-size:2.65rem}.flow-row{grid-template-columns:1fr}.flow-arrow{transform:rotate(90deg);text-align:center}}
+@media(max-width:520px){header{padding-top:34px}.layout{padding:20px 14px 60px}nav ul{columns:1}table{display:block;overflow-x:auto}h1{font-size:2.25rem}}
+@media print{body{background:white;color:#111;font-size:11pt}header{padding:18px 0}.layout{display:block;padding:0}nav,.toolbar,.progress{display:none}a{color:#145c70}main>h1{break-before:page}main>h1:first-child{break-before:auto}table,.viz{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<header><div class="hero">
+<div class="eyebrow">AI Research Intelligence · Govern the interaction boundary</div>
+<h1>Agent reliability lives between the model and the next action.</h1>
+<p>October 26, 2026 briefing. Three deep papers examine model–harness interactions, near-target prompt injection, and evidence-gated analytical restraint. Two Watchlist papers cover asynchronous execution and composed-skill security.</p>
+<div class="chips"><span class="chip">3 deep papers</span><span class="chip">2 Watchlist</span><span class="chip">72-hour window</span><span class="chip">9 enterprise options</span><span class="chip">Research options, not deployment approval</span></div>
+<div class="topbets"><div class="bet"><span class="label">TOP BET 1 · PROTOTYPE SOON</span><b>87.7 · Qualification matrix</b><span>Evaluate the model–harness–task configuration.</span></div><div class="bet"><span class="label">TOP BET 2 · PROTOTYPE SOON</span><b>86.6 · Evidence gates</b><span>Let verified prerequisites control the next transition.</span></div><div class="bet"><span class="label">TOP BET 3 · PROTOTYPE SOON</span><b>86.1 · Near-target security</b><span>Test attacks that remain plausibly on task.</span></div></div>
+</div></header>
+<div class="layout"><nav><strong>Navigate</strong><ul>
+<li><a href="#executive-decision" id="toc-executive-decision">Executive
+decision</a>
+<ul>
+<li><a href="#top-3-future-bets" id="toc-top-3-future-bets">Top 3 Future
+Bets</a></li>
+</ul></li>
+<li><a href="#research-scope-and-selection-discipline"
+id="toc-research-scope-and-selection-discipline">Research scope and
+selection discipline</a>
+<ul>
+<li><a href="#evidence-labels" id="toc-evidence-labels">Evidence
+labels</a></li>
+<li><a href="#review-depth-and-scoring"
+id="toc-review-depth-and-scoring">Review depth and scoring</a></li>
+</ul></li>
+<li><a
+href="#deep-paper-1--when-agents-fail-model-or-harnesswhos-to-blame"
+id="toc-deep-paper-1--when-agents-fail-model-or-harnesswhos-to-blame">Deep
+paper 1 — When Agents Fail: Model or Harness—Who’s to Blame?</a>
+<ul>
+<li><a href="#what-the-paper-actually-does"
+id="toc-what-the-paper-actually-does">What the paper actually
+does</a></li>
+<li><a href="#quantitative-claim-trace"
+id="toc-quantitative-claim-trace">Quantitative claim trace</a></li>
+<li><a href="#prior-work-comparison"
+id="toc-prior-work-comparison">Prior-work comparison</a></li>
+<li><a href="#methodological-critique"
+id="toc-methodological-critique">Methodological critique</a></li>
+<li><a href="#reproducibility-and-enterprise-readiness"
+id="toc-reproducibility-and-enterprise-readiness">Reproducibility and
+enterprise readiness</a></li>
+</ul></li>
+<li><a href="#deep-paper-2--on-task-off-track"
+id="toc-deep-paper-2--on-task-off-track">Deep paper 2 — On Task, Off
+Track</a>
+<ul>
+<li><a href="#what-the-paper-actually-does-1"
+id="toc-what-the-paper-actually-does-1">What the paper actually
+does</a></li>
+<li><a href="#quantitative-claim-trace-1"
+id="toc-quantitative-claim-trace-1">Quantitative claim trace</a></li>
+<li><a href="#prior-work-comparison-1"
+id="toc-prior-work-comparison-1">Prior-work comparison</a></li>
+<li><a href="#methodological-critique-1"
+id="toc-methodological-critique-1">Methodological critique</a></li>
+<li><a href="#reproducibility-and-enterprise-readiness-1"
+id="toc-reproducibility-and-enterprise-readiness-1">Reproducibility and
+enterprise readiness</a></li>
+</ul></li>
+<li><a href="#deep-paper-3--dmaic-bench"
+id="toc-deep-paper-3--dmaic-bench">Deep paper 3 — DMAIC-Bench</a>
+<ul>
+<li><a href="#what-the-paper-actually-does-2"
+id="toc-what-the-paper-actually-does-2">What the paper actually
+does</a></li>
+<li><a href="#quantitative-claim-trace-2"
+id="toc-quantitative-claim-trace-2">Quantitative claim trace</a></li>
+<li><a href="#prior-work-comparison-2"
+id="toc-prior-work-comparison-2">Prior-work comparison</a></li>
+<li><a href="#methodological-critique-2"
+id="toc-methodological-critique-2">Methodological critique</a></li>
+<li><a href="#reproducibility-and-enterprise-readiness-2"
+id="toc-reproducibility-and-enterprise-readiness-2">Reproducibility and
+enterprise readiness</a></li>
+</ul></li>
+<li><a href="#watchlist" id="toc-watchlist">Watchlist</a>
+<ul>
+<li><a
+href="#async-rbench-benchmarking-asynchronous-task-execution-in-llm-agents"
+id="toc-async-rbench-benchmarking-asynchronous-task-execution-in-llm-agents">Async-RBench:
+Benchmarking Asynchronous Task Execution in LLM Agents</a></li>
+<li><a
+href="#knotscryer-detecting-insecure-compositions-of-clean-agent-skills"
+id="toc-knotscryer-detecting-insecure-compositions-of-clean-agent-skills">KnotScryer:
+Detecting Insecure Compositions of Clean Agent Skills</a></li>
+</ul></li>
+<li><a href="#cross-paper-synthesis"
+id="toc-cross-paper-synthesis">Cross-paper synthesis</a></li>
+<li><a href="#enterprise-ai-enhancement-backlog"
+id="toc-enterprise-ai-enhancement-backlog">Enterprise AI Enhancement
+Backlog</a>
+<ul>
+<li><a href="#prototype-soon" id="toc-prototype-soon">Prototype
+Soon</a></li>
+<li><a href="#prepare-foundations" id="toc-prepare-foundations">Prepare
+Foundations</a></li>
+<li><a href="#monitor-for-maturity"
+id="toc-monitor-for-maturity">Monitor for Maturity</a></li>
+<li><a href="#deprioritize-for-now"
+id="toc-deprioritize-for-now">Deprioritize for Now</a></li>
+</ul></li>
+<li><a href="#enterprise-ai-architecture-implications"
+id="toc-enterprise-ai-architecture-implications">Enterprise AI
+Architecture Implications</a></li>
+<li><a href="#implementation-priorities"
+id="toc-implementation-priorities">Implementation priorities</a>
+<ul>
+<li><a href="#next-30-days" id="toc-next-30-days">Next 30 days</a></li>
+<li><a href="#days-3190" id="toc-days-3190">Days 31–90</a></li>
+<li><a href="#explicitly-not-yet" id="toc-explicitly-not-yet">Explicitly
+not yet</a></li>
+</ul></li>
+<li><a href="#knowledge-reinforcement"
+id="toc-knowledge-reinforcement">Knowledge reinforcement</a>
+<ul>
+<li><a href="#five-checks-for-the-next-design-review"
+id="toc-five-checks-for-the-next-design-review">Five checks for the next
+design review</a></li>
+<li><a href="#retrieval-prompts" id="toc-retrieval-prompts">Retrieval
+prompts</a></li>
+</ul></li>
+<li><a href="#sources-and-verification-notes"
+id="toc-sources-and-verification-notes">Sources and verification
+notes</a></li>
+</ul></nav><main><h1 id="executive-decision">Executive decision</h1>
+<blockquote>
+<p><strong>Central signal — Independent Analysis.</strong> Enterprise
+agent reliability is an interaction property, not a model property. This
+edition finds three distinct failure surfaces at the boundary between a
+model and its operating environment: the same model can move sharply
+when the harness changes; a prompt injection can stay semantically near
+the authorized task while changing its outcome; and an agent can compute
+the disqualifying evidence correctly yet continue into a forbidden
+analytical step.</p>
+</blockquote>
+<p>The strongest immediate response is to govern <strong>configurations,
+transitions, and evidence</strong>, rather than promoting a model from a
+single benchmark. Across 52,168 agent trajectories, harness choice
+sometimes changes both absolute performance and model ranking. A
+near-target prompt-injection study raises attack success by
+<strong>9.3–35.8 percentage points</strong> on incorrect language
+targets and <strong>1.7–17.3 points</strong> on harmful targets relative
+to fixed baselines. In a 97-task analytical benchmark, systems average
+<strong>92%</strong> on GO decisions but only <strong>19%</strong> on
+matched NO-GO decisions; <strong>99%</strong> of the 548 NO-GO errors
+include forbidden downstream computation.</p>
+<p>The Watchlist broadens the control problem. In asynchronous
+workflows, nine agents score only <strong>19.2–45.1</strong> on dynamic
+replanning, and mandatory plan rebuilding buys just <strong>2.6–3.5
+points</strong> at <strong>7.5–10.2%</strong> more model calls. In
+composed skill ecosystems, 612 capability-flow chains are found across
+13,598 marketplace-clean skills; <strong>13.7%</strong> consist entirely
+of skills labeled safe by a single-skill scanner.</p>
+<p><strong>Decision posture:</strong> prototype a model–harness
+qualification matrix, an evidence-gated transition contract, and a
+near-target prompt-injection regression suite in isolated replay. Build
+valid-completion telemetry, typed prerequisite registries, and
+asynchronous event-response records before widening autonomy. Monitor
+capability-flow scanning until recall, artifact access, and internal
+applicability are better established. Do not standardize on a globally
+“best” harness from this evidence.</p>
+<h2 id="top-3-future-bets">Top 3 Future Bets</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Future bet</th>
+<th>Why it matters</th>
+<th>Evidence that would change the recommendation</th>
+<th>Next reversible action</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Model–harness qualification matrix — 87.7</strong></td>
+<td>The largest study here shows capability and valid completion are
+properties of a model–harness–task configuration, not of a model
+alone.</td>
+<td>The recommendation weakens if internal tasks show negligible harness
+variance or if standardized adapters eliminate the interaction; it
+strengthens with independent multi-domain replications.</td>
+<td>Replay 100 representative tasks across two models and three harness
+settings using frozen budgets and task-clustered analysis; grant no
+production credentials.</td>
+</tr>
+<tr class="even">
+<td><strong>Evidence-gated analytical transition contract —
+86.6</strong></td>
+<td>DMAIC-Bench isolates a severe knowing–doing gap: correct evidence
+frequently fails to change the next action.</td>
+<td>It weakens if internal workflows lack explicit prerequisites or if
+an independent rerun fails to reproduce the route asymmetry; it
+strengthens with cross-domain, held-out results.</td>
+<td>Encode five prerequisite gates and replay 200 historical workflows
+in shadow mode, comparing advisory versus enforced stops.</td>
+</tr>
+<tr class="odd">
+<td><strong>Near-target prompt-injection regression suite —
+86.1</strong></td>
+<td>Attacks that preserve task shape evade “obviously off-task”
+intuitions and affect both language and tool-using agents.</td>
+<td>It weakens if internal retrieval and tool boundaries eliminate the
+measured target class; it strengthens with adaptive attacks and
+downstream-effect verification.</td>
+<td>Generate fixed near-target variants for 200 internal test cases, run
+offline against current defenses, and store action-level traces without
+executing side effects.</td>
+</tr>
+</tbody>
+</table>
+<p>These are evidence-grounded options, not roadmap approvals.
+Production decisions require verified internal workflows, business-loss
+functions, tool scopes, identity and authorization, data sensitivity,
+reviewer capacity, vendor constraints, and failure reversibility.</p>
+<h1 id="research-scope-and-selection-discipline">Research scope and
+selection discipline</h1>
+<p><strong>Research window:</strong> October 23, 2026 4:05 a.m. through
+October 26, 2026 4:05 a.m. America/Chicago. The Monday arXiv release was
+screened across cs.AI, cs.CR, cs.CL, cs.LG, cs.SE, cs.IR, stat.ML,
+official paper records, author-linked artifacts, and major research
+channels. The five selected papers were all submitted October 23 and
+available as primary full text by cutoff.</p>
+<p><strong>Selection rule:</strong> accessible primary text, traceable
+quantitative claims, methodological detail, decision relevance, and a
+contribution not already covered by the prior 77-report archive.
+<strong>Anti-duplication:</strong> all five titles and exact arXiv
+identifiers were checked against the archive through October 25; none
+appeared previously. Five items are published because each clears the
+evidence bar; lower-quality or incompletely disclosed candidates were
+not promoted.</p>
+<h2 id="evidence-labels">Evidence labels</h2>
+<ul>
+<li><strong>Paper Fact:</strong> directly reported in a selected paper
+or verified artifact.</li>
+<li><strong>Independent Analysis:</strong> this briefing's synthesis or
+critique derived from disclosed evidence.</li>
+<li><strong>Enterprise Inference:</strong> a conditional translation
+into a future enterprise option; it is not a measured deployment
+result.</li>
+<li><strong>Uncertainty:</strong> a material fact is missing,
+confounded, proxy-dependent, underpowered, or not independently
+reproduced.</li>
+</ul>
+<h2 id="review-depth-and-scoring">Review depth and scoring</h2>
+<p>All three deep papers were read in full, including appendices,
+statistical protocols, stated limitations, and linked artifacts.
+Watchlist papers received full-text verification focused on their
+differentiating claim, design, and boundary conditions. Research Utility
+Score is an editorial aid, not a statistical estimate: methodological
+rigor /25, quantitative traceability /25, reproducibility /20,
+enterprise relevance /15, novelty over prior work /15.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Paper</th>
+<th style="text-align: right;">Tier</th>
+<th style="text-align: right;">Utility /100</th>
+<th>Reproducibility state</th>
+<th>Enterprise-readiness judgment</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>When Agents Fail: Model or Harness—Who’s to Blame?</td>
+<td style="text-align: right;">Deep</td>
+<td style="text-align: right;"><strong>89</strong></td>
+<td>Detailed protocol and confidence intervals; no public code or
+trajectory release found</td>
+<td><strong>Qualification-ready, not ranking-ready</strong></td>
+</tr>
+<tr class="even">
+<td>On Task, Off Track</td>
+<td style="text-align: right;">Deep</td>
+<td style="text-align: right;"><strong>86</strong></td>
+<td>Fixed attacks and methods disclosed; no public attack/evaluation
+artifact found</td>
+<td><strong>Offline red-team ready; production prevalence
+unknown</strong></td>
+</tr>
+<tr class="odd">
+<td>DMAIC-Bench</td>
+<td style="text-align: right;">Deep</td>
+<td style="text-align: right;"><strong>93</strong></td>
+<td>Public AGPL-3.0 code, generated corpus, tests and audit packages;
+original industrial per-trial archive excluded</td>
+<td><strong>Shadow-ready for evidence gates</strong></td>
+</tr>
+<tr class="even">
+<td>Async-RBench</td>
+<td style="text-align: right;">Watchlist</td>
+<td style="text-align: right;"><strong>84</strong></td>
+<td>Public project/code claim; ERC construction and verifier audit
+disclosed</td>
+<td><strong>Foundation signal; asynchronous realism and economics
+incomplete</strong></td>
+</tr>
+<tr class="odd">
+<td>KnotScryer</td>
+<td style="text-align: right;">Watchlist</td>
+<td style="text-align: right;"><strong>82</strong></td>
+<td>Corpus snapshot and methods disclosed; no public implementation link
+found</td>
+<td><strong>Monitor and reproduce before platform adoption</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="viz"><div class="viz-title">The control surface exposed by this edition</div><div class="flow-row"><div class="flow-node">Model + harness<br><small>qualification</small></div><div class="flow-arrow">→</div><div class="flow-node accent">Evidence-conditioned transition<br><small>admit, stop, revise</small></div><div class="flow-arrow">→</div><div class="flow-node">Tool effect + outcome<br><small>observe and audit</small></div></div><div class="flow-note">Near-target injection, stale asynchronous results, and composed skills are all adversarial or invalid inputs to the transition boundary—not merely “bad prompts.”</div></div>
+
+<h1
+id="deep-paper-1--when-agents-fail-model-or-harnesswhos-to-blame">Deep
+paper 1 — When Agents Fail: Model or Harness—Who’s to Blame?</h1>
+<p><strong>Citation:</strong> <em>When Agents Fail: Model or
+Harness—Who’s to Blame?</em> <a
+href="https://arxiv.org/abs/2610.32483">arXiv:2610.32483v1</a>,
+submitted October 23, 2026. <strong>Scale:</strong> four harnesses ×
+four models plus two fixed systems; six benchmarks; 111 evaluated
+settings; 52,168 trajectories. <strong>License:</strong> CC BY 4.0.
+<strong>Artifact status:</strong> no public code or trajectory link
+found on the paper record.</p>
+<h2 id="what-the-paper-actually-does">What the paper actually does</h2>
+<p>The study separates model choice from the harness that supplies
+prompting, tool mediation, context management, and execution policy. It
+reports task performance alongside <strong>valid-completion rate
+(VCR)</strong>—normal termination plus an evaluable handoff, regardless
+of correctness. A common three-model panel spans six benchmarks; matched
+comparisons use identical tasks and resource limits.</p>
+<p>The central result is interaction, not a universal winner. OpenCode
+leads the reported cross-model fit measure at <strong>87.48</strong>
+(95% interval 84.06–89.99), compared with Pi 77.13, Codex CLI 73.62, and
+DeepAgents 64.20. Yet DeepSeek V4 Flash's mean VCR ranges only
+<strong>91.30–93.98</strong> across harnesses, while other
+configurations move more substantially, and changing harness can reverse
+model rankings.</p>
+<h2 id="quantitative-claim-trace">Quantitative claim trace</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th>Direct result</th>
+<th>Conditions / denominator</th>
+<th>Supports</th>
+<th>Does not support</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Harness is a first-class evaluation variable</td>
+<td>52,168 trajectories over 111 settings; 35,472 attempts in the
+matched common panel</td>
+<td>Six benchmarks; four repetitions; matched tasks and limits</td>
+<td>Report model–harness configurations, not model-only scores</td>
+<td>A universal best harness or vendor ranking</td>
+</tr>
+<tr class="even">
+<td>Valid execution differs from task correctness</td>
+<td>VCR measures normal termination and evaluable handoff irrespective
+of correctness</td>
+<td>Paper's harness adapters and termination rules</td>
+<td>Separate orchestration failure from solution failure</td>
+<td>Correctness, safety, or useful business outcome by itself</td>
+</tr>
+<tr class="odd">
+<td>Harness choice can change rankings</td>
+<td>Performance shifts are large enough to reverse model order in
+reported panels</td>
+<td>Tested models, harnesses, tasks, budgets</td>
+<td>Selection should test the actual operating stack</td>
+<td>Stability under other tools, prompts, budgets, or future model
+versions</td>
+</tr>
+<tr class="even">
+<td>One configuration fit is strongest</td>
+<td>OpenCode cross-model fit 87.48 [84.06, 89.99]</td>
+<td>Paper's fit definition and panel</td>
+<td>A high-performing candidate for replication</td>
+<td>Global superiority; fit is not enterprise safety</td>
+</tr>
+</tbody>
+</table>
+<p>The paper uses <strong>2,000 paired task-cluster bootstraps</strong>
+for pointwise 95% intervals. It explicitly does <strong>not</strong>
+adjust for multiplicity, so isolated interval comparisons should not be
+read as a family-wise significance claim.</p>
+<h2 id="prior-work-comparison">Prior-work comparison</h2>
+<p>Most agent benchmarks fix a harness and vary the model, making
+orchestration an invisible constant. Earlier benchmark work has begun
+diagnosing trajectories and execution environments, but this paper's
+differentiator is a factorial comparison large enough to estimate
+model–harness interactions and valid completion separately from task
+performance.</p>
+<h2 id="methodological-critique">Methodological critique</h2>
+<ol type="1">
+<li><strong>The unit of generalization is narrow.</strong> Six
+benchmarks and a finite tool/harness panel cannot establish a global
+ordering.</li>
+<li><strong>Adapters may encode hidden asymmetry.</strong> Prompt,
+context, retry, tool, and termination semantics are part of the
+treatment; fair resource limits do not make implementations
+equivalent.</li>
+<li><strong>Pointwise intervals invite over-reading.</strong> With many
+settings and no multiplicity adjustment, small pairwise gaps need
+restraint.</li>
+<li><strong>VCR is necessary but weak.</strong> A normal, evaluable
+handoff can still be wrong, unsafe, costly, or policy-violating.</li>
+<li><strong>Artifact absence limits audit.</strong> Without public
+trajectories and adapter code, independent verification of failure
+attribution is difficult.</li>
+<li><strong>Model and harness versions will drift.</strong> A
+qualification result should expire when either component or a tool
+contract changes.</li>
+</ol>
+<h2 id="reproducibility-and-enterprise-readiness">Reproducibility and
+enterprise readiness</h2>
+<p><strong>Paper Fact:</strong> repetition count, matched panels, VCR
+definition, task clustering, and bootstrap protocol are disclosed.
+<strong>Uncertainty:</strong> no linked public implementation or
+trajectory corpus was found, and two benchmarks omit a model because of
+multimodal support. <strong>Enterprise Inference:</strong> adopt
+configuration-level qualification and trace every failure to model,
+harness, tool, or evaluator. Require versioned adapters, identical task
+states, cost/latency accounting, side-effect simulation, and expiry
+rules before operational selection.</p>
+<h1 id="deep-paper-2--on-task-off-track">Deep paper 2 — On Task, Off
+Track</h1>
+<p><strong>Citation:</strong> <em>On Task, Off Track: Benchmarking LLM
+and Agent Robustness to Near-Target Prompt Injection</em>. <a
+href="https://arxiv.org/abs/2610.32531">arXiv:2610.32531v1</a>,
+submitted October 23, 2026. <strong>Evaluation:</strong> seven models;
+ten language datasets plus AgentDojo and AgentDyn.
+<strong>License:</strong> arXiv perpetual non-exclusive license.
+<strong>Artifact status:</strong> no public attack or evaluation
+repository found on the paper record.</p>
+<h2 id="what-the-paper-actually-does-1">What the paper actually
+does</h2>
+<p>The authors construct attacks that stay close to the legitimate task.
+“Incorrect” targets preserve the type of answer or action but change its
+value; “harmful” targets retain task relevance while adding a
+policy-violating outcome. Targets are reference-guided and
+human-validated. Each sample receives three fixed attack attempts,
+identical across victims.</p>
+<p>On language tasks, incorrect near-target attacks raise ASR@3 by
+<strong>9.3–35.8 percentage points</strong> over the fixed baseline
+across models; harmful attacks add <strong>1.7–17.3 points</strong>. One
+reported example is Meta-SecAlign-70B: <strong>3.2%</strong>
+fixed-baseline ASR@3, <strong>36.7%</strong> incorrect, and
+<strong>18.4%</strong> harmful. Across 70 model–dataset combinations,
+all 70 incorrect tracks exceed baseline; harmful is higher in 63, equal
+in two, and lower in five.</p>
+<h2 id="quantitative-claim-trace-1">Quantitative claim trace</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th>Direct result</th>
+<th>Conditions / denominator</th>
+<th>Supports</th>
+<th>Does not support</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Near-target attacks are materially stronger than fixed attacks</td>
+<td>+9.3–35.8pp incorrect; +1.7–17.3pp harmful</td>
+<td>Ten language datasets; 4,197 attempts per language track; three
+attempts/sample</td>
+<td>Defenses need semantically local adversaries</td>
+<td>Population breach probability or adaptive-attacker ceiling</td>
+</tr>
+<tr class="even">
+<td>Tool agents remain vulnerable</td>
+<td>AgentDojo incorrect ASR@3 7.5–32.4%, harmful up to 12.8%; AgentDyn
+incorrect 16.5–43.4%, harmful up to 21.1%</td>
+<td>Paper's tool suites and target checker</td>
+<td>Security tests should inspect action arguments, not only task
+relevance</td>
+<td>Real downstream harm—the checker matches target tool and key
+arguments</td>
+</tr>
+<tr class="odd">
+<td>Safety ranking depends on target family</td>
+<td>Model order changes across fixed, incorrect, and harmful
+targets</td>
+<td>Seven disclosed model configurations</td>
+<td>Red-team coverage must span target semantics</td>
+<td>One scalar “prompt-injection robustness” score</td>
+</tr>
+<tr class="even">
+<td>Calibration cannot be inferred from refusal</td>
+<td>Some models resist fixed attacks but move sharply on near-target
+variants</td>
+<td>Fixed one-shot attacks and paper's judges</td>
+<td>On-task plausibility is a distinct attack surface</td>
+<td>General safety across multimodal, long-horizon, or adaptive
+settings</td>
+</tr>
+</tbody>
+</table>
+<h2 id="prior-work-comparison-1">Prior-work comparison</h2>
+<p>Classic direct and indirect prompt injection often asks for visibly
+unrelated or overtly harmful behavior. Agent benchmarks measure tool
+misuse, and defenses target instruction hierarchy, source trust, or
+action confirmation. This paper's useful increment is a controlled
+target family that preserves task shape, exposing the gap between “still
+on topic” and “still authorized.”</p>
+<h2 id="methodological-critique-1">Methodological critique</h2>
+<ol type="1">
+<li><strong>ASR@3 is a stress-test metric, not incident
+prevalence.</strong> Three attacks increase attacker opportunity and do
+not model enterprise controls.</li>
+<li><strong>Tool-call matching is a proxy.</strong> Matching the target
+tool and key arguments does not establish the downstream effect actually
+occurred.</li>
+<li><strong>The attacker is fixed, not adaptive.</strong> Real attackers
+may be stronger; robust pipelines with provenance, sandboxing, and
+approval may be stronger too.</li>
+<li><strong>Judging is partly model-mediated.</strong> Generated targets
+and model judges create correlated-error risk despite human target
+validation.</li>
+<li><strong>Victim settings differ.</strong> Temperature and reasoning
+settings are not identical across every model, complicating fine
+ranking.</li>
+<li><strong>Policy transfer is uncertain.</strong> Vendor safety
+policies do not map cleanly onto an enterprise's authorization, privacy,
+or regulated-duty boundaries.</li>
+</ol>
+<h2 id="reproducibility-and-enterprise-readiness-1">Reproducibility and
+enterprise readiness</h2>
+<p><strong>Paper Fact:</strong> datasets, victim panel, B=3 protocol,
+fixed attack equality, target families, and attack-free exclusions are
+specified. <strong>Uncertainty:</strong> no public repository was found;
+judge reliability, target coverage, downstream effects, and adaptive
+robustness remain unresolved. <strong>Enterprise Inference:</strong> use
+near-target cases as an offline regression family attached to concrete
+action schemas. Log source trust, requested versus executed arguments,
+approval decisions, and downstream simulators. Do not treat ASR as an
+expected incident rate.</p>
+<h1 id="deep-paper-3--dmaic-bench">Deep paper 3 — DMAIC-Bench</h1>
+<p><strong>Citation:</strong> <em>DMAIC-Bench: From Self-Reflection to
+Self-Restraint for Agents in Multi-Stage Analytical Tasks</em>. <a
+href="https://arxiv.org/abs/2610.32305">arXiv:2610.32305v1</a>,
+submitted October 23, 2026. <strong>Evaluation:</strong> 97 tasks from
+15 industrial cases across four sectors; 13 models from six providers;
+paired counterfactual routes. <strong>Artifacts:</strong> <a
+href="https://github.com/psptpx/DMAIC-Bench">DMAIC-Bench repository</a>,
+AGPL-3.0 code plus generated corpus, tests, audit packages, and
+evaluation tools. <strong>Paper license:</strong> CC BY 4.0.</p>
+<h2 id="what-the-paper-actually-does-2">What the paper actually
+does</h2>
+<p>DMAIC-Bench measures whether an agent lets a diagnostic govern its
+next step. Each task is a graph of analyses with guards over computed
+values. Paired seeds turn the same fork into a GO or NO-GO decision. The
+evaluator derives the valid route from generated data, and a steward
+withholds some data until declared prerequisites are satisfied.</p>
+<p>Across paired forks, agents take the warranted branch on <strong>92%
+of GO decisions</strong> and <strong>19% of NO-GO decisions</strong>.
+The problem is not merely missing evidence: 174 route errors occur after
+the correct diagnostic appears in the trace, and among 548 NO-GO errors,
+forbidden downstream computation occurs in <strong>99%</strong>. In a
+blinded 60-unit expert audit, the benchmark's NO-GO label matches 39/40
+units; experts judge <strong>47%</strong> (95% interval 31–61) of
+reached NO-GO reports to act on invalid evidence.</p>
+<h2 id="quantitative-claim-trace-2">Quantitative claim trace</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th>Direct result</th>
+<th>Conditions / denominator</th>
+<th>Supports</th>
+<th>Does not support</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Agents show a route asymmetry</td>
+<td>92% GO vs 19% NO-GO on 40 paired forks</td>
+<td>Same questions with outcome-flipping seeds; 13 systems, three
+attempts</td>
+<td>Correct analysis does not guarantee warranted continuation</td>
+<td>All enterprise analytical domains or vendor ranking</td>
+</tr>
+<tr class="even">
+<td>Failure persists after correct evidence</td>
+<td>174 errors after the correct diagnostic appears; 71/272 “knew,
+stopped”</td>
+<td>Paper's trace and route scorer</td>
+<td>Evidence-to-action coupling is a separate capability</td>
+<td>That the agent semantically inspected the value before acting</td>
+</tr>
+<tr class="odd">
+<td>Invalid evidence reaches reports</td>
+<td>Expert estimate 47% [31,61] for NO-GO reports; GO overclaim 30%</td>
+<td>40 NO-GO + 20 GO fresh units, three experts</td>
+<td>Route errors can become decision errors</td>
+<td>Precise population rate; sample is small and selected</td>
+</tr>
+<tr class="even">
+<td>Permission and rule have heterogeneous effects</td>
+<td>GPT-6 Astra permit 23→79 NO-GO but GO 82→67; DeepSeek V4 Pro permit
+23→23; explicit rule adds 25 points [11,42] for DeepSeek</td>
+<td>Controlled 960-trial instruction study</td>
+<td>Prompt wording interacts with model behavior</td>
+<td>A stable prompt-only remedy</td>
+</tr>
+<tr class="odd">
+<td>Portability is promising but unresolved</td>
+<td>16 life-science tasks across RNA-seq and GWAS</td>
+<td>Different brief, locks, domain, and fork structure</td>
+<td>The contract can be instantiated beyond DMAIC</td>
+<td>Cross-domain generalization from a small pilot</td>
+</tr>
+</tbody>
+</table>
+<h2 id="prior-work-comparison-2">Prior-work comparison</h2>
+<p>Self-reflection benchmarks ask whether a model can critique its
+output; tool and workflow benchmarks ask whether it can finish.
+DMAIC-Bench instead evaluates <strong>self-restraint</strong>: whether a
+diagnostic licenses the next action. Paired counterfactuals and enforced
+versus monitorable gates isolate route choice more sharply than end-task
+accuracy.</p>
+<h2 id="methodological-critique-2">Methodological critique</h2>
+<ol type="1">
+<li><strong>The benchmark is not a vendor ranking.</strong> Fifteen
+cases cannot support broad ordering; the declared held-out split was not
+used as a held-out model evaluation.</li>
+<li><strong>Expert evidence is limited.</strong> The fresh audit has 60
+units and 11 agents; nine scorer defects were found and corrected in an
+earlier audit.</li>
+<li><strong>Trace order is not cognition.</strong> A correct value
+before an action does not prove the model attended to or understood
+it.</li>
+<li><strong>Interventions are partially confounded.</strong> Permission,
+normative rule, lock design, and domain briefs vary; portability and
+prompt effects need cleaner replication.</li>
+<li><strong>Automated readers are imperfect.</strong> Reported agreement
+is only κ 0.26–0.60 for automated readers and Fleiss κ 0.56–0.76 for
+human fields.</li>
+<li><strong>Industrial run archives are incomplete.</strong> The public
+repository excludes the original industrial per-trial archive, although
+expert packets and life-science evidence are included.</li>
+</ol>
+<h2 id="reproducibility-and-enterprise-readiness-2">Reproducibility and
+enterprise readiness</h2>
+<p><strong>Paper Fact:</strong> code, generated tasks, truth derivation,
+tests, audit materials, and pinned dependencies are public under
+AGPL-3.0; reference and null systems anchor scoring.
+<strong>Uncertainty:</strong> original industrial per-trial evidence is
+not in the release, and no independent reproduction is reported.
+<strong>Enterprise Inference:</strong> the most valuable near-term use
+is a shadow gate: recompute a prerequisite from authoritative data,
+compare advisory and enforced transitions, and preserve both route and
+report. Production enforcement requires domain owners, signed evidence,
+override rules, and safe remediation paths.</p>
+<h1 id="watchlist">Watchlist</h1>
+<h2
+id="async-rbench-benchmarking-asynchronous-task-execution-in-llm-agents">Async-RBench:
+Benchmarking Asynchronous Task Execution in LLM Agents</h2>
+<p><strong>Paper Fact:</strong> <a
+href="https://arxiv.org/abs/2610.32429">arXiv:2610.32429v1</a>,
+submitted October 23, introduces 200 executable tasks, eight scenarios,
+621 subtasks, a controlled result-delivery mechanism, and Event Response
+Contracts (ERCs) that specify what to change, preserve, avoid, and
+reverify. Across nine agents, Dynamic Replanning Score ranges
+<strong>19.2–45.1</strong>; async task success averages
+<strong>26.0%</strong> versus <strong>29.7%</strong> batched, and eight
+systems use more tokens. Full-plan rebuilding improves DRS only
+<strong>2.6–3.5 points</strong> while adding <strong>7.5–10.2%</strong>
+model calls. A 405-record verifier audit reports 96.6% initial human
+agreement; disagreements were traced to infrastructure and rerun.</p>
+<p><strong>Why Watchlist:</strong> the event-contract abstraction is
+immediately useful, but controller-timed arrivals may not match
+production concurrency; one target event per task excludes overlaps;
+early termination receives zero and conflates causes; same-model agents
+narrow heterogeneity; private verifier data and restricted upstream
+assets constrain complete reconstruction. <strong>Enterprise
+signal:</strong> record event identity, authority, version, affected
+scope, preservation set, forbidden side effects, and required
+revalidation before adopting parallel agents.
+<strong>Confidence:</strong> Moderate.</p>
+<h2
+id="knotscryer-detecting-insecure-compositions-of-clean-agent-skills">KnotScryer:
+Detecting Insecure Compositions of Clean Agent Skills</h2>
+<p><strong>Paper Fact:</strong> <a
+href="https://arxiv.org/abs/2610.32155">arXiv:2610.32155v1</a>,
+submitted October 23, builds a Skill Capability-Flow Graph from 13,598
+ClawHub skills labeled clean. It identifies 612 violation chains with
+<strong>79.2%</strong> average exploitability across three frameworks ×
+three models. Under GLM-5.1, exploitability is <strong>85.6%</strong>,
+versus <strong>16.5–18.2%</strong> for tag-match and graph-only
+baselines, while the graph search space falls <strong>85.3%</strong>.
+Eighty-four chains (<strong>13.7%</strong>) contain only skills labeled
+safe by a third-party single-skill scanner.</p>
+<p><strong>Why Watchlist:</strong> the paper measures a May 18
+marketplace snapshot; each chain runs at most twice per agent–model
+pair; recall is explicitly unquantifiable; implicit channels such as
+shared files, environment variables, and external state are out of
+scope; and no public implementation link was found. The 612 are
+detector-confirmed candidates, not the universe of insecure
+compositions. <strong>Enterprise signal:</strong> inventory skill
+inputs/outputs, trust domains, identities, and side effects as a graph,
+then test minimal cuts and runtime authorization in an isolated
+environment. <strong>Confidence:</strong> Moderate for compositional
+risk; Low to Moderate for detector transfer.</p>
+<h1 id="cross-paper-synthesis">Cross-paper synthesis</h1>
+<ol type="1">
+<li><strong>Configuration is the product.</strong> The model–harness
+paper makes this empirical; Async-RBench makes timing and result
+delivery part of the configuration; KnotScryer makes installed skill
+combinations part of it.</li>
+<li><strong>“On task” is not “authorized.”</strong> Near-target
+injection stays semantically plausible, while composed clean skills
+create forbidden source-to-sink paths.</li>
+<li><strong>Correct evidence is not sufficient.</strong> DMAIC-Bench
+shows that a model can compute the disqualifying value and still
+continue. Event contracts likewise require explicit preservation and
+revalidation.</li>
+<li><strong>Process metrics expose hidden failure.</strong> VCR, DRS,
+route accuracy, action-argument ASR, and capability-flow reachability
+reveal failure that final task success hides.</li>
+<li><strong>The common control is a typed transition envelope.</strong>
+Before every consequential transition, record model+harness version,
+evidence, authority, source trust, affected scope, allowed side effects,
+required revalidation, and outcome.</li>
+</ol>
+<table>
+<thead>
+<tr class="header">
+<th>Research signal</th>
+<th>Weak enterprise reading</th>
+<th>Evidence-grounded reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>One harness leads on a benchmark panel</td>
+<td>Standardize globally</td>
+<td>Qualify each model–harness–task configuration and expire the result
+on change</td>
+</tr>
+<tr class="even">
+<td>Near-target ASR rises</td>
+<td>Assume production breach at that rate</td>
+<td>Add fixed, action-level adversarial regression plus
+downstream-effect simulation</td>
+</tr>
+<tr class="odd">
+<td>Agents know the diagnostic</td>
+<td>Improve the prompt</td>
+<td>Externalize prerequisite state and enforce or escalate
+transitions</td>
+</tr>
+<tr class="even">
+<td>Async rebuilding helps slightly</td>
+<td>Replan after every event</td>
+<td>Use scoped event contracts; preserve valid work and reverify only
+affected artifacts</td>
+</tr>
+<tr class="odd">
+<td>Clean skills compose unsafely</td>
+<td>Ban all third-party skills</td>
+<td>Analyze capability flow, least privilege, runtime identity, and
+minimal cuts</td>
+</tr>
+</tbody>
+</table>
+<h1 id="enterprise-ai-enhancement-backlog">Enterprise AI Enhancement
+Backlog</h1>
+<p><strong>Scoring method — Independent Analysis.</strong> Future
+Enterprise AI Priority Score = 25% strategic/business value + 20%
+technical leverage + 20% evidence strength + 15% enterprise readiness +
+10% feasibility + 10% risk-adjusted differentiation. Components are
+0–100 editorial judgments. Totals are directional; a plausible
+uncertainty band is ±5–10 points because internal economics,
+architecture, policy, and workflow risk are unknown.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Rank</th>
+<th>Enhancement</th>
+<th>Band</th>
+<th style="text-align: right;">Strategic</th>
+<th style="text-align: right;">Technical</th>
+<th style="text-align: right;">Evidence</th>
+<th style="text-align: right;">Readiness</th>
+<th style="text-align: right;">Feasibility</th>
+<th style="text-align: right;">Differentiation</th>
+<th style="text-align: right;">Weighted total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td>Model–harness qualification matrix</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;"><strong>87.7</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td>Evidence-gated analytical transition contract</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">74</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;"><strong>86.6</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td>Near-target prompt-injection regression suite</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;"><strong>86.1</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td>Valid-completion and artifact-handoff telemetry</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">74</td>
+<td style="text-align: right;"><strong>83.9</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td>Typed prerequisite and gate registry</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">72</td>
+<td style="text-align: right;">68</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;"><strong>82.1</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td>Asynchronous event-response ledger</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">89</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">58</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;"><strong>79.0</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td>Capability-flow graph scanner for composed skills</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">77</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">62</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;"><strong>78.0</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td>Adaptive near-target adversarial generation service</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">58</td>
+<td style="text-align: right;">64</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;"><strong>76.1</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9</td>
+<td>Single global “best harness” standard</td>
+<td>Deprioritize for Now</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">64</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;"><strong>52.9</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="prototype-soon">Prototype Soon</h2>
+<h3 id="1-modelharness-qualification-matrix">1. Model–harness
+qualification matrix</h3>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability</li>
+<li><strong>Research signal and supporting paper(s):</strong> <em>When
+Agents Fail</em> reports 52,168 trajectories, large harness effects, and
+ranking reversals.</li>
+<li><strong>Evidence label:</strong> Paper Fact for interaction;
+Enterprise Inference for qualification design.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong> Model
+selection ignores orchestration, tool, context, and termination
+behavior.</li>
+<li><strong>Proposed future capability and how it would work:</strong>
+Version and test model–harness–task triples under frozen budgets; report
+performance, VCR, cost, latency, safety, and failure attribution.</li>
+<li><strong>Likely architectural placement:</strong> evaluation,
+observability, model gateway, developer platform.</li>
+<li><strong>Expected business value:</strong> quality, reliability,
+cost, speed, risk reduction.</li>
+<li><strong>Technical value:</strong> Detects configuration regressions
+and prevents false model-only rankings.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Large
+factorial paper, but no public trajectories and limited benchmark
+transfer; safe offline prototype.</li>
+<li><strong>Confidence:</strong> High for qualification need; Moderate
+for expected local effect size.</li>
+<li><strong>Estimated implementation horizon:</strong> Now.</li>
+<li><strong>Estimated effort:</strong> M.</li>
+<li><strong>Dependencies and prerequisites:</strong> Representative
+tasks, adapter versioning, replay harness, task-clustered statistics,
+cost telemetry, stable scorers.</li>
+<li><strong>Key risks:</strong> Benchmark leakage, unequal adapters,
+drift, overfitting, confidential traces, evaluator error.</li>
+<li><strong>Build / Buy / Partner recommendation:</strong> Build the
+qualification contract; buy commodity tracing only if raw export and
+version fidelity are guaranteed.</li>
+<li><strong>Minimum reversible validation experiment:</strong> 100
+frozen tasks × two models × three harness configurations in a
+no-side-effect sandbox.</li>
+<li><strong>Success metrics and stop conditions:</strong> Detect
+reproducible configuration effects; ≥95% trace completeness; stable
+reruns. Stop if task/scorer noise exceeds harness signal.</li>
+<li><strong>Roadmap trigger:</strong> Two internal domains reproduce
+material harness effects and the matrix changes a selection
+decision.</li>
+<li><strong>Internal context required:</strong> Current
+models/harnesses, task mix, risk tiers, budgets, latency SLOs, and
+model-change policy.</li>
+</ul>
+<h3 id="2-evidence-gated-analytical-transition-contract">2.
+Evidence-gated analytical transition contract</h3>
+<ul>
+<li><strong>Category:</strong> Reasoning &amp; Planning</li>
+<li><strong>Research signal and supporting paper(s):</strong>
+DMAIC-Bench reports 92% GO versus 19% NO-GO and 99% forbidden downstream
+computation among NO-GO errors.</li>
+<li><strong>Evidence label:</strong> Paper Fact for benchmark behavior;
+Enterprise Inference for gate design.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong> Agents
+continue after evidence invalidates the next step.</li>
+<li><strong>Proposed future capability and how it would work:</strong>
+Recompute typed prerequisites from authoritative data; an external gate
+admits, diverts, stops, or escalates before downstream analysis or
+action.</li>
+<li><strong>Likely architectural placement:</strong> orchestration, data
+platform, security/governance, human-review layer.</li>
+<li><strong>Expected business value:</strong> quality, reliability, risk
+reduction, auditability.</li>
+<li><strong>Technical value:</strong> Separates evidence computation
+from authorization and yields deterministic transition logs.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+benchmark and artifacts; narrow domains and incomplete original run
+archive; shadow-ready.</li>
+<li><strong>Confidence:</strong> High for the failure mode; Moderate for
+transfer.</li>
+<li><strong>Estimated implementation horizon:</strong> Now.</li>
+<li><strong>Estimated effort:</strong> M.</li>
+<li><strong>Dependencies and prerequisites:</strong> Domain rules,
+authoritative metrics, signed inputs, override policy, remediation
+paths, versioned thresholds.</li>
+<li><strong>Key risks:</strong> Incorrect gates, stale data, excessive
+stops, circumvention, automation bias, unavailable remediation.</li>
+<li><strong>Build / Buy / Partner recommendation:</strong> Build domain
+gate logic; partner with domain experts; buy workflow plumbing only with
+auditable policy export.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Replay
+200 historical cases with five gates in advisory and enforced
+simulation.</li>
+<li><strong>Success metrics and stop conditions:</strong> ≥95% correct
+gate reconstruction, fewer invalid downstream steps, bounded false
+stops. Stop if reviewers cannot agree on gate truth.</li>
+<li><strong>Roadmap trigger:</strong> Blinded replay shows significant
+risk reduction without unacceptable GO loss across two workflows.</li>
+<li><strong>Internal context required:</strong> Domain owners, legal
+duties, override authority, acceptable false-stop rate, and downstream
+consequence severity.</li>
+</ul>
+<h3 id="3-near-target-prompt-injection-regression-suite">3. Near-target
+prompt-injection regression suite</h3>
+<ul>
+<li><strong>Category:</strong> AI Security</li>
+<li><strong>Research signal and supporting paper(s):</strong> <em>On
+Task, Off Track</em> raises incorrect-target ASR@3 by 9.3–35.8pp and
+harmful-target ASR by 1.7–17.3pp.</li>
+<li><strong>Evidence label:</strong> Paper Fact for measured attacks;
+Enterprise Inference for internal regression.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong>
+Security tests overemphasize obviously unrelated instructions and miss
+task-shaped manipulation.</li>
+<li><strong>Proposed future capability and how it would work:</strong>
+Maintain fixed near-target variants for language and tool tasks; score
+requested versus executed values, approval, policy, and simulated
+downstream effect on every release.</li>
+<li><strong>Likely architectural placement:</strong> evaluation,
+security/governance, model gateway, agent layer.</li>
+<li><strong>Expected business value:</strong> risk reduction,
+reliability, customer trust.</li>
+<li><strong>Technical value:</strong> Adds a semantically local threat
+family and action-argument checks.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Broad
+paper panel; artifact and downstream-effect gaps; offline testing is
+feasible.</li>
+<li><strong>Confidence:</strong> Moderate to High.</li>
+<li><strong>Estimated implementation horizon:</strong> Now.</li>
+<li><strong>Estimated effort:</strong> M.</li>
+<li><strong>Dependencies and prerequisites:</strong> Threat models,
+action schemas, policy corpus, trusted labels, safe simulators,
+source-trust metadata.</li>
+<li><strong>Key risks:</strong> Dual use, incomplete target coverage,
+judge bias, prompt overfitting, test leakage, policy mismatch.</li>
+<li><strong>Build / Buy / Partner recommendation:</strong> Build
+enterprise-specific targets; partner for external red-team diversity;
+never outsource policy ownership.</li>
+<li><strong>Minimum reversible validation experiment:</strong> 200
+cases, three fixed variants each, read-only tools and simulated
+effects.</li>
+<li><strong>Success metrics and stop conditions:</strong> Lower
+action-level ASR without excessive task refusal; complete traces. Stop
+if the evaluator cannot distinguish legitimate corrections from
+attacks.</li>
+<li><strong>Roadmap trigger:</strong> The suite finds reproducible
+failures missed by current tests and a defense reduces them across two
+model/harness pairs.</li>
+<li><strong>Internal context required:</strong> Sensitive actions,
+threat actors, acceptable refusal, policy sources, and tool approval
+boundaries.</li>
+</ul>
+<h2 id="prepare-foundations">Prepare Foundations</h2>
+<h3 id="4-valid-completion-and-artifact-handoff-telemetry">4.
+Valid-completion and artifact-handoff telemetry</h3>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability</li>
+<li><strong>Research signal and supporting paper(s):</strong> <em>When
+Agents Fail</em> separates VCR from correctness; Async-RBench separates
+DRS from task success.</li>
+<li><strong>Evidence label:</strong> Independent Analysis grounded in
+both papers.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong> Final
+outcome metrics hide premature termination, invalid handoff, and
+mishandled events.</li>
+<li><strong>Proposed future capability and how it would work:</strong>
+Emit a signed completion envelope containing termination reason,
+artifacts, verifier state, unresolved events, preserved work, and
+revalidation evidence.</li>
+<li><strong>Likely architectural placement:</strong> observability,
+orchestration, evaluation.</li>
+<li><strong>Expected business value:</strong> reliability, faster
+diagnosis, lower incident cost.</li>
+<li><strong>Technical value:</strong> Makes harness and event-handling
+failure independently measurable.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Metrics
+are explicit and low-risk; enterprise semantics still need
+definition.</li>
+<li><strong>Confidence:</strong> High.</li>
+<li><strong>Estimated implementation horizon:</strong> 3–6 months.</li>
+<li><strong>Estimated effort:</strong> M.</li>
+<li><strong>Dependencies and prerequisites:</strong> Trace IDs, artifact
+registry, event schema, verifier hooks, retention and redaction.</li>
+<li><strong>Key risks:</strong> High-cardinality cost, sensitive traces,
+metric gaming, false completeness.</li>
+<li><strong>Build / Buy / Partner recommendation:</strong> Build the
+envelope; integrate existing telemetry storage.</li>
+<li><strong>Minimum reversible validation experiment:</strong>
+Instrument one offline agent and replay 500 runs with seeded termination
+and handoff faults.</li>
+<li><strong>Success metrics and stop conditions:</strong> ≥95%
+seeded-fault attribution and complete artifact lineage. Stop if
+instrumentation changes task behavior materially.</li>
+<li><strong>Roadmap trigger:</strong> Telemetry explains failures that
+outcome scores cannot and reduces triage time by a pre-set target.</li>
+<li><strong>Internal context required:</strong> Current tracing,
+retention, PII policy, incident taxonomy, and artifact ownership.</li>
+</ul>
+<h3 id="5-typed-prerequisite-and-gate-registry">5. Typed prerequisite
+and gate registry</h3>
+<ul>
+<li><strong>Category:</strong> Data &amp; Knowledge Infrastructure</li>
+<li><strong>Research signal and supporting paper(s):</strong>
+DMAIC-Bench encodes guards over computed values; Async-RBench encodes
+event response contracts.</li>
+<li><strong>Evidence label:</strong> Enterprise Inference.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong>
+Preconditions live in prompts, documents, and expert memory instead of
+executable policy.</li>
+<li><strong>Proposed future capability and how it would work:</strong>
+Register prerequisite type, authoritative source, computation, validity
+window, consequence, override, and required revalidation as versioned
+machine-readable objects.</li>
+<li><strong>Likely architectural placement:</strong> data platform,
+knowledge systems, security/governance, developer platform.</li>
+<li><strong>Expected business value:</strong> quality, consistency,
+speed, risk reduction.</li>
+<li><strong>Technical value:</strong> Reuses one gate definition across
+orchestration, evaluation, audit, and human review.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Research patterns are strong; enterprise ontology and governance are the
+hard part.</li>
+<li><strong>Confidence:</strong> Moderate.</li>
+<li><strong>Estimated implementation horizon:</strong> 3–6 months.</li>
+<li><strong>Estimated effort:</strong> L.</li>
+<li><strong>Dependencies and prerequisites:</strong> Source ownership,
+identity, policy versioning, schema governance, temporal data, exception
+workflow.</li>
+<li><strong>Key risks:</strong> Incorrect abstraction, stale thresholds,
+ownership disputes, combinatorial complexity, bypass paths.</li>
+<li><strong>Build / Buy / Partner recommendation:</strong> Build the
+domain registry; buy schema/registry infrastructure only with
+exportability.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Encode
+ten gates from one workflow; compare independent domain-expert
+reconstructions.</li>
+<li><strong>Success metrics and stop conditions:</strong> ≥90%
+agreement, deterministic evaluation, bounded maintenance time. Stop if
+policy cannot be expressed without material ambiguity.</li>
+<li><strong>Roadmap trigger:</strong> Two applications consume the same
+registry and audits reconstruct every transition.</li>
+<li><strong>Internal context required:</strong> Rule owners, source
+systems, change controls, temporal semantics, and override
+obligations.</li>
+</ul>
+<h3 id="6-asynchronous-event-response-ledger">6. Asynchronous
+event-response ledger</h3>
+<ul>
+<li><strong>Category:</strong> Agentic AI</li>
+<li><strong>Research signal and supporting paper(s):</strong>
+Async-RBench's ERCs and 19.2–45.1 DRS show weak revision, preservation,
+avoidance, and revalidation.</li>
+<li><strong>Evidence label:</strong> Paper Fact for benchmark;
+Enterprise Inference for ledger.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong> Late,
+stale, duplicate, conflicting, or failed subagent results corrupt
+ongoing work.</li>
+<li><strong>Proposed future capability and how it would work:</strong>
+Record event authority/version, affected dependency set, preserve set,
+forbidden effects, idempotency key, and required checks; block
+completion while obligations remain open.</li>
+<li><strong>Likely architectural placement:</strong> orchestration,
+agent layer, observability, human-review layer.</li>
+<li><strong>Expected business value:</strong> reliability, cost control,
+speed, risk reduction.</li>
+<li><strong>Technical value:</strong> Makes asynchronous recovery scoped
+and auditable rather than “replan everything.”</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> One new
+benchmark with public project claim; overlaps and real timing remain
+untested.</li>
+<li><strong>Confidence:</strong> Moderate.</li>
+<li><strong>Estimated implementation horizon:</strong> 6–12 months.</li>
+<li><strong>Estimated effort:</strong> L.</li>
+<li><strong>Dependencies and prerequisites:</strong> Event sourcing,
+dependency graph, idempotency, artifact versioning, cancellation
+semantics, cost telemetry.</li>
+<li><strong>Key risks:</strong> Ledger races, stale dependency graphs,
+deadlocks, excessive revalidation, sensitive event data.</li>
+<li><strong>Build / Buy / Partner recommendation:</strong> Build
+orchestration semantics; partner with workflow/runtime vendors where
+event hooks are portable.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Simulate
+50 workflows with delayed, duplicate, stale, and conflicting events; no
+external effects.</li>
+<li><strong>Success metrics and stop conditions:</strong> Correct
+revision scope, zero repeated side effects, preserved valid work,
+acceptable call overhead. Stop on unresolved race conditions.</li>
+<li><strong>Roadmap trigger:</strong> Multi-event internal replay
+outperforms rebuild-all and ignore-late baselines at lower total
+cost.</li>
+<li><strong>Internal context required:</strong> Concurrency model, tool
+idempotency, cancellation guarantees, dependency structure, latency/cost
+budgets.</li>
+</ul>
+<h2 id="monitor-for-maturity">Monitor for Maturity</h2>
+<h3 id="7-capability-flow-graph-scanner-for-composed-skills">7.
+Capability-flow graph scanner for composed skills</h3>
+<ul>
+<li><strong>Category:</strong> AI Security</li>
+<li><strong>Research signal and supporting paper(s):</strong> KnotScryer
+finds 612 chains and 84 all-safe-by-single-scan compositions in a
+13,598-skill snapshot.</li>
+<li><strong>Evidence label:</strong> Paper Fact with Uncertainty on
+recall and transfer.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong>
+Individually approved skills can create a forbidden source-to-sink path
+when composed.</li>
+<li><strong>Proposed future capability and how it would work:</strong>
+Summarize typed inputs/outputs and side effects; build cross-skill flow
+graphs; search policy-violating paths; verify in a sandbox; recommend
+minimal cuts or runtime approvals.</li>
+<li><strong>Likely architectural placement:</strong>
+security/governance, developer platform, agent orchestration.</li>
+<li><strong>Expected business value:</strong> risk reduction, platform
+safety, faster review.</li>
+<li><strong>Technical value:</strong> Extends component scanning to
+composition and runtime handoff.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Strong
+signal, but no measurable recall, no implicit-channel coverage, and no
+public implementation found.</li>
+<li><strong>Confidence:</strong> Moderate for need; Low to Moderate for
+method.</li>
+<li><strong>Estimated implementation horizon:</strong> 6–12 months.</li>
+<li><strong>Estimated effort:</strong> L.</li>
+<li><strong>Dependencies and prerequisites:</strong> Skill inventory,
+manifests, runtime traces, trust labels, side-effect taxonomy, isolated
+test environment.</li>
+<li><strong>Key risks:</strong> False confidence, summary error, missed
+implicit channels, scanner poisoning, disclosure of exploit chains.</li>
+<li><strong>Build / Buy / Partner recommendation:</strong> Partner for a
+reproduction; build internal policy and runtime enforcement; do not buy
+on benchmark claims alone.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Graph 50
+approved skills and test ten reviewer-authored chains in a sealed
+environment.</li>
+<li><strong>Success metrics and stop conditions:</strong> High precision
+on known chains, actionable cuts, bounded analyst load. Stop if
+summaries omit critical side effects or recall cannot be estimated.</li>
+<li><strong>Roadmap trigger:</strong> Independent replication plus
+internal evidence that composition scanning catches risks component
+scans miss.</li>
+<li><strong>Internal context required:</strong> Installed skills,
+permissions, secrets, trust zones, filesystem/network channels, approval
+model.</li>
+</ul>
+<h3 id="8-adaptive-near-target-adversarial-generation-service">8.
+Adaptive near-target adversarial generation service</h3>
+<ul>
+<li><strong>Category:</strong> AI Security</li>
+<li><strong>Research signal and supporting paper(s):</strong> <em>On
+Task, Off Track</em> demonstrates value from reference-guided,
+target-family attacks but uses fixed attempts.</li>
+<li><strong>Evidence label:</strong> Enterprise Inference with
+Uncertainty.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong> Fixed
+test suites age as models, policies, and attackers adapt.</li>
+<li><strong>Proposed future capability and how it would work:</strong>
+Generate constrained targets close to current tasks, then search for
+variants under a strict safe simulator and human-reviewed disclosure
+process.</li>
+<li><strong>Likely architectural placement:</strong> evaluation,
+security/governance, experiment infrastructure.</li>
+<li><strong>Expected business value:</strong> risk reduction, strategic
+differentiation, faster security learning.</li>
+<li><strong>Technical value:</strong> Tests defense robustness beyond
+memorized prompts and static corpora.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+Fixed-attack evidence is substantial; adaptive service safety, validity,
+and economics are unproven.</li>
+<li><strong>Confidence:</strong> Low to Moderate.</li>
+<li><strong>Estimated implementation horizon:</strong> 6–12 months.</li>
+<li><strong>Estimated effort:</strong> L.</li>
+<li><strong>Dependencies and prerequisites:</strong> Safe sandbox,
+target ontology, attack budgets, judge calibration, red-team governance,
+disclosure controls.</li>
+<li><strong>Key risks:</strong> Dual use, evaluator exploitation,
+runaway cost, invalid targets, sensitive-data exposure.</li>
+<li><strong>Build / Buy / Partner recommendation:</strong> Partner with
+vetted red teams; keep policy, simulators, and acceptance criteria
+internal.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Generate
+variants for 25 synthetic tool schemas with zero network and human
+approval before every run.</li>
+<li><strong>Success metrics and stop conditions:</strong> Novel valid
+failures per budget, low invalid-target rate, no real effects. Stop on
+uncontrolled side effects or poor reviewer agreement.</li>
+<li><strong>Roadmap trigger:</strong> Adaptive tests repeatedly find
+distinct failures after the fixed suite is saturated, with safe
+containment.</li>
+<li><strong>Internal context required:</strong> Security testing
+authority, disclosure rules, sensitive operations, compute budget, and
+red-team staffing.</li>
+</ul>
+<h2 id="deprioritize-for-now">Deprioritize for Now</h2>
+<h3 id="9-single-global-best-harness-standard">9. Single global “best
+harness” standard</h3>
+<ul>
+<li><strong>Category:</strong> MLOps &amp; Platform</li>
+<li><strong>Research signal and supporting paper(s):</strong> <em>When
+Agents Fail</em> shows interaction and ranking reversal, contradicting a
+universal winner inference.</li>
+<li><strong>Evidence label:</strong> Independent Analysis.</li>
+<li><strong>Enterprise problem or opportunity addressed:</strong>
+Standardization appears to reduce platform complexity.</li>
+<li><strong>Proposed future capability and how it would work:</strong>
+Mandate one harness across models and workloads based on a global
+benchmark score.</li>
+<li><strong>Likely architectural placement:</strong> developer platform,
+orchestration, model gateway.</li>
+<li><strong>Expected business value:</strong> Possible simplicity, but
+material quality and risk downside.</li>
+<li><strong>Technical value:</strong> Lower integration surface; poor
+evidence for universal suitability.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> Direct
+evidence argues for conditional qualification, not global
+standardization.</li>
+<li><strong>Confidence:</strong> High that this should be deprioritized
+as stated.</li>
+<li><strong>Estimated implementation horizon:</strong> 12+ months unless
+evidence changes.</li>
+<li><strong>Estimated effort:</strong> M with high migration risk.</li>
+<li><strong>Dependencies and prerequisites:</strong> Strong cross-domain
+dominance, adapter equivalence, stable versioning, escape hatch.</li>
+<li><strong>Key risks:</strong> Hidden regressions, vendor lock-in,
+invalid rankings, single-point failure, suppressed task-specific
+optimization.</li>
+<li><strong>Build / Buy / Partner recommendation:</strong> Neither as a
+global mandate; standardize interfaces and evidence contracts
+instead.</li>
+<li><strong>Minimum reversible validation experiment:</strong> Offline
+multi-domain tournament with predeclared metrics and no migration.</li>
+<li><strong>Success metrics and stop conditions:</strong> Require broad
+dominance with no safety/cost regression. Stop on material rank reversal
+or domain interaction.</li>
+<li><strong>Roadmap trigger:</strong> Independent, longitudinal evidence
+shows one harness dominates across representative tasks after costs and
+risk.</li>
+<li><strong>Internal context required:</strong> Portfolio task
+distribution, switching cost, tool ecosystem, compliance controls,
+vendor strategy.</li>
+</ul>
+<h1 id="enterprise-ai-architecture-implications">Enterprise AI
+Architecture Implications</h1>
+<p><strong>Independent Analysis — 12–24 month horizon.</strong> The
+evidence favors a configuration-aware, event-sourced architecture with
+evidence-gated transitions. No current enterprise stack, vendor, model,
+data platform, security posture, or maturity level is assumed.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Shared enabling foundation</th>
+<th>Architectural implication</th>
+<th>Enhancements unlocked</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Model gateway</strong></td>
+<td>Bind model and harness versions, budgets, prompts, tool schemas,
+latency, and cost to one qualification identity</td>
+<td>Matrix, injection regression, adversarial generation</td>
+</tr>
+<tr class="even">
+<td><strong>Context/memory service</strong></td>
+<td>Carry source trust, authority, version, currentness, and affected
+scope into every prompt and event</td>
+<td>Near-target defense, async ledger, gate registry</td>
+</tr>
+<tr class="odd">
+<td><strong>Evaluation infrastructure</strong></td>
+<td>Run matched configuration panels, counterfactual routes, fixed
+attacks, and scoped event faults</td>
+<td>All prototype items</td>
+</tr>
+<tr class="even">
+<td><strong>Observability</strong></td>
+<td>Trace termination, handoff, evidence, route, event response, action
+arguments, and downstream simulator outcome</td>
+<td>VCR/DRS telemetry, incident attribution</td>
+</tr>
+<tr class="odd">
+<td><strong>Policy enforcement</strong></td>
+<td>Admit a transition only when typed prerequisites, source trust, and
+approval are satisfied</td>
+<td>Evidence-gated transitions, composed-skill cuts</td>
+</tr>
+<tr class="even">
+<td><strong>Identity/authorization</strong></td>
+<td>Separate model proposer, harness, tool principal, reviewer, event
+source, and policy authority</td>
+<td>Injection resistance, skill containment, overrides</td>
+</tr>
+<tr class="odd">
+<td><strong>Knowledge systems</strong></td>
+<td>Store gates and event contracts as versioned executable knowledge
+with owners</td>
+<td>Gate registry, async ledger</td>
+</tr>
+<tr class="even">
+<td><strong>Agent orchestration</strong></td>
+<td>Use dependency-aware event processing, idempotency, cancellation,
+preservation, and revalidation</td>
+<td>Async ledger, safe parallel agents</td>
+</tr>
+<tr class="odd">
+<td><strong>Human-review controls</strong></td>
+<td>Provide structured divert/stop/override with conflict-of-interest
+and workload limits</td>
+<td>Evidence gates, attack triage</td>
+</tr>
+<tr class="even">
+<td><strong>Data provenance</strong></td>
+<td>Sign evidence, artifacts, transformations, lifecycle, and scorer
+versions</td>
+<td>Reproducibility and audit</td>
+</tr>
+<tr class="odd">
+<td><strong>Cost telemetry</strong></td>
+<td>Price model/harness runs, revalidation, deferral, review, and
+incident loss</td>
+<td>Qualification, async economics</td>
+</tr>
+<tr class="even">
+<td><strong>Experiment infrastructure</strong></td>
+<td>Support sealed tasks, clustered bootstrap, adversarial replay, fault
+injection, and expiring results</td>
+<td>All backlog items</td>
+</tr>
+</tbody>
+</table>
+<p>The common object is a <strong>transition envelope</strong>: who
+proposed the action; model and harness versions; evidence and source
+authority; prerequisite truth; event version and affected scope; allowed
+and prohibited effects; required review/revalidation; cost; artifact;
+and realized outcome. A vendor-neutral envelope lets enterprises change
+models without discarding controls.</p>
+<h1 id="implementation-priorities">Implementation priorities</h1>
+<h2 id="next-30-days">Next 30 days</h2>
+<ol type="1">
+<li>Inventory models, harnesses, tools, versions, budgets, and 100
+representative tasks; define configuration-level acceptance
+criteria.</li>
+<li>Choose five high-consequence prerequisites and write their source,
+computation, validity window, stop/divert consequence, and
+override.</li>
+<li>Convert 200 existing security cases into near-target incorrect and
+harmful variants; execute only against simulators.</li>
+<li>Add termination reason, artifact handoff, unresolved event, and
+revalidation status to one agent trace.</li>
+</ol>
+<h2 id="days-3190">Days 31–90</h2>
+<ol type="1">
+<li>Run the model–harness matrix and publish task-clustered intervals
+plus cost/latency and failure attribution.</li>
+<li>Compare advisory versus enforced evidence gates in historical
+replay; measure false stops and invalid continuations.</li>
+<li>Seed delayed, duplicate, stale, conflicting, and failed-subagent
+events into 50 workflows; compare scoped ERC handling with
+rebuild-all.</li>
+<li>Graph a small approved skill portfolio and verify known
+source-to-sink paths under no-network containment.</li>
+</ol>
+<h2 id="explicitly-not-yet">Explicitly not yet</h2>
+<ul>
+<li>No production deployment because a research benchmark is novel or
+high-scoring.</li>
+<li>No universal harness standard from the reported ranking.</li>
+<li>No incident-rate claim from ASR@3.</li>
+<li>No prompt-only remedy for evidence-gating failures.</li>
+<li>No parallel-agent expansion without event identity, idempotency,
+dependency scope, and revalidation.</li>
+<li>No skill-composition scanner purchase without recall estimation and
+internal reproduction.</li>
+</ul>
+<h1 id="knowledge-reinforcement">Knowledge reinforcement</h1>
+<h2 id="five-checks-for-the-next-design-review">Five checks for the next
+design review</h2>
+<ol type="1">
+<li><strong>Configuration:</strong> Which exact model–harness–tool
+version was qualified for this task?</li>
+<li><strong>Target:</strong> Can an attacker change the outcome while
+keeping the request apparently on task?</li>
+<li><strong>Gate:</strong> What evidence must stop, divert, or
+invalidate the next step?</li>
+<li><strong>Event:</strong> What must change, stay unchanged, avoid side
+effects, and be reverified when a result arrives?</li>
+<li><strong>Composition:</strong> Can two individually permitted skills
+form a forbidden source-to-sink capability path?</li>
+</ol>
+<h2 id="retrieval-prompts">Retrieval prompts</h2>
+<ul>
+<li>Why is valid-completion rate not a correctness or safety
+metric?</li>
+<li>What does a ranking reversal imply for model-only vendor
+scorecards?</li>
+<li>Distinguish near-target incorrect and harmful prompt-injection
+targets.</li>
+<li>What evidence shows DMAIC-Bench failures are not only missed
+diagnostics?</li>
+<li>Why can full-plan rebuilding be worse than a scoped event-response
+contract?</li>
+</ul>
+<h1 id="sources-and-verification-notes">Sources and verification
+notes</h1>
+<ul>
+<li>Primary paper records and full text: <a
+href="https://arxiv.org/abs/2610.32483">When Agents Fail</a>, <a
+href="https://arxiv.org/abs/2610.32531">On Task, Off Track</a>, <a
+href="https://arxiv.org/abs/2610.32305">DMAIC-Bench</a>, <a
+href="https://arxiv.org/abs/2610.32429">Async-RBench</a>, and <a
+href="https://arxiv.org/abs/2610.32155">KnotScryer</a>.</li>
+<li>Verified artifacts: <a
+href="https://github.com/psptpx/DMAIC-Bench">DMAIC-Bench public
+repository</a> and <a
+href="https://pope8zdt.github.io/Async-RBench/">Async-RBench project
+page</a>. The DMAIC repository states AGPL-3.0 for code and separate
+data licensing; the original industrial per-trial archive is not
+included.</li>
+<li>Discovery pages: <a href="https://arxiv.org/list/cs.AI/recent">cs.AI
+recent</a>, <a href="https://arxiv.org/list/cs.CR/recent">cs.CR
+recent</a>, <a href="https://arxiv.org/list/cs.CL/recent">cs.CL
+recent</a>, <a href="https://arxiv.org/list/cs.LG/recent">cs.LG
+recent</a>, <a href="https://arxiv.org/list/cs.SE/recent">cs.SE
+recent</a>, <a href="https://arxiv.org/list/cs.IR/recent">cs.IR
+recent</a>, and <a href="https://arxiv.org/list/stat.ML/recent">stat.ML
+recent</a>.</li>
+</ul>
+<p><strong>Boundary:</strong> Every enterprise item is a future option,
+not an approved commitment. Internal architecture, security posture,
+data classification, identity design, reviewer capability, legal
+obligations, and economics must be verified before implementation. All
+proposed experiments are isolated, reversible, measurable, and
+non-destructive.</p></main></div>
+<footer>AI Research Intelligence Brief · October 26, 2026 · Research options, not deployment approval.</footer>
+<div class="toolbar"><button onclick="window.print()" aria-label="Print report">Print</button><button id="top" aria-label="Back to top">↑ Top</button></div>
+<script>
+const p=document.getElementById('progress');addEventListener('scroll',()=>{const h=document.documentElement;p.style.width=((h.scrollTop/(h.scrollHeight-h.clientHeight))*100)+'%'});document.getElementById('top').onclick=()=>scrollTo({top:0,behavior:'smooth'});
+document.querySelectorAll('main h3').forEach(h=>{if(/^\d+\./.test(h.textContent))h.setAttribute('data-backlog','true')});
+</script>
+</body></html>
