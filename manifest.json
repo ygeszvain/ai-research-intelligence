@@ -3,12 +3,31 @@
     "title": "AI Research Intelligence",
     "url": "https://ygeszvain.github.io/ai-research-intelligence",
     "description": "Evidence-grounded daily AI and machine-learning research intelligence.",
-    "generated_at_utc": "2026-10-31T09:10:46.320748Z",
-    "report_count": 83,
-    "latest_report": "2026-10-31",
-    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-10-31.html"
+    "generated_at_utc": "2026-11-01T10:05:21.135818Z",
+    "report_count": 84,
+    "latest_report": "2026-11-01",
+    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-11-01.html"
   },
   "reports": [
+    {
+      "date": "2026-11-01",
+      "date_display": "November 1, 2026",
+      "title": "AI Research Intelligence Brief — November 1, 2026",
+      "excerpt": "One deep technical report examines privacy-safe synthetic enterprise evaluation estates, multi-axis quality gates, exact ground truth, transfer validity, and eight evidence-traceable enterprise AI enhancement options.",
+      "topics": [
+        "Evaluation & Observability",
+        "Data & Knowledge Infrastructure",
+        "Safety & Governance",
+        "Memory & Context",
+        "AI Software Engineering",
+        "MLOps & Platform",
+        "Human-AI Workflow"
+      ],
+      "path": "reports/2026-11-01.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-11-01.html",
+      "size_bytes": 68127,
+      "sha256": "4608021e74e2b14f600aca8e120034b8b9b8b52d35033517b548b06f3ac992f3"
+    },
     {
       "date": "2026-10-31",
       "date_display": "October 31, 2026",
