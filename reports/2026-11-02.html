@@ -1,0 +1,1620 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Evidence-grounded AI Research Intelligence Brief for November 2, 2026: scoped multi-agent repair, evidence-derived authorization policy, premise-first test-time search, and nine enterprise options.">
+<meta name="report-date" content="2026-11-02">
+<meta name="research-window" content="2026-11-01T04:01:00-06:00/2026-11-02T04:03:00-06:00 America/Chicago">
+<meta name="deep-paper-count" content="3">
+<meta name="watchlist-count" content="2">
+<meta name="theme-color" content="#071321">
+<title>AI Research Intelligence Brief — November 2, 2026</title>
+<style>
+:root{--bg:#06111d;--panel:#0c1c2a;--panel2:#10283a;--text:#e9f2f8;--muted:#9fb6c6;--line:#2a465b;--cyan:#46dbc6;--gold:#f4c96b;--rose:#ff8f9b;--max:1180px;color-scheme:dark}
+@media(prefers-color-scheme:light){:root{--bg:#f4f7f8;--panel:#fff;--panel2:#edf4f7;--text:#102131;--muted:#526979;--line:#cddbe2;--cyan:#087f73;--gold:#9b6300;--rose:#b92b45;color-scheme:light}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 90% 0,rgba(70,219,198,.12),transparent 30rem),var(--bg);color:var(--text);font:16px/1.67 ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;overflow-x:hidden}a{color:var(--cyan);text-underline-offset:3px;overflow-wrap:anywhere}header{border-bottom:1px solid var(--line);background:linear-gradient(135deg,rgba(70,219,198,.09),rgba(244,201,107,.04));padding:54px 22px 34px}.hero{max-width:var(--max);margin:auto}.eyebrow{color:var(--cyan);text-transform:uppercase;letter-spacing:.15em;font-size:.76rem;font-weight:800}h1{font-size:clamp(2.2rem,6vw,4.7rem);line-height:.98;max-width:1000px;margin:.35rem 0 1rem;letter-spacing:-.055em}header p{max-width:900px;color:var(--muted);font-size:1.09rem}.chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}.chip{border:1px solid var(--line);border-radius:999px;padding:6px 11px;background:var(--panel);font-size:.8rem}.topbets{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}.bet{border:1px solid var(--line);background:var(--panel);border-radius:14px;padding:15px}.bet b{display:block;color:var(--gold);font-size:1.15rem}.layout{max-width:var(--max);margin:auto;display:grid;grid-template-columns:250px minmax(0,1fr);gap:34px;padding:30px 22px 80px}nav{position:sticky;top:16px;align-self:start;max-height:calc(100vh - 32px);overflow:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:14px}nav strong{display:block;margin:2px 8px 10px;color:var(--gold)}nav ul{list-style:none;margin:0;padding:0}nav a{display:block;color:var(--muted);text-decoration:none;padding:5px 8px;border-radius:7px;font-size:.83rem;line-height:1.25}nav a:hover{background:var(--panel2);color:var(--text)}main{min-width:0;overflow-x:hidden}main>h1{font-size:1.8rem;margin:2.6rem 0 1rem;padding-top:.7rem;border-top:1px solid var(--line);letter-spacing:-.02em}main>h1:first-child{margin-top:0}main h2{font-size:1.35rem;margin-top:2rem;color:var(--cyan)}main h3{font-size:1.08rem;color:var(--gold);margin-bottom:.45rem}p,li{max-width:88ch}blockquote{margin:1rem 0;padding:1rem 1.2rem;border-left:4px solid var(--gold);background:var(--panel);color:var(--muted)}table{display:block;width:100%;max-width:100%;overflow-x:auto;border-collapse:collapse;margin:1.25rem 0;background:var(--panel);font-size:.86rem}th,td{padding:10px 12px;border:1px solid var(--line);text-align:left;vertical-align:top}th{color:var(--gold);background:var(--panel2)}main h3+ul,main h2+ul{border:1px solid var(--line);background:linear-gradient(135deg,var(--panel),var(--panel2));border-radius:14px;padding:15px 22px 15px 34px}main h3+ul li,main h2+ul li{margin:.5rem 0}.viz{border:1px solid var(--line);border-radius:16px;background:linear-gradient(135deg,var(--panel),var(--panel2));padding:20px;margin:1.5rem 0}.viz-title{color:var(--gold);font-weight:800;margin-bottom:14px}.flow-row{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:10px;align-items:center;margin:10px 0}.flow-node{border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center;background:var(--bg)}.flow-node.accent{border-color:var(--cyan)}.flow-arrow{color:var(--cyan);font-weight:900}.flow-note{color:var(--muted);font-size:.9rem;margin-top:12px}.scorebar{display:flex;height:22px;border-radius:999px;overflow:hidden;border:1px solid var(--line);margin:.45rem 0 1rem}.scorebar span{display:flex;align-items:center;justify-content:center;font-size:.67rem;color:#06111d;font-weight:800}.scorebar .s{background:#46dbc6}.scorebar .t{background:#74c8e2}.scorebar .e{background:#f4c96b}.scorebar .r{background:#ffad7b}.scorebar .f{background:#c9a7ff}.scorebar .d{background:#ff8f9b}.progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--cyan),var(--gold));width:0;z-index:9}.toolbar{position:fixed;right:18px;bottom:18px;display:flex;gap:8px}.toolbar button{border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:999px;padding:9px 12px;cursor:pointer}.label{font-size:.75rem;color:var(--muted)}footer{border-top:1px solid var(--line);padding:24px;text-align:center;color:var(--muted)}
+@media(max-width:850px){.topbets{grid-template-columns:1fr}.layout{grid-template-columns:1fr}nav{position:relative;top:0;max-height:none}nav ul{columns:2}h1{font-size:2.65rem}.flow-row{grid-template-columns:1fr}.flow-arrow{transform:rotate(90deg);text-align:center}}
+@media(max-width:520px){header{padding-top:34px}.layout{padding:20px 14px 60px}nav ul{columns:1}h1{font-size:2.25rem}.scorebar{height:auto;flex-direction:column}.scorebar span{min-height:22px}}
+@media print{body{background:white;color:#111;font-size:11pt}header{padding:18px 0}.layout{display:block;padding:0}nav,.toolbar,.progress{display:none}a{color:#145c70}main>h1{break-before:page}main>h1:first-child{break-before:auto}table,.viz{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<header><div class="hero">
+<div class="eyebrow">AI Research Intelligence · Evidence-first edition</div>
+<h1>Repair only what the evidence permits.</h1>
+<p>November 2, 2026 briefing. Three new papers clear deep review: contribution-scoped multi-agent repair, evidence-derived access-control policy, and a preregistered audit showing when test-time search lacks usable signal or deployed speed. Two additional papers remain Watchlist-only.</p>
+<div class="chips"><span class="chip">3 deep papers</span><span class="chip">2 Watchlist papers</span><span class="chip">9 evidence-traceable options</span><span class="chip">84-report duplicate screen</span><span class="chip">Research options, not deployment approval</span></div>
+<div class="topbets"><div class="bet"><span class="label">TOP BET 1 · PROTOTYPE SOON</span><b>87.0 · Evidence-derived policy</b><span>Synthesize authorization policy from cited evidence, then validate it with an independent behavioral oracle.</span></div><div class="bet"><span class="label">TOP BET 2 · PROTOTYPE SOON</span><b>86.6 · Premise-first compute gate</b><span>Require headroom, selector lift, realized efficiency, and evaluator integrity before scaling inference.</span></div><div class="bet"><span class="label">TOP BET 3 · PROTOTYPE SOON</span><b>86.2 · Contribution-scoped repair</b><span>Reuse only accepted work and repair bounded actions or dependencies under immutable permissions.</span></div></div>
+</div></header>
+<div class="layout"><nav><strong>Navigate</strong><ul>
+<li><a href="#executive-decision" id="toc-executive-decision">Executive
+decision</a>
+<ul>
+<li><a href="#top-3-future-bets" id="toc-top-3-future-bets">Top 3 Future
+Bets</a></li>
+</ul></li>
+<li><a href="#research-scope-and-selection-discipline"
+id="toc-research-scope-and-selection-discipline">Research scope and
+selection discipline</a>
+<ul>
+<li><a href="#evidence-labels" id="toc-evidence-labels">Evidence
+labels</a></li>
+<li><a href="#selection-and-review-depth-score"
+id="toc-selection-and-review-depth-score">Selection and review-depth
+score</a></li>
+</ul></li>
+<li><a href="#deep-paper-1--dittany-contribution-guided-runtime-repair"
+id="toc-deep-paper-1--dittany-contribution-guided-runtime-repair">Deep
+paper 1 — Dittany: contribution-guided runtime repair</a>
+<ul>
+<li><a href="#research-question-and-method"
+id="toc-research-question-and-method">Research question and
+method</a></li>
+<li><a href="#quantitative-claim-trace"
+id="toc-quantitative-claim-trace">Quantitative claim trace</a></li>
+<li><a href="#methodological-critique"
+id="toc-methodological-critique">Methodological critique</a></li>
+<li><a href="#prior-work-comparison-and-enterprise-readiness"
+id="toc-prior-work-comparison-and-enterprise-readiness">Prior-work
+comparison and enterprise readiness</a></li>
+</ul></li>
+<li><a
+href="#deep-paper-2--reparo-evidence-derived-access-policy-synthesis"
+id="toc-deep-paper-2--reparo-evidence-derived-access-policy-synthesis">Deep
+paper 2 — Reparo: evidence-derived access-policy synthesis</a>
+<ul>
+<li><a href="#research-question-and-pipeline"
+id="toc-research-question-and-pipeline">Research question and
+pipeline</a></li>
+<li><a href="#quantitative-claim-trace-1"
+id="toc-quantitative-claim-trace-1">Quantitative claim trace</a></li>
+<li><a href="#methodological-critique-1"
+id="toc-methodological-critique-1">Methodological critique</a></li>
+<li><a href="#prior-work-comparison-and-enterprise-readiness-1"
+id="toc-prior-work-comparison-and-enterprise-readiness-1">Prior-work
+comparison and enterprise readiness</a></li>
+</ul></li>
+<li><a href="#deep-paper-3--premise-first-audit-of-test-time-search"
+id="toc-deep-paper-3--premise-first-audit-of-test-time-search">Deep
+paper 3 — premise-first audit of test-time search</a>
+<ul>
+<li><a href="#audit-design" id="toc-audit-design">Audit design</a></li>
+<li><a href="#quantitative-claim-trace-2"
+id="toc-quantitative-claim-trace-2">Quantitative claim trace</a></li>
+<li><a href="#methodological-critique-2"
+id="toc-methodological-critique-2">Methodological critique</a></li>
+<li><a href="#prior-work-comparison-and-enterprise-readiness-2"
+id="toc-prior-work-comparison-and-enterprise-readiness-2">Prior-work
+comparison and enterprise readiness</a></li>
+</ul></li>
+<li><a href="#watchlist" id="toc-watchlist">Watchlist</a>
+<ul>
+<li><a href="#personachatbench--arxiv261042060"
+id="toc-personachatbench--arxiv261042060">PersonaChatBench —
+arXiv:2610.42060</a></li>
+<li><a href="#repair-agent-failure-memory--arxiv261041433"
+id="toc-repair-agent-failure-memory--arxiv261041433">Repair-agent
+failure memory — arXiv:2610.41433</a></li>
+</ul></li>
+<li><a href="#cross-paper-synthesis"
+id="toc-cross-paper-synthesis">Cross-paper synthesis</a>
+<ul>
+<li><a href="#1-reuse-requires-validity-conditions"
+id="toc-1-reuse-requires-validity-conditions">1. Reuse requires validity
+conditions</a></li>
+<li><a href="#2-independence-is-structural-not-cosmetic"
+id="toc-2-independence-is-structural-not-cosmetic">2. Independence is
+structural, not cosmetic</a></li>
+<li><a href="#3-a-negative-result-can-be-a-platform-capability"
+id="toc-3-a-negative-result-can-be-a-platform-capability">3. A negative
+result can be a platform capability</a></li>
+<li><a href="#4-authorization-and-repair-share-a-control-plane-problem"
+id="toc-4-authorization-and-repair-share-a-control-plane-problem">4.
+Authorization and repair share a control-plane problem</a></li>
+</ul></li>
+<li><a href="#enterprise-ai-enhancement-backlog"
+id="toc-enterprise-ai-enhancement-backlog">Enterprise AI Enhancement
+Backlog</a>
+<ul>
+<li><a href="#future-enterprise-ai-priority-score"
+id="toc-future-enterprise-ai-priority-score">Future Enterprise AI
+Priority Score</a></li>
+<li><a href="#prototype-soon" id="toc-prototype-soon">Prototype
+Soon</a></li>
+<li><a href="#prepare-foundations" id="toc-prepare-foundations">Prepare
+Foundations</a></li>
+<li><a href="#monitor-for-maturity"
+id="toc-monitor-for-maturity">Monitor for Maturity</a></li>
+<li><a href="#deprioritize-for-now"
+id="toc-deprioritize-for-now">Deprioritize for Now</a></li>
+</ul></li>
+<li><a href="#enterprise-ai-architecture-implications"
+id="toc-enterprise-ai-architecture-implications">Enterprise AI
+Architecture Implications</a></li>
+<li><a href="#implementation-priorities"
+id="toc-implementation-priorities">Implementation Priorities</a></li>
+<li><a href="#knowledge-reinforcement"
+id="toc-knowledge-reinforcement">Knowledge Reinforcement</a>
+<ul>
+<li><a href="#what-changed-today" id="toc-what-changed-today">What
+changed today</a></li>
+<li><a href="#durable-questions-for-future-briefings"
+id="toc-durable-questions-for-future-briefings">Durable questions for
+future briefings</a></li>
+</ul></li>
+<li><a href="#evidence-ledger-and-sources"
+id="toc-evidence-ledger-and-sources">Evidence Ledger and
+Sources</a></li>
+</ul></nav><main><h1 id="executive-decision">Executive decision</h1>
+<p><strong>Central signal — Independent Analysis.</strong> Reliable
+enterprise AI is becoming less about retrying a failed model call and
+more about preserving <em>validated state</em>: explicit requirements,
+accepted intermediate contributions, evidence-backed authorization
+intent, and verified evaluation premises. The three deep papers converge
+on one architectural principle: before an AI system reuses, repairs, or
+scales an output, it should know what has actually been established,
+under which conditions, and by which independent check.</p>
+<ul>
+<li><strong>Dittany</strong> turns a multi-agent execution into a
+contribution graph, checks expected results and acceptance conditions,
+retains validated work, and repairs either the current action or the
+unfinished dependency graph. Across 30 applications, six frameworks, and
+9,000 tasks, it reports 84.76% task accuracy versus 58.01% native
+execution and 63.48% for the strongest aggregate recovery baseline.
+<strong>Paper Fact.</strong></li>
+<li><strong>Reparo</strong> synthesizes access-control policies from
+code, comments, and documentation, uses native language validators for
+executable correctness, and asks different models to construct
+behavioral test oracles. Across 228 repositories, repaired policies were
+99–100% language-valid; manually reviewed oracle cases were reported as
+91.5–96.9% correct. <strong>Paper Fact.</strong></li>
+<li><strong>The test-time-search audit</strong> finds that more
+inference compute can fail at three separate premises: candidate
+outcomes may not be separable, nominal FLOP savings may not become
+end-to-end speed, and the simulator itself may corrupt observations
+along compute-heavy paths. <strong>Paper Fact.</strong></li>
+</ul>
+<p>These are research results, not production authorization. Dittany's
+semantic checks and outcome assessment use the same model family and can
+share error; Reparo's policy and oracle tracks are separated by model
+but draw from the same imperfect repository evidence; the
+test-time-search results are tightly scoped to Cosmos Policy on
+RoboCasa. The enterprise recommendation is therefore a
+<strong>host-controlled evidence and repair plane</strong> with
+deterministic checks first, independent semantic review second, bounded
+repair budgets, immutable evidence lineage, and mandatory abstention
+when premises or authorization remain unestablished.</p>
+<h2 id="top-3-future-bets">Top 3 Future Bets</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Future bet</th>
+<th>Why it matters</th>
+<th>Evidence that would change the recommendation</th>
+<th>Next reversible action</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Evidence-derived policy synthesis with independent
+behavioral oracle — 87.0</strong></td>
+<td>Reparo demonstrates a practical pipeline joining repository
+evidence, native validators, independent behavioral tests, and human
+review. It targets a high-consequence enterprise control:
+authorization.</td>
+<td>Strengthen if blinded security engineers confirm decision semantics
+on private repositories and mutation tests expose unsafe
+over-permission. Weaken if policy/oracle agreement collapses when
+evidence is incomplete or contradictory.</td>
+<td>Run read-only synthesis on 10 non-production repositories; compare
+generated policies with current controls without deploying them.</td>
+</tr>
+<tr class="even">
+<td><strong>Premise-first compute and simulator-integrity gate —
+86.6</strong></td>
+<td>It prevents expensive search or scaling mechanisms from being
+credited when their required signal, realized latency, or evaluation
+environment is invalid.</td>
+<td>Strengthen if the audit predicts failed scaling investments across
+two more models and stacks. Weaken if candidate signal and realized
+efficiency are robust under independent replication.</td>
+<td>Audit one best-of-N or self-consistency feature using random and
+hindsight-oracle baselines, wall-clock timing, power gates, and
+corruption sentinels.</td>
+</tr>
+<tr class="odd">
+<td><strong>Contribution-contract execution and scoped repair layer —
+86.2</strong></td>
+<td>Dittany shows that preserving validated work while repairing unmet
+dependencies can outperform retries, rollback, and supervisor agents
+under its tested suite.</td>
+<td>Strengthen with public artifacts, independent reproduction,
+effect-level checks, and heterogeneous judge models. Weaken if
+task-contract extraction or semantic checks cause correlated false
+acceptance on internal workflows.</td>
+<td>Instrument one read-only multi-agent workflow with explicit
+contributions, acceptance conditions, and action-versus-graph repair;
+shadow only.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="research-scope-and-selection-discipline">Research scope and
+selection discipline</h1>
+<p><strong>Research window:</strong> November 1, 2026 4:01 a.m. CST
+through November 2, 2026 4:03 a.m. CST, America/Chicago. The official
+arXiv recent pages announced a Monday, November 2 slate. All selected
+papers were submitted October 30 and first appeared in the Monday
+announcement after the prior cutoff. No selected identifier or title
+appeared in the preceding 84 briefings.</p>
+<p>Discovery covered official arXiv AI, machine learning, language,
+software engineering, security, and human-computer-interaction listings;
+major lab publication surfaces; OpenReview; ACL Anthology; PMLR; NIST;
+and relevant university or government sources. Primary papers and
+verified artifacts were preferred over commentary. Up to three deep
+papers and two Watchlist items were permitted; exactly three and two
+cleared their respective thresholds.</p>
+<h2 id="evidence-labels">Evidence labels</h2>
+<ul>
+<li><strong>Paper Fact:</strong> directly supported by a primary paper
+or verified artifact under stated conditions.</li>
+<li><strong>Independent Analysis:</strong> synthesis or decision
+judgment made in this briefing.</li>
+<li><strong>Enterprise Inference:</strong> a research-grounded future
+option requiring internal validation.</li>
+<li><strong>Uncertainty:</strong> missing transfer, artifact,
+statistical, timing, or production-readiness evidence.</li>
+</ul>
+<h2 id="selection-and-review-depth-score">Selection and review-depth
+score</h2>
+<p>The score is ordinal and decision-supportive, not a precise
+measurement.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th style="text-align: right;">Evidence</th>
+<th style="text-align: right;">Method transparency</th>
+<th style="text-align: right;">Reproducibility</th>
+<th style="text-align: right;">Enterprise relevance</th>
+<th style="text-align: right;">Readiness</th>
+<th>Decision</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Dittany, arXiv:2610.42144</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">62</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">72</td>
+<td><strong>82 — Deep</strong></td>
+</tr>
+<tr class="even">
+<td>Reparo, arXiv:2610.41800</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">68</td>
+<td style="text-align: right;">97</td>
+<td style="text-align: right;">75</td>
+<td><strong>85 — Deep</strong></td>
+</tr>
+<tr class="odd">
+<td>Test-time-search audit, arXiv:2610.41970</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">76</td>
+<td><strong>88 — Deep</strong></td>
+</tr>
+<tr class="even">
+<td>PersonaChatBench, arXiv:2610.42060</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">58</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">60</td>
+<td><strong>69 — Watchlist</strong></td>
+</tr>
+<tr class="odd">
+<td>Repair-agent failure memory, arXiv:2610.41433</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">72</td>
+<td style="text-align: right;">55</td>
+<td><strong>78 — Watchlist</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="visual" role="img" aria-label="Evidence-preserving enterprise AI control loop">
+  <div><strong>Intent contract</strong><br><span>Requirements, restrictions, authority</span></div>
+  <b>→</b>
+  <div><strong>Contribution ledger</strong><br><span>Accepted results and conditions</span></div>
+  <b>→</b>
+  <div><strong>Independent gates</strong><br><span>Executable checks, policy oracle, integrity</span></div>
+  <b>→</b>
+  <div><strong>Bounded repair</strong><br><span>Action, graph, or stop</span></div>
+  <b>→</b>
+  <div><strong>Observed effect</strong><br><span>Replay, transfer, human approval</span></div>
+</div>
+
+<p><strong>Independent Analysis.</strong> The common control object is
+not the model response; it is the evidence-backed claim that a
+requirement, permission, or evaluation premise holds.</p>
+<h1 id="deep-paper-1--dittany-contribution-guided-runtime-repair">Deep
+paper 1 — Dittany: contribution-guided runtime repair</h1>
+<p><strong>Primary source:</strong> Hanqi Sun et al., <a
+href="https://arxiv.org/abs/2610.42144">Dittany: Contribution-Guided
+Repair Framework for MAS Applications</a>, arXiv:2610.42144v1, submitted
+October 30, 2026. The paper is an unreviewed preprint under arXiv's
+perpetual non-exclusive license. No paper-specific public code or
+dataset link was verified on the arXiv record.</p>
+<h2 id="research-question-and-method">Research question and method</h2>
+<p>Dittany asks how a multi-agent application should recover when part
+of an execution fails but other work remains usable. Its core
+representation is a <strong>contribution graph</strong>:</p>
+<ol type="1">
+<li>extract methods, inputs, outputs, constraints, and workflow
+dependencies from application code and documentation;</li>
+<li>translate the user request into a task contract distinguishing
+mandatory requirements from preferences;</li>
+<li>connect required results to producing actions and consuming
+actions;</li>
+<li>derive acceptance conditions and verification policies;</li>
+<li>retain results that pass applicable checks;</li>
+<li>use action-level repair when existing inputs suffice, or graph-level
+repair when prerequisites or unfinished work must change;</li>
+<li>re-check repaired outputs before downstream use and verify the final
+response against the task contract.</li>
+</ol>
+<p>The system mixes programmatic checks—schema, reference, numeric
+bounds, tests, artifacts, environment effects—with LLM-based semantic
+checks. Runtime inference and semantic assessment use DeepSeek V4 Flash
+with thinking disabled and temperature zero.</p>
+<p>The evaluation contains 30 applications across AutoGen/AG2, CrewAI,
+Google ADK, HelloAgents, LangGraph, and OpenAI Agents SDK. Each
+application receives 300 inputs, yielding 9,000 application–task
+instances. Tasks draw from public research datasets and APIs,
+SWE-bench-Live, MBPP-sanitized, and application-specific reference
+outcomes.</p>
+<h2 id="quantitative-claim-trace">Quantitative claim trace</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th>Comparator and denominator</th>
+<th style="text-align: right;">Reported result</th>
+<th>Important qualification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Failure detection</td>
+<td>8,758 executions with resolved labels</td>
+<td style="text-align: right;">88.28% precision; 79.18% recall</td>
+<td>Unresolved labels are excluded; semantic labels may share model
+error.</td>
+</tr>
+<tr class="even">
+<td>Task accuracy</td>
+<td>9,000 tasks</td>
+<td style="text-align: right;">84.76%</td>
+<td>Reference checks mix executable and model-assisted judgments.</td>
+</tr>
+<tr class="odd">
+<td>Gain over native</td>
+<td>paired suite</td>
+<td style="text-align: right;">+26.74 percentage points; 2,407 more
+correct outcomes</td>
+<td>Dittany loses on 431 tasks that native passes.</td>
+</tr>
+<tr class="even">
+<td>Gain over strongest aggregate recovery baseline</td>
+<td>Reflexion at 63.48%</td>
+<td style="text-align: right;">+21.28 points</td>
+<td>Baseline leadership varies by framework.</td>
+</tr>
+<tr class="odd">
+<td>Framework breadth</td>
+<td>six frameworks</td>
+<td style="text-align: right;">Dittany leads aggregate; improves 24/30
+applications</td>
+<td>It is below the best baseline on some applications and
+frameworks.</td>
+</tr>
+<tr class="even">
+<td>Token cost</td>
+<td>all 9,000 tasks</td>
+<td style="text-align: right;">374.948M vs 317.963M native, +17.92%</td>
+<td>Some usage is estimated from comparable calls.</td>
+</tr>
+<tr class="odd">
+<td>Relative token cost</td>
+<td>recovery baselines</td>
+<td style="text-align: right;">24.19% below Reflexion; 13.05% below
+iterative rollback</td>
+<td>Monetary cost and latency are not established by token totals
+alone.</td>
+</tr>
+<tr class="even">
+<td>Repair ablation</td>
+<td>Action-only / Graph-only / Full</td>
+<td style="text-align: right;">52.54% / 69.17% / 84.76%</td>
+<td>The full system combines mechanisms; independent interaction effects
+are not isolated.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="methodological-critique">Methodological critique</h2>
+<p><strong>Strengths.</strong> The evaluation is unusually broad across
+frameworks and applications; requirements, accepted contributions, and
+dependencies are explicit; paired outcome counts expose both gains and
+regressions; and the ablation distinguishes narrow correction from
+dependency-graph repair. The approach directly addresses wasteful
+restart behavior and propagation of unsupported intermediate
+outputs.</p>
+<p><strong>Threats.</strong> Task contracts, method descriptions,
+semantic acceptance conditions, repair selection, and semantic outcome
+assessment all rely heavily on one model family. Correlated model error
+can therefore create a false closed loop: the same mistaken
+interpretation may authorize reuse, guide repair, and grade success.
+Temperature zero does not make remote APIs deterministic.
+Complete-system comparisons conflate detection, checking, repair policy,
+and budget. Token totals partly rely on estimates, and no independent
+replication or public implementation was verified. Most importantly,
+external side effects and hidden state are not fully observable; a
+contribution may look valid in the trace while its real-world effect is
+wrong.</p>
+<h2 id="prior-work-comparison-and-enterprise-readiness">Prior-work
+comparison and enterprise readiness</h2>
+<p>Reflexion retries with critique, iterative rollback revises a
+trajectory, SupervisorAgent adds oversight, and AgentTether diagnoses
+failure-critical subtrajectories. Dittany's differentiator is to
+preserve accepted contributions under explicit conditions while choosing
+between action-level and graph-level repair. <strong>Enterprise
+Inference:</strong> the contribution ledger is more transferable than
+the full repair agent. Enterprises can prototype host-side requirement
+and evidence tracking before permitting autonomous recovery. Production
+use would require heterogeneous validators, policy-bound repair budgets,
+effect verification, access control, audit logs, and human approval for
+consequential graph changes.</p>
+<h1
+id="deep-paper-2--reparo-evidence-derived-access-policy-synthesis">Deep
+paper 2 — Reparo: evidence-derived access-policy synthesis</h1>
+<p><strong>Primary source:</strong> Ayesha Binte Mostofa et al., <a
+href="https://arxiv.org/abs/2610.41800">Reparo: Synthesizing and
+Validating Access Control Policies</a>, arXiv:2610.41800v1, submitted
+October 30, 2026, CC BY 4.0. The paper is a preprint. No paper-specific
+repository or reusable dataset link was verified on the arXiv
+record.</p>
+<h2 id="research-question-and-pipeline">Research question and
+pipeline</h2>
+<p>Reparo targets repositories in which authorization intent is
+scattered across source code, comments, documentation, schemas, and
+existing policy files. It does not treat the developer's current policy
+as trusted ground truth. The pipeline:</p>
+<ol type="1">
+<li>segments code, documentation, and comments by natural
+structure;</li>
+<li>retrieves authorization-relevant evidence with BM25 and a
+pilot-selected threshold;</li>
+<li>synthesizes Cedar, OpenFGA, or Rego policies using grammar and
+few-shot repair guidance;</li>
+<li>executes official language validators and feeds error logs back for
+repair;</li>
+<li>gives the same repository evidence to a different model that
+generates concrete authorization requests, entity data, expected
+Allow/Deny decisions, and supporting line references;</li>
+<li>executes those tests against the synthesized policy;</li>
+<li>refines unexecutable tests and measures decision agreement,
+coverage, cost, and human-reviewed oracle quality.</li>
+</ol>
+<p>The dataset contains 228 public repositories: 53 Cedar, 75 OpenFGA,
+and 100 Rego. A rules-based scan found deployment evidence in 166
+repositories (72.8%). Synthesis uses Claude Sonnet 5 or DeepSeek V4 Pro;
+the oracle uses GPT-5.4 or GLM-5.2. Smaller open-weight models are also
+evaluated.</p>
+<h2 id="quantitative-claim-trace-1">Quantitative claim trace</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th>Condition</th>
+<th style="text-align: right;">Reported result</th>
+<th>Qualification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Language validity after repair</td>
+<td>228 repositories</td>
+<td style="text-align: right;">99.0–100%</td>
+<td>Passing a validator establishes syntax/type validity, not policy
+intent.</td>
+</tr>
+<tr class="even">
+<td>Decision agreement, OpenFGA</td>
+<td>generated oracle tests</td>
+<td style="text-align: right;">98.2–99.6%</td>
+<td>OpenFGA cases are structurally shallower than Cedar/Rego.</td>
+</tr>
+<tr class="odd">
+<td>Decision agreement, Cedar</td>
+<td>generated oracle tests</td>
+<td style="text-align: right;">82.0–86.5%</td>
+<td>Both policy and oracle originate from shared repository
+evidence.</td>
+</tr>
+<tr class="even">
+<td>Decision agreement, Rego</td>
+<td>generated oracle tests</td>
+<td style="text-align: right;">76.3–80.2%</td>
+<td>Complex conditions and missing execution context reduce
+confidence.</td>
+</tr>
+<tr class="odd">
+<td>Human oracle review</td>
+<td>random 390-case pooled sample</td>
+<td style="text-align: right;">91.5–96.9% correct</td>
+<td>Per-language uncertainty is wider than the pooled ±5% design.</td>
+</tr>
+<tr class="even">
+<td>Test executability</td>
+<td>model/language combinations</td>
+<td style="text-align: right;">86.4–99.2%</td>
+<td>Non-executable or missing-interface behavior can escape
+evaluation.</td>
+</tr>
+<tr class="odd">
+<td>All-source ablation</td>
+<td>12 Cedar repositories</td>
+<td style="text-align: right;">91.9% agreement</td>
+<td>Code-only 63.8%; docs-only 57.9%; removal of any source reduces
+agreement.</td>
+</tr>
+<tr class="even">
+<td>Cost and latency</td>
+<td>average per repository</td>
+<td style="text-align: right;">about 5 minutes; <span
+class="math inline">0.55–</span>1.57</td>
+<td>Uses August 2026 provider prices; excludes engineering and human
+review.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="methodological-critique-1">Methodological critique</h2>
+<p><strong>Strengths.</strong> The design separates synthesis and
+validation models; uses executable language validators; traces oracle
+decisions to evidence lines; covers three policy languages and hundreds
+of real repositories; reports evidence-source ablations; evaluates
+open-weight models; and subjects a statistically sized pooled oracle
+sample to two-person review.</p>
+<p><strong>Threats.</strong> Independence is partial: both tracks use
+the same retrieved evidence and can inherit the same omission or
+misinterpretation. For OpenFGA and Rego, existing policy files supply
+retrieval terms even though their content is removed, which may still
+shape what evidence is found. Test requests are generated from the
+synthesized interface, so omitted policy concepts may never be
+exercised. Public repositories may have entered model training, and
+private enterprise code, legacy policy systems, distributed runtime
+authorization, jurisdictional rules, or undocumented exceptions may
+differ materially. Agreement does not prove least privilege; a policy
+and oracle can agree on an unsafe interpretation. The paper reports
+human correctness but not a production-grade security review, mutation
+score, privilege-escalation red team, or deployment outcome.</p>
+<h2 id="prior-work-comparison-and-enterprise-readiness-1">Prior-work
+comparison and enterprise readiness</h2>
+<p>Traditional policy mining relies on structured permission data, logs,
+runtime behavior, or a trusted reference policy; NL-to-policy systems
+rely on explicit prose. Reparo combines code, comments, and
+documentation and uses a separate behavioral oracle. Its all-source
+ablation substantially exceeds code-only and documentation-only
+settings. <strong>Enterprise Inference:</strong> the most credible
+near-term use is advisory policy analysis and test generation, not
+direct policy replacement. A safe prototype should remain read-only,
+produce diffs and evidence citations, run official validators, add
+negative and mutation tests, and require security-owner approval.</p>
+<h1 id="deep-paper-3--premise-first-audit-of-test-time-search">Deep
+paper 3 — premise-first audit of test-time search</h1>
+<p><strong>Primary source:</strong> Jun Liu et al., <a
+href="https://arxiv.org/abs/2610.41970">When Does Test-Time Search Help
+World Action Models? An Empirical Audit of Candidate Selection and
+Simulator Integrity</a>, arXiv:2610.41970v1, submitted October 30, 2026,
+CC BY 4.0.</p>
+<h2 id="audit-design">Audit design</h2>
+<p>The paper audits Cosmos Policy on RoboCasa rather than proposing
+another positive scaling method. It preregisters a chain of necessary
+premises:</p>
+<ol type="1">
+<li>candidate outcomes must vary in a stable way;</li>
+<li>a deployable selector must recover that signal better than
+random;</li>
+<li>a hindsight oracle provides an upper bound on available selection
+headroom;</li>
+<li>nominal token/FLOP reductions must yield measured end-to-end latency
+gains;</li>
+<li>statistical power must be sufficient before launching a factorial
+experiment;</li>
+<li>rendering and simulator state must remain valid along compute-heavy
+paths.</li>
+</ol>
+<p>Candidates are evaluated with snapshot replay: execute part of an
+action chunk, then continue with a fixed dense base policy to measure
+closed-loop success. Paired bootstrap intervals are reported at state
+and episode levels. The timing experiment measures complete queries on
+an RTX A6000, not a composed estimate of component savings.</p>
+<h2 id="quantitative-claim-trace-2">Quantitative claim trace</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th>Measurement</th>
+<th style="text-align: right;">Result</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Learned selector vs random</td>
+<td>paired N=8 candidate sets</td>
+<td style="text-align: right;">−1.66 pp; episode CI [−2.49, −0.71]</td>
+<td>The deployed selector is worse under the tested configuration.</td>
+</tr>
+<tr class="even">
+<td>Hindsight oracle vs random</td>
+<td>same outcome matrix</td>
+<td style="text-align: right;">+1.40 pp; episode CI [−0.25, +3.40]</td>
+<td>Even unavailable outcome knowledge yields weak, inconclusive
+headroom.</td>
+</tr>
+<tr class="odd">
+<td>Candidate outcome variation</td>
+<td>263 states, two repeats</td>
+<td style="text-align: right;">48 states vary; only 20 stably
+separate</td>
+<td>82% of states offer no observed selection opportunity.</td>
+</tr>
+<tr class="even">
+<td>Reliability</td>
+<td>within-state ICC 0.20; R=2</td>
+<td style="text-align: right;">estimated reliability ≈0.33</td>
+<td>Candidate ranking is noisy.</td>
+</tr>
+<tr class="odd">
+<td>Nominal compute reduction</td>
+<td>whole-frame/value token pruning</td>
+<td style="text-align: right;">up to 47.9% fewer per-forward FLOPs</td>
+<td>Not equivalent to whole-query saving.</td>
+</tr>
+<tr class="even">
+<td>Deployed-path latency</td>
+<td>30 timed queries per cell</td>
+<td style="text-align: right;">at most 1.152× speedup</td>
+<td>Misses preregistered 1.5× target.</td>
+</tr>
+<tr class="odd">
+<td>Decode-excluded latency</td>
+<td>favorable path</td>
+<td style="text-align: right;">at most 1.253×</td>
+<td>Still misses target.</td>
+</tr>
+<tr class="even">
+<td>Adaptive allocation</td>
+<td>16-state smoke sample</td>
+<td style="text-align: right;">power gate not cleared</td>
+<td>Correct outcome is “inconclusive,” not zero effect.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="methodological-critique-2">Methodological critique</h2>
+<p><strong>Strengths.</strong> The work is falsification-first,
+preregistered, explicit about bootstrap units, uses a non-deployable
+oracle to bound achievable gain, refuses to run an underpowered
+factorial, measures end-to-end latency, and discovers a silent rendering
+corruption whose rate rises on compute-heavy planning paths. It releases
+a detector, fix, scripts, raw timing paths, and protocols.</p>
+<p><strong>Threats.</strong> The scope is deliberately narrow: one
+model, simulator family, hardware class, eager backend, candidate count,
+continuation policy, and small number of repeats. Snapshot replay
+controls a single-switch effect but does not reproduce the full
+deployment distribution. The render fix is stack-specific, and
+real-robot transfer is untested. The negative selector result therefore
+rejects a configuration, not test-time search in general.</p>
+<h2 id="prior-work-comparison-and-enterprise-readiness-2">Prior-work
+comparison and enterprise readiness</h2>
+<p>Prior test-time-scaling papers typically introduce a selector,
+critic, or adaptive allocation rule and report downstream gains. This
+paper asks whether the signal, realized efficiency, and evaluation
+integrity required for those gains exist at all. <strong>Enterprise
+Inference:</strong> the reusable artifact is a premise-gated experiment
+protocol. Any enterprise feature that spends more inference
+compute—best-of-N, self-consistency, verifier reranking, long rollouts,
+speculative tool use—should pass signal, cost, power, and
+evaluator-integrity gates before rollout.</p>
+<h1 id="watchlist">Watchlist</h1>
+<h2 id="personachatbench--arxiv261042060">PersonaChatBench —
+arXiv:2610.42060</h2>
+<p>The 74-page paper pairs the same task with private simulated-user
+persona cards and evaluates 20 models across six domains, separating
+native task success, persona-need fulfillment, and simulator fidelity.
+<strong>Why watch:</strong> aggregate assistant quality can hide which
+users are underserved. <strong>Why not deep:</strong> the abstract
+establishes breadth but the current run did not verify a public
+artifact, real-user transfer, or whether simulated needs accurately
+represent protected or operationally important user segments. A future
+deep review should trace persona construction, simulator leakage,
+subgroup sample sizes, variance, and human validation.</p>
+<h2 id="repair-agent-failure-memory--arxiv261041433">Repair-agent
+failure memory — arXiv:2610.41433</h2>
+<p>Across 181 failed attempts on 75 BugsInPy bugs, memory conditions
+improved point estimates over plain retry, but none of the main gains
+was significant. A summarized lesson did not outperform the full
+transcript and costs another call; one transcript-versus-notice contrast
+was significant for the smaller model but not the larger model. Code,
+data, and raw transcripts are linked. <strong>Why watch:</strong> this
+is unusually transparent negative evidence against indiscriminate memory
+summarization. <strong>Why not deep:</strong> the study is exploratory,
+limited to Python repair, and the strongest contrast does not replicate
+across model sizes. The enterprise implication is to treat memory as an
+experimental intervention with full-suite regression checks, not an
+assumed benefit.</p>
+<h1 id="cross-paper-synthesis">Cross-paper synthesis</h1>
+<h2 id="1-reuse-requires-validity-conditions">1. Reuse requires validity
+conditions</h2>
+<p>Dittany retains an intermediate result only when its acceptance
+conditions still apply. Reparo treats an inferred authorization rule as
+provisional until it passes a language validator and behavioral cases.
+The test-time audit accepts extra compute only if candidate signal,
+realized latency, statistical power, and simulator integrity survive.
+<strong>Independent Analysis:</strong> reusable AI output should be
+represented as
+<code>(claim, evidence, validity scope, verifier, timestamp, downstream uses)</code>,
+not plain text.</p>
+<h2 id="2-independence-is-structural-not-cosmetic">2. Independence is
+structural, not cosmetic</h2>
+<p>Calling a second model does not automatically create independent
+evidence. Reparo improves separation by using different models, but
+shared retrieval omissions can still correlate errors. Dittany's shared
+model family spans contract extraction, checking, repair, and grading.
+Enterprises need orthogonal checks: executable validators, state
+queries, policy engines, heterogeneous model review, mutation tests, and
+human security judgment.</p>
+<h2 id="3-a-negative-result-can-be-a-platform-capability">3. A negative
+result can be a platform capability</h2>
+<p>The test-time audit's power gate prevents waste; the repair-memory
+study shows that a summary call may add cost without benefit; Dittany
+exposes when repair should stop. Mature experiment infrastructure should
+reward abstention, rejected premises, and stopped rollouts rather than
+only successful-looking improvements.</p>
+<h2 id="4-authorization-and-repair-share-a-control-plane-problem">4.
+Authorization and repair share a control-plane problem</h2>
+<p>Policy synthesis asks what actions should be allowed; runtime repair
+asks what work can be reused or changed. Both require identity,
+authority, evidence provenance, bounded state transitions, and review.
+Repair must never expand authority merely because a new dependency would
+help satisfy the task.</p>
+<h1 id="enterprise-ai-enhancement-backlog">Enterprise AI Enhancement
+Backlog</h1>
+<h2 id="future-enterprise-ai-priority-score">Future Enterprise AI
+Priority Score</h2>
+<p>Each option receives six judgment scores from 0–100:
+strategic/business value (25%), technical leverage (20%), evidence
+strength (20%), enterprise readiness (15%), feasibility (10%), and
+risk-adjusted differentiation (10%). The weighted total is a
+prioritization aid, not a forecast. Component uncertainty is commonly
+±5–10 points because external papers do not reveal any particular
+enterprise's architecture, risk appetite, data quality, or operating
+model.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Rank</th>
+<th>Enhancement</th>
+<th>Band</th>
+<th style="text-align: right;">Strategic</th>
+<th style="text-align: right;">Technical</th>
+<th style="text-align: right;">Evidence</th>
+<th style="text-align: right;">Readiness</th>
+<th style="text-align: right;">Feasibility</th>
+<th style="text-align: right;">Differentiation</th>
+<th style="text-align: right;">Weighted total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td>Evidence-derived policy synthesis with independent behavioral
+oracle</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">68</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;"><strong>87.0</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td>Premise-first compute and simulator-integrity gate</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;"><strong>86.6</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td>Contribution-contract execution and scoped repair</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">72</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;"><strong>86.2</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td>Accepted-contribution provenance ledger</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">89</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">76</td>
+<td style="text-align: right;">74</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;"><strong>84.4</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td>Independent evaluator and disagreement service</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">89</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">74</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;"><strong>83.5</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td>Simulator and evaluation-integrity sentinel</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">68</td>
+<td style="text-align: right;">83</td>
+<td style="text-align: right;"><strong>82.7</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td>Persona-stratified assistant evaluation</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">76</td>
+<td style="text-align: right;">68</td>
+<td style="text-align: right;">61</td>
+<td style="text-align: right;">66</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;"><strong>73.6</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td>Failure-memory intervention harness</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">76</td>
+<td style="text-align: right;">72</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">58</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">64</td>
+<td style="text-align: right;"><strong>72.5</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9</td>
+<td>Unbounded autonomous graph repair</td>
+<td>Deprioritize for Now</td>
+<td style="text-align: right;">54</td>
+<td style="text-align: right;">62</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: right;"><strong>47.7</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="prototype-soon">Prototype Soon</h2>
+<h3
+id="1-evidence-derived-policy-synthesis-with-independent-behavioral-oracle--870">1.
+Evidence-derived policy synthesis with independent behavioral oracle —
+87.0</h3>
+<ul>
+<li><strong>Category:</strong> AI Security / Safety &amp; Governance /
+AI Software Engineering.</li>
+<li><strong>Research signal and supporting papers:</strong> Reparo
+synthesizes Cedar, OpenFGA, and Rego policies from repository evidence,
+reaches 99–100% language validity after repair, and validates decisions
+with separately generated behavioral cases; human review reports
+91.5–96.9% case correctness.</li>
+<li><strong>Evidence label:</strong> <strong>Enterprise
+Inference</strong> from strong preprint evidence; production security
+efficacy remains unverified.</li>
+<li><strong>Enterprise problem or opportunity:</strong> authorization
+intent is fragmented across code, comments, documentation, schemas,
+tickets, and outdated policy files.</li>
+<li><strong>Proposed future capability:</strong> retrieve cited
+authorization evidence, propose a versioned policy, run native
+validators, generate Allow/Deny cases with a different model, execute
+coverage and mutation tests, and present a security-review diff. Never
+auto-deploy.</li>
+<li><strong>Likely architectural placement:</strong> developer platform,
+security/governance, evaluation, human-review layer.</li>
+<li><strong>Expected business value:</strong> risk reduction, faster
+policy review, improved consistency, lower migration cost.</li>
+<li><strong>Technical value:</strong> executable validation, evidence
+lineage, cross-language policy modernization, concrete
+counterexamples.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+moderate-high for advisory analysis; low for autonomous enforcement
+changes.</li>
+<li><strong>Confidence / horizon / effort:</strong> <strong>High / Now /
+L</strong> for read-only pilots.</li>
+<li><strong>Dependencies and prerequisites:</strong> repository
+indexing, supported policy languages, native validators, source lineage,
+security owners, test identities/resources, mutation library,
+sandbox.</li>
+<li><strong>Key risks:</strong> privilege escalation, missing implicit
+behavior, correlated policy/oracle errors, training-data contamination,
+secrets exposure, false confidence from syntax validity, reviewer
+overload.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build the evidence
+model and approval workflow; buy or adopt mature policy engines and
+validators; partner with security/IAM owners.</strong></li>
+<li><strong>Minimum reversible validation experiment:</strong>
+synthesize policies for 10 non-production repositories, compare with
+current policies and security-owner judgments, and generate
+counterexamples without changing enforcement.</li>
+<li><strong>Success metrics:</strong> ≥99% validator pass; ≥95%
+human-confirmed high-severity decisions; mutation score ≥80%; 100%
+evidence citations; zero secret leakage.</li>
+<li><strong>Stop conditions:</strong> any unreviewed over-permission,
+missing evidence for a consequential rule, or severe policy mutation
+that escapes the oracle.</li>
+<li><strong>Roadmap trigger:</strong> two independent security teams
+confirm the pipeline finds real policy defects with lower review effort
+and no unsafe auto-change.</li>
+</ul>
+<h3 id="2-premise-first-compute-and-simulator-integrity-gate--866">2.
+Premise-first compute and simulator-integrity gate — 86.6</h3>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability / Model
+&amp; Inference / MLOps &amp; Platform.</li>
+<li><strong>Research signal and supporting papers:</strong> the
+test-time-search audit finds a value selector 1.66 points below random,
+only 18% of states with any observed outcome variation, ≤1.152× deployed
+speedup despite 47.9% nominal FLOP savings, and a compute-dependent
+rendering corruption.</li>
+<li><strong>Evidence label:</strong> <strong>Enterprise
+Inference</strong> from a rigorous but narrowly scoped paper.</li>
+<li><strong>Enterprise problem or opportunity:</strong> teams can spend
+inference budget on best-of-N, reranking, or longer rollouts without
+usable selection signal, realized speed, statistical power, or a
+trustworthy evaluator.</li>
+<li><strong>Proposed future capability:</strong> require every scaling
+feature to pass four pre-registered gates: recoverable headroom,
+deployable-selector lift over random, end-to-end cost/latency, and
+environment/evaluator integrity.</li>
+<li><strong>Likely architectural placement:</strong> model gateway,
+evaluation, observability, infrastructure, experiment platform.</li>
+<li><strong>Expected business value:</strong> cost avoidance,
+reliability, faster experimentation, credible ROI.</li>
+<li><strong>Technical value:</strong> detects nonexistent signal,
+underpowered experiments, misleading FLOP claims, and corrupted
+evaluation paths.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> high
+for methodology; medium for reusable tooling across non-robotic
+systems.</li>
+<li><strong>Confidence / horizon / effort:</strong> <strong>High / Now /
+M</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> experiment
+registry, random baseline, oracle upper bound, paired seeds, wall-clock
+telemetry, power analysis, integrity checks.</li>
+<li><strong>Key risks:</strong> incorrect oracle bound, hidden
+deployment overhead, overfitting gates to one workload, prematurely
+rejecting useful mechanisms.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build as an internal
+experiment standard; buy observability/profiling components where
+mature.</strong></li>
+<li><strong>Minimum reversible validation experiment:</strong> audit one
+existing reranker or self-consistency feature on 200 paired cases before
+changing production traffic.</li>
+<li><strong>Success metrics:</strong> statistically supported selector
+lift; predicted and measured cost within 10%; no integrity sentinel
+failures; preregistered power achieved.</li>
+<li><strong>Stop conditions:</strong> oracle headroom indistinguishable
+from zero, selector ≤ random, realized efficiency below minimum ROI, or
+evaluator corruption.</li>
+<li><strong>Roadmap trigger:</strong> the gate correctly predicts value
+and prevents at least one misleading or underpowered investment across
+two teams.</li>
+</ul>
+<h3
+id="3-contribution-contract-execution-and-scoped-repair-layer--862">3.
+Contribution-contract execution and scoped repair layer — 86.2</h3>
+<ul>
+<li><strong>Category:</strong> Agentic AI / Reasoning &amp; Planning /
+Evaluation &amp; Observability.</li>
+<li><strong>Research signal and supporting papers:</strong> Dittany
+reports 84.76% task accuracy across 9,000 tasks and six frameworks, with
+action-level and graph-level repair outperforming native and four
+recovery baselines in aggregate.</li>
+<li><strong>Evidence label:</strong> <strong>Enterprise
+Inference</strong>; results are preprint-only and semantic checks may be
+correlated.</li>
+<li><strong>Enterprise problem or opportunity:</strong> agents retry or
+restart after partial failure, wasting validated work and propagating
+unsupported intermediate results.</li>
+<li><strong>Proposed future capability:</strong> translate an approved
+task into mandatory contributions and acceptance conditions; bind each
+result to evidence and downstream consumers; choose bounded action
+repair, dependency repair, or abstention.</li>
+<li><strong>Likely architectural placement:</strong> agent layer,
+orchestration, evaluation, human-review layer.</li>
+<li><strong>Expected business value:</strong> productivity, reliability,
+lower inference cost, faster recovery.</li>
+<li><strong>Technical value:</strong> fine-grained reuse, explicit
+completion criteria, targeted repair, auditable dependency changes.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+moderate; host instrumentation is feasible, autonomous graph repair is
+immature.</li>
+<li><strong>Confidence / horizon / effort:</strong> <strong>Moderate /
+3–6 months / L</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> workflow graph,
+task-contract schema, action traces, typed tool interfaces, validators,
+budget controller, checkpointing.</li>
+<li><strong>Key risks:</strong> incorrect contract extraction, judge
+circularity, stale contribution reuse, unauthorized dependency
+expansion, non-idempotent side effects, excessive latency.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build the host-side
+contract and ledger; buy orchestration/trace infrastructure; partner
+with workflow owners.</strong></li>
+<li><strong>Minimum reversible validation experiment:</strong> shadow a
+read-only research or reporting workflow with 100 cases; permit no
+external writes.</li>
+<li><strong>Success metrics:</strong> severe false-acceptance &lt;1%;
+repair success &gt; retry baseline; ≥20% saved repeated work; complete
+evidence lineage; stable cost.</li>
+<li><strong>Stop conditions:</strong> any repair expands permissions,
+reuses stale evidence, or causes a severe false completion.</li>
+<li><strong>Roadmap trigger:</strong> independent reviewers reproduce
+acceptance decisions and repair gains persist on a blinded internal
+set.</li>
+</ul>
+<h2 id="prepare-foundations">Prepare Foundations</h2>
+<h3 id="4-accepted-contribution-provenance-ledger--844">4.
+Accepted-contribution provenance ledger — 84.4</h3>
+<ul>
+<li><strong>Category:</strong> Data &amp; Knowledge Infrastructure /
+Memory &amp; Context / Safety &amp; Governance.</li>
+<li><strong>Research signal and supporting papers:</strong> Dittany's
+repair logic depends on knowing which contributions are valid and which
+downstream nodes consume them; Reparo shows that combining source
+evidence materially improves behavioral agreement over any single
+evidence channel.</li>
+<li><strong>Evidence label:</strong> <strong>Independent
+Analysis</strong> grounded in Dittany and Reparo.</li>
+<li><strong>Enterprise problem or opportunity:</strong> enterprises
+often retain outputs without the evidence, verifier, scope, freshness,
+or authorization context needed to reuse them safely.</li>
+<li><strong>Proposed future capability:</strong> store each accepted
+contribution with claim, source, verifier, scope, timestamp, policy
+context, revocation state, and downstream consumers; invalidate
+dependent outputs when evidence or authority changes.</li>
+<li><strong>Likely architectural placement:</strong> context/memory
+service, retrieval/knowledge, data platform, orchestration,
+governance.</li>
+<li><strong>Expected business value:</strong> reliability, auditability,
+reuse, lower repeated work, risk reduction.</li>
+<li><strong>Technical value:</strong> selective invalidation,
+lineage-aware repair, evidence-grounded memory, deterministic
+replay.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+medium-high as a foundation; schemas and revocation semantics need
+internal design.</li>
+<li><strong>Confidence / horizon / effort:</strong> <strong>High / 3–6
+months / L</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> stable identities,
+workflow and data lineage, source versioning, policy labels, retention
+rules, immutable audit log.</li>
+<li><strong>Key risks:</strong> sensitive-data replication, stale trust,
+lineage explosion, unclear ownership, privacy retention conflicts.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build the enterprise
+semantics and policy bindings; buy/adopt lineage and metadata storage;
+partner with data-governance owners.</strong></li>
+<li><strong>Minimum reversible validation experiment:</strong>
+instrument one read-only workflow and record 100 accepted contributions
+plus dependency invalidations.</li>
+<li><strong>Success metrics:</strong> 100% traceability for
+consequential outputs; correct invalidation in ≥95% of seeded changes;
+&lt;10% workflow latency overhead; zero policy-boundary violations.</li>
+<li><strong>Stop conditions:</strong> unverifiable lineage, inability to
+revoke stale evidence, or unauthorized cross-domain reuse.</li>
+<li><strong>Roadmap trigger:</strong> two workflows reuse contributions
+safely and seeded source changes reliably invalidate affected
+outputs.</li>
+</ul>
+<h3 id="5-independent-evaluator-and-disagreement-service--835">5.
+Independent evaluator and disagreement service — 83.5</h3>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability / Safety
+&amp; Governance.</li>
+<li><strong>Research signal and supporting papers:</strong> Reparo
+separates policy synthesis from behavioral-case generation and uses
+native validators; Dittany's use of one model family for execution and
+semantic assessment exposes correlated-error risk; the test-time-search
+audit shows that a learned selector can underperform random.</li>
+<li><strong>Evidence label:</strong> <strong>Independent
+Analysis</strong> across all three deep papers.</li>
+<li><strong>Enterprise problem or opportunity:</strong> model-generated
+outputs are often graded by a closely related model, masking systematic
+failures and creating false confidence.</li>
+<li><strong>Proposed future capability:</strong> route consequential
+evaluations through deterministic checks, policy engines, heterogeneous
+model judges, calibrated human review, and explicit disagreement
+analysis.</li>
+<li><strong>Likely architectural placement:</strong> evaluation,
+observability, model gateway, human-review layer.</li>
+<li><strong>Expected business value:</strong> quality, reliability,
+safer launches, lower incident cost.</li>
+<li><strong>Technical value:</strong> correlated-error detection, judge
+calibration, severity-aware escalation, reusable evaluation
+contracts.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> high
+for deterministic and human checks; moderate for model-judge
+independence and calibration.</li>
+<li><strong>Confidence / horizon / effort:</strong> <strong>High / 3–6
+months / L</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> golden sets,
+severity taxonomy, judge registry, calibration data, reviewer workflow,
+audit trails, privacy controls.</li>
+<li><strong>Key risks:</strong> common training contamination, evaluator
+drift, review bottlenecks, benchmark gaming, sensitive prompt
+exposure.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build routing,
+calibration, and escalation logic; buy mature evaluation/observability
+plumbing; retain human domain owners.</strong></li>
+<li><strong>Minimum reversible validation experiment:</strong> rescore
+300 historical cases with deterministic checks, a heterogeneous judge,
+and blinded humans.</li>
+<li><strong>Success metrics:</strong> ≥90% recall on severe errors;
+calibrated confidence; materially lower correlated false acceptance;
+bounded review cost.</li>
+<li><strong>Stop conditions:</strong> evaluator disagreement cannot be
+adjudicated, severe-error recall falls below baseline, or confidential
+data crosses policy boundaries.</li>
+<li><strong>Roadmap trigger:</strong> disagreement signals predict real
+incidents or materially improve launch decisions on two use cases.</li>
+</ul>
+<h3 id="6-simulator-and-evaluation-integrity-sentinel--827">6. Simulator
+and evaluation-integrity sentinel — 82.7</h3>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability / MLOps
+&amp; Platform / AI Security.</li>
+<li><strong>Research signal and supporting papers:</strong> the
+test-time-search audit discovered a silent rendering corruption
+specifically on a compute-heavy planning path, which could have
+invalidated the evaluation while leaving the direct policy
+unaffected.</li>
+<li><strong>Evidence label:</strong> <strong>Enterprise
+Inference</strong> from a verified failure mode with limited external
+scope.</li>
+<li><strong>Enterprise problem or opportunity:</strong> alternate
+execution paths, caches, preprocessors, and simulators can silently
+change the evaluated input or outcome.</li>
+<li><strong>Proposed future capability:</strong> hash and compare
+canonical inputs, replay paired paths, detect visual/data invariants,
+verify environment versions, and quarantine results when integrity
+checks disagree.</li>
+<li><strong>Likely architectural placement:</strong> evaluation,
+observability, infrastructure, security/governance.</li>
+<li><strong>Expected business value:</strong> risk reduction, credible
+benchmarks, faster incident diagnosis, avoided misinvestment.</li>
+<li><strong>Technical value:</strong> detects path-dependent corruption,
+version skew, nondeterminism, and invalid comparisons.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> high
+concept maturity; implementation depends on modality and workload.</li>
+<li><strong>Confidence / horizon / effort:</strong> <strong>High / 3–6
+months / M</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> canonical fixtures,
+deterministic replays, checksums, environment manifests, anomaly
+thresholds, incident ownership.</li>
+<li><strong>Key risks:</strong> false alarms, incomplete invariants,
+expensive replay, overconfidence in checksums that miss semantic
+corruption.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build
+workload-specific integrity assertions; buy/adopt standard observability
+and artifact registries.</strong></li>
+<li><strong>Minimum reversible validation experiment:</strong> inject
+known corruptions and version mismatches into 500 historical evaluation
+cases.</li>
+<li><strong>Success metrics:</strong> ≥95% seeded-corruption detection;
+&lt;1% false alarm rate; complete environment provenance; bounded replay
+cost.</li>
+<li><strong>Stop conditions:</strong> critical corruptions escape
+detection or the sentinel changes the evaluated workload.</li>
+<li><strong>Roadmap trigger:</strong> the sentinel catches at least one
+previously undetected integrity defect and remains stable across two
+evaluation pipelines.</li>
+</ul>
+<h2 id="monitor-for-maturity">Monitor for Maturity</h2>
+<h3 id="7-persona-stratified-assistant-evaluation--736">7.
+Persona-stratified assistant evaluation — 73.6</h3>
+<ul>
+<li><strong>Category:</strong> Human-AI Workflow / Evaluation &amp;
+Observability.</li>
+<li><strong>Research signal and supporting papers:</strong>
+PersonaChatBench tests identical tasks with private persona cards across
+20 models and six domains, separating task outcome, need fulfillment,
+and simulator fidelity.</li>
+<li><strong>Evidence label:</strong> <strong>Enterprise
+Inference</strong> from a Watchlist preprint; real-user external
+validity is not yet established.</li>
+<li><strong>Enterprise problem or opportunity:</strong> aggregate
+assistant scores can conceal failures for users with different
+constraints, expertise, accessibility needs, or risk tolerances.</li>
+<li><strong>Proposed future capability:</strong> add consented,
+privacy-preserving persona strata to task evaluations and report both
+overall and worst-group performance without personalizing policy
+obligations away.</li>
+<li><strong>Likely architectural placement:</strong> applications,
+evaluation, human-review layer, governance.</li>
+<li><strong>Expected business value:</strong> customer experience,
+quality, inclusion, risk reduction.</li>
+<li><strong>Technical value:</strong> subgroup diagnostics,
+multidimensional quality metrics, simulator-fidelity checks.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+moderate-low; benchmark scope is broad, but real-user transfer and
+artifact access require verification.</li>
+<li><strong>Confidence / horizon / effort:</strong> <strong>Moderate /
+6–12 months / M</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> approved persona
+taxonomy, consent/privacy review, real-user panels, subgroup sample-size
+rules, anti-stereotyping controls.</li>
+<li><strong>Key risks:</strong> stereotyping, sensitive-attribute
+inference, small-group reidentification, simulator bias, metric
+fragmentation.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Partner with UX
+research and privacy teams; build only approved evaluation strata; buy
+survey/panel infrastructure if appropriate.</strong></li>
+<li><strong>Minimum reversible validation experiment:</strong> compare
+20 tasks across 10 synthetic cards with blinded human panels; store no
+user profiles.</li>
+<li><strong>Success metrics:</strong> stable subgroup rankings,
+human–simulator agreement, useful defect discovery, no
+sensitive-attribute leakage.</li>
+<li><strong>Stop conditions:</strong> poor human agreement, stereotype
+reinforcement, privacy violations, or unstable small-group
+estimates.</li>
+<li><strong>Roadmap trigger:</strong> replicated human studies show
+subgroup evaluation predicts real user outcomes better than aggregate
+scoring.</li>
+</ul>
+<h3 id="8-failure-memory-intervention-harness--725">8. Failure-memory
+intervention harness — 72.5</h3>
+<ul>
+<li><strong>Category:</strong> Memory &amp; Context / AI Software
+Engineering / Evaluation &amp; Observability.</li>
+<li><strong>Research signal and supporting papers:</strong> the
+repair-memory study evaluates five memory conditions over 181 failed
+attempts on 75 BugsInPy issues; point gains are generally
+nonsignificant, lesson summaries do not beat full transcripts, and one
+transcript effect appears only for the smaller model.</li>
+<li><strong>Evidence label:</strong> <strong>Paper Fact</strong> for the
+reported comparison; <strong>Enterprise Inference</strong> for the
+proposed harness.</li>
+<li><strong>Enterprise problem or opportunity:</strong> teams add
+episodic memory because it sounds useful, but extra context can add cost
+without causal improvement.</li>
+<li><strong>Proposed future capability:</strong> test notice-only,
+transcript, summary, structured lesson, and no-memory conditions with
+paired tasks before adding persistent failure memory.</li>
+<li><strong>Likely architectural placement:</strong> context/memory
+service, developer platform, evaluation.</li>
+<li><strong>Expected business value:</strong> cost control, quality,
+faster debugging, reduced context bloat.</li>
+<li><strong>Technical value:</strong> causal memory evaluation,
+context-budget measurement, model-specific intervention selection.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong>
+moderate for experimental design; low evidence that a particular memory
+representation generalizes.</li>
+<li><strong>Confidence / horizon / effort:</strong> <strong>Moderate /
+6–12 months / S</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> failure corpus,
+redaction, paired assignment, cost telemetry, statistical plan,
+retention controls.</li>
+<li><strong>Key risks:</strong> leakage from prior failures, privacy
+retention, selection bias, low power, model-version dependence.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build a lightweight
+experiment harness; do not buy a persistent-memory platform before
+demonstrating lift.</strong></li>
+<li><strong>Minimum reversible validation experiment:</strong> randomize
+five memory conditions over 100 internal failures with identical tools
+and budgets.</li>
+<li><strong>Success metrics:</strong> statistically supported full-suite
+success lift, favorable cost per solved case, no privacy leakage,
+reproducibility across model versions.</li>
+<li><strong>Stop conditions:</strong> no meaningful lift, higher
+severe-error rate, or context cost outweighs saved retries.</li>
+<li><strong>Roadmap trigger:</strong> replicated gains survive a blinded
+test and remain positive after token, latency, and privacy costs.</li>
+</ul>
+<h2 id="deprioritize-for-now">Deprioritize for Now</h2>
+<h3 id="9-unbounded-autonomous-graph-repair--477">9. Unbounded
+autonomous graph repair — 47.7</h3>
+<ul>
+<li><strong>Category:</strong> Agentic AI / Reasoning &amp;
+Planning.</li>
+<li><strong>Research signal and supporting papers:</strong> Dittany's
+graph repair is promising, but its study uses benchmark apps,
+model-derived specifications, one primary runtime model, and aggregate
+semantic checks; the paper explicitly notes hidden state, side effects,
+and finite coverage.</li>
+<li><strong>Evidence label:</strong> <strong>Enterprise Inference /
+Uncertainty</strong>.</li>
+<li><strong>Enterprise problem or opportunity:</strong> autonomous
+topology changes could recover complex workflows, but they can also
+change authority, data flow, and business semantics.</li>
+<li><strong>Proposed future capability:</strong> none for production
+now; retain only a sandboxed adversarial research track with immutable
+permission ceilings and mandatory human review.</li>
+<li><strong>Likely architectural placement:</strong> isolated experiment
+infrastructure, agent orchestration, security/governance.</li>
+<li><strong>Expected business value:</strong> possible future
+reliability and differentiation; no credible near-term production value
+proven.</li>
+<li><strong>Technical value:</strong> explores topology repair and
+dependency rewiring under controlled conditions.</li>
+<li><strong>Evidence maturity and enterprise readiness:</strong> low for
+production, moderate for sandbox research.</li>
+<li><strong>Confidence / horizon / effort:</strong> <strong>Low / 12+
+months / XL</strong>.</li>
+<li><strong>Dependencies and prerequisites:</strong> formal authority
+model, side-effect simulator, graph diff review, rollback, independent
+validation, fault injection, red-team coverage.</li>
+<li><strong>Key risks:</strong> privilege expansion, data exfiltration,
+cyclic or invalid dependencies, corrupted state, non-reversible side
+effects, accountability gaps.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Do not buy or
+deploy; research in-house only if strategically justified and
+independently reviewed.</strong></li>
+<li><strong>Minimum reversible validation experiment:</strong>
+adversarial shadow execution on synthetic workflows with no network,
+credentials, or external writes.</li>
+<li><strong>Success metrics:</strong> zero authority expansion; complete
+graph provenance; reliable rollback; no severe false completion;
+improvement over bounded repair.</li>
+<li><strong>Stop conditions:</strong> any permission boundary violation,
+irreversible state change, or inability to explain the graph diff.</li>
+<li><strong>Roadmap trigger:</strong> independent replications on
+realistic side-effectful workflows plus formal guarantees and favorable
+economics.</li>
+</ul>
+<h1 id="enterprise-ai-architecture-implications">Enterprise AI
+Architecture Implications</h1>
+<p><strong>Independent Analysis.</strong> Over the next 12–24 months,
+these signals favor a validated-state control plane rather than a larger
+collection of loosely supervised agents. The design goal is not maximum
+autonomy; it is to let systems reuse only evidence-backed contributions,
+spend compute only when recoverable headroom exists, and stop when
+authorization or evaluation integrity is uncertain.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Shared foundation</th>
+<th>Architectural role</th>
+<th>Enhancements unlocked</th>
+<th>Required boundary before implementation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Model gateway and cost telemetry</td>
+<td>Routes models, records latency/tokens/cost, supports paired
+baselines</td>
+<td>premise-first gate, evaluator service, memory harness</td>
+<td>approved providers, data classes, latency/cost budgets</td>
+</tr>
+<tr class="even">
+<td>Context and provenance service</td>
+<td>Stores accepted contributions with sources, scope, verifier,
+freshness, and revocation</td>
+<td>contribution contracts, provenance ledger, evidence policy
+synthesis</td>
+<td>retention, residency, ownership, revocation semantics</td>
+</tr>
+<tr class="odd">
+<td>Identity, authorization, and policy enforcement</td>
+<td>Binds tools, data, and graph changes to principals and immutable
+ceilings</td>
+<td>policy synthesis, scoped repair, graph-repair research</td>
+<td>existing IAM model, segregation of duties, security approvals</td>
+</tr>
+<tr class="even">
+<td>Evaluation and observability plane</td>
+<td>Runs deterministic checks, heterogeneous judges, paired experiments,
+and integrity sentinels</td>
+<td>all Prototype Soon and Prepare Foundations items</td>
+<td>golden sets, severity taxonomy, incident ownership</td>
+</tr>
+<tr class="odd">
+<td>Agent orchestration with checkpoints</td>
+<td>Exposes action/dependency graphs and idempotent rollback points</td>
+<td>contribution repair, failure-memory tests</td>
+<td>tool side effects, transactional boundaries, recovery
+objectives</td>
+</tr>
+<tr class="even">
+<td>Human-review controls</td>
+<td>Routes high-severity disagreement, policy diffs, and topology
+changes</td>
+<td>policy synthesis, evaluator service, persona evaluation</td>
+<td>reviewer authority, capacity, SLAs, appeal path</td>
+</tr>
+<tr class="odd">
+<td>Knowledge and data systems</td>
+<td>Indexes source evidence while preserving citations and access
+labels</td>
+<td>policy synthesis, provenance ledger, persona evaluation</td>
+<td>source quality, privacy, access-control inheritance</td>
+</tr>
+<tr class="even">
+<td>Experiment infrastructure</td>
+<td>Preregisters hypotheses, seeds, power, stop conditions, and artifact
+versions</td>
+<td>premise gate, integrity sentinel, memory harness</td>
+<td>statistical owners, reproducible environments, budget caps</td>
+</tr>
+</tbody>
+</table>
+<p>The likely flow is: applications and agents request work through the
+model gateway; orchestration decomposes it into contribution contracts;
+identity and policy services constrain available tools; the provenance
+service records accepted evidence; independent evaluators and integrity
+sentinels decide whether the state is reusable; and human reviewers
+adjudicate consequential disagreement. Existing enterprise architecture,
+vendors, data maturity, security posture, and regulatory obligations are
+unknown, so internal discovery is required before any implementation
+decision.</p>
+<h1 id="implementation-priorities">Implementation Priorities</h1>
+<ol type="1">
+<li><strong>0–30 days — measurement first.</strong> Inventory current
+agentic, policy, reranking, and memory experiments; define severe-error
+taxonomies, random baselines, cost telemetry, and artifact/version
+capture. Do not change production behavior.</li>
+<li><strong>30–90 days — isolated prototypes.</strong> Run the three Top
+Future Bets in read-only or shadow environments. Use blinded internal
+cases, immutable permission ceilings, explicit stop conditions, and
+security/privacy review.</li>
+<li><strong>3–6 months — shared foundations.</strong> If prototypes
+pass, implement provenance, independent evaluation, integrity sentinels,
+and human escalation as reusable services rather than workflow-specific
+patches.</li>
+<li><strong>6–12 months — controlled expansion.</strong> Add selected
+persona strata and memory interventions only when real-user or causal
+evidence supports them. Keep all writes human-approved.</li>
+<li><strong>12+ months — reconsider graph autonomy.</strong> Revisit
+unbounded repair only after independent replication, formal authority
+constraints, rollback guarantees, and favorable internal economics.</li>
+</ol>
+<h1 id="knowledge-reinforcement">Knowledge Reinforcement</h1>
+<h2 id="what-changed-today">What changed today</h2>
+<ul>
+<li><strong>Validated state is becoming a first-class architectural
+object.</strong> Dittany repairs around accepted contributions; Reparo
+triangulates evidence into executable policy; the test-time audit
+insists on a valid signal and environment before spending compute.</li>
+<li><strong>Syntactic validity is not behavioral correctness.</strong>
+Reparo's 99–100% post-repair validator pass coexists with substantially
+lower agreement for Cedar and Rego, so policy pipelines need behavioral
+and human review.</li>
+<li><strong>Nominal efficiency is not deployed efficiency.</strong> A
+47.9% token-FLOP reduction translated to at most 1.152× measured
+end-to-end speedup on the tested path.</li>
+<li><strong>More context is not automatically better memory.</strong>
+The Watchlist repair study finds no general win for structured lessons
+over transcripts and mostly nonsignificant point gains.</li>
+</ul>
+<h2 id="durable-questions-for-future-briefings">Durable questions for
+future briefings</h2>
+<ol type="1">
+<li>Does a proposed selector beat random and approach an oracle under
+paired evaluation?</li>
+<li>Which evidence source supports each consequential decision, and can
+it be revoked?</li>
+<li>Are the generator and evaluator independent enough to expose
+correlated failures?</li>
+<li>Does a repair preserve permissions, side-effect boundaries, and
+previously validated state?</li>
+<li>Do benchmark gains survive end-to-end latency, cost, human review,
+and real-user transfer?</li>
+</ol>
+<h1 id="evidence-ledger-and-sources">Evidence Ledger and Sources</h1>
+<table>
+<thead>
+<tr class="header">
+<th>Paper</th>
+<th>Primary identifier and source</th>
+<th>Artifact status verified in this review</th>
+<th>Evidence label</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Dittany: Contribution-Guided Repair Framework for MAS
+Applications</td>
+<td>arXiv:2610.42144v1, submitted Oct 30, 2026</td>
+<td>No paper-specific repository verified from the arXiv paper; arXiv
+perpetual non-exclusive license</td>
+<td>Paper Fact / Enterprise Inference</td>
+</tr>
+<tr class="even">
+<td>Reparo: Synthesizing and Validating Access Control Policies</td>
+<td>arXiv:2610.41800v1, submitted Oct 30, 2026</td>
+<td>No paper-specific repository verified from the arXiv paper; CC BY
+4.0</td>
+<td>Paper Fact / Enterprise Inference</td>
+</tr>
+<tr class="odd">
+<td>When Does Test-Time Search Help World Action Models?</td>
+<td>arXiv:2610.41970v1, submitted Oct 30, 2026</td>
+<td>Paper reports released detector, fix, scripts, raw timings, and
+protocol; CC BY 4.0</td>
+<td>Paper Fact / Independent Analysis</td>
+</tr>
+<tr class="even">
+<td>PersonaChatBench</td>
+<td>arXiv:2610.42060v1, submitted Oct 30, 2026</td>
+<td>Artifact availability not independently verified in this review</td>
+<td>Watchlist / Uncertainty</td>
+</tr>
+<tr class="odd">
+<td>What Does a Repair Agent Gain from Remembering Its Failure?</td>
+<td>arXiv:2610.41433v1, submitted Oct 30, 2026</td>
+<td>Paper links code, data, and transcripts; link content not fully
+audited here</td>
+<td>Watchlist / Uncertainty</td>
+</tr>
+</tbody>
+</table>
+<p>Primary sources: <a
+href="https://arxiv.org/abs/2610.42144">Dittany</a>, <a
+href="https://arxiv.org/abs/2610.41800">Reparo</a>, <a
+href="https://arxiv.org/abs/2610.41970">test-time search audit</a>, <a
+href="https://arxiv.org/abs/2610.42060">PersonaChatBench</a>, and <a
+href="https://arxiv.org/abs/2610.41433">repair-memory study</a>.
+Discovery was verified against arXiv's Nov 2, 2026 recent listings for
+cs.AI, cs.LG, cs.CL, and cs.SE.</p>
+<p><strong>Boundary statement.</strong> These are evidence-grounded
+future options, not approved roadmap commitments. No production
+deployment is recommended from benchmark evidence alone. Every
+experiment must be isolated, reversible, measurable, non-destructive,
+and reviewed against the enterprise's actual architecture, vendors,
+model estate, data classifications, security posture, regulatory
+obligations, economics, and operational maturity.</p></main></div>
+<footer>AI Research Intelligence Brief · November 2, 2026 · Research options, not deployment approval.</footer>
+<div class="toolbar"><button onclick="window.print()">Print</button><button id="top">↑ Top</button></div>
+<script>const p=document.getElementById('progress');addEventListener('scroll',()=>{const h=document.documentElement;p.style.width=((h.scrollTop/(h.scrollHeight-h.clientHeight))*100)+'%'});document.getElementById('top').onclick=()=>scrollTo({top:0,behavior:'smooth'});</script>
+</body></html>
