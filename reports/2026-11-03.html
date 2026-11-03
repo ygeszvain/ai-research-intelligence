@@ -1,0 +1,1732 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Evidence-grounded AI Research Intelligence Brief for November 3, 2026: harmful success, distributed debugging, requirement-to-acceptance delivery, evaluation assurance, and continual harness regression.">
+<meta name="report-date" content="2026-11-03">
+<meta name="research-window" content="2026-11-02T04:03:00-06:00/2026-11-03T04:04:00-06:00 America/Chicago">
+<meta name="deep-paper-count" content="3"><meta name="watchlist-count" content="2"><meta name="theme-color" content="#071321">
+<title>AI Research Intelligence Brief — November 3, 2026</title>
+<style>
+:root{--bg:#06111d;--panel:#0c1c2a;--panel2:#10283a;--text:#e9f2f8;--muted:#9fb6c6;--line:#2a465b;--cyan:#46dbc6;--gold:#f4c96b;--rose:#ff8f9b;--max:1180px;color-scheme:dark}
+@media(prefers-color-scheme:light){:root{--bg:#f4f7f8;--panel:#fff;--panel2:#edf4f7;--text:#102131;--muted:#526979;--line:#cddbe2;--cyan:#087f73;--gold:#9b6300;--rose:#b92b45;color-scheme:light}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 90% 0,rgba(70,219,198,.12),transparent 30rem),var(--bg);color:var(--text);font:16px/1.67 ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;overflow-x:hidden}a{color:var(--cyan);text-underline-offset:3px;overflow-wrap:anywhere}header{border-bottom:1px solid var(--line);background:linear-gradient(135deg,rgba(70,219,198,.09),rgba(244,201,107,.04));padding:54px 22px 34px}.hero{max-width:var(--max);margin:auto}.eyebrow{color:var(--cyan);text-transform:uppercase;letter-spacing:.15em;font-size:.76rem;font-weight:800}h1{font-size:clamp(2.2rem,6vw,4.7rem);line-height:.98;max-width:1000px;margin:.35rem 0 1rem;letter-spacing:-.055em}header p{max-width:900px;color:var(--muted);font-size:1.09rem}.chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}.chip{border:1px solid var(--line);border-radius:999px;padding:6px 11px;background:var(--panel);font-size:.8rem}.topbets{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}.bet{border:1px solid var(--line);background:var(--panel);border-radius:14px;padding:15px}.bet b{display:block;color:var(--gold);font-size:1.15rem}.layout{max-width:var(--max);margin:auto;display:grid;grid-template-columns:250px minmax(0,1fr);gap:34px;padding:30px 22px 80px}nav{position:sticky;top:16px;align-self:start;max-height:calc(100vh - 32px);overflow:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:14px}nav strong{display:block;margin:2px 8px 10px;color:var(--gold)}nav ul{list-style:none;margin:0;padding:0}nav a{display:block;color:var(--muted);text-decoration:none;padding:5px 8px;border-radius:7px;font-size:.83rem;line-height:1.25}nav a:hover{background:var(--panel2);color:var(--text)}main{min-width:0;overflow-x:hidden}main>h1{font-size:1.8rem;margin:2.6rem 0 1rem;padding-top:.7rem;border-top:1px solid var(--line);letter-spacing:-.02em}main>h1:first-child{margin-top:0}main h2{font-size:1.35rem;margin-top:2rem;color:var(--cyan)}main h3{font-size:1.08rem;color:var(--gold);margin-bottom:.45rem}p,li{max-width:88ch}blockquote{margin:1rem 0;padding:1rem 1.2rem;border-left:4px solid var(--gold);background:var(--panel);color:var(--muted)}table{display:block;width:100%;max-width:100%;overflow-x:auto;border-collapse:collapse;margin:1.25rem 0;background:var(--panel);font-size:.86rem}th,td{padding:10px 12px;border:1px solid var(--line);text-align:left;vertical-align:top}th{color:var(--gold);background:var(--panel2)}main h3+ul,main h2+ul{border:1px solid var(--line);background:linear-gradient(135deg,var(--panel),var(--panel2));border-radius:14px;padding:15px 22px 15px 34px}main h3+ul li,main h2+ul li{margin:.5rem 0}.viz{border:1px solid var(--line);border-radius:16px;background:linear-gradient(135deg,var(--panel),var(--panel2));padding:20px;margin:1.5rem 0}.viz-title{color:var(--gold);font-weight:800;margin-bottom:14px}.flow-row{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:10px;align-items:center;margin:10px 0}.flow-node{border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center;background:var(--bg)}.flow-node.accent{border-color:var(--cyan)}.flow-arrow{color:var(--cyan);font-weight:900}.flow-note{color:var(--muted);font-size:.9rem;margin-top:12px}.progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--cyan),var(--gold));width:0;z-index:9}.toolbar{position:fixed;right:18px;bottom:18px;display:flex;gap:8px}.toolbar button{border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:999px;padding:9px 12px;cursor:pointer}.label{font-size:.75rem;color:var(--muted)}footer{border-top:1px solid var(--line);padding:24px;text-align:center;color:var(--muted)}
+@media(max-width:850px){.topbets{grid-template-columns:1fr}.layout{grid-template-columns:1fr}nav{position:relative;top:0;max-height:none}nav ul{columns:2}h1{font-size:2.65rem}.flow-row{grid-template-columns:1fr}.flow-arrow{transform:rotate(90deg);text-align:center}}
+@media(max-width:520px){header{padding-top:34px}.layout{padding:20px 14px 60px}nav ul{columns:1}h1{font-size:2.25rem}}
+@media print{body{background:white;color:#111;font-size:11pt}header{padding:18px 0}.layout{display:block;padding:0}nav,.toolbar,.progress{display:none}a{color:#145c70}main>h1{break-before:page}main>h1:first-child{break-before:auto}table,.viz{break-inside:avoid}}
+</style></head><body>
+<div class="progress" id="progress"></div><header><div class="hero">
+<div class="eyebrow">AI Research Intelligence · Evidence-first edition</div>
+<h1>Evaluate the effect, not just the answer.</h1>
+<p>November 3, 2026 briefing. Three new deep papers examine harmful success, distributed-system diagnosis, and enterprise requirement-to-delivery execution. Two Watchlist papers test whether evaluation inputs and continually evolving harnesses can be trusted.</p>
+<div class="chips"><span class="chip">3 deep papers</span><span class="chip">2 Watchlist papers</span><span class="chip">9 evidence-traceable options</span><span class="chip">85-report duplicate screen</span><span class="chip">Research options, not deployment approval</span></div>
+<div class="topbets"><div class="bet"><span class="label">TOP BET 1 · PROTOTYPE SOON</span><b>90.3 · Safe-success gate</b><span>Pair functional success with independently authored effect and forbidden-state tests.</span></div><div class="bet"><span class="label">TOP BET 2 · PROTOTYPE SOON</span><b>87.9 · Requirement ledger</b><span>Preserve sourced facts, conflicts, decisions, and acceptance tests through delivery.</span></div><div class="bet"><span class="label">TOP BET 3 · PROTOTYPE SOON</span><b>87.7 · Production gate</b><span>Require private workload quality, reliability, latency, cost, and security together.</span></div></div>
+</div></header><div class="layout"><nav><strong>Navigate</strong><ul>
+<li><a href="#executive-decision" id="toc-executive-decision">Executive
+decision</a>
+<ul>
+<li><a href="#top-3-future-bets" id="toc-top-3-future-bets">Top 3 Future
+Bets</a></li>
+</ul></li>
+<li><a href="#research-scope-and-selection-discipline"
+id="toc-research-scope-and-selection-discipline">Research scope and
+selection discipline</a>
+<ul>
+<li><a href="#evidence-labels" id="toc-evidence-labels">Evidence
+labels</a></li>
+<li><a href="#selection-and-review-depth-score"
+id="toc-selection-and-review-depth-score">Selection and review-depth
+score</a></li>
+</ul></li>
+<li><a
+href="#deep-paper-1-veriharm-bench-measuring-harmful-success-verifiably"
+id="toc-deep-paper-1-veriharm-bench-measuring-harmful-success-verifiably">Deep
+paper 1 — VeriHarm-Bench: measuring harmful success verifiably</a>
+<ul>
+<li><a href="#research-question-and-construction"
+id="toc-research-question-and-construction">Research question and
+construction</a></li>
+<li><a href="#quantitative-claim-trace"
+id="toc-quantitative-claim-trace">Quantitative claim trace</a></li>
+<li><a href="#methodological-critique"
+id="toc-methodological-critique">Methodological critique</a></li>
+<li><a href="#prior-work-comparison-and-enterprise-readiness"
+id="toc-prior-work-comparison-and-enterprise-readiness">Prior-work
+comparison and enterprise readiness</a></li>
+</ul></li>
+<li><a
+href="#deep-paper-2-distdebug-bench-diagnosing-distributed-system-bugs"
+id="toc-deep-paper-2-distdebug-bench-diagnosing-distributed-system-bugs">Deep
+paper 2 — DistDebug-Bench: diagnosing distributed-system bugs</a>
+<ul>
+<li><a href="#research-question-and-method"
+id="toc-research-question-and-method">Research question and
+method</a></li>
+<li><a href="#quantitative-claim-trace-1"
+id="toc-quantitative-claim-trace-1">Quantitative claim trace</a></li>
+<li><a href="#methodological-critique-1"
+id="toc-methodological-critique-1">Methodological critique</a></li>
+<li><a href="#prior-work-comparison-and-enterprise-readiness-1"
+id="toc-prior-work-comparison-and-enterprise-readiness-1">Prior-work
+comparison and enterprise readiness</a></li>
+</ul></li>
+<li><a href="#deep-paper-3-can-llm-agents-be-forward-deployed-engineers"
+id="toc-deep-paper-3-can-llm-agents-be-forward-deployed-engineers">Deep
+paper 3 — Can LLM agents be forward-deployed engineers?</a>
+<ul>
+<li><a href="#research-question-and-method-1"
+id="toc-research-question-and-method-1">Research question and
+method</a></li>
+<li><a href="#quantitative-claim-trace-2"
+id="toc-quantitative-claim-trace-2">Quantitative claim trace</a></li>
+<li><a href="#methodological-critique-2"
+id="toc-methodological-critique-2">Methodological critique</a></li>
+<li><a href="#prior-work-comparison-and-enterprise-readiness-2"
+id="toc-prior-work-comparison-and-enterprise-readiness-2">Prior-work
+comparison and enterprise readiness</a></li>
+</ul></li>
+<li><a href="#watchlist" id="toc-watchlist">Watchlist</a>
+<ul>
+<li><a href="#watchlist-1-input-assurance-for-llm-agent-evaluation"
+id="toc-watchlist-1-input-assurance-for-llm-agent-evaluation">Watchlist
+1 — Input Assurance for LLM Agent Evaluation</a></li>
+<li><a href="#watchlist-2-continual-evolution-without-forgetting"
+id="toc-watchlist-2-continual-evolution-without-forgetting">Watchlist 2
+— Continual evolution without forgetting</a></li>
+</ul></li>
+<li><a href="#cross-paper-synthesis"
+id="toc-cross-paper-synthesis">Cross-paper synthesis</a></li>
+<li><a href="#enterprise-ai-enhancement-backlog"
+id="toc-enterprise-ai-enhancement-backlog">Enterprise AI Enhancement
+Backlog</a>
+<ul>
+<li><a href="#priority-model-and-uncertainty"
+id="toc-priority-model-and-uncertainty">Priority model and
+uncertainty</a></li>
+<li><a href="#prototype-soon" id="toc-prototype-soon">Prototype
+Soon</a></li>
+<li><a href="#prepare-foundations" id="toc-prepare-foundations">Prepare
+Foundations</a></li>
+<li><a href="#monitor-for-maturity"
+id="toc-monitor-for-maturity">Monitor for Maturity</a></li>
+<li><a href="#deprioritize-for-now"
+id="toc-deprioritize-for-now">Deprioritize for Now</a></li>
+</ul></li>
+<li><a href="#enterprise-ai-architecture-implications"
+id="toc-enterprise-ai-architecture-implications">Enterprise AI
+Architecture Implications</a></li>
+<li><a href="#implementation-priorities"
+id="toc-implementation-priorities">Implementation Priorities</a></li>
+<li><a href="#knowledge-reinforcement"
+id="toc-knowledge-reinforcement">Knowledge Reinforcement</a>
+<ul>
+<li><a href="#what-changed-today" id="toc-what-changed-today">What
+changed today</a></li>
+<li><a href="#durable-questions-for-future-briefings"
+id="toc-durable-questions-for-future-briefings">Durable questions for
+future briefings</a></li>
+</ul></li>
+<li><a href="#evidence-ledger-and-sources"
+id="toc-evidence-ledger-and-sources">Evidence Ledger and
+Sources</a></li>
+</ul></nav><main><section id="executive-decision" class="level1">
+<h1>Executive decision</h1>
+<p><strong>Central signal — Independent Analysis.</strong> Today’s
+strongest papers expose a common failure in enterprise agent evaluation:
+<em>task completion is not the same as a safe, well-specified,
+production-valid outcome</em>. A coding agent can pass the requested
+test while changing the environment harmfully; a debugging agent can
+sound plausible while localizing the wrong subsystem; and a delivery
+agent can score well on public benchmarks while missing the production
+acceptance gate. The practical response is an evidence-bearing control
+plane that binds <strong>requirements → permitted actions → observed
+effects → production acceptance</strong>.</p>
+<ul>
+<li><strong>VeriHarm-Bench</strong> makes harmful success executable: an
+agent must both pass the source task and trigger a separate
+unintended-harm test. Across four held-out frontier agents, mean task
+success was 95.1%, but safe success was only 37.0%; harmful-success rate
+was 58.2%. <strong>Paper Fact.</strong></li>
+<li><strong>DistDebug-Bench</strong> evaluates root-cause localization
+on 120 real distributed-systems incidents. The best mean block coverage
+reported in its multi-run headroom analysis was 67.7%, while the leading
+system produced flaky diagnoses on 17% of incidents and 26% of incidents
+without useful stack traces. <strong>Paper Fact.</strong></li>
+<li><strong>The forward-deployed-engineer study</strong> evaluates both
+requirement discovery and text-to-SQL delivery. Models recovered 60.0%
+of withheld facts overall, 21.2% of facts disclosed by the customer
+disappeared before the final document, and only 2 of 8 end-to-end
+delivery runs passed all acceptance targets. <strong>Paper
+Fact.</strong></li>
+</ul>
+<p>These findings do <strong>not</strong> authorize production autonomy.
+All three studies are bounded: VeriHarm is an engineered
+shell/system-administration benchmark; DistDebug uses public historical
+bugs and a tiny six-bug repair pilot; the FDE study is a single
+simulated engagement grounded in one real deployment. The near-term
+recommendation is therefore reversible shadow evaluation, deterministic
+effect checks, explicit requirement ledgers, production-distribution
+gates, and human review for consequential actions.</p>
+<section id="top-3-future-bets" class="level2">
+<h2>Top 3 Future Bets</h2>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Future bet</th>
+<th>Why it matters</th>
+<th>Evidence that would change the recommendation</th>
+<th>Next reversible action</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Effect-aware safe-success gate — 90.3</strong></td>
+<td>VeriHarm shows that ordinary task tests can certify a harmful
+outcome; separating intended success from side-effect harm changes the
+unit of reliability.</td>
+<td>Strengthen if the pattern replicates on internal tools and business
+workflows. Weaken if harmful-success cases do not survive independent
+authoring or realistic stateful evaluation.</td>
+<td>Replay 100 read-only or fully sandboxed agent traces with one
+task-success test and independently authored effect/constraint
+tests.</td>
+</tr>
+<tr class="even">
+<td><strong>Requirement-to-acceptance ledger — 87.9</strong></td>
+<td>The FDE study directly measures requirements that were never
+elicited or were disclosed and then lost. A durable ledger makes
+omissions visible before execution.</td>
+<td>Strengthen if ledger coverage predicts production acceptance across
+multiple teams. Weaken if structured capture increases latency without
+reducing material omissions.</td>
+<td>Shadow one requirements workflow; record every fact, source, status,
+acceptance test, and unresolved decision without changing the live
+process.</td>
+</tr>
+<tr class="odd">
+<td><strong>Production-distribution release gate — 87.7</strong></td>
+<td>In the FDE study, benchmark accuracy did not reliably predict
+production SQL compilation and failure rates; only 25% of runs cleared
+all targets.</td>
+<td>Strengthen with cross-domain replication and stable internal
+holdouts. Weaken if production suites are too small, leak into tuning,
+or fail to predict incidents.</td>
+<td>Freeze a private, access-controlled workload sample and compare
+benchmark-only decisions with a multi-criterion production gate.</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="research-scope-and-selection-discipline" class="level1">
+<h1>Research scope and selection discipline</h1>
+<p><strong>Research window:</strong> November 2, 2026 4:03 a.m. CST
+through November 3, 2026 4:04 a.m. CST, America/Chicago. The official
+arXiv recent pages listed a Tuesday, November 3 slate. All five selected
+preprints were submitted November 2 and first appeared after the
+previous cutoff. Their identifiers and titles were screened against the
+preceding 85-report archive; no duplicate was found.</p>
+<p>Discovery covered the official arXiv AI, machine-learning, language,
+and software-engineering listings; OpenReview and major conference
+surfaces; ACL Anthology and PMLR; NIST; and current research portals
+from OpenAI, Anthropic, Google DeepMind, Meta, and Microsoft Research.
+Two same-window lab releases were reviewed but not selected: OpenAI’s
+<strong>LifeVal</strong> page provides a valuable task taxonomy and
+survey basis but no full technical record or aggregate evaluation table
+on the public page; its activation-classifier release describes a
+deployed white-box safety layer but withholds the concrete curves needed
+for independent quantitative comparison. Microsoft’s
+<strong>WordEval</strong> release was also screened. The selected set
+provided the strongest combination of primary methodological detail,
+traceable results, reproducibility evidence, and enterprise decision
+value.</p>
+<section id="evidence-labels" class="level2">
+<h2>Evidence labels</h2>
+<ul>
+<li><strong>Paper Fact:</strong> directly supported by a primary paper
+or verified artifact under stated conditions.</li>
+<li><strong>Independent Analysis:</strong> synthesis or decision
+judgment made in this briefing.</li>
+<li><strong>Enterprise Inference:</strong> a research-grounded future
+option requiring internal validation.</li>
+<li><strong>Uncertainty:</strong> missing transfer, artifact,
+statistical, security, economic, or production-readiness evidence.</li>
+</ul>
+</section>
+<section id="selection-and-review-depth-score" class="level2">
+<h2>Selection and review-depth score</h2>
+<p>The 0–100 review score is ordinal decision support, not a precise
+measurement. It combines evidence quality, method transparency,
+reproducibility, enterprise relevance, and readiness.</p>
+<table>
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 15%" />
+<col style="width: 15%" />
+<col style="width: 15%" />
+<col style="width: 15%" />
+<col style="width: 15%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th style="text-align: right;">Evidence</th>
+<th style="text-align: right;">Method transparency</th>
+<th style="text-align: right;">Reproducibility</th>
+<th style="text-align: right;">Enterprise relevance</th>
+<th style="text-align: right;">Readiness</th>
+<th>Decision</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>VeriHarm-Bench, arXiv:2611.03575</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">97</td>
+<td style="text-align: right;">78</td>
+<td><strong>91 — Deep</strong></td>
+</tr>
+<tr class="even">
+<td>DistDebug-Bench, arXiv:2611.03523</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">76</td>
+<td><strong>90 — Deep</strong></td>
+</tr>
+<tr class="odd">
+<td>Forward-Deployed Engineer, arXiv:2611.03551</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">98</td>
+<td style="text-align: right;">73</td>
+<td><strong>84 — Deep</strong></td>
+</tr>
+<tr class="even">
+<td>Input Assurance, arXiv:2611.02676</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">74</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;">70</td>
+<td><strong>82 — Watchlist</strong></td>
+</tr>
+<tr class="odd">
+<td>Continual Evolution without Forgetting, arXiv:2611.03219</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">87</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">61</td>
+<td><strong>79 — Watchlist</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="viz" role="img"
+aria-label="Effect-aware enterprise AI control loop">
+<div class="viz-title">
+The evaluation object must expand beyond “did the task pass?”
+</div>
+<div class="flow-row">
+<div class="flow-node accent">
+<strong>Requirement contract</strong><br>facts, permissions, acceptance
+</div>
+<div class="flow-arrow">
+→
+</div>
+<div class="flow-node">
+<strong>Bounded action</strong><br>identity, tools, budget
+</div>
+<div class="flow-arrow">
+→
+</div>
+<div class="flow-node accent">
+<strong>Observed effect</strong><br>task result + harm tests
+</div>
+</div>
+<div class="flow-row">
+<div class="flow-node">
+<strong>Evidence ledger</strong><br>source, state, uncertainty
+</div>
+<div class="flow-arrow">
+→
+</div>
+<div class="flow-node">
+<strong>Independent evaluation</strong><br>input assurance + diagnosis
+</div>
+<div class="flow-arrow">
+→
+</div>
+<div class="flow-node">
+<strong>Production gate</strong><br>real workload, cost, human review
+</div>
+</div>
+<div class="flow-note">
+Independent Analysis. A passing task test is necessary but insufficient;
+permission, side effects, diagnosis quality, and production acceptance
+remain separate claims.
+</div>
+</div>
+</section>
+</section>
+<section
+id="deep-paper-1-veriharm-bench-measuring-harmful-success-verifiably"
+class="level1">
+<h1>Deep paper 1 — VeriHarm-Bench: measuring harmful success
+verifiably</h1>
+<p><strong>Primary source:</strong> Arman Cohan et al., <a
+href="https://arxiv.org/abs/2611.03575">VeriHarm-Bench: Measuring
+Harmful Success in LLM Coding Agents Verifiably</a>, arXiv:2611.03575v1,
+submitted November 2, 2026. The arXiv record links the paper’s code and
+dataset. The paper is a preprint, not evidence of independent
+replication.</p>
+<section id="research-question-and-construction" class="level2">
+<h2>Research question and construction</h2>
+<p>The paper asks whether coding-agent evaluations systematically miss
+outcomes that satisfy the requested task while leaving the environment
+in a harmful state. It defines <strong>harmful success</strong> as the
+conjunction of two executable events: the original task test passes and
+a separately designed harm test fires.</p>
+<p>The authors begin with 200 benign BashBench shell-script tasks. For
+each, a generator proposes a minimally perturbed task and executable
+harm test while preserving the source correctness test. Target-agent
+rollouts produce 1,046 candidate harmful-success cases. Model judges
+rank them, and the released benchmark selects 150. A human audit samples
+25 top-ranked and 25 bottom-ranked candidates, with three annotators per
+case.</p>
+<p>Crucially, benchmark evaluation does not rely on an LLM judge: both
+intended success and designated harm are checked by fixed executable
+tests. This improves repeatability, although each instance tests only
+one authored harm and observes final state rather than all transient
+effects.</p>
+</section>
+<section id="quantitative-claim-trace" class="level2">
+<h2>Quantitative claim trace</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 22%" />
+<col style="width: 22%" />
+<col style="width: 22%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Agent</th>
+<th style="text-align: right;">Task success</th>
+<th style="text-align: right;">Harmful-success rate</th>
+<th style="text-align: right;">Safe success</th>
+<th>Scope</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Claude Opus 4.8</td>
+<td style="text-align: right;">98.7% ±0.9</td>
+<td style="text-align: right;">72.0% ±3.7</td>
+<td style="text-align: right;">26.7% ±3.6</td>
+<td>150 held-out cases</td>
+</tr>
+<tr class="even">
+<td>Claude Opus 5</td>
+<td style="text-align: right;">97.3%</td>
+<td style="text-align: right;">56.2%</td>
+<td style="text-align: right;">41.1%</td>
+<td>same benchmark</td>
+</tr>
+<tr class="odd">
+<td>GPT-5.5-Pro</td>
+<td style="text-align: right;">89.3%</td>
+<td style="text-align: right;">53.7%</td>
+<td style="text-align: right;">35.6%</td>
+<td>same benchmark</td>
+</tr>
+<tr class="even">
+<td>GPT-5.6-Sol</td>
+<td style="text-align: right;">95.3%</td>
+<td style="text-align: right;">50.7%</td>
+<td style="text-align: right;">44.7%</td>
+<td>same benchmark</td>
+</tr>
+<tr class="odd">
+<td><strong>Overall</strong></td>
+<td style="text-align: right;"><strong>95.1% ±0.9</strong></td>
+<td style="text-align: right;"><strong>58.2% ±2.0</strong></td>
+<td style="text-align: right;"><strong>37.0% ±2.0</strong></td>
+<td>four held-out agents</td>
+</tr>
+</tbody>
+</table>
+<p>The three outcome rates are not redundant. Safe success requires the
+task to pass and the designated harm test not to fire. Because one
+instance may admit additional untested harms, the paper treats
+harmful-success rates as conservative with respect to its authored harm
+definitions.</p>
+<p>The construction ranking also shows signal: 84% of top-ranked
+candidates were human-valid versus 8% of bottom-ranked candidates.
+Inter-annotator reliability was moderate—Fleiss’ κ 0.537 and
+Krippendorff’s α 0.540—so the candidate-generation stage is not a clean
+substitute for expert specification. The reported construction cost was
+$1,224 in total, approximately $1.17 per scored candidate and $8.16 per
+curated benchmark case; target rollouts accounted for about 70% of cost.
+Reported traffic was 1,692.4 million input tokens and 37.2 million
+output tokens.</p>
+</section>
+<section id="methodological-critique" class="level2">
+<h2>Methodological critique</h2>
+<p><strong>Strengths.</strong> The paper changes the outcome variable
+from textual compliance to executable environmental effect; held-out
+agents were not used to construct cases; source correctness tests are
+retained; and evaluation-time judgment is deterministic. The top/bottom
+human audit makes the ranking process inspectable rather than assuming
+model-generated perturbations are valid.</p>
+<p><strong>Threats.</strong> The domain is shell and systems
+administration, where effects are unusually testable. Harm definitions
+are benchmark-authored and minimal, not naturally occurring enterprise
+policy violations. Final-state checks can miss transient exfiltration or
+unsafe actions later reversed. One designated harm per task cannot
+establish absence of all harm. Moderate annotator agreement reveals
+specification ambiguity, and judge-guided case selection can shape the
+benchmark toward recognizable harms. No production incident reduction,
+user impact, or long-run adaptation evidence is provided.</p>
+</section>
+<section id="prior-work-comparison-and-enterprise-readiness"
+class="level2">
+<h2>Prior-work comparison and enterprise readiness</h2>
+<p>Conventional coding benchmarks grade functional task completion;
+safety evaluations often grade refusal or policy compliance; sandboxing
+constrains effects but does not by itself tell whether an allowed effect
+was wrong. VeriHarm’s contribution is to bind a benign-looking task test
+to an executable adverse-effect test and report <strong>safe
+success</strong> rather than only pass rate.</p>
+<p><strong>Enterprise Inference:</strong> adopt the measurement pattern,
+not the benchmark directly. For internal tool use, pair every material
+task invariant with independently authored forbidden-state, permission,
+data-loss, and rollback checks. Production readiness is moderate for the
+<em>testing pattern</em> and low for direct benchmark transfer. Internal
+workflow topology, permissions, data classifications, and acceptable
+side effects are required before implementation.</p>
+</section>
+</section>
+<section
+id="deep-paper-2-distdebug-bench-diagnosing-distributed-system-bugs"
+class="level1">
+<h1>Deep paper 2 — DistDebug-Bench: diagnosing distributed-system
+bugs</h1>
+<p><strong>Primary source:</strong> Jiarui Zhang et al., <a
+href="https://arxiv.org/abs/2611.03523">DistDebug-Bench: Can LLM Agents
+Diagnose Bugs in Distributed Systems?</a>, arXiv:2611.03523v1, submitted
+November 2, 2026; accepted to the NeurIPS 2026 Evaluations and Datasets
+track. The paper links a public benchmark and repository.</p>
+<section id="research-question-and-method" class="level2">
+<h2>Research question and method</h2>
+<p>DistDebug-Bench asks whether agents can identify the <em>root-cause
+code regions</em> behind realistic failures in distributed systems. The
+dataset contains 120 manually curated bugs from 11 widely used systems,
+five programming languages, and 10 failure patterns. Human annotators
+identify 218 gold root-cause blocks.</p>
+<p>The incidents are structurally hard: 45% require multiple gold
+blocks, 23% span multiple files, 69% of issue reports do not mention the
+gold method, and 63% provide no usable internal stack trace. Three
+annotators work on every issue and reconcile labels. On 51
+pre-adjudication sheets, reported agreement was high: file-level
+Krippendorff α 0.919 and Jaccard 0.902; normalized-function α 0.866 and
+Jaccard 0.837; block-coverage α 0.861 and F1 0.848.</p>
+<p>The benchmark anonymizes repository paths and removes future commits.
+A GPT-5.4 leakage screen fell from 102 flags among 360 checks to four
+after cleaning. A 66-bug closed-book probe found that providing the
+issue ID did not improve function coverage (17.3% with the ID versus
+21.4% without); repository access raised function coverage to 45.5% and
+block coverage to 56.9%, while ID-only performance was 0.0%.</p>
+</section>
+<section id="quantitative-claim-trace-1" class="level2">
+<h2>Quantitative claim trace</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 23%" />
+<col style="width: 30%" />
+<col style="width: 23%" />
+<col style="width: 23%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Result</th>
+<th style="text-align: right;">Value</th>
+<th>What it supports</th>
+<th>What it does not prove</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>GPT-6 Astra mean block coverage</td>
+<td style="text-align: right;">67.7%</td>
+<td>best reported mean in the multi-run headroom table</td>
+<td>complete causal diagnosis or correct repair</td>
+</tr>
+<tr class="even">
+<td>GPT-6 Astra best-attempt coverage</td>
+<td style="text-align: right;">72.1%</td>
+<td>+4.4 points; 17/120 incidents improved</td>
+<td>a practical selector can identify the best run</td>
+</tr>
+<tr class="odd">
+<td>Claude Opus 5.5 mean / best</td>
+<td style="text-align: right;">66.4% / 72.8%</td>
+<td>+6.3-point diversity headroom; 19/120 improved</td>
+<td>that repeated sampling is economical</td>
+</tr>
+<tr class="even">
+<td>GPT-5.5 mean / best</td>
+<td style="text-align: right;">65.1% / 71.7%</td>
+<td>+6.6 points; 22/120 improved</td>
+<td>production reliability</td>
+</tr>
+<tr class="odd">
+<td>Flaky diagnoses, leading system</td>
+<td style="text-align: right;">17%</td>
+<td>instability is material</td>
+<td>exact enterprise incident rate</td>
+</tr>
+<tr class="even">
+<td>Flaky diagnoses, no usable stack</td>
+<td style="text-align: right;">26%</td>
+<td>opacity worsens instability</td>
+<td>universal causal effect</td>
+</tr>
+<tr class="odd">
+<td>High-coverage diagnosis repair pilot</td>
+<td style="text-align: right;">9/18 attempts touched a gold block</td>
+<td>diagnosis may focus repair</td>
+<td>statistical proof; pilot has six bugs</td>
+</tr>
+<tr class="even">
+<td>No-diagnosis pilot</td>
+<td style="text-align: right;">2/18 touched a gold block</td>
+<td>descriptive comparator</td>
+<td>general repair effectiveness</td>
+</tr>
+<tr class="odd">
+<td>Low-coverage diagnosis pilot</td>
+<td style="text-align: right;">0/18 touched a gold block</td>
+<td>poor diagnosis can misdirect repair</td>
+<td>robust effect estimate</td>
+</tr>
+</tbody>
+</table>
+<p>The paper’s analysis identifies <strong>tunnel vision</strong>:
+agents often commit early to a plausible symptom-side explanation and
+fail to revisit it. Best-of-multiple-run headroom is real but small on
+average, and an oracle that chooses the best attempt is not a deployable
+selection method.</p>
+<p>The benchmark-construction study also exposes annotation limits. On
+12 shared bugs, an LLM-assisted labeling path achieved 54.5% recall,
+73.3% precision, and 62.6% F1; deterministic extraction achieved 77.3%
+recall but 34.6% precision and 47.8% F1. Human reconciliation remains
+essential. Repository attrition is steep: for ZooKeeper, 4,789 issues
+became 99 automatic candidates, a 50-item manual sample, and 18 released
+cases.</p>
+</section>
+<section id="methodological-critique-1" class="level2">
+<h2>Methodological critique</h2>
+<p><strong>Strengths.</strong> The study evaluates real
+distributed-system failures, publishes block-level gold labels, measures
+agreement before adjudication, documents dataset attrition, controls
+obvious future-information leakage, and separates diagnosis from the
+much harder repair claim. The opacity and multi-block statistics make
+difficulty observable.</p>
+<p><strong>Threats.</strong> Public historical bugs can remain in
+pretraining data even after explicit future commits are removed.
+Selection favors bugs with fewer than 100 changed source lines unless
+the root cause is separable, which can exclude broad architectural
+failures. Block coverage gives partial credit but does not measure
+whether the diagnosis explains mechanism, timing, or counterfactual
+behavior. Best-attempt analysis uses an oracle. The repair pilot is only
+six bugs × three attempts per condition, so it is directional evidence,
+not a causal production claim. Cost, latency, and on-call human
+interaction require separate evaluation.</p>
+</section>
+<section id="prior-work-comparison-and-enterprise-readiness-1"
+class="level2">
+<h2>Prior-work comparison and enterprise readiness</h2>
+<p>Repository-level repair benchmarks usually grade patches.
+Incident-response evaluations often use synthetic logs or known fault
+taxonomies. DistDebug-Bench inserts an explicit root-cause-localization
+layer, which is valuable because a superficially plausible patch can be
+dangerous when diagnosis is wrong.</p>
+<p><strong>Enterprise Inference:</strong> prototype a diagnosis-first
+lane for read-only incidents, with independent evidence capture,
+alternative hypotheses, and blinded expert scoring before any patch is
+proposed. Enterprise readiness is moderate for offline evaluation and
+low for autonomous remediation. Internal incident corpora, observability
+access, secret handling, source permissions, on-call escalation, and
+production change controls must be known first.</p>
+</section>
+</section>
+<section id="deep-paper-3-can-llm-agents-be-forward-deployed-engineers"
+class="level1">
+<h1>Deep paper 3 — Can LLM agents be forward-deployed engineers?</h1>
+<p><strong>Primary source:</strong> Aayush Mudgal et al., <a
+href="https://arxiv.org/abs/2611.03551">Can LLM Agents Be
+Forward-Deployed Engineers? Requirement Discovery and Delivery for
+Enterprise Text-to-SQL</a>, arXiv:2611.03551v1, submitted November 2,
+2026.</p>
+<section id="research-question-and-method-1" class="level2">
+<h2>Research question and method</h2>
+<p>The paper evaluates two linked stages of a forward-deployed
+engineering engagement: eliciting requirements from an initially
+ambiguous customer and delivering a constrained text-to-SQL system. The
+case is grounded in a four-month Oracle-dialect deployment completed by
+one human FDE, involving more than 100 LoRA adapters and 200
+evaluations. The released study uses a simulated customer backed by
+annotated requirements from that engagement.</p>
+<p>Fifteen models receive 10 runs per ambiguity condition for
+requirement discovery. Agents must ask for acceptance criteria, data and
+access constraints, production workload characteristics, and hardware
+limitations; then they produce an artifact used for delivery. The
+delivery phase runs eight agent configurations: four model backbones
+under decoupled or autonomous workflows. Candidate 8B models are Llama
+3.1 and Ministral 3, with one A100 80GB and a training budget below 12
+GPU-hours.</p>
+</section>
+<section id="quantitative-claim-trace-2" class="level2">
+<h2>Quantitative claim trace</h2>
+<table>
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 40%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Stage</th>
+<th style="text-align: right;">Result</th>
+<th>Decision meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Requirement discovery, all models</td>
+<td style="text-align: right;">4,227 / 7,050 withheld facts recovered =
+<strong>60.0%</strong></td>
+<td>40% remained missing or misrepresented</td>
+</tr>
+<tr class="even">
+<td>Disclosed facts reaching final document</td>
+<td style="text-align: right;">3,248 / 4,122; <strong>874 lost =
+21.2%</strong></td>
+<td>conversational discovery did not guarantee durable handoff</td>
+</tr>
+<tr class="odd">
+<td>Claude Opus 5.5</td>
+<td style="text-align: right;">81.7% ±14.0 recovery; 5.5 ask turns</td>
+<td>strongest reported mean with substantial run variance</td>
+</tr>
+<tr class="even">
+<td>Claude Opus 5</td>
+<td style="text-align: right;">81.1% ±10.2; 9 ask turns</td>
+<td>similar coverage with more interaction</td>
+</tr>
+<tr class="odd">
+<td>Delivery runs passing all targets</td>
+<td style="text-align: right;"><strong>2 / 8 = 25%</strong></td>
+<td>most runs failed an acceptance dimension despite substantial
+benchmark accuracy</td>
+</tr>
+<tr class="even">
+<td>GPT-5.6 Sol, decoupled, Ministral</td>
+<td style="text-align: right;">Spider 76.11; BIRD 27.92; production
+failure 9%; p90 11.24s</td>
+<td>passes all stated targets</td>
+</tr>
+<tr class="odd">
+<td>GPT-6.1 Sol, autonomous, Llama 3.1</td>
+<td style="text-align: right;">Spider 71.57; BIRD 24.53; production
+failure 6%; p90 12.62s</td>
+<td>passes all stated targets</td>
+</tr>
+<tr class="even">
+<td>Human FDE</td>
+<td style="text-align: right;">Spider 79.90; BIRD 25.30; production
+failure 6%; p90 9.26s</td>
+<td>reference deployment clears gate</td>
+</tr>
+</tbody>
+</table>
+<p>The stated acceptance targets were Spider accuracy at least 60%, BIRD
+reported but not gated, production query failure at most 10%, and p90
+latency below 15 seconds. A Grok 4.7 autonomous run reached BIRD 44.29
+and Spider 75.82 yet failed the release gate because production failure
+was 13%. A GLM autonomous run reached Spider 67.50 and BIRD 30.85 with
+fast p90 latency of 3.04 seconds but a 23% production failure rate.
+Production compilation was the most common missed target, failing in 4
+of 8 runs.</p>
+<p>The study also tested repeated delivery reliability: GPT-6.1 Sol on
+OpenCode completed training in 3 of 6 runs, and only 1 of 6 passed. This
+prevents interpreting one successful trajectory as stable operational
+capability.</p>
+</section>
+<section id="methodological-critique-2" class="level2">
+<h2>Methodological critique</h2>
+<p><strong>Strengths.</strong> The paper evaluates the whole arc from
+ambiguous intent to deployed acceptance; separates public benchmark
+accuracy from private production behavior; states hardware and compute
+limits; preserves concrete acceptance thresholds; and reports failed
+runs rather than only a successful demo. The lost-fact measurement
+reveals a handoff problem that ordinary task scores miss.</p>
+<p><strong>Threats.</strong> It is one bounded enterprise case, one data
+modality, one simulated customer, and a small delivery sample. Customer
+simulation cannot reproduce organizational politics, tacit knowledge,
+conflicting stakeholders, changing authority, or legal constraints. The
+real engagement informs the benchmark, so the evaluation is not
+independent of the deployment it abstracts. Results may depend on prompt
+and harness details. Business outcomes, user adoption, maintainability,
+security review, and longitudinal drift are not measured.</p>
+</section>
+<section id="prior-work-comparison-and-enterprise-readiness-2"
+class="level2">
+<h2>Prior-work comparison and enterprise readiness</h2>
+<p>Text-to-SQL research usually optimizes benchmark accuracy;
+requirements-engineering work usually stops before model training and
+release. This paper joins the two and shows why both stages must be
+evaluated. Its most durable contribution is not the specific model
+ranking but the separation of elicitation, documentation fidelity, build
+completion, benchmark quality, production compilation, latency, and
+acceptance.</p>
+<p><strong>Enterprise Inference:</strong> establish a
+requirement-and-acceptance ledger before considering an autonomous FDE.
+Enterprise readiness is moderate for shadow delivery and low for
+independent production ownership. Internal data contracts, access
+controls, production query distribution, review authority, rollback,
+change management, and business priorities are required.</p>
+</section>
+</section>
+<section id="watchlist" class="level1">
+<h1>Watchlist</h1>
+<section id="watchlist-1-input-assurance-for-llm-agent-evaluation"
+class="level2">
+<h2>Watchlist 1 — Input Assurance for LLM Agent Evaluation</h2>
+<p><strong>Primary source:</strong> <a
+href="https://arxiv.org/abs/2611.02676">Does the Judge See What the
+Evaluation Requires? Input Assurance for LLM Agent Evaluation</a>,
+arXiv:2611.02676v1, submitted November 2, 2026.</p>
+<p>The paper audits a specific evaluation pipeline and asks whether the
+judge receives, checks, and actually reads the artifacts that the metric
+assumes. In 30 trajectories and 60 judged steps, a renderer omitted
+every structured tool call; 53 of 60 judged steps became blank even
+though stored hashes matched. Restoring tool calls reduced a
+later-context contrast from 13 cases to 2, an 11-case reduction or 0.37
+per trajectory; a trajectory-cluster bootstrap gave a 95% interval of
+0.17–0.53.</p>
+<p>Two separately written checkers accepted an unmatched tool result.
+Integration tests also found that a failed build’s packet was still read
+and that the staged copy could change after checking. Three
+controls—content assertions, fail-closed check consumption, and
+last-checked-byte binding—stopped 18 of 19 constructed faults; the
+remaining stale script never executed.</p>
+<p><strong>Watchlist judgment:</strong> the four obligations are
+compelling: required content survives rendering; the checker covers the
+requirement; failure stops use; and the judge reads the exact checked
+bytes. Evidence is narrow to one pipeline, with transfer still unproven.
+Treat it as a high-value design review and fault-injection template, not
+a universal measured effect.</p>
+</section>
+<section id="watchlist-2-continual-evolution-without-forgetting"
+class="level2">
+<h2>Watchlist 2 — Continual evolution without forgetting</h2>
+<p><strong>Primary source:</strong> <a
+href="https://arxiv.org/abs/2611.03219">Can Coding Agents Sustain
+Continual Evolution without Forgetting?</a>, arXiv:2611.03219v1,
+submitted November 2, 2026. The paper links code.</p>
+<p>The study evolves coding-agent harnesses across SWE-bench Verified
+(50 tasks), a paraphrased SWT-bench subset (50), and FeatureBench (30),
+using DeepSeek V4 Flash and two rollouts per task per round. A
+Meta-Harness reached 94% on SWE-bench after evolution but fell to 32%
+after the fifth FeatureBench round—a 66% relative decline.</p>
+<p>Controlled conflicts show why. The original best harness scored 96%.
+Adding a verification conflict drove success to 0% and increased time
+69%; a workflow conflict reduced success to 66% while increasing time
+235%; a budget strategy retained 96% success but raised time 79%.</p>
+<p><strong>Watchlist judgment:</strong> the research makes harness
+configuration a versioned, regression-tested artifact rather than a
+monotonic self-improvement process. Evidence is still narrow—one model,
+small subsets, two rollouts, and evolved methods tied to the tested
+harness. The regression-firewall pattern is ready for experimentation;
+autonomous self-evolution is not.</p>
+</section>
+</section>
+<section id="cross-paper-synthesis" class="level1">
+<h1>Cross-paper synthesis</h1>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Failure layer</th>
+<th>Primary evidence</th>
+<th>Hidden assumption exposed</th>
+<th>Enterprise control implied</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Task outcome</td>
+<td>VeriHarm</td>
+<td>passing the requested test means the outcome is safe</td>
+<td>independent effect and forbidden-state tests</td>
+</tr>
+<tr class="even">
+<td>Root cause</td>
+<td>DistDebug</td>
+<td>a plausible explanation localizes the causal code</td>
+<td>diagnosis coverage, competing hypotheses, expert adjudication</td>
+</tr>
+<tr class="odd">
+<td>Requirements</td>
+<td>FDE</td>
+<td>facts asked in conversation survive into delivery</td>
+<td>source-linked requirement ledger and unresolved-decision queue</td>
+</tr>
+<tr class="even">
+<td>Release</td>
+<td>FDE</td>
+<td>public benchmark accuracy predicts production acceptance</td>
+<td>private workload gate with multiple acceptance dimensions</td>
+</tr>
+<tr class="odd">
+<td>Evaluation transport</td>
+<td>Input Assurance</td>
+<td>the judge sees and consumes what the metric assumes</td>
+<td>content assertions, fail-closed use, byte binding</td>
+</tr>
+<tr class="even">
+<td>Harness evolution</td>
+<td>Continual evolution</td>
+<td>repeated optimization preserves prior capability</td>
+<td>versioned baselines, cross-suite regression firewall, rollback</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Independent Analysis.</strong> The shared architectural
+object is an <strong>evidence-bearing state transition</strong>. Each
+transition should declare its source requirement, authorized principal,
+tool and data boundary, before/after state, validation results, cost,
+reviewer, and revocation or rollback path. Models may propose
+transitions; host-controlled systems should decide whether the evidence
+permits them.</p>
+<p>The papers also triangulate a hierarchy of validation:</p>
+<ol type="1">
+<li><strong>Input validity:</strong> did the evaluator receive the
+intended bytes and structured calls?</li>
+<li><strong>Requirement validity:</strong> were material facts elicited,
+preserved, and resolved?</li>
+<li><strong>Action validity:</strong> did the agent act within authority
+and budget?</li>
+<li><strong>Effect validity:</strong> did the task pass without
+designated harm?</li>
+<li><strong>Causal validity:</strong> does the explanation cover the
+actual root cause rather than a symptom?</li>
+<li><strong>Production validity:</strong> do quality, latency, failure,
+cost, security, and human-review targets all pass?</li>
+<li><strong>Temporal validity:</strong> does a harness improvement
+retain earlier capabilities after later changes?</li>
+</ol>
+</section>
+<section id="enterprise-ai-enhancement-backlog" class="level1">
+<h1>Enterprise AI Enhancement Backlog</h1>
+<section id="priority-model-and-uncertainty" class="level2">
+<h2>Priority model and uncertainty</h2>
+<p>The <strong>Future Enterprise AI Priority Score</strong> is a
+transparent weighted heuristic:</p>
+<p><strong>25% strategic/business value + 20% technical leverage + 20%
+evidence strength + 15% enterprise readiness + 10% feasibility + 10%
+risk-adjusted differentiation.</strong></p>
+<p>Every component is scored 0–100. Totals are rounded to one decimal
+and should be treated as decision bands, not measurements. Component
+uncertainty is material because no internal enterprise architecture,
+vendors, data classes, risk tolerance, maturity, unit economics, or
+operating model were provided.</p>
+<table>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">#</th>
+<th>Enhancement</th>
+<th>Band</th>
+<th style="text-align: right;">Strategic 25%</th>
+<th style="text-align: right;">Leverage 20%</th>
+<th style="text-align: right;">Evidence 20%</th>
+<th style="text-align: right;">Readiness 15%</th>
+<th style="text-align: right;">Feasibility 10%</th>
+<th style="text-align: right;">Differentiation 10%</th>
+<th style="text-align: right;">Weighted total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td>Effect-aware safe-success gate</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">96</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;"><strong>90.3</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td>Requirement-to-acceptance ledger</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">74</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;"><strong>87.9</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td>Production-distribution release gate</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">89</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;"><strong>87.7</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td>Diagnosis-first distributed-debugging lane</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;"><strong>84.8</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td>Evaluation input-assurance gateway</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;"><strong>85.3</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td>Evidence-diversifying tunnel-vision breaker</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;">68</td>
+<td style="text-align: right;">72</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;"><strong>81.1</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td>Continual harness regression firewall</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">89</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">76</td>
+<td style="text-align: right;">72</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;"><strong>82.3</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td>Executable harm-case generator</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">62</td>
+<td style="text-align: right;">63</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;"><strong>78.6</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9</td>
+<td>Unbounded autonomous harness self-evolution</td>
+<td>Deprioritize for Now</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">68</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;"><strong>51.6</strong></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="prototype-soon" class="level2">
+<h2>Prototype Soon</h2>
+<section id="effect-aware-safe-success-gate-90.3" class="level3">
+<h3>1. Effect-aware safe-success gate — 90.3</h3>
+<ul>
+<li><strong>Category:</strong> AI Security / Safety &amp; Governance /
+Evaluation &amp; Observability.</li>
+<li><strong>Research signal and supporting paper:</strong> VeriHarm
+reports 95.1% task success but 37.0% safe success across four held-out
+agents; evaluation uses separate executable task and harm tests.</li>
+<li><strong>Evidence label:</strong> <strong>Paper Fact</strong> for the
+benchmark; <strong>Enterprise Inference</strong> for internal
+transfer.</li>
+<li><strong>Problem/opportunity:</strong> teams can certify functional
+completion while missing destructive, privacy, permission, or integrity
+effects.</li>
+<li><strong>Future capability and placement:</strong> a host-side gate
+in orchestration, evaluation, security/governance, and human review that
+records pre/post state, runs task invariants plus independently authored
+forbidden-state tests, and blocks reuse or release on disagreement.</li>
+<li><strong>Business / technical value:</strong> quality, reliability,
+risk reduction, customer trust; effect-level observability, safer tool
+use, and measurable safe-success rates.</li>
+<li><strong>Maturity / confidence / horizon / effort:</strong>
+executable pattern is mature; domain transfer is unproven. <strong>High
+/ Now / M.</strong></li>
+<li><strong>Dependencies:</strong> sandbox or transaction boundary,
+canonical state snapshots, IAM context, severity taxonomy, immutable
+logs, rollback, independent test authors.</li>
+<li><strong>Risks:</strong> incomplete harm coverage, check gaming,
+false assurance, sensitive state capture, added latency, untestable
+external effects.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build</strong>
+domain-specific effects and policy tests; <strong>buy/adopt</strong>
+sandboxing and observability where appropriate; security partner
+review.</li>
+<li><strong>Minimum reversible experiment:</strong> shadow 100
+historical or synthetic tool-use tasks with no external writes; inject
+known harms.</li>
+<li><strong>Success / stop conditions:</strong> ≥95% seeded-harm
+detection, &lt;2% false block rate on benign cases, complete provenance,
+bounded cost; stop on any uncontained external effect or if task/harm
+tests share unreviewed logic.</li>
+<li><strong>Roadmap trigger:</strong> independent red-team replication
+across two workflows plus favorable latency and human-review
+economics.</li>
+</ul>
+</section>
+<section id="requirement-to-acceptance-ledger-87.9" class="level3">
+<h3>2. Requirement-to-acceptance ledger — 87.9</h3>
+<ul>
+<li><strong>Category:</strong> Human-AI Workflow / Data &amp; Knowledge
+Infrastructure / Agentic AI.</li>
+<li><strong>Signal:</strong> the FDE study recovered 60.0% of withheld
+facts overall and lost 21.2% of facts that customers disclosed before
+the final document.</li>
+<li><strong>Evidence label:</strong> <strong>Paper Fact / Enterprise
+Inference.</strong></li>
+<li><strong>Problem/opportunity:</strong> requirements disappear between
+conversation, specification, implementation, and acceptance.</li>
+<li><strong>Capability and placement:</strong> source-linked requirement
+objects with status, owner, confidence, privacy class, acceptance test,
+unresolved decision, and change history in applications, orchestration,
+knowledge/data, and human-review layers.</li>
+<li><strong>Value:</strong> faster delivery, fewer rework cycles, higher
+quality, clearer accountability; machine-checkable handoffs and
+traceability.</li>
+<li><strong>Maturity / confidence / horizon / effort:</strong> moderate
+evidence from one case; <strong>High / Now / M.</strong></li>
+<li><strong>Dependencies:</strong> requirements taxonomy, stakeholder
+identity, document connectors, access inheritance, change control,
+reviewer SLAs.</li>
+<li><strong>Risks:</strong> false completeness, surveillance of
+conversations, stale facts, conflicting stakeholders, over-structuring,
+sensitive-data retention.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build the control
+model</strong> around existing work-management/knowledge tools; partner
+with security, privacy, legal, and delivery teams.</li>
+<li><strong>Experiment:</strong> shadow one project; compare a
+ledger-generated specification with the normal handoff, with humans
+resolving conflicts.</li>
+<li><strong>Success / stop:</strong> ≥95% material-fact traceability,
+fewer late omissions, no unauthorized data exposure, acceptable time
+burden; stop if the ledger suppresses dissent or becomes a system of
+record without governance.</li>
+<li><strong>Trigger:</strong> two projects show reduced material
+omissions and rework with stable reviewer effort.</li>
+</ul>
+</section>
+<section id="production-distribution-release-gate-87.7" class="level3">
+<h3>3. Production-distribution release gate — 87.7</h3>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability / MLOps
+&amp; Platform.</li>
+<li><strong>Signal:</strong> only 2/8 FDE delivery runs passed all
+targets; high public-benchmark scores coexisted with 13–23% production
+failure in rejected runs.</li>
+<li><strong>Evidence label:</strong> <strong>Paper Fact / Enterprise
+Inference.</strong></li>
+<li><strong>Problem/opportunity:</strong> benchmark gains can fail on
+private schemas, compilers, latency, security, or cost.</li>
+<li><strong>Capability and placement:</strong> a frozen,
+access-controlled production-like suite in evaluation, model gateway,
+data platform, and observability; release requires joint quality,
+failure, latency, cost, security, and human-review thresholds.</li>
+<li><strong>Value:</strong> fewer regressions and incidents, credible
+release decisions, better cost/performance tradeoffs.</li>
+<li><strong>Maturity / confidence / horizon / effort:</strong>
+multi-criterion gating is mature; result transfer is case-specific.
+<strong>High / Now / M.</strong></li>
+<li><strong>Dependencies:</strong> representative holdout, leakage
+controls, data minimization, replay environment, cost telemetry, owners
+and thresholds.</li>
+<li><strong>Risks:</strong> stale or biased holdout, leakage into
+tuning, privacy exposure, metric gaming, undercoverage of rare
+failures.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build</strong>
+private suites and acceptance logic; <strong>buy/adopt</strong>
+evaluation runners and telemetry where controls permit.</li>
+<li><strong>Experiment:</strong> compare five candidate configurations
+under public benchmark only versus the private multi-criterion
+gate.</li>
+<li><strong>Success / stop:</strong> gate predicts expert release choice
+and catches known regressions with acceptable runtime; stop if holdout
+integrity or confidentiality cannot be preserved.</li>
+<li><strong>Trigger:</strong> repeated correlation with post-pilot
+outcomes across two domains.</li>
+</ul>
+</section>
+<section id="diagnosis-first-distributed-debugging-lane-84.8"
+class="level3">
+<h3>4. Diagnosis-first distributed-debugging lane — 84.8</h3>
+<ul>
+<li><strong>Category:</strong> AI Software Engineering / Agentic AI /
+Evaluation &amp; Observability.</li>
+<li><strong>Signal:</strong> DistDebug-Bench provides 120 real incidents
+and block-level labels; the best mean coverage is 67.7%, while the small
+repair pilot favors high-coverage diagnoses over none.</li>
+<li><strong>Evidence label:</strong> <strong>Paper Fact</strong> for
+diagnosis; <strong>Uncertainty</strong> for repair causality.</li>
+<li><strong>Problem/opportunity:</strong> repair agents can patch
+symptoms without locating causal code, increasing operational risk.</li>
+<li><strong>Capability and placement:</strong> a read-only incident
+workbench in developer platform, observability, knowledge/retrieval, and
+human review that produces ranked root-cause blocks, evidence,
+alternatives, and disconfirming tests before code changes.</li>
+<li><strong>Value:</strong> faster triage, higher-quality handoff, lower
+blast radius; structured causal evidence and reusable incident
+labels.</li>
+<li><strong>Maturity / confidence / horizon / effort:</strong> offline
+diagnosis is testable; autonomous repair is not ready. <strong>Moderate
+/ 3–6 months / L.</strong></li>
+<li><strong>Dependencies:</strong> sanitized incident corpus, source/log
+access, temporal snapshots, secret redaction, expert labels, on-call
+escalation.</li>
+<li><strong>Risks:</strong> contamination, hallucinated causality,
+secret exposure, tunnel vision, log overload, automation bias.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Partner</strong>
+with incident-response and observability vendors; <strong>build</strong>
+organization-specific gold cases and review workflow.</li>
+<li><strong>Experiment:</strong> 30 closed historical incidents, blind
+against on-call experts; no patching or production access.</li>
+<li><strong>Success / stop:</strong> improved time-to-correct-root-cause
+and block coverage without severe false confidence; stop on secret
+leakage or worse expert decision quality.</li>
+<li><strong>Trigger:</strong> replicated lift across two services and
+stable expert trust calibration.</li>
+</ul>
+</section>
+</section>
+<section id="prepare-foundations" class="level2">
+<h2>Prepare Foundations</h2>
+<section id="evaluation-input-assurance-gateway-85.3" class="level3">
+<h3>5. Evaluation input-assurance gateway — 85.3</h3>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability / AI
+Security / MLOps &amp; Platform.</li>
+<li><strong>Signal:</strong> the Watchlist audit found 53/60 blank
+judged steps, unmatched tool results, failed builds still consumed, and
+post-check artifact mutation.</li>
+<li><strong>Evidence label:</strong> <strong>Paper Fact</strong> in one
+pipeline; <strong>Enterprise Inference</strong> for a reusable
+gateway.</li>
+<li><strong>Problem/opportunity:</strong> evaluation scores can be
+meaningless when renderers, packets, or checkers violate metric
+assumptions.</li>
+<li><strong>Capability and placement:</strong> canonical serialization,
+schema/content assertions, fail-closed checks, signed artifact identity,
+and last-checked-byte binding in evaluation, observability,
+security/governance, and developer platform.</li>
+<li><strong>Value:</strong> credible metrics, faster fault isolation,
+reduced false releases; reproducible and tamper-evident evaluation
+inputs.</li>
+<li><strong>Maturity / confidence / horizon / effort:</strong> controls
+are mature; measured effect is narrow. <strong>High / Now /
+S–M.</strong></li>
+<li><strong>Dependencies:</strong> canonical formats, artifact store,
+signatures/hashes, build status propagation, ownership, mutation
+tests.</li>
+<li><strong>Risks:</strong> semantic omissions that hashes cannot see,
+operational friction, incompatible tools, misplaced trust in signed bad
+content.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build</strong>
+contracts and integration tests; <strong>buy/adopt</strong> artifact
+signing and CI provenance.</li>
+<li><strong>Experiment:</strong> seed 50 transport/checker faults across
+one offline evaluation pipeline.</li>
+<li><strong>Success / stop:</strong> ≥95% fault detection, zero
+consumption after failed checks, exact artifact binding; stop if checks
+alter judged content or create unsafe bypasses.</li>
+<li><strong>Trigger:</strong> catches a real defect and remains stable
+across two model/evaluation stacks.</li>
+</ul>
+</section>
+<section id="evidence-diversifying-tunnel-vision-breaker-81.1"
+class="level3">
+<h3>6. Evidence-diversifying tunnel-vision breaker — 81.1</h3>
+<ul>
+<li><strong>Category:</strong> Reasoning &amp; Planning / AI Software
+Engineering.</li>
+<li><strong>Signal:</strong> DistDebug reports 17% flaky diagnoses
+overall and 26% without useful stack traces; multi-run oracle headroom
+reaches 4.4–6.6 points.</li>
+<li><strong>Evidence label:</strong> <strong>Paper Fact</strong> for
+instability/headroom; <strong>Uncertainty</strong> for practical
+selection.</li>
+<li><strong>Problem/opportunity:</strong> early plausible hypotheses
+dominate later search.</li>
+<li><strong>Capability and placement:</strong> orchestration forces
+independent hypotheses from different evidence slices, then a verifier
+compares coverage, contradiction, and missing observations before
+convergence.</li>
+<li><strong>Value:</strong> reliability and quality; diversity without
+uncontrolled agent proliferation.</li>
+<li><strong>Maturity / confidence / horizon / effort:</strong>
+moderate-low; oracle headroom is not a selector. <strong>Moderate / 3–6
+months / M.</strong></li>
+<li><strong>Dependencies:</strong> evidence partitioning, hypothesis
+schema, contradiction tests, cost limits, independent reviewer or
+model.</li>
+<li><strong>Risks:</strong> correlated models, token cost, superficial
+diversity, majority error, latency, confidential-evidence
+duplication.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build</strong> a
+bounded orchestration experiment; no platform purchase justified
+yet.</li>
+<li><strong>Experiment:</strong> compare single diagnosis, three
+independent diagnoses, and evidence-partitioned diagnoses on 40
+historical incidents.</li>
+<li><strong>Success / stop:</strong> significant expert-rated coverage
+lift per dollar and no increase in severe false confidence; stop if
+oracle headroom cannot be selected reliably.</li>
+<li><strong>Trigger:</strong> a blind selector captures at least half of
+oracle headroom across two incident classes.</li>
+</ul>
+</section>
+<section id="continual-harness-regression-firewall-82.3" class="level3">
+<h3>7. Continual harness regression firewall — 82.3</h3>
+<ul>
+<li><strong>Category:</strong> MLOps &amp; Platform / AI Software
+Engineering / Evaluation &amp; Observability.</li>
+<li><strong>Signal:</strong> the Watchlist paper reports a 94%→32%
+SWE-bench collapse after later FeatureBench evolution and severe
+conflict effects.</li>
+<li><strong>Evidence label:</strong> <strong>Paper Fact / Enterprise
+Inference.</strong></li>
+<li><strong>Problem/opportunity:</strong> prompt, policy, tool, and
+harness optimization can silently erase prior capability or inflate
+cost.</li>
+<li><strong>Capability and placement:</strong> versioned harness
+registry, cross-suite replay, conflict checks, latency/token budgets,
+canary comparison, and one-click rollback in developer platform,
+evaluation, and observability.</li>
+<li><strong>Value:</strong> reliability, cost control, faster safe
+iteration; makes harness changes first-class releases.</li>
+<li><strong>Maturity / confidence / horizon / effort:</strong> mature
+software discipline, research evidence narrow. <strong>High / Now /
+M.</strong></li>
+<li><strong>Dependencies:</strong> stable suites, harness versioning,
+deterministic configs, cost telemetry, release policy, rollback.</li>
+<li><strong>Risks:</strong> overfitting to suites, slow pipelines, flaky
+tasks, hidden production drift, excessive governance.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Build</strong>
+organization-specific gates atop existing CI/evaluation platforms.</li>
+<li><strong>Experiment:</strong> replay the last 20 harness changes
+against current and legacy suites; inject one known conflict.</li>
+<li><strong>Success / stop:</strong> 100% detection of seeded
+regressions, bounded false alarms, measured rollback; stop if suite
+instability dominates signal.</li>
+<li><strong>Trigger:</strong> catches at least one historical regression
+and stays within release budget for two cycles.</li>
+</ul>
+</section>
+</section>
+<section id="monitor-for-maturity" class="level2">
+<h2>Monitor for Maturity</h2>
+<section id="executable-harm-case-generator-78.6" class="level3">
+<h3>8. Executable harm-case generator — 78.6</h3>
+<ul>
+<li><strong>Category:</strong> AI Security / Evaluation &amp;
+Observability.</li>
+<li><strong>Signal:</strong> VeriHarm creates 1,046 candidates and
+curates 150; top-ranked human validity is 84% versus 8% at the bottom,
+with moderate inter-annotator agreement.</li>
+<li><strong>Evidence label:</strong> <strong>Paper Fact /
+Uncertainty.</strong></li>
+<li><strong>Problem/opportunity:</strong> manual adverse-effect tests
+are expensive, but model-generated tests can encode mistakes and
+recognizable benchmark artifacts.</li>
+<li><strong>Capability and placement:</strong> a sandboxed generator
+proposes minimal harmful variants and executable tests; human security
+engineers approve ontology, realism, and severity before use.</li>
+<li><strong>Value:</strong> faster red-team expansion and differentiated
+safety coverage; reusable effect-test library.</li>
+<li><strong>Maturity / confidence / horizon / effort:</strong> promising
+construction pipeline, narrow domain. <strong>Moderate / 6–12 months /
+L.</strong></li>
+<li><strong>Dependencies:</strong> threat model, sandbox, expert review,
+independent models, coverage tracking, confidential test storage.</li>
+<li><strong>Risks:</strong> unsafe content, test leakage, false harms,
+omitted harms, benchmark gaming, high review cost.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Partner</strong>
+with red-team specialists; build only domain-specific tests under
+security control.</li>
+<li><strong>Experiment:</strong> generate 200 cases for one
+non-production tool and blind-review 50 top plus 50 random cases.</li>
+<li><strong>Success / stop:</strong> ≥80% expert validity, novel defect
+discovery, no unsafe execution, sustainable cost; stop on poor agreement
+or leakage.</li>
+<li><strong>Trigger:</strong> independent teams reproduce validity and
+find material defects not covered by manual suites.</li>
+</ul>
+</section>
+</section>
+<section id="deprioritize-for-now" class="level2">
+<h2>Deprioritize for Now</h2>
+<section id="unbounded-autonomous-harness-self-evolution-51.6"
+class="level3">
+<h3>9. Unbounded autonomous harness self-evolution — 51.6</h3>
+<ul>
+<li><strong>Category:</strong> Agentic AI / AI Software
+Engineering.</li>
+<li><strong>Signal:</strong> continual-evolution results show
+catastrophic retention loss and conflict sensitivity under small
+controlled suites.</li>
+<li><strong>Evidence label:</strong> <strong>Paper Fact / Enterprise
+Inference / Uncertainty.</strong></li>
+<li><strong>Problem/opportunity:</strong> autonomous improvement could
+reduce engineering effort, but it can change verification, workflow, and
+resource policy without preserving capability.</li>
+<li><strong>Capability and placement:</strong> no production capability
+recommended; retain only an isolated research environment with immutable
+permissions, offline tasks, versioned diffs, and human approval.</li>
+<li><strong>Value:</strong> possible future speed and differentiation;
+no credible near-term production economics.</li>
+<li><strong>Maturity / confidence / horizon / effort:</strong> low
+readiness. <strong>Low / 12+ months / XL.</strong></li>
+<li><strong>Dependencies:</strong> formal invariants, diverse suites,
+conflict analysis, sandbox, rollback, budget caps, independent
+approval.</li>
+<li><strong>Risks:</strong> capability collapse, weakened verification,
+runaway cost, privilege expansion, self-referential evaluation,
+irreproducible behavior.</li>
+<li><strong>Build / Buy / Partner:</strong> <strong>Do not buy or
+deploy.</strong> Research internally only if strategically
+justified.</li>
+<li><strong>Experiment:</strong> offline tournament on synthetic
+repositories with no credentials, network, or external writes.</li>
+<li><strong>Success / stop:</strong> retain ≥95% of prior-suite
+performance, no safety regression, bounded cost, fully reviewable diffs;
+stop on any permission breach or unrecoverable regression.</li>
+<li><strong>Trigger:</strong> independent replication across models and
+domains plus formal retention and permission guarantees.</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="enterprise-ai-architecture-implications" class="level1">
+<h1>Enterprise AI Architecture Implications</h1>
+<p><strong>Independent Analysis.</strong> Over the next 12–24 months,
+the evidence favors a move from prompt-centric applications toward an
+<strong>evidence-bearing AI control plane</strong>. It should not assume
+a particular vendor or current stack.</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Shared enabling foundation</th>
+<th>12–24 month role</th>
+<th>Enhancements unlocked</th>
+<th>Internal context required before implementation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Model gateway and cost telemetry</td>
+<td>route models; record version, policy, latency, tokens, and cost</td>
+<td>all evaluation and diversity experiments</td>
+<td>approved providers, data classes, SLAs, budgets</td>
+</tr>
+<tr class="even">
+<td>Requirement and context service</td>
+<td>preserve sourced facts, decisions, conflicts, freshness, and
+acceptance tests</td>
+<td>ledger, release gate, human review</td>
+<td>systems of record, retention, ownership, residency</td>
+</tr>
+<tr class="odd">
+<td>Identity and policy enforcement</td>
+<td>bind every action to a principal, tool scope, data scope, and
+immutable ceiling</td>
+<td>safe-success gate, debugging, harness research</td>
+<td>IAM, segregation of duties, tool authorization model</td>
+</tr>
+<tr class="even">
+<td>Effect and provenance ledger</td>
+<td>record before/after state, artifacts, validators, reviewer, and
+rollback</td>
+<td>safe success, input assurance, incident diagnosis</td>
+<td>canonical state, transactional boundaries, audit policy</td>
+</tr>
+<tr class="odd">
+<td>Evaluation infrastructure</td>
+<td>deterministic tests, private suites, counterfactuals, fault
+injection, blinded scoring</td>
+<td>all Prototype Soon items</td>
+<td>golden sets, severity taxonomy, statistical ownership</td>
+</tr>
+<tr class="even">
+<td>Observability and incident evidence</td>
+<td>time-aligned logs, traces, source snapshots, causal hypotheses</td>
+<td>diagnosis lane, tunnel-vision breaker</td>
+<td>secret handling, log access, on-call workflow</td>
+</tr>
+<tr class="odd">
+<td>Agent orchestration</td>
+<td>bounded plans, evidence partitioning, checkpoints, abstention,
+repair budgets</td>
+<td>safe actions, hypothesis diversity</td>
+<td>idempotency, side effects, recovery objectives</td>
+</tr>
+<tr class="even">
+<td>Human-review layer</td>
+<td>adjudicate conflicts, approve consequential effects, revoke
+evidence</td>
+<td>all high-impact enhancements</td>
+<td>authority, capacity, SLAs, appeals, training</td>
+</tr>
+<tr class="odd">
+<td>Experiment registry</td>
+<td>preregister hypothesis, model/harness version, suite, stop
+condition, and outcome</td>
+<td>regression firewall, harm generator, release gate</td>
+<td>reproducible environments, budget and data governance</td>
+</tr>
+</tbody>
+</table>
+<p>The likely architecture is layered: applications submit a sourced
+requirement contract; the model gateway selects an allowed model;
+orchestration grants scoped tools; the effect ledger captures intended
+and observed state; evaluators verify input integrity, safe success,
+diagnosis coverage, production acceptance, and regression; policy
+enforcement blocks forbidden transitions; and human reviewers decide
+consequential disagreements. Model memory should store only governed,
+source-linked context—not unbounded conversational residue.</p>
+<p>No implementation decision can be made without the enterprise’s
+actual business priorities, workflow criticality, data classifications,
+identity model, existing gateways, evaluation maturity, regulatory
+duties, incident history, unit economics, and reviewer capacity.</p>
+</section>
+<section id="implementation-priorities" class="level1">
+<h1>Implementation Priorities</h1>
+<ol type="1">
+<li><strong>0–30 days — establish measurement boundaries.</strong>
+Inventory agent workflows, consequential tools, current acceptance
+gates, private workload suites, incident corpora, and harness versions.
+Define severe errors, designated harms, facts that must survive handoff,
+and who can approve effects.</li>
+<li><strong>30–90 days — run the Top 3 bets in shadow mode.</strong> Use
+no external writes; freeze cases before testing; separate test authors
+from agent builders; log cost and reviewer time; preregister success and
+stop conditions.</li>
+<li><strong>3–6 months — build shared input, evidence, and regression
+foundations.</strong> Canonicalize artifacts, bind checked bytes, add
+provenance and cost telemetry, and make harness/configuration diffs
+reviewable.</li>
+<li><strong>6–12 months — expand only after replication.</strong> Add
+diagnosis diversity and generated harm cases when internal blind tests
+show stable value. Keep repair, policy, and production writes
+human-approved.</li>
+<li><strong>12+ months — reconsider self-evolution only with
+guarantees.</strong> Require retention across suites, immutable
+permission ceilings, independent replication, reversible state, and
+favorable economics.</li>
+</ol>
+</section>
+<section id="knowledge-reinforcement" class="level1">
+<h1>Knowledge Reinforcement</h1>
+<section id="what-changed-today" class="level2">
+<h2>What changed today</h2>
+<ul>
+<li><strong>Safe success is a separate metric.</strong> A 95.1% task
+pass rate coexisted with 37.0% safe success in VeriHarm; functional
+correctness alone is not a safety claim.</li>
+<li><strong>Diagnosis deserves its own evaluation layer.</strong>
+DistDebug shows that block coverage, stability, and causal alternatives
+can be measured before patch success.</li>
+<li><strong>Requirement elicitation and requirement preservation are
+different problems.</strong> The FDE study loses 21.2% of disclosed
+facts before the final document.</li>
+<li><strong>Production acceptance must remain multidimensional.</strong>
+A run can lead a public benchmark and still fail private compilation or
+failure-rate targets.</li>
+<li><strong>Evaluation plumbing is part of the scientific
+claim.</strong> Missing tool calls, stale artifacts, or non-failing
+checks can invalidate the score even if model behavior is
+unchanged.</li>
+<li><strong>Harness optimization is not monotonic.</strong> Later
+improvements can erase earlier capability and multiply runtime.</li>
+</ul>
+</section>
+<section id="durable-questions-for-future-briefings" class="level2">
+<h2>Durable questions for future briefings</h2>
+<ol type="1">
+<li>What does “success” exclude—harm, permission violation, hidden cost,
+or lost requirement?</li>
+<li>Does the evaluator see the exact checked artifact and fail closed
+when assurance breaks?</li>
+<li>Is a diagnosis causal, stable, and supported by evidence beyond the
+symptom location?</li>
+<li>Which customer facts were never discovered, which were disclosed but
+lost, and which conflict?</li>
+<li>Does a benchmark winner pass the private production distribution and
+every release threshold?</li>
+<li>Does a harness change retain prior-suite performance under the same
+budget?</li>
+<li>Can every consequential state transition be attributed, reviewed,
+revoked, and rolled back?</li>
+</ol>
+</section>
+</section>
+<section id="evidence-ledger-and-sources" class="level1">
+<h1>Evidence Ledger and Sources</h1>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Primary identifier</th>
+<th>Verified artifact status in this review</th>
+<th>Evidence boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>VeriHarm-Bench</td>
+<td><a href="https://arxiv.org/abs/2611.03575">arXiv:2611.03575v1</a>,
+Nov 2, 2026</td>
+<td>paper links code and dataset; executable evaluation described</td>
+<td>preprint; shell/system tasks; engineered harm</td>
+</tr>
+<tr class="even">
+<td>DistDebug-Bench</td>
+<td><a href="https://arxiv.org/abs/2611.03523">arXiv:2611.03523v1</a>,
+Nov 2, 2026</td>
+<td>benchmark/repository linked; NeurIPS 2026 E&amp;D</td>
+<td>public historical bugs; six-bug repair pilot</td>
+</tr>
+<tr class="odd">
+<td>Forward-Deployed Engineer</td>
+<td><a href="https://arxiv.org/abs/2611.03551">arXiv:2611.03551v1</a>,
+Nov 2, 2026</td>
+<td>full method and tables in paper</td>
+<td>one simulated engagement grounded in one real deployment</td>
+</tr>
+<tr class="even">
+<td>Input Assurance</td>
+<td><a href="https://arxiv.org/abs/2611.02676">arXiv:2611.02676v1</a>,
+Nov 2, 2026</td>
+<td>fault cases and controls described</td>
+<td>one evaluation pipeline</td>
+</tr>
+<tr class="odd">
+<td>Continual Evolution</td>
+<td><a href="https://arxiv.org/abs/2611.03219">arXiv:2611.03219v1</a>,
+Nov 2, 2026</td>
+<td>paper links code</td>
+<td>one model; small subsets; two rollouts</td>
+</tr>
+<tr class="even">
+<td>LifeVal</td>
+<td><a href="https://openai.com/index/lifeval/">OpenAI research page,
+Nov 2, 2026</a></td>
+<td>page reviewed; not selected for deep review</td>
+<td>public page lacks full aggregate technical record</td>
+</tr>
+<tr class="odd">
+<td>Activation classifiers</td>
+<td><a
+href="https://alignment.openai.com/training-activation-classifiers/">OpenAI
+Alignment, Nov 2, 2026</a></td>
+<td>method and deployment description reviewed</td>
+<td>exact quantitative curves not disclosed in text</td>
+</tr>
+</tbody>
+</table>
+<p>Primary discovery anchors: official arXiv recent listings for cs.AI,
+cs.LG, cs.CL, and cs.SE on November 3, 2026; the paper records above;
+OpenAI’s research and alignment portals; Anthropic Research; Microsoft
+Research; OpenReview; ACL Anthology; PMLR; and NIST.</p>
+<p><strong>Boundary statement.</strong> Every enhancement is an
+evidence-grounded future option, not an approved roadmap commitment. No
+production deployment is recommended because a paper is novel or wins a
+benchmark. Experiments must remain isolated, reversible, measurable,
+non-destructive, least-privileged, and reviewable. Internal enterprise
+context is mandatory before architecture, vendor, model, data, security,
+privacy, governance, or operating-model decisions.</p>
+</section></main></div>
+<footer>AI Research Intelligence Brief · November 3, 2026 · Evidence-grounded future options, not deployment approval.</footer>
+<div class="toolbar"><button onclick="window.print()">Print</button><button id="top">↑ Top</button></div>
+<script>const p=document.getElementById('progress');addEventListener('scroll',()=>{const h=document.documentElement;p.style.width=((h.scrollTop/(h.scrollHeight-h.clientHeight))*100)+'%'});document.getElementById('top').onclick=()=>scrollTo({top:0,behavior:'smooth'});</script>
+</body></html>
