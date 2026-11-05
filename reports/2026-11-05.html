@@ -1,0 +1,1788 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Evidence-grounded AI Research Intelligence Brief for November 5, 2026: execution-grounded tool evaluation, inference precision, synthetic robotics data, resource scheduling, and correctness firewalls.">
+<meta name="report-date" content="2026-11-05">
+<meta name="research-window" content="2026-11-04T04:02:00-06:00/2026-11-05T04:02:00-06:00 America/Chicago">
+<meta name="deep-paper-count" content="3"><meta name="watchlist-count" content="2"><meta name="theme-color" content="#071321">
+<title>AI Research Intelligence Brief — November 5, 2026</title>
+<style>
+:root{--bg:#06111d;--panel:#0c1c2a;--panel2:#10283a;--text:#e9f2f8;--muted:#9fb6c6;--line:#2a465b;--cyan:#46dbc6;--gold:#f4c96b;--rose:#ff8f9b;--max:1180px;color-scheme:dark}
+@media(prefers-color-scheme:light){:root{--bg:#f4f7f8;--panel:#fff;--panel2:#edf4f7;--text:#102131;--muted:#526979;--line:#cddbe2;--cyan:#087f73;--gold:#9b6300;--rose:#b92b45;color-scheme:light}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 90% 0,rgba(70,219,198,.12),transparent 30rem),var(--bg);color:var(--text);font:16px/1.67 ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;overflow-x:hidden}a{color:var(--cyan);text-underline-offset:3px;overflow-wrap:anywhere}header{border-bottom:1px solid var(--line);background:linear-gradient(135deg,rgba(70,219,198,.09),rgba(244,201,107,.04));padding:54px 22px 34px}.hero{max-width:var(--max);margin:auto}.eyebrow{color:var(--cyan);text-transform:uppercase;letter-spacing:.15em;font-size:.76rem;font-weight:800}h1{font-size:clamp(2.2rem,6vw,4.7rem);line-height:.98;max-width:1000px;margin:.35rem 0 1rem;letter-spacing:-.055em}header p{max-width:900px;color:var(--muted);font-size:1.09rem}.chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}.chip{border:1px solid var(--line);border-radius:999px;padding:6px 11px;background:var(--panel);font-size:.8rem}.topbets{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}.bet{border:1px solid var(--line);background:var(--panel);border-radius:14px;padding:15px}.bet b{display:block;color:var(--gold);font-size:1.15rem}.layout{max-width:var(--max);margin:auto;display:grid;grid-template-columns:250px minmax(0,1fr);gap:34px;padding:30px 22px 80px}nav{position:sticky;top:16px;align-self:start;max-height:calc(100vh - 32px);overflow:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:14px}nav strong{display:block;margin:2px 8px 10px;color:var(--gold)}nav ul{list-style:none;margin:0;padding:0}nav a{display:block;color:var(--muted);text-decoration:none;padding:5px 8px;border-radius:7px;font-size:.83rem;line-height:1.25}nav a:hover{background:var(--panel2);color:var(--text)}main{min-width:0;overflow-x:hidden}main>h1{font-size:1.8rem;margin:2.6rem 0 1rem;padding-top:.7rem;border-top:1px solid var(--line);letter-spacing:-.02em}main>h1:first-child{margin-top:0}main h2{font-size:1.35rem;margin-top:2rem;color:var(--cyan)}main h3{font-size:1.08rem;color:var(--gold);margin-bottom:.45rem}p,li{max-width:88ch}blockquote{margin:1rem 0;padding:1rem 1.2rem;border-left:4px solid var(--gold);background:var(--panel);color:var(--muted)}table{display:block;width:100%;max-width:100%;overflow-x:auto;border-collapse:collapse;margin:1.25rem 0;background:var(--panel);font-size:.86rem}th,td{padding:10px 12px;border:1px solid var(--line);text-align:left;vertical-align:top}th{color:var(--gold);background:var(--panel2)}main h3+ul,main h2+ul{border:1px solid var(--line);background:linear-gradient(135deg,var(--panel),var(--panel2));border-radius:14px;padding:15px 22px 15px 34px}main h3+ul li,main h2+ul li{margin:.5rem 0}.viz{border:1px solid var(--line);border-radius:16px;background:linear-gradient(135deg,var(--panel),var(--panel2));padding:20px;margin:1.5rem 0}.viz-title{color:var(--gold);font-weight:800;margin-bottom:14px}.flow-row{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:10px;align-items:center;margin:10px 0}.flow-node{border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center;background:var(--bg)}.flow-node.accent{border-color:var(--cyan)}.flow-arrow{color:var(--cyan);font-weight:900}.flow-note{color:var(--muted);font-size:.9rem;margin-top:12px}.progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--cyan),var(--gold));width:0;z-index:9}.toolbar{position:fixed;right:18px;bottom:18px;display:flex;gap:8px}.toolbar button{border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:999px;padding:9px 12px;cursor:pointer}.label{font-size:.75rem;color:var(--muted)}details{border:1px solid var(--line);border-radius:12px;background:var(--panel);padding:12px 16px}summary{cursor:pointer;color:var(--gold);font-weight:700}footer{border-top:1px solid var(--line);padding:24px;text-align:center;color:var(--muted)}
+@media(max-width:850px){.topbets{grid-template-columns:1fr}.layout{grid-template-columns:1fr}nav{position:relative;top:0;max-height:none}nav ul{columns:2}h1{font-size:2.65rem}.flow-row{grid-template-columns:1fr}.flow-arrow{transform:rotate(90deg);text-align:center}}
+@media(max-width:520px){header{padding-top:34px}.layout{padding:20px 14px 60px}nav ul{columns:1}h1{font-size:2.25rem}}
+@media print{body{background:white;color:#111;font-size:11pt}header{padding:18px 0}.layout{display:block;padding:0}nav,.toolbar,.progress{display:none}a{color:#145c70}main>h1{break-before:page}main>h1:first-child{break-before:auto}table,.viz{break-inside:avoid}}
+</style></head><body>
+<div class="progress" id="progress"></div><header><div class="hero">
+<div class="eyebrow">AI Research Intelligence · Evidence-first edition</div>
+<h1>Ground agents in execution.</h1>
+<p>November 5, 2026 briefing. Three deep papers examine execution-witnessed tool environments, precision-aware speculative serving, and agent-built sim-to-real data. Two Watchlist papers test resource-aware tool scheduling and correctness firewalls.</p>
+<div class="chips"><span class="chip">3 deep papers</span><span class="chip">2 Watchlist papers</span><span class="chip">8 evidence-traceable options</span><span class="chip">87-report duplicate screen</span><span class="chip">Research options, not deployment approval</span></div>
+<div class="topbets"><div class="bet"><span class="label">TOP BET 1 · PROTOTYPE SOON</span><b>87.6 · Tool evaluation factory</b><span>Turn governed traces into replayable, effect-checked release tests.</span></div><div class="bet"><span class="label">TOP BET 2 · PREPARE FOUNDATIONS</span><b>77.5 · Correctness firewalls</b><span>Bound agent-generated components with trusted checks and fallbacks.</span></div><div class="bet"><span class="label">TOP BET 3 · PROTOTYPE SOON</span><b>75.7 · Resource-aware execution</b><span>Expose contention, idempotency, recovery, and cost at the tool boundary.</span></div></div>
+</div></header><div class="layout"><nav><strong>Navigate</strong><ul>
+<li><a href="#executive-brief" id="toc-executive-brief">Executive
+brief</a>
+<ul>
+<li><a href="#what-changed-today" id="toc-what-changed-today">What
+changed today</a></li>
+</ul></li>
+<li><a href="#scope-discovery-and-evidence-protocol"
+id="toc-scope-discovery-and-evidence-protocol">Scope, discovery, and
+evidence protocol</a>
+<ul>
+<li><a href="#discovery-coverage" id="toc-discovery-coverage">Discovery
+coverage</a></li>
+<li><a href="#evidence-labels" id="toc-evidence-labels">Evidence
+labels</a></li>
+<li><a href="#paper-scoring" id="toc-paper-scoring">Paper
+scoring</a></li>
+<li><a href="#quantitative-claim-tracing-rule"
+id="toc-quantitative-claim-tracing-rule">Quantitative claim-tracing
+rule</a></li>
+</ul></li>
+<li><a href="#deep-paper-1-toolspace"
+id="toc-deep-paper-1-toolspace">Deep paper 1 — ToolSpace</a>
+<ul>
+<li><a href="#research-question-and-contribution"
+id="toc-research-question-and-contribution">Research question and
+contribution</a></li>
+<li><a href="#quantitative-results-and-trace"
+id="toc-quantitative-results-and-trace">Quantitative results and
+trace</a></li>
+<li><a href="#methodological-critique"
+id="toc-methodological-critique">Methodological critique</a></li>
+<li><a href="#prior-work-comparison"
+id="toc-prior-work-comparison">Prior-work comparison</a></li>
+<li><a href="#reproducibility-and-readiness"
+id="toc-reproducibility-and-readiness">Reproducibility and
+readiness</a></li>
+</ul></li>
+<li><a href="#deep-paper-2-adversarial-speculative-reasoning"
+id="toc-deep-paper-2-adversarial-speculative-reasoning">Deep paper 2 —
+Adversarial Speculative Reasoning</a>
+<ul>
+<li><a href="#research-question-and-contribution-1"
+id="toc-research-question-and-contribution-1">Research question and
+contribution</a></li>
+<li><a href="#quantitative-results-and-trace-1"
+id="toc-quantitative-results-and-trace-1">Quantitative results and
+trace</a></li>
+<li><a href="#methodological-critique-1"
+id="toc-methodological-critique-1">Methodological critique</a></li>
+<li><a href="#prior-work-comparison-1"
+id="toc-prior-work-comparison-1">Prior-work comparison</a></li>
+<li><a href="#reproducibility-and-readiness-1"
+id="toc-reproducibility-and-readiness-1">Reproducibility and
+readiness</a></li>
+</ul></li>
+<li><a href="#deep-paper-3-pyrua-datafarm"
+id="toc-deep-paper-3-pyrua-datafarm">Deep paper 3 — PyRUA-DataFarm</a>
+<ul>
+<li><a href="#research-question-and-contribution-2"
+id="toc-research-question-and-contribution-2">Research question and
+contribution</a></li>
+<li><a href="#quantitative-results-and-trace-2"
+id="toc-quantitative-results-and-trace-2">Quantitative results and
+trace</a></li>
+<li><a href="#methodological-critique-2"
+id="toc-methodological-critique-2">Methodological critique</a></li>
+<li><a href="#prior-work-comparison-2"
+id="toc-prior-work-comparison-2">Prior-work comparison</a></li>
+<li><a href="#reproducibility-and-readiness-2"
+id="toc-reproducibility-and-readiness-2">Reproducibility and
+readiness</a></li>
+</ul></li>
+<li><a href="#watchlist" id="toc-watchlist">Watchlist</a>
+<ul>
+<li><a href="#w1-toolsched" id="toc-w1-toolsched">W1 —
+ToolSched</a></li>
+<li><a
+href="#w2-correctness-firewalls-for-synthesized-database-components"
+id="toc-w2-correctness-firewalls-for-synthesized-database-components">W2
+— Correctness Firewalls for Synthesized Database Components</a></li>
+</ul></li>
+<li><a href="#cross-paper-synthesis"
+id="toc-cross-paper-synthesis">Cross-paper synthesis</a>
+<ul>
+<li><a href="#convergent-signals" id="toc-convergent-signals">Convergent
+signals</a></li>
+<li><a href="#important-contradictions"
+id="toc-important-contradictions">Important contradictions</a></li>
+<li><a href="#visual-evidence-to-control-chain"
+id="toc-visual-evidence-to-control-chain">Visual — evidence-to-control
+chain</a></li>
+</ul></li>
+<li><a href="#enterprise-ai-enhancement-backlog"
+id="toc-enterprise-ai-enhancement-backlog">Enterprise AI Enhancement
+Backlog</a>
+<ul>
+<li><a href="#priority-model-and-uncertainty"
+id="toc-priority-model-and-uncertainty">Priority model and
+uncertainty</a></li>
+<li><a href="#prototype-soon" id="toc-prototype-soon">Prototype
+Soon</a></li>
+<li><a href="#prepare-foundations" id="toc-prepare-foundations">Prepare
+Foundations</a></li>
+<li><a href="#monitor-for-maturity"
+id="toc-monitor-for-maturity">Monitor for Maturity</a></li>
+<li><a href="#deprioritize-for-now"
+id="toc-deprioritize-for-now">Deprioritize for Now</a></li>
+</ul></li>
+<li><a href="#enterprise-ai-architecture-implications"
+id="toc-enterprise-ai-architecture-implications">Enterprise AI
+Architecture Implications</a></li>
+<li><a href="#implementation-priorities"
+id="toc-implementation-priorities">Implementation priorities</a>
+<ul>
+<li><a href="#next-30-days" id="toc-next-30-days">Next 30 days</a></li>
+<li><a href="#days" id="toc-days">30–90 days</a></li>
+<li><a href="#do-not-do-yet" id="toc-do-not-do-yet">Do not do
+yet</a></li>
+</ul></li>
+<li><a href="#knowledge-reinforcement"
+id="toc-knowledge-reinforcement">Knowledge Reinforcement</a>
+<ul>
+<li><a href="#five-durable-takeaways"
+id="toc-five-durable-takeaways">Five durable takeaways</a></li>
+<li><a href="#retrieval-questions"
+id="toc-retrieval-questions">Retrieval questions</a></li>
+</ul></li>
+<li><a href="#source-register-and-screened-out-signals"
+id="toc-source-register-and-screened-out-signals">Source register and
+screened-out signals</a>
+<ul>
+<li><a href="#selected-primary-sources"
+id="toc-selected-primary-sources">Selected primary sources</a></li>
+<li><a href="#same-window-signals-screened-but-not-selected"
+id="toc-same-window-signals-screened-but-not-selected">Same-window
+signals screened but not selected</a></li>
+</ul></li>
+<li><a href="#evidence-boundary" id="toc-evidence-boundary">Evidence
+boundary</a></li>
+</ul></nav><main><section id="executive-brief" class="level1">
+<h1>Executive brief</h1>
+<p><strong>Research window.</strong> November 4, 2026, 4:02 a.m. through
+November 5, 2026, 4:02 a.m., America/Chicago (CST). arXiv’s monitored
+agent feed was still topped by November 3 submissions at the end of the
+window, so this edition treats previously unreviewed late-arriving items
+as the eligible set. Publication and submission clocks are reported
+separately rather than silently backdating the evidence.</p>
+<p><strong>Selection.</strong> Three papers receive deep analysis:
+<em>ToolSpace</em>, <em>Adversarial Speculative Reasoning</em>, and
+<em>PyRUA-DataFarm</em>. Two papers remain on the Watchlist:
+<em>ToolSched</em> and <em>Correctness Firewalls for Synthesized
+Database Components</em>. The five identifiers were absent from the
+87-report archive and from yesterday’s selected set (2611.04556,
+2611.05306, 2611.04879, 2611.04420, 2611.05088).</p>
+<p><strong>Decision headline.</strong> The strongest common signal is
+that <strong>reliable agents need execution-grounded control surfaces,
+not better prose alone</strong>. ToolSpace gains from dependencies
+witnessed in real traces and replay-verified tasks; speculative serving
+changes long-horizon outcomes through numerical precision despite
+distributional exactness; the robot-data farm admits episodes only after
+independent judging; ToolSched exposes resource state at the tool
+boundary; correctness firewalls constrain generated components by
+construction. The enterprise direction is therefore an
+evidence-and-effect plane spanning tools, evaluation, state,
+authorization, provenance, and rollback.</p>
+<p><strong>Top 3 Future Bets.</strong> These are isolated research
+experiments, not production commitments.</p>
+<ol type="1">
+<li><strong>Execution-witnessed tool evaluation factory — 87.6.</strong>
+Why it matters: ToolSpace’s execution-derived graph and replay checks
+transferred across seven benchmarks; replacing witnessed edges with
+LLM-judged edges reduced every reported benchmark. What would change the
+recommendation: no lift on private workflows after strict leakage
+controls, or synthesis/replay costs exceeding the value of additional
+coverage. <strong>Next reversible action:</strong> build 50 read-only
+tasks from deidentified tool traces and compare execution-witnessed
+versus LLM-proposed dependency graphs on a frozen holdout.</li>
+<li><strong>Correctness firewall patterns for synthesized components —
+77.5.</strong> Why it matters: the Watchlist paper offers advisory,
+guarded, and certified patterns that bound what agent-generated code can
+change, while reporting early performance results. What would change the
+recommendation: formal review finding that the firewall does not cover
+the target failure modes, or measured overhead erasing the benefit.
+<strong>Next reversible action:</strong> wrap one non-authoritative
+cache/index prototype with a deterministic fallback and differential
+checker.</li>
+<li><strong>Resource-aware tool execution control — 75.7.</strong> Why
+it matters: ToolSched’s single-host evaluation reports 75/75 completion
+versus 64/75 unscheduled and 29.4% higher command throughput. What would
+change the recommendation: repeated-run or heterogeneous-host results
+failing to reproduce, or rollback/checkpoint overhead dominating.
+<strong>Next reversible action:</strong> replay a synthetic multi-agent
+shell workload against an instrumented queue with hard resource caps and
+no production credentials.</li>
+</ol>
+<section id="what-changed-today" class="level2">
+<h2>What changed today</h2>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Signal</th>
+<th>Paper fact</th>
+<th>Independent analysis</th>
+<th>Enterprise implication</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Execution-witnessed tool structure</td>
+<td>ToolSpace extracts data, state, and retry edges from adjacent calls
+with deterministic rules and retains tasks only after replay.</td>
+<td>Real traces can ground both training and evaluation, but they also
+create privacy and leakage obligations.</td>
+<td>Build trace governance, replayable simulators, effect assertions,
+and holdout isolation before scaling agent evaluation.</td>
+</tr>
+<tr class="even">
+<td>Precision-aware speculative serving</td>
+<td>Noise grew about 4% of slot-0 level per verification slot in two
+served models; one DeepSWE result rose 7.0 points.</td>
+<td>Serving configuration can be an agent-quality variable even under a
+distributional exactness guarantee.</td>
+<td>Treat inference engine, quantization, cache precision, and draft as
+versioned release inputs.</td>
+</tr>
+<tr class="odd">
+<td>Agent-built sim-to-real data</td>
+<td>Farm-only policies reached 93/100 ID and 87/100 OOD successes versus
+84/100 and 46/100 for teleoperation-trained policies.</td>
+<td>A five-task robotics result is promising, not a general replacement
+for real-world data collection.</td>
+<td>Prototype only for bounded tasks with independent episode admission,
+real-robot safety review, and per-task economics.</td>
+</tr>
+<tr class="even">
+<td>Tool resource scheduling</td>
+<td>ToolSched reported 75/75 tasks completed in 3,254 s versus 64/75 in
+3,392 s unscheduled on one constrained host.</td>
+<td>The tool boundary is a natural place to enforce resource policy and
+surface contention.</td>
+<td>Add cost/resource declarations, admission control, idempotency,
+checkpointing, and effect logs to tool execution.</td>
+</tr>
+<tr class="odd">
+<td>Correctness firewalls</td>
+<td>Early case studies report up to 3× faster sorted search and 1.5×
+smaller text compression than named baselines.</td>
+<td>The architectural pattern is more mature than the evidence
+supporting the performance claims.</td>
+<td>Prefer generated components that advise, are guarded by a trusted
+path, or carry independently checkable certificates.</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="scope-discovery-and-evidence-protocol" class="level1">
+<h1>Scope, discovery, and evidence protocol</h1>
+<section id="discovery-coverage" class="level2">
+<h2>Discovery coverage</h2>
+<p>The discovery pass covered current arXiv material across cs.AI,
+cs.LG, cs.CL, cs.SE, cs.OS, cs.DB, and cs.RO; the current agent-research
+index; and official research/release pages from OpenAI, Anthropic,
+Google DeepMind/Google Research, Microsoft Research, and Meta AI. The
+arXiv stream did not expose a newer announcement cycle before the
+cutoff. Rather than pad the brief with weaker material, the review
+promoted unreviewed November 3 papers whose full HTML, quantitative
+tables, artifacts, and methods could be verified.</p>
+<p>The duplicate screen searched 87 prior reports by arXiv identifier
+and normalized title. None of the selected five appeared. Topic
+recurrence was allowed only when the new work introduced a distinct
+experiment, mechanism, or artifact. No vendor announcement was elevated
+to deep-paper status without a full paper and recoverable
+methodology.</p>
+</section>
+<section id="evidence-labels" class="level2">
+<h2>Evidence labels</h2>
+<ul>
+<li><strong>Paper Fact:</strong> directly stated or calculated from a
+reviewed paper or verified artifact.</li>
+<li><strong>Independent Analysis:</strong> synthesis or critique based
+on reviewed evidence.</li>
+<li><strong>Enterprise Inference:</strong> a plausible option requiring
+internal context and validation.</li>
+<li><strong>Uncertainty:</strong> evidence is early, narrow,
+non-repeated, vendor-dependent, or otherwise insufficient for a stronger
+claim.</li>
+</ul>
+</section>
+<section id="paper-scoring" class="level2">
+<h2>Paper scoring</h2>
+<p>Scores are decision aids, not probabilities of truth. Weighting:
+evidence quality 30%, methodological transparency 20%,
+reproducibility/artifacts 15%, external validity 15%, enterprise
+decision utility 20%.</p>
+<table>
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Rank</th>
+<th>Work</th>
+<th>Type</th>
+<th style="text-align: right;">Evidence</th>
+<th style="text-align: right;">Transparency</th>
+<th style="text-align: right;">Reproducibility</th>
+<th style="text-align: right;">External validity</th>
+<th style="text-align: right;">Decision utility</th>
+<th style="text-align: right;">Weighted score</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td>ToolSpace</td>
+<td>Deep; work in progress</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;">74</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;"><strong>87.1</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td>PyRUA-DataFarm</td>
+<td>Deep; preprint</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">58</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;"><strong>80.3</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td>Adversarial Speculative Reasoning</td>
+<td>Deep; preprint</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">68</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;"><strong>79.9</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">W1</td>
+<td>ToolSched</td>
+<td>Watchlist; preprint</td>
+<td style="text-align: right;">68</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;"><strong>66.0</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">W2</td>
+<td>Correctness Firewalls</td>
+<td>Watchlist; position/case-study paper</td>
+<td style="text-align: right;">63</td>
+<td style="text-align: right;">72</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;"><strong>61.9</strong></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="quantitative-claim-tracing-rule" class="level2">
+<h2>Quantitative claim-tracing rule</h2>
+<p>Numbers appear only when the primary source exposed the unit,
+comparison, denominator, and evaluation setting. Percentage-point
+changes are not rewritten as relative percentages. ToolSpace combines
+official, provider-reported, and locally reproduced scores, so
+provenance is retained per table rather than treated as one homogeneous
+experiment. PyRUA’s dollar figures are study-specific API/render
+estimates and labor quotes. ToolSched’s throughput result is one testbed
+run and the authors state that repeated-run statistics will be added
+later. Correctness Firewall performance claims are explicitly early
+experiments.</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Selected work</th>
+<th>Public record</th>
+<th>Status</th>
+<th>Verified artifact</th>
+<th>License on record</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ToolSpace</td>
+<td>Nov. 3, 2026</td>
+<td>work in progress</td>
+<td>GitHub + model collection linked</td>
+<td>arXiv non-exclusive</td>
+</tr>
+<tr class="even">
+<td>Adversarial Speculative Reasoning</td>
+<td>Nov. 3, 2026</td>
+<td>preprint</td>
+<td>paper/source; no code link on record</td>
+<td>CC BY 4.0</td>
+</tr>
+<tr class="odd">
+<td>PyRUA-DataFarm</td>
+<td>Nov. 3, 2026</td>
+<td>preprint</td>
+<td>project + GitHub linked</td>
+<td>arXiv record links a license</td>
+</tr>
+<tr class="even">
+<td>ToolSched</td>
+<td>Nov. 3, 2026</td>
+<td>preprint</td>
+<td>promised artifact, not yet linked</td>
+<td>CC license linked</td>
+</tr>
+<tr class="odd">
+<td>Correctness Firewalls</td>
+<td>Nov. 3, 2026</td>
+<td>position/case-study paper</td>
+<td>paper/source; no code link</td>
+<td>arXiv non-exclusive</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="deep-paper-1-toolspace" class="level1">
+<h1>Deep paper 1 — ToolSpace</h1>
+<p><strong>Citation.</strong> Guanting Dong et al. “<a
+href="https://arxiv.org/abs/2611.05036">ToolSpace: Scaling Tool-Centric
+Environment Synthesis for Long-Horizon Agents</a>.” arXiv:2611.05036v1,
+submitted November 3, 2026. Work in progress. <a
+href="https://toolspace-agent.github.io/">Project</a>, <a
+href="https://github.com/dongguanting/ToolSpace">code</a>, and model
+collection linked from the paper. arXiv non-exclusive distribution
+license.</p>
+<section id="research-question-and-contribution" class="level2">
+<h2>Research question and contribution</h2>
+<p><strong>Paper Fact.</strong> ToolSpace asks how to scale environments
+and tasks for agents that compose tools across services. Instead of
+synthesizing a database first and inventing tools afterward, it extracts
+data, state, and retry dependencies from adjacent calls in real traces
+using deterministic rules. A weighted tool-composition graph is
+clustered into 804 environments. State-aware random walks produce tool
+chains; each chain is decompiled into a natural-language task with
+assertions; only samples that replay from the initial state survive.</p>
+<p>The paper uses real MCP services and open agent corpora, synthesizes
+persistent data only for state-mutating environments, and replays
+returns for stateless tools. This separates plausibility from
+executability: an edge must be observed in execution, and a generated
+task must pass replay.</p>
+</section>
+<section id="quantitative-results-and-trace" class="level2">
+<h2>Quantitative results and trace</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th>Trace</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Qwen3.6-35B-A3B <strong>23.0 → 41.0</strong> average;
+<strong>43.2</strong> with RL</td>
+<td>Seven tool-use benchmarks, same reported average; local ToolSpace
+results averaged over three runs</td>
+<td>Large transfer signal, but benchmark provenance mixes official and
+reproduced results.</td>
+</tr>
+<tr class="even">
+<td>GLM-5.2 <strong>44.6 → 56.6</strong> average</td>
+<td>Same seven-benchmark table</td>
+<td>Matches the reported Claude Opus 5 average, not necessarily
+identical cost or protocol.</td>
+</tr>
+<tr class="odd">
+<td>Pro benchmarks caused drops up to <strong>38.2 points</strong></td>
+<td>AutomationBench Pro and tau3-Bench Banking Pro synthesized from the
+pipeline</td>
+<td>Suggests the original benchmarks missed long-horizon composition
+difficulty.</td>
+</tr>
+<tr class="even">
+<td>Removing state/data edges reduced mean results by about
+<strong>7.1/7.4 points</strong></td>
+<td>Five-benchmark 35B component ablation</td>
+<td>State and argument provenance contribute on different
+workloads.</td>
+</tr>
+<tr class="odd">
+<td>LLM-judged edges underperformed full ToolSpace on all five ablation
+benchmarks</td>
+<td>Example: AutomationBench 37.8 vs 45.8; BFCL V4 66.9 vs 74.3</td>
+<td>Plausible relations were not a substitute for witnessed
+execution.</td>
+</tr>
+<tr class="even">
+<td>Files synthesized <strong>2,724 → 1,218</strong> (−55.3%)</td>
+<td>Proxy analysis on 500 sampled Agent-World environments</td>
+<td>This is an artifact-count proxy, not measured token, wall-clock, or
+dollar cost.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="methodological-critique" class="level2">
+<h2>Methodological critique</h2>
+<p><strong>Strengths.</strong> Deterministic dependency rules, rollback,
+assertion-based replay, component ablations, three-run local results,
+and a public repository make the core mechanism inspectable. The paper
+reports result provenance and holds training settings constant across
+synthesis baselines. Its negative comparison with LLM-judged edges
+directly tests a tempting alternative.</p>
+<p><strong>Limitations.</strong> The paper is explicitly work in
+progress. Real-trace sources can encode incumbent tool patterns, user
+behavior, and benchmark leakage. Several headline comparisons mix
+official leaderboard, provider-reported, and local results. The test set
+still consists of known benchmarks, and the paper does not fully
+quantify privacy, licensing, memorization, adversarial trace poisoning,
+or the economics of replay infrastructure. File count is a weak cost
+proxy.</p>
+<p><strong>Independent Analysis.</strong> The most enterprise-relevant
+contribution is a method for building an evaluation twin from real
+effectful workflows: typed dependencies, replay, rollback, and
+assertions. Training the model is optional; the same machinery can first
+be used to generate private release tests. The gating risk is
+leakage—traces used to construct or train environments must be isolated
+from the holdout that judges them.</p>
+</section>
+<section id="prior-work-comparison" class="level2">
+<h2>Prior-work comparison</h2>
+<p>The paper contrasts data-first environment synthesis (Agent-World and
+related methods), LLM-simulated feedback, and static tool-use datasets.
+Its differentiator is execution-witnessed graph construction plus
+state-aware replay across environments. It inherits earlier tool
+learning and agent-world ideas but shifts the unit of scaling from a
+synthetic database to a trace-grounded tool dependency.</p>
+</section>
+<section id="reproducibility-and-readiness" class="level2">
+<h2>Reproducibility and readiness</h2>
+<ul>
+<li><strong>Artifacts:</strong> public repository, project page, and
+model collection linked.</li>
+<li><strong>Reproducibility:</strong> high for code inspection and
+benchmark replay; exact proprietary scores and trace corpora may remain
+inaccessible.</li>
+<li><strong>Enterprise readiness:</strong> <strong>Moderate for an
+offline evaluation prototype; low for direct training on private
+traces.</strong></li>
+<li><strong>Required internal context:</strong> tool inventory, trace
+ownership, privacy rules, system-of-record semantics, rollback safety,
+effect assertions, retention, and leakage boundaries.</li>
+</ul>
+</section>
+</section>
+<section id="deep-paper-2-adversarial-speculative-reasoning"
+class="level1">
+<h1>Deep paper 2 — Adversarial Speculative Reasoning</h1>
+<p><strong>Citation.</strong> Hongyin Luo et al. “<a
+href="https://arxiv.org/abs/2611.05345">Adversarial Speculative
+Reasoning Improves Long Horizon Agents</a>.” arXiv:2611.05345v1,
+submitted November 3, 2026. CC BY 4.0.</p>
+<section id="research-question-and-contribution-1" class="level2">
+<h2>Research question and contribution</h2>
+<p><strong>Paper Fact.</strong> Standard speculative decoding is
+distributionally exact for an ideal fixed target model. The paper asks
+whether served low-precision targets are neutral to where a token lands
+in a verification block. It measures repeated identical forwards on
+GLM-5.3 and DeepSeek-V4.1-Flash, follows verify-written versus
+decode-written cache states through long trajectories, then trains only
+the small draft to disagree with the target at selected decision points.
+Rejection restarts the block so a critical token is written at the least
+noisy position.</p>
+<p>The training data use fork pairs sharing every token up to the
+decision. Whole tasks are held out to reduce near-duplicate leakage. The
+GLM data contain 1,668 forks, 28,356 continuations, and 2,843 pairs from
+28 training tasks; DeepSeek uses 2,203 forks, 26,418 continuations, and
+5,100 training pairs.</p>
+</section>
+<section id="quantitative-results-and-trace-1" class="level2">
+<h2>Quantitative results and trace</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th>Trace</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Numerical noise grew about <strong>4% of slot-0 level per
+verification slot</strong></td>
+<td>1,631 GLM and 1,294 DeepSeek positions; four repeated forwards</td>
+<td>Replicated direction across two served models, but not across
+engines/hardware.</td>
+</tr>
+<tr class="even">
+<td>GLM &gt;2-nat shifts <strong>3.2% → 6.2%</strong> from slot 0 to
+7</td>
+<td>Same-prefix repeated verification</td>
+<td>The extreme tail nearly doubled across the block.</td>
+</tr>
+<tr class="odd">
+<td>Long-range &gt;4-nat deviation ratio <strong>1.16</strong> at turns
+51–70, 95% CI <strong>0.98–1.36</strong></td>
+<td>96 tasks; 6.38M assistant tokens per build</td>
+<td>Directional 10–20% excess is uncertain; the cited interval crosses
+1.</td>
+</tr>
+<tr class="even">
+<td>DeepSWE GLM <strong>60.6% → 67.6%</strong> (+7.0 pp; 95% CI
+2.6–11.4)</td>
+<td>113 tasks, five independent runs per configuration</td>
+<td>Strongest end-to-end result.</td>
+</tr>
+<tr class="odd">
+<td>DeepSWE DeepSeek <strong>67.8% → 71.8%</strong> (+4.0 pp; CI −1.3 to
+7.3)</td>
+<td>Same benchmark; five runs</td>
+<td>Compatible with no effect at conventional confidence.</td>
+</tr>
+<tr class="even">
+<td>NL2Repo DeepSeek <strong>65.0% → 66.4%</strong> (+1.4 pp; CI
+0.4–2.4; p=0.011)</td>
+<td>104 repositories, mean test pass rate</td>
+<td>Small but statistically reported gain.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="methodological-critique-1" class="level2">
+<h2>Methodological critique</h2>
+<p><strong>Strengths.</strong> The paper separates single-forward
+precision, long-horizon cache effects, draft preference learning, and
+end-to-end task success. It holds target weights, harness, verification
+rule, and sampling fixed while varying the draft. Five independent
+benchmark runs and task-level holdouts are stronger than a single
+aggregate. Reporting confidence intervals reveals that not every gain is
+conclusive.</p>
+<p><strong>Limitations.</strong> Only two frontier open-weight models,
+one serving stack, four B200 GPUs, specific quantization/cache choices,
+and two coding benchmarks are tested. The target itself labels decision
+points. Selecting the best training configuration creates
+model-selection risk unless the benchmark split is fully isolated. The
+causal story—precision at selected tokens causes durable better
+decisions—remains partly mechanistic inference. No code artifact is
+linked from the arXiv record.</p>
+<p><strong>Independent Analysis.</strong> This is not a general argument
+to adversarially train every draft. It is evidence that inference
+configuration belongs in the release unit for long-horizon agents. A
+conservative enterprise experiment should first test determinism, cache
+precision, and draft effects in shadow replay before training
+anything.</p>
+</section>
+<section id="prior-work-comparison-1" class="level2">
+<h2>Prior-work comparison</h2>
+<p>Earlier speculative-decoding work optimizes accepted tokens; relaxed
+verification methods trade fidelity for speed; numerical-nondeterminism
+work measures whole-system variation. This paper keeps exact rejection
+sampling but uses draft disagreement as a block-boundary control. It
+differs from critical-token training by modifying the small draft rather
+than the target.</p>
+</section>
+<section id="reproducibility-and-readiness-1" class="level2">
+<h2>Reproducibility and readiness</h2>
+<ul>
+<li><strong>Artifacts:</strong> paper and TeX source; no linked
+implementation found on the record.</li>
+<li><strong>Reproducibility:</strong> moderate-low because models,
+engine, hardware, and training pipeline are specialized.</li>
+<li><strong>Enterprise readiness:</strong> <strong>Low for deployment;
+moderate for inference-configuration evaluation.</strong></li>
+<li><strong>Required internal context:</strong> serving engines,
+quantization, cache policy, hardware, determinism requirements, agent
+trajectory length, benchmark representativeness, and cost/latency
+SLOs.</li>
+</ul>
+</section>
+</section>
+<section id="deep-paper-3-pyrua-datafarm" class="level1">
+<h1>Deep paper 3 — PyRUA-DataFarm</h1>
+<p><strong>Citation.</strong> Kewei Zhang et al. “<a
+href="https://arxiv.org/abs/2611.05320">PyRUA-DataFarm: LLM Agent as a
+Cost-Efficient Teleoperator for Real-Ready Robot Data</a>.”
+arXiv:2611.05320v1, submitted November 3, 2026. <a
+href="https://dagroup-pku.github.io/PyRUA-Lean/DataFarm">Project</a> and
+<a
+href="https://github.com/DAGroup-PKU/PyRUA-Lean/tree/DataFarm">code</a>
+linked.</p>
+<section id="research-question-and-contribution-2" class="level2">
+<h2>Research question and contribution</h2>
+<p><strong>Paper Fact.</strong> From a task request and one calibration
+episode, a coding agent creates a simulation scene, expert controller,
+and success judge. Simulator rollouts provide exact action labels; a
+video model jointly renders multiple camera views conditioned on real
+images. Independent judges gate the controller and rendered episodes.
+Policies are trained on 100 episodes from farm data, teleoperation, or
+simulator-plus-domain-randomization under the same recipe.</p>
+<p>The real-robot evaluation covers five tasks, two appearance
+conditions, 20 trials per task and condition, randomized initial
+placements shared across policies, and a fixed success condition. The
+unseen condition adds a tablecloth not in any training set and changes
+room-light color.</p>
+</section>
+<section id="quantitative-results-and-trace-2" class="level2">
+<h2>Quantitative results and trace</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th>Trace</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Farm-only <strong>93/100</strong> vs teleoperation
+<strong>84/100</strong> ID successes</td>
+<td>Five tasks × 20 trials</td>
+<td>Promising parity-plus result, but only one robot/task suite.</td>
+</tr>
+<tr class="even">
+<td>Farm-only <strong>87/100</strong> vs teleoperation
+<strong>46/100</strong> OOD successes</td>
+<td>Unseen cloth and colored light</td>
+<td>Augmented render variation helped this appearance shift.</td>
+</tr>
+<tr class="odd">
+<td>Adaptation <strong>$21</strong> API average + <strong>$5</strong>
+render contract</td>
+<td>One-time task construction</td>
+<td>Study-specific prices; excludes organizational integration and
+safety validation.</td>
+</tr>
+<tr class="even">
+<td>Further episode <strong>$0.80</strong> average</td>
+<td>Simulation, rendering, review</td>
+<td>Not a universal marginal-cost claim.</td>
+</tr>
+<tr class="odd">
+<td>One hour, three-view data <strong>$107</strong> average vs quoted
+<strong>$117</strong> China teleoperation and <strong>$290</strong>
+North American labor</td>
+<td>Five-task cost model</td>
+<td>Geography, utilization, robot depreciation, failure costs, and quote
+comparability constrain transfer.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="methodological-critique-2" class="level2">
+<h2>Methodological critique</h2>
+<p><strong>Strengths.</strong> Equal-sized training sets, a
+simulator-plus-domain-randomization baseline, shared placements,
+real-robot trials, independent admission judges, and a public repository
+provide a credible initial test. The evaluation separates
+in-distribution and a defined appearance shift.</p>
+<p><strong>Limitations.</strong> Five tasks and 20 trials per cell
+produce coarse estimates and no reported confidence intervals in the
+headline table. The same team defines the simulation, judges, and
+success criteria. The OOD shift is appearance-focused, not dynamics,
+wear, sensor faults, rare failure, or human proximity. Cost accounting
+is highly local. Policy safety, judge false acceptance, dataset
+licensing, and catastrophic-error severity need independent
+evaluation.</p>
+<p><strong>Independent Analysis.</strong> The strongest reusable pattern
+is not synthetic robotics data alone; it is <strong>contracted
+generation plus independent admission</strong>. The architecture could
+generalize to enterprise synthetic data, but only where assertions and
+reference effects are available. For physical systems, real-robot safety
+gates remain non-negotiable.</p>
+</section>
+<section id="prior-work-comparison-2" class="level2">
+<h2>Prior-work comparison</h2>
+<p>Prior simulation and MimicGen-style pipelines automate demonstration
+variation but retain engineering or visual-gap costs; video world models
+improve realism but can lose exact actions. DataFarm combines an
+agent-authored simulation/controller/judge with video rendering that
+preserves simulator actions. The paper does not establish superiority
+across robots, dexterous tasks, dynamics shifts, or safety-critical
+operations.</p>
+</section>
+<section id="reproducibility-and-readiness-2" class="level2">
+<h2>Reproducibility and readiness</h2>
+<ul>
+<li><strong>Artifacts:</strong> public project and GitHub
+repository.</li>
+<li><strong>Reproducibility:</strong> moderate-high for code inspection;
+exact video model, hardware, and physical setup may constrain
+replay.</li>
+<li><strong>Enterprise readiness:</strong> <strong>Low for production
+robotics; moderate for a sealed digital-twin experiment.</strong></li>
+<li><strong>Required internal context:</strong> robot/task risk,
+incident severity, simulator fidelity, data rights, facility costs,
+safety certification, human oversight, and policy-training stack.</li>
+</ul>
+</section>
+</section>
+<section id="watchlist" class="level1">
+<h1>Watchlist</h1>
+<section id="w1-toolsched" class="level2">
+<h2>W1 — ToolSched</h2>
+<p><strong>Citation.</strong> Shucheng Zou et al. “<a
+href="https://arxiv.org/abs/2611.05269">ToolSched: Resource-Efficient
+Tool Scheduling for Shared-Host LLM Agents</a>.” arXiv:2611.05269v1,
+November 3, 2026.</p>
+<p><strong>Paper Fact.</strong> ToolSched is a Shell MCP server that
+asks agents to declare memory, CPU, I/O, and idempotency, then delays or
+reorders commands using live resource state. Prediction correction,
+container checkpoints, and recovery address bad estimates. On an Intel
+i7-10700 host with 4 GB memory, GLM-5.2, and 75 Terminal-Bench 2.0
+tasks, unscheduled execution passed 64/75 in 3,392 seconds at 0.462
+commands/s; static reservation passed 75/75 in 6,837 seconds at 0.285
+commands/s; ToolSched passed 75/75 in 3,254 seconds at 0.598
+commands/s.</p>
+<p><strong>Why Watchlist.</strong> The 29.4% throughput lift and full
+completion are operationally relevant, but one machine, one agent/model,
+one low-I/O workload, and one reported run cannot establish general
+performance. The authors’ reproducibility statement says the artifact
+and repeated-run statistics will be added later. <strong>Promotion
+trigger:</strong> released artifact, repeated statistics, and
+heterogeneous CPU/GPU/I/O workloads with failure-injection and
+non-idempotent action tests.</p>
+</section>
+<section
+id="w2-correctness-firewalls-for-synthesized-database-components"
+class="level2">
+<h2>W2 — Correctness Firewalls for Synthesized Database Components</h2>
+<p><strong>Citation.</strong> Mohammad Javad Amiri et al. “<a
+href="https://arxiv.org/abs/2611.05173">Correctness Firewalls for
+Synthesized Database Components</a>.” arXiv:2611.05173v1, November 3,
+2026.</p>
+<p><strong>Paper Fact.</strong> The paper proposes three patterns:
+advisory components cannot determine results, guarded components have a
+trusted correctness path, and certified components emit independently
+checkable evidence. Early case studies report synthesized sorted search
+up to 3× faster than learned indexes and text compression 1.5× smaller
+than Zstd.</p>
+<p><strong>Why Watchlist.</strong> The concept is strategically strong,
+but the paper is a research agenda with three early cases, no linked
+implementation, and insufficient detail to generalize the performance
+claims. <strong>Promotion trigger:</strong> public code, formal threat
+models, differential/fault-injection results, proof-checker analysis,
+and measured overhead across independent systems.</p>
+</section>
+</section>
+<section id="cross-paper-synthesis" class="level1">
+<h1>Cross-paper synthesis</h1>
+<section id="convergent-signals" class="level2">
+<h2>Convergent signals</h2>
+<ol type="1">
+<li><strong>Ground effects, not narratives.</strong> ToolSpace replays;
+DataFarm judges episodes; ToolSched observes host resources; correctness
+firewalls independently check outputs.</li>
+<li><strong>Interfaces create leverage.</strong> Tool dependencies,
+verification-block boundaries, rendering contracts, MCP resource
+declarations, and correctness firewalls are small interface changes with
+system-level effects.</li>
+<li><strong>The model is not the whole release.</strong> Draft model,
+serving precision, tool runtime, trace graph, simulator, judge, and
+rollback path materially shape outcomes.</li>
+<li><strong>Admission and rollback recur.</strong> Replay verification,
+rejected draft tokens, episode certification, checkpoint recovery, and
+guarded fallbacks all constrain irreversible state changes.</li>
+</ol>
+</section>
+<section id="important-contradictions" class="level2">
+<h2>Important contradictions</h2>
+<ul>
+<li>ToolSpace benefits from real traces, while enterprise privacy and
+leakage controls may make those traces harder to use.</li>
+<li>Adversarial speculation preserves the ideal target distribution yet
+changes realized long-horizon accuracy; distributional exactness is not
+an operational equivalence guarantee under approximate serving.</li>
+<li>PyRUA reports synthetic data outperforming teleoperation under one
+appearance shift, but the same abstraction may fail under dynamics or
+safety shifts.</li>
+<li>ToolSched assumes agents can estimate resource demand; correctness
+firewalls assume the trusted checker/fallback is simpler and correct.
+Both move risk rather than remove it.</li>
+</ul>
+</section>
+<section id="visual-evidence-to-control-chain" class="level2">
+<h2>Visual — evidence-to-control chain</h2>
+<div class="viz">
+<div class="viz-title">
+Shared control pattern across the five reviewed works
+</div>
+<div class="flow-row">
+<div class="flow-node">
+Observed trace / request
+</div>
+<div class="flow-arrow">
+→
+</div>
+<div class="flow-node accent">
+Typed contract + policy
+</div>
+<div class="flow-arrow">
+→
+</div>
+<div class="flow-node">
+Sandboxed execution
+</div>
+</div>
+<div class="flow-row">
+<div class="flow-node">
+Assertions / judge / certificate
+</div>
+<div class="flow-arrow">
+←
+</div>
+<div class="flow-node accent">
+Effect and provenance log
+</div>
+<div class="flow-arrow">
+←
+</div>
+<div class="flow-node">
+Rollback or admission
+</div>
+</div>
+<div class="flow-note">
+Independent Analysis: the papers use different mechanisms, but each
+becomes enterprise-relevant only when evidence and effects are visible
+outside the model’s conversational state.
+</div>
+</div>
+</section>
+</section>
+<section id="enterprise-ai-enhancement-backlog" class="level1">
+<h1>Enterprise AI Enhancement Backlog</h1>
+<section id="priority-model-and-uncertainty" class="level2">
+<h2>Priority model and uncertainty</h2>
+<p><strong>Future Enterprise AI Priority Score = 25% strategic/business
+value + 20% technical leverage + 20% evidence strength + 15% enterprise
+readiness + 10% feasibility + 10% risk-adjusted
+differentiation.</strong> Component scores are ordinal judgments
+grounded in today’s evidence. A two- to five-point difference should not
+be treated as precise; scores can move materially after private-workload
+replication, cost data, privacy review, or independent artifacts.</p>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Band</th>
+<th>Enhancement</th>
+<th style="text-align: right;">Strategic</th>
+<th style="text-align: right;">Leverage</th>
+<th style="text-align: right;">Evidence</th>
+<th style="text-align: right;">Readiness</th>
+<th style="text-align: right;">Feasibility</th>
+<th style="text-align: right;">Differentiation</th>
+<th style="text-align: right;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Prototype Soon</td>
+<td>Execution-witnessed tool evaluation factory</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">76</td>
+<td style="text-align: right;">74</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;"><strong>87.6</strong></td>
+</tr>
+<tr class="even">
+<td>Prototype Soon</td>
+<td>Resource-aware tool execution control</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">68</td>
+<td style="text-align: right;">58</td>
+<td style="text-align: right;">72</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;"><strong>75.7</strong></td>
+</tr>
+<tr class="odd">
+<td>Prepare Foundations</td>
+<td>Correctness firewall library</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">64</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">65</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;"><strong>77.5</strong></td>
+</tr>
+<tr class="even">
+<td>Prepare Foundations</td>
+<td>Gated synthetic-data admission</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">79</td>
+<td style="text-align: right;">58</td>
+<td style="text-align: right;">61</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;"><strong>76.0</strong></td>
+</tr>
+<tr class="odd">
+<td>Monitor for Maturity</td>
+<td>Precision-aware speculative serving</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">52</td>
+<td style="text-align: right;">58</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;"><strong>75.7</strong></td>
+</tr>
+<tr class="even">
+<td>Monitor for Maturity</td>
+<td>Agent-built sim-to-real data farm</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;"><strong>72.4</strong></td>
+</tr>
+<tr class="odd">
+<td>Monitor for Maturity</td>
+<td>Human-augmentation evaluation harness</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">76</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">38</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;"><strong>66.9</strong></td>
+</tr>
+<tr class="even">
+<td>Deprioritize for Now</td>
+<td>Always-on cognitive symbiont deployment</td>
+<td style="text-align: right;">72</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">76</td>
+<td style="text-align: right;"><strong>52.7</strong></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="prototype-soon" class="level2">
+<h2>Prototype Soon</h2>
+<section id="execution-witnessed-tool-evaluation-factory-87.6"
+class="level3">
+<h3>1. Execution-witnessed tool evaluation factory — 87.6</h3>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability / Agentic
+AI.</li>
+<li><strong>Research signal and support:</strong> ToolSpace derives
+typed tool edges from real traces, replay-verifies tasks, and reports
+cross-benchmark gains; its LLM-judged-edge ablation is worse on all five
+reported benchmarks. <strong>Evidence label: Paper Fact + Enterprise
+Inference.</strong></li>
+<li><strong>Problem/opportunity:</strong> Static hand-written tests miss
+state, data-provenance, retry, and cross-service failure modes.</li>
+<li><strong>Future capability:</strong> Convert governed traces into
+typed dependency graphs; synthesize rollback-safe tasks; replay from a
+clean snapshot; grade final effects with assertions; preserve a frozen
+private holdout.</li>
+<li><strong>Architectural placement:</strong> evaluation, orchestration,
+retrieval/knowledge, data platform, developer platform.</li>
+<li><strong>Business value:</strong> quality, reliability, speed, risk
+reduction. <strong>Technical value:</strong> continuously expands
+realistic coverage and separates plausible from executable
+workflows.</li>
+<li><strong>Maturity/readiness:</strong> strong preprint mechanism and
+public artifacts; private-trace transfer unproven.
+<strong>Confidence:</strong> Moderate–High. <strong>Horizon:</strong>
+Now. <strong>Effort:</strong> M.</li>
+<li><strong>Dependencies:</strong> tool schema registry, trace
+consent/classification, snapshots, rollback, effect assertions, secret
+scrubbing, lineage, holdout governance.</li>
+<li><strong>Risks:</strong> privacy leakage, benchmark contamination,
+trace poisoning, stale semantics, unsafe replay, overfitting to
+incumbent processes, retention cost.</li>
+<li><strong>Build/Buy/Partner:</strong> Build the trace/effect layer
+because schemas and policies are enterprise-specific; buy generic
+sandbox/observability components where controls and exportability are
+verified.</li>
+<li><strong>Minimum reversible experiment:</strong> 50 read-only tasks
+from deidentified traces; compare deterministic witnessed edges with
+LLM-proposed edges on a frozen 20-task holdout.</li>
+<li><strong>Success metrics / stop conditions:</strong> executable-task
+yield, effect-assertion accuracy, novel failure discovery, coverage,
+build cost, zero sensitive-data escapes; stop on leakage, non-isolated
+side effects, or no meaningful coverage lift.</li>
+<li><strong>Roadmap trigger:</strong> repeatable benefit on two
+unrelated workflows with privacy approval and controlled operating
+cost.</li>
+</ul>
+</section>
+<section id="resource-aware-tool-execution-control-75.7" class="level3">
+<h3>2. Resource-aware tool execution control — 75.7</h3>
+<ul>
+<li><strong>Category:</strong> MLOps &amp; Platform / Agentic AI.</li>
+<li><strong>Research signal and support:</strong> ToolSched reports
+75/75 completion and 0.598 commands/s versus 64/75 and 0.462 unscheduled
+on one constrained host. <strong>Evidence label: Paper Fact +
+Uncertainty + Enterprise Inference.</strong></li>
+<li><strong>Problem/opportunity:</strong> Concurrent agents cause OOM,
+retries, wasted compute, and ambiguous partial effects.</li>
+<li><strong>Future capability:</strong> Put an admission queue at the
+tool gateway; require resource and idempotency declarations; compare
+estimates with live telemetry; checkpoint before risky calls; return
+typed contention/recovery states to the agent.</li>
+<li><strong>Architectural placement:</strong> orchestration,
+infrastructure, model gateway, observability, developer platform.</li>
+<li><strong>Business value:</strong> cost, reliability, throughput, risk
+reduction. <strong>Technical value:</strong> converts hidden contention
+into schedulable state.</li>
+<li><strong>Maturity/readiness:</strong> promising single-testbed paper;
+artifact and repeated statistics pending. <strong>Confidence:</strong>
+Moderate. <strong>Horizon:</strong> 3–6 months. <strong>Effort:</strong>
+M.</li>
+<li><strong>Dependencies:</strong> container isolation, quotas,
+telemetry, command classification, idempotency contracts, checkpoints,
+cancellation and fairness policy.</li>
+<li><strong>Risks:</strong> incorrect estimates, starvation, checkpoint
+inconsistency, non-idempotent replay, covert resource use, latency,
+scheduler compromise.</li>
+<li><strong>Build/Buy/Partner:</strong> Buy/partner for mature workload
+schedulers; build the agent-facing resource/effect contract and policy
+adapter.</li>
+<li><strong>Minimum reversible experiment:</strong> sealed
+CPU/memory/I/O workload with synthetic agents and injected
+overestimates, underestimates, crashes, and duplicate calls.</li>
+<li><strong>Success metrics / stop conditions:</strong> completion, p95
+queue/command latency, utilization, duplicate-effect rate, recovery
+success; stop if fairness or effect integrity regresses versus fixed
+quotas.</li>
+<li><strong>Roadmap trigger:</strong> replicated results on
+heterogeneous workloads and safe recovery for declared non-idempotent
+commands.</li>
+</ul>
+</section>
+</section>
+<section id="prepare-foundations" class="level2">
+<h2>Prepare Foundations</h2>
+<section id="correctness-firewall-library-77.5" class="level3">
+<h3>3. Correctness firewall library — 77.5</h3>
+<ul>
+<li><strong>Category:</strong> AI Software Engineering / Safety &amp;
+Governance.</li>
+<li><strong>Research signal and support:</strong> Correctness Firewalls
+proposes advisory, guarded, and certified patterns with three database
+case studies and early performance gains. <strong>Evidence label: Paper
+Fact (pattern/early results) + Uncertainty + Enterprise
+Inference.</strong></li>
+<li><strong>Problem/opportunity:</strong> Agent-generated optimizations
+may improve speed while silently changing authoritative results.</li>
+<li><strong>Future capability:</strong> A developer library and review
+standard that classifies synthesized components: advisory outputs cannot
+commit; guarded outputs are checked/fallbacked; certified outputs
+require a small trusted verifier.</li>
+<li><strong>Architectural placement:</strong> developer platform,
+applications, data platform, security/governance.</li>
+<li><strong>Business value:</strong> speed, cost, reliability, risk
+reduction. <strong>Technical value:</strong> allows optimization without
+granting result authority.</li>
+<li><strong>Maturity/readiness:</strong> strong architecture idea, early
+narrow evidence, no linked artifact. <strong>Confidence:</strong>
+Moderate. <strong>Horizon:</strong> 3–6 months. <strong>Effort:</strong>
+L.</li>
+<li><strong>Dependencies:</strong> authoritative reference path,
+differential tests, trusted computing base review, invariant
+specification, provenance, rollback, incident ownership.</li>
+<li><strong>Risks:</strong> incomplete invariants, shared bugs between
+generator/checker, checker complexity, fallback overload, side channels,
+performance illusion.</li>
+<li><strong>Build/Buy/Partner:</strong> Build the domain invariants and
+trusted path; partner for formal methods/security review; buy only
+checkers with inspectable semantics.</li>
+<li><strong>Minimum reversible experiment:</strong> non-authoritative
+cache/index with differential checking, injected faults, and
+deterministic fallback.</li>
+<li><strong>Success metrics / stop conditions:</strong> zero undetected
+result deviations in the challenge set, measured speedup after firewall
+overhead, bounded fallback rate; stop on checker ambiguity or an
+uncovered write path.</li>
+<li><strong>Roadmap trigger:</strong> independent threat-model review
+and two domain prototypes with meaningful net benefit.</li>
+</ul>
+</section>
+<section id="gated-synthetic-data-admission-76.0" class="level3">
+<h3>4. Gated synthetic-data admission — 76.0</h3>
+<ul>
+<li><strong>Category:</strong> Data &amp; Knowledge Infrastructure /
+Evaluation &amp; Observability.</li>
+<li><strong>Research signal and support:</strong> PyRUA admits experts
+and rendered episodes only after independent judging; ToolSpace keeps
+only replay-valid tasks. <strong>Evidence label: Paper Fact + Enterprise
+Inference.</strong></li>
+<li><strong>Problem/opportunity:</strong> Synthetic data scales cheaply
+but can amplify invalid states, leakage, or label errors.</li>
+<li><strong>Future capability:</strong> Every generated sample carries a
+contract, source lineage, deterministic checks where possible,
+independent judge results, confidence, and quarantine status; only
+accepted samples enter training or evaluation.</li>
+<li><strong>Architectural placement:</strong> data platform, evaluation,
+security/governance, developer platform.</li>
+<li><strong>Business value:</strong> quality, speed, cost, risk
+reduction. <strong>Technical value:</strong> turns synthetic generation
+into an auditable admission pipeline.</li>
+<li><strong>Maturity/readiness:</strong> grounded in two papers but
+judge independence and enterprise domains remain open.
+<strong>Confidence:</strong> Moderate. <strong>Horizon:</strong> 3–6
+months. <strong>Effort:</strong> L.</li>
+<li><strong>Dependencies:</strong> sample contracts, lineage,
+validators, independent model/judge, golden controls, quarantine,
+privacy/license checks, dataset versioning.</li>
+<li><strong>Risks:</strong> correlated generator/judge errors, reward
+hacking, leakage, false confidence, drift, ownership ambiguity, compute
+overhead.</li>
+<li><strong>Build/Buy/Partner:</strong> Build policy, lineage, and
+admission logic; buy generation/validation models behind a
+vendor-neutral gateway; partner for domain validation.</li>
+<li><strong>Minimum reversible experiment:</strong> generate a small
+labeled dataset for a non-sensitive task, blind-review against human
+controls, and train only an offline candidate.</li>
+<li><strong>Success metrics / stop conditions:</strong> acceptance
+precision/recall, downstream lift, subgroup errors, provenance
+completeness, cost per admitted sample; stop if rejected defects predict
+production-critical failure or lineage is incomplete.</li>
+<li><strong>Roadmap trigger:</strong> two independent validators plus
+downstream gain on a held-out real distribution.</li>
+</ul>
+</section>
+</section>
+<section id="monitor-for-maturity" class="level2">
+<h2>Monitor for Maturity</h2>
+<section id="precision-aware-speculative-serving-75.7" class="level3">
+<h3>5. Precision-aware speculative serving — 75.7</h3>
+<ul>
+<li><strong>Category:</strong> Model &amp; Inference.</li>
+<li><strong>Research signal and support:</strong> Adversarial
+Speculative Reasoning finds structured slot noise and a +7.0-point
+DeepSWE result for one model; other intervals are small or cross zero.
+<strong>Evidence label: Paper Fact + Uncertainty + Enterprise
+Inference.</strong></li>
+<li><strong>Problem/opportunity:</strong> Serving optimizations can
+change long-horizon agent reliability despite ideal exactness
+guarantees.</li>
+<li><strong>Future capability:</strong> Version serving stack, draft,
+quantization, cache precision, and hardware together; run
+trajectory-level A/B replay; optionally prototype draft rejection around
+independently labeled decision points.</li>
+<li><strong>Architectural placement:</strong> model gateway,
+infrastructure, evaluation, observability.</li>
+<li><strong>Business value:</strong> reliability, quality, cost.
+<strong>Technical value:</strong> exposes a hidden inference-quality
+axis.</li>
+<li><strong>Maturity/readiness:</strong> novel two-model result without
+linked code. <strong>Confidence:</strong> Moderate–Low.
+<strong>Horizon:</strong> 6–12 months. <strong>Effort:</strong> L.</li>
+<li><strong>Dependencies:</strong> reproducible serving, long-horizon
+benchmark, hardware access, cache telemetry, stable model snapshots,
+statistical design.</li>
+<li><strong>Risks:</strong> overfitting, throughput loss,
+hardware-specific effects, non-determinism, draft manipulation,
+maintenance burden, unverifiable chain-of-thought labels.</li>
+<li><strong>Build/Buy/Partner:</strong> Partner with inference
+vendors/researchers for measurement; build only the release-evaluation
+harness until replication.</li>
+<li><strong>Minimum reversible experiment:</strong> shadow replay
+identical agent trajectories across decode and speculative
+configurations with effect-level scoring.</li>
+<li><strong>Success metrics / stop conditions:</strong> repeated task
+effect, confidence intervals, throughput, latency, cost, tail deviation;
+stop if effect is unstable or disappears outside one benchmark.</li>
+<li><strong>Roadmap trigger:</strong> independent replication across two
+engines, two hardware families, and enterprise-like workflows.</li>
+</ul>
+</section>
+<section id="agent-built-sim-to-real-data-farm-72.4" class="level3">
+<h3>6. Agent-built sim-to-real data farm — 72.4</h3>
+<ul>
+<li><strong>Category:</strong> Multimodal / Data &amp; Knowledge
+Infrastructure.</li>
+<li><strong>Research signal and support:</strong> PyRUA farm-only
+policies reached 93/100 ID and 87/100 appearance-OOD successes across
+five tasks. <strong>Evidence label: Paper Fact + Uncertainty +
+Enterprise Inference.</strong></li>
+<li><strong>Problem/opportunity:</strong> Physical demonstration
+collection is slow and expensive.</li>
+<li><strong>Future capability:</strong> Agent-authored digital twins,
+controllers, success judges, multi-view rendering, episode admission,
+and a safety-reviewed real-world validation gate.</li>
+<li><strong>Architectural placement:</strong> data platform,
+infrastructure, evaluation, human-review layer.</li>
+<li><strong>Business value:</strong> cost, speed, strategic
+differentiation. <strong>Technical value:</strong> preserves action
+labels while improving visual realism.</li>
+<li><strong>Maturity/readiness:</strong> five-task prototype with public
+artifacts; physical safety/generalization unproven.
+<strong>Confidence:</strong> Moderate–Low. <strong>Horizon:</strong> 12+
+months. <strong>Effort:</strong> XL.</li>
+<li><strong>Dependencies:</strong> simulator, robot telemetry,
+calibrated cameras, rendering model, safety case, data rights,
+independent judges, physical test facility.</li>
+<li><strong>Risks:</strong> sim-to-real gap, rare catastrophic failure,
+judge error, unsafe policies, video artifacts, IP/privacy, domain shift,
+hidden operating costs.</li>
+<li><strong>Build/Buy/Partner:</strong> Partner with
+robotics/digital-twin specialists; build task contracts and admission
+criteria; do not buy a generalized promise.</li>
+<li><strong>Minimum reversible experiment:</strong> one low-energy,
+caged, resettable task with no people nearby; offline policy plus
+supervised real trials.</li>
+<li><strong>Success metrics / stop conditions:</strong> success with
+confidence bounds, near-miss severity, OOD degradation,
+per-admitted-hour cost; stop at any safety-rule violation or unexplained
+sim/real divergence.</li>
+<li><strong>Roadmap trigger:</strong> independent reproduction across
+robots and dynamics shifts with approved safety evidence.</li>
+</ul>
+</section>
+<section id="human-augmentation-evaluation-harness-66.9" class="level3">
+<h3>7. Human-augmentation evaluation harness — 66.9</h3>
+<ul>
+<li><strong>Category:</strong> Human-AI Workflow / Evaluation &amp;
+Observability.</li>
+<li><strong>Research signal and support:</strong> <em>Cognitive
+Symbionts</em> proposes measuring augmentation, synergy, retention,
+personalization differential, attention cost, trust calibration,
+privacy, autonomy, and lossless evolution. <strong>Evidence label: Paper
+Fact (framework) + Independent Analysis + Uncertainty.</strong></li>
+<li><strong>Problem/opportunity:</strong> Assistant evaluations often
+score the model, not whether people become more capable or
+dependent.</li>
+<li><strong>Future capability:</strong> N-of-1/crossover study toolkit
+comparing no assistance, generic assistance, and personalized
+assistance, including retention after removal and intervention
+burden.</li>
+<li><strong>Architectural placement:</strong> applications, evaluation,
+human-review layer, security/governance.</li>
+<li><strong>Business value:</strong> productivity, quality, adoption,
+risk reduction. <strong>Technical value:</strong> measures human-system
+complementarity rather than model score alone.</li>
+<li><strong>Maturity/readiness:</strong> conceptual framework, not
+validated intervention. <strong>Confidence:</strong> Low.
+<strong>Horizon:</strong> 6–12 months. <strong>Effort:</strong> L.</li>
+<li><strong>Dependencies:</strong> ethics/privacy review, consent,
+longitudinal study design, baseline definitions, accessibility,
+opt-out/deletion, calibrated outcomes.</li>
+<li><strong>Risks:</strong> surveillance, manipulation, dependency,
+worker coercion, confounding, inequity, bystander data, mental-health
+boundary.</li>
+<li><strong>Build/Buy/Partner:</strong> Partner with human-factors,
+privacy, and domain experts; build only an evaluation harness, not an
+always-on system.</li>
+<li><strong>Minimum reversible experiment:</strong> voluntary two-week
+crossover on one low-stakes knowledge task with local data minimization
+and deletion.</li>
+<li><strong>Success metrics / stop conditions:</strong> augmentation,
+retention, attention cost, trust calibration, opt-out rate, privacy
+incidents; stop on autonomy loss or inadequate consent.</li>
+<li><strong>Roadmap trigger:</strong> replicated positive human outcomes
+without dependency, coercion, or privacy harm.</li>
+</ul>
+</section>
+</section>
+<section id="deprioritize-for-now" class="level2">
+<h2>Deprioritize for Now</h2>
+<section id="always-on-cognitive-symbiont-deployment-52.7"
+class="level3">
+<h3>8. Always-on cognitive symbiont deployment — 52.7</h3>
+<ul>
+<li><strong>Category:</strong> Human-AI Workflow / Memory &amp;
+Context.</li>
+<li><strong>Research signal and support:</strong> the Watchlist vision
+paper specifies a lifelong, proactive, multimodal personal runtime and
+catalogs unresolved technical, ethical, and governance problems.
+<strong>Evidence label: Paper Fact (vision) + Independent
+Analysis.</strong></li>
+<li><strong>Problem/opportunity:</strong> Continuous personalized
+support could reduce cognitive gaps, but requires pervasive sensing and
+lifelong state.</li>
+<li><strong>Future capability:</strong> No production capability
+recommended now; limit work to privacy-preserving evaluation primitives
+and user-controlled memory experiments.</li>
+<li><strong>Architectural placement:</strong> applications,
+context/memory, retrieval/knowledge, security/governance, human-review
+layer.</li>
+<li><strong>Business value:</strong> potential productivity/customer
+experience, presently outweighed by privacy, legitimacy, and adoption
+risk. <strong>Technical value:</strong> long-term research agenda.</li>
+<li><strong>Maturity/readiness:</strong> conceptual; critical
+foundations and governance unresolved. <strong>Confidence:</strong> High
+that deferral is appropriate. <strong>Horizon:</strong> 12+ months.
+<strong>Effort:</strong> XL.</li>
+<li><strong>Dependencies:</strong> user-owned memory,
+identity/authorization, bystander consent, local/edge controls, data
+provenance, deletion/migration, independent audit, policy
+enforcement.</li>
+<li><strong>Risks:</strong> intimate surveillance, manipulation,
+security breach, dependency, inequity, covert assistance, bystander
+harm, vendor lock-in, posthumous data.</li>
+<li><strong>Build/Buy/Partner:</strong> Do not buy/deploy. Partner only
+for bounded, ethics-reviewed research.</li>
+<li><strong>Minimum reversible experiment:</strong> synthetic or
+volunteer study with no continuous sensing, explicit data deletion, and
+no action authority.</li>
+<li><strong>Success metrics / stop conditions:</strong> informed
+consent, measurable user benefit, zero unauthorized retention, easy
+exit; stop on bystander capture, hidden influence, or inability to
+delete/export.</li>
+<li><strong>Roadmap trigger:</strong> validated long-term human benefit
+plus enforceable privacy, portability, abstention, and governance
+controls.</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="enterprise-ai-architecture-implications" class="level1">
+<h1>Enterprise AI Architecture Implications</h1>
+<p><strong>Independent Analysis.</strong> Over 12–24 months, the
+evidence favors a shift from model-centric applications to a governed
+execution fabric. This is a target-state hypothesis, not an assumption
+about any current enterprise stack.</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Shared foundation</th>
+<th>Unlocks</th>
+<th>Evidence connection</th>
+<th>Internal context required</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Model gateway + inference lineage</td>
+<td>versioned model/draft/engine/cache/hardware releases</td>
+<td>Adversarial Speculative Reasoning</td>
+<td>providers, hardware, latency/cost SLOs, rollback</td>
+</tr>
+<tr class="even">
+<td>Tool contract and orchestration layer</td>
+<td>typed data/state/retry/resource/idempotency semantics</td>
+<td>ToolSpace; ToolSched</td>
+<td>tool inventory, owners, side effects, quotas</td>
+</tr>
+<tr class="odd">
+<td>Evaluation and experiment infrastructure</td>
+<td>trace-derived private tests, replay, A/B, confidence intervals</td>
+<td>ToolSpace; all deep papers</td>
+<td>privacy, representative distributions, budgets</td>
+</tr>
+<tr class="even">
+<td>Observability and effect ledger</td>
+<td>outcome assertions, partial execution, recovery, cost telemetry</td>
+<td>ToolSpace; ToolSched</td>
+<td>event schema, systems of record, incident ownership</td>
+</tr>
+<tr class="odd">
+<td>Policy enforcement + identity/authorization</td>
+<td>admission before consequential tools and generated components</td>
+<td>Correctness Firewalls</td>
+<td>IAM, delegation, regulated duties, approval thresholds</td>
+</tr>
+<tr class="even">
+<td>Context/memory and knowledge provenance</td>
+<td>source-linked state, trace lineage, retention, deletion</td>
+<td>ToolSpace; Cognitive Symbionts</td>
+<td>data classes, consent, ACLs, record rules</td>
+</tr>
+<tr class="odd">
+<td>Human-review controls</td>
+<td>fresh authority for uncertainty and physical-world risk</td>
+<td>PyRUA; cognitive evaluation</td>
+<td>staffing, UX, SLA, liability, accessibility</td>
+</tr>
+<tr class="even">
+<td>Data provenance and synthetic admission</td>
+<td>contracts, validators, quarantine, license checks</td>
+<td>PyRUA; ToolSpace</td>
+<td>data rights, validators, drift, owners</td>
+</tr>
+<tr class="odd">
+<td>Correctness firewall toolkit</td>
+<td>advisory/guarded/certified agent-generated components</td>
+<td>Correctness Firewalls</td>
+<td>invariants, trusted fallback/checker, threat model</td>
+</tr>
+</tbody>
+</table>
+<p>The enabling sequence is <strong>observe → contract → replay → assert
+→ authorize → act → verify → recover</strong>. Shared investment in
+schemas, identity, policy, lineage, evaluation, observability, cost
+telemetry, and reversible experiment infrastructure unlocks several
+backlog items at once. Production decisions still require private
+workload distributions, risk appetite, data obligations, architecture,
+vendor constraints, and operational maturity.</p>
+</section>
+<section id="implementation-priorities" class="level1">
+<h1>Implementation priorities</h1>
+<table>
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 30%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Stage</th>
+<th>Reversibility</th>
+<th>Required evidence before expansion</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1. Offline reconstruction</td>
+<td>No live effects</td>
+<td>trace legality, deterministic assertions, leakage audit, baseline
+fidelity</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2. Sealed replay/fault injection</td>
+<td>Synthetic identities and tools</td>
+<td>effect integrity, rollback, tail failures, resource fairness</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3. Shadow mode</td>
+<td>Observes live-shaped traffic but cannot commit</td>
+<td>distribution shift, privacy, cost, operator burden</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4. Limited pilot</td>
+<td>Allowlisted effects with fallback</td>
+<td>sustained benefit, incident response, human adoption, unit
+economics</td>
+</tr>
+</tbody>
+</table>
+<section id="next-30-days" class="level2">
+<h2>Next 30 days</h2>
+<ol type="1">
+<li>Inventory agent tools, side effects, schemas, owners, identities,
+resource limits, and rollback semantics.</li>
+<li>Define a minimal effect ledger: request, principal, evidence
+pointers, policy decision, resource estimate, tool effect, assertion
+result, cost, and recovery.</li>
+<li>Create one deidentified replay set and isolate its construction data
+from the frozen holdout.</li>
+<li>Classify any agent-generated component as advisory, guarded,
+certified, or currently unsafe to synthesize.</li>
+</ol>
+</section>
+<section id="days" class="level2">
+<h2>30–90 days</h2>
+<ol type="1">
+<li>Run the two Prototype Soon experiments and one correctness-firewall
+prototype.</li>
+<li>Add inference-stack lineage to the model release matrix.</li>
+<li>Establish synthetic-data admission and quarantine with two
+independent validators.</li>
+<li>Review whether private traces may legally and ethically support
+evaluation or training.</li>
+</ol>
+</section>
+<section id="do-not-do-yet" class="level2">
+<h2>Do not do yet</h2>
+<ul>
+<li>Do not train on production traces without consent, minimization,
+leakage controls, and a separately governed holdout.</li>
+<li>Do not generalize ToolSched’s single-host result to cluster
+economics.</li>
+<li>Do not treat speculative exactness as operational equivalence across
+serving stacks.</li>
+<li>Do not replace real-robot safety validation with five-task
+synthetic-data results.</li>
+<li>Do not deploy always-on personal memory or sensing from a conceptual
+roadmap.</li>
+</ul>
+</section>
+</section>
+<section id="knowledge-reinforcement" class="level1">
+<h1>Knowledge Reinforcement</h1>
+<section id="five-durable-takeaways" class="level2">
+<h2>Five durable takeaways</h2>
+<ol type="1">
+<li><strong>Witnessed execution beats plausible tool
+composition.</strong> Replay and effects are stronger evidence than an
+LLM’s judgment that a workflow should work.</li>
+<li><strong>Inference configuration is part of model behavior.</strong>
+Quantization, cache precision, draft, engine, and hardware can affect
+long-horizon outcomes.</li>
+<li><strong>Synthetic data needs admission control.</strong> Contracts,
+validators, lineage, quarantine, and real-distribution checks matter
+more than volume alone.</li>
+<li><strong>Schedule tools, not just models.</strong> Resource state,
+idempotency, checkpoints, and partial effects belong at the
+orchestration boundary.</li>
+<li><strong>Constrain generated code structurally.</strong> Advisory,
+guarded, and certified components offer clearer authority boundaries
+than test-only trust.</li>
+</ol>
+</section>
+<section id="retrieval-questions" class="level2">
+<h2>Retrieval questions</h2>
+<ol type="1">
+<li>Why is ToolSpace’s LLM-judged-edge ablation important for enterprise
+evaluation design?</li>
+<li>Which Adversarial Speculative Reasoning result has a confidence
+interval that crosses zero, and why does that matter?</li>
+<li>Why do PyRUA’s 87/100 OOD successes not justify replacing
+teleoperation generally?</li>
+<li>What crucial evidence is missing from ToolSched despite its 75/75
+completion result?</li>
+<li>How do advisory, guarded, and certified correctness firewalls differ
+in authority?</li>
+</ol>
+<details>
+<summary>
+Answers
+</summary>
+<ol type="1">
+<li>It shows plausible dependencies were worse than edges witnessed in
+execution on every reported ablation benchmark; private evaluations
+should prefer trace-grounded dependencies and replay, subject to
+privacy/leakage controls.</li>
+<li>DeepSeek’s +4.0-point DeepSWE result has a 95% interval from −1.3 to
+7.3 points, so the data are compatible with no improvement for that
+configuration.</li>
+<li>The result covers five tasks, one robot/setup, 20 trials per
+task-condition, and an appearance shift—not dynamics, faults, people, or
+rare catastrophic failures.</li>
+<li>A released artifact, repeated-run statistics, heterogeneous
+workloads/hosts, and robust tests of recovery for non-idempotent
+commands.</li>
+<li>Advisory outputs cannot determine results; guarded outputs are
+checked or replaced by a trusted path; certified outputs carry evidence
+a small trusted verifier checks.</li>
+</ol>
+</details>
+</section>
+</section>
+<section id="source-register-and-screened-out-signals" class="level1">
+<h1>Source register and screened-out signals</h1>
+<section id="selected-primary-sources" class="level2">
+<h2>Selected primary sources</h2>
+<ul>
+<li><a href="https://arxiv.org/abs/2611.05036">ToolSpace —
+arXiv:2611.05036</a>; <a
+href="https://github.com/dongguanting/ToolSpace">code</a>; <a
+href="https://toolspace-agent.github.io/">project</a>.</li>
+<li><a href="https://arxiv.org/abs/2611.05345">Adversarial Speculative
+Reasoning — arXiv:2611.05345</a>.</li>
+<li><a href="https://arxiv.org/abs/2611.05320">PyRUA-DataFarm —
+arXiv:2611.05320</a>; <a
+href="https://github.com/DAGroup-PKU/PyRUA-Lean/tree/DataFarm">code</a>;
+<a
+href="https://dagroup-pku.github.io/PyRUA-Lean/DataFarm">project</a>.</li>
+<li><a href="https://arxiv.org/abs/2611.05269">ToolSched —
+arXiv:2611.05269</a>.</li>
+<li><a href="https://arxiv.org/abs/2611.05173">Correctness Firewalls —
+arXiv:2611.05173</a>.</li>
+<li><a href="https://arxiv.org/abs/2611.05376">Cognitive Symbionts —
+arXiv:2611.05376</a>, used only for the human-augmentation
+evaluation/deprioritization items.</li>
+</ul>
+</section>
+<section id="same-window-signals-screened-but-not-selected"
+class="level2">
+<h2>Same-window signals screened but not selected</h2>
+<ul>
+<li><em>A Gated Spec-Driven Workflow</em> (arXiv:2611.05094): useful
+audit-trail evidence, but nine author-run features and self-judging
+orchestration limit external validity; its boundary ideas are covered by
+the stronger firewall/watchlist path.</li>
+<li><em>From Autonomous Agents to Cognitive Symbionts</em>
+(arXiv:2611.05376): comprehensive vision and evaluation agenda, but not
+an empirical system study; used only for explicitly labeled
+future-analysis items.</li>
+<li><em>PyRUA-DataFarm</em> would have remained Watchlist without
+real-robot, equal-data, and linked-artifact evidence; those features
+justify deep analysis but not production readiness.</li>
+</ul>
+</section>
+</section>
+<section id="evidence-boundary" class="level1">
+<h1>Evidence boundary</h1>
+<p>No reviewed work justifies production deployment on novelty or
+benchmark performance alone. Backlog items are future options
+conditioned on enterprise context this brief does not possess. Every
+proposed experiment is isolated, reversible, measurable, and
+non-destructive. No current architecture, vendor, model, data platform,
+security posture, legal basis, or maturity level is assumed. Internal
+workflow distributions, data rights, identity/authority design, risk
+tolerance, costs, staffing, and operational controls are prerequisites
+to implementation decisions.</p>
+</section></main></div>
+<footer>AI Research Intelligence Brief · November 5, 2026 · Evidence-grounded future options, not deployment approval.</footer>
+<div class="toolbar"><button onclick="window.print()">Print</button><button id="top">↑ Top</button></div>
+<script>const p=document.getElementById('progress');addEventListener('scroll',()=>{const h=document.documentElement;p.style.width=((h.scrollTop/(h.scrollHeight-h.clientHeight))*100)+'%'});document.getElementById('top').onclick=()=>scrollTo({top:0,behavior:'smooth'});</script>
+</body></html>
