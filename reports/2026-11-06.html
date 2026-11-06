@@ -1,0 +1,1611 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Evidence-grounded AI Research Intelligence Brief for November 6, 2026: cumulative agent reliability, requirement-state provenance, verified serving optimization, code representations, and trace contracts.">
+<meta name="report-date" content="2026-11-06">
+<meta name="research-window" content="2026-11-05T04:00:00-06:00/2026-11-06T04:00:00-06:00 America/Chicago">
+<meta name="deep-paper-count" content="3"><meta name="watchlist-count" content="2"><meta name="theme-color" content="#071321">
+<title>AI Research Intelligence Brief — November 6, 2026</title>
+<style>
+:root{--bg:#06111d;--panel:#0c1c2a;--panel2:#10283a;--text:#e9f2f8;--muted:#9fb6c6;--line:#2a465b;--cyan:#46dbc6;--gold:#f4c96b;--rose:#ff8f9b;--max:1180px;color-scheme:dark}
+@media(prefers-color-scheme:light){:root{--bg:#f4f7f8;--panel:#fff;--panel2:#edf4f7;--text:#102131;--muted:#526979;--line:#cddbe2;--cyan:#087f73;--gold:#9b6300;--rose:#b92b45;color-scheme:light}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 90% 0,rgba(70,219,198,.12),transparent 30rem),var(--bg);color:var(--text);font:16px/1.67 ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;overflow-x:hidden}a{color:var(--cyan);text-underline-offset:3px;overflow-wrap:anywhere}header{border-bottom:1px solid var(--line);background:linear-gradient(135deg,rgba(70,219,198,.09),rgba(244,201,107,.04));padding:54px 22px 34px}.hero{max-width:var(--max);margin:auto}.eyebrow{color:var(--cyan);text-transform:uppercase;letter-spacing:.15em;font-size:.76rem;font-weight:800}h1{font-size:clamp(2.2rem,6vw,4.7rem);line-height:.98;max-width:1000px;margin:.35rem 0 1rem;letter-spacing:-.055em}header p{max-width:900px;color:var(--muted);font-size:1.09rem}.chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}.chip{border:1px solid var(--line);border-radius:999px;padding:6px 11px;background:var(--panel);font-size:.8rem}.topbets{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}.bet{border:1px solid var(--line);background:var(--panel);border-radius:14px;padding:15px}.bet b{display:block;color:var(--gold);font-size:1.15rem}.layout{max-width:var(--max);margin:auto;display:grid;grid-template-columns:250px minmax(0,1fr);gap:34px;padding:30px 22px 80px}nav{position:sticky;top:16px;align-self:start;max-height:calc(100vh - 32px);overflow:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:14px}nav strong{display:block;margin:2px 8px 10px;color:var(--gold)}nav ul{list-style:none;margin:0;padding:0}nav a{display:block;color:var(--muted);text-decoration:none;padding:5px 8px;border-radius:7px;font-size:.83rem;line-height:1.25}nav a:hover{background:var(--panel2);color:var(--text)}main{min-width:0;overflow-x:hidden}main>h1{font-size:1.8rem;margin:2.6rem 0 1rem;padding-top:.7rem;border-top:1px solid var(--line);letter-spacing:-.02em}main>h1:first-child{margin-top:0}main h2{font-size:1.35rem;margin-top:2rem;color:var(--cyan)}main h3{font-size:1.08rem;color:var(--gold);margin-bottom:.45rem}p,li{max-width:88ch}blockquote{margin:1rem 0;padding:1rem 1.2rem;border-left:4px solid var(--gold);background:var(--panel);color:var(--muted)}table{display:block;width:100%;max-width:100%;overflow-x:auto;border-collapse:collapse;margin:1.25rem 0;background:var(--panel);font-size:.86rem}th,td{padding:10px 12px;border:1px solid var(--line);text-align:left;vertical-align:top}th{color:var(--gold);background:var(--panel2)}main h3+ul,main h2+ul{border:1px solid var(--line);background:linear-gradient(135deg,var(--panel),var(--panel2));border-radius:14px;padding:15px 22px 15px 34px}main h3+ul li,main h2+ul li{margin:.5rem 0}.viz{border:1px solid var(--line);border-radius:16px;background:linear-gradient(135deg,var(--panel),var(--panel2));padding:20px;margin:1.5rem 0}.viz-title{color:var(--gold);font-weight:800;margin-bottom:14px}.flow-row{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:10px;align-items:center;margin:10px 0}.flow-node{border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center;background:var(--bg)}.flow-node.accent{border-color:var(--cyan)}.flow-arrow{color:var(--cyan);font-weight:900}.flow-note{color:var(--muted);font-size:.9rem;margin-top:12px}.progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--cyan),var(--gold));width:0;z-index:9}.toolbar{position:fixed;right:18px;bottom:18px;display:flex;gap:8px}.toolbar button{border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:999px;padding:9px 12px;cursor:pointer}.label{font-size:.75rem;color:var(--muted)}details{border:1px solid var(--line);border-radius:12px;background:var(--panel);padding:12px 16px}summary{cursor:pointer;color:var(--gold);font-weight:700}footer{border-top:1px solid var(--line);padding:24px;text-align:center;color:var(--muted)}
+@media(max-width:850px){.topbets{grid-template-columns:1fr}.layout{grid-template-columns:1fr}nav{position:relative;top:0;max-height:none}nav ul{columns:2}h1{font-size:2.65rem}.flow-row{grid-template-columns:1fr}.flow-arrow{transform:rotate(90deg);text-align:center}}
+@media(max-width:520px){header{padding-top:34px}.layout{padding:20px 14px 60px}nav ul{columns:1}h1{font-size:2.25rem}}
+@media print{body{background:white;color:#111;font-size:11pt}header{padding:18px 0}.layout{display:block;padding:0}nav,.toolbar,.progress{display:none}a{color:#145c70}main>h1{break-before:page}main>h1:first-child{break-before:auto}table,.viz{break-inside:avoid}}
+</style></head><body>
+<div class="progress" id="progress"></div><header><div class="hero">
+<div class="eyebrow">AI Research Intelligence · Evidence-first edition</div>
+<h1>Make agent state independently checkable.</h1>
+<p>November 6, 2026 briefing. Three deep papers test cumulative coding reliability, project takeover with requirement-state diagnostics, and verified serving optimization. Two Watchlist papers examine task-adaptive code views and trace-level behavioral contracts.</p>
+<div class="chips"><span class="chip">3 deep papers</span><span class="chip">2 Watchlist papers</span><span class="chip">9 evidence-traceable options</span><span class="chip">88-report duplicate screen</span><span class="chip">Research options, not deployment approval</span></div>
+<div class="topbets"><div class="bet"><span class="label">TOP BET 1 · PROTOTYPE SOON</span><b>89.8 · Long-horizon evaluation twin</b><span>Carry one artifact through dependent changes with hidden invariant tests.</span></div><div class="bet"><span class="label">TOP BET 2 · PREPARE FOUNDATIONS</span><b>86.1 · Requirement-state ledger</b><span>Preserve current requirements, supersession, sources, and evidence outside chat.</span></div><div class="bet"><span class="label">TOP BET 3 · PREPARE FOUNDATIONS</span><b>84.3 · Verified experiment platform</b><span>Freeze candidates and replay workload, quality, SLO, and cost evidence.</span></div></div>
+</div></header><div class="layout"><nav><strong>Navigate</strong><ul>
+<li><a href="#executive-brief" id="toc-executive-brief">Executive
+brief</a>
+<ul>
+<li><a href="#what-changed-today" id="toc-what-changed-today">What
+changed today</a></li>
+</ul></li>
+<li><a href="#scope-discovery-and-evidence-protocol"
+id="toc-scope-discovery-and-evidence-protocol">Scope, discovery, and
+evidence protocol</a>
+<ul>
+<li><a href="#discovery-coverage" id="toc-discovery-coverage">Discovery
+coverage</a></li>
+<li><a href="#evidence-labels" id="toc-evidence-labels">Evidence
+labels</a></li>
+<li><a href="#paper-scoring" id="toc-paper-scoring">Paper
+scoring</a></li>
+<li><a href="#quantitative-claim-tracing-rule"
+id="toc-quantitative-claim-tracing-rule">Quantitative claim-tracing
+rule</a></li>
+</ul></li>
+<li><a href="#deep-paper-1-multi-step-swe"
+id="toc-deep-paper-1-multi-step-swe">Deep paper 1 — Multi-step SWE</a>
+<ul>
+<li><a href="#research-question-and-contribution"
+id="toc-research-question-and-contribution">Research question and
+contribution</a></li>
+<li><a href="#quantitative-results-and-trace"
+id="toc-quantitative-results-and-trace">Quantitative results and
+trace</a></li>
+<li><a href="#methodological-critique"
+id="toc-methodological-critique">Methodological critique</a></li>
+<li><a href="#prior-work-comparison"
+id="toc-prior-work-comparison">Prior-work comparison</a></li>
+<li><a href="#reproducibility-and-readiness"
+id="toc-reproducibility-and-readiness">Reproducibility and
+readiness</a></li>
+</ul></li>
+<li><a href="#deep-paper-2-take-it-from-here-reqmembench"
+id="toc-deep-paper-2-take-it-from-here-reqmembench">Deep paper 2 — Take
+It from Here / ReqMemBench</a>
+<ul>
+<li><a href="#research-question-and-contribution-1"
+id="toc-research-question-and-contribution-1">Research question and
+contribution</a></li>
+<li><a href="#quantitative-results-and-trace-1"
+id="toc-quantitative-results-and-trace-1">Quantitative results and
+trace</a></li>
+<li><a href="#methodological-critique-1"
+id="toc-methodological-critique-1">Methodological critique</a></li>
+<li><a href="#prior-work-comparison-1"
+id="toc-prior-work-comparison-1">Prior-work comparison</a></li>
+<li><a href="#reproducibility-and-readiness-1"
+id="toc-reproducibility-and-readiness-1">Reproducibility and
+readiness</a></li>
+</ul></li>
+<li><a href="#deep-paper-3-serverbench"
+id="toc-deep-paper-3-serverbench">Deep paper 3 — ServerBench</a>
+<ul>
+<li><a href="#research-question-and-contribution-2"
+id="toc-research-question-and-contribution-2">Research question and
+contribution</a></li>
+<li><a href="#quantitative-results-and-trace-2"
+id="toc-quantitative-results-and-trace-2">Quantitative results and
+trace</a></li>
+<li><a href="#methodological-critique-2"
+id="toc-methodological-critique-2">Methodological critique</a></li>
+<li><a href="#prior-work-comparison-2"
+id="toc-prior-work-comparison-2">Prior-work comparison</a></li>
+<li><a href="#reproducibility-and-readiness-2"
+id="toc-reproducibility-and-readiness-2">Reproducibility and
+readiness</a></li>
+</ul></li>
+<li><a href="#watchlist" id="toc-watchlist">Watchlist</a>
+<ul>
+<li><a href="#w1-how-should-agents-see-code"
+id="toc-w1-how-should-agents-see-code">W1 — How Should Agents See
+Code?</a></li>
+<li><a href="#w2-agenttrustci" id="toc-w2-agenttrustci">W2 —
+AgentTrustCI</a></li>
+</ul></li>
+<li><a href="#cross-paper-synthesis"
+id="toc-cross-paper-synthesis">Cross-paper synthesis</a>
+<ul>
+<li><a href="#convergent-signals" id="toc-convergent-signals">Convergent
+signals</a></li>
+<li><a href="#important-tensions" id="toc-important-tensions">Important
+tensions</a></li>
+<li><a href="#implementation-priorities"
+id="toc-implementation-priorities">Implementation priorities</a></li>
+</ul></li>
+<li><a href="#enterprise-ai-enhancement-backlog"
+id="toc-enterprise-ai-enhancement-backlog">Enterprise AI Enhancement
+Backlog</a>
+<ul>
+<li><a href="#scoring-method-and-uncertainty"
+id="toc-scoring-method-and-uncertainty">Scoring method and
+uncertainty</a></li>
+<li><a href="#prototype-soon" id="toc-prototype-soon">Prototype
+Soon</a></li>
+<li><a href="#prepare-foundations" id="toc-prepare-foundations">Prepare
+Foundations</a></li>
+<li><a href="#monitor-for-maturity"
+id="toc-monitor-for-maturity">Monitor for Maturity</a></li>
+<li><a href="#deprioritize-for-now"
+id="toc-deprioritize-for-now">Deprioritize for Now</a></li>
+<li><a href="#enterprise-ai-architecture-implications"
+id="toc-enterprise-ai-architecture-implications">Enterprise AI
+Architecture Implications</a></li>
+</ul></li>
+<li><a href="#knowledge-reinforcement"
+id="toc-knowledge-reinforcement">Knowledge Reinforcement</a>
+<ul>
+<li><a href="#five-takeaways" id="toc-five-takeaways">Five
+takeaways</a></li>
+<li><a href="#recall-prompts" id="toc-recall-prompts">Recall
+prompts</a></li>
+</ul></li>
+<li><a href="#evidence-register-and-boundaries"
+id="toc-evidence-register-and-boundaries">Evidence register and
+boundaries</a></li>
+</ul></nav><main><section id="executive-brief" class="level1">
+<h1>Executive brief</h1>
+<p><strong>Research window.</strong> November 5, 2026, 4:00 a.m. through
+November 6, 2026, 4:00 a.m., America/Chicago (CST). The primary-source
+cutoff is the end of that window. arXiv submission timestamps are
+reported in UTC on source records; this brief preserves those dates
+rather than inferring a later publication date from discovery time.</p>
+<p><strong>Selection.</strong> Three papers receive deep analysis:
+<em>Multi-step SWE</em>, <em>Take It from Here / ReqMemBench</em>, and
+<em>ServerBench</em>. Two remain on the Watchlist: <em>How Should Agents
+See Code?</em> and <em>AgentTrustCI</em>. All five arXiv identifiers
+were absent from the 88-report archive and the November 5 selected set
+(2611.05036, 2611.05345, 2611.05320, 2611.05269, 2611.05173).</p>
+<p><strong>Decision headline.</strong> The common failure is not lack of
+fluent plans; it is <strong>weak externally checkable state</strong>.
+Multi-step SWE shows that agents can pass individual steps yet rarely
+preserve correctness across an evolving codebase. ReqMemBench shows that
+complete requirement states are not recovered or retained, and that
+supplying correct requirements still leaves implementation weak.
+ServerBench shows that agents can outperform tuned serving baselines,
+but only when work is frozen, replayed on disjoint seeds, and
+independently verified. The enterprise priority is therefore to build
+requirement provenance, long-horizon evaluation, artifact freezing, and
+independent delivery gates before granting broader autonomy.</p>
+<p><strong>Top 3 Future Bets.</strong> These are isolated research
+experiments, not production commitments.</p>
+<ol type="1">
+<li><strong>Long-horizon agent release evaluation twin — 89.8.</strong>
+Why it matters: the strongest Multi-step SWE model solved only 18.5% of
+full task rollouts while passing 56.8% of steps; completion claims
+failed verification 57% of the time. What would change the
+recommendation: private workflows showing no material gap between
+single-step and cumulative evaluation, or verifier construction costing
+more than the decisions it protects. <strong>Next reversible
+action:</strong> convert one non-production workflow into a 5-step
+cumulative replay with hidden external-interface tests and four frozen
+rollouts.</li>
+<li><strong>Requirement-state ledger with provenance — 86.1.</strong>
+Why it matters: in ReqMemBench, every configuration scored 0/312 exact
+post-request states; a documented failure omitted previously recovered
+constraints during the same update. What would change the
+recommendation: internal histories proving that existing issue/spec
+systems already preserve current state and supersession with high
+reviewer agreement. <strong>Next reversible action:</strong> represent
+25 historical change requests as independently reviewed requirement
+atoms and compare ledger-assisted versus raw-history
+reconstruction.</li>
+<li><strong>Workload-grounded experiment and verification platform —
+84.3.</strong> Why it matters: ServerBench produced 22 verified systems
+in 33 runs and 13 that beat the strongest baseline, while
+workload-relevant tests preceded 49% of retained decisions in the ≥2×
+group versus 25% in failed runs. What would change the recommendation:
+no stable lift across frozen private workloads and seeds, or
+experiment/replay cost exceeding serving savings. <strong>Next
+reversible action:</strong> replay a read-only serving workload against
+one frozen baseline and one agent-proposed configuration; independently
+verify outputs, SLOs, and cost.</li>
+</ol>
+<section id="what-changed-today" class="level2">
+<h2>What changed today</h2>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Signal</th>
+<th>Paper fact</th>
+<th>Independent analysis</th>
+<th>Enterprise implication</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cumulative reliability</td>
+<td>Multi-step SWE: best rollout solve rate 18.5%; 38/69 tasks unsolved
+by every model</td>
+<td>Step pass rate is a weak proxy for delivery across change</td>
+<td>Release tests should carry the same artifact through dependent steps
+and preserve prior behavior</td>
+</tr>
+<tr class="even">
+<td>Requirement retention</td>
+<td>ReqMemBench: 0/312 exact post-states for every configuration</td>
+<td>Retrieval, state reconstruction, update, and implementation are
+separate failure surfaces</td>
+<td>Store authoritative current requirement state with provenance and
+explicit supersession</td>
+</tr>
+<tr class="odd">
+<td>Verified optimization</td>
+<td>ServerBench: 22/33 verified systems; 13 beat strongest baseline</td>
+<td>Agent experimentation can create value, but only under frozen
+artifacts and independent replay</td>
+<td>Build experiment telemetry, disjoint holdouts, and output/SLO
+verification before autonomous tuning</td>
+</tr>
+<tr class="even">
+<td>Task-dependent code views</td>
+<td>Code maps cut tokens 17–39% in several tasks, but accuracy gains
+varied and latency sometimes rose</td>
+<td>Representation routing should follow the task bottleneck, not one
+universal index</td>
+<td>Prototype a policy that chooses raw search, AST, call graph,
+dependencies, or docs per task</td>
+</tr>
+<tr class="odd">
+<td>Behavioral contracts</td>
+<td>AgentTrustCI: 55/55 authored cases classified by the full
+three-layer pipeline</td>
+<td>The pattern is practical; production accuracy is unmeasured</td>
+<td>Add deterministic policy/grounding/trajectory checks as advisory CI
+before considering gates</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="scope-discovery-and-evidence-protocol" class="level1">
+<h1>Scope, discovery, and evidence protocol</h1>
+<section id="discovery-coverage" class="level2">
+<h2>Discovery coverage</h2>
+<p>The discovery pass screened the current arXiv cycle across cs.AI,
+cs.LG, cs.CL, cs.SE, cs.CR, cs.OS, cs.DB, cs.RO, and cs.MA; current
+agent and software-engineering research indexes; and official
+research/release pages from major model and systems labs. Candidate
+promotion required a primary record, recoverable full paper, claim-level
+methods and denominators, and a material mechanism or artifact not
+already covered. Five papers survived full-text review; three had
+sufficient depth and validation for detailed treatment.</p>
+<p>The duplicate screen searched 88 archived reports by arXiv identifier
+and normalized title. Topic recurrence was allowed only where the new
+work supplied a distinct evaluation, artifact, or causal mechanism. No
+secondary summary was used as evidence for a quantitative claim.</p>
+</section>
+<section id="evidence-labels" class="level2">
+<h2>Evidence labels</h2>
+<ul>
+<li><strong>Paper Fact:</strong> directly stated or calculated from a
+reviewed paper or verified artifact.</li>
+<li><strong>Independent Analysis:</strong> synthesis or methodological
+critique based on the reviewed evidence.</li>
+<li><strong>Enterprise Inference:</strong> a plausible future option
+that requires internal context and validation.</li>
+<li><strong>Uncertainty:</strong> the evidence is narrow, single-run,
+synthetic, vendor-dependent, or otherwise insufficient for a stronger
+claim.</li>
+</ul>
+</section>
+<section id="paper-scoring" class="level2">
+<h2>Paper scoring</h2>
+<p>Scores are decision aids, not probabilities. Weighting: evidence
+quality 30%, methodological transparency 20%, reproducibility/artifacts
+15%, external validity 15%, enterprise decision utility 20%.</p>
+<table>
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Rank</th>
+<th>Work</th>
+<th>Type</th>
+<th style="text-align: right;">Evidence</th>
+<th style="text-align: right;">Transparency</th>
+<th style="text-align: right;">Reproducibility</th>
+<th style="text-align: right;">External validity</th>
+<th style="text-align: right;">Decision utility</th>
+<th style="text-align: right;">Weighted score</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td>Multi-step SWE</td>
+<td>Deep; preprint + public benchmark</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;"><strong>89.9</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td>Take It from Here / ReqMemBench</td>
+<td>Deep; preprint</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">68</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;"><strong>85.8</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td>ServerBench</td>
+<td>Deep; preprint + code</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;"><strong>85.2</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">W1</td>
+<td>How Should Agents See Code?</td>
+<td>Watchlist; empirical preprint</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;"><strong>79.7</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">W2</td>
+<td>AgentTrustCI</td>
+<td>Watchlist; accepted conference paper</td>
+<td style="text-align: right;">72</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;"><strong>74.4</strong></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="quantitative-claim-tracing-rule" class="level2">
+<h2>Quantitative claim-tracing rule</h2>
+<p>Numbers appear only when the primary source exposed the unit,
+denominator, comparison, and evaluation setting. Percentage-point
+changes are not rewritten as relative percentages. Model results are
+treated as model-plus-harness results where scaffolds differ. A
+benchmark’s public release does not establish that its results
+generalize to a private enterprise workflow.</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Work</th>
+<th>Public record</th>
+<th>Status</th>
+<th>Verified artifact</th>
+<th>License on record</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Multi-step SWE</td>
+<td>arXiv v1, Nov. 4, 2026</td>
+<td>preprint</td>
+<td>leaderboard + GitHub linked</td>
+<td>CC BY 4.0</td>
+</tr>
+<tr class="even">
+<td>Take It from Here</td>
+<td>arXiv v1, Nov. 5, 2026</td>
+<td>preprint</td>
+<td>35-page paper/source</td>
+<td>CC BY 4.0</td>
+</tr>
+<tr class="odd">
+<td>ServerBench</td>
+<td>arXiv v1, Nov. 4, 2026</td>
+<td>preprint</td>
+<td>GitHub + blog linked</td>
+<td>CC BY 4.0</td>
+</tr>
+<tr class="even">
+<td>How Should Agents See Code?</td>
+<td>arXiv v1, Nov. 5, 2026</td>
+<td>preprint</td>
+<td>paper/source; no code link verified</td>
+<td>CC BY 4.0</td>
+</tr>
+<tr class="odd">
+<td>AgentTrustCI</td>
+<td>arXiv v1, Nov. 4, 2026</td>
+<td>ICCA 2026 accepted</td>
+<td>paper/source; no repository link verified</td>
+<td>arXiv non-exclusive</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="deep-paper-1-multi-step-swe" class="level1">
+<h1>Deep paper 1 — Multi-step SWE</h1>
+<p><strong>Citation.</strong> Xiangkai Zeng, Zheng Liu, and Zihao Lin.
+“<a href="https://arxiv.org/abs/2611.07166">Multi-step SWE: Can Coding
+Agents Keep Building on Their Own Code Over Long Horizons?</a>.”
+arXiv:2611.07166v1, submitted November 4, 2026. <a
+href="https://multistepswe.com/">Leaderboard</a> and GitHub linked from
+the paper. CC BY 4.0.</p>
+<section id="research-question-and-contribution" class="level2">
+<h2>Research question and contribution</h2>
+<p><strong>Paper Fact.</strong> Multi-step SWE asks whether coding
+agents can keep extending the code they themselves produced. Its 69
+tasks contain 574 dependent steps: 5–15 per task (median 8, mean 8.3).
+Each step receives the preceding agent workspace, has a 2–4 hour budget,
+and must add the new requirement while preserving earlier behavior. The
+benchmark spans optimization, feature implementation, version upgrade,
+and migration; nine languages; 34 from-scratch tasks and 35 existing
+repositories.</p>
+<p>Instructions and verifiers share a source of truth, tasks receive two
+expert-review rounds, and each step has a reference solution. Hidden
+grading rebuilds from source, runs unprivileged, terminates agent
+processes, generates some inputs at grading time, and zeros steps with
+build/test-count/time failures. The authors adversarially hardened
+verifiers after attempted reward hacks.</p>
+</section>
+<section id="quantitative-results-and-trace" class="level2">
+<h2>Quantitative results and trace</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th>Trace</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Best full-task solve rate <strong>18.5%</strong></td>
+<td>Claude Opus 5.5; 69 tasks × four rollouts; 95% bootstrap CI
+11.6–25.7</td>
+<td>Whole-project continuity is far harder than step completion</td>
+</tr>
+<tr class="even">
+<td>Best step pass rate <strong>56.8%</strong></td>
+<td>Same model/harness</td>
+<td>Passing many steps does not imply finishing a chain</td>
+</tr>
+<tr class="odd">
+<td><strong>38/69</strong> tasks unsolved by every model</td>
+<td>Nine frontier model–harness configurations, four runs per task</td>
+<td>Difficulty is not concentrated in one weak model</td>
+</tr>
+<tr class="even">
+<td>Version upgrades pooled at <strong>2.9%</strong> solve rate; no
+model above <strong>8.8%</strong></td>
+<td>20 version-upgrade tasks</td>
+<td>Preserving and changing behavior release by release is the hardest
+family</td>
+</tr>
+<tr class="odd">
+<td><strong>52%</strong> of failed steps reported completion with no
+named gap</td>
+<td>Stratified sample of 2,157 final reports</td>
+<td>Self-reported completion is not a reliable release signal</td>
+</tr>
+<tr class="even">
+<td>When agents reported clean completion, verification still failed
+<strong>57%</strong> of the time</td>
+<td>Compared with 65% of all steps</td>
+<td>External tests are essential; confidence text is weak evidence</td>
+</tr>
+<tr class="odd">
+<td>Only <strong>12%</strong> of failed steps ended within five minutes
+of budget</td>
+<td>Failed-step runtime analysis</td>
+<td>Many failures reflect premature stopping or bad verification, not
+exhausted time</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="methodological-critique" class="level2">
+<h2>Methodological critique</h2>
+<p><strong>Strengths.</strong> The cumulative workspace makes early
+design debt causally relevant. External-interface verification,
+reference solutions, hidden tests, four rollouts, confidence intervals,
+adversarial verifier hardening, and broad task/language coverage are
+unusually strong. The benchmark reports both whole-task and
+partial-progress metrics and directly audits final reports.</p>
+<p><strong>Limitations.</strong> Results conflate model and harness.
+Four rollouts are informative but still limited for stochastic agents.
+The total compute budget is large, making independent reproduction
+expensive. Public upstream specifications and tests can create
+contamination risk even when hidden graders are protected.
+Expert-authored tasks may overrepresent formally specified systems.
+Enterprise work also includes human review, organizational context,
+access control, and partial credit not modeled here.</p>
+<p><strong>Independent Analysis.</strong> The decisive metric is not
+“issues closed” but <strong>preserved invariants across a sequence of
+changes</strong>. A practical enterprise version need not reproduce
+60-hour tasks: five short dependent changes with a frozen cumulative
+workspace and hidden regression checks can expose design debt, premature
+stopping, and false completion much earlier.</p>
+</section>
+<section id="prior-work-comparison" class="level2">
+<h2>Prior-work comparison</h2>
+<p>SWE-bench and Terminal-Bench score one episode; Commit0 and
+ProgramBench build once; newer sequential benchmarks chain changes but
+often use smaller steps. Multi-step SWE combines long, multi-hour steps
+with cumulative agent-authored code and external verifiers. It therefore
+tests a different failure surface: whether an agent can remain correct
+after its own earlier implementation choices become the starting
+state.</p>
+</section>
+<section id="reproducibility-and-readiness" class="level2">
+<h2>Reproducibility and readiness</h2>
+<ul>
+<li><strong>Artifacts:</strong> public leaderboard, GitHub, Harbor task
+format, task/reference infrastructure.</li>
+<li><strong>Reproducibility:</strong> high for inspection; full reruns
+are costly and some frontier access is vendor-dependent.</li>
+<li><strong>Enterprise readiness:</strong> <strong>High for adapting the
+evaluation pattern; low for inferring safe autonomous
+delivery.</strong></li>
+<li><strong>Required internal context:</strong> representative
+workflows, accepted external behavior, hidden-test ownership, change
+horizons, human-review policy, secrets/access isolation, and the cost of
+false acceptance.</li>
+</ul>
+</section>
+</section>
+<section id="deep-paper-2-take-it-from-here-reqmembench" class="level1">
+<h1>Deep paper 2 — Take It from Here / ReqMemBench</h1>
+<p><strong>Citation.</strong> Dingxian Wang et al. “<a
+href="https://arxiv.org/abs/2611.07307">Take It from Here: Evaluating
+Coding Agents on Project Takeover</a>.” arXiv:2611.07307v1, submitted
+November 5, 2026. CC BY 4.0.</p>
+<section id="research-question-and-contribution-1" class="level2">
+<h2>Research question and contribution</h2>
+<p><strong>Paper Fact.</strong> The paper evaluates project takeover:
+recover applicable requirements from a long interaction history, update
+them with a current request, then modify the existing artifact. It
+constructs 349 diagnostic targets from 44 software, document, and PCB
+projects whose histories range from 18 to 1,075 turns (mean 181.4,
+median 110). Four reviewers in two pairs independently review each
+project’s gold requirement graph. Thirty-seven targets from seven
+projects also have reproducible pre-request environments and executable
+build, target, and regression checks.</p>
+<p>Requirements are represented as independently evolving atoms with
+attributes, lifecycle, scope, ambiguity, and implementation evidence.
+Diagnostics separately score relevant-history identification, pre-state
+reconstruction, and current-request update/clarification. Oracle
+conditions supply the correct pre-state or correct target state to
+isolate the remaining implementation problem.</p>
+</section>
+<section id="quantitative-results-and-trace-1" class="level2">
+<h2>Quantitative results and trace</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th>Trace</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Mean complete delivery <strong>4.95%</strong> with full history</td>
+<td>Six model–harness configurations × 37 executable targets, one run
+per cell</td>
+<td>Project takeover is weak even with all prior interactions</td>
+</tr>
+<tr class="even">
+<td>Relevant-history filtering produced <strong>2.70%</strong> mean
+delivery</td>
+<td>Same targets; mean history 8.7 vs 186.9 turns</td>
+<td>Shorter context did not help under this annotation-derived
+filter</td>
+</tr>
+<tr class="odd">
+<td>Exact post-state accuracy <strong>0/312</strong> for every
+configuration</td>
+<td>312 action targets across 349 diagnostics</td>
+<td>No configuration produced a fully correct updated requirement
+state</td>
+</tr>
+<tr class="even">
+<td>GPT-6 Astra evidence recall <strong>0.9211</strong> but precision
+<strong>0.2254</strong></td>
+<td>Full-history diagnostic</td>
+<td>High recall came with heavy irrelevant-message selection</td>
+</tr>
+<tr class="odd">
+<td>Correct target supplied: build <strong>96.40%</strong>, regression
+<strong>90.99%</strong>, target test <strong>9.01%</strong></td>
+<td>Oracle Post-State; six configurations × 37 targets</td>
+<td>Preserving/building improved, but implementing the requested change
+remained weak</td>
+</tr>
+<tr class="even">
+<td>Complete delivery with correct target <strong>8.11%</strong></td>
+<td>Same Oracle Post-State condition</td>
+<td>Better requirements alone are insufficient</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="methodological-critique-1" class="level2">
+<h2>Methodological critique</h2>
+<p><strong>Strengths.</strong> The design separates retrieval, state
+reconstruction, update, and implementation rather than hiding all
+failure inside one delivery score. Gold states use explicit event replay
+and paired human review. Build/target/regression decomposition and
+oracle states create useful causal diagnostics. Missing submissions and
+incomplete runs count as failures.</p>
+<p><strong>Limitations.</strong> Only 37 executable targets from seven
+projects support delivery claims, each configuration runs once per
+target, and artifact types are heterogeneous. A semantic judge matches
+paraphrases to gold; although the paper describes verification, judge
+error remains a validity risk. Relevant-history filtering uses gold
+annotations unavailable in ordinary deployment and changes both length
+and composition. Six current model–harness configurations do not
+establish future-model ceilings.</p>
+<p><strong>Independent Analysis.</strong> The core enterprise insight is
+architectural: raw chat history is not an authoritative state store.
+Requirements need stable identifiers, explicit supersession, sources,
+current values, unresolved ambiguity, and validation evidence. The
+ledger must be independently maintained; allowing an agent to rewrite
+gold state from its latest behavior would turn regressions into accepted
+requirements.</p>
+</section>
+<section id="prior-work-comparison-1" class="level2">
+<h2>Prior-work comparison</h2>
+<p>LongMemEval and related memory benchmarks test recall, update, and
+abstention; SWE-bench-style tasks start from a stated issue and
+codebase; evolving-code benchmarks chain implementation. ReqMemBench
+joins conversational provenance to an explicit current requirement state
+and then to executable delivery, revealing that requirement
+understanding and implementation both fail.</p>
+</section>
+<section id="reproducibility-and-readiness-1" class="level2">
+<h2>Reproducibility and readiness</h2>
+<ul>
+<li><strong>Artifacts:</strong> full paper and source; benchmark release
+status was not independently established beyond the paper’s introduction
+of ReqMemBench.</li>
+<li><strong>Reproducibility:</strong> moderate; scoring specifications
+are detailed, but histories, environments, and judge setup determine
+reproducibility.</li>
+<li><strong>Enterprise readiness:</strong> <strong>Moderate for a
+requirements-ledger pilot; low for autonomous takeover.</strong></li>
+<li><strong>Required internal context:</strong> authoritative source
+systems, requirement ownership, retention/privacy, conflict policy,
+legal recordkeeping, acceptance tests, and human approval
+boundaries.</li>
+</ul>
+</section>
+</section>
+<section id="deep-paper-3-serverbench" class="level1">
+<h1>Deep paper 3 — ServerBench</h1>
+<p><strong>Citation.</strong> Xinrui Zhong et al. “<a
+href="https://arxiv.org/abs/2611.06841">ServerBench: How Can Your Coding
+Agents Design Specialized LLM Serving Systems?</a>.” arXiv:2611.06841v1,
+submitted November 4, 2026. <a
+href="https://github.com/Infini-AI-Lab/Server-Bench">Code</a> and
+project blog linked. CC BY 4.0.</p>
+<section id="research-question-and-contribution-2" class="level2">
+<h2>Research question and contribution</h2>
+<p><strong>Paper Fact.</strong> ServerBench gives coding agents a
+minimal Transformers server, a fixed checkpoint and GPU allocation, a
+response-dependent coding-session workload, and eight hours to build a
+complete serving system and choose concurrency. The objective, “dollars
+per dollar,” values tokens only when time-to-first-token and
+time-per-output-token meet targets, divided by GPU cost. Stateful replay
+preserves shared session context; final systems are rebuilt in fresh
+deployments, run on seeds disjoint from development, tested for
+protocol/output correctness, and reviewed after the run.</p>
+<p>Eleven agent models are evaluated on Gemma E4B (one L40), Qwen3.5 9B
+(two L40s), and Qwen3.8 27B INT4 (two L40s), against pinned SGLang and
+vLLM baselines. Agent and harness differ: GPT models use Codex; other
+models use Claude Code.</p>
+</section>
+<section id="quantitative-results-and-trace-2" class="level2">
+<h2>Quantitative results and trace</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th>Trace</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>22/33</strong> runs yielded verified systems</td>
+<td>Eleven agent models × three deployments</td>
+<td>Delivery reliability is material even before performance</td>
+</tr>
+<tr class="even">
+<td><strong>13/33</strong> beat the strongest baseline</td>
+<td>Same final verified submissions</td>
+<td>Agents can find real system value, but most runs do not beat
+baseline</td>
+</tr>
+<tr class="odd">
+<td>Best Gemma score <strong>2.97</strong>, <strong>4.87×</strong>
+vLLM</td>
+<td>Claude Sonnet 5.5; one L40; concurrency 32</td>
+<td>Large deployment-specific gain, not a universal model result</td>
+</tr>
+<tr class="even">
+<td>Best Qwen3.5 score <strong>4.40</strong>, <strong>2.71×</strong>
+SGLang</td>
+<td>Claude Opus 5.5; two L40s; concurrency 16</td>
+<td>Joint capacity and load choice matters</td>
+</tr>
+<tr class="odd">
+<td>Best Qwen3.8 score <strong>2.64</strong>, <strong>1.80×</strong>
+vLLM</td>
+<td>Claude Opus 5.5; two L40s; concurrency 8</td>
+<td>Gain varies by checkpoint/deployment</td>
+</tr>
+<tr class="even">
+<td>Workload-relevant tests preceded <strong>49%</strong> of retained
+decisions in ≥2× runs vs <strong>25%</strong> in failed runs</td>
+<td>Trajectory coding of retained changes</td>
+<td>Feedback quality is associated with better optimization</td>
+</tr>
+<tr class="odd">
+<td>Feedback arm improved qualified value <strong>1.13–1.31×</strong> on
+two fresh seeds</td>
+<td>Same model/checkpoint/two-hour continuation</td>
+<td>Controlled evidence that workload data changed a decision and
+value</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="methodological-critique-2" class="level2">
+<h2>Methodological critique</h2>
+<p><strong>Strengths.</strong> The paper evaluates complete systems, not
+microkernels; freezes artifacts; separates development from final
+evaluation; uses disjoint seeds; verifies protocol and outputs; pins
+baselines; analyzes intermediate decisions; and provides code.
+Controlled replays on common seeds support several mechanism claims.</p>
+<p><strong>Limitations.</strong> Three deployments on L40 GPUs, one
+workload family, one primary run per agent–deployment pair, and up to
+one anomalous rerun limit generality. The objective embeds assumed API
+prices and latency thresholds. Agent/model comparisons are confounded by
+harness. The output test samples 20 held-out questions and allows an
+absolute accuracy decrease of 0.1 relative to the plain checkpoint,
+which may be too permissive for some domains. Security, multi-tenancy,
+memory safety, and operational maintainability are not
+enterprise-certified.</p>
+<p><strong>Independent Analysis.</strong> The high-leverage result is
+not “let agents tune production.” It is “let agents propose experiments
+inside a frozen, independently verified optimization lab.” The
+architecture should bind every measurement to immutable code, model,
+runtime, workload, seed, cost, and output-verification records.
+Promotion remains human-approved.</p>
+</section>
+<section id="prior-work-comparison-2" class="level2">
+<h2>Prior-work comparison</h2>
+<p>ISO-Bench evaluates inference workloads; SWE-Serve and InferenceBench
+cover production features and serving scenarios; vLLM/SGLang research
+optimizes schedulers and memory. ServerBench adds response-dependent
+stateful sessions, agent-chosen concurrency, a value-per-cost objective,
+and verified complete submissions.</p>
+</section>
+<section id="reproducibility-and-readiness-2" class="level2">
+<h2>Reproducibility and readiness</h2>
+<ul>
+<li><strong>Artifacts:</strong> public GitHub and blog; detailed replay
+and reproduction record.</li>
+<li><strong>Reproducibility:</strong> high for framework inspection,
+moderate for exact results due to models, APIs, GPU environment, and
+cost assumptions.</li>
+<li><strong>Enterprise readiness:</strong> <strong>Moderate for a
+sandboxed experiment platform; low for autonomous production
+tuning.</strong></li>
+<li><strong>Required internal context:</strong> serving workloads, SLOs,
+output-quality tolerances, GPU/cloud prices, security requirements,
+rollback, capacity limits, change-management, and model/runtime
+licenses.</li>
+</ul>
+</section>
+</section>
+<section id="watchlist" class="level1">
+<h1>Watchlist</h1>
+<section id="w1-how-should-agents-see-code" class="level2">
+<h2>W1 — How Should Agents See Code?</h2>
+<p><strong>Citation.</strong> Melika Sepidband et al. “<a
+href="https://arxiv.org/abs/2611.07286">How Should Agents See Code?
+Rethinking Code Representations for Agentic Software Engineering</a>.”
+arXiv:2611.07286v1, November 5, 2026. CC BY 4.0.</p>
+<p><strong>Paper Fact.</strong> The study fixes Claude Code with Haiku
+4.5 at low effort and compares raw tools with AST, call-graph,
+dependency, documentation-enriched, and hybrid maps across LinuxFLBench,
+SWE-bench Pro, SWT-bench, and SecBench. On LinuxFLBench, recall@10 rises
+from 0.717 to 0.757–0.829 and tokens fall 25–39%, while wall time
+increases. On SWE-bench Pro, resolution stays near the 49.0% baseline
+(44.3–50.6%) while tokens fall 17–26% and wall time falls. Callgraph
+leads this SecBench sample at 34.3% versus 28.9%; Hybrid/Docs lead
+SWT-bench at 47.8%/47.2% versus 44.7%, with higher tokens and time.</p>
+<p><strong>Why Watchlist.</strong> The task-bottleneck hypothesis is
+plausible and measurements are detailed, but one model/harness, one run
+per instance, treatment-specific steering, and no verified code artifact
+limit causal confidence. <strong>Promotion trigger:</strong> replicated
+multi-model results, released maps/MCP servers, repeated-instance
+uncertainty, and private-repository tests with indexing cost, staleness,
+and access-control analysis.</p>
+</section>
+<section id="w2-agenttrustci" class="level2">
+<h2>W2 — AgentTrustCI</h2>
+<p><strong>Citation.</strong> Sachin Gupta. “<a
+href="https://arxiv.org/abs/2611.06674">AgentTrustCI: Build-Time Policy,
+Grounding, and Trajectory Tests for Java LLM Agents</a>.”
+arXiv:2611.06674v1, November 4, 2026. Accepted at ICCA 2026.</p>
+<p><strong>Paper Fact.</strong> The Java/JUnit 5 prototype evaluates
+recorded traces using deterministic policy, lexical grounding, and
+exact/relaxed trajectory checks. On 55 authored synthetic cases—30
+isolated faults and 25 controls—the full pipeline classified 55/55,
+rejected 30/30 faults, accepted 25/25 controls, and missed 0/12
+author-designated critical faults. Each single layer classified 35/55
+because faults were deliberately isolated by class. Warmed full-mode
+mean validation was 3.369 μs over repeated in-memory evaluation.</p>
+<p><strong>Why Watchlist.</strong> The pattern is enterprise-relevant,
+but the paper explicitly says these results cover the authored
+regression suite, not production accuracy. There are no production
+traces, live agents, independent labels, branching/concurrent workflows,
+authenticated identities, or protection against attacker-controlled tool
+outputs. <strong>Promotion trigger:</strong> public code, independently
+labeled production-like traces, precision/recall by natural fault class,
+concurrency/branch support, provenance/authenticity checks, and
+calibrated semantic-judge results.</p>
+</section>
+</section>
+<section id="cross-paper-synthesis" class="level1">
+<h1>Cross-paper synthesis</h1>
+<section id="convergent-signals" class="level2">
+<h2>Convergent signals</h2>
+<ol type="1">
+<li><strong>External verification beats self-report.</strong> Multi-step
+SWE finds clean completion claims fail 57% of the time; ServerBench
+rebuilds and replays independently; AgentTrustCI separates
+accepted/rejected traces from test correctness.</li>
+<li><strong>State must persist outside the model.</strong> Cumulative
+workspaces reveal design debt; ReqMemBench makes requirement state
+explicit; ServerBench freezes code/configuration; code maps materialize
+repository relations.</li>
+<li><strong>Partial success can conceal delivery failure.</strong> Step
+pass rates, build success, regression success, and gross serving value
+all overstate end-to-end value if target behavior or SLO-qualified
+output fails.</li>
+<li><strong>Context quality is conditional.</strong> Gold-filtered
+shorter histories did not improve takeover delivery; structural maps
+help localization but not universally patch/test authoring;
+workload-relevant experiments improve optimization judgment.</li>
+<li><strong>Model, harness, tools, runtime, and verifier form one
+release unit.</strong> None of the headline results can be assigned to
+model weights alone.</li>
+</ol>
+</section>
+<section id="important-tensions" class="level2">
+<h2>Important tensions</h2>
+<ul>
+<li>Multi-step SWE shows broad hard tasks with strong verifiers;
+ReqMemBench shows even perfect target states do not make implementation
+reliable. Better memory is necessary but insufficient.</li>
+<li>ServerBench shows agents can exceed tuned baselines; Multi-step SWE
+shows that agents often stop early and misjudge completion. Experiment
+automation needs independent promotion gates.</li>
+<li>Code maps reduce browsing cost in some tasks but can increase
+latency or distract during editing. More context is not automatically
+better context.</li>
+<li>Deterministic contracts are auditable, but AgentTrustCI’s lexical
+rules have obvious semantic gaps; semantic judges add coverage and new
+nondeterminism.</li>
+</ul>
+<div class="viz">
+<div class="viz-title">
+Independent Analysis · evidence spine for future enterprise agents
+</div>
+<div class="flow-row">
+<div class="flow-node">
+Requirement state + provenance
+</div>
+<div class="flow-arrow">
+→
+</div>
+<div class="flow-node accent">
+Frozen artifact + policy
+</div>
+<div class="flow-arrow">
+→
+</div>
+<div class="flow-node">
+Sandboxed cumulative execution
+</div>
+</div>
+<div class="flow-row">
+<div class="flow-node">
+Human promotion / rollback
+</div>
+<div class="flow-arrow">
+←
+</div>
+<div class="flow-node accent">
+Build + target + regression + SLO evidence
+</div>
+<div class="flow-arrow">
+←
+</div>
+<div class="flow-node">
+Independent replay and verification
+</div>
+</div>
+<div class="flow-note">
+The model proposes; durable state, external tests, and human authority
+decide what advances.
+</div>
+</div>
+</section>
+<section id="implementation-priorities" class="level2">
+<h2>Implementation priorities</h2>
+<ol type="1">
+<li>Define authoritative requirement and evaluation owners before
+choosing an agent framework.</li>
+<li>Build a frozen offline replay path with build, target, regression,
+policy, cost, and latency evidence.</li>
+<li>Version model, harness, prompts, tools, code maps, runtime,
+policies, and verifier together.</li>
+<li>Start with read-only or non-authoritative workflows; preserve
+deterministic rollback.</li>
+<li>Measure cumulative delivery and false acceptance—not just per-step
+success, token cost, or self-reported completion.</li>
+</ol>
+</section>
+</section>
+<section id="enterprise-ai-enhancement-backlog" class="level1">
+<h1>Enterprise AI Enhancement Backlog</h1>
+<section id="scoring-method-and-uncertainty" class="level2">
+<h2>Scoring method and uncertainty</h2>
+<p>The <strong>Future Enterprise AI Priority Score</strong> weights
+strategic/business value 25%, technical leverage 20%, evidence strength
+20%, enterprise readiness 15%, feasibility 10%, and risk-adjusted
+differentiation 10%. Components are judgmental 0–100 ratings anchored to
+this briefing’s evidence, not measured returns. Totals should be read as
+priority bands with roughly ±5–10 points of material uncertainty.
+Unknown internal architecture, risk tolerance, data rights, workflow
+economics, and existing platform maturity could reorder the list.</p>
+<table>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Rank</th>
+<th>Enhancement</th>
+<th>Band</th>
+<th style="text-align: right;">Business 25%</th>
+<th style="text-align: right;">Leverage 20%</th>
+<th style="text-align: right;">Evidence 20%</th>
+<th style="text-align: right;">Readiness 15%</th>
+<th style="text-align: right;">Feasibility 10%</th>
+<th style="text-align: right;">Risk-diff. 10%</th>
+<th style="text-align: right;">Weighted</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td>Long-horizon agent release evaluation twin</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;"><strong>89.8</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td>Requirement-state ledger with provenance</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">74</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;"><strong>86.1</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td>Three-part delivery gate</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;"><strong>86.0</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td>Workload-grounded experiment and verification platform</td>
+<td>Prepare Foundations</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">72</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;"><strong>84.3</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td>Trace-contract CI</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">73</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">79</td>
+<td style="text-align: right;"><strong>80.3</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td>Task-adaptive code representation router</td>
+<td>Prototype Soon</td>
+<td style="text-align: right;">79</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">72</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">76</td>
+<td style="text-align: right;"><strong>78.6</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td>Agentic serving optimizer sandbox</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">79</td>
+<td style="text-align: right;"><strong>75.6</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td>Autonomous project-takeover assistant</td>
+<td>Monitor for Maturity</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">83</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;"><strong>68.5</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9</td>
+<td>Self-promoting production optimizer</td>
+<td>Deprioritize for Now</td>
+<td style="text-align: right;">72</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: right;"><strong>51.4</strong></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="prototype-soon" class="level2">
+<h2>Prototype Soon</h2>
+<section id="long-horizon-agent-release-evaluation-twin-89.8"
+class="level3">
+<h3>1. Long-horizon agent release evaluation twin — 89.8</h3>
+<ul>
+<li><strong>Category:</strong> Evaluation &amp; Observability.
+<strong>Research signal:</strong> Multi-step SWE’s 18.5% best full-task
+solve rate versus 56.8% step pass rate; false completion reports.
+<strong>Evidence label:</strong> Paper Fact + Enterprise Inference.</li>
+<li><strong>Problem / capability:</strong> Single-ticket evals miss
+accumulated design debt. Carry one candidate artifact through 5–10
+dependent changes with hidden external-interface and invariant
+tests.</li>
+<li><strong>Placement / value:</strong> Evaluation, developer platform,
+observability; quality, reliability, risk reduction, release speed.
+Technical value is causal visibility into cumulative failure.</li>
+<li><strong>Maturity / confidence / horizon / effort:</strong> Strong
+benchmark evidence; adaptation required. <strong>High</strong>,
+<strong>Now</strong>, <strong>M</strong>.</li>
+<li><strong>Dependencies:</strong> representative task chain, sealed
+grader, reproducible workspace, artifact/version registry, budget
+telemetry, reviewer-owned oracles.</li>
+<li><strong>Risks:</strong> leakage, brittle tests, benchmark gaming,
+compute cost, false confidence, secret exposure.
+<strong>Build/Partner:</strong> build the private task/evidence layer;
+partner or reuse an open harness where licensing permits.</li>
+<li><strong>Minimum reversible experiment:</strong> one read-only or
+disposable repository, five dependent changes, four frozen rollouts, no
+merge rights.</li>
+<li><strong>Success / stop:</strong> success if cumulative evaluation
+finds material failures missed by single-step tests at acceptable cost;
+stop if oracles are not stable or results do not affect decisions.</li>
+<li><strong>Roadmap trigger:</strong> two independent workflow families
+show repeatable predictive value for human-reviewed delivery.</li>
+</ul>
+</section>
+<section id="three-part-delivery-gate-86.0" class="level3">
+<h3>2. Three-part delivery gate — 86.0</h3>
+<ul>
+<li><strong>Category:</strong> AI Software Engineering. <strong>Research
+signal:</strong> ReqMemBench separates build, target, and regression;
+correct targets produced 96.40% build and 90.99% regression but only
+9.01% target-test success. <strong>Evidence label:</strong> Paper Fact +
+Enterprise Inference.</li>
+<li><strong>Problem / capability:</strong> A build that passes can still
+miss the requested change. Require independent build, target-behavior,
+and preserved-invariant evidence before a candidate is reviewable.</li>
+<li><strong>Placement / value:</strong> developer platform, evaluation,
+human-review layer; quality, reliability, speed, risk reduction.</li>
+<li><strong>Maturity / confidence / horizon / effort:</strong> mature
+software-testing pattern; novel evidence for agents.
+<strong>High</strong>, <strong>Now</strong>, <strong>M</strong>.</li>
+<li><strong>Dependencies:</strong> accepted-behavior contracts, test
+isolation, regression corpus, CI provenance, approval workflow.</li>
+<li><strong>Risks:</strong> weak target oracles, excessive blocking,
+stale regression suites, hidden-test leakage. <strong>Build:</strong>
+evidence and policy are organization-specific.</li>
+<li><strong>Experiment:</strong> add the three gates to 30 historical
+agent changes in shadow mode.</li>
+<li><strong>Success / stop:</strong> success if target misses or
+preserved-behavior regressions are caught with tolerable false blocks;
+stop if reviewers cannot agree on target oracles.</li>
+<li><strong>Roadmap trigger:</strong> stable reviewer agreement and
+measurable reduction in escaped defects.</li>
+</ul>
+</section>
+<section id="trace-contract-ci-80.3" class="level3">
+<h3>3. Trace-contract CI — 80.3</h3>
+<ul>
+<li><strong>Category:</strong> Safety &amp; Governance. <strong>Research
+signal:</strong> AgentTrustCI’s layered policy, grounding, and
+trajectory checks catch complementary authored faults. <strong>Evidence
+label:</strong> Paper Fact + Uncertainty + Enterprise Inference.</li>
+<li><strong>Problem / capability:</strong> Output-only tests miss wrong
+tools, forbidden parameters, unsupported claims, and wrong workflow
+order. Evaluate recorded traces against versioned deterministic
+contracts before release.</li>
+<li><strong>Placement / value:</strong> orchestration,
+security/governance, evaluation, developer platform; risk reduction,
+auditability, reliability.</li>
+<li><strong>Maturity / confidence / horizon / effort:</strong> strong
+pattern, synthetic evidence only. <strong>Moderate</strong>, <strong>3–6
+months</strong>, <strong>M</strong>.</li>
+<li><strong>Dependencies:</strong> complete/authentic traces, tool
+identity, parameter redaction, workflow owner, policy versioning,
+negative fixtures.</li>
+<li><strong>Risks:</strong> lexical blind spots, false rejects, trace
+tampering, branching/concurrency gaps, attacker-controlled tool output.
+<strong>Build/Buy:</strong> build policy semantics; buy generic tracing
+only if export and provenance are verifiable.</li>
+<li><strong>Experiment:</strong> 50 sanitized historical traces plus 50
+reviewed mutations, advisory only.</li>
+<li><strong>Success / stop:</strong> success if it catches known
+policy/trajectory failures with reviewer-acceptable false alarms; stop
+if traces cannot be made complete and tamper-evident.</li>
+<li><strong>Roadmap trigger:</strong> independent labels show calibrated
+precision/recall on natural as well as injected failures.</li>
+</ul>
+</section>
+<section id="task-adaptive-code-representation-router-78.6"
+class="level3">
+<h3>4. Task-adaptive code representation router — 78.6</h3>
+<ul>
+<li><strong>Category:</strong> AI Software Engineering. <strong>Research
+signal:</strong> code maps cut tokens on localization/repair but effects
+vary by task and latency. <strong>Evidence label:</strong> Paper Fact +
+Enterprise Inference.</li>
+<li><strong>Problem / capability:</strong> Agents spend tokens
+reconstructing repository structure. Route tasks among raw search, AST,
+call graph, dependency, docs, or hybrid views based on the likely
+bottleneck.</li>
+<li><strong>Placement / value:</strong> developer platform,
+retrieval/knowledge, agent layer; productivity, cost, speed,
+quality.</li>
+<li><strong>Maturity / confidence / horizon / effort:</strong> promising
+controlled study, single model. <strong>Moderate</strong>, <strong>3–6
+months</strong>, <strong>M</strong>.</li>
+<li><strong>Dependencies:</strong> indexers, freshness guarantees,
+repository authorization, task classifier, telemetry, raw-tool
+fallback.</li>
+<li><strong>Risks:</strong> stale graphs, access leakage, indexing cost,
+latency, distracting context, language coverage.
+<strong>Build/Partner:</strong> partner for commodity parsing/indexing;
+build routing and evaluation.</li>
+<li><strong>Experiment:</strong> replay 100 historical tasks across raw
+tools and one matched representation; no code merge.</li>
+<li><strong>Success / stop:</strong> success if token/cycle savings
+occur without lower verified resolution; stop if freshness/security cost
+dominates.</li>
+<li><strong>Roadmap trigger:</strong> replicated benefit across two
+languages, two models, and private repositories.</li>
+</ul>
+</section>
+</section>
+<section id="prepare-foundations" class="level2">
+<h2>Prepare Foundations</h2>
+<section id="requirement-state-ledger-with-provenance-86.1"
+class="level3">
+<h3>5. Requirement-state ledger with provenance — 86.1</h3>
+<ul>
+<li><strong>Category:</strong> Memory &amp; Context / Data &amp;
+Knowledge Infrastructure. <strong>Research signal:</strong>
+ReqMemBench’s 0/312 exact post-states and demonstrated loss of
+still-valid constraints. <strong>Evidence label:</strong> Paper Fact +
+Independent Analysis.</li>
+<li><strong>Problem / capability:</strong> Raw conversation is not
+authoritative current state. Store requirement atoms with source links,
+owners, current attributes, lifecycle, scope, ambiguity, supersession,
+and validation evidence.</li>
+<li><strong>Placement / value:</strong> context/memory service,
+knowledge system, data platform, human-review layer; quality, speed,
+risk reduction, continuity.</li>
+<li><strong>Maturity / confidence / horizon / effort:</strong>
+requirements management is mature; agent integration needs validation.
+<strong>Moderate</strong>, <strong>6–12 months</strong>,
+<strong>L</strong>.</li>
+<li><strong>Dependencies:</strong> system-of-record decision,
+identity/authorization, schema/governance, migration, retention,
+conflict resolution, human ownership.</li>
+<li><strong>Risks:</strong> false authority, stale state, privacy,
+over-structuring, contested ownership, silent agent edits.
+<strong>Build/Buy/Partner:</strong> buy/partner for commodity
+requirement storage; build provenance, policies, and agent adapters
+around internal process.</li>
+<li><strong>Experiment:</strong> two reviewers encode 25 completed
+request histories; measure agreement and reconstruction lift.</li>
+<li><strong>Success / stop:</strong> success if ledger-assisted agents
+improve exact/field-level state recovery and reviewers accept
+provenance; stop if maintenance burden exceeds decision value.</li>
+<li><strong>Roadmap trigger:</strong> sustained reviewer agreement and
+downstream reduction in missed constraints.</li>
+</ul>
+</section>
+<section
+id="workload-grounded-experiment-and-verification-platform-84.3"
+class="level3">
+<h3>6. Workload-grounded experiment and verification platform —
+84.3</h3>
+<ul>
+<li><strong>Category:</strong> MLOps &amp; Platform / Evaluation &amp;
+Observability. <strong>Research signal:</strong> ServerBench’s frozen
+artifacts, disjoint replay, verification, and workload-relevant decision
+analysis. <strong>Evidence label:</strong> Paper Fact + Independent
+Analysis.</li>
+<li><strong>Problem / capability:</strong> Agent experiments are hard to
+compare or audit. Bind code, model, runtime, workload, seeds, cost,
+outputs, SLOs, and decision rationale into immutable experiment
+records.</li>
+<li><strong>Placement / value:</strong> infrastructure, model gateway,
+evaluation, observability, cost telemetry; cost, reliability, speed,
+auditability.</li>
+<li><strong>Maturity / confidence / horizon / effort:</strong> familiar
+experiment-management primitives; agentic closed loop is emerging.
+<strong>High</strong>, <strong>3–6 months</strong>,
+<strong>L</strong>.</li>
+<li><strong>Dependencies:</strong> workload capture, privacy controls,
+artifact registry, cost model, output verifier, seed policy, sandbox,
+rollback.</li>
+<li><strong>Risks:</strong> workload leakage, metric gaming, replay
+drift, hidden costs, permissive output thresholds.
+<strong>Build/Buy:</strong> buy standard telemetry/artifact components
+where exportable; build workload and promotion semantics.</li>
+<li><strong>Experiment:</strong> one frozen baseline and one agent
+proposal on disjoint seeds, read-only/shadow traffic.</li>
+<li><strong>Success / stop:</strong> success if an independent reviewer
+can reproduce the winner and cost/SLO evidence; stop if results are
+seed-unstable or quality cannot be verified.</li>
+<li><strong>Roadmap trigger:</strong> three repeated experiments yield
+stable decisions and positive net economics.</li>
+</ul>
+</section>
+</section>
+<section id="monitor-for-maturity" class="level2">
+<h2>Monitor for Maturity</h2>
+<section id="agentic-serving-optimizer-sandbox-75.6" class="level3">
+<h3>7. Agentic serving optimizer sandbox — 75.6</h3>
+<ul>
+<li><strong>Category:</strong> Model &amp; Inference. <strong>Research
+signal:</strong> ServerBench’s 13/33 baseline-beating verified
+submissions, with large but deployment-specific gains. <strong>Evidence
+label:</strong> Paper Fact + Uncertainty.</li>
+<li><strong>Problem / capability:</strong> Serving configurations are
+complex and workload-specific. Let agents modify only a disposable fork,
+run bounded experiments, and propose a frozen candidate for human
+review.</li>
+<li><strong>Placement / value:</strong> infrastructure, model gateway,
+MLOps; cost, latency, technical leverage.</li>
+<li><strong>Maturity / confidence / horizon / effort:</strong>
+research-grade. <strong>Moderate</strong>, <strong>6–12 months</strong>,
+<strong>XL</strong>.</li>
+<li><strong>Dependencies:</strong> prior experiment platform, sandbox
+GPUs, policy allowlists, secure build, verifier, rollback, capacity
+budget.</li>
+<li><strong>Risks:</strong> unsafe code, benchmark overfit, correctness
+loss, non-determinism, high experiment cost, license/security issues.
+<strong>Build/Partner:</strong> partner for serving runtime; keep
+verification and promotion authority internal.</li>
+<li><strong>Experiment:</strong> one non-sensitive model/workload, no
+production credentials, hard cost/time limits.</li>
+<li><strong>Success / stop:</strong> success if ≥10% verified cost/SLO
+gain repeats on three seeds with no quality regression; stop on any
+unverifiable output or unsafe system change.</li>
+<li><strong>Roadmap trigger:</strong> independent reproduction plus
+security review and rollback drill.</li>
+</ul>
+</section>
+<section id="autonomous-project-takeover-assistant-68.5" class="level3">
+<h3>8. Autonomous project-takeover assistant — 68.5</h3>
+<ul>
+<li><strong>Category:</strong> Agentic AI / Human-AI Workflow.
+<strong>Research signal:</strong> ReqMemBench complete delivery 4.95%;
+Multi-step SWE best 18.5%. <strong>Evidence label:</strong> Paper Fact +
+Uncertainty.</li>
+<li><strong>Problem / capability:</strong> Transfer long-running
+projects between humans and agents while retaining requirements and
+prior behavior. Proposed form: read-only state reconstruction, gap list,
+and test plan before any change.</li>
+<li><strong>Placement / value:</strong> applications, agent layer,
+memory/context, human review; productivity and continuity if
+reliable.</li>
+<li><strong>Maturity / confidence / horizon / effort:</strong> weak
+direct evidence. <strong>Low</strong>, <strong>12+ months</strong>,
+<strong>XL</strong>.</li>
+<li><strong>Dependencies:</strong> requirement ledger, cumulative eval,
+identity, authorization, provenance, human escalation, domain
+tests.</li>
+<li><strong>Risks:</strong> omitted constraints, unauthorized changes,
+privacy, false confidence, maintenance debt.
+<strong>Build/Partner:</strong> observe vendors, but do not outsource
+authority or acceptance.</li>
+<li><strong>Experiment:</strong> retrospective reconstruction only;
+compare against human gold, no code modification.</li>
+<li><strong>Success / stop:</strong> success if exact state and
+blocking-question quality meet pre-set thresholds; stop if any critical
+requirement is silently omitted.</li>
+<li><strong>Roadmap trigger:</strong> repeated high recall/precision on
+current state plus target implementation success under independent
+gates.</li>
+</ul>
+</section>
+</section>
+<section id="deprioritize-for-now" class="level2">
+<h2>Deprioritize for Now</h2>
+<section id="self-promoting-production-optimizer-51.4" class="level3">
+<h3>9. Self-promoting production optimizer — 51.4</h3>
+<ul>
+<li><strong>Category:</strong> Agentic AI / MLOps &amp; Platform.
+<strong>Research signal:</strong> ServerBench demonstrates optimization
+under controlled replay, while 11/33 runs did not yield verified
+systems; Multi-step SWE documents false completion. <strong>Evidence
+label:</strong> Independent Analysis + Uncertainty.</li>
+<li><strong>Problem / capability:</strong> Allow an agent to deploy its
+own serving or software changes after internal experiments.</li>
+<li><strong>Placement / value:</strong> orchestration, infrastructure,
+production control plane; potential speed/cost, but high downside.</li>
+<li><strong>Maturity / confidence / horizon / effort:</strong>
+insufficient. <strong>Low</strong>, <strong>12+ months</strong>,
+<strong>XL</strong>.</li>
+<li><strong>Dependencies:</strong> all foundations above plus formal
+change authority, blast-radius isolation, canary/rollback, on-call
+ownership, adversarial security review.</li>
+<li><strong>Risks:</strong> metric gaming, silent quality loss,
+supply-chain compromise, uncontrolled cost, authorization failure,
+rollback failure. <strong>Recommendation:</strong> do not build or buy
+as an autonomous production capability now.</li>
+<li><strong>Experiment:</strong> none on production. Only simulation of
+promotion decisions against historical incidents.</li>
+<li><strong>Success / stop:</strong> stop immediately on any candidate
+whose evidence is incomplete or whose rollback is unproven.</li>
+<li><strong>Roadmap trigger:</strong> substantially stronger
+multi-organization evidence, regulatory/security approval, and proven
+human-supervised operation over time.</li>
+</ul>
+</section>
+</section>
+<section id="enterprise-ai-architecture-implications" class="level2">
+<h2>Enterprise AI Architecture Implications</h2>
+<p><strong>Independent Analysis.</strong> Over the next 12–24 months,
+the architecture implied by these papers is not a larger monolithic
+agent. It is an evidence-bearing control plane around interchangeable
+agents:</p>
+<ul>
+<li><strong>Model gateway:</strong> pins model/runtime, budgets,
+decoding, and cost; routes by risk and workload.</li>
+<li><strong>Context and memory service:</strong> exposes current
+requirement state and provenance rather than raw history alone.</li>
+<li><strong>Knowledge/code layer:</strong> supplies task-appropriate raw
+and structural views with freshness and authorization.</li>
+<li><strong>Agent orchestration:</strong> executes only within declared
+identities, tool scopes, time/cost limits, and reversible
+sandboxes.</li>
+<li><strong>Evaluation infrastructure:</strong> carries artifacts
+through cumulative tasks and separates build, target, regression,
+policy, trajectory, quality, latency, and cost evidence.</li>
+<li><strong>Observability and provenance:</strong> records complete
+traces, artifact hashes, policies, seeds, workloads, tool effects,
+failures, and human decisions.</li>
+<li><strong>Policy enforcement and identity:</strong> binds
+authorization to the principal and action, not merely the prompt.</li>
+<li><strong>Human-review controls:</strong> own requirement truth,
+approve expectation changes, resolve ambiguity, and retain
+promotion/rollback authority.</li>
+<li><strong>Experiment infrastructure and cost telemetry:</strong>
+freezes candidates, uses disjoint holdouts, and reports economics with
+uncertainty.</li>
+</ul>
+<p>Shared foundations unlock multiple enhancements:
+identity/authorization, tamper-evident traces, requirement provenance,
+artifact registries, versioned policy, sealed evaluators, cost/SLO
+telemetry, rollback, and reviewer workflow. <strong>Additional internal
+context is required before implementation decisions:</strong> current
+systems of record, risk tiers, protected data, vendor contracts,
+developer workflow, incident history, SLOs, economics, and ownership
+boundaries were not provided and are not assumed.</p>
+</section>
+</section>
+<section id="knowledge-reinforcement" class="level1">
+<h1>Knowledge Reinforcement</h1>
+<section id="five-takeaways" class="level2">
+<h2>Five takeaways</h2>
+<ol type="1">
+<li>A high step-pass rate can coexist with a low full-task solve
+rate.</li>
+<li>Build and regression success do not prove the requested change was
+implemented.</li>
+<li>Shorter or more structured context helps only when it matches the
+task bottleneck.</li>
+<li>Agent optimization becomes decision-useful when artifacts are frozen
+and independently replayed.</li>
+<li>Durable requirement state and verifier authority must live outside
+the model.</li>
+</ol>
+</section>
+<section id="recall-prompts" class="level2">
+<h2>Recall prompts</h2>
+<ol type="1">
+<li>Why is 56.8% step success not inconsistent with 18.5% full-task
+solve rate? Because every dependent step must succeed and errors persist
+in the cumulative workspace.</li>
+<li>What does ReqMemBench’s Oracle Post-State result isolate? It
+bypasses requirement reconstruction and shows that implementation of an
+explicit correct target is still weak.</li>
+<li>What is ServerBench’s key operational control? Rebuild and replay
+the frozen candidate on disjoint seeds, then independently verify
+protocol, outputs, SLOs, and cost.</li>
+<li>Why not deploy one universal code map? Benefits differ by task;
+localization, editing, testing, and security patching have different
+bottlenecks and cost/latency profiles.</li>
+<li>What does AgentTrustCI establish? Coverage of a small authored
+regression suite and a useful contract pattern—not production
+accuracy.</li>
+</ol>
+</section>
+</section>
+<section id="evidence-register-and-boundaries" class="level1">
+<h1>Evidence register and boundaries</h1>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Claim class</th>
+<th>Primary source</th>
+<th>Evidence boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Long-horizon coding</td>
+<td><a href="https://arxiv.org/abs/2611.07166">Multi-step SWE full
+record</a></td>
+<td>Benchmark model-plus-harness results; expensive; public-task
+contamination remains possible</td>
+</tr>
+<tr class="even">
+<td>Project takeover / requirement state</td>
+<td><a href="https://arxiv.org/abs/2611.07307">Take It from Here full
+record</a></td>
+<td>37 executable targets; one run per cell; semantic-judge
+dependence</td>
+</tr>
+<tr class="odd">
+<td>Serving-system optimization</td>
+<td><a href="https://arxiv.org/abs/2611.06841">ServerBench full
+record</a></td>
+<td>Three L40 deployments; workload/objective-specific; security and
+operations not certified</td>
+</tr>
+<tr class="even">
+<td>Code representations</td>
+<td><a href="https://arxiv.org/abs/2611.07286">How Should Agents See
+Code?</a></td>
+<td>One model/harness; one run per instance; treatment steering</td>
+</tr>
+<tr class="odd">
+<td>Behavioral contract CI</td>
+<td><a href="https://arxiv.org/abs/2611.06674">AgentTrustCI</a></td>
+<td>55 authored synthetic cases; no production accuracy estimate</td>
+</tr>
+</tbody>
+</table>
+<p>No paper reviewed here establishes production safety, legal
+compliance, security certification, ROI in a particular organization, or
+permission to deploy. Benchmark novelty is not deployment readiness.
+Every proposed experiment is isolated, reversible, measurable, and
+non-destructive; production credentials and irreversible actions are
+excluded. Internal enterprise context must be supplied before
+architecture or roadmap commitments.</p>
+</section></main></div>
+<footer>AI Research Intelligence Brief · November 6, 2026 · Evidence-grounded future options, not deployment approval.</footer>
+<div class="toolbar"><button onclick="window.print()">Print</button><button id="top">↑ Top</button></div>
+<script>const p=document.getElementById('progress');addEventListener('scroll',()=>{const h=document.documentElement;p.style.width=((h.scrollTop/(h.scrollHeight-h.clientHeight))*100)+'%'});document.getElementById('top').onclick=()=>scrollTo({top:0,behavior:'smooth'});</script>
+</body></html>
