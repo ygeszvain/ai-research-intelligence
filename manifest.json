@@ -3,12 +3,33 @@
     "title": "AI Research Intelligence",
     "url": "https://ygeszvain.github.io/ai-research-intelligence",
     "description": "Evidence-grounded daily AI and machine-learning research intelligence.",
-    "generated_at_utc": "2026-11-12T10:21:52Z",
-    "report_count": 95,
-    "latest_report": "2026-11-12",
-    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-11-12.html"
+    "generated_at_utc": "2026-11-13T10:15:00Z",
+    "report_count": 96,
+    "latest_report": "2026-11-13",
+    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-11-13.html"
   },
   "reports": [
+    {
+      "date": "2026-11-13",
+      "date_display": "November 13, 2026",
+      "title": "AI Research Intelligence Brief — November 13, 2026",
+      "excerpt": "Three deep analyses and two Watchlist items show why reliable enterprise agents need authoritative effect receipts, commit-boundary checks, evidence-preserving context, and repeated adversarial validation; nine traceable enterprise options prioritize a consequence-aware control plane.",
+      "topics": [
+        "Agentic AI",
+        "Memory & Context",
+        "Evaluation & Observability",
+        "Safety & Governance",
+        "AI Security",
+        "MLOps & Platform",
+        "Model & Inference",
+        "Data & Knowledge Infrastructure",
+        "Human-AI Workflow"
+      ],
+      "path": "reports/2026-11-13.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-11-13.html",
+      "size_bytes": 61624,
+      "sha256": "c9253b6cc09d432a2e70da8387cd09f18fc53703707490727b74ad0d5f91c04b"
+    },
     {
       "date": "2026-11-12",
       "date_display": "November 12, 2026",
