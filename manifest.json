@@ -3,12 +3,29 @@
     "title": "AI Research Intelligence",
     "url": "https://ygeszvain.github.io/ai-research-intelligence",
     "description": "Evidence-grounded daily AI and machine-learning research intelligence.",
-    "generated_at_utc": "2026-11-14T10:00:00Z",
-    "report_count": 97,
-    "latest_report": "2026-11-14",
-    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-11-14.html"
+    "generated_at_utc": "2026-11-15T10:00:00Z",
+    "report_count": 98,
+    "latest_report": "2026-11-15",
+    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-11-15.html"
   },
   "reports": [
+    {
+      "date": "2026-11-15",
+      "date_display": "November 15, 2026",
+      "title": "AI Research Intelligence Brief — November 15, 2026",
+      "excerpt": "One peer-reviewed deep analysis shows that answer-level sources and accuracy warnings can reduce erroneous acceptance and increase verification in low-risk tasks; seven traceable enterprise options prioritize provenance, measurable selective reliance, and evidence inspection.",
+      "topics": [
+        "Human-AI Workflow",
+        "Evaluation & Observability",
+        "Safety & Governance",
+        "RAG & Knowledge",
+        "Data & Knowledge Infrastructure"
+      ],
+      "path": "reports/2026-11-15.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-11-15.html",
+      "size_bytes": 51962,
+      "sha256": "19db39c2e07197c51ff88dfb4f879387197ba5d1e57ee079d2c3bb1626b61d54"
+    },
     {
       "date": "2026-11-14",
       "date_display": "November 14, 2026",
