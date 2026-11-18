@@ -3,12 +3,32 @@
     "title": "AI Research Intelligence",
     "url": "https://ygeszvain.github.io/ai-research-intelligence",
     "description": "Evidence-grounded daily AI and machine-learning research intelligence.",
-    "generated_at_utc": "2026-11-17T10:00:00Z",
-    "report_count": 100,
-    "latest_report": "2026-11-17",
-    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-11-17.html"
+    "generated_at_utc": "2026-11-18T10:00:00Z",
+    "report_count": 101,
+    "latest_report": "2026-11-18",
+    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-11-18.html"
   },
   "reports": [
+    {
+      "date": "2026-11-18",
+      "date_display": "November 18, 2026",
+      "title": "AI Research Intelligence Brief — November 18, 2026",
+      "excerpt": "Three deep papers show that verification architecture, skill lifecycle assurance, deployment-stack qualification, and deterministic safety floors are emerging as the practical control plane for enterprise agents; eight evidence-traceable options prioritize reversible pilots.",
+      "topics": [
+        "Evaluation & Observability",
+        "Agentic AI",
+        "Safety & Governance",
+        "MLOps & Platform",
+        "AI Software Engineering",
+        "Model & Inference",
+        "Memory & Context",
+        "Data & Knowledge Infrastructure"
+      ],
+      "path": "reports/2026-11-18.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-11-18.html",
+      "size_bytes": 68714,
+      "sha256": "03b394ec5a85539138254b6909312e69156c8673920b81f75e18739b1e3c8b37"
+    },
     {
       "date": "2026-11-17",
       "date_display": "November 17, 2026",
