@@ -3,12 +3,30 @@
     "title": "AI Research Intelligence",
     "url": "https://ygeszvain.github.io/ai-research-intelligence",
     "description": "Evidence-grounded daily AI and machine-learning research intelligence.",
-    "generated_at_utc": "2026-11-21T10:00:00Z",
-    "report_count": 104,
-    "latest_report": "2026-11-21",
-    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-11-21.html"
+    "generated_at_utc": "2026-11-22T10:00:00Z",
+    "report_count": 105,
+    "latest_report": "2026-11-22",
+    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-11-22.html"
   },
   "reports": [
+    {
+      "date": "2026-11-22",
+      "date_display": "November 22, 2026",
+      "title": "AI Research Intelligence Brief — November 22, 2026",
+      "excerpt": "Three peer-reviewed analyses show that enterprise AI can learn from calibrated active optimization, anomaly-gated generative screening, and explicit semantic coverage mapping; eight traceable future options prioritize reversible evidence infrastructure.",
+      "topics": [
+        "Evaluation & Observability",
+        "Model & Inference",
+        "Data & Knowledge Infrastructure",
+        "MLOps & Platform",
+        "Safety & Governance",
+        "Human-AI Workflow"
+      ],
+      "path": "reports/2026-11-22.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-11-22.html",
+      "size_bytes": 59338,
+      "sha256": "7745b17fc5e6cd4a57e2a7a62aea8982b183c20a24b0c32e6b1e8fa49f2a614a"
+    },
     {
       "date": "2026-11-21",
       "date_display": "November 21, 2026",
