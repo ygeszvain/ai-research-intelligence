@@ -3,12 +3,30 @@
     "title": "AI Research Intelligence",
     "url": "https://ygeszvain.github.io/ai-research-intelligence",
     "description": "Evidence-grounded daily AI and machine-learning research intelligence.",
-    "generated_at_utc": "2026-11-22T10:00:00Z",
-    "report_count": 105,
-    "latest_report": "2026-11-22",
-    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-11-22.html"
+    "generated_at_utc": "2026-11-23T10:00:00Z",
+    "report_count": 106,
+    "latest_report": "2026-11-23",
+    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-11-23.html"
   },
   "reports": [
+    {
+      "date": "2026-11-23",
+      "date_display": "November 23, 2026",
+      "title": "AI Research Intelligence Brief — November 23, 2026",
+      "excerpt": "Four peer-reviewed papers show that deployment-unit splits, enforceable surrogate scope, and signal-based abstention are higher-leverage enterprise controls than another model endpoint; eight traceable future options prioritize reversible evidence infrastructure.",
+      "topics": [
+        "Evaluation & Observability",
+        "MLOps & Platform",
+        "Safety & Governance",
+        "Data & Knowledge Infrastructure",
+        "Model & Inference",
+        "Human-AI Workflow"
+      ],
+      "path": "reports/2026-11-23.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-11-23.html",
+      "size_bytes": 61313,
+      "sha256": "5956da18230fb219152e1d604b80b3c38305f28858d0a7a8526c59e21f01a7ce"
+    },
     {
       "date": "2026-11-22",
       "date_display": "November 22, 2026",
