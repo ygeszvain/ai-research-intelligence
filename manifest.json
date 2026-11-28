@@ -3,12 +3,32 @@
     "title": "AI Research Intelligence",
     "url": "https://ygeszvain.github.io/ai-research-intelligence",
     "description": "Evidence-grounded daily AI and machine-learning research intelligence.",
-    "generated_at_utc": "2026-11-27T10:13:51Z",
-    "report_count": 110,
-    "latest_report": "2026-11-27",
-    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-11-27.html"
+    "generated_at_utc": "2026-11-28T10:01:50Z",
+    "report_count": 111,
+    "latest_report": "2026-11-28",
+    "latest_report_url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-11-28.html"
   },
   "reports": [
+    {
+      "date": "2026-11-28",
+      "date_display": "November 28, 2026",
+      "title": "AI Research Intelligence Brief — November 28, 2026",
+      "excerpt": "Three full-paper analyses separate generative capability from validated function and distinguish AI cost from climate impact; eight research-traceable enhancements prioritize reversible evidence controls.",
+      "topics": [
+        "Multimodal",
+        "Model & Inference",
+        "Evaluation & Observability",
+        "Safety & Governance",
+        "MLOps & Platform",
+        "Data & Knowledge Infrastructure",
+        "Human-AI Workflow",
+        "Infrastructure"
+      ],
+      "path": "reports/2026-11-28.html",
+      "url": "https://ygeszvain.github.io/ai-research-intelligence/reports/2026-11-28.html",
+      "size_bytes": 61496,
+      "sha256": "f4f9eb4b479818043dd286df306b385e52af9cc234517e6f485314afb9f33d36"
+    },
     {
       "date": "2026-11-27",
       "date_display": "November 27, 2026",
